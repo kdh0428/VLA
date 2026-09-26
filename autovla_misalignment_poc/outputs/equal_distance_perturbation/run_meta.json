@@ -1,0 +1,32 @@
+{
+  "n_ok": 208,
+  "n_fail": 0,
+  "gen_conf": {
+    "max_length": 2048,
+    "temperature": 0.01,
+    "top_k": 0.0,
+    "top_p": 1.0
+  },
+  "seed": 0,
+  "sectors": [
+    "faster",
+    "faster-left",
+    "left",
+    "slower-left",
+    "slower",
+    "slower-right",
+    "right",
+    "faster-right"
+  ],
+  "rel_levels": [
+    0.1,
+    0.2,
+    0.35
+  ],
+  "abs_tol_m": 0.005,
+  "min_alts": 5,
+  "aplus_per_aminus": 3,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 6.053083010514578
+}

@@ -1,0 +1,419 @@
+<title>Encoded but Unused</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  color-scheme: light;
+  --ground:#f6f7f9;
+  --surface:#ffffff;
+  --surface-sunk:#eef0f4;
+  --ink:#12151b;
+  --ink-2:#4a5160;
+  --ink-3:#7b8494;
+  --rule:#dfe3ea;
+  --rule-strong:#c3cad6;
+  --orion:#2a78d6;
+  --autovla:#c9541f;
+  --flag:#8a6100;
+  --flag-bg:#fdf4e0;
+  --good:#1b7a55;
+  --shadow:0 1px 2px rgba(18,21,27,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --ground:#101319;
+    --surface:#171b23;
+    --surface-sunk:#1d222c;
+    --ink:#e9ecf2;
+    --ink-2:#a8b1c1;
+    --ink-3:#78818f;
+    --rule:#272d38;
+    --rule-strong:#39404d;
+    --orion:#5b9ae8;
+    --autovla:#e8804f;
+    --flag:#d8a53c;
+    --flag-bg:#241d0e;
+    --good:#4bb98c;
+    --shadow:0 1px 2px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --ground:#101319;
+  --surface:#171b23;
+  --surface-sunk:#1d222c;
+  --ink:#e9ecf2;
+  --ink-2:#a8b1c1;
+  --ink-3:#78818f;
+  --rule:#272d38;
+  --rule-strong:#39404d;
+  --orion:#5b9ae8;
+  --autovla:#e8804f;
+  --flag:#d8a53c;
+  --flag-bg:#241d0e;
+  --good:#4bb98c;
+  --shadow:0 1px 2px rgba(0,0,0,.3);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:17px;
+  line-height:1.62;
+  margin:0;
+  padding:0 20px 96px;
+}
+.wrap{max-width:1080px;margin:0 auto}
+.col{max-width:64ch}
+
+h1,h2,h3,.eyebrow,.tag,th,.num,.metric-v,.btn{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(2rem,4.4vw,2.9rem);line-height:1.08;font-weight:700;letter-spacing:-.02em;margin:0 0 14px;text-wrap:balance}
+h2{font-size:1.32rem;font-weight:600;letter-spacing:-.01em;margin:0 0 4px;text-wrap:balance}
+h3{font-size:1.02rem;font-weight:600;margin:0 0 6px}
+p{margin:0 0 14px}
+a{color:var(--orion)}
+strong{font-weight:600}
+
+.eyebrow{
+  font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 12px
+}
+
+header{padding:56px 0 34px;border-bottom:1px solid var(--rule)}
+.lede{font-size:1.14rem;color:var(--ink-2);max-width:62ch;margin:0}
+.meta{
+  display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:24px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.76rem;color:var(--ink-3)
+}
+
+section{padding:38px 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.sec-head{display:flex;gap:14px;align-items:baseline;margin-bottom:18px}
+.sec-n{
+  font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--ink-3);
+  padding-top:3px;min-width:2.2em
+}
+
+/* model identity rails */
+.rail{border-left:3px solid var(--rule-strong);padding-left:16px}
+.rail-orion{border-left-color:var(--orion)}
+.rail-autovla{border-left-color:var(--autovla)}
+.tag{
+  display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;padding:2px 7px;border-radius:3px;vertical-align:2px
+}
+.tag-orion{color:var(--orion);background:color-mix(in srgb,var(--orion) 12%,transparent)}
+.tag-autovla{color:var(--autovla);background:color-mix(in srgb,var(--autovla) 14%,transparent)}
+
+/* metric strip */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:0 0 8px}
+.metric{background:var(--surface);padding:14px 16px}
+.metric-k{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+.metric-v{font-size:1.5rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.metric-s{font-size:.78rem;color:var(--ink-3);font-family:"IBM Plex Mono",monospace;margin-top:3px}
+
+/* tables */
+.scroll{overflow-x:auto;margin:18px 0;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--rule);white-space:nowrap}
+th{font-size:.7rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--ink-3);background:var(--surface-sunk)}
+td{font-family:"IBM Plex Mono",monospace;font-size:.82rem;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+td:first-child,th:first-child{font-family:"Source Serif 4",Georgia,serif;font-size:.88rem;
+  color:var(--ink);white-space:normal;min-width:15ch}
+tr:last-child td{border-bottom:0}
+.c-orion{color:var(--orion);font-weight:600}
+.c-autovla{color:var(--autovla);font-weight:600}
+.dim{color:var(--ink-3)}
+
+/* callouts */
+.note{
+  background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--flag);
+  padding:16px 20px;margin:20px 0
+}
+.note.correction{border-left-color:var(--autovla)}
+.note h3{color:var(--ink)}
+.note p:last-child{margin-bottom:0}
+.note .eyebrow{color:var(--flag);margin-bottom:8px}
+.note.correction .eyebrow{color:var(--autovla)}
+
+/* verdict rows */
+.verdicts{display:flex;flex-direction:column;gap:0;margin:20px 0;
+  border:1px solid var(--rule);background:var(--surface)}
+.v{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:14px 18px;border-bottom:1px solid var(--rule)}
+.v:last-child{border-bottom:0}
+.v-k{font-family:Archivo,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding-top:3px}
+.v-yes .v-k{color:var(--good)}
+.v-no .v-k{color:var(--autovla)}
+.v-flag .v-k{color:var(--flag)}
+.v p{margin:0;font-size:.95rem}
+
+/* steps */
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:20px 0 0;
+  display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+ol.steps li{counter-increment:s;background:var(--surface);padding:18px 20px 18px 62px;position:relative}
+ol.steps li::before{
+  content:counter(s);position:absolute;left:20px;top:18px;
+  font-family:"IBM Plex Mono",monospace;font-size:.82rem;font-weight:600;color:var(--ink-3)
+}
+ol.steps h3{margin-bottom:4px}
+ol.steps p{margin:0;font-size:.95rem;color:var(--ink-2)}
+.cost{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink-3);
+  display:block;margin-top:7px;letter-spacing:.03em}
+
+code{font-family:"IBM Plex Mono",monospace;font-size:.86em;
+  background:var(--surface-sunk);padding:1px 5px;border-radius:3px}
+
+footer{padding:32px 0 0;color:var(--ink-3);font-size:.82rem;
+  font-family:"IBM Plex Mono",monospace}
+@media (max-width:640px){
+  .v{grid-template-columns:1fr;gap:4px}
+  body{font-size:16px}
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Proof of concept · two driving VLAs</p>
+  <h1>Encoded but Unused</h1>
+  <p class="lede">Both ORION and AutoVLA hold a <em>confident</em> action decision when they
+  drive wrongly — the decision just isn&rsquo;t the one their own perceptual evidence implies.
+  The failure is misalignment, not missing information.</p>
+  <div class="meta">
+    <span>ORION · Bench2Drive · 1,809 frames / 49 clips</span>
+    <span>AutoVLA · nuPlan navtest · 2,748 scenes / 28 logs</span>
+    <span>0 inference failures</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head"><span class="sec-n">01</span><div>
+    <h2>What the two studies actually established</h2>
+  </div></div>
+  <div class="col">
+    <p>The question was whether a driving VLA can encode the scene correctly and still emit
+    the wrong trajectory, and where inside the network that link breaks. ORION answered the
+    descriptive half; the causal half failed; AutoVLA was run to test whether any of it is
+    architecture-specific.</p>
+  </div>
+
+  <div class="verdicts">
+    <div class="v v-yes">
+      <span class="v-k">Holds</span>
+      <p><strong>Wrong actions are common while perception is intact.</strong> In ORION,
+      P+A&minus; is <span class="c-orion">23.2%</span> of all frames and <span class="c-orion">55.6%</span>
+      of every action failure, stable at 19&ndash;35% across the full threshold sweep and present
+      in 39 of 42 scenarios.</p>
+    </div>
+    <div class="v v-yes">
+      <span class="v-k">Holds</span>
+      <p><strong>Failing representations are not empty.</strong> In both models the failing
+      hidden state decodes the model&rsquo;s <em>own</em> action far better than the correct one.
+      This is the cross-architecture result.</p>
+    </div>
+    <div class="v v-no">
+      <span class="v-k">Fails</span>
+      <p><strong>No causal handle was found.</strong> Editing ORION&rsquo;s planning token &mdash;
+      donor patch or mean-difference steering &mdash; recovers no more trajectories than a random
+      edit of the same magnitude (7.5% vs 5.5%, Fisher <em>p</em>&nbsp;=&nbsp;0.54).</p>
+    </div>
+    <div class="v v-flag">
+      <span class="v-k">Blocked</span>
+      <p><strong>The ORION taxonomy does not port to AutoVLA.</strong> The released RFT
+      checkpoint emitted chain-of-thought in <span class="c-autovla">1 of 2,748</span> scenes, so
+      there is no stated perception and no observable reasoning to label.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-n">02</span><div>
+    <h2>A correction that changed the conclusion</h2>
+  </div></div>
+
+  <div class="note correction">
+    <p class="eyebrow">Corrected 2026-09-09</p>
+    <p>The first ORION report concluded that failing samples &ldquo;do not contain the action
+    decision.&rdquo; That inference was <strong>circular</strong>. A&plusmn; is <em>defined</em> by
+    agreement between the model&rsquo;s action and the ground-truth action, so decoding the GT
+    action necessarily succeeds in A+ and fails in A&minus;.</p>
+    <p>Re-running the probe for the model&rsquo;s <em>own</em> predicted action settles it.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <caption class="visually-hidden"></caption>
+      <thead><tr>
+        <th>ORION layer</th><th>control&nbsp;: GT</th><th>control&nbsp;: own</th>
+        <th>failure&nbsp;: GT</th><th>failure&nbsp;: own</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>L8</td><td class="dim">0.939</td><td class="dim">0.939</td><td>0.452</td><td class="c-orion">0.688</td></tr>
+        <tr><td>L16</td><td class="dim">0.983</td><td class="dim">0.983</td><td>0.619</td><td class="c-orion">0.939</td></tr>
+        <tr><td>L24</td><td class="dim">0.991</td><td class="dim">0.991</td><td>0.792</td><td class="c-orion">0.946</td></tr>
+        <tr><td>L32</td><td class="dim">0.991</td><td class="dim">0.991</td><td>0.746</td><td class="c-orion">0.963</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <p>Two things follow. The control columns are <em>identical by construction</em> — they carry
+    no independent information and should never have been quoted as evidence. And in the failure
+    group the model&rsquo;s own action is decodable at <strong>0.94&ndash;0.96</strong> from L16
+    onward while the correct action sits at 0.45&ndash;0.79.</p>
+    <p>So perceptual evidence is encoded (0.83&ndash;0.91) <em>and</em> an action is encoded
+    (0.94&ndash;0.96) — they simply disagree. That also explains the null intervention: a model
+    already committed to a different action by mid-stack will not flip when nudged along a
+    group-mean axis.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-n">03</span><div>
+    <h2>Head to head</h2>
+  </div></div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>Metric</th>
+        <th><span class="tag tag-orion">ORION</span></th>
+        <th><span class="tag tag-autovla">AutoVLA</span></th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Action interface</td><td>planning token &rarr; VAE planner</td><td>LM action tokens</td></tr>
+        <tr><td>Depth &times; width</td><td>32 &times; 4096</td><td>36 &times; 2048</td></tr>
+        <tr><td>Benchmark</td><td>Bench2Drive (CARLA)</td><td>nuPlan navtest</td></tr>
+        <tr><td>ADE median</td><td>0.686 m</td><td class="c-autovla">0.038 m</td></tr>
+        <tr><td>Action-failure rate</td><td class="c-orion">44.6%</td><td class="c-autovla">8.3%</td></tr>
+        <tr><td>P+A&minus; rate</td><td class="c-orion">23.2%</td><td class="dim">not constructible</td></tr>
+        <tr><td>Observable reasoning</td><td>3 CoT rounds</td><td class="c-autovla">1 / 2,748</td></tr>
+        <tr><td>Failure probe &mdash; GT action</td><td>0.45&ndash;0.79</td><td>0.48&ndash;0.63</td></tr>
+        <tr><td>Failure probe &mdash; own action</td><td class="c-orion">0.94&ndash;0.96</td><td class="c-autovla">0.63&ndash;0.73</td></tr>
+        <tr><td>Decision commits at</td><td>L11&ndash;15 <span class="dim">(0.34&ndash;0.47)</span></td>
+            <td>L34&ndash;35 <span class="dim">(0.94&ndash;0.97)</span></td></tr>
+        <tr><td>Autoregressive propagation</td><td class="dim">n/a &mdash; single token</td>
+            <td class="c-autovla">6&ndash;20&times; amplification</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col rail rail-autovla">
+    <h3>AutoVLA&rsquo;s dominant failure is a different one</h3>
+    <p>Because AutoVLA emits its trajectory as ordinary vocabulary tokens, the logit lens applies
+    directly — an analysis ORION structurally cannot support. It shows the action decision forming
+    only in the <strong>last ~4 of 36 layers</strong>, then propagating: once one action token is
+    wrong the next is wrong <strong>73%</strong> of the time, against <strong>4%</strong> when the
+    prefix is clean.</p>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><div class="metric-k">P(err | prefix ok)</div>
+      <div class="metric-v">0.04</div><div class="metric-s">step 3&ndash;5</div></div>
+    <div class="metric"><div class="metric-k">P(err | prefix bad)</div>
+      <div class="metric-v" style="color:var(--autovla)">0.73</div><div class="metric-s">step 3&ndash;5</div></div>
+    <div class="metric"><div class="metric-k">Commitment depth</div>
+      <div class="metric-v">0.95</div><div class="metric-s">normalised, L34/36</div></div>
+    <div class="metric"><div class="metric-k">A&minus; threshold sweep</div>
+      <div class="metric-v">8.3&ndash;8.7%</div><div class="metric-s">incl. no backstop</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-n">04</span><div>
+    <h2>What would overturn this</h2>
+  </div></div>
+
+  <div class="note">
+    <p class="eyebrow">Primary confound</p>
+    <p><strong>Architecture and benchmark are not separated.</strong> ORION ran on adversarial
+    CARLA scenarios, AutoVLA on smooth real-world nuPlan where a constant-acceleration baseline
+    already reaches 0.90 m. The 5&times; gap in failure rate is at least partly task difficulty.
+    <em>Nothing here attributes the difference to architecture alone.</em></p>
+  </div>
+
+  <div class="col">
+    <p>Two further limits are load-bearing. AutoVLA&rsquo;s perception probes rest on 28 logs, with
+    lead-vehicle positives in only 17 of them — below the cross-scene bar the ORION study adopted,
+    so those numbers are flagged rather than headline. And in ORION the late-layer geometric scores
+    correlate with ADE at &rho;&nbsp;&asymp;&nbsp;&minus;0.45, so they partly restate the error they
+    are meant to explain.</p>
+    <p>The A&minus; label in AutoVLA is also softer than it looks: with ADE median 0.038 m, most
+    failures are adjacent-category confusions such as <code>MAINTAIN &rarr; DECELERATE</code>, not
+    dangerous driving.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-n">05</span><div>
+    <h2>Recommended next steps</h2>
+  </div></div>
+  <div class="col">
+    <p>Ordered by how much each one changes what can be claimed, not by effort. The first two are
+    prerequisites for publishing any cross-architecture statement at all.</p>
+  </div>
+
+  <ol class="steps">
+    <li>
+      <h3>Separate architecture from benchmark</h3>
+      <p>Run AutoVLA on its CARLA or Waymo benchmark, or on a difficulty-matched navtest slice.
+      Until one model is evaluated on both regimes, the headline comparison in §3 has an
+      uncontrolled variable and no causal reading is defensible.</p>
+      <span class="cost">largest threat to every current claim · ~1 day</span>
+    </li>
+    <li>
+      <h3>Teacher-forced action-token counterfactual</h3>
+      <p>Replace a wrong action token at step <em>t</em> with the ground-truth token and regenerate
+      the remainder. The propagation effect is so large (4% &rarr; 73%) that this converts the
+      strongest AutoVLA finding from correlational to causal at very low cost — and it is the one
+      intervention the null ORION result does not already rule out.</p>
+      <span class="cost">highest value per hour · ~2 GPU-hours</span>
+    </li>
+    <li>
+      <h3>Re-run the ORION intervention with a supervised direction</h3>
+      <p>Difference-of-means was the weakest available estimator and it failed. The trained
+      action-probe weight vector reaches 0.99 AUROC on controls and is the natural replacement.
+      Widen the surface beyond <code>&lt;waypoint_ego&gt;</code> to the visual and reasoning spans,
+      and raise <em>n</em> to 150&ndash;200 failures — 25 resolves only about &plusmn;5 pp.</p>
+      <span class="cost">~6&ndash;8 GPU-hours</span>
+    </li>
+    <li>
+      <h3>Attention analysis where the decision is actually formed</h3>
+      <p>AutoVLA settles its answer in the final ~4 layers. Trace how perception tokens feed those
+      layers — attention from action positions to critical-object positions, and head ablation.
+      This is where &ldquo;encoded but unused&rdquo; becomes a mechanism rather than a description.</p>
+      <span class="cost">follows from step 2 · ~1 day</span>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-n">06</span><div>
+    <h2>The claim worth defending</h2>
+  </div></div>
+  <div class="col rail rail-orion">
+    <p style="font-size:1.08rem;margin-bottom:12px">Across two architectures, a driving VLA that
+    acts wrongly is not one that has lost the information. It holds the scene <em>and</em> a
+    confident decision, and the two do not agree.</p>
+    <p>That is a narrower claim than the one the first ORION report made, and it survives the
+    circularity check that broke the original. It is also the claim the next round of experiments
+    is designed to make causal rather than descriptive.</p>
+  </div>
+</section>
+
+<footer>
+  ORION: 1,809 frames · 49 clips · 42 scenarios · clip-grouped CV · 3 seeds<br>
+  AutoVLA: 2,748 scenes · 28 logs · 36&times;2048 · logit lens 37&times;10<br>
+  Artefacts: POC_RESULT.md · AUTOVLA_POC_RESULT.md · figures A&ndash;E per study
+</footer>
+
+</div>

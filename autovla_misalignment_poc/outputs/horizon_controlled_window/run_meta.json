@@ -1,0 +1,51 @@
+{
+  "n_scenes_ok": 155,
+  "n_scene_fail": 1,
+  "n_units": 1049,
+  "n_unit_fail": 0,
+  "H": 20,
+  "max_tstar": 1,
+  "rows": [
+    {
+      "name": "normal",
+      "length": 0
+    },
+    {
+      "name": "win1",
+      "length": 1
+    },
+    {
+      "name": "win2",
+      "length": 2
+    },
+    {
+      "name": "win3",
+      "length": 3
+    },
+    {
+      "name": "win4",
+      "length": 4
+    },
+    {
+      "name": "win5",
+      "length": 5
+    },
+    {
+      "name": "win6",
+      "length": 6
+    },
+    {
+      "name": "win8",
+      "length": 8
+    },
+    {
+      "name": "full",
+      "length": 99
+    }
+  ],
+  "temperature": 0.01,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 7.691095546881358
+}

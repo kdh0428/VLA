@@ -1,0 +1,57 @@
+# 기본적으로 모두 제외하고, 코드와 보고서만 허용목록으로 추가합니다.
+/*
+
+!.gitignore
+!README.md
+!CONCLUSIONS.md
+
+# --- 추적할 디렉토리 ---
+!autovla_misalignment_poc/
+!vla_misalignment_poc/
+!pra_comparison/
+!tools/
+!reports/
+
+# 해당 디렉토리 안에서도 기본 제외 후 확장자별 허용
+autovla_misalignment_poc/**
+vla_misalignment_poc/**
+pra_comparison/**
+tools/**
+reports/**
+
+!autovla_misalignment_poc/**/
+!vla_misalignment_poc/**/
+!pra_comparison/**/
+!tools/**/
+!reports/**/
+
+!**/*.py
+!**/*.md
+!**/*.png
+!**/*.yaml
+!**/*.yml
+!**/summary.json
+!**/run_meta.json
+!**/narrative.json
+!**/layer_results.json
+!**/decay_test.json
+!**/early_step_contribution.json
+!**/analysis_console.txt
+
+# --- 용량이 큰 산출물은 항상 제외 ---
+**/records.jsonl
+**/units.jsonl
+**/*.jsonl
+**/tensors/
+**/*.npz
+**/*.npy
+**/*.ckpt
+**/*.pt
+**/*.pth
+**/*.pkl
+**/splits/
+**/__pycache__/
+**/*.pyc
+
+# 보조 문서
+!**/*.html

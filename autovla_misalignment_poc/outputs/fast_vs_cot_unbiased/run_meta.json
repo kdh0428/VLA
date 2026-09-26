@@ -1,0 +1,21 @@
+{
+  "n_ok": 500,
+  "n_fail": 0,
+  "conditions": [
+    "natural",
+    "fast",
+    "cot"
+  ],
+  "gen_conf": {
+    "max_length": 2048,
+    "temperature": 0.01,
+    "top_k": 0.0,
+    "top_p": 1.0
+  },
+  "seed": 20260915,
+  "fast_stub": "<think>\nThis is a straightforward scenario, and a direct decision can be made.\n</think>\n<answer>\nThe final output action is: ",
+  "cot_stem": "<think>\nThis is a complex",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 49.173273130257925
+}

@@ -1,0 +1,13 @@
+{
+  "n_ok": 2748,
+  "n_fail": 0,
+  "n_layers": 36,
+  "action_start_id": 151665,
+  "seed": 0,
+  "checkpoint": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+  "config": "/root/VLA/autovla/config/training/qwen2.5-vl-3B-nuplan-grpo-cot.yaml",
+  "elapsed_min": 48.14949604272842,
+  "cuda_visible_devices": "1",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128"
+}

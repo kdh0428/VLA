@@ -1,0 +1,44 @@
+{
+  "split": "/root/VLA/vla_misalignment_poc/splits/full_all.json",
+  "n_selected": 3132,
+  "n_warmup": 7896,
+  "n_failed": 0,
+  "n_differs_from_previous_run": 1289,
+  "n_layers": 32,
+  "detail_layers": [
+    24,
+    32
+  ],
+  "visual_layers": [
+    0,
+    8,
+    16,
+    20,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "heavy_n": 250,
+  "checkpoint": "/root/VLA/orion/ckpts/Orion.pth",
+  "config": "/root/VLA/vla_misalignment_poc/configs/orion_poc_cot_fp16.py",
+  "seed": 0,
+  "elapsed_h": 4.6719602231846915,
+  "cuda_visible_devices": "0",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "layout": {
+    "h_in": "(32, n_wp, 4096) fp16 layer input; h_in[0] = embeddings",
+    "attn_out": "(32, n_wp, 4096) self_attn residual contribution",
+    "mlp_out": "(32, n_wp, 4096) mlp residual contribution",
+    "identity": "h_out[l] = h_in[l] + attn_out[l] + mlp_out[l] = h_in[l+1]",
+    "attn_map": "(8, 32 heads, n_wp, seq) fp16, rows are <waypoint_ego> queries",
+    "q_proj/k_proj/v_proj": "(8, n_wp, 4096) fp16, pre-RoPE",
+    "mlp_gate/mlp_up": "(8, n_wp, 11008) fp16; gated = silu(gate)*up",
+    "visual_hidden": "(12, n_vis, 4096) fp16 at visual_layers, heavy samples only"
+  }
+}

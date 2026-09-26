@@ -1,0 +1,24 @@
+# Preprocessing config for the AutoVLA PoC subset.
+#
+# Mirrors config/dataset/qwen2.5-vl-72B-nuplan.yaml but points at the navtest split and at
+# the scene filter restricted to the 28 logs whose OpenScene camera blobs we downloaded
+# (navtest ∩ sensors-on-disk ∩ metadata).
+#
+# `dataset_path` must contain the literal string "placeholder": NuplanCoTAnnotationDataset
+# swaps it for "navsim_logs" / "sensor_blobs" to locate the two trees
+# (dataset_utils/preprocessing/nuplan_dataset.py:43-48).
+#
+# pretrained_model_path is only used by the CoT-annotation path (the 72B model). We run the
+# no-CoT generator, which never instantiates it, so the 3B path is fine here.
+
+name: autovla-poc-navtest-subset
+description: AutoVLA PoC preprocessing over the navtest subset with local camera blobs
+
+pretrained_model_path: ./Qwen2.5-VL-3B-Instruct
+
+batch_size: 1
+num_workers: 8
+
+dataset_name: nuplan
+dataset_path: ./dataset/nuplan/placeholder/test
+scene_filter: /root/VLA/autovla_misalignment_poc/configs/scene_filter_navtest_subset.yaml

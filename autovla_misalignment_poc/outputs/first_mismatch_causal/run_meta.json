@@ -1,0 +1,19 @@
+{
+  "n_ok": 1159,
+  "n_fail": 0,
+  "conditions": [
+    "original",
+    "gt",
+    "nn"
+  ],
+  "gen_conf": {
+    "max_length": 2048,
+    "temperature": 0.01,
+    "top_k": 0.0,
+    "top_p": 1.0
+  },
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 15.716848476727803
+}

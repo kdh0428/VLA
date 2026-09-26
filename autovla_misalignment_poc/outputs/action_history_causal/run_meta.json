@@ -1,0 +1,21 @@
+{
+  "n_ok": 208,
+  "n_fail": 0,
+  "n_perturbations": 1408,
+  "conditions": [
+    "normal",
+    "hist_attn_mask",
+    "recent_attn_mask",
+    "hist_emb_neutral",
+    "recent_emb_neutral",
+    "gt_history",
+    "recent_gt"
+  ],
+  "temperature": 0.01,
+  "seed": 0,
+  "blocked_attention_calls": 688104,
+  "neutralised_embedding_calls": 21930,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 19.48218560218811
+}

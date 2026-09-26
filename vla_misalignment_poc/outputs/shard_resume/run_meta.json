@@ -1,0 +1,28 @@
+{
+  "shard_split": "/root/VLA/vla_misalignment_poc/splits/poc_resume.json",
+  "output": "/root/VLA/vla_misalignment_poc/outputs/shard_resume",
+  "config": "/root/VLA/vla_misalignment_poc/configs/orion_poc_cot_fp16.py",
+  "checkpoint": "/root/VLA/orion/ckpts/Orion.pth",
+  "seed": 0,
+  "layers": "all",
+  "n_selected_done": 1104,
+  "n_warmup_frames": 5771,
+  "n_failed": 0,
+  "fail_reasons": {},
+  "hidden_shape": {
+    "n_layers_plus_embed": 33,
+    "n_saved_layers": 33,
+    "per_layer_shape": [
+      1,
+      4096
+    ],
+    "seq_len": 919,
+    "n_waypoint_positions": 1
+  },
+  "elapsed_sec": 7299.831414461136,
+  "cuda_visible_devices": "1",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "numpy": "1.26.4",
+  "clips_missing_from_infos": []
+}
