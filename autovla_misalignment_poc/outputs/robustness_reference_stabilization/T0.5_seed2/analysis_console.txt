@@ -1,0 +1,17 @@
+units {'A-': 365, 'A+': 1043}  prev available {'A-': 365, 'A+': 1037}
+
+== A- ==  reference quality (ADE / FDE m, token==GT): gt: 0.07/0.08/1.00  prev: 1.87/4.56/0.16
+row              n               amplif %   FDE5  frac GT(amp)  frac GT(FDE)         p
+normal         365   46.3 [ 37.6, 54.7]   6.19             –             –         –
+gt_w4          365    6.0 [  2.6,  9.4]   1.95          1.00          1.00   1.1e-44
+gt_all         365    4.1 [  1.3,  7.7]   1.79          1.00          1.00   8.8e-47
+prev_w4        365   31.2 [ 22.8, 48.2]   5.17          0.37          0.24   5.9e-07
+prev_all       365   27.4 [ 17.6, 45.0]   5.06          0.45          0.26   4.2e-10
+
+== A+ ==  reference quality (ADE / FDE m, token==GT): gt: 0.06/0.06/1.00  prev: 0.85/1.88/0.24
+row              n               amplif %   FDE5  frac GT(amp)  frac GT(FDE)         p
+normal        1043    5.3 [  3.4,  7.2]   2.33             –             –         –
+gt_w4         1043    0.9 [  0.0,  2.1]   1.09          1.00          1.00   1.7e-09
+gt_all        1043    0.6 [  0.0,  1.8]   1.03          1.00          1.00   1.9e-11
+prev_w4       1037    3.7 [  1.6,  6.8]   1.87          0.37          0.37     0.075
+prev_all      1037    4.2 [  1.9,  7.8]   1.84          0.22          0.38      0.28

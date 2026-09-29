@@ -91,6 +91,9 @@ def parse_args():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--sanity", action="store_true", help="print shape/consistency checks")
     ap.add_argument("--force-heavy", action="store_true", help="heavy dump for every sample")
+    ap.add_argument("--tensor-arms", default="NC",
+                    help="arms whose .npz tensors are written (records keep both arms). "
+                         "'N' alone needs ~18 GB instead of ~56 GB for 2748 scenes")
     return ap.parse_args()
 
 
@@ -272,8 +275,8 @@ def topk_stats(logits_row, k):
 
 def main() -> None:
     args = parse_args()
-    if os.environ.get("CUDA_VISIBLE_DEVICES") != "0":
-        raise SystemExit("this run is pinned to GPU 0: launch with CUDA_VISIBLE_DEVICES=0")
+    if os.environ.get("CUDA_VISIBLE_DEVICES") != "1" and not os.environ.get("VLA_ANY_GPU"):
+        raise SystemExit("this run is pinned to GPU 1 (RTX 5090): launch with CUDA_VISIBLE_DEVICES=1")
     for k in ("output", "scenes", "annotations", "records", "config"):
         setattr(args, k, os.path.abspath(getattr(args, k)))
     os.makedirs(os.path.join(args.output, "tensors"), exist_ok=True)
@@ -294,7 +297,7 @@ def main() -> None:
 
     t0 = time.time()
     model = AutoVLA(cfg, inference=True, device="cuda:0")
-    sd = torch.load(args.checkpoint, map_location="cpu")["state_dict"]
+    sd = torch.load(args.checkpoint, map_location="cpu", mmap=True)["state_dict"]
     missing = model.load_state_dict(
         {k[len("autovla."):]: v for k, v in sd.items() if k.startswith("autovla.")}, strict=False)
     model.to("cuda:0").eval()
@@ -515,7 +518,8 @@ def main() -> None:
                 if cot_pos:
                     blob["cot_positions"] = np.asarray(cot_pos, np.int32)
 
-                np.savez(os.path.join(args.output, "tensors", f"{token}_{name}.npz"), **blob)
+                if name in args.tensor_arms:
+                    np.savez(os.path.join(args.output, "tensors", f"{token}_{name}.npz"), **blob)
                 arms[name] = {
                     "generated_text": text,
                     "n_generated": len(full_new),
@@ -528,7 +532,8 @@ def main() -> None:
                     "truncated": truncated,
                     "runaway_action_tokens": len(all_act) if runaway else 0,
                     "trajectory_pred": traj[:, :2].tolist(),
-                    "tensor_file": f"tensors/{token}_{name}.npz",
+                    "tensor_file": (f"tensors/{token}_{name}.npz"
+                                    if name in args.tensor_arms else None),
                     "heavy_dump": bool(heavy and name == "C"),
                     "has_detail": cap.keep_detail is not None,
                 }
@@ -606,7 +611,7 @@ def main() -> None:
         "detail_tokens": sorted(detail_tokens),
         "elapsed_h": (time.time() - tstart) / 3600,
         "cuda_visible_devices": os.environ.get("CUDA_VISIBLE_DEVICES"),
-        "gpu": torch.cuda.get_device_name(0), "torch": torch.__version__,
+        "gpu": torch.cuda.get_device_name(0), "torch": torch.__version__, "tensor_arms": args.tensor_arms,
         "layout": {
             "h_in": "(36, n_kept, 2048) fp16 - layer input; h_in[0] = embeddings",
             "attn_out": "(36, n_kept, 2048) fp16 - self_attn residual contribution",

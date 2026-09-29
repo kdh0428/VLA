@@ -3,7 +3,9 @@
 AutoVLA(Qwen2.5-VL-3B / nuPlan·navsim)와 ORION(Bench2Drive)에서
 **인식은 맞는데 행동이 틀어지는 현상**과 **작은 action-token 편차가 궤적 실패로 증폭되는 기전**을 분석한 PoC입니다.
 
-> **결론 요약은 [CONCLUSIONS.md](CONCLUSIONS.md)** 를 보세요. 실험 10건의 질문·수치·해석이 한 문서에 정리돼 있습니다.
+> **새 서버에서 이어서 실험하려면 [HANDOFF.md](HANDOFF.md)** 부터 보세요 (환경 구축, 함정, 다음 실험 후보).
+>
+> **결론 요약은 [CONCLUSIONS.md](CONCLUSIONS.md)** 를 보세요. 실험 19건의 질문·수치·해석이 한 문서에 정리돼 있습니다.
 
 ## 구조
 
@@ -35,6 +37,15 @@ tools/, reports/              보조 스크립트 및 문서
 | Layer-wise state patching | `.../prev_action_state_patching/PREV_ACTION_STATE_PATCHING.md` |
 | Temporal feedback window | `.../temporal_feedback_window/TEMPORAL_FEEDBACK_WINDOW.md` |
 | Horizon-controlled window | `.../horizon_controlled_window/HORIZON_CONTROLLED_WINDOW.md` |
+| 직전 토큰 identity 분해 (motion vs embedding) | `.../prev_action_identity_decomposition/PREV_ACTION_IDENTITY.md` |
+| 비-oracle 참조 안정화 (CTRA, 이전 계획) | `.../reference_stabilization/REFERENCE_STABILIZATION.md` |
+| Receding-horizon 재계획 (pseudo closed loop) | `.../receding_horizon_replanning/RECEDING_HORIZON.md` |
+| 합의 참조 (여러 과거 계획) | `.../consensus_reference_stabilization/CONSENSUS_REFERENCE.md` |
+| 배포 조건 안정화 (교정 시점 없음) | `.../natural_reference_stabilization/NATURAL_REFERENCE.md` |
+| PDM-Closed 참조 | `.../pdm_reference_stabilization/PDM_REFERENCE.md` |
+| seed·온도 강건성 | `.../robustness_reference_stabilization/ROBUSTNESS.md` |
+| Best-of-N 선택 (N 8, T 0.7) | `.../best_of_n_selection/BEST_OF_N.md` |
+| Best-of-N 선택 (N 16–32, T 1.0–1.3, 3 seed) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
 
 ## 저장소에 포함하지 않은 것
 

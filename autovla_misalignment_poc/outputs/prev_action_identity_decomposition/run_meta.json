@@ -1,0 +1,34 @@
+{
+  "n_scenes_ok": 208,
+  "n_scene_fail": 0,
+  "n_units": 1408,
+  "n_unit_fail": 0,
+  "rows": [
+    "normal",
+    "gt_history",
+    "recent_gt",
+    "geo_nn_gt",
+    "emb_nn_gt",
+    "geo_nn_self",
+    "emb_nn_self",
+    "random_tok",
+    "mean_emb"
+  ],
+  "temperature": 0.01,
+  "seed": 0,
+  "n_untrained_tokens": 410,
+  "dup_cos_threshold": 0.999,
+  "embedding_geometry": {
+    "note": "offline, CPU: ridge CV R^2 of action embeddings from codebook geometry",
+    "geom_dxdyyaw_linear": 0.026,
+    "geom_poly3": 0.088,
+    "codebook48_linear": -0.021,
+    "codebook48_poly2": 0.08,
+    "rsa_spearman": 0.06,
+    "tied_embeddings": true
+  },
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 4.3073113560676575
+}

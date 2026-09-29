@@ -95,7 +95,7 @@ def main() -> None:
     cfg["model"]["codebook_cache_path"] = os.path.join(AUTOVLA_DIR, "codebook_cache/agent_vocab.pkl")
 
     model = AutoVLA(cfg, inference=True, device="cuda:0")
-    sd = torch.load(args.checkpoint, map_location="cpu")["state_dict"]
+    sd = torch.load(args.checkpoint, map_location="cpu", mmap=True)["state_dict"]
     model.load_state_dict({k[len("autovla."):]: v for k, v in sd.items()
                            if k.startswith("autovla.")}, strict=False)
     model.to("cuda:0").eval()

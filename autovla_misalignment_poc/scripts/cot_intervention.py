@@ -181,7 +181,7 @@ def parse_args():
 
 def main() -> None:
     args = parse_args()
-    if os.environ.get("CUDA_VISIBLE_DEVICES") != "1":
+    if os.environ.get("CUDA_VISIBLE_DEVICES") != "1" and not os.environ.get("VLA_ANY_GPU"):
         raise SystemExit("pinned to GPU 1: launch with CUDA_VISIBLE_DEVICES=1")
     for k in ("records", "tensors", "subsets", "scenes", "output", "config"):
         setattr(args, k, os.path.abspath(getattr(args, k)))
@@ -214,7 +214,7 @@ def main() -> None:
     cfg["model"]["codebook_cache_path"] = os.path.join(AUTOVLA_DIR, "codebook_cache/agent_vocab.pkl")
     gen_conf = cfg["inference"]["sample"]
     model = AutoVLA(cfg, inference=True, device="cuda:0")
-    sd = torch.load(args.checkpoint, map_location="cpu")["state_dict"]
+    sd = torch.load(args.checkpoint, map_location="cpu", mmap=True)["state_dict"]
     model.load_state_dict({k[len("autovla."):]: v for k, v in sd.items() if k.startswith("autovla.")}, strict=False)
     model.to("cuda:0").eval()
     del sd

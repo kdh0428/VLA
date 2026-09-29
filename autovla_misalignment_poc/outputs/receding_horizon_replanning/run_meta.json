@@ -1,0 +1,73 @@
+{
+  "n_ok": 208,
+  "n_fail": 0,
+  "n_plans": 6943,
+  "conditions": [
+    [
+      "ol",
+      10,
+      "log",
+      0
+    ],
+    [
+      "m2_log",
+      2,
+      "log",
+      0
+    ],
+    [
+      "m2_exec",
+      2,
+      "exec",
+      0
+    ],
+    [
+      "m4_log",
+      4,
+      "log",
+      0
+    ],
+    [
+      "m4_exec",
+      4,
+      "exec",
+      0
+    ],
+    [
+      "m8_log",
+      8,
+      "log",
+      0
+    ],
+    [
+      "m8_exec",
+      8,
+      "exec",
+      0
+    ],
+    [
+      "m2_exec_prev",
+      2,
+      "exec",
+      1
+    ],
+    [
+      "m4_exec_prev",
+      4,
+      "exec",
+      3
+    ],
+    [
+      "m8_exec_prev",
+      8,
+      "exec",
+      3
+    ]
+  ],
+  "eval_steps": 16,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 124.73976287047068
+}

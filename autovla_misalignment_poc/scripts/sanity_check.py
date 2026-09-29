@@ -67,7 +67,7 @@ def main() -> None:
     print("action_start_id:", model.action_start_id)
     print("use_cot:", model.use_cot)
 
-    sd = torch.load(args.checkpoint, map_location="cpu")["state_dict"]
+    sd = torch.load(args.checkpoint, map_location="cpu", mmap=True)["state_dict"]
     sd = {k[len("autovla."):]: v for k, v in sd.items() if k.startswith("autovla.")}
     missing, unexpected = model.load_state_dict(sd, strict=False)
     print(f"loaded checkpoint: missing={len(missing)} unexpected={len(unexpected)}")

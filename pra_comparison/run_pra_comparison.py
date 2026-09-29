@@ -127,7 +127,7 @@ def autovla_samples(horizon: int) -> tuple[list[L.Sample], list[L.Sample], Count
             decl_lon=lon, decl_lat=lat,
             pred_delta=_pos_to_delta(c["trajectory_pred"], horizon), gt_delta=gt_d,
             gt_scene_known=bool(anno.get("boxes")),
-            meta={**base, "tensor_file": os.path.join(AV_DIR, c["tensor_file"]),
+            meta={**base, "tensor_file": os.path.join(AV_DIR, c["tensor_file"]) if c["tensor_file"] else None,
                   "tensor_file_armN": os.path.join(AV_DIR, n["tensor_file"])}))
     return arm_c, arm_n, excl
 

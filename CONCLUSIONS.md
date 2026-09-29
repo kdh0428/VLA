@@ -10,8 +10,10 @@
 
 1. 실패는 **perception 단계보다 결정·실행 결합 단계**에서 주로 발생합니다.
 2. **CoT 텍스트는 action의 원인이라기보다 느슨하게 결합**되어 있고, CoT를 강제하면 오히려 성능이 떨어집니다.
-3. 작은 action-token 편차가 궤적 실패로 증폭되는 기전은 **직전에 생성한 action 토큰의 identity가 residual stream을 통해 다음 action을 조건화하는 1-step autoregressive feedback**입니다. 특정 layer나 긴 history attention이 아닙니다.
+3. 작은 action-token 편차가 궤적 실패로 증폭되는 기전은 **직전에 생성한 action 토큰의 identity가 residual stream을 통해 다음 action을 조건화하는 1-step autoregressive feedback**입니다. 특정 layer나 긴 history attention이 아닙니다. 그 identity 중 결과를 결정하는 것은 **토큰이 뜻하는 motion(codebook 기하)**이며, embedding 벡터의 근접성이 아닙니다.
 4. 첫 mismatch 직후 **2–4 step**의 feedback만 안정화해도 이후 발산의 대부분(90–95%)이 사라집니다. 다만 교정을 멈추면 효과가 서서히 감쇠하므로 영구적 안정화는 아닙니다.
+5. 모델은 **조건화된 motion을 66–89% 그대로 따라갑니다.** 그래서 GT 없이 쓸 수 있는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고, 배포 조건에서는 정상 장면의 손해 때문에 순이득이 없습니다(실험 12–16).
+6. 대신 **모델 자신이 샘플한 후보(T 1.0, 16개) 중 디코딩 엔트로피가 가장 낮은 계획을 고르면**, GT·외부 참조·교정 시점 없이 모집단 실패율이 1.56 → 1.03%(−34%), FDE가 0.59 → 0.38 m로 줄어듭니다(3 seed 합산, 실험 18–19).
 
 ---
 
@@ -29,6 +31,15 @@
 | 8 | Layer-wise state patching | 어느 layer가 그 효과를 운반하는가 | `.../outputs/prev_action_state_patching/` |
 | 9 | Temporal feedback window | 몇 step을 안정화해야 하는가 | `.../outputs/temporal_feedback_window/` |
 | 10 | Horizon-controlled window | 그 window가 horizon 교란 때문은 아닌가 | `.../outputs/horizon_controlled_window/` |
+| 11 | 직전 토큰 identity 분해 | identity 중 motion인가 embedding인가 | `.../outputs/prev_action_identity_decomposition/` |
+| 12 | 비-oracle 참조 안정화 | GT 없이(CTRA, 이전 frame 계획) 교정할 수 있는가 | `.../outputs/reference_stabilization/` |
+| 13 | Receding-horizon 재계획 | 재계획이 feedback 발산을 끊는가 (pseudo closed loop) | `.../outputs/receding_horizon_replanning/` |
+| 14 | 합의 참조 | 여러 과거 계획의 합의가 더 좋은 참조인가 | `.../outputs/consensus_reference_stabilization/` |
+| 15 | 배포 조건 안정화 | 교정 시점 없이 자연 디코딩에 적용하면 | `.../outputs/natural_reference_stabilization/` |
+| 16 | PDM-Closed 참조 | 규칙 기반 planner 궤적이 좋은 참조인가 | `.../outputs/pdm_reference_stabilization/` |
+| 17 | seed·온도 강건성 | 실험 12의 효과가 샘플링에 강건한가 | `.../outputs/robustness_reference_stabilization/` |
+| 18 | Best-of-N 선택 (N 8, T 0.7) | 조건화 대신 선택하면 | `.../outputs/best_of_n_selection/` |
+| 19 | Best-of-N 선택 (N 16–32, T 1.0–1.3) | 후보 다양성을 늘리면 | `.../outputs/best_of_n_selection_n16_T1/` |
 
 ---
 
@@ -168,6 +179,57 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 
 ---
 
+## 9b. identity 중 결과를 가르는 것은 motion이다 (실험 11)
+
+직전 action 토큰 하나를 조건별 대체 토큰으로 바꾸고 이후는 자유 생성했습니다(실험 7–8과 같은 harness, A− 365 / A+ 1043 단위).
+사전 분석: action embedding은 `lm_head`와 tied이고, codebook 기하를 선형으로 거의 담지 않습니다(CV R² ≤ 0.09, 거리 순위상관 0.06). 410개 토큰은 embedding이 사실상 동일한 미학습 군집입니다.
+
+| 직전 토큰 := | A− 증폭률 | Recent-GT 효과 대비 | A+ 증폭률 |
+|---|---:|---:|---:|
+| 자기 토큰 (Normal) | 47.1% | – | 4.2% |
+| GT (Recent-GT) | 7.9% | 100% | 0.7% |
+| **GT와 motion이 가장 비슷한 다른 토큰** | **8.5%** | **99%** | **0.8%** |
+| **자기와 motion이 가장 비슷한 다른 토큰** | **43.8%** (p = 0.18) | 8% | 7.2% |
+| 무작위 토큰 / 평균 embedding | 51.5 / 52.1% | – | **43.2 / 40.5%** |
+
+- motion과 embedding 근접을 공동 회귀하면(두 변수 상관 −0.04), 대체 토큰이 motion으로 GT에서 1 SD 멀어질 때 A− FDE +1.99 m [+1.52, +2.70], 증폭 +16.1%p이고, embedding 근접은 motion을 고정하면 효과가 없습니다(전체 +0.03 m [−0.13, +0.19]).
+- motion 정보를 없애면 정상 장면(A+)도 4% → 40%대로 무너집니다. 직전 action의 motion은 오류를 증폭하는 경로이자 정상 주행을 유지하는 운동학적 prior이므로, 조건화를 끊는 방식은 해결책이 아닙니다.
+- **mitigation 함의**: 안정화에 정확한 GT 토큰은 필요 없고, GT와 motion이 같으면 충분합니다. 다만 실험 12–16에서 보듯 비-oracle 참조는 GT보다 훨씬 부정확해, 외부 planner 궤적을 조건화하는 것은 오히려 해롭습니다(§9c).
+- 한계: embedding 조건의 조작 강도가 약하고(Δcos 약 ±0.1), motion 거리는 codebook 48-d L2 정의입니다.
+
+## 9c. GT 없는 mitigation: 조건화는 실패하고, 선택은 통한다 (실험 12–19)
+
+**조건화 교정 (context에 참조 motion을 넣음)**
+
+| 실험 | 참조 / 조건 | 실패 장면 | 정상 장면 | 판정 |
+|---|---|---|---|---|
+| 12 | 이전 frame 계획, oracle 시점 | A− 증폭 47.1 → 33.2% (GT 효과의 34%) | 4.2 → 3.2% | 부분 효과 |
+| 12 | CTRA 운동학 외삽 | 효과 없음 / 악화 | 4.2 → 9–16% | 해로움 |
+| 14 | 0.5–1.5 s 전 세 계획의 medoid 합의 | 이전 계획보다 −7.1%p 추가 | FDE +0.28 m | 트레이드오프 |
+| 16 | PDM-Closed 궤적 | 47.1 → 31.0% (FDE 거의 불변) | **4.2 → 20.1%** | 해로움 |
+| 17 | 이전 계획, seed 0–2 × T 0.01/0.5 | 6개 실행 모두 45–48 → 31–33% | 해 없음 | 강건 |
+| 15 | 이전 계획, **교정 시점 없이 상시 적용** | 자연 실패 A− 65 → 33% | A− 0 → 2%, FDE +0.8 m | **모집단 1.24 → 2.60%로 악화** |
+
+- 모델은 조건화된 참조의 motion으로 실행 토큰을 66–89% 끌어갑니다(GT, 이전 계획, PDM 모두). 그래서 효과는 참조↔GT motion 거리로 결정되고(가까운 1/3: −30.6%p, 먼 1/3: +13.1%p), 정상 장면에서는 모델 자신이 어떤 비-oracle 참조보다 정확해 교정이 손해가 됩니다.
+- 모델 엔트로피로 켤 장면을 고르는 trigger는 실패 장면을 AUROC 0.88로 구별하지만 교정 위치보다 뒤를 봐야 하고, 인과적 신호(첫 step, AUROC 0.70)로는 모집단 순이득이 유의하지 않습니다(−0.18%p [−0.53, +0.19]).
+
+**재계획 (실험 13, pseudo closed loop)**: 2–4 step마다 로그 관측으로 재계획하면 실패 장면의 5 s 실패가 59.6 → 23.5%로 줄지만 로그 카메라를 통한 누출이 섞여 있고, 자기 실행 속도를 되먹이면 8 s 오차가 +2.5–5.5 m 커지는 상태 수준 feedback이 생기며, 재계획 안에서 이전 계획으로 묶으면 회복을 막습니다.
+
+**선택 (모델 자신의 후보 중 고름, context 불변)**
+
+| 설정 | 규칙 | 실패 장면 Δ A− | 모집단 Δ A− | 모집단 Δ FDE5 |
+|---|---|---|---|---|
+| N 8, T 0.7 | 최소 엔트로피 | −11.5%p | +0.11%p (n.s.) | −0.17 m |
+| N 16, T 1.0, seed 0/1/2 | 최소 엔트로피 | −26.9 / −32.7 / −25.0%p | **3 seed 합산 −0.53%p [−0.89, −0.06]** (1.56 → 1.03%) | **−0.21 m [−0.31, −0.09]** |
+| N 32, T 1.0 | 최소 엔트로피 | −36.5%p | −0.36%p (n.s.) | −0.18 m |
+| N 32, T 1.3 | 최소 엔트로피 | −30.8%p | +0.41%p (n.s.) | +0.01 m |
+| N 16, T 1.0, 3 seed | 최대 log-likelihood | – | −0.41%p [−0.82, +0.04] | −0.18 m [−0.26, −0.09] |
+
+- 선택은 조건화와 달리 정상 장면을 해치지 않습니다(모든 후보가 모델 분포 안에 있음). 이득의 상한은 후보 다양성이 정합니다(oracle 선택의 잔여 실패: N 8 T 0.7에서 29%, N 16 T 1.0에서 12%). T 1.3은 정상 장면 후보까지 퍼뜨려 역효과가 납니다.
+- 엔트로피는 10 step 전체로 계산해야 합니다(처음 2–4 step만 쓰면 모집단 실패율이 오히려 증가).
+
+---
+
 ## 10. 종합 그림
 
 ```
@@ -187,15 +249,16 @@ perception (대체로 보존)
 ```
 
 - 실패의 축은 "무엇을 보았는가"가 아니라 **"직전에 무엇을 출력했는가"**입니다.
-- 이는 mitigation 설계에 직접 쓰입니다: 첫 mismatch 검출 후 **2–4 step 동안만** 직전 action 조건화를 안정화(재계획, 앙상블, 또는 conditioning 보정)하면 궤적 실패의 대부분을 막을 수 있습니다. 다만 그 이후로도 주기적 재안정화가 필요합니다.
+- oracle 교정으로는 2–4 step 안정화가 궤적 실패의 대부분을 막지만, GT 없는 참조로 조건화를 교정하면 모델이 그 참조를 따라가 정상 장면이 손해를 봅니다(§9c). 배포 가능한 순이득은 **조건화가 아니라 선택**에서 나왔습니다: 모델 자신의 다양한 후보 중 디코딩 엔트로피가 가장 낮은 계획을 고르는 것입니다.
 
 ---
 
 ## 11. 한계
 
 - **표본**: A− 장면은 52개(그중 t*=0은 17개)입니다. log cluster CI가 넓습니다.
-- **단일 seed, 거의 greedy decoding**(T=0.01). 샘플링 다양성에 따른 변동은 다루지 않았습니다.
-- **평가 horizon 5 s**. 모델의 계획 길이가 10 token이라 그 이상은 분포 밖이며, 장기 안정성은 closed-loop 재계획 실험이 필요합니다.
+- **seed와 decoding**: 실험 1–16은 단일 seed, T = 0.01입니다. 실험 12의 핵심 효과는 seed 0–2 × T 0.01/0.5에서 재현되었고(실험 17), 실험 19는 3 seed를 합산했습니다.
+- **평가 horizon 5 s**. 모델의 계획 길이가 10 token이라 그 이상은 분포 밖입니다. 실험 13의 8 s 재계획은 카메라가 로그를 따르는 pseudo closed loop이며, 진짜 closed-loop 평가(NAVSIM v2 pseudo-simulation 등)는 하지 않았습니다.
+- **GPU**: 실험 14, 15, 18, 19(seed 0–2)는 RTX 3080 Ti, 나머지는 RTX 5090입니다. 실패 장면은 모델이 확신하지 못하는 경계 장면이라 GPU 간 부동소수 차이만으로도 결과가 바뀝니다(3080 Ti에서 5090 자연 실패 장면의 A− 재현 65%). 모든 비교는 같은 실행 안의 쌍대 비교입니다.
 - **교정 정의**: 조건화 context만 GT로 두고 실행 action은 모델 출력입니다. 실제 주행에서 궤적을 교정하는 것과는 다릅니다.
 - **수치 재현성**: 조건을 batch로 묶어 계산하므로 batch 크기가 다른 이전 실험과 토큰 재현율이 87–94%입니다. 모든 비교는 같은 batch 안의 쌍대 비교입니다.
 - **ORION**은 P/R/A 비교에만 사용했고, 기전 실험(7–10)은 AutoVLA에서만 수행했습니다.
@@ -216,6 +279,8 @@ CUDA_VISIBLE_DEVICES=1 python scripts/action_history_causal.py      # 실험 7
 CUDA_VISIBLE_DEVICES=1 python scripts/prev_action_state_patching.py # 실험 8
 CUDA_VISIBLE_DEVICES=1 python scripts/temporal_feedback_window.py   # 실험 9
 CUDA_VISIBLE_DEVICES=1 python scripts/horizon_controlled_window.py  # 실험 10
+CUDA_VISIBLE_DEVICES=1 python scripts/prev_action_identity_decomposition.py  # 실험 11
+# 실험 12-19: bash ../tools/regenerate_autovla.sh (단계와 인자는 스크립트 머리말)
 python scripts/analyze_<실험명>.py                                   # 분석·figure·보고서
 ```
 

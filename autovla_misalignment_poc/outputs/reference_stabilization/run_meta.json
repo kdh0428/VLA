@@ -1,0 +1,29 @@
+{
+  "n_scenes_ok": 208,
+  "n_scene_fail": 0,
+  "n_units": 1408,
+  "n_unit_fail": 0,
+  "rows": [
+    "normal",
+    "gt_w2",
+    "gt_w4",
+    "gt_all",
+    "kin_w2",
+    "kin_w4",
+    "kin_all",
+    "prev_w2",
+    "prev_w4",
+    "prev_all"
+  ],
+  "windows": {
+    "w2": 2,
+    "w4": 4,
+    "all": 99
+  },
+  "temperature": 0.01,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 9.729834540685017
+}

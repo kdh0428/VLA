@@ -30,6 +30,7 @@ reports/**
 !**/*.png
 !**/*.yaml
 !**/*.yml
+!tools/*.sh
 !**/summary.json
 !**/run_meta.json
 !**/narrative.json
@@ -55,3 +56,6 @@ reports/**
 
 # 보조 문서
 !**/*.html
+
+# 증분 전처리용 필터(재생성됨)
+**/frame_index/*.yaml
