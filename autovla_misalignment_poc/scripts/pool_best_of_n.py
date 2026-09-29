@@ -18,7 +18,7 @@ if __name__ == "__main__":
         U=[json.loads(l) for l in open(f"{run}/units.jsonl")]
         nA=sum(u["group"]=="A-" for u in U); nR=len(U)-nA
         w={"A-":52/nA,"random":(2747-52)/nR}
-        for rule in ("min_entropy","max_loglik","prev_consist","medoid"):
+        for rule in ("min_entropy","max_loglik","ranksum","prev_consist","medoid"):
             for u in U:
                 by[rule][u["log"]].append((w[u["group"]], float(u[rule]["a_minus"])-float(u["normal"]["a_minus"]), u[rule]["fde5"]-u["normal"]["fde5"], float(u["normal"]["a_minus"]), u["normal"]["fde5"]))
     for rule,b in by.items():

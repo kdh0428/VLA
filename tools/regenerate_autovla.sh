@@ -21,7 +21,7 @@
 #   exp16   reference_stabilization, PDM 참조                (11분)
 #   exp17   seed·온도 강건성 5회                              (50분)
 #   exp18   best_of_n_selection N 8 T 0.7                  (15분)
-#   exp19   best_of_n_selection N 16 T 1.0 seed 0-2 + N 32  (1시간)
+#   exp19   best_of_n_selection N·T 곡선 + N 16 T 1.0 seed 0-4 (2.5시간)
 #
 # GPU: 모든 실험은 CUDA_VISIBLE_DEVICES=1 (RTX 5090, CUDA_DEVICE_ORDER=PCI_BUS_ID)로 고정돼 있습니다.
 # 다른 GPU 구성이면 GPU=0 VLA_ANY_GPU=1 로 실행하세요 (수치가 소폭 달라질 수 있음; 한 실험 안의 비교는 쌍대라 유효).
@@ -70,9 +70,12 @@ has exp17  && { step exp17;  for cfg in "0.01 1" "0.01 2" "0.5 0" "0.5 1" "0.5 2
 has exp18  && { step exp18;  python scripts/best_of_n_selection.py || exit 1; python scripts/analyze_best_of_n.py; }
 has exp19  && { step exp19;  for cfg in "16 1.0 0 outputs/best_of_n_selection_n16_T1" "16 1.0 1 outputs/best_of_n_selection_n16_T1_seed1" \
                                         "16 1.0 2 outputs/best_of_n_selection_n16_T1_seed2" "32 1.0 0 outputs/best_of_n_selection_n32_T1.0" \
-                                        "32 1.3 0 outputs/best_of_n_selection_n32_T1.3"; do set -- $cfg
+                                        "32 1.3 0 outputs/best_of_n_selection_n32_T1.3" \
+                                        "16 1.0 3 outputs/best_of_n_selection_n16_T1_seed3" "16 1.0 4 outputs/best_of_n_selection_n16_T1_seed4" \
+                                        "16 0.85 0 outputs/best_of_n_selection_n16_T0.85" "16 1.15 0 outputs/best_of_n_selection_n16_T1.15" \
+                                        "4 1.0 0 outputs/best_of_n_selection_n4_T1.0" "8 1.0 0 outputs/best_of_n_selection_n8_T1.0"; do set -- $cfg
                                  python scripts/best_of_n_selection.py --n $1 --temperature $2 --seed $3 --output $4 || exit 1
                                  python scripts/analyze_best_of_n.py --run $4; done
-                             python scripts/pool_best_of_n.py outputs/best_of_n_selection_n16_T1 outputs/best_of_n_selection_n16_T1_seed1 outputs/best_of_n_selection_n16_T1_seed2; }
+                             python scripts/pool_best_of_n.py outputs/best_of_n_selection_n16_T1 outputs/best_of_n_selection_n16_T1_seed{1,2,3,4}; }
 step done
 # 참고: 재생성 결과가 저장소의 기존 파일(summary.json, *.md)을 덮어씁니다. 차이는 git diff 로 확인하세요.

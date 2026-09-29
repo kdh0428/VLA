@@ -7,6 +7,8 @@ Analysis of best_of_n_selection (CPU only). Selection rules over the N+1 candida
   max_loglik    highest summed log-probability (T = 1) of its own tokens
   min_entropy   lowest mean entropy along its own decode
   medoid        candidate with the smallest summed ADE to all other candidates (self-consistency)
+  ranksum       smallest (rank of mean entropy + rank of -summed log-prob); specified after seeing
+                min_entropy / max_loglik on runs 18-19 and confirmed on held-out seeds 3-4
   oracle        candidate with the smallest FDE to GT                      (upper bound, not deployable)
   random_T      the first T > 0 candidate                                    (sampling-only control)
 
@@ -29,7 +31,7 @@ from analyze_prev_action_identity import paired                     # noqa: E402
 BINARY.update({"a_minus", "failure"})
 POC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 N_TOTAL, N_FAIL = 2747, 52
-RULES = ["normal", "prev_consist", "max_loglik", "min_entropy", "medoid", "random_T", "oracle"]
+RULES = ["normal", "prev_consist", "max_loglik", "min_entropy", "medoid", "ranksum", "random_T", "oracle"]
 
 
 def ade(a, b):
@@ -48,6 +50,11 @@ def pick(r, rule):
         return int(np.argmax([sum(x["logprob_steps"]) for x in c]))
     if rule == "min_entropy":
         return int(np.argmin([np.mean(x["entropy_steps"]) for x in c]))
+    if rule == "ranksum":
+        from scipy.stats import rankdata
+        re_ = rankdata([np.mean(x["entropy_steps"]) for x in c])
+        rl_ = rankdata([-sum(x["logprob_steps"]) for x in c])
+        return int(np.argmin(re_ + rl_ + 1e-6 * re_))
     if rule == "medoid":
         return int(np.argmin([sum(ade(x["trajectory_pred"], y["trajectory_pred"]) for y in c) for x in c]))
     if rule == "oracle":
