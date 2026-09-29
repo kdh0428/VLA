@@ -1,0 +1,222 @@
+{
+ "n_scored": 4814,
+ "n_errors": 0,
+ "n_logs": 52,
+ "n_natural_failures": 72,
+ "subsets": {
+  "all": {
+   "ranksum_N1": {
+    "pdms": 0.8893253432053808,
+    "d_pdms": 0.0,
+    "d_pdms_ci95": [
+     0.0,
+     0.0
+    ],
+    "wilcoxon_p": 1.0,
+    "ego_progress": 0.8134834410589299,
+    "changed_plan": 0.0,
+    "viol_no_at_fault_collisions": 0.005608641462401329,
+    "viol_drivable_area_compliance": 0.043622766929788115,
+    "viol_time_to_collision_within_bound": 0.02139592854175322,
+    "viol_comfort": 0.0012463647694225177
+   },
+   "ranksum_N2": {
+    "pdms": 0.8917241653477769,
+    "d_pdms": 0.0023988221423961982,
+    "d_pdms_ci95": [
+     -0.00024358809371624683,
+     0.005118370028293999
+    ],
+    "wilcoxon_p": 0.7070911142686296,
+    "ego_progress": 0.8154516741045484,
+    "changed_plan": 0.16285832987120896,
+    "viol_no_at_fault_collisions": 0.00540091400083091,
+    "viol_drivable_area_compliance": 0.040922309929372666,
+    "viol_time_to_collision_within_bound": 0.02077274615704196,
+    "viol_comfort": 0.0016618196925633569
+   },
+   "ranksum_N4": {
+    "pdms": 0.895329261878296,
+    "d_pdms": 0.006003918672915116,
+    "d_pdms_ci95": [
+     0.0020527103952881418,
+     0.010317701546029276
+    ],
+    "wilcoxon_p": 0.03006135221660201,
+    "ego_progress": 0.8180050187031742,
+    "changed_plan": 0.24387203988367262,
+    "viol_no_at_fault_collisions": 0.0039468217698379725,
+    "viol_drivable_area_compliance": 0.03863730785209805,
+    "viol_time_to_collision_within_bound": 0.018487744079767346,
+    "viol_comfort": 0.002077274615704196
+   },
+   "ranksum_N8": {
+    "pdms": 0.8974630115566402,
+    "d_pdms": 0.008137668351259281,
+    "d_pdms_ci95": [
+     0.004034385164169256,
+     0.012518167165080508
+    ],
+    "wilcoxon_p": 0.004371109028598237,
+    "ego_progress": 0.8198252135601864,
+    "changed_plan": 0.29912754466140423,
+    "viol_no_at_fault_collisions": 0.003531366846697133,
+    "viol_drivable_area_compliance": 0.036560033236393855,
+    "viol_time_to_collision_within_bound": 0.018280016618196927,
+    "viol_comfort": 0.0014540922309929372
+   },
+   "ranksum_N12": {
+    "pdms": 0.8977231453653952,
+    "d_pdms": 0.008397802160014348,
+    "d_pdms_ci95": [
+     0.004083202390696377,
+     0.012990936487571063
+    ],
+    "wilcoxon_p": 0.006239888355341517,
+    "ego_progress": 0.8199281537793166,
+    "changed_plan": 0.32467802243456584,
+    "viol_no_at_fault_collisions": 0.0031159119235562942,
+    "viol_drivable_area_compliance": 0.03697548815953469,
+    "viol_time_to_collision_within_bound": 0.017241379310344827,
+    "viol_comfort": 0.0012463647694225177
+   },
+   "ranksum_N16": {
+    "pdms": 0.8984929236810757,
+    "d_pdms": 0.009167580475694782,
+    "d_pdms_ci95": [
+     0.004655195629224983,
+     0.014044409407170926
+    ],
+    "wilcoxon_p": 0.006079140329673098,
+    "ego_progress": 0.8204046204905849,
+    "changed_plan": 0.3390112172829248,
+    "viol_no_at_fault_collisions": 0.002285002077274616,
+    "viol_drivable_area_compliance": 0.03635230577482343,
+    "viol_time_to_collision_within_bound": 0.01578728707935189,
+    "viol_comfort": 0.0014540922309929372
+   },
+   "ranksum_N17": {
+    "pdms": 0.8988182209740632,
+    "d_pdms": 0.009492877768682207,
+    "d_pdms_ci95": [
+     0.004617102593594158,
+     0.01478927655204978
+    ],
+    "wilcoxon_p": 0.003371788169402683,
+    "ego_progress": 0.8204790606244152,
+    "changed_plan": 0.3396343996676361,
+    "viol_no_at_fault_collisions": 0.002285002077274616,
+    "viol_drivable_area_compliance": 0.03614457831325301,
+    "viol_time_to_collision_within_bound": 0.015371832156211051,
+    "viol_comfort": 0.0014540922309929372
+   }
+  },
+  "natural_failures": {
+   "ranksum_N1": {
+    "pdms": 0.5924199212943572,
+    "d_pdms": 0.0,
+    "d_pdms_ci95": [
+     0.0,
+     0.0
+    ],
+    "wilcoxon_p": 1.0,
+    "ego_progress": 0.5245855888842351,
+    "changed_plan": 0.0,
+    "viol_no_at_fault_collisions": 0.125,
+    "viol_drivable_area_compliance": 0.25,
+    "viol_time_to_collision_within_bound": 0.20833333333333334,
+    "viol_comfort": 0.013888888888888888
+   },
+   "ranksum_N2": {
+    "pdms": 0.6136556640549709,
+    "d_pdms": 0.021235742760613577,
+    "d_pdms_ci95": [
+     -0.03533162285151379,
+     0.11336434222541508
+    ],
+    "wilcoxon_p": 0.08351810256109068,
+    "ego_progress": 0.5408230854496181,
+    "changed_plan": 0.5833333333333334,
+    "viol_no_at_fault_collisions": 0.1388888888888889,
+    "viol_drivable_area_compliance": 0.20833333333333334,
+    "viol_time_to_collision_within_bound": 0.18055555555555555,
+    "viol_comfort": 0.027777777777777776
+   },
+   "ranksum_N4": {
+    "pdms": 0.6602238829261148,
+    "d_pdms": 0.06780396163175761,
+    "d_pdms_ci95": [
+     0.003274437525240891,
+     0.15352898313135876
+    ],
+    "wilcoxon_p": 0.005725114897992909,
+    "ego_progress": 0.5789817634671199,
+    "changed_plan": 0.8055555555555556,
+    "viol_no_at_fault_collisions": 0.125,
+    "viol_drivable_area_compliance": 0.19444444444444445,
+    "viol_time_to_collision_within_bound": 0.1527777777777778,
+    "viol_comfort": 0.027777777777777776
+   },
+   "ranksum_N8": {
+    "pdms": 0.6842369777097599,
+    "d_pdms": 0.09181705641540266,
+    "d_pdms_ci95": [
+     0.007167143799357261,
+     0.20014327967887677
+    ],
+    "wilcoxon_p": 0.004340261056295149,
+    "ego_progress": 0.6143909687256459,
+    "changed_plan": 0.8888888888888888,
+    "viol_no_at_fault_collisions": 0.1111111111111111,
+    "viol_drivable_area_compliance": 0.18055555555555555,
+    "viol_time_to_collision_within_bound": 0.1527777777777778,
+    "viol_comfort": 0.013888888888888888
+   },
+   "ranksum_N12": {
+    "pdms": 0.6754135608934382,
+    "d_pdms": 0.08299363959908104,
+    "d_pdms_ci95": [
+     0.0009347345856449765,
+     0.18552071933866943
+    ],
+    "wilcoxon_p": 0.0023836755099305015,
+    "ego_progress": 0.6265481016998073,
+    "changed_plan": 0.8888888888888888,
+    "viol_no_at_fault_collisions": 0.1111111111111111,
+    "viol_drivable_area_compliance": 0.19444444444444445,
+    "viol_time_to_collision_within_bound": 0.16666666666666666,
+    "viol_comfort": 0.013888888888888888
+   },
+   "ranksum_N16": {
+    "pdms": 0.7034087036535523,
+    "d_pdms": 0.11098878235919535,
+    "d_pdms_ci95": [
+     0.028923359498055367,
+     0.20949053220699865
+    ],
+    "wilcoxon_p": 0.0006907109808161065,
+    "ego_progress": 0.6465142221018593,
+    "changed_plan": 0.9166666666666666,
+    "viol_no_at_fault_collisions": 0.08333333333333333,
+    "viol_drivable_area_compliance": 0.16666666666666666,
+    "viol_time_to_collision_within_bound": 0.125,
+    "viol_comfort": 0.027777777777777776
+   },
+   "ranksum_N17": {
+    "pdms": 0.7032617466659798,
+    "d_pdms": 0.11084182537162274,
+    "d_pdms_ci95": [
+     0.028802856191128986,
+     0.20948533157767252
+    ],
+    "wilcoxon_p": 0.0009107373535348505,
+    "ego_progress": 0.6461615253316851,
+    "changed_plan": 0.9166666666666666,
+    "viol_no_at_fault_collisions": 0.08333333333333333,
+    "viol_drivable_area_compliance": 0.16666666666666666,
+    "viol_time_to_collision_within_bound": 0.125,
+    "viol_comfort": 0.027777777777777776
+   }
+  }
+ }
+}

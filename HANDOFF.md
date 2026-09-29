@@ -17,8 +17,9 @@
 | 18 | best-of-N 선택 (N 8, T 0.7) | 완료 (3080 Ti) | `.../best_of_n_selection/BEST_OF_N.md` |
 | 19 | best-of-N 선택 (N 4–32, T 0.7–1.3, 5 seed) | 완료 (두 GPU) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
 | 20 | 표본 확대: 새 navtest log 56개(4,563 장면) | 완료 (두 GPU, shard 스트리밍) | `.../expanded_best_of_n/EXPANDED_BEST_OF_N.md` |
+| 21–24 | PDM Score, 기전 연결, 후보 수, 안전 필터 (개발 → 사전 등록 → held-out 52 log) | 완료 | `.../selection_validation/SELECTION_VALIDATION.md` |
 
-한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop).
+한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop). 사전 등록 held-out에서 NAVSIM PDMS +0.0095(충돌 0.56 → 0.23%), 현재 frame 안전 필터를 더하면 +0.032(충돌 0.10%)이며, 선택된/버려진 후보는 첫 이탈 이후에만 엔트로피가 갈라집니다(실험 21–24).
 
 ## 2. 새 서버 준비 (순서대로)
 
@@ -75,7 +76,7 @@ tools/
 
 ## 5. 다음 실험 후보 (우선순위 순)
 
-1. **best-of-N 선택의 진짜 closed-loop 검증**: 실험 19의 확신도 기반 선택(순위 합 또는 log-likelihood 권장)이 유일한 배포형 순이득입니다. NAVSIM v2 pseudo-simulation(또는 nuPlan 시뮬레이터)에서 PDMS로 평가해야 실제 주행 이득을 말할 수 있습니다. 실험 13처럼 로그 카메라를 쓰는 재계획은 누출이 있어 대체가 안 됩니다.
+1. **best-of-N 선택의 진짜 closed-loop 검증**: 확신도 선택(rank-sum)과 안전 필터(F1)가 open-loop와 비반응형 PDMS에서 사전 등록 held-out까지 확인됐습니다(실험 20–24). 다음은 NAVSIM v2 pseudo-simulation(2단계 반응형 평가)입니다. AutoVLA에 들어 있는 navsim은 v1.1이라 v2를 별도 환경으로 설치해야 합니다. NAVSIM v2 pseudo-simulation(또는 nuPlan 시뮬레이터)에서 PDMS로 평가해야 실제 주행 이득을 말할 수 있습니다. 실험 13처럼 로그 카메라를 쓰는 재계획은 누출이 있어 대체가 안 됩니다.
 2. **선택 신호 개선**: oracle 선택은 실패율을 0.24%까지 낮추므로(실험 20) 여지가 큽니다. 저장된 `outputs/expanded_best_of_n/gpu*/records.jsonl`(후보별 step 엔트로피·log-prob·궤적; 저장소에는 없음, 재생성 필요)로 CPU에서 새 규칙을 먼저 평가하고, 반드시 새 log나 새 seed로 확인하세요(규칙을 같은 데이터로 고르면 과적합). 조기 가지치기(앞쪽 step만으로 선택)는 통하지 않았습니다.
 3. **선택 규칙 개선**: 엔트로피와 log-likelihood의 결합, 후보 간 합의와의 결합, 선택 후 재계획. 모두 저장된 `records.jsonl`로 CPU에서 먼저 평가할 수 있습니다.
 4. **표본 확대 (계속)**: shard 6–17은 처리했습니다(`tools/stream_expanded_best_of_n.sh <GPU> <shard...>`, 이미지를 처리 후 지워 디스크 15 GB로 가능). shard 18–31(navtest log 약 60개)이 남아 있습니다.
