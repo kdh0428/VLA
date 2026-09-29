@@ -11,7 +11,7 @@ else export CUDA_VISIBLE_DEVICES=1; fi
 ROOT=/root/VLA
 NUP=$ROOT/autovla/dataset/nuplan
 POC=$ROOT/autovla_misalignment_poc
-OUT=$POC/outputs/expanded_best_of_n/gpu$GPU
+OUT=$POC/outputs/${STREAM_OUT:-expanded_best_of_n}/gpu$GPU
 WORK=$NUP/_stream_gpu$GPU
 OS=https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/main/openscene-v1.1
 mkdir -p $OUT $WORK $NUP/navtest_ext
@@ -25,6 +25,7 @@ for SH in "$@"; do
   LOGS=$(ls $src)
   MOVED=""
   for L in $LOGS; do if [ ! -e $NUP/sensor_blobs/test/$L ]; then mv $src/$L $NUP/sensor_blobs/test/ && MOVED="$MOVED $L"; fi; done
+  [ "$SH" -ge 6 ] && MOVED="$LOGS"      # shards >= 6 never belong to the PoC's 28 logs (shards 0-5)
   rm -rf $WORK/openscene-v1.1
   echo "######## $(date '+%F %T') shard $SH: preprocess ($(echo $LOGS | wc -w) logs)"
   python - $WORK/filter_$SH.yaml $LOGS <<'PY'
@@ -35,7 +36,8 @@ nt["log_names"] = [l for l in nt["log_names"] if l in set(logs)]
 yaml.safe_dump(nt, open(out, "w"), sort_keys=False)
 print("navtest logs in shard:", len(nt["log_names"]))
 PY
-  python $POC/scripts/preprocess_scenes.py --scene-filter $WORK/filter_$SH.yaml --out $NUP/navtest_ext --anno-out $WORK/anno > $WORK/pre_$SH.log 2>&1
+  python $POC/scripts/preprocess_scenes.py --scene-filter $WORK/filter_$SH.yaml --out $NUP/navtest_ext --anno-out $WORK/anno > $WORK/pre_$SH.log 2>&1 \
+    || { echo "preprocess failed for shard $SH (kept images, not marked done)"; continue; }
   tail -1 $WORK/pre_$SH.log
   python - $NUP/navtest_ext $WORK/tokens_$SH.json $LOGS <<'PY'
 import sys, os, json
@@ -44,8 +46,16 @@ toks = sorted(f[:-5] for f in os.listdir(d) if f.endswith(".json") and json.load
 json.dump(toks, open(out, "w")); print("scenes:", len(toks))
 PY
   echo "######## $(date '+%F %T') shard $SH: best-of-N"
-  python $POC/scripts/expanded_best_of_n.py --scenes $NUP/navtest_ext --tokens $WORK/tokens_$SH.json --output $OUT > $WORK/bon_$SH.log 2>&1
+  python $POC/scripts/expanded_best_of_n.py --scenes $NUP/navtest_ext --tokens $WORK/tokens_$SH.json --output $OUT > $WORK/bon_$SH.log 2>&1 \
+    || { echo "decoding failed for shard $SH (kept images, not marked done)"; continue; }
   tail -1 $WORK/bon_$SH.log
+  MISSING=$(python - $WORK/tokens_$SH.json $OUT/records.jsonl <<'PY'
+import sys, json
+t = set(json.load(open(sys.argv[1]))); d = {json.loads(l)["token"] for l in open(sys.argv[2])}
+print(len(t - d))
+PY
+)
+  [ "$MISSING" != "0" ] && { echo "shard $SH: $MISSING scenes not decoded (kept images, not marked done)"; continue; }
   for L in $MOVED; do rm -rf $NUP/sensor_blobs/test/$L; done      # only logs this run added
   touch $OUT/shard_$SH.done
   df -h / | tail -1
