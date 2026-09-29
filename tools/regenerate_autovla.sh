@@ -22,6 +22,7 @@
 #   exp17   seed·온도 강건성 5회                              (50분)
 #   exp18   best_of_n_selection N 8 T 0.7                  (15분)
 #   exp19   best_of_n_selection N·T 곡선 + N 16 T 1.0 seed 0-4 (2.5시간)
+#   exp20   새 navtest shard 6-17 스트리밍 best-of-N          (5090 약 2.5시간; 두 GPU로 나누려면 스크립트 직접 실행)
 #
 # GPU: 모든 실험은 CUDA_VISIBLE_DEVICES=1 (RTX 5090, CUDA_DEVICE_ORDER=PCI_BUS_ID)로 고정돼 있습니다.
 # 다른 GPU 구성이면 GPU=0 VLA_ANY_GPU=1 로 실행하세요 (수치가 소폭 달라질 수 있음; 한 실험 안의 비교는 쌍대라 유효).
@@ -31,7 +32,7 @@ conda activate autovla
 export CUDA_VISIBLE_DEVICES=${GPU:-1}
 POC=/root/VLA/autovla_misalignment_poc
 cd $POC
-STAGES=${STAGES:-"pre full check ed ah exp11 frames exp12 exp13 exp14 pdm exp15 exp16 exp17 exp18 exp19"}
+STAGES=${STAGES:-"pre full check ed ah exp11 frames exp12 exp13 exp14 pdm exp15 exp16 exp17 exp18 exp19 exp20"}
 step() { echo; echo "######## $(date '+%F %T') $*"; }
 has() { [[ " $STAGES " == *" $1 "* ]]; }
 
@@ -77,5 +78,7 @@ has exp19  && { step exp19;  for cfg in "16 1.0 0 outputs/best_of_n_selection_n1
                                  python scripts/best_of_n_selection.py --n $1 --temperature $2 --seed $3 --output $4 || exit 1
                                  python scripts/analyze_best_of_n.py --run $4; done
                              python scripts/pool_best_of_n.py outputs/best_of_n_selection_n16_T1 outputs/best_of_n_selection_n16_T1_seed{1,2,3,4}; }
+has exp20  && { step exp20;  bash /root/VLA/tools/stream_expanded_best_of_n.sh ${GPU:-1} 6 7 8 9 10 11 12 13 14 15 16 17
+                             python scripts/analyze_expanded_best_of_n.py outputs/expanded_best_of_n/gpu${GPU:-1}; }
 step done
 # 참고: 재생성 결과가 저장소의 기존 파일(summary.json, *.md)을 덮어씁니다. 차이는 git diff 로 확인하세요.

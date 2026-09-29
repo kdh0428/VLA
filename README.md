@@ -5,7 +5,7 @@ AutoVLA(Qwen2.5-VL-3B / nuPlan·navsim)와 ORION(Bench2Drive)에서
 
 > **새 서버에서 이어서 실험하려면 [HANDOFF.md](HANDOFF.md)** 부터 보세요 (환경 구축, 함정, 다음 실험 후보).
 >
-> **결론 요약은 [CONCLUSIONS.md](CONCLUSIONS.md)** 를 보세요. 실험 19건의 질문·수치·해석이 한 문서에 정리돼 있습니다.
+> **결론 요약은 [CONCLUSIONS.md](CONCLUSIONS.md)** 를 보세요. 실험 20건의 질문·수치·해석이 한 문서에 정리돼 있습니다.
 
 ## 구조
 
@@ -45,7 +45,8 @@ tools/, reports/              보조 스크립트 및 문서
 | PDM-Closed 참조 | `.../pdm_reference_stabilization/PDM_REFERENCE.md` |
 | seed·온도 강건성 | `.../robustness_reference_stabilization/ROBUSTNESS.md` |
 | Best-of-N 선택 (N 8, T 0.7) | `.../best_of_n_selection/BEST_OF_N.md` |
-| Best-of-N 선택 (N 16–32, T 1.0–1.3, 3 seed) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
+| Best-of-N 선택 (N 16–32, T 1.0–1.3, 5 seed) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
+| 표본 확대: 새 log 56개에서 best-of-N 확인 | `.../expanded_best_of_n/EXPANDED_BEST_OF_N.md` |
 
 ## 저장소에 포함하지 않은 것
 

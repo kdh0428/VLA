@@ -32,6 +32,7 @@ reports/**
 !**/*.yml
 !tools/*.sh
 !**/summary.json
+!**/summary_pooled.json
 !**/run_meta.json
 !**/narrative.json
 !**/layer_results.json

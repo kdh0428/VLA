@@ -1,6 +1,6 @@
 # 인계 문서 — 새 서버에서 이어서 실험하기
 
-마지막 갱신: 2026-09-29 (실험 19까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
+마지막 갱신: 2026-09-29 (실험 20까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
 
 ## 1. 지금 어디까지 왔나
 
@@ -15,9 +15,10 @@
 | 16 | PDM-Closed 참조 | 완료 | `.../pdm_reference_stabilization/PDM_REFERENCE.md` |
 | 17 | seed·온도 강건성 | 완료 | `.../robustness_reference_stabilization/ROBUSTNESS.md` |
 | 18 | best-of-N 선택 (N 8, T 0.7) | 완료 (3080 Ti) | `.../best_of_n_selection/BEST_OF_N.md` |
-| 19 | best-of-N 선택 (N 16–32, T 1.0–1.3, 3 seed) | 완료 (N16은 3080 Ti, N32는 5090) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
+| 19 | best-of-N 선택 (N 4–32, T 0.7–1.3, 5 seed) | 완료 (두 GPU) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
+| 20 | 표본 확대: 새 navtest log 56개(4,563 장면) | 완료 (두 GPU, shard 스트리밍) | `.../expanded_best_of_n/EXPANDED_BEST_OF_N.md` |
 
-한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 디코딩 확신도(엔트로피·log-likelihood·둘의 순위 합)로 고르면 모집단 FDE 0.58 → 약 0.41 m(5 seed 합산 유의), 실패율 1.51 → 약 1.1%(−27%, CI가 0을 겨우 포함).
+한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop).
 
 ## 2. 새 서버 준비 (순서대로)
 
@@ -63,6 +64,8 @@ autovla_misalignment_poc/scripts/
   natural_reference_stabilization.py / analyze_natural_reference_stabilization.py   실험 15 (perturbation 없는 자연 디코딩)
   pdm_reference.py                   PDM-Closed 궤적 (navsim MetricCacheProcessor 설정, CPU)
   best_of_n_selection.py / analyze_best_of_n.py / pool_best_of_n.py  실험 18-19 (후보 샘플링 + 선택 규칙 + seed 합산)
+  expanded_best_of_n.py / analyze_expanded_best_of_n.py             실험 20 (새 장면: stub 생성 + 후보 디코딩, 모집단 직접 추정)
+tools/stream_expanded_best_of_n.sh                                  실험 20 shard 스트리밍 (받기 -> 전처리 -> 디코딩 -> 이미지 삭제)
   check_full_extract_repro.py        재생성 결과를 git HEAD 수치와 비교
 tools/
   download_autovla_assets.sh, setup_autovla_env.sh, regenerate_autovla.sh
@@ -73,9 +76,9 @@ tools/
 ## 5. 다음 실험 후보 (우선순위 순)
 
 1. **best-of-N 선택의 진짜 closed-loop 검증**: 실험 19의 확신도 기반 선택(순위 합 또는 log-likelihood 권장)이 유일한 배포형 순이득입니다. NAVSIM v2 pseudo-simulation(또는 nuPlan 시뮬레이터)에서 PDMS로 평가해야 실제 주행 이득을 말할 수 있습니다. 실험 13처럼 로그 카메라를 쓰는 재계획은 누출이 있어 대체가 안 됩니다.
-2. **실패율 효과의 검정력 확보**: N·T 곡선(N 4–32, T 0.7–1.3)과 5 seed는 이미 돌렸습니다(`outputs/best_of_n_selection_n*_T*`, BEST_OF_N_16.md). FDE 이득은 확정적이지만 실패율 감소는 자연 실패 장면 52개로는 경계선이라, 더 많은 실패 장면(표본 확대, 아래 4)이 가장 필요한 다음 단계입니다. 조기 가지치기(앞쪽 step만으로 선택)는 통하지 않았습니다.
+2. **선택 신호 개선**: oracle 선택은 실패율을 0.24%까지 낮추므로(실험 20) 여지가 큽니다. 저장된 `outputs/expanded_best_of_n/gpu*/records.jsonl`(후보별 step 엔트로피·log-prob·궤적; 저장소에는 없음, 재생성 필요)로 CPU에서 새 규칙을 먼저 평가하고, 반드시 새 log나 새 seed로 확인하세요(규칙을 같은 데이터로 고르면 과적합). 조기 가지치기(앞쪽 step만으로 선택)는 통하지 않았습니다.
 3. **선택 규칙 개선**: 엔트로피와 log-likelihood의 결합, 후보 간 합의와의 결합, 선택 후 재계획. 모두 저장된 `records.jsonl`로 CPU에서 먼저 평가할 수 있습니다.
-4. **표본 확대**: 자연 실패 장면이 52개뿐이라 모집단 추정 CI가 넓습니다. 카메라 shard를 더 받아(shard당 약 4 GB, 디스크 여유 확인) navtest log를 늘리면 실패 장면을 키울 수 있습니다(`full_extract`부터 다시).
+4. **표본 확대 (계속)**: shard 6–17은 처리했습니다(`tools/stream_expanded_best_of_n.sh <GPU> <shard...>`, 이미지를 처리 후 지워 디스크 15 GB로 가능). shard 18–31(navtest log 약 60개)이 남아 있습니다.
 5. **ORION에서 재현**: 실험 7–19는 AutoVLA에서만 했습니다(ORION 모델·데이터 약 60 GB 필요).
 
 **하지 않아도 되는 것(이미 음성)**: 외부 planner(PDM-Closed)나 CTRA 궤적으로 조건화 교정, 오래된 계획의 합의로 조건화, 엔트로피 trigger로 조건화 교정 켜기, 재계획 안에서 이전 계획으로 조건화 — 모두 정상 장면을 해쳐 순손해였습니다.
