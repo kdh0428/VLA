@@ -96,7 +96,7 @@ def table(name, res):
             def c(m, viol=False, scale=1.0):
                 x = e[f"{st}:{m}"]; mu, d, lo, hi = x["mean"], x["diff"], x["ci95"][0], x["ci95"][1]
                 if viol:
-                    return f"{(1 - mu) * 100:.2f} ({-d * 100:+.2f} [{-hi * 100:+.2f}, {-lo * 100:+.2f}])"
+                    return f"{(1 - mu) * 100:.2f} ({-d * 100 + 0.0:+.2f} [{-hi * 100 + 0.0:+.2f}, {-lo * 100 + 0.0:+.2f}])"
                 return f"{mu:.4f} ({d:+.4f} [{lo:+.4f}, {hi:+.4f}])"
             cnt = "/".join(map(str, e["stage1_scenes_better_worse_tied"])) if st == "stage1" else ""
             L.append(f"| {r} | {c('score')} | {c('no_at_fault_collisions', True)} | {c('drivable_area_compliance', True)} | "

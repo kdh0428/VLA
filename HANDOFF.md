@@ -1,6 +1,6 @@
 # 인계 문서 — 새 서버에서 이어서 실험하기
 
-마지막 갱신: 2026-10-02 (실험 25와 5090 재실행까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
+마지막 갱신: 2026-10-02 (실험 26: 전체 navhard 검증까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
 
 ## 1. 지금 어디까지 왔나
 
@@ -20,6 +20,7 @@
 | 21–24 | PDM Score, 기전 연결, 후보 수, 안전 필터 (개발 → 사전 등록 → held-out 52 log) | 완료 | `.../selection_validation/SELECTION_VALIDATION.md` |
 | 25 | NAVSIM v2 navhard 절반 2단계 pseudo closed-loop (`navsim_v2` clone, `navhard_half` split) | 완료 | `.../navhard_eval/NAVHARD_CLOSED_LOOP.md` |
 | – | 3080 Ti 결과 전부 5090 재실행 + 재분석 | 완료 (결론 동일) | `.../gpu5090_reanalysis/GPU5090_REANALYSIS.md` |
+| 26 | navhard 나머지 절반 사전 등록 검증 + 전체 navhard 76 log (`navhard_half2` split, `tools/navhard_half2_pipeline.sh`) | 완료 (F1 재현, max log-lik 미재현) | `.../navhard_full_validation/RESULTS.md` |
 
 한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop). 사전 등록 held-out에서 NAVSIM PDMS +0.0095(충돌 0.56 → 0.23%), 현재 frame 안전 필터를 더하면 +0.032(충돌 0.10%)이며, 선택된/버려진 후보는 첫 이탈 이후에만 엔트로피가 갈라집니다(실험 21–24).
 
@@ -81,7 +82,7 @@ tools/
 
 ## 5. 다음 실험 후보 (우선순위 순)
 
-1. **연속 closed-loop / 전체 navhard**: 실험 25는 navhard 절반의 2단계 pseudo closed-loop입니다. 전체 navhard(나머지 36 log, 원본 카메라 추가 다운로드 필요: `tools/fetch_navhard_originals.sh`)나 nuPlan 연속 시뮬레이션으로 F1·max log-lik을 확인하세요. split 설정은 `autovla_misalignment_poc/configs/navsim_v2/`를 navsim_v2의 `navsim/planning/script/config/common/train_test_split/`에 복사. 파이프라인: `navhard_subset.py` → `navhard_metric_cache.py` → `navhard_scene_json.py` → `expanded_best_of_n.py`(장면 폴더 `navhard_half_json`) → `navhard_safety_flags.py` → `navhard_filter_picks.py` → `navhard_submission.py --picks` → `navhard_group_scores.py` → `analyze_navhard.py`.
+1. **연속 closed-loop**: navhard 전체(실험 25–26)에서 F1은 재현됐고 확신도 단독 선택은 불안정했습니다. 다음은 nuPlan 연속 시뮬레이션이나 채점 규칙과 독립적인 필터(예: 다른 예측 모델) 검증입니다. 두 번째 절반은 `NAVHARD_SUBSET`, `NAVHARD_JSON`, `NAVHARD_ORIG_DEST` 환경변수로 같은 스크립트를 씁니다(`tools/navhard_half2_pipeline.sh`, 채점 `tools/navhard_score_groups.sh`, 분석 `scripts/analyze_navhard_full.py`). split 설정은 `autovla_misalignment_poc/configs/navsim_v2/`를 navsim_v2의 `navsim/planning/script/config/common/train_test_split/`에 복사. 파이프라인: `navhard_subset.py` → `navhard_metric_cache.py` → `navhard_scene_json.py` → `expanded_best_of_n.py`(장면 폴더 `navhard_half_json`) → `navhard_safety_flags.py` → `navhard_filter_picks.py` → `navhard_submission.py --picks` → `navhard_group_scores.py` → `analyze_navhard.py`.
 2. **선택 신호 개선**: oracle 선택은 실패율을 0.24%까지 낮추므로(실험 20) 여지가 큽니다. 저장된 `outputs/expanded_best_of_n/gpu*/records.jsonl`(후보별 step 엔트로피·log-prob·궤적; 저장소에는 없음, 재생성 필요)로 CPU에서 새 규칙을 먼저 평가하고, 반드시 새 log나 새 seed로 확인하세요(규칙을 같은 데이터로 고르면 과적합). 조기 가지치기(앞쪽 step만으로 선택)는 통하지 않았습니다.
 3. **선택 규칙 개선**: 엔트로피와 log-likelihood의 결합, 후보 간 합의와의 결합, 선택 후 재계획. 모두 저장된 `records.jsonl`로 CPU에서 먼저 평가할 수 있습니다.
 4. **표본 확대 (계속)**: shard 6–17은 처리했습니다(`tools/stream_expanded_best_of_n.sh <GPU> <shard...>`, 이미지를 처리 후 지워 디스크 15 GB로 가능). shard 18–31(navtest log 약 60개)이 남아 있습니다.
