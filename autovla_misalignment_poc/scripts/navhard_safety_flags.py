@@ -28,7 +28,7 @@ from pathlib import Path
 
 import numpy as np
 
-SUBSET = "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset"
+SUBSET = os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")   # other navhard subsets via env
 SYN = "/root/VLA/navhard/navhard_two_stage/synthetic_scene_pickles"
 LOGS = "/root/VLA/autovla/dataset/nuplan/navsim_logs/test"
 FLAGS = ["no_at_fault_collisions", "drivable_area_compliance", "driving_direction_compliance", "time_to_collision_within_bound"]

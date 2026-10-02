@@ -21,7 +21,7 @@ import multiprocessing as mp
 import time
 from pathlib import Path
 
-SUBSET = "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset"
+SUBSET = os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")   # other navhard subsets via env
 SYN = "/root/VLA/navhard/navhard_two_stage/synthetic_scene_pickles"
 LOGS = "/root/VLA/autovla/dataset/nuplan/navsim_logs/test"
 _P = {}

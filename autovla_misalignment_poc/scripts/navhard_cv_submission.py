@@ -6,14 +6,15 @@ Pose k (k = 1..8, 0.5 s) = (|v| * 0.5k, 0, 0) in the ego frame.
 
   PYTHONPATH=/root/VLA/navsim_v2 python scripts/navhard_cv_submission.py <out.pkl>
 """
+import os
 import json
 import pickle
 import sys
 
 import numpy as np
 
-SUBSET = "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset"
-JS = "/root/VLA/autovla/dataset/nuplan/navhard_half_json"
+SUBSET = os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")   # other navhard subsets via env
+JS = os.environ.get("NAVHARD_JSON", "/root/VLA/autovla/dataset/nuplan/navhard_half_json")
 
 if __name__ == "__main__":
     from navsim.common.dataclasses import Trajectory

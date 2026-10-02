@@ -14,7 +14,7 @@ from collections import defaultdict
 
 import numpy as np
 
-SUBSET = "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset"
+SUBSET = os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")   # other navhard subsets via env
 
 if __name__ == "__main__":
     gdir, out, rules = sys.argv[1], sys.argv[2], sys.argv[3:]

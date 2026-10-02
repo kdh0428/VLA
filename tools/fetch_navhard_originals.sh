@@ -3,8 +3,8 @@
 # navtest camera shards, extracting ONLY the listed files. No `cd`; every path is absolute and checked.
 #   bash tools/fetch_navhard_originals.sh [shard ...]     (default: every shard in the list file)
 set -euo pipefail
-LIST=/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset/orig_files_missing_by_shard.json
-DEST=/root/VLA/autovla/dataset/nuplan/sensor_blobs/test
+LIST=${NAVHARD_SUBSET:-/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset}/orig_files_missing_by_shard.json
+DEST=${NAVHARD_ORIG_DEST:-/root/VLA/autovla/dataset/nuplan/sensor_blobs/test}
 TMP=/root/VLA/navhard/_orig_tmp
 HF=https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/main/openscene-v1.1/openscene_sensor_test_camera
 [ -f "$LIST" ] && [ -d "$DEST" ] || { echo "missing list or destination"; exit 1; }
@@ -33,8 +33,8 @@ for SH in "${SHARDS[@]}"; do
 done
 python3 - <<'PY'
 import json, os
-d = json.load(open("/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset/orig_files_missing_by_shard.json"))
+d = json.load(open(os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset") + "/orig_files_missing_by_shard.json"))
 allf = [f for v in d.values() for f in v]
-miss = [f for f in allf if not os.path.exists("/root/VLA/autovla/dataset/nuplan/sensor_blobs/test/" + f)]
+miss = [f for f in allf if not os.path.exists(os.environ.get("NAVHARD_ORIG_DEST", "/root/VLA/autovla/dataset/nuplan/sensor_blobs/test") + "/" + f)]
 print(f"original images present {len(allf) - len(miss)} / {len(allf)}")
 PY

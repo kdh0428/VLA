@@ -24,7 +24,7 @@ import torch
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(1, "/root/VLA/autovla")
-SUBSET = "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset"
+SUBSET = os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")   # other navhard subsets via env
 RULES = ["normal", "max_loglik", "min_entropy", "ranksum"]
 
 

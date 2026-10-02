@@ -44,6 +44,7 @@ def main() -> None:
     ap.add_argument("--out", default="/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")
     ap.add_argument("--budget-gb", type=float, default=7.0)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--split-name", default="navhard_half", help="name of the written train_test_split / scene_filter configs")
     ap.add_argument("--logs", default=None, help="JSON list of logs: reuse a fixed selection (disk state then does not matter)")
     ap.add_argument("--shards", default="/tmp/claude-0/-root-VLA/3d5b895f-ebec-4409-a7c0-03065c2dc74b/scratchpad/shards.json")
     args = ap.parse_args()
@@ -98,10 +99,10 @@ def main() -> None:
         by_shard[shard_of_log[f.split("/")[0]]].append(f)
     # official-format split configs
     sf2 = dict(sf); sf2["log_names"] = sorted(chosen); sf2["tokens"] = s1; sf2["reactive_synthetic_initial_tokens"] = s2
-    yaml.dump(sf2, open(f"{V2}/scene_filter/navhard_half.yaml", "w"), Dumper=_Quoted, sort_keys=False)
-    split2 = {"defaults": [{"scene_filter": "navhard_half"}], "data_split": "test",
+    yaml.dump(sf2, open(f"{V2}/scene_filter/{args.split_name}.yaml", "w"), Dumper=_Quoted, sort_keys=False)
+    split2 = {"defaults": [{"scene_filter": args.split_name}], "data_split": "test",
               "reactive_all_mapping": [[g["orig"], g["prev"], g["pairs"]] for g in sel]}
-    yaml.dump(split2, open(f"{V2}/navhard_half.yaml", "w"), Dumper=_Quoted, sort_keys=False)
+    yaml.dump(split2, open(f"{V2}/{args.split_name}.yaml", "w"), Dumper=_Quoted, sort_keys=False)
     json.dump([{k: g[k] for k in ("orig", "prev", "pairs", "log")} for g in sel], open(f"{args.out}/groups.json", "w"))
     json.dump(s1, open(f"{args.out}/stage1_tokens.json", "w")); json.dump(s2, open(f"{args.out}/synthetic_tokens.json", "w"))
     json.dump(by_shard, open(f"{args.out}/orig_files_missing_by_shard.json", "w"))

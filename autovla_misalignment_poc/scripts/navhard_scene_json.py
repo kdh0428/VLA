@@ -20,13 +20,13 @@ import pickle
 
 import numpy as np
 
-SUBSET = "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset"
+SUBSET = os.environ.get("NAVHARD_SUBSET", "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/subset")   # other navhard subsets via env
 LOGS = "/root/VLA/autovla/dataset/nuplan/navsim_logs/test"
 ORIG_SENS = "/root/VLA/autovla/dataset/nuplan/sensor_blobs/test"          # PoC logs
 ORIG_SENS_NAVHARD = "/root/VLA/navhard/original_sensor_blobs"            # other logs (kept apart from streamed shards)
 SYN = "/root/VLA/navhard/navhard_two_stage/synthetic_scene_pickles"
 SYN_SENS = "/root/VLA/navhard/navhard_two_stage/sensor_blobs"
-OUT = "/root/VLA/autovla/dataset/nuplan/navhard_half_json"
+OUT = os.environ.get("NAVHARD_JSON", "/root/VLA/autovla/dataset/nuplan/navhard_half_json")
 CMD = {0: "turn left", 1: "keep forward", 2: "turn right", 3: "unknown"}
 CAMS = {"front_camera_paths": "CAM_F0", "left_camera_paths": "CAM_L1", "right_camera_paths": "CAM_R1"}
 
@@ -38,6 +38,12 @@ def record(token, vel, acc, cmd, paths, extra=None):
     if extra:
         r.update(extra)
     return r
+
+
+def rel_or(root, rel):
+    """root/rel if it exists, else the navhard originals dir (PoC logs lack some navhard frames)."""
+    p = os.path.join(root, rel)
+    return p if os.path.exists(p) else os.path.join(ORIG_SENS_NAVHARD, rel)
 
 
 def rel_pose(p, o):
@@ -61,7 +67,8 @@ def main() -> None:
         for t in [t for t in s1 if t in pos]:
             i = pos[t]; cur = frames[i]
             root = ORIG_SENS if lg in poc else ORIG_SENS_NAVHARD
-            paths = {k: [os.path.join(root, frames[j]["cams"][c]["data_path"]) for j in range(i - 3, i + 1)] for k, c in CAMS.items()}
+            pick = lambda rel: rel_or(root, rel)   # noqa: E731
+            paths = {k: [pick(frames[j]["cams"][c]["data_path"]) for j in range(i - 3, i + 1)] for k, c in CAMS.items()}
             missing += [p for v in paths.values() for p in v if not os.path.exists(p)]
             pose = lambda f: [f["ego2global_translation"][0], f["ego2global_translation"][1], Quaternion(*f["ego2global_rotation"]).yaw_pitch_roll[0]]  # noqa: E731
             fut = [rel_pose(pose(frames[j]), pose(cur)) for j in range(i + 1, min(len(frames), i + 9))]
