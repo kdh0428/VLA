@@ -1,6 +1,6 @@
 # 인계 문서 — 새 서버에서 이어서 실험하기
 
-마지막 갱신: 2026-10-02 (실험 26: 전체 navhard 검증까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
+마지막 갱신: 2026-10-02 (실험 27: 안전 필터 ablation까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
 
 ## 1. 지금 어디까지 왔나
 
@@ -21,6 +21,7 @@
 | 25 | NAVSIM v2 navhard 절반 2단계 pseudo closed-loop (`navsim_v2` clone, `navhard_half` split) | 완료 | `.../navhard_eval/NAVHARD_CLOSED_LOOP.md` |
 | – | 3080 Ti 결과 전부 5090 재실행 + 재분석 | 완료 (결론 동일) | `.../gpu5090_reanalysis/GPU5090_REANALYSIS.md` |
 | 26 | navhard 나머지 절반 사전 등록 검증 + 전체 navhard 76 log (`navhard_half2` split, `tools/navhard_half2_pipeline.sh`) | 완료 (F1 재현, max log-lik 미재현) | `.../navhard_full_validation/RESULTS.md` |
+| 27 | 안전 필터 ablation (필터 only / 무작위 / 선택기, `tools/navhard_ablation_pipeline.sh`) | 완료 (개선의 ~89%가 필터) | `.../safety_filter_ablation/RESULTS.md` |
 
 한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop). 사전 등록 held-out에서 NAVSIM PDMS +0.0095(충돌 0.56 → 0.23%), 현재 frame 안전 필터를 더하면 +0.032(충돌 0.10%)이며, 선택된/버려진 후보는 첫 이탈 이후에만 엔트로피가 갈라집니다(실험 21–24).
 
