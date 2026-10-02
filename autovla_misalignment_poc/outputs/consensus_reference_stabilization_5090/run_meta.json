@@ -1,0 +1,42 @@
+{
+  "n_scenes_ok": 207,
+  "n_scene_fail": 1,
+  "n_units": 1402,
+  "n_unit_fail": 0,
+  "rows": [
+    "normal",
+    "gt_w4",
+    "gt_all",
+    "prev_w4",
+    "prev_all",
+    "prev2_w4",
+    "prev2_all",
+    "prev3_w4",
+    "prev3_all",
+    "consmed_w4",
+    "consmed_all",
+    "consmean_w4",
+    "consmean_all",
+    "consmedkin_w4",
+    "consmedkin_all"
+  ],
+  "sources": [
+    "gt",
+    "prev",
+    "prev2",
+    "prev3",
+    "consmed",
+    "consmean",
+    "consmedkin"
+  ],
+  "windows": {
+    "w4": 4,
+    "all": 99
+  },
+  "temperature": 0.01,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 22.10807997783025
+}

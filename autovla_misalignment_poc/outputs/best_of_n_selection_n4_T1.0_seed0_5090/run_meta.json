@@ -1,0 +1,11 @@
+{
+  "n_ok": 349,
+  "n_fail": 0,
+  "n": 4,
+  "temperature": 1.0,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 5.86769601504008
+}

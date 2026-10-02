@@ -64,7 +64,7 @@ def main() -> None:
     for si, token in enumerate(toks, 1):
         try:
             scene = json.load(open(os.path.join(args.scenes, f"{token}.json")))
-            log = scene["front_camera_paths"][0].split("/")[0]
+            log = scene.get("log") or scene["front_camera_paths"][0].split("/")[0]
             gt = pl.tokenize(scene["gt_trajectory"])
             pl._vis.clear()
             feats = {}

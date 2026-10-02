@@ -14,7 +14,16 @@ POC=$ROOT/autovla_misalignment_poc
 OUT=$POC/outputs/${STREAM_OUT:-expanded_best_of_n}/gpu$GPU
 WORK=$NUP/_stream_gpu$GPU
 OS=https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/main/openscene-v1.1
-mkdir -p $OUT $WORK $NUP/navtest_ext
+mkdir -p "$OUT" "$WORK" "$NUP/navtest_ext"
+for d in "$NUP/sensor_blobs/test" "$WORK" "$OUT"; do [ -d "$d" ] || { echo "missing dir $d"; exit 1; }; done
+# logs used by the PoC (shards 0-5) are never deleted, whatever the shard list says
+PROTECT=$(python3 -c "import yaml;print(' '.join(yaml.safe_load(open('$POC/configs/scene_filter_navtest_subset.yaml'))['log_names']))")
+safe_rm_log() {   # delete one log's images only if the name is a real log name and not protected
+  local L="$1"
+  [[ "$L" =~ ^20[0-9]{2}\.[0-9]{2}\.[0-9]{2}\.[0-9.]+_veh-[0-9]+_[0-9]+_[0-9]+$ ]] || { echo "refusing to delete '$L'"; return; }
+  [[ " $PROTECT " == *" $L "* ]] && { echo "refusing to delete protected $L"; return; }
+  [ -d "$NUP/sensor_blobs/test/$L" ] && rm -rf -- "$NUP/sensor_blobs/test/$L"
+}
 for SH in "$@"; do
   [ "$SH" -lt 6 ] && { echo "refusing shard $SH (< 6)"; continue; }
   [ -f $OUT/shard_$SH.done ] && { echo "shard $SH already done"; continue; }
@@ -24,7 +33,8 @@ for SH in "$@"; do
   src=$WORK/openscene-v1.1/sensor_blobs; [ -d $src/test ] && src=$src/test
   LOGS=$(ls $src)
   MOVED=""
-  for L in $LOGS; do if [ ! -e $NUP/sensor_blobs/test/$L ]; then mv $src/$L $NUP/sensor_blobs/test/ && MOVED="$MOVED $L"; fi; done
+  for L in $LOGS; do if [ ! -e $NUP/sensor_blobs/test/$L ]; then mv $src/$L $NUP/sensor_blobs/test/ && MOVED="$MOVED $L"
+    else echo "WARNING: $NUP/sensor_blobs/test/$L already exists ($(find $NUP/sensor_blobs/test/$L -type f | wc -l) files) - shard images not moved"; fi; done
   [ "$SH" -ge 6 ] && MOVED="$LOGS"      # shards >= 6 never belong to the PoC's 28 logs (shards 0-5)
   rm -rf $WORK/openscene-v1.1
   echo "######## $(date '+%F %T') shard $SH: preprocess ($(echo $LOGS | wc -w) logs)"
@@ -56,7 +66,7 @@ print(len(t - d))
 PY
 )
   [ "$MISSING" != "0" ] && { echo "shard $SH: $MISSING scenes not decoded (kept images, not marked done)"; continue; }
-  for L in $MOVED; do rm -rf $NUP/sensor_blobs/test/$L; done      # only logs this run added
+  for L in $MOVED; do safe_rm_log "$L"; done      # only logs this run added, validated
   touch $OUT/shard_$SH.done
   df -h / | tail -1
 done

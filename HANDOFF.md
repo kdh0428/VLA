@@ -1,6 +1,6 @@
 # 인계 문서 — 새 서버에서 이어서 실험하기
 
-마지막 갱신: 2026-09-29 (실험 20까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
+마지막 갱신: 2026-10-02 (실험 25와 5090 재실행까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
 
 ## 1. 지금 어디까지 왔나
 
@@ -18,6 +18,8 @@
 | 19 | best-of-N 선택 (N 4–32, T 0.7–1.3, 5 seed) | 완료 (두 GPU) | `.../best_of_n_selection_n16_T1/BEST_OF_N_16.md` |
 | 20 | 표본 확대: 새 navtest log 56개(4,563 장면) | 완료 (두 GPU, shard 스트리밍) | `.../expanded_best_of_n/EXPANDED_BEST_OF_N.md` |
 | 21–24 | PDM Score, 기전 연결, 후보 수, 안전 필터 (개발 → 사전 등록 → held-out 52 log) | 완료 | `.../selection_validation/SELECTION_VALIDATION.md` |
+| 25 | NAVSIM v2 navhard 절반 2단계 pseudo closed-loop (`navsim_v2` clone, `navhard_half` split) | 완료 | `.../navhard_eval/NAVHARD_CLOSED_LOOP.md` |
+| – | 3080 Ti 결과 전부 5090 재실행 + 재분석 | 완료 (결론 동일) | `.../gpu5090_reanalysis/GPU5090_REANALYSIS.md` |
 
 한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop). 사전 등록 held-out에서 NAVSIM PDMS +0.0095(충돌 0.56 → 0.23%), 현재 frame 안전 필터를 더하면 +0.032(충돌 0.10%)이며, 선택된/버려진 후보는 첫 이탈 이후에만 엔트로피가 갈라집니다(실험 21–24).
 
@@ -49,6 +51,9 @@ bash tools/regenerate_autovla.sh        # 원시 결과 재생성 (약 9-10시�
 | 디스크 부족 | full_extract 텐서가 두 arm이면 56 GB | `--tensor-arms N` (18 GB). arm C 텐서가 필요한 `cot_intervention` 재현은 불가 |
 | 12 GB GPU에서 모델 로드 OOM (공유 GPU) | `resize_token_embeddings`의 mean-resizing이 1.2 GB 일시 할당 | `VLA_LOW_MEM=1` (그 행은 체크포인트가 덮어쓰므로 가중치 동일). `VLA_BUILD_ON_CPU=1`은 RAM 14 GB 한도에서 죽음 |
 | 같은 실험이 GPU마다 조금 다른 수치 | 실패 장면은 경계 장면이라 부동소수 차이에 민감 | 한 실험의 모든 조건은 한 GPU·한 batch에서. 5090과 3080 Ti 결과를 섞어 비교하지 말 것 |
+| shard 디코딩 일부 실패 (FileNotFoundError) | `sensor_blobs/test/<log>`가 이미 있으면(빈 폴더라도) 스트리밍 스크립트가 shard 이미지를 옮기지 않음 | 경고 출력하도록 수정. 남은 log는 `tools/repair_stream_logs.sh`로 복구. navhard 원본은 `/root/VLA/navhard/original_sensor_blobs`에 따로 둠 |
+| `analyze_expanded_best_of_n.py`에 run 여러 개를 주면 첫 run 상위 폴더의 `summary_pooled.json`을 덮어씀 | 출력 위치 고정 | 다른 조합으로 돌린 뒤에는 결과를 따로 옮기고 원본은 `git checkout`으로 복원 |
+| navhard 채점에서 KeyError [inf] | YAML이 `3e...` 같은 hex 토큰을 float으로 읽음 | `navhard_subset.py`가 모든 문자열을 따옴표로 씀 |
 | `Planner` 쓰는 스크립트에서 상대경로 깨짐 | `_planner.Planner`가 `os.chdir(/root/VLA/autovla)` | 경로는 절대경로로 |
 | 재실행 시 "records.jsonl exists; refusing" | 결과 덮어쓰기 방지 | 출력 폴더를 지우거나 `--output` 지정 |
 
@@ -76,7 +81,7 @@ tools/
 
 ## 5. 다음 실험 후보 (우선순위 순)
 
-1. **best-of-N 선택의 진짜 closed-loop 검증**: 확신도 선택(rank-sum)과 안전 필터(F1)가 open-loop와 비반응형 PDMS에서 사전 등록 held-out까지 확인됐습니다(실험 20–24). 다음은 NAVSIM v2 pseudo-simulation(2단계 반응형 평가)입니다. AutoVLA에 들어 있는 navsim은 v1.1이라 v2를 별도 환경으로 설치해야 합니다. NAVSIM v2 pseudo-simulation(또는 nuPlan 시뮬레이터)에서 PDMS로 평가해야 실제 주행 이득을 말할 수 있습니다. 실험 13처럼 로그 카메라를 쓰는 재계획은 누출이 있어 대체가 안 됩니다.
+1. **연속 closed-loop / 전체 navhard**: 실험 25는 navhard 절반의 2단계 pseudo closed-loop입니다. 전체 navhard(나머지 36 log, 원본 카메라 추가 다운로드 필요: `tools/fetch_navhard_originals.sh`)나 nuPlan 연속 시뮬레이션으로 F1·max log-lik을 확인하세요. split 설정은 `autovla_misalignment_poc/configs/navsim_v2/`를 navsim_v2의 `navsim/planning/script/config/common/train_test_split/`에 복사. 파이프라인: `navhard_subset.py` → `navhard_metric_cache.py` → `navhard_scene_json.py` → `expanded_best_of_n.py`(장면 폴더 `navhard_half_json`) → `navhard_safety_flags.py` → `navhard_filter_picks.py` → `navhard_submission.py --picks` → `navhard_group_scores.py` → `analyze_navhard.py`.
 2. **선택 신호 개선**: oracle 선택은 실패율을 0.24%까지 낮추므로(실험 20) 여지가 큽니다. 저장된 `outputs/expanded_best_of_n/gpu*/records.jsonl`(후보별 step 엔트로피·log-prob·궤적; 저장소에는 없음, 재생성 필요)로 CPU에서 새 규칙을 먼저 평가하고, 반드시 새 log나 새 seed로 확인하세요(규칙을 같은 데이터로 고르면 과적합). 조기 가지치기(앞쪽 step만으로 선택)는 통하지 않았습니다.
 3. **선택 규칙 개선**: 엔트로피와 log-likelihood의 결합, 후보 간 합의와의 결합, 선택 후 재계획. 모두 저장된 `records.jsonl`로 CPU에서 먼저 평가할 수 있습니다.
 4. **표본 확대 (계속)**: shard 6–17은 처리했습니다(`tools/stream_expanded_best_of_n.sh <GPU> <shard...>`, 이미지를 처리 후 지워 디스크 15 GB로 가능). shard 18–31(navtest log 약 60개)이 남아 있습니다.
