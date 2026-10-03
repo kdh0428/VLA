@@ -15,3 +15,6 @@ probe는 dev에서만 학습(layer와 정규화는 log 단위 3-fold CV로 dev�
 지표(held-out 주, dev 참고): pooled AUROC·AUPRC(log 단위 bootstrap 95% CI, 1,000회), 장면 내 AUROC(양쪽 클래스가 있는 장면 평균).
 비교 기준: 실험 22의 entropy pre-deviation 장면 내 AUROC ≈ 0.51, rank-sum 장면 내 ≈ 0.85–0.87 / post-deviation entropy ≈ 0.77–0.79.
 핵심 질문: 불안정 rollout은 이탈 전에 예측 가능한가, 이탈 이후에만 구별 가능한가.
+
+수정 (2026-10-03 21:55, probe 결과를 보기 전): 계산 시간 때문에 probe 하이퍼파라미터 격자를 줄였습니다 —
+logistic C ∈ {1e-3, 1e-2}, ridge alpha ∈ {1e3, 1e4}, MLP alpha = 1e-2 (hidden 256, early stopping). layer(18/36) 선택과 dev 3-fold CV 절차는 그대로입니다.

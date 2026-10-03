@@ -107,11 +107,11 @@ def metrics(rows, score, reps=1000):
 def probes(rows_d, H_d, rows_h, H_h, layers):
     y_d = np.array([r["amp"] for r in rows_d]); g_d = np.array([r["log"] for r in rows_d])
     makers = {"probe_logreg": [(f"C={C}", lambda C=C: make_pipeline(StandardScaler(), LogisticRegression(C=C, max_iter=2000)))
-                               for C in (1e-4, 1e-3, 1e-2, 1e-1)],
+                               for C in (1e-3, 1e-2)],
               "probe_ridge": [(f"alpha={al}", lambda al=al: make_pipeline(StandardScaler(), RidgeClassifier(alpha=al)))
-                              for al in (1e2, 1e3, 1e4, 1e5)],
+                              for al in (1e3, 1e4)],
               "probe_mlp": [(f"alpha={al}", lambda al=al: make_pipeline(StandardScaler(), MLPClassifier(
-                  hidden_layer_sizes=(256,), alpha=al, early_stopping=True, max_iter=200, random_state=0))) for al in (1e-3, 1e-1, 1.0)]}
+                  hidden_layer_sizes=(256,), alpha=al, early_stopping=True, max_iter=200, random_state=0))) for al in (1e-2,)]}
     out = {}
     for name, grid in makers.items():
         for w in ("pre", "post"):
