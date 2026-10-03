@@ -1,0 +1,2393 @@
+{
+ "half1": {
+  "n_groups": 105,
+  "n_logs": 36,
+  "means": {
+   "no_filter": {
+    "epdms": 0.23927269885560168,
+    "stage1:no_at_fault_collisions": 0.9809523809523809,
+    "stage1:drivable_area_compliance": 0.8285714285714286,
+    "stage1:driving_direction_compliance": 0.9714285714285714,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8087530631604672,
+    "stage1:time_to_collision_within_bound": 0.9666666666666667,
+    "stage1:lane_keeping": 0.9571428571428572,
+    "stage1:history_comfort": 0.9809523809523809,
+    "stage1:two_frame_extended_comfort": 0.7047619047619048,
+    "stage1:score": 0.7223678087707958,
+    "stage2:no_at_fault_collisions": 0.7949247828867071,
+    "stage2:drivable_area_compliance": 0.6064022290190076,
+    "stage2:driving_direction_compliance": 0.743464135803958,
+    "stage2:traffic_light_compliance": 0.9836538274031043,
+    "stage2:ego_progress": 0.8249251250167329,
+    "stage2:time_to_collision_within_bound": 0.7754717936915486,
+    "stage2:lane_keeping": 0.4356543758344562,
+    "stage2:history_comfort": 0.9541442834473187,
+    "stage2:two_frame_extended_comfort": 0.5739200255530644,
+    "stage2:score": 0.3316852023892418
+   },
+   "collision_only": {
+    "epdms": 0.24825039262516743,
+    "stage1:no_at_fault_collisions": 0.9904761904761905,
+    "stage1:drivable_area_compliance": 0.8238095238095238,
+    "stage1:driving_direction_compliance": 0.969047619047619,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8086509040631802,
+    "stage1:time_to_collision_within_bound": 0.9714285714285714,
+    "stage1:lane_keeping": 0.9571428571428572,
+    "stage1:history_comfort": 0.9809523809523809,
+    "stage1:two_frame_extended_comfort": 0.7047619047619048,
+    "stage1:score": 0.7223678087707958,
+    "stage2:no_at_fault_collisions": 0.8664604659702406,
+    "stage2:drivable_area_compliance": 0.612047178031921,
+    "stage2:driving_direction_compliance": 0.7430420497997046,
+    "stage2:traffic_light_compliance": 0.9836538274031043,
+    "stage2:ego_progress": 0.8243057872353586,
+    "stage2:time_to_collision_within_bound": 0.8171805051936428,
+    "stage2:lane_keeping": 0.4484725670468623,
+    "stage2:history_comfort": 0.9324003372079998,
+    "stage2:two_frame_extended_comfort": 0.5347468646500854,
+    "stage2:score": 0.34915026522703746
+   },
+   "dac_only": {
+    "epdms": 0.33152911667603,
+    "stage1:no_at_fault_collisions": 0.9809523809523809,
+    "stage1:drivable_area_compliance": 0.9333333333333333,
+    "stage1:driving_direction_compliance": 0.969047619047619,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8060057712102218,
+    "stage1:time_to_collision_within_bound": 0.9666666666666667,
+    "stage1:lane_keeping": 0.9571428571428572,
+    "stage1:history_comfort": 0.9714285714285714,
+    "stage1:two_frame_extended_comfort": 0.6952380952380952,
+    "stage1:score": 0.8132885595250577,
+    "stage2:no_at_fault_collisions": 0.8156912587843754,
+    "stage2:drivable_area_compliance": 0.7476720972163512,
+    "stage2:driving_direction_compliance": 0.7535430532575514,
+    "stage2:traffic_light_compliance": 0.982993197278922,
+    "stage2:ego_progress": 0.8257779523158757,
+    "stage2:time_to_collision_within_bound": 0.7939015130281202,
+    "stage2:lane_keeping": 0.45281126460191157,
+    "stage2:history_comfort": 0.9393373654308783,
+    "stage2:two_frame_extended_comfort": 0.5290472511653558,
+    "stage2:score": 0.4106027239791852
+   },
+   "collision_dac": {
+    "epdms": 0.3521637572671929,
+    "stage1:no_at_fault_collisions": 0.9904761904761905,
+    "stage1:drivable_area_compliance": 0.9333333333333333,
+    "stage1:driving_direction_compliance": 0.969047619047619,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.809021706689797,
+    "stage1:time_to_collision_within_bound": 0.9714285714285714,
+    "stage1:lane_keeping": 0.9571428571428572,
+    "stage1:history_comfort": 0.9714285714285714,
+    "stage1:two_frame_extended_comfort": 0.6952380952380952,
+    "stage1:score": 0.819725447128509,
+    "stage2:no_at_fault_collisions": 0.8636485937744744,
+    "stage2:drivable_area_compliance": 0.7431939255934423,
+    "stage2:driving_direction_compliance": 0.746837665086954,
+    "stage2:traffic_light_compliance": 0.9836538274031043,
+    "stage2:ego_progress": 0.8260205931563976,
+    "stage2:time_to_collision_within_bound": 0.8209963488084064,
+    "stage2:lane_keeping": 0.4510245368760155,
+    "stage2:history_comfort": 0.9311505534112864,
+    "stage2:two_frame_extended_comfort": 0.518591155796825,
+    "stage2:score": 0.43146777844565354
+   },
+   "full_ranksum": {
+    "epdms": 0.3647002934015932,
+    "stage1:no_at_fault_collisions": 0.9857142857142858,
+    "stage1:drivable_area_compliance": 0.9333333333333333,
+    "stage1:driving_direction_compliance": 0.9619047619047619,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.7989394372296811,
+    "stage1:time_to_collision_within_bound": 0.9714285714285714,
+    "stage1:lane_keeping": 0.9666666666666667,
+    "stage1:history_comfort": 0.9809523809523809,
+    "stage1:two_frame_extended_comfort": 0.7047619047619048,
+    "stage1:score": 0.8129709439817862,
+    "stage2:no_at_fault_collisions": 0.8802697625667213,
+    "stage2:drivable_area_compliance": 0.7483692720656024,
+    "stage2:driving_direction_compliance": 0.7796619563646277,
+    "stage2:traffic_light_compliance": 0.9877551020408164,
+    "stage2:ego_progress": 0.8069806881003883,
+    "stage2:time_to_collision_within_bound": 0.8487952300281676,
+    "stage2:lane_keeping": 0.44316700807793674,
+    "stage2:history_comfort": 0.9454015271860191,
+    "stage2:two_frame_extended_comfort": 0.5756960429941512,
+    "stage2:score": 0.45022497715851856
+   },
+   "full_maxll": {
+    "epdms": 0.3724045556398835,
+    "stage1:no_at_fault_collisions": 0.9904761904761905,
+    "stage1:drivable_area_compliance": 0.9333333333333333,
+    "stage1:driving_direction_compliance": 0.9714285714285714,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8005287768457945,
+    "stage1:time_to_collision_within_bound": 0.9714285714285714,
+    "stage1:lane_keeping": 0.9666666666666667,
+    "stage1:history_comfort": 0.9809523809523809,
+    "stage1:two_frame_extended_comfort": 0.7142857142857143,
+    "stage1:score": 0.8218627932149657,
+    "stage2:no_at_fault_collisions": 0.8738377460886705,
+    "stage2:drivable_area_compliance": 0.7436560417051442,
+    "stage2:driving_direction_compliance": 0.7687006439873929,
+    "stage2:traffic_light_compliance": 0.9877551020408164,
+    "stage2:ego_progress": 0.8125560774266439,
+    "stage2:time_to_collision_within_bound": 0.8427460737555245,
+    "stage2:lane_keeping": 0.445890363429314,
+    "stage2:history_comfort": 0.940995544889261,
+    "stage2:two_frame_extended_comfort": 0.590975775518833,
+    "stage2:score": 0.453015077419
+   }
+  },
+  "contrasts": {
+   "collision_only - no_filter": {
+    "epdms": {
+     "diff": 0.008977693769565703,
+     "ci95": [
+      0.000527615556426728,
+      0.018914509100209365
+     ],
+     "p_perm_log": 0.20358982050897456,
+     "p_wilcoxon_group": 0.0289306640625,
+     "groups_better_worse_tied": [
+      14,
+      5,
+      86
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.017465062837795663,
+     "ci95": [
+      -0.000834190212886169,
+      0.0402796999817645
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.009523809523809525,
+     "ci95": [
+      0.0,
+      0.025423728813559324
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.07153568308353345,
+     "ci95": [
+      0.03618483883215807,
+      0.11445310169099314
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": -0.004761904761904762,
+     "ci95": [
+      -0.01282051282051282,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.005644949012913358,
+     "ci95": [
+      -0.007902848300095579,
+      0.02147776513243659
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.00010215909728703565,
+     "ci95": [
+      -0.000275043723465096,
+      0.0
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0006193377813744236,
+     "ci95": [
+      -0.008960275898873373,
+      0.007521941146779638
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.021743946239318905,
+     "ci95": [
+      -0.04602334232489311,
+      -0.005005342199471068
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.039173160902979,
+     "ci95": [
+      -0.07122677948405155,
+      -0.01211358479906837
+     ]
+    }
+   },
+   "dac_only - no_filter": {
+    "epdms": {
+     "diff": 0.09225641782042832,
+     "ci95": [
+      0.060853376270825425,
+      0.12324465609238534
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 1.6470148194411478e-11,
+     "groups_better_worse_tied": [
+      62,
+      2,
+      41
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09092075075426186,
+     "ci95": [
+      0.05598356214927769,
+      0.14074563892450065
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.0789175215899433,
+     "ci95": [
+      0.04811420667965052,
+      0.11135977760983169
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.020766475897668425,
+     "ci95": [
+      0.007576758142818118,
+      0.03729860850537017
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.10476190476190476,
+     "ci95": [
+      0.06451612903225806,
+      0.16049382716049382
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.14126986819734347,
+     "ci95": [
+      0.09660625780201854,
+      0.18746298583048276
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0027472919502455166,
+     "ci95": [
+      -0.010036776238259751,
+      0.0007305312428947197
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": 0.0008528272991426804,
+     "ci95": [
+      -0.007924642159272913,
+      0.008714369775522892
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.014806918016440317,
+     "ci95": [
+      -0.028960202985996303,
+      -0.0015693539093781436
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.009523809523809525,
+     "ci95": [
+      -0.05,
+      0.020202020202020204
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.044872774387708605,
+     "ci95": [
+      -0.08306146618442903,
+      0.00041641684248450915
+     ]
+    }
+   },
+   "collision_dac - no_filter": {
+    "epdms": {
+     "diff": 0.11289105841159111,
+     "ci95": [
+      0.08235282874604113,
+      0.14348168745224438
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 9.218337996146797e-12,
+     "groups_better_worse_tied": [
+      67,
+      5,
+      33
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09735763835771319,
+     "ci95": [
+      0.06084725012410727,
+      0.14961301891992157
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.0997825760564117,
+     "ci95": [
+      0.06982347950312615,
+      0.1343959541387066
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.009523809523809525,
+     "ci95": [
+      0.0,
+      0.025423728813559324
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.06872381088776727,
+     "ci95": [
+      0.035546309972808866,
+      0.1094093807786748
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.10476190476190476,
+     "ci95": [
+      0.06451612903225806,
+      0.16049382716049382
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.13679169657443488,
+     "ci95": [
+      0.0935830962521822,
+      0.18239833569054473
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": 0.00026864352932976166,
+     "ci95": [
+      -0.0012712804626096059,
+      0.002015009522822153
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": 0.0010954681396647215,
+     "ci95": [
+      -0.01386842976172251,
+      0.013685646069710655
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.02299373003603244,
+     "ci95": [
+      -0.04399668139414699,
+      -0.002447923017816336
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.009523809523809525,
+     "ci95": [
+      -0.05,
+      0.020202020202020204
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.05532886975623938,
+     "ci95": [
+      -0.09596329125917465,
+      -0.009821797065514021
+     ]
+    }
+   },
+   "collision_dac - collision_only": {
+    "epdms": {
+     "diff": 0.1039133646420254,
+     "ci95": [
+      0.07101931520346942,
+      0.1367949258922706
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 4.519793968901239e-11,
+     "groups_better_worse_tied": [
+      60,
+      3,
+      42
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09735763835771319,
+     "ci95": [
+      0.06084725012410727,
+      0.14961301891992157
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.08231751321861605,
+     "ci95": [
+      0.048426887863314776,
+      0.11482216383763935
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": -0.002811872195766178,
+     "ci95": [
+      -0.015321727992210989,
+      0.009526041412819784
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.10952380952380952,
+     "ci95": [
+      0.06722689075630252,
+      0.1650943396226415
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.13114674756152153,
+     "ci95": [
+      0.08396261362311927,
+      0.17603958813169696
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": 0.0003708026266167973,
+     "ci95": [
+      -0.0011958141673617123,
+      0.0020564985822410366
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": 0.001714805921039144,
+     "ci95": [
+      -0.011475010526079743,
+      0.011598530662147473
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.0012497837967135332,
+     "ci95": [
+      -0.017556927205645355,
+      0.018160946794831923
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.009523809523809525,
+     "ci95": [
+      -0.05,
+      0.020202020202020204
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.01615570885326038,
+     "ci95": [
+      -0.04347877050890589,
+      0.01891189382656164
+     ]
+    }
+   },
+   "collision_dac - dac_only": {
+    "epdms": {
+     "diff": 0.020634640591162788,
+     "ci95": [
+      0.007495269530234761,
+      0.03778868676888295
+     ],
+     "p_perm_log": 0.031548422578871055,
+     "p_wilcoxon_group": 0.0034525394439697266,
+     "groups_better_worse_tied": [
+      18,
+      5,
+      82
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.00643688760345134,
+     "ci95": [
+      0.0,
+      0.01448186020197834
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.020865054466468393,
+     "ci95": [
+      0.005368370215856525,
+      0.0423709638009824
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.009523809523809525,
+     "ci95": [
+      0.0,
+      0.025423728813559324
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.04795733499009884,
+     "ci95": [
+      0.019424685247807317,
+      0.083120190656144
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": -0.004478171622908605,
+     "ci95": [
+      -0.015809306385517127,
+      0.004102095486400009
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": 0.0030159354795752783,
+     "ci95": [
+      -0.00012974171570815496,
+      0.011518271520081114
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": 0.00024264084052204012,
+     "ci95": [
+      -0.009704332769348328,
+      0.0095423584209202
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.00818681201959212,
+     "ci95": [
+      -0.026464512458969445,
+      0.004112505146352712
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.010456095368530769,
+     "ci95": [
+      -0.04262350075712311,
+      0.020143537253854874
+     ]
+    }
+   },
+   "full_ranksum - collision_dac": {
+    "epdms": {
+     "diff": 0.012536536134400427,
+     "ci95": [
+      -0.015934352531984063,
+      0.044968976031416114
+     ],
+     "p_perm_log": 0.5008249587520623,
+     "p_wilcoxon_group": 0.8307600177194401,
+     "groups_better_worse_tied": [
+      45,
+      46,
+      14
+     ]
+    },
+    "stage1:score": {
+     "diff": -0.006754503146722729,
+     "ci95": [
+      -0.02437749259275436,
+      0.007193332731443596
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.018757198712865082,
+     "ci95": [
+      -0.014055438129275129,
+      0.05502300738751364
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": -0.004761904761904762,
+     "ci95": [
+      -0.016853932584269662,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.016621168792246885,
+     "ci95": [
+      -0.012477994860728934,
+      0.044867201340771844
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.005175346472160065,
+     "ci95": [
+      -0.014592560306113198,
+      0.026613674105878136
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.010082269460115768,
+     "ci95": [
+      -0.019507117724788827,
+      -0.002245543749154766
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.019039905056009446,
+     "ci95": [
+      -0.029143223065387743,
+      -0.008069446067087966
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": 0.014250973774733004,
+     "ci95": [
+      -0.004622289457213656,
+      0.03355694162959388
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.009523809523809525,
+     "ci95": [
+      -0.043478260869565216,
+      0.06896551724137931
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": 0.057104887197326315,
+     "ci95": [
+      -0.006386764329245934,
+      0.13240149876785012
+     ]
+    }
+   },
+   "full_maxll - collision_dac": {
+    "epdms": {
+     "diff": 0.02024079837269074,
+     "ci95": [
+      -0.005823155622853307,
+      0.04979558125207085
+     ],
+     "p_perm_log": 0.01694915254237288,
+     "p_wilcoxon_group": 0.4787548521711176,
+     "groups_better_worse_tied": [
+      39,
+      38,
+      28
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.002137346086456601,
+     "ci95": [
+      -0.003393698338561397,
+      0.007515251216338795
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.021547298973346448,
+     "ci95": [
+      -0.010108233554845289,
+      0.05634079169129048
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.010189152314196061,
+     "ci95": [
+      -0.009132890994072664,
+      0.03781119135069925
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.0004621161117017888,
+     "ci95": [
+      -0.015065661478302208,
+      0.018306108945765006
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.008492929844002364,
+     "ci95": [
+      -0.016299736698978093,
+      -0.0015915672001466793
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.013464515729753913,
+     "ci95": [
+      -0.025873094697789974,
+      -0.0005867013737337832
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": 0.009844991477974812,
+     "ci95": [
+      -0.007377838233496006,
+      0.028840422741719947
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.01904761904761905,
+     "ci95": [
+      -0.01694915254237288,
+      0.05737704918032787
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": 0.07238461972200795,
+     "ci95": [
+      0.02978277706614927,
+      0.1250300331628602
+     ]
+    }
+   }
+  }
+ },
+ "half2": {
+  "n_groups": 120,
+  "n_logs": 40,
+  "means": {
+   "no_filter": {
+    "epdms": 0.21936033690591766,
+    "stage1:no_at_fault_collisions": 0.9875,
+    "stage1:drivable_area_compliance": 0.8375,
+    "stage1:driving_direction_compliance": 0.9791666666666666,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8524960762491729,
+    "stage1:time_to_collision_within_bound": 0.9666666666666667,
+    "stage1:lane_keeping": 0.9833333333333333,
+    "stage1:history_comfort": 0.9708333333333333,
+    "stage1:two_frame_extended_comfort": 0.775,
+    "stage1:score": 0.7523929159190144,
+    "stage2:no_at_fault_collisions": 0.7636203313034602,
+    "stage2:drivable_area_compliance": 0.57539063656228,
+    "stage2:driving_direction_compliance": 0.7303938902815482,
+    "stage2:traffic_light_compliance": 0.9755495630998124,
+    "stage2:ego_progress": 0.8611863795819776,
+    "stage2:time_to_collision_within_bound": 0.7471879983403473,
+    "stage2:lane_keeping": 0.38736395461349127,
+    "stage2:history_comfort": 0.9495584868512207,
+    "stage2:two_frame_extended_comfort": 0.607794886069786,
+    "stage2:score": 0.29305155280892153
+   },
+   "collision_only": {
+    "epdms": 0.2341011458474364,
+    "stage1:no_at_fault_collisions": 0.9916666666666667,
+    "stage1:drivable_area_compliance": 0.8375,
+    "stage1:driving_direction_compliance": 0.98125,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8519433062468396,
+    "stage1:time_to_collision_within_bound": 0.9708333333333333,
+    "stage1:lane_keeping": 0.9833333333333333,
+    "stage1:history_comfort": 0.9708333333333333,
+    "stage1:two_frame_extended_comfort": 0.775,
+    "stage1:score": 0.7557886603852709,
+    "stage2:no_at_fault_collisions": 0.8102736819373629,
+    "stage2:drivable_area_compliance": 0.5806532244646171,
+    "stage2:driving_direction_compliance": 0.7279507675131488,
+    "stage2:traffic_light_compliance": 0.9797155668751967,
+    "stage2:ego_progress": 0.8583445123532344,
+    "stage2:time_to_collision_within_bound": 0.7776274428291424,
+    "stage2:lane_keeping": 0.3850476197911359,
+    "stage2:history_comfort": 0.9324900625195266,
+    "stage2:two_frame_extended_comfort": 0.5657332032259691,
+    "stage2:score": 0.3089595509998677
+   },
+   "dac_only": {
+    "epdms": 0.3013635379856243,
+    "stage1:no_at_fault_collisions": 0.975,
+    "stage1:drivable_area_compliance": 0.9541666666666667,
+    "stage1:driving_direction_compliance": 0.9854166666666667,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8494877045798143,
+    "stage1:time_to_collision_within_bound": 0.9666666666666667,
+    "stage1:lane_keeping": 0.9833333333333333,
+    "stage1:history_comfort": 0.9541666666666667,
+    "stage1:two_frame_extended_comfort": 0.7333333333333333,
+    "stage1:score": 0.8387970454777306,
+    "stage2:no_at_fault_collisions": 0.7619218418914203,
+    "stage2:drivable_area_compliance": 0.7432602107886469,
+    "stage2:driving_direction_compliance": 0.734142630092687,
+    "stage2:traffic_light_compliance": 0.967364264003287,
+    "stage2:ego_progress": 0.8529015597633427,
+    "stage2:time_to_collision_within_bound": 0.7549837885894765,
+    "stage2:lane_keeping": 0.38511299346806105,
+    "stage2:history_comfort": 0.9482028089355207,
+    "stage2:two_frame_extended_comfort": 0.5654481633987586,
+    "stage2:score": 0.36154834947397135
+   },
+   "collision_dac": {
+    "epdms": 0.31672357756005615,
+    "stage1:no_at_fault_collisions": 0.9833333333333333,
+    "stage1:drivable_area_compliance": 0.9541666666666667,
+    "stage1:driving_direction_compliance": 0.9875,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8511289721786582,
+    "stage1:time_to_collision_within_bound": 0.975,
+    "stage1:lane_keeping": 0.9833333333333333,
+    "stage1:history_comfort": 0.9541666666666667,
+    "stage1:two_frame_extended_comfort": 0.7333333333333333,
+    "stage1:score": 0.8458386232773205,
+    "stage2:no_at_fault_collisions": 0.788936705123935,
+    "stage2:drivable_area_compliance": 0.7163358197738958,
+    "stage2:driving_direction_compliance": 0.7301277379103084,
+    "stage2:traffic_light_compliance": 0.9750559165920568,
+    "stage2:ego_progress": 0.8516097823571624,
+    "stage2:time_to_collision_within_bound": 0.7739282149096101,
+    "stage2:lane_keeping": 0.39037207463740664,
+    "stage2:history_comfort": 0.9423701687779494,
+    "stage2:two_frame_extended_comfort": 0.5432835174956533,
+    "stage2:score": 0.37712866150251484
+   },
+   "full_ranksum": {
+    "epdms": 0.33144777653655394,
+    "stage1:no_at_fault_collisions": 0.9875,
+    "stage1:drivable_area_compliance": 0.9541666666666667,
+    "stage1:driving_direction_compliance": 0.9833333333333333,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8458125313719606,
+    "stage1:time_to_collision_within_bound": 0.9791666666666666,
+    "stage1:lane_keeping": 0.9791666666666666,
+    "stage1:history_comfort": 0.9583333333333334,
+    "stage1:two_frame_extended_comfort": 0.7333333333333333,
+    "stage1:score": 0.8438746676503593,
+    "stage2:no_at_fault_collisions": 0.798933970995572,
+    "stage2:drivable_area_compliance": 0.7260263731225555,
+    "stage2:driving_direction_compliance": 0.7382971778493466,
+    "stage2:traffic_light_compliance": 0.975889905029032,
+    "stage2:ego_progress": 0.8491620363171465,
+    "stage2:time_to_collision_within_bound": 0.7592593408333894,
+    "stage2:lane_keeping": 0.4027292383243778,
+    "stage2:history_comfort": 0.9299230489333518,
+    "stage2:two_frame_extended_comfort": 0.6085127295254923,
+    "stage2:score": 0.3995780493049435
+   },
+   "full_maxll": {
+    "epdms": 0.33095277146194324,
+    "stage1:no_at_fault_collisions": 0.9875,
+    "stage1:drivable_area_compliance": 0.9541666666666667,
+    "stage1:driving_direction_compliance": 0.9833333333333333,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8488660848365535,
+    "stage1:time_to_collision_within_bound": 0.9791666666666666,
+    "stage1:lane_keeping": 0.9708333333333333,
+    "stage1:history_comfort": 0.9666666666666667,
+    "stage1:two_frame_extended_comfort": 0.75,
+    "stage1:score": 0.8471686487598795,
+    "stage2:no_at_fault_collisions": 0.8026000627943494,
+    "stage2:drivable_area_compliance": 0.7227777053083911,
+    "stage2:driving_direction_compliance": 0.7469907326238848,
+    "stage2:traffic_light_compliance": 0.9755687371049824,
+    "stage2:ego_progress": 0.8462408463438035,
+    "stage2:time_to_collision_within_bound": 0.7706034557630321,
+    "stage2:lane_keeping": 0.41189613686856996,
+    "stage2:history_comfort": 0.9335213777015546,
+    "stage2:two_frame_extended_comfort": 0.587921260350672,
+    "stage2:score": 0.39642643317164433
+   }
+  },
+  "contrasts": {
+   "collision_only - no_filter": {
+    "epdms": {
+     "diff": 0.014740808941518753,
+     "ci95": [
+      0.005206715667896428,
+      0.02641061980513179
+     ],
+     "p_perm_log": 0.0006999650017499125,
+     "p_wilcoxon_group": 3.62396240234375e-05,
+     "groups_better_worse_tied": [
+      19,
+      1,
+      100
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.00339574446625653,
+     "ci95": [
+      0.0,
+      0.011412460179138412
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.01590799819094609,
+     "ci95": [
+      0.004615839999026878,
+      0.029170312040872674
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.004166666666666667,
+     "ci95": [
+      0.0,
+      0.014018691588785047
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.046653350633902746,
+     "ci95": [
+      0.02405570385885719,
+      0.07394390815156948
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.005262587902337281,
+     "ci95": [
+      -0.003442686992438218,
+      0.015899330779970054
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0005527700023333202,
+     "ci95": [
+      -0.001885320705667995,
+      3.07284877016515e-05
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0028418672287431196,
+     "ci95": [
+      -0.005313263308058051,
+      -0.0007034478597846329
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.01706842433169409,
+     "ci95": [
+      -0.03232607595958942,
+      -0.004443813274833058
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.0420616828438168,
+     "ci95": [
+      -0.06666358400431414,
+      -0.01965977332021906
+     ]
+    }
+   },
+   "dac_only - no_filter": {
+    "epdms": {
+     "diff": 0.08200320107970673,
+     "ci95": [
+      0.05597016168514461,
+      0.10572111519977156
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 2.927692606591504e-10,
+     "groups_better_worse_tied": [
+      55,
+      4,
+      61
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.08640412955871611,
+     "ci95": [
+      0.05497480897673982,
+      0.119149401938749
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.06849679666504976,
+     "ci95": [
+      0.0427825337499551,
+      0.09327985229692959
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": -0.0125,
+     "ci95": [
+      -0.03070175438596491,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": -0.0016984894120398951,
+     "ci95": [
+      -0.018961872945410144,
+      0.015421187431275955
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.11666666666666667,
+     "ci95": [
+      0.07666666666666666,
+      0.16287878787878787
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.16786957422636703,
+     "ci95": [
+      0.1243123880116848,
+      0.20620773887873486
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0030083716693587244,
+     "ci95": [
+      -0.007415482618130821,
+      5.794979436541371e-05
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.00828481981863479,
+     "ci95": [
+      -0.01516952923707013,
+      -0.0015227083874883355
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.001355677915700126,
+     "ci95": [
+      -0.00887012116995826,
+      0.007700303887773834
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.041666666666666664,
+     "ci95": [
+      -0.078125,
+      -0.00847457627118644
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.04234672267102738,
+     "ci95": [
+      -0.08402718138375281,
+      0.002074868464749928
+     ]
+    }
+   },
+   "collision_dac - no_filter": {
+    "epdms": {
+     "diff": 0.09736324065413851,
+     "ci95": [
+      0.0710956547758392,
+      0.1207710109551872
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 1.9715909820695967e-11,
+     "groups_better_worse_tied": [
+      61,
+      4,
+      55
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09344570735830597,
+     "ci95": [
+      0.058857261108209824,
+      0.13315103735514452
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.08407710869359325,
+     "ci95": [
+      0.0591709625073952,
+      0.10790979304339572
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": -0.004166666666666667,
+     "ci95": [
+      -0.02066115702479339,
+      0.01
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.025316373820474646,
+     "ci95": [
+      0.005591386151357299,
+      0.04643414121825832
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.11666666666666667,
+     "ci95": [
+      0.07666666666666666,
+      0.16287878787878787
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.14094518321161598,
+     "ci95": [
+      0.09573987178629782,
+      0.18127761479679821
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0013671040705147963,
+     "ci95": [
+      -0.005213523428791464,
+      0.0017873181082079977
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.009576597224814996,
+     "ci95": [
+      -0.01648424246356844,
+      -0.002328238639560768
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.007188318073271295,
+     "ci95": [
+      -0.01765584878850743,
+      0.0042862411649123465
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.041666666666666664,
+     "ci95": [
+      -0.078125,
+      -0.00847457627118644
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.06451136857413269,
+     "ci95": [
+      -0.11005383758663587,
+      -0.01505286462291886
+     ]
+    }
+   },
+   "collision_dac - collision_only": {
+    "epdms": {
+     "diff": 0.08262243171261976,
+     "ci95": [
+      0.055484582357575286,
+      0.10778181645541922
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 3.0737615314033535e-10,
+     "groups_better_worse_tied": [
+      55,
+      4,
+      61
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09004996289204945,
+     "ci95": [
+      0.05796659781709243,
+      0.1251939121122661
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.06816911050264716,
+     "ci95": [
+      0.04197187980629091,
+      0.0922353962774952
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": -0.008333333333333333,
+     "ci95": [
+      -0.023809523809523808,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": -0.021336976813428103,
+     "ci95": [
+      -0.043780430838989276,
+      -0.00231074026424438
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.11666666666666667,
+     "ci95": [
+      0.07666666666666666,
+      0.16287878787878787
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.1356825953092787,
+     "ci95": [
+      0.08701290490552044,
+      0.1781674875823533
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0008143340681814761,
+     "ci95": [
+      -0.004485814620877367,
+      0.002210036707518139
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.006734729996071876,
+     "ci95": [
+      -0.013358169448315594,
+      -0.0004350102773168973
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": 0.009880106258422795,
+     "ci95": [
+      -0.0023161910296583205,
+      0.026068746083294795
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.041666666666666664,
+     "ci95": [
+      -0.078125,
+      -0.00847457627118644
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.02244968573031589,
+     "ci95": [
+      -0.06368821892733936,
+      0.018381551287727775
+     ]
+    }
+   },
+   "collision_dac - dac_only": {
+    "epdms": {
+     "diff": 0.015360039574431803,
+     "ci95": [
+      0.006344057530526546,
+      0.026905998458479394
+     ],
+     "p_perm_log": 0.000199990000499975,
+     "p_wilcoxon_group": 0.000133514404296875,
+     "groups_better_worse_tied": [
+      19,
+      1,
+      100
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.007041577799589863,
+     "ci95": [
+      0.0,
+      0.018662093613171643
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.015580312028543496,
+     "ci95": [
+      0.0052201030834872165,
+      0.028456055614326202
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.008333333333333333,
+     "ci95": [
+      0.0,
+      0.022123893805309734
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.027014863232514542,
+     "ci95": [
+      0.012502656462304333,
+      0.04431434644146949
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": -0.02692439101475107,
+     "ci95": [
+      -0.05032478508592928,
+      -0.00920858965250868
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": 0.001641267598843928,
+     "ci95": [
+      -0.0016132417510359115,
+      0.007220973828803011
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0012917774061802056,
+     "ci95": [
+      -0.003910059270497875,
+      0.0015475487889882128
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.005832640157571169,
+     "ci95": [
+      -0.017199485986856413,
+      0.0004097829167354759
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.022164645903105303,
+     "ci95": [
+      -0.04700490526670673,
+      -0.001539240258297218
+     ]
+    }
+   },
+   "full_ranksum - collision_dac": {
+    "epdms": {
+     "diff": 0.014724198976497748,
+     "ci95": [
+      -3.079481447875301e-05,
+      0.03024544154378735
+     ],
+     "p_perm_log": 0.05229738513074346,
+     "p_wilcoxon_group": 0.06185211564989085,
+     "groups_better_worse_tied": [
+      54,
+      42,
+      24
+     ]
+    },
+    "stage1:score": {
+     "diff": -0.0019639556269609683,
+     "ci95": [
+      -0.016939241371209834,
+      0.012224843221270295
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.02244938780242871,
+     "ci95": [
+      0.004070043142445639,
+      0.04322986574121647
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.004166666666666667,
+     "ci95": [
+      0.0,
+      0.014018691588785047
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.009997265871637028,
+     "ci95": [
+      -0.01148465602790789,
+      0.03691060255634857
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.009690553348659531,
+     "ci95": [
+      -0.015932398585728997,
+      0.038847930621422985
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.005316440806697544,
+     "ci95": [
+      -0.01527490699025511,
+      0.0021600645371563083
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0024477460400160593,
+     "ci95": [
+      -0.011055901889974537,
+      0.007531551653391146
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.012447119844597588,
+     "ci95": [
+      -0.029817121320750782,
+      0.0033838033896652947
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      -0.06422018348623854,
+      0.049019607843137254
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": 0.06522921202983897,
+     "ci95": [
+      0.02467759008551175,
+      0.10402034531711205
+     ]
+    }
+   },
+   "full_maxll - collision_dac": {
+    "epdms": {
+     "diff": 0.014229193901887049,
+     "ci95": [
+      0.004493049988499405,
+      0.025439768600427307
+     ],
+     "p_perm_log": 0.04119794010299485,
+     "p_wilcoxon_group": 0.14860293155888898,
+     "groups_better_worse_tied": [
+      40,
+      36,
+      44
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.0013300254825589844,
+     "ci95": [
+      -0.01074216480701616,
+      0.01535903729009511
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.01929777166912951,
+     "ci95": [
+      0.008777765909540047,
+      0.03143013017816144
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.004166666666666667,
+     "ci95": [
+      0.0,
+      0.014018691588785047
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.013663357670414425,
+     "ci95": [
+      -0.004656678149597606,
+      0.03728584223385226
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.006441885534495264,
+     "ci95": [
+      -0.011780852292955335,
+      0.030953654975807304
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.002262887342104698,
+     "ci95": [
+      -0.006856763710519323,
+      0.0019200559815245387
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0053689360133591406,
+     "ci95": [
+      -0.012351408702850404,
+      0.001111284598234169
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.00884879107639455,
+     "ci95": [
+      -0.030123657427812443,
+      0.007108942488377053
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.016666666666666666,
+     "ci95": [
+      -0.02586206896551724,
+      0.06201550387596899
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": 0.044637742855018904,
+     "ci95": [
+      0.008074904318056103,
+      0.08561872614469077
+     ]
+    }
+   }
+  }
+ },
+ "full": {
+  "n_groups": 225,
+  "n_logs": 76,
+  "means": {
+   "no_filter": {
+    "epdms": 0.22865277248243684,
+    "stage1:no_at_fault_collisions": 0.9844444444444445,
+    "stage1:drivable_area_compliance": 0.8333333333333334,
+    "stage1:driving_direction_compliance": 0.9755555555555555,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8320826701411103,
+    "stage1:time_to_collision_within_bound": 0.9666666666666667,
+    "stage1:lane_keeping": 0.9711111111111111,
+    "stage1:history_comfort": 0.9755555555555555,
+    "stage1:two_frame_extended_comfort": 0.7422222222222222,
+    "stage1:score": 0.7383811992498457,
+    "stage2:no_at_fault_collisions": 0.7782290753756421,
+    "stage2:drivable_area_compliance": 0.589862713042086,
+    "stage2:driving_direction_compliance": 0.7364933381920061,
+    "stage2:traffic_light_compliance": 0.9793315531080153,
+    "stage2:ego_progress": 0.8442644607848634,
+    "stage2:time_to_collision_within_bound": 0.7603871028375746,
+    "stage2:lane_keeping": 0.4098994845166082,
+    "stage2:history_comfort": 0.9516985252627331,
+    "stage2:two_frame_extended_comfort": 0.5919866178286493,
+    "stage2:score": 0.3110805892797377
+   },
+   "collision_only": {
+    "epdms": 0.24070412767704422,
+    "stage1:no_at_fault_collisions": 0.9911111111111112,
+    "stage1:drivable_area_compliance": 0.8311111111111111,
+    "stage1:driving_direction_compliance": 0.9755555555555555,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8317401852277986,
+    "stage1:time_to_collision_within_bound": 0.9711111111111111,
+    "stage1:lane_keeping": 0.9711111111111111,
+    "stage1:history_comfort": 0.9755555555555555,
+    "stage1:two_frame_extended_comfort": 0.7422222222222222,
+    "stage1:score": 0.7401922629651825,
+    "stage2:no_at_fault_collisions": 0.8364941811527059,
+    "stage2:drivable_area_compliance": 0.5953037361293589,
+    "stage2:driving_direction_compliance": 0.7349933659135415,
+    "stage2:traffic_light_compliance": 0.9815534217882202,
+    "stage2:ego_progress": 0.8424597739648924,
+    "stage2:time_to_collision_within_bound": 0.7960855385992425,
+    "stage2:lane_keeping": 0.4146459285104748,
+    "stage2:history_comfort": 0.9324481907074809,
+    "stage2:two_frame_extended_comfort": 0.5512729118905567,
+    "stage2:score": 0.3277152176392135
+   },
+   "dac_only": {
+    "epdms": 0.315440808041147,
+    "stage1:no_at_fault_collisions": 0.9777777777777777,
+    "stage1:drivable_area_compliance": 0.9444444444444444,
+    "stage1:driving_direction_compliance": 0.9777777777777777,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8291961356740044,
+    "stage1:time_to_collision_within_bound": 0.9666666666666667,
+    "stage1:lane_keeping": 0.9711111111111111,
+    "stage1:history_comfort": 0.9622222222222222,
+    "stage1:two_frame_extended_comfort": 0.7155555555555555,
+    "stage1:score": 0.8268930853664832,
+    "stage2:no_at_fault_collisions": 0.7870142364414662,
+    "stage2:drivable_area_compliance": 0.7453190911215755,
+    "stage2:driving_direction_compliance": 0.7431961609029569,
+    "stage2:traffic_light_compliance": 0.9746577661985834,
+    "stage2:ego_progress": 0.8402438762878581,
+    "stage2:time_to_collision_within_bound": 0.7731453933275103,
+    "stage2:lane_keeping": 0.41670551999719135,
+    "stage2:history_comfort": 0.9440656019666875,
+    "stage2:two_frame_extended_comfort": 0.5484610710231707,
+    "stage2:score": 0.38444039090973775
+   },
+   "collision_dac": {
+    "epdms": 0.33326232809005324,
+    "stage1:no_at_fault_collisions": 0.9866666666666667,
+    "stage1:drivable_area_compliance": 0.9444444444444444,
+    "stage1:driving_direction_compliance": 0.9788888888888889,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8314789149505228,
+    "stage1:time_to_collision_within_bound": 0.9733333333333334,
+    "stage1:lane_keeping": 0.9711111111111111,
+    "stage1:history_comfort": 0.9622222222222222,
+    "stage1:two_frame_extended_comfort": 0.7155555555555555,
+    "stage1:score": 0.833652474407875,
+    "stage2:no_at_fault_collisions": 0.8238022531608534,
+    "stage2:drivable_area_compliance": 0.7288696024896842,
+    "stage2:driving_direction_compliance": 0.7379257039260764,
+    "stage2:traffic_light_compliance": 0.9790682749705456,
+    "stage2:ego_progress": 0.8396681607301388,
+    "stage2:time_to_collision_within_bound": 0.7958933440623817,
+    "stage2:lane_keeping": 0.4186765570154241,
+    "stage2:history_comfort": 0.9371343482735066,
+    "stage2:two_frame_extended_comfort": 0.5317604153695334,
+    "stage2:score": 0.4024869160759796
+   },
+   "full_ranksum": {
+    "epdms": 0.346965617740239,
+    "stage1:no_at_fault_collisions": 0.9866666666666667,
+    "stage1:drivable_area_compliance": 0.9444444444444444,
+    "stage1:driving_direction_compliance": 0.9733333333333334,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8239384207722302,
+    "stage1:time_to_collision_within_bound": 0.9755555555555555,
+    "stage1:lane_keeping": 0.9733333333333334,
+    "stage1:history_comfort": 0.9688888888888889,
+    "stage1:two_frame_extended_comfort": 0.72,
+    "stage1:score": 0.8294529299383586,
+    "stage2:no_at_fault_collisions": 0.8368906737287749,
+    "stage2:drivable_area_compliance": 0.7364530592959774,
+    "stage2:driving_direction_compliance": 0.7576007411564777,
+    "stage2:traffic_light_compliance": 0.9814269969678647,
+    "stage2:ego_progress": 0.829477407149326,
+    "stage2:time_to_collision_within_bound": 0.8010427557909525,
+    "stage2:lane_keeping": 0.4216001975427053,
+    "stage2:history_comfort": 0.9371463387845966,
+    "stage2:two_frame_extended_comfort": 0.5931982758108666,
+    "stage2:score": 0.4232132823032786
+   },
+   "full_maxll": {
+    "epdms": 0.3502969374116487,
+    "stage1:no_at_fault_collisions": 0.9888888888888889,
+    "stage1:drivable_area_compliance": 0.9444444444444444,
+    "stage1:driving_direction_compliance": 0.9777777777777777,
+    "stage1:traffic_light_compliance": 1.0,
+    "stage1:ego_progress": 0.8263086744408659,
+    "stage1:time_to_collision_within_bound": 0.9755555555555555,
+    "stage1:lane_keeping": 0.9688888888888889,
+    "stage1:history_comfort": 0.9733333333333334,
+    "stage1:two_frame_extended_comfort": 0.7333333333333333,
+    "stage1:score": 0.8353592495055863,
+    "stage2:no_at_fault_collisions": 0.8358443149983659,
+    "stage2:drivable_area_compliance": 0.7325209289602092,
+    "stage2:driving_direction_compliance": 0.7571220245935218,
+    "stage2:traffic_light_compliance": 0.9812557074083715,
+    "stage2:ego_progress": 0.8305212875157956,
+    "stage2:time_to_collision_within_bound": 0.8042700108261953,
+    "stage2:lane_keeping": 0.4277601092635839,
+    "stage2:history_comfort": 0.937009322389151,
+    "stage2:two_frame_extended_comfort": 0.5893467007624806,
+    "stage2:score": 0.42283446715374373
+   }
+  },
+  "contrasts": {
+   "collision_only - no_filter": {
+    "epdms": {
+     "diff": 0.012051355194607328,
+     "ci95": [
+      0.00542793060314517,
+      0.019795268497690668
+     ],
+     "p_perm_log": 0.0023998800059997,
+     "p_wilcoxon_group": 5.757588951382786e-06,
+     "groups_better_worse_tied": [
+      33,
+      6,
+      186
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.001811063715336816,
+     "ci95": [
+      0.0,
+      0.0059672802125034455
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.01663462835947589,
+     "ci95": [
+      0.006082893762126969,
+      0.02875879213791938
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.006666666666666667,
+     "ci95": [
+      0.0,
+      0.0163265306122449
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.05826510577706374,
+     "ci95": [
+      0.037548793707599205,
+      0.08180130729209176
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": -0.0022222222222222222,
+     "ci95": [
+      -0.006726457399103139,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.005441023087272783,
+     "ci95": [
+      -0.0027503481714904123,
+      0.014753060144290918
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.00034248491331172074,
+     "ci95": [
+      -0.001026127265117819,
+      1.2544081616826896e-05
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0018046868199710615,
+     "ci95": [
+      -0.005603883360605158,
+      0.002329574698899491
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.01925033455525234,
+     "ci95": [
+      -0.032022463421043264,
+      -0.008655011268367355
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.04071370593809249,
+     "ci95": [
+      -0.058965882013098304,
+      -0.02281124637825997
+     ]
+    }
+   },
+   "dac_only - no_filter": {
+    "epdms": {
+     "diff": 0.08678803555871013,
+     "ci95": [
+      0.0664493686320799,
+      0.10586409272771974
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 4.418021004476801e-20,
+     "groups_better_worse_tied": [
+      117,
+      6,
+      102
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.08851188611663746,
+     "ci95": [
+      0.06574271045163671,
+      0.11501816665609292
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.07335980163000008,
+     "ci95": [
+      0.05365430320787901,
+      0.09322263506958592
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": -0.006666666666666667,
+     "ci95": [
+      -0.016203703703703703,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.008785161065823988,
+     "ci95": [
+      -0.003187303317671168,
+      0.02070914098016528
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.1111111111111111,
+     "ci95": [
+      0.0821256038647343,
+      0.14479638009049775
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.15545637807948937,
+     "ci95": [
+      0.12390219988808068,
+      0.18568670982404364
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.002886534467105894,
+     "ci95": [
+      -0.006957977977672716,
+      -0.0002460448809403438
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.004020584497005304,
+     "ci95": [
+      -0.009642709061014554,
+      0.002080295452018533
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.007632923296045549,
+     "ci95": [
+      -0.0169283382191292,
+      0.0006008636956410268
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.02666666666666667,
+     "ci95": [
+      -0.05454545454545454,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.04352554680547862,
+     "ci95": [
+      -0.0718284856114363,
+      -0.012739219291280269
+     ]
+    }
+   },
+   "collision_dac - no_filter": {
+    "epdms": {
+     "diff": 0.10460955560761641,
+     "ci95": [
+      0.08450115950981404,
+      0.12511701224752783
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 1.3083017605388944e-21,
+     "groups_better_worse_tied": [
+      128,
+      9,
+      88
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09527127515802934,
+     "ci95": [
+      0.06998997357619915,
+      0.12432700988787282
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.09140632679624187,
+     "ci95": [
+      0.07164739560809623,
+      0.11207952632787878
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.0022222222222222222,
+     "ci95": [
+      -0.008438818565400843,
+      0.013888888888888888
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.0455731777852112,
+     "ci95": [
+      0.02691411725705361,
+      0.0673220201794497
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.1111111111111111,
+     "ci95": [
+      0.0821256038647343,
+      0.14479638009049775
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.13900688944759812,
+     "ci95": [
+      0.10804195989345841,
+      0.16807382840158772
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0006037551905873359,
+     "ci95": [
+      -0.0025750970212252223,
+      0.0013698183493382004
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.00459630005472446,
+     "ci95": [
+      -0.012446581199297072,
+      0.003045484315358184
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.014564176989226496,
+     "ci95": [
+      -0.02648183300987803,
+      -0.003596672230598738
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.02666666666666667,
+     "ci95": [
+      -0.05454545454545454,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.06022620245911581,
+     "ci95": [
+      -0.09096601734826898,
+      -0.027862367555712753
+     ]
+    }
+   },
+   "collision_dac - collision_only": {
+    "epdms": {
+     "diff": 0.09255820041300906,
+     "ci95": [
+      0.07076611671751903,
+      0.11381275446588647
+     ],
+     "p_perm_log": 4.999750012499375e-05,
+     "p_wilcoxon_group": 9.959092307315831e-20,
+     "groups_better_worse_tied": [
+      115,
+      7,
+      103
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.09346021144269252,
+     "ci95": [
+      0.06949095303623803,
+      0.12225025267840373
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.07477169843676598,
+     "ci95": [
+      0.05483496291415848,
+      0.09500323072308016
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": -0.0044444444444444444,
+     "ci95": [
+      -0.012244897959183673,
+      0.0
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": -0.012691927991852538,
+     "ci95": [
+      -0.025523675182641734,
+      -0.001118862807693163
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.11333333333333333,
+     "ci95": [
+      0.08405172413793104,
+      0.14705882352941177
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.13356586636032536,
+     "ci95": [
+      0.10074131850311023,
+      0.16397741544888425
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0002612702772756152,
+     "ci95": [
+      -0.0022278599447239267,
+      0.0016561426947999803
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0027916132347534,
+     "ci95": [
+      -0.009548918921931852,
+      0.0036762329674789236
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": 0.004686157566025842,
+     "ci95": [
+      -0.0062263301718089165,
+      0.016550147065385882
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": -0.02666666666666667,
+     "ci95": [
+      -0.05454545454545454,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.019512496521023322,
+     "ci95": [
+      -0.04569611527041821,
+      0.00711880166773096
+     ]
+    }
+   },
+   "collision_dac - dac_only": {
+    "epdms": {
+     "diff": 0.017821520048906265,
+     "ci95": [
+      0.009985728538552867,
+      0.027592686934978086
+     ],
+     "p_perm_log": 0.000199990000499975,
+     "p_wilcoxon_group": 7.023252237559063e-07,
+     "groups_better_worse_tied": [
+      37,
+      6,
+      182
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.006759389041391886,
+     "ci95": [
+      0.0016234634898437592,
+      0.013823182436990634
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.018046525166241778,
+     "ci95": [
+      0.009236579636661673,
+      0.02904696677381327
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.008888888888888889,
+     "ci95": [
+      0.0,
+      0.019704433497536946
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.03678801671938722,
+     "ci95": [
+      0.02160723327698901,
+      0.05469382271222828
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": -0.016449488631891253,
+     "ci95": [
+      -0.030197257237090807,
+      -0.005901947804630434
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": 0.002282779276518558,
+     "ci95": [
+      -0.0006031333234067831,
+      0.006789947589545005
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.0005757155577191576,
+     "ci95": [
+      -0.005073787267537395,
+      0.004176504221024781
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.006931253693180945,
+     "ci95": [
+      -0.017016381444589668,
+      0.000539777801362479
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": -0.016700655653637188,
+     "ci95": [
+      -0.036136633361480444,
+      0.0011238560602195536
+     ]
+    }
+   },
+   "full_ranksum - collision_dac": {
+    "epdms": {
+     "diff": 0.013703289650185666,
+     "ci95": [
+      -0.0020253164087849283,
+      0.02963944179798743
+     ],
+     "p_perm_log": 0.1966901654917254,
+     "p_wilcoxon_group": 0.16667268349432052,
+     "groups_better_worse_tied": [
+      99,
+      88,
+      38
+     ]
+    },
+    "stage1:score": {
+     "diff": -0.0041995444695164565,
+     "ci95": [
+      -0.01531996855729152,
+      0.005422300296579473
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.020726366227299016,
+     "ci95": [
+      0.0014360102213097875,
+      0.04042213004543159
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.0,
+     "ci95": [
+      -0.006521739130434782,
+      0.006276150627615063
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.013088420567921628,
+     "ci95": [
+      -0.00512908736002332,
+      0.03306170815136298
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.0075834568062931144,
+     "ci95": [
+      -0.008825562786300617,
+      0.02558055702960087
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.0075404941782927165,
+     "ci95": [
+      -0.014084670525505973,
+      -0.0019520405534126128
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.010190753580812976,
+     "ci95": [
+      -0.01787507198271937,
+      -0.0027869868817156523
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": 1.1990511090021904e-05,
+     "ci95": [
+      -0.01311522949987025,
+      0.012753227434814562
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.0044444444444444444,
+     "ci95": [
+      -0.03773584905660377,
+      0.04081632653061224
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": 0.06143786044133307,
+     "ci95": [
+      0.023358692178883807,
+      0.10056512543710704
+     ]
+    }
+   },
+   "full_maxll - collision_dac": {
+    "epdms": {
+     "diff": 0.017034609321595437,
+     "ci95": [
+      0.002859315348550195,
+      0.031295513701101126
+     ],
+     "p_perm_log": 0.0018499075046247689,
+     "p_wilcoxon_group": 0.12532594448504217,
+     "groups_better_worse_tied": [
+      79,
+      74,
+      72
+     ]
+    },
+    "stage1:score": {
+     "diff": 0.0017067750977112054,
+     "ci95": [
+      -0.005028745342081431,
+      0.009542310821820377
+     ]
+    },
+    "stage2:score": {
+     "diff": 0.02034755107776408,
+     "ci95": [
+      0.003155647447500782,
+      0.03703411488679805
+     ]
+    },
+    "stage1:no_at_fault_collisions": {
+     "diff": 0.0022222222222222222,
+     "ci95": [
+      0.0,
+      0.007326007326007326
+     ]
+    },
+    "stage2:no_at_fault_collisions": {
+     "diff": 0.012042061837512523,
+     "ci95": [
+      -0.001747994518267106,
+      0.029404908462798904
+     ]
+    },
+    "stage1:drivable_area_compliance": {
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "stage2:drivable_area_compliance": {
+     "diff": 0.003651326470524975,
+     "ci95": [
+      -0.009581713855004927,
+      0.018826676956463145
+     ]
+    },
+    "stage1:ego_progress": {
+     "diff": -0.005170240509656942,
+     "ci95": [
+      -0.009550784060731746,
+      -0.0011010596818070816
+     ]
+    },
+    "stage2:ego_progress": {
+     "diff": -0.009146873214343366,
+     "ci95": [
+      -0.016453674650396745,
+      -0.002725734794564223
+     ]
+    },
+    "stage2:history_comfort": {
+     "diff": -0.00012502588435551508,
+     "ci95": [
+      -0.013140007910323841,
+      0.012313061116368085
+     ]
+    },
+    "stage1:two_frame_extended_comfort": {
+     "diff": 0.017777777777777778,
+     "ci95": [
+      -0.011428571428571429,
+      0.04739336492890995
+     ]
+    },
+    "stage2:two_frame_extended_comfort": {
+     "diff": 0.05758628539294713,
+     "ci95": [
+      0.02911394822515753,
+      0.09037523573917738
+     ]
+    }
+   }
+  }
+ }
+}

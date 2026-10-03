@@ -37,6 +37,7 @@ def main() -> None:
     ap.add_argument("--layers", type=int, nargs="+", default=[18, 36])
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--tokens", default=None, help="JSON list: only these scenes (e.g. one streamed shard)")
     a = ap.parse_args()
     if os.environ.get("CUDA_VISIBLE_DEVICES") != "1":
         raise SystemExit("RTX 5090 only: CUDA_VISIBLE_DEVICES=1")
@@ -45,6 +46,8 @@ def main() -> None:
     sp = os.path.join(a.out, "steps.jsonl")
     done = {json.loads(l)["token"] for l in open(sp)} if os.path.exists(sp) else set()
     recs = [r for r in recs if r["token"] not in done]
+    if a.tokens:
+        keep = set(json.load(open(a.tokens))); recs = [r for r in recs if r["token"] in keep]
     if a.limit:
         recs = recs[:a.limit]
     print(f"[plan] {len(recs)} scenes ({len(done)} done)", flush=True)

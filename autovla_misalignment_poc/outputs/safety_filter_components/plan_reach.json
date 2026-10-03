@@ -1,0 +1,32 @@
+{
+ "no_filter": {
+  "mean_plan_reach_4s_m": 19.134011213104362,
+  "n_changed": 0,
+  "mean_change_in_changed_m": 0.0
+ },
+ "collision_only": {
+  "mean_plan_reach_4s_m": 18.908208854110214,
+  "n_changed": 504,
+  "mean_change_in_changed_m": -2.6486975126456294
+ },
+ "dac_only": {
+  "mean_plan_reach_4s_m": 18.686084691517014,
+  "n_changed": 1070,
+  "mean_change_in_changed_m": -2.474898687499427
+ },
+ "collision_dac": {
+  "mean_plan_reach_4s_m": 18.542768849097747,
+  "n_changed": 1213,
+  "mean_change_in_changed_m": -2.881636319873948
+ },
+ "full_ranksum": {
+  "mean_plan_reach_4s_m": 18.170840753701103,
+  "n_changed": 4852,
+  "mean_change_in_changed_m": -1.1735910461648917
+ },
+ "full_maxll": {
+  "mean_plan_reach_4s_m": 18.359882666510106,
+  "n_changed": 2610,
+  "mean_change_in_changed_m": -1.7535049683774797
+ }
+}

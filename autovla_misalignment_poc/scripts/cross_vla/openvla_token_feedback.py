@@ -42,7 +42,8 @@ if __name__ == "__main__":
         for n, rel in enumerate(frames, 1):
             task = int(rel.split("/")[0].split("_")[0][1:])
             img = Image.open(os.path.join(src, "frames", rel)).convert("RGB")
-            r = vla.decode_batch([img], suite.get_task(task).language, variants)
+            parts = [vla.decode_batch([img], suite.get_task(task).language, variants[i:i + 19]) for i in range(0, len(variants), 19)]
+            r = {k: np.concatenate([p[k] for p in parts]) for k in ("exec_bins", "ctx_bins", "entropy", "pmax")}   # 19-row chunks: VRAM
             fo.write(json.dumps({"frame": rel, "task": task, "variants": [v and f"{v['dim']}:{v['delta']}:{v['mode']}" or "natural" for v in variants],
                                  "exec": r["exec_bins"].tolist(), "ctx": r["ctx_bins"].tolist(),
                                  "ent": np.round(r["entropy"], 4).tolist(), "pmax": np.round(r["pmax"], 4).tolist()}) + "\n")
