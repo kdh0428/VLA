@@ -48,3 +48,11 @@
   3. previous-action correction 효과 → feedback vs corrected (Phase B 성공률, Phase C 증폭률)
   4. reverse intervention → reverse vs natural (실패율, 하위 편차)
   5. critical window → window_1..4 vs corrected / feedback (Phase C)
+
+## 수정 (2026-10-03 19:40, Phase B 일부를 본 뒤·최종 분석 전에 추가)
+
+Phase B 중간 점검에서 교란 조건이 성공하고 자연 실행이 실패한 에피소드가 있어, closed loop에서 batch 구성만 달라져도(bf16 수치 차이)
+궤적이 갈라질 수 있음을 확인했습니다. 이를 측정하는 대조군을 추가합니다. 기존 정의·조건·threshold는 바꾸지 않습니다.
+- **Phase A-rep**: 같은 100 에피소드를 자연 디코딩으로 다시 실행하되 worker 3개(다른 batch 구성)로 돌립니다.
+- 보고: 자연 대 자연-rep의 성공 불일치율과 성공률 차이를 "교란 없는 기저 변동"으로 함께 보고하고,
+  각 교란 조건의 자연 대비 차이를 이 기저 변동과 비교합니다(자연-rep 대비 paired 비교도 함께 계산).
