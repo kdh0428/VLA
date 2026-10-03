@@ -1,0 +1,22 @@
+{
+  "n_scenes_ok": 208,
+  "n_scene_fail": 0,
+  "n_units": 1408,
+  "n_unit_fail": 0,
+  "rows": [
+    "normal",
+    "recent_gt",
+    "dir_ok_mag_wrong",
+    "dir_wrong_mag_ok",
+    "mirror_same_dist",
+    "random_mag_matched"
+  ],
+  "temperature": 0.01,
+  "seed": 0,
+  "n_untrained_tokens": 410,
+  "dup_cos_threshold": 0.999,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.8.0+cu128",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 5.3887974937756855
+}
