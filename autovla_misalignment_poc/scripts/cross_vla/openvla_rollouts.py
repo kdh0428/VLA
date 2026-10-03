@@ -29,7 +29,7 @@ def worker(conn, lp_threads):
     from libero.libero import benchmark
     from libero.libero.envs import OffScreenRenderEnv
     from PIL import Image
-    from openvla_core import preprocess
+    from openvla_preproc import preprocess
     suite = benchmark.get_benchmark_dict()[SUITE]()
     env, cur = None, None
     while True:
@@ -86,24 +86,45 @@ def main() -> None:
     suite = benchmark.get_benchmark_dict()[SUITE]()
     vla = OpenVLA()
     ctx = mp.get_context("spawn")
-    pipes, procs = [], []
-    for _ in range(a.workers):
+    pipes, procs = [None] * a.workers, [None] * a.workers
+    COMM = (BrokenPipeError, EOFError, ConnectionResetError, OSError)
+
+    def spawn(w):                                     # (re)start simulator worker w
+        if procs[w] is not None and procs[w].is_alive():
+            procs[w].kill()
         p_, c_ = ctx.Pipe(); pr = ctx.Process(target=worker, args=(c_, a.lp_threads), daemon=True); pr.start()
-        pipes.append(p_); procs.append(pr)
+        pipes[w], procs[w] = p_, pr
+    for w in range(a.workers):
+        spawn(w)
+    n_restart = 0
     out = open(dst, "a"); t_start = time.time(); n_done = 0
     for task_id in rng_(a.tasks):
         lang = suite.get_task(task_id).language
         queue = [{"task": task_id, "init": i, **c} for i in rng_(a.inits) for c in conditions(a.phase)
                  if (task_id, i, c["name"]) not in done_keys]
         active = {}                                   # worker -> episode state
+
         def start(w):
-            ep = queue.pop(0)
-            sign = 1 if ep["init"] % 2 == 0 else -1
-            ep.update(t=0, rec=[], delta=sign * ep.get("abs_delta", 0))
-            if a.phase == "A":
-                os.makedirs(os.path.join(a.out, "frames", f"t{task_id}_i{ep['init']}"), exist_ok=True)
-            pipes[w].send(("reset", (task_id, ep["init"]))); ep["img"], _ = pipes[w].recv()
-            active[w] = ep
+            nonlocal n_restart
+            while queue:
+                ep = queue.pop(0)
+                sign = 1 if ep["init"] % 2 == 0 else -1
+                ep.update(t=0, rec=[], delta=sign * ep.get("abs_delta", 0))
+                if a.phase == "A":
+                    os.makedirs(os.path.join(a.out, "frames", f"t{task_id}_i{ep['init']}"), exist_ok=True)
+                try:
+                    pipes[w].send(("reset", (task_id, ep["init"]))); ep["img"], _ = pipes[w].recv()
+                    active[w] = ep
+                    return
+                except COMM:                          # worker died (e.g. host OOM): restart it, retry the episode
+                    n_restart += 1; print(f"[restart] worker {w} at reset", flush=True)
+                    queue.insert(0, {k: v for k, v in ep.items() if k not in ("t", "rec", "img")}); spawn(w)
+
+        def lost(w):
+            nonlocal n_restart
+            ep = active.pop(w); n_restart += 1
+            print(f"[restart] worker {w} lost task {ep['task']} init {ep['init']} {ep['name']} at t={ep['t']}", flush=True)
+            queue.insert(0, {k: v for k, v in ep.items() if k not in ("t", "rec", "img")}); spawn(w)
         for w in range(a.workers):
             if queue:
                 start(w)
@@ -132,10 +153,18 @@ def main() -> None:
                 ep["rec"].append(r)
                 save = (os.path.join(a.out, "frames", f"t{task_id}_i{ep['init']}", f"{ep['t'] + 1:03d}.png")
                         if a.phase == "A" and (ep["t"] + 1) % 5 == 0 else None)
-                pipes[w].send(("step", (to_env_action(res["action"][k]), save)))
+                try:
+                    pipes[w].send(("step", (to_env_action(res["action"][k]), save)))
+                except COMM:
+                    lost(w)
             for w in ws:
+                if w not in active:
+                    start(w); continue
                 ep = active[w]
-                ep["img"], dn = pipes[w].recv(); ep["t"] += 1
+                try:
+                    ep["img"], dn = pipes[w].recv(); ep["t"] += 1
+                except COMM:
+                    lost(w); start(w); continue
                 if dn or ep["t"] >= MAX_STEPS:
                     out.write(json.dumps({"task": ep["task"], "init": ep["init"], "cond": ep["name"], "delta": ep["delta"],
                                           "success": bool(dn), "steps": ep["t"], "rec": ep["rec"]}) + "\n"); out.flush()
@@ -145,8 +174,11 @@ def main() -> None:
         el = time.time() - t_start
         print(f"[task {task_id}] episodes done {n_done}  {el / 60:.1f} min", flush=True)
     for p_ in pipes:
-        p_.send(("close", None)); p_.recv()
-    print("[done]", flush=True)
+        try:
+            p_.send(("close", None)); p_.recv()
+        except COMM:
+            pass
+    print(f"[done] worker restarts {n_restart}", flush=True)
 
 
 if __name__ == "__main__":
