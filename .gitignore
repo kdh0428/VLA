@@ -4,6 +4,8 @@
 !.gitignore
 !README.md
 !CONCLUSIONS.md
+!HANDOFF.md
+!EXPERIMENT_SUMMARY.md
 
 # --- 추적할 디렉토리 ---
 !autovla_misalignment_poc/

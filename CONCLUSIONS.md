@@ -50,6 +50,11 @@
 | – | 3080 Ti 결과의 5090 재실행 | GPU 혼용이 결론을 바꾸는가 | `.../outputs/gpu5090_reanalysis/` |
 | 26 | navhard 나머지 절반 사전 등록 검증 + 전체 navhard | 실험 25 결과가 새 log에서 재현되는가 | `.../outputs/navhard_full_validation/` |
 | 27 | 안전 필터 ablation (전체 navhard) | F1 개선 중 필터와 선택기의 몫 | `.../outputs/safety_filter_ablation/` |
+| 28 | 다른 VLA(OpenVLA-7B, LIBERO)에서 기전 재현 | token feedback이 일반적인가 | `.../outputs/cross_vla_replication/` |
+| 29 | 안전 필터 구성요소 | 충돌 vs 주행 가능 영역 제약의 몫 | `.../outputs/safety_filter_components/` |
+| 30 | 후보 oracle 상한 | 병목은 생성인가 선택인가 | `.../outputs/candidate_oracle/` |
+| 31 | 불안정 탐지 baseline | 이탈 전에 예측 가능한가 | `.../outputs/instability_detection_baselines/` |
+| 32 | previous-action motion semantics | 방향인가 크기인가 | `.../outputs/motion_semantics_ablation/` |
 
 ---
 
@@ -312,6 +317,18 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 | 필터 + max log-lik | 0.350 | − 필터 only | +0.017 [+0.003, +0.031], 0.002 (Wilcoxon 0.13) |
 
 - **F1 개선의 약 9할은 현재 frame 안전 필터 자체에서 옵니다.** 확신도 선택기의 추가 몫은 +0.014–0.017로 작고 일부 검정에서만 유의하며, 진행도를 약간 낮춥니다. 선택기는 통과 후보 중 무작위보다는 확실히 낫지만(+0.02, 승차감 보존) "안전하면 자연 계획 유지"보다는 근소하게만 낫습니다.
+
+## 9h. 논문용 추가 실험 (실험 28–32, P6) — 요약
+
+전체 정리는 [EXPERIMENT_SUMMARY.md](EXPERIMENT_SUMMARY.md)에 있습니다. 모두 실행 전 프로토콜을 커밋했고 RTX 5090만 사용했습니다.
+
+- **28 OpenVLA**: step 안의 token feedback은 재현(x token 8 bin 교란 → 하위 차원 93% 증폭, 하위 token은 문맥 token이 결정: reverse = feedback, corrected = 변화 0).
+  과제 실패 효과는 closed-loop 기저 변동(자연 재실행끼리 결과 20% 불일치) 안에 있어 검출되지 않음. OpenVLA는 이전 action을 다음 step에 넣지 않아 시간축 누적이 없음.
+- **29 필터 구성요소**: 주행 가능 영역 제약 +0.087(Shapley 86%), 충돌 제약 +0.012(14%); 이득의 99–104%가 곱셈(안전) 항, 진행도 항 −0.0001 ~ −0.0055.
+- **30 oracle**: 17개 후보 oracle EPDMS 0.405 vs 최선 방법 0.350(남은 선택 여지 +0.055); token의 31%는 모든 후보가 0점 → 주 병목은 후보 생성.
+- **31 탐지**: 이탈 전 AUROC 0.57–0.63(hidden probe 포함, 장면 내 0.50–0.65), 이탈 후 0.75–0.90(disagreement 0.900 최고) → 이탈 전에는 예측 불가.
+- **32 motion semantics**: 방향 오답이 크기 오답보다 해로움(A− 증폭 26.3 vs 17.3%, +9.0%p [+3.1, +18.7], GT와의 거리는 더 작음); 같은 크기 오차를 GT 반대편에 두면 47.9 → 13.7%.
+- **P6 연속 closed-loop**: CARLA용 AutoVLA checkpoint 부재, NVIDIA EGL/Vulkan 부재, 디스크 부족으로 수행 불가.
 
 ---
 

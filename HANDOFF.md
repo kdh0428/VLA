@@ -1,6 +1,6 @@
 # 인계 문서 — 새 서버에서 이어서 실험하기
 
-마지막 갱신: 2026-10-02 (실험 27: 안전 필터 ablation까지). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
+마지막 갱신: 2026-10-04 (실험 28–32, 전체 정리 EXPERIMENT_SUMMARY.md). 결론은 [CONCLUSIONS.md](CONCLUSIONS.md), 재현 기록은 [autovla_misalignment_poc/REPRODUCTION.md](autovla_misalignment_poc/REPRODUCTION.md).
 
 ## 1. 지금 어디까지 왔나
 
@@ -22,6 +22,7 @@
 | – | 3080 Ti 결과 전부 5090 재실행 + 재분석 | 완료 (결론 동일) | `.../gpu5090_reanalysis/GPU5090_REANALYSIS.md` |
 | 26 | navhard 나머지 절반 사전 등록 검증 + 전체 navhard 76 log (`navhard_half2` split, `tools/navhard_half2_pipeline.sh`) | 완료 (F1 재현, max log-lik 미재현) | `.../navhard_full_validation/RESULTS.md` |
 | 27 | 안전 필터 ablation (필터 only / 무작위 / 선택기, `tools/navhard_ablation_pipeline.sh`) | 완료 (개선의 ~89%가 필터) | `.../safety_filter_ablation/RESULTS.md` |
+| 28–32 | OpenVLA 재현, 필터 구성요소, oracle, 탐지 baseline, motion semantics (`tools/paper_jobs_scheduler.sh`) | 완료 | 각 `outputs/*/RESULTS.md`, 전체 `EXPERIMENT_SUMMARY.md` |
 
 한 줄 요약: 실패는 결정·실행 결합에서 나고, 작은 action-token 편차는 **직전 토큰이 뜻하는 motion**이 다음 토큰을 조건화하는 1-step feedback으로 증폭됩니다. 모델은 조건화된 motion을 66–89% 따라가므로, GT 없는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고 배포 조건에서는 순이득이 없습니다(실험 12–16). **배포 가능한 순이득은 선택에서 나왔습니다**: 모델 자신의 후보 16개(T 1.0) 중 엔트로피 순위 + log-likelihood 순위가 가장 좋은 계획을 고르면, 이전에 쓰지 않은 log 56개(4,563 장면)에서 실패율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(실험 20, open-loop). 사전 등록 held-out에서 NAVSIM PDMS +0.0095(충돌 0.56 → 0.23%), 현재 frame 안전 필터를 더하면 +0.032(충돌 0.10%)이며, 선택된/버려진 후보는 첫 이탈 이후에만 엔트로피가 갈라집니다(실험 21–24).
 
@@ -56,6 +57,9 @@ bash tools/regenerate_autovla.sh        # 원시 결과 재생성 (약 9-10시�
 | shard 디코딩 일부 실패 (FileNotFoundError) | `sensor_blobs/test/<log>`가 이미 있으면(빈 폴더라도) 스트리밍 스크립트가 shard 이미지를 옮기지 않음 | 경고 출력하도록 수정. 남은 log는 `tools/repair_stream_logs.sh`로 복구. navhard 원본은 `/root/VLA/navhard/original_sensor_blobs`에 따로 둠 |
 | `analyze_expanded_best_of_n.py`에 run 여러 개를 주면 첫 run 상위 폴더의 `summary_pooled.json`을 덮어씀 | 출력 위치 고정 | 다른 조합으로 돌린 뒤에는 결과를 따로 옮기고 원본은 `git checkout`으로 복원 |
 | navhard 채점에서 KeyError [inf] | YAML이 `3e...` 같은 hex 토큰을 float으로 읽음 | `navhard_subset.py`가 모든 문자열을 따옴표로 씀 |
+| OpenVLA/LIBERO 렌더링 실패 | 컨테이너에 NVIDIA EGL 없음 | `/root/VLA/openvla/env.sh`: Mesa EGL(소프트웨어) device 2, `CUDA_VISIBLE_DEVICES=1,2`(CUDA는 5090만 봄) |
+| LIBERO worker가 OOM으로 죽음 | env 하나가 RAM 1.9 GB | worker 4개 이하, 모델은 `device_map`으로 GPU에 직접 로드; runner가 죽은 worker를 재시작하고 에피소드 재실행 |
+| P4 teacher forcing에 이미지 없음 | navtest shard 이미지는 디코딩 후 삭제됨 | `tools/stream_teacher_force.sh`가 shard별로 3개 카메라만 다시 받아 처리 후 삭제(EXIT trap) |
 | `Planner` 쓰는 스크립트에서 상대경로 깨짐 | `_planner.Planner`가 `os.chdir(/root/VLA/autovla)` | 경로는 절대경로로 |
 | 재실행 시 "records.jsonl exists; refusing" | 결과 덮어쓰기 방지 | 출력 폴더를 지우거나 `--output` 지정 |
 
