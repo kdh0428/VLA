@@ -1,6 +1,6 @@
 # Driving VLA 실패 기전 연구 — 전체 실험 총정리
 
-최종 갱신: 2026-10-04. 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
+최종 갱신: 2026-10-05 (실험 33 추가). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
 누적 결론 문서는 [CONCLUSIONS.md](CONCLUSIONS.md), 새 서버 인계는 [HANDOFF.md](HANDOFF.md)입니다.
 
 - 주 대상: **AutoVLA** (Qwen2.5-VL-3B, action codebook 2,048 token, NAVSIM/nuPlan). 비교: ORION (Bench2Drive, 실험 1), **OpenVLA-7B** (LIBERO, 실험 28).
@@ -21,15 +21,19 @@
 4. **다른 VLA(OpenVLA-7B)에서도 token 수준 feedback은 재현됩니다**: 한 step 안에서 첫 token을 8 bin 바꾸면 나머지 차원이 93%에서 그 이상 움직이고,
    이를 결정하는 것은 문맥에 들어간 이전 token입니다. 그러나 OpenVLA는 이전 action을 다음 step에 넣지 않아 feedback이 시간축으로 누적되지 않고,
    LIBERO 과제 실패에 대한 효과는 closed-loop 기저 변동(자연 재실행끼리도 결과 20% 불일치) 안에 있었습니다(실험 28).
-5. **불안정 rollout은 이탈 전에는 예측되지 않습니다**: 엔트로피·likelihood·margin·후보 합의·hidden-state probe 모두 이탈 전 AUROC 0.57–0.63(장면 내 0.50–0.65),
+5. **시간 순서가 있는 action chunk를 autoregressive하게 생성하는 다른 VLA(Impromptu VLA 3B)에서는 시간축 증폭 기전까지 재현됩니다**(사전 등록 판정 Strong):
+   직전 waypoint 하나만 GT로 바꾸면 증폭 63.4 → 1.3%(98% 제거), 잘못된 직전 waypoint를 다시 넣으면 0 → 81.9%로 복원, 1/2/3/4-step 교정이 효과의
+   24/39/91/95%(AutoVLA 47/76/90/96%), motion이 GT와 가까우면 identity와 무관, 방향 오답이 크기 오답보다 해롭습니다. 다만 Impromptu는 작은 편차를
+   거의 흡수하지 못해(0.2 m 편차의 97%가 3배 이상 커짐) 궤적 수준의 안정 분기는 재현되지 않았습니다(실험 33).
+6. **불안정 rollout은 이탈 전에는 예측되지 않습니다**: 엔트로피·likelihood·margin·후보 합의·hidden-state probe 모두 이탈 전 AUROC 0.57–0.63(장면 내 0.50–0.65),
    이탈 후 0.75–0.90입니다(실험 22, 31).
-6. **GT 없는 완화**: 참조로 조건화를 교정하면 정상 장면이 손해를 봐 순이득이 없고(실험 12–17), 모델 자신의 후보 중 확신도로 고르면 open-loop 실패율 −33%,
+7. **GT 없는 완화**: 참조로 조건화를 교정하면 정상 장면이 손해를 봐 순이득이 없고(실험 12–17), 모델 자신의 후보 중 확신도로 고르면 open-loop 실패율 −33%,
    사전 등록 held-out PDMS +0.0095로 유의합니다(실험 20–21).
-7. **반응형 2단계 평가(NAVSIM v2 navhard 전체 225 그룹)에서는 확신도 선택의 이득이 작고 불안정**하며(+0.02, max log-lik은 사전 등록 절반에서 미재현),
+8. **반응형 2단계 평가(NAVSIM v2 navhard 전체 225 그룹)에서는 확신도 선택의 이득이 작고 불안정**하며(+0.02, max log-lik은 사전 등록 절반에서 미재현),
    **현재 frame 안전 필터가 이득의 대부분**을 만듭니다(EPDMS 0.229 → 0.333, +0.105; 선택기를 더해 0.347–0.350). 필터 이득의 86%는 주행 가능 영역 제약이고,
    진행도를 희생해 얻은 점수가 아닙니다(실험 25–27, 29).
-8. **남은 병목은 후보 생성**입니다: 17개 후보 중 oracle을 골라도 EPDMS 0.405이고, token의 31%는 안전한 후보가 하나도 없습니다(실험 30).
-9. 연속 closed-loop(CARLA) 평가는 checkpoint·렌더링·디스크 제약으로 수행하지 못했습니다(P6).
+9. **남은 병목은 후보 생성**입니다: 17개 후보 중 oracle을 골라도 EPDMS 0.405이고, token의 31%는 안전한 후보가 하나도 없습니다(실험 30).
+10. 연속 closed-loop(CARLA) 평가는 checkpoint·렌더링·디스크 제약으로 수행하지 못했습니다(P6).
 
 ---
 
@@ -61,6 +65,7 @@
 | 30 (P3) | 후보 oracle 상한 | oracle 0.405 vs 최선 0.350, 병목은 생성 | `outputs/candidate_oracle/` |
 | 31 (P4) | 불안정 탐지 baseline | 이탈 전 AUROC 0.57–0.63(hidden probe 포함), 이탈 후 0.75–0.90 → 이탈 전에는 예측 불가 | `outputs/instability_detection_baselines/` |
 | 32 (P5) | previous-action motion semantics | 방향 오차가 크기 오차보다 해로움 | `outputs/motion_semantics_ablation/` |
+| 33 | **시간축 action-chunk VLA(Impromptu VLA 3B)에서 기전 재현** | correction 98%, reverse로 복원, 약 3 step window, 방향 > 크기 → Strong replication (궤적 수준 안정 분기는 미재현) | `outputs/cross_vla_temporal_replication/` |
 | P6 | 연속 closed-loop (CARLA) | 현재 환경에서 수행 불가 (checkpoint·렌더링·디스크) | `outputs/continuous_closed_loop/STATUS.md` |
 
 (경로의 `outputs/`는 `autovla_misalignment_poc/outputs/`입니다.)
@@ -183,7 +188,36 @@ AutoVLA의 "직전 action token → 다음 token" feedback에 대응하는 것�
 
 → **"직전 token identity가 다음 token을 조건화하는" 국소 autoregressive feedback은 모델 간에 일반적**이지만, 그것이 **궤적·과제 실패로 증폭되려면
 AutoVLA처럼 여러 시점의 action을 한 번에 autoregressive하게 생성하는 구조(시간축 action history)가 필요**하다는 해석과 일치합니다.
-한계: LIBERO-Spatial 한 suite·100 에피소드, 교란은 한 차원·10 step. π0-FAST처럼 action chunk를 autoregressive하게 생성하는 모델은 다루지 못했습니다.
+한계: LIBERO-Spatial 한 suite·100 에피소드, 교란은 한 차원·10 step. π0-FAST처럼 action chunk를 autoregressive하게 생성하는 모델은 다루지 못했습니다(시간축 chunk 모델은 실험 33에서 Impromptu VLA로 검증).
+
+---
+
+## 6b. 시간축 action-chunk VLA에서의 재현: Impromptu VLA 3B (실험 33)
+
+사전 등록 038a6d3(본 실행 전). RTX 5090, navtest PoC 2,748 장면(28 log). 상세: `outputs/cross_vla_temporal_replication/RESULTS.md`.
+
+**모델 선정(코드 수준 확인)**: Impromptu VLA 3B(`aaaaaap/ImpromptuVLAModel/3B_AD`, Qwen2.5-VL-3B)는 미래 waypoint 10개(0.5 s 간격, 5 s)를 시간순 텍스트
+`[x, y]`로 autoregressive하게 생성해 4개 조건(다중 token AR 생성, 앞 action → 뒤 action conditioning, chunk 안 시간 순서, 공개 checkpoint·code)을 모두 만족합니다.
+π0-FAST는 DCT 주파수 계수 token이라 시간 순서가 없어 제외, SpatialVLA는 LIBERO checkpoint 비공개·SimplerEnv(Vulkan) 불가로 제외했습니다.
+AutoVLA는 0.5 s마다 상대 motion codebook token 1개, Impromptu는 절대 위치를 digit token 약 12개로 쓰는 차이가 있고, Impromptu의 자연 성능은
+A− 33.4%, FDE5 5.75 m로 AutoVLA보다 훨씬 낮습니다. 자연 재실행(batch 구성만 다름)의 결과 불일치는 5.9%입니다.
+
+| 실험 | Impromptu VLA 3B | AutoVLA |
+|---|---|---|
+| A. 작은 초기 편차(0.2 m) | 기준 A+ 장면의 49.5%가 A−로 전환(재실행 기저 4.6%); 궤적 수준에서는 97%가 3배 이상 커짐(흡수 0.5%) | 상당수 흡수 (A+ 장면 증폭 4.8%) |
+| B. 같은 크기 분기 | 사전 등록 기준(궤적 수준 안정 r ≤ 1 공존) 2.2–3.2% < 재실행 5.9% → **미충족**; 탐색적으로 task 수준 통과/증폭 공존 87–93%, 횡·대각 교란이 전후보다 약 2배 증폭 | 같은 크기 편차가 장면에 따라 갈림 |
+| C. 직전 action 교정 (문맥만) | recent_gt 증폭 63.4 → **1.3%**(−62.2%p [−65.6, −59.1]); gt_history 0% | 47 → 7% (93%) |
+| C. 교정 window 1/2/3/4 step | 효과의 24 / 39 / **91** / 95% | 47 / 76 / 90 / 96% |
+| D. reverse (교정 문맥 + 자기 오차 재삽입) | 증폭 0 → **81.9%** (+81.9%p [+80.4, +84.2]), 발산 +40.5 m | 4.4 → 33.4% |
+| E. motion semantics | GT와 5 cm 다른 값 = GT와 같은 효과(p = 0.87); 방향 오답 − 크기 오답 증폭 +15.6%p(p = 2e-31), 오차 크기를 맞춘 첫 대체 시점에서도 +0.29 m(p = 2e-99, 탐색적) | motion > embedding, 방향 > 크기 (+9.0%p) |
+
+사전 등록 기준: 1 correction **충족**, 2 reverse **충족**, 3 궤적 수준 분기 **미충족**, 4 짧은 window **충족**, 5 방향 > 크기 **충족**,
+task 수준(교란이 기저 변동보다 큰 실패를 만들고 교정이 실패를 줄임) **충족** → **Strong replication**.
+제한: 여기서 task 실패는 AutoVLA와 같은 open-loop 궤적 실패이고, Impromptu는 절대 위치를 쓰므로 GT 문맥 교정에 GT 정보 누출이 섞여 있습니다
+(정보를 더하지 않는 reverse와 motion 대체가 이를 배제하는 근거). 교정 해제 후 재발산은 AutoVLA와 달리 거의 없었습니다.
+
+→ **AutoVLA의 오류 증폭은 특정 모델의 특성이 아니라 시간 순서가 있는 action chunk를 autoregressive하게 생성하는 구조에서 반복되는 failure mechanism**으로
+보입니다. 시간축 action history가 없는 OpenVLA(실험 28)에서는 궤적·과제 실패로 증폭되지 않았고, 증폭의 정도(작은 편차의 흡수)는 action 표현과 모델 정확도에 따라 크게 다릅니다.
 
 ---
 
@@ -236,7 +270,7 @@ perception (대체로 보존)
 ```
 
 - 실패의 축은 "무엇을 보았는가"가 아니라 **"직전에 무엇을 출력했는가"**이고, 그 정보의 핵심은 진행 방향입니다.
-- token 수준 feedback은 다른 autoregressive VLA(OpenVLA)에서도 나타나지만, 궤적 실패로의 증폭은 시간축 action history를 autoregressive하게 생성하는 구조에서 생깁니다.
+- token 수준 feedback은 다른 autoregressive VLA(OpenVLA)에서도 나타나지만, 궤적 실패로의 증폭은 시간축 action history를 autoregressive하게 생성하는 구조에서 생깁니다. 그런 구조의 다른 모델(Impromptu VLA)에서는 교정·reverse·짧은 window·방향 효과까지 재현되었습니다(실험 33).
 - 불안정성은 이탈 전에는 보이지 않고 이탈 후에만 보이므로, 실용적인 완화는 "이탈을 미리 막기"가 아니라 **여러 후보를 만들고 이탈 후 신호와 현재 frame 안전 규칙으로 거르기**입니다.
 
 ---
@@ -248,6 +282,7 @@ perception (대체로 보존)
 - navhard 결과는 2단계 pseudo closed-loop이고, 안전 필터와 채점이 같은 규칙을 씁니다. 연속 closed-loop(P6)는 수행하지 못했습니다.
 - GPU·batch 구성이 달라지면 경계 장면의 디코딩이 bf16 수치 차이로 갈릴 수 있어, 모든 비교는 같은 실행 안의 쌍대 비교로 했습니다.
 - OpenVLA 재현(실험 28)은 LIBERO-Spatial 한 suite, 100 에피소드 규모이고, OpenVLA는 시간축 action history가 없어 step 내 차원 간 feedback만 직접 비교할 수 있습니다.
+- Impromptu 재현(실험 33)은 open-loop 궤적 실패 기준이고, 절대 위치 표현 때문에 GT 문맥 교정에 GT 정보 누출이 섞여 있습니다. 궤적 수준 안정 분기(사전 등록 기준 3)는 재현되지 않았습니다.
 
 ---
 
@@ -256,6 +291,7 @@ perception (대체로 보존)
 - 환경·자산: `tools/download_autovla_assets.sh`, `tools/setup_autovla_env.sh`; OpenVLA/LIBERO는 `/root/VLA/openvla/env.sh`(autovla env + target dir + Mesa EGL).
 - navhard: `tools/navhard_half2_pipeline.sh`, `tools/navhard_score_groups.sh`, split 설정 `autovla_misalignment_poc/configs/navsim_v2/`.
 - ablation·구성요소·oracle: `tools/navhard_ablation_pipeline.sh`, `tools/navhard_components_candidates_pipeline.sh`, `tools/paper_jobs_scheduler.sh`.
+- Impromptu VLA: `autovla_misalignment_poc/scripts/cross_vla_temporal/` (`impromptu_core.py`, `exp_ab.py`, `exp_cde.py`, `analyze_temporal.py`), checkpoint `/root/VLA/impromptu/3B_AD`; 실험 33 디스크 정리 기록 `outputs/cross_vla_temporal_replication/DISK_CLEANUP.md`.
 - OpenVLA: `autovla_misalignment_poc/scripts/cross_vla/` (`openvla_core.py`, `openvla_rollouts.py`, `openvla_token_feedback.py`, `analyze_cross_vla.py`).
 - 원시 rollout·hidden state·submission은 용량 때문에 저장소에 넣지 않았고, 위 스크립트로 재생성됩니다.
 - 디스크 정리 기록: 사용하지 않는 카메라(CAM_B0/L0/L2/R0/R2, 약 19 GB)를 삭제했습니다. 원 전처리(preprocess_scenes)를 처음부터 다시 하려면 shard 0–5를 다시 받아야 합니다.
