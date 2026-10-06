@@ -29,7 +29,8 @@ MOTION = ("ref_trans", "near_ref", "dir_ok_mag_wrong", "dir_wrong_mag_ok", "rand
 
 def motion_sub(T, rt, ot, name, key):
     """Substitute translation token for the last context step (see PROTOCOL.md). rt = reference token, ot = own token."""
-    jr, jo = T["id2row"][rt], T["id2row"][ot]
+    lo, hi = int(T["ids"][0]), int(T["ids"][-1])     # out-of-range ids are clipped, as the tokenizer's decode does
+    jr, jo = T["id2row"][min(max(rt, lo), hi)], T["id2row"][min(max(ot, lo), hi)]
     N, Bn = T["norm"], T["bins"]
     e = float(np.linalg.norm(N[jo] - N[jr]))
     dist = np.linalg.norm(N - N[jr], axis=1)

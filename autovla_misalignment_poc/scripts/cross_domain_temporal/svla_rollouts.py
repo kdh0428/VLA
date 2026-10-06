@@ -31,7 +31,10 @@ D_CLOSED = 0.3
 
 
 def worker(conn):
+    for k, v in (("LP_NUM_THREADS", "2"), ("OMP_NUM_THREADS", "1"), ("MKL_NUM_THREADS", "1"), ("OPENBLAS_NUM_THREADS", "1")):
+        os.environ[k] = v                                # avoid thread oversubscription (8 simulators, software Vulkan)
     import cv2 as cv
+    cv.setNumThreads(1)
     import simpler_env
     from simpler_env.utils.env.observation_utils import get_image_from_maniskill2_obs_dict
     envs = {}
