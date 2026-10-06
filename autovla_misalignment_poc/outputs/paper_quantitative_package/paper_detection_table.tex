@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Held-out detection of amplifying rollouts before (pre) and after (post) the first deviation from the GT token (experiment 31/P4; AutoVLA, NAVSIM navtest held-out split, 52 logs, 4{,}814 scenes, RTX 5090 decodes). Unit: candidate rollout (natural plan + 16 samples at $T{=}1.0$ per scene) that first deviates at $t^*<9$; label: amplification (open-loop A$-$ and FDE$_{5s}>3$\,m). Held-out $N=43,469$ candidates (2,538 amplifying, prevalence 0.058 = AUPRC of a random detector); dev $N=42,095$ (56 logs, prevalence 0.069). Pre uses information up to and including the step that emits $t^*$; post uses steps $t^*{+}1..9$. Heuristic detectors have signs fixed in advance; hidden-state probes (layer 18 selected for all) were trained on dev only and applied once. 95\% CIs: log-cluster bootstrap (1{,}000 resamples, percentile). Within-scene AUROC: mean over scenes containing both classes (1,091 held-out scenes); no CI reported. All detectors are scored on the same candidates (paired design), but no paired test of AUROC differences between detectors was reported. $^\dagger$Scene-level score, nearly constant within a scene, so its within-scene AUROC is not meaningful.}
+\label{tab:detection}
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{3}{c}{Pre-deviation} & \multicolumn{4}{c}{Post-deviation} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-8}
+Detector & AUROC & 95\% CI & Within & AUROC & 95\% CI & Within & AUPRC \\
+\midrule
+Entropy & 0.634 & [0.607, 0.658] & 0.516 & 0.823 & [0.809, 0.842] & 0.786 & 0.215 \\
+Log-likelihood & 0.570 & [0.549, 0.587] & 0.596 & 0.832 & [0.820, 0.846] & 0.811 & 0.246 \\
+Probability margin & 0.589 & [0.561, 0.615] & 0.504 & 0.769 & [0.755, 0.786] & 0.716 & 0.132 \\
+Candidate variance$^\dagger$ & 0.582 & [0.566, 0.598] & (0.432) & 0.797 & [0.786, 0.810] & (0.431) & 0.157 \\
+Pairwise disagreement & 0.620 & [0.604, 0.637] & 0.539 & 0.900 & [0.890, 0.913] & 0.898 & 0.381 \\
+Medoid distance & 0.630 & [0.610, 0.652] & 0.649 & 0.883 & [0.866, 0.901] & 0.904 & 0.403 \\
+\midrule
+Hidden logistic probe & 0.631 & [0.611, 0.651] & 0.549 & 0.765 & [0.747, 0.786] & 0.754 & 0.198 \\
+Hidden ridge probe & 0.611 & [0.591, 0.630] & 0.539 & 0.745 & [0.726, 0.768] & 0.745 & 0.182 \\
+Hidden MLP probe & 0.622 & [0.601, 0.643] & 0.549 & 0.749 & [0.726, 0.772] & 0.736 & 0.175 \\
+\bottomrule
+\end{tabular}
+\end{table}

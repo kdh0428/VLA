@@ -1,0 +1,133 @@
+% Main-paper tables generated from outputs/paper_quantitative_package (sources: SOURCE_MAP.md).
+% Requires \usepackage{booktabs,multirow,graphicx}. Bold marks only the conditions that the paper's claims rest on.
+% Experiment 35 is still running; no Experiment 35 number appears here.
+
+% ---------------------------------------------------------------- Table 1
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Models and execution architectures. ``Previous action reconditioned'' = whether later action tokens of the same plan are generated conditioned on earlier self-generated action tokens. The SpatialVLA ensemble weights are computed from the official \texttt{ActionEnsembler} (temperature $-0.8$, newest prediction weighted most); the four weights give the share of the executed action coming from each chunk.}
+\label{tab:models}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllll}
+\toprule
+ & AutoVLA & Impromptu VLA 3B & OpenVLA-7B & SpatialVLA-4B \\
+\midrule
+Backbone & Qwen2.5-VL-3B & Qwen2.5-VL-3B & Llama-2 7B & PaliGemma2-3B (Gemma2) + Ego3D \\
+Domain / benchmark & Driving / NAVSIM navtest, navhard & Driving / NAVSIM navtest & Manipulation / LIBERO-Spatial & Manipulation / SimplerEnv Google Robot \\
+Action representation & codebook token (2{,}048), 1 per 0.5\,s & absolute $[x,y]$ waypoint text ($\sim$12 tokens) & 7 discretized dims per step & 3 tokens per step (spherical translation 4{,}096, rotation $16^3$, gripper 2) \\
+Action horizon & 10 steps (5\,s) & 10 waypoints (5\,s) & 1 step & 4-step chunk \\
+Temporally autoregressive & yes & yes & no (within-step dimensions only) & yes (within chunk) \\
+Previous action reconditioned & yes & yes & no & within chunk only \\
+Replanning & one plan per scene (open loop) & one plan per scene (open loop) & every control step & every control step \\
+Temporal ensemble & no & no & no & last 4 chunks: 0.574 / 0.258 / 0.116 / 0.052 (steps 2--4 = 42.6\%) \\
+Evaluation & open-loop 5\,s; navhard two-stage pseudo closed loop & open-loop 5\,s & closed loop, 100 episodes & closed loop, 80 episodes \\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+% ---------------------------------------------------------------- Table 2
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\caption{AutoVLA causal intervention on the conditioning context only (executed actions are always the model's own output). $N=365$ perturbation units from 52 failing (A$-$) scenes in 16 logs (equal-distance set). Amplification = A$-$ and FDE$_{5\,s}>3$\,m; recovery = A+. Paired differences vs.\ Normal within the same run; 95\% CI = log-cluster bootstrap (2{,}000 resamples); $p$ = exact McNemar. Rows 1--5: Experiment 7 (one harness). Row 6: Experiment 8 (separate re-decode, in which Normal = 46.8\% and GT-history = 4.4\%); its $\Delta$ is vs.\ GT-history. Recent-GT removes $(47.4-7.1)/(47.4-4.1)=93\%$ of the GT-history effect (Exp.~8: 92.9\% [89.3, 99.1]); relative to the Normal rate the reduction is 85\%.}
+\label{tab:autovla_causal}
+\begin{tabular}{lcccc}
+\toprule
+Condition & Amplification & FDE (m) & $\Delta$ amp.\ (pp) & $p$ \\
+\midrule
+Normal (own history) & 47.4 [38, 57] & 6.54 & -- & -- \\
+Action-history attention mask & 46.0 [38, 59] & 5.96 & $-1.4$ [$-8.5$, $+7.4$] & 0.63 \\
+Recent-action attention mask & 44.1 [35, 54] & 6.17 & $-3.3$ [$-9.7$, $+2.9$] & 0.18 \\
+\textbf{Recent-GT (last token := GT)} & \textbf{7.1 [4, 10]} & 2.34 & $\mathbf{-40.3}$ [$-50.3$, $-30.0$] & $8\times10^{-42}$ \\
+GT-history (all context := GT) & 4.1 [1, 8] & 1.80 & $-43.3$ [$-54.2$, $-32.1$] & $2\times10^{-46}$ \\
+\midrule
+\textbf{Reverse: GT history + own last token} & \textbf{33.4 [26.3, 43.2]} & -- & $\mathbf{+29.0}$ [$+21.1$, $+38.0$]$^{a}$ & $7\times10^{-31}$ \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize $^{a}$vs.\ GT-history (4.4\%) in Exp.~8; restores $(33.4-4.4)/(46.8-4.4)=68\%$ of the effect. FDE $\Delta=+3.67$\,m [+2.83, +4.29].}
+\end{tabular}
+\end{table}
+
+% ---------------------------------------------------------------- Table 3
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Cross-model causal replication. Paired contrasts with cluster-bootstrap 95\% CIs (AutoVLA, Impromptu: log clusters, 2{,}000 resamples; OpenVLA: task clusters; SpatialVLA: episode clusters, 2{,}000 resamples) and exact McNemar $p$. ``Amplification'' is model-specific and not comparable across columns (driving: A$-$ and FDE$_5>3$\,m; SpatialVLA token level: accumulated step-2--4 translation deviation $\ge$ injected deviation). N: AutoVLA 365 units / 52 scenes; Impromptu 2{,}398 units / 300 scenes / 28 logs; OpenVLA 100 episodes per condition, 4{,}741 token units; SpatialVLA 18{,}975 token units, 80 closed-loop episodes per condition. Rerun = natural policy re-run whose only difference is the batch composition or numeric decoding path.}
+\label{tab:cross_model_main}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+ & AutoVLA & Impromptu VLA 3B & OpenVLA-7B & SpatialVLA-4B \\
+\midrule
+Normal amplification & 47.4 [38, 57] & 63.4 [60.6, 66.7] & within-step 92.6 [89.8, 94.4] & token 22.1 [19.5, 24.7] \\
+Corrected (last context := reference) & 7.1 [4, 10] & 1.3 [0.8, 1.8] & 0 (by construction) & 13.7 [11.8, 15.8] \\
+Correction effect & $\mathbf{-40.3}$ [$-50.3$, $-30.0$] & $\mathbf{-62.2}$ [$-65.6$, $-59.1$] & -- & $\mathbf{-8.3}$ [$-9.3$, $-7.4$]; step-4 dev.\ $-82\%$ \\
+Reverse effect & $+29.0$ [$+21.1$, $+38.0]^{a}$ & $+81.9$ [$+80.4$, $+84.2$] & = feedback & $+5.1$ [$+4.4$, $+5.8$]; step-4 dev.\ restored \\
+Critical window (share of full effect) & 1/2/3/4 step: 47/76/90/96\% & 1/2/3/4 step: 24/39/91/95\% & N/A (no temporal axis) & 1 step 86\%, 2nd-last only 63\%$^{b}$ \\
+Direction $-$ magnitude error & $+9.0$ [$+3.1$, $+18.7$], $p=6\times10^{-4}$ & $+15.6$ [$+9.0$, $+24.3$], $p=2\times10^{-31}$ & not tested & $+1.6$ [$+0.4$, $+2.8$], $p=7\times10^{-5}$ \\
+Rerun disagreement & not measured & 5.9\% (A$-$) & 20\% (success) & 13.8\% (success) \\
+Task-level context effect & open-loop: yes & open-loop: yes (+24.8 pp A$-$ at 0.2\,m) & no (feedback$-$corrected $+3$ [$-4$, $+9$], $p=0.65$) & no (feedback$-$corrected $+1.2$ [$-12.5$, $+13.8$], $p=1$)$^{c}$ \\
+Classification & original finding & \textbf{Strong} (prereg.) & architectural control & \textbf{Partial} (prereg.; token only) \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize $^{a}$Embedding-level reverse patch (Exp.~8), not a token-context reverse. $^{b}$Chunk has 4 steps; longer windows are not measurable. $^{c}$Opposite direction, $d=0.3$; the executed perturbation itself costs $-21.2$ pp [$-33.8$, $-7.5$], $p=0.006$.}
+\end{tabular}}
+\end{table*}
+
+% ---------------------------------------------------------------- Table 4
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Held-out detection of amplifying rollouts before (pre) and after (post) the first deviation (Exp.~31; AutoVLA, 52 held-out logs, 4{,}814 scenes). $N=43{,}469$ deviating candidates, 2{,}538 amplifying (prevalence 0.058 = AUPRC of a random detector). Pre includes the step that emits the deviating token. 95\% CI = log-cluster bootstrap (1{,}000 resamples). Within = mean within-scene AUROC over 1{,}091 scenes with both classes (no CI reported). All detectors are scored on the same candidates; no paired test between detectors was run. Probes were trained on the 56 dev logs only. $^\dagger$Scene-level score; within-scene AUROC is not meaningful.}
+\label{tab:detection_main}
+\begin{tabular}{lccccc}
+\toprule
+ & \multicolumn{2}{c}{Pre-deviation} & \multicolumn{3}{c}{Post-deviation} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-6}
+Detector & AUROC [95\% CI] & Within & AUROC [95\% CI] & Within & AUPRC \\
+\midrule
+Entropy & 0.634 [0.607, 0.658] & 0.516 & 0.823 [0.809, 0.842] & 0.786 & 0.215 \\
+Log-likelihood & 0.570 [0.549, 0.587] & 0.596 & 0.832 [0.820, 0.846] & 0.811 & 0.246 \\
+Margin & 0.589 [0.561, 0.615] & 0.504 & 0.769 [0.755, 0.786] & 0.716 & 0.132 \\
+Candidate variance$^\dagger$ & 0.582 [0.566, 0.598] & (0.432) & 0.797 [0.786, 0.810] & (0.431) & 0.157 \\
+\textbf{Pairwise disagreement} & 0.620 [0.604, 0.637] & 0.539 & \textbf{0.900 [0.890, 0.913]} & 0.898 & 0.381 \\
+Medoid distance & 0.630 [0.610, 0.652] & 0.649 & 0.883 [0.866, 0.901] & 0.904 & 0.403 \\
+\midrule
+\textbf{Hidden logistic probe} & \textbf{0.631 [0.611, 0.651]} & 0.549 & 0.765 [0.747, 0.786] & 0.754 & 0.198 \\
+Hidden ridge probe & 0.611 [0.591, 0.630] & 0.539 & 0.745 [0.726, 0.768] & 0.745 & 0.182 \\
+Hidden MLP probe & 0.622 [0.601, 0.643] & 0.549 & 0.749 [0.726, 0.772] & 0.736 & 0.175 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ---------------------------------------------------------------- Table 5
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Mitigation by candidate selection and a current-frame safety filter (AutoVLA, 17 candidates per scene). (a) Pre-registered held-out NAVSIM PDMS (commit 513fdba; 52 logs, 4{,}814 scenes; non-reactive); $p$ = Wilcoxon. Collision rates are descriptive (no test). (b) NAVSIM v2 navhard two-stage pseudo closed loop, all 76 logs / 225 groups; $p$ = log-level paired sign-flip permutation (20{,}000 draws). Second half = pre-registered replication on 40 new logs / 120 groups (commit 96a595c; pass = $\Delta>0$, CI lower bound $>0$, $p<0.05$). All $\Delta$ are paired vs.\ the natural plan; 95\% CI = log-cluster bootstrap (2{,}000). The filter and the score share the PDM collision / drivable-area rules. $^\dagger$Uses the scored future; not deployable.}
+\label{tab:mitigation}
+\begin{tabular}{lcccc}
+\toprule
+\multicolumn{5}{l}{\textit{(a) Held-out PDMS}} \\
+Method & PDMS & $\Delta$ [95\% CI] & $p$ & At-fault coll. \\
+\midrule
+Natural plan & 0.8893 & -- & -- & 0.56\% \\
+Rank-sum & 0.8988 & $+0.0095$ [$+0.0046$, $+0.0148$] & 0.0034 & 0.23\% \\
+\textbf{Safety filter + rank-sum (F1)} & \textbf{0.9209} & $\mathbf{+0.0315}$ [$+0.0234$, $+0.0410$] & $5\times10^{-17}$ & 0.10\% \\
+\midrule
+\multicolumn{5}{l}{\textit{(b) navhard EPDMS (76 logs / 225 groups)}} \\
+Method & EPDMS & $\Delta$ [95\% CI] & $p_\text{perm}$ & 2nd half $\Delta$ [95\% CI], $p$ \\
+\midrule
+Natural plan & 0.2287 & -- & -- & -- \\
+Rank-sum & 0.2482 & $+0.0196$ [$+0.0028$, $+0.0372$] & 0.094 & $+0.0203$ [$-0.0000$, $+0.0402$], 0.11$^{a}$ \\
+Max log-lik. & 0.2486 & $+0.0199$ [$+0.0080$, $+0.0325$] & 0.0016 & $+0.0097$ [$-0.0037$, $+0.0235$], 0.080 (fail) \\
+\textbf{Safety filter only} & \textbf{0.3333} & $\mathbf{+0.1046}$ [$+0.0845$, $+0.1251$] & $<10^{-4}$ & $+0.0974$$^{b}$ \\
+\textbf{Safety + rank-sum (F1)} & \textbf{0.3470} & $\mathbf{+0.1183}$ [$+0.0956$, $+0.1400$] & $<10^{-4}$ & $+0.1121$ [$+0.0819$, $+0.1402$], $<10^{-4}$ (pass) \\
+Safety + max log-lik. & 0.3503 & $+0.1216$ [$+0.1007$, $+0.1423$] & $<10^{-4}$ & $+0.1116$ [$+0.0846$, $+0.1364$], $<10^{-4}$$^{a}$ \\
+Oracle (17 candidates)$^\dagger$ & 0.4053 & $+0.1767$ [$+0.1515$, $+0.2012$] & $<10^{-4}$ & -- \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize $^{a}$Descriptive in the pre-registration (not a judged hypothesis). $^{b}$Half-wise point estimate from Exp.~27; CI not reported per half.}
+\end{tabular}
+\end{table}
