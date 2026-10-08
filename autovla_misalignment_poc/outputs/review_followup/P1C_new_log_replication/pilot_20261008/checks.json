@@ -1,0 +1,1874 @@
+{
+ "P1": {
+  "n_scenes": 130,
+  "n_errors": 0,
+  "full_sequence_agreement": 0.7461538461538462,
+  "stub_ids_differ_rate": 0.0,
+  "gt_tokens_agreement": 1.0,
+  "t_star_agreement": 0.8923076923076924,
+  "first_token_agreement": 0.9692307692307692,
+  "mean_equal_positions": 8.76923076923077,
+  "per_scene": [
+   {
+    "token": "971d199e8b9b5e71",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "f2d64d93a1915c8b",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "22e43e5928b95b7a",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "1379782dce4751e4",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "d1fdb156118a52ae",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "51c83516a5d8585a",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "7f2a06cede325573",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 3
+   },
+   {
+    "token": "cdf234c4f4c35156",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "da6bafca1d9f5b58",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "b5bdef8a05605164",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "3fb200a0fddb5c8e",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "f7544894729252f5",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "cb02d1e1315a5e67",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "0f4984d978155b23",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "be87511d69ba58e7",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 8
+   },
+   {
+    "token": "0937290700b851a0",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 2
+   },
+   {
+    "token": "876f405da0da5016",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 6
+   },
+   {
+    "token": "6b5b038496cb56ba",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "8f8ccbd6ffcb54b9",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "3166dd05c45f59e8",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "1290e3066cbc5397",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 9
+   },
+   {
+    "token": "1615cf8bd43759c2",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "cdc9eb7c7ddb5b08",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 2
+   },
+   {
+    "token": "4c24c3efe0e4519d",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "49454db3d9ef54a1",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "2f7190c1da685537",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "ffd429cac51751d9",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "b60ecc0b221751d7",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 4
+   },
+   {
+    "token": "27eb0ba03f385c69",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 7
+   },
+   {
+    "token": "2e194d0e7a675b51",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "9897a102ee075dee",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "abcbb3c7020550c5",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "54580876ee835959",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "41bddf65c8155bd5",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "12c01b203ea85b41",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "c9c7f9354f935514",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 2
+   },
+   {
+    "token": "63573ea2fdb85b0e",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "af0e1a3043ba51c6",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "eb19160d56255b73",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "869f688594fc58c1",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "d38090818a0b5bed",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "e3ef42c62ba2595b",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "fd9b66480e895706",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "a0c719046be7530e",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "94b9b31c975a5796",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 5
+   },
+   {
+    "token": "770c714d82535180",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "b61a78b163d654e0",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 3
+   },
+   {
+    "token": "c30e5bb7e0595851",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "c672f1584cb75697",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "8a5809217c605979",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "3bd2edbc70605e87",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "d74329969d1155bf",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "f9592039b6aa5165",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "6d66b095f93750f7",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "abb2ccc5501c58f3",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "2462c21ce2bb5f2d",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 9
+   },
+   {
+    "token": "53834451cfa75fd0",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "6b895016e28d513c",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 3
+   },
+   {
+    "token": "314c032aadbd5011",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": false,
+    "n_equal_positions": 6
+   },
+   {
+    "token": "89751620b3555ef8",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "354e4afad1eb56c2",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 1
+   },
+   {
+    "token": "f2fdedb5a4ba5c4c",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "1550976459b45017",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "32e5d7e804c65214",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "054054d63ad85fa3",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "ba83a36f96af5ceb",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": false,
+    "n_equal_positions": 5
+   },
+   {
+    "token": "d73cabbfed045bf2",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 7
+   },
+   {
+    "token": "4efe0ad78b655ecd",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "68bbcb5f42845480",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "cc7afdc5a1e95b5a",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "167fd80fa8635037",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "7daa0ad6ca5356fc",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "4b3d6fc60b815701",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": false,
+    "n_equal_positions": 2
+   },
+   {
+    "token": "bbb7e4525bd05d3d",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "cf1ba57897845189",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 5
+   },
+   {
+    "token": "84204f2655e4500b",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 2
+   },
+   {
+    "token": "0f9e883357585ec4",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 1
+   },
+   {
+    "token": "cd0b91f235e25b76",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "2d060a1354d4545e",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "0a8ba5b315e555ab",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 9
+   },
+   {
+    "token": "86877e183c4e5864",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "cd0a001eb97a5c88",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "6a3518e83ad751f6",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "823f87e2960853d9",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 8
+   },
+   {
+    "token": "40c9fc73f7275730",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 6
+   },
+   {
+    "token": "9f8764247caa5e71",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "677d8d1e838b5793",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "562e11865ef75220",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "9d18c2e4a9c35be7",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "538ed1acbf145c8b",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "7cbf7bab041151e1",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "80a4b14aef3f5a52",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "32c74fb957e45651",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "426cc213a80352f9",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "9e2a2f6ba6705d0a",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "4e811c006997541d",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "616382bea2ff5853",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 7
+   },
+   {
+    "token": "e4ad471729c65fc9",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "f755005e289d5ccd",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 4
+   },
+   {
+    "token": "35f13a6de1575fdc",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": false,
+    "n_equal_positions": 9
+   },
+   {
+    "token": "f8fd766eb013577f",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "3d6cbc2a95885eef",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 8
+   },
+   {
+    "token": "c90d3a1a568a59d3",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "4946bc8012cb5e83",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "cf533c1e7f6852e5",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "9de4d5414a4a50c4",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 9
+   },
+   {
+    "token": "cd9e6c1924c35b85",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "6239cdb801bc51c2",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "3276f87a152651f0",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "97d06e94283a5a65",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 6
+   },
+   {
+    "token": "78cfb731b49c5aed",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "37d818085d0f56e8",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "e3f62a1acf9d565e",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "3a3297d21e905b02",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "eb5ef679c80959fe",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 2
+   },
+   {
+    "token": "f5e28113983e54bd",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "89df824d0cfd525e",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "7e35bd1fea5b50da",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "ca68dbc018a35aa3",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "88207b881eb5573c",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "b4b31520fc1c5ef7",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "f8e2454674f75e0f",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "5239e2cfe006568b",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "46ee8e2727455a9f",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 9
+   },
+   {
+    "token": "841f506a559f534f",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "7e1cc7d77132505a",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "a9e622747fc45a0a",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "625a015c1f7c5170",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "8f0f0f9061b35356",
+    "actions_equal": true,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": true,
+    "first_token_equal": true,
+    "n_equal_positions": 10
+   },
+   {
+    "token": "de16c26b38425a6b",
+    "actions_equal": false,
+    "stub_equal": true,
+    "gt_equal": true,
+    "t_star_equal": false,
+    "first_token_equal": true,
+    "n_equal_positions": 1
+   }
+  ],
+  "pass": false
+ },
+ "P3_cameras": {
+  "n_scenes": 5,
+  "token_ids_identical": 5,
+  "max_abs_entropy_diff": 0.0,
+  "model_camera_types_line": "camera_types = ['front_camera', 'front_left_camera', 'front_right_camera']",
+  "vs_full_extract_note": "P1 compares runs on today's PoC dirs (F0/L1/R1 + partial L0/R0) with full_extract records made when the PoC logs had all 8 cameras",
+  "pass": true
+ },
+ "ED_parity": {
+  "n_scenes": 3,
+  "alternatives_identical": 3,
+  "condition_rows_identical": 27,
+  "condition_rows": 27,
+  "per_scene": [
+   {
+    "token": "013fbdcd9db35b43",
+    "alternatives_equal": true,
+    "conditions_equal": {
+     "original": true,
+     "original_reseed": true,
+     "gt": true,
+     "alt0": true,
+     "alt1": true,
+     "alt2": true,
+     "alt3": true,
+     "alt4": true
+    }
+   },
+   {
+    "token": "077c80ecaed0548f",
+    "alternatives_equal": true,
+    "conditions_equal": {
+     "original": true,
+     "original_reseed": true,
+     "gt": true,
+     "alt0": true,
+     "alt1": true,
+     "alt2": true,
+     "alt3": true,
+     "alt4": true,
+     "alt5": true,
+     "alt6": true
+    }
+   },
+   {
+    "token": "082381ecf93c57d6",
+    "alternatives_equal": true,
+    "conditions_equal": {
+     "original": true,
+     "original_reseed": true,
+     "gt": true,
+     "alt0": true,
+     "alt1": true,
+     "alt2": true,
+     "alt3": true,
+     "alt4": true,
+     "alt5": true
+    }
+   }
+  ],
+  "pass": true
+ },
+ "P2_h8_debug": {
+  "n_debug_steps": 2,
+  "emb_patch_vs_recent_gt_logits_L1": [
+   0.0,
+   0.0
+  ],
+  "L35_patch_vs_gt_history_logits_L1": [
+   0.0,
+   0.0
+  ],
+  "selfpatch_js_vs_normal": [
+   {
+    "emb": 0.0,
+    "L16": 0.0,
+    "L35": 0.0
+   },
+   {
+    "emb": 0.0,
+    "L16": 0.0,
+    "L35": 0.0
+   }
+  ],
+  "prefix_kv_checksum": "asserted unchanged after every unit inside prev_action_state_patching.py (run aborts the unit otherwise); see h8_debug errors.jsonl",
+  "h8_debug_unit_errors": 0,
+  "pass": true
+ },
+ "P2_records_complete": {
+  "selected_scenes": 10,
+  "unit_scenes": 10,
+  "units": 76,
+  "units_errors": 0,
+  "blocks": {
+   "action_history_causal": {
+    "units_expected": 76,
+    "units_present": 76,
+    "missing": 0,
+    "n_conditions": 7,
+    "errors": 0,
+    "elapsed_min": 1.989915947119395,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "records_bytes": 501192
+   },
+   "prev_action_state_patching": {
+    "units_expected": 76,
+    "units_present": 76,
+    "missing": 0,
+    "n_conditions": 93,
+    "errors": 0,
+    "elapsed_min": 2.054171395301819,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "records_bytes": 7304534
+   },
+   "temporal_feedback_window": {
+    "units_expected": 76,
+    "units_present": 76,
+    "missing": 0,
+    "n_conditions": 17,
+    "errors": 0,
+    "elapsed_min": 0.870955495039622,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "records_bytes": 1019754
+   },
+   "motion_semantics_ablation": {
+    "units_expected": 76,
+    "units_present": 76,
+    "missing": 0,
+    "n_conditions": 6,
+    "errors": 0,
+    "elapsed_min": 0.5968619664510091,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "records_bytes": 665468
+   }
+  },
+  "pass": true,
+  "denominators_csv": [
+   {
+    "log": "2021.09.29.19.02.14_veh-28_02911_03005",
+    "scenes": 22,
+    "eligible": 5,
+    "F": 1,
+    "S_eligible": 4,
+    "S_sampled": 4,
+    "stage1_error_rate": 0.0,
+    "not_eligible_no_mismatch": 16,
+    "not_eligible_t_star_gt_7": 1.0,
+    "units_built_scenes": 5,
+    "units": 36,
+    "H7_scenes_analysed": 5,
+    "H7_scenes_excluded_harness": 0,
+    "H8_scenes_analysed": 5,
+    "H8_scenes_excluded_harness": 0,
+    "H9_scenes_analysed": 5,
+    "H9_scenes_excluded_harness": 0,
+    "H32_scenes_analysed": 5,
+    "H32_scenes_excluded_harness": 0
+   },
+   {
+    "log": "2021.10.06.08.16.17_veh-52_01590_01725",
+    "scenes": 30,
+    "eligible": 8,
+    "F": 1,
+    "S_eligible": 7,
+    "S_sampled": 4,
+    "stage1_error_rate": 0.0,
+    "not_eligible_no_mismatch": 22,
+    "not_eligible_t_star_gt_7": NaN,
+    "units_built_scenes": 5,
+    "units": 40,
+    "H7_scenes_analysed": 5,
+    "H7_scenes_excluded_harness": 0,
+    "H8_scenes_analysed": 5,
+    "H8_scenes_excluded_harness": 0,
+    "H9_scenes_analysed": 5,
+    "H9_scenes_excluded_harness": 0,
+    "H32_scenes_analysed": 5,
+    "H32_scenes_excluded_harness": 0
+   }
+  ],
+  "per_condition_units": [
+   {
+    "block": "H32",
+    "condition": "dir_ok_mag_wrong",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "dir_ok_mag_wrong",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "dir_wrong_mag_ok",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "dir_wrong_mag_ok",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "mirror_same_dist",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "mirror_same_dist",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "normal",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "normal",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "random_mag_matched",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "random_mag_matched",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "recent_gt",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H32",
+    "condition": "recent_gt",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "gt_history",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "gt_history",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "hist_attn_mask",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "hist_attn_mask",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "hist_emb_neutral",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "hist_emb_neutral",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "normal",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "normal",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "recent_attn_mask",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "recent_attn_mask",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "recent_emb_neutral",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "recent_emb_neutral",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "recent_gt",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H7",
+    "condition": "recent_gt",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "gt_history",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "gt_history",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "normal",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "normal",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "patch_full@L35",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "patch_full@L35",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "patch_full@emb",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "patch_full@emb",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "recent_gt",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "recent_gt",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "reverse@emb",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H8",
+    "condition": "reverse@emb",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "gt_history",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "gt_history",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "normal",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "normal",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win1",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win1",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win2",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win2",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win3",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win3",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win4",
+    "stratum": "F",
+    "n_units": 14,
+    "n_scenes": 2,
+    "n_invalid": 0
+   },
+   {
+    "block": "H9",
+    "condition": "win4",
+    "stratum": "S",
+    "n_units": 62,
+    "n_scenes": 8,
+    "n_invalid": 0
+   }
+  ]
+ },
+ "analysis_executes_masked": true,
+ "gpu_steps": [
+  {
+   "step": "stage1_shard16",
+   "s": 144,
+   "rc": 0,
+   "utc": "2026-10-08T18:23:02Z"
+  },
+  {
+   "step": "stage1_shard20",
+   "s": 170,
+   "rc": 0,
+   "utc": "2026-10-08T18:26:44Z"
+  },
+  {
+   "step": "p1_planner_vs_full_extract",
+   "s": 136,
+   "rc": 0,
+   "utc": "2026-10-08T18:29:50Z"
+  },
+  {
+   "step": "p3_three_camera_tree",
+   "s": 92,
+   "rc": 0,
+   "utc": "2026-10-08T18:32:12Z"
+  },
+  {
+   "step": "ed_wrapper_parity",
+   "s": 88,
+   "rc": 0,
+   "utc": "2026-10-08T18:34:30Z"
+  },
+  {
+   "step": "units",
+   "s": 98,
+   "rc": 0,
+   "utc": "2026-10-08T18:36:59Z"
+  },
+  {
+   "step": "action_history_causal",
+   "s": 193,
+   "rc": 0,
+   "utc": "2026-10-08T18:41:02Z"
+  },
+  {
+   "step": "prev_action_state_patching",
+   "s": 167,
+   "rc": 0,
+   "utc": "2026-10-08T18:44:39Z"
+  },
+  {
+   "step": "temporal_feedback_window",
+   "s": 132,
+   "rc": 0,
+   "utc": "2026-10-08T18:47:41Z"
+  },
+  {
+   "step": "motion_semantics_ablation",
+   "s": 104,
+   "rc": 0,
+   "utc": "2026-10-08T18:50:15Z"
+  },
+  {
+   "step": "h8_debug",
+   "s": 63,
+   "rc": 0,
+   "utc": "2026-10-08T18:52:08Z"
+  },
+  {
+   "step": "p1b_armN_generate",
+   "s": 122,
+   "rc": 0
+  },
+  {
+   "step": "p1_extra100_planner",
+   "s": 368,
+   "rc": 0
+  },
+  {
+   "step": "p1_extra100_armN",
+   "s": 310,
+   "rc": 0
+  }
+ ],
+ "stage1_s_per_scene": 3.0825192307692313,
+ "p1_stage1_s_per_scene": 3.066546153846155,
+ "units_s_per_scene": 5.3667,
+ "download": [
+  {
+   "shard": 16,
+   "download_s": 36,
+   "tar_rc": 0,
+   "extracted_kB": 75004,
+   "free_kB_after": 9025408,
+   "utc": "2026-10-08T15:36:00Z"
+  },
+  {
+   "shard": 20,
+   "download_s": 112,
+   "tar_rc": 0,
+   "extracted_kB": 202418,
+   "free_kB_after": 8797056,
+   "utc": "2026-10-08T15:38:09Z"
+  }
+ ],
+ "all_pass": false
+}

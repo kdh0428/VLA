@@ -232,3 +232,25 @@ Two families, each with Holm FWER control:
 - D6: family F는 α = 0.05 + Holm, family P는 α = 0.025 + Holm이다. 주 p값은 drive 수준 exact sign-flip이다.
 - D7: 필요한 코드(natural 전용 1단계 writer, token 목록 옵션, 3-카메라 스트리밍 driver, 고정된 분석 스크립트)는 새 파일로 구현한다. 구현이 끝나면 분석 스크립트를 평가 데이터를 보기 전에 추가로 commit한다. pilot 점검 P1–P3 통과를 본 실행의 조건으로 한다.
 - D8–D9: 사용자 승인(2026-10-08). 약 100 GB를 shard 단위로 스트리밍하고, GPU 약 5–7.5시간이다. 예상의 1.5배를 넘으면 기술적으로 중단하고 점검한다.
+
+## Amendment 1 (2026-10-08, pilot 이후·평가 데이터 생성 전; 평가 결과를 본 적 없음)
+- **pilot 점검 P1 기준 변경**
+  - 원 기준: Planner natural pass와 저장된 full_extract arm N의 10-token 완전 일치 ≥ 85%.
+  - pilot 결과: 74.6%(97/130 PoC 장면).
+  - arm N 절차 자체를 다시 돌려도 76.2%(99/130)로 85%에 도달하지 못한다. 원인은 T = 0.01 샘플링에서 근소한 logit 차이를 난수열이 가르는 것인데, full_extract는 run 전체에 seed를 한 번만 넣어서 장면 단위로 재현할 수 없다. P0-A에서 dev harness 간 일치율도 71.6–89.2%였다.
+  - 즉 85%는 arm N의 자기 재현성보다 높게 잡힌 기준이었다.
+  - 새 기준은 아래 셋을 모두 만족하는 것이다.
+    1. Planner의 일치율이 arm-N 재실행의 일치율보다 5%p 넘게 낮지 않다. 관측값은 74.6 vs 76.2로 충족한다.
+    2. stub 일치 ≥ 95%. 관측값 100%.
+    3. eligibility+stratum 일치 ≥ 90%. 관측값 93.1%.
+  - 결과 지표, estimand, 분석 방법은 바꾸지 않는다.
+- **결정 규칙의 90% CI:** sign-flip 검정을 뒤집어 얻은 90% CI를 주 CI로 쓴다. bootstrap 기준 판정도 함께 적는다.
+- **실행 순서와 정의**(설계는 그대로이고 명시만 한다):
+  - 1단계는 shard 단위로 돌리고, 선택된 장면의 영상만 남긴다. 단위 생성과 4개 기전 block은 선택된 장면 전체에 대해 한 번씩 돌린다.
+  - shard당 오류율 > 5%면 멈추는 규칙은 1단계에 적용한다.
+  - 민감도 부분집합 S4(flag된 log)의 분모에는 1단계 실패도 넣는다.
+  - Q3의 Δ는 bootstrap과 cluster-t 구간만 보고한다.
+  - Planner 절차에서 runaway는 항상 0이다.
+  - 1단계 seed key는 "0:{token}"이다.
+- **GPU 예산:** 측정 기반 재추정치는 9.35 GPU 시간이다(외부 프로세스와 GPU 공유). 사용자 재승인 여부를 아래에 기록한다.
+- **분석 스크립트 고정:** `scripts/review_followup/p1c/analyze_p1c.py`, sha256 60345dedfc9d3aeb14d21ec74590c6bb9a00a386b8962754f615be58b69cfc94.
