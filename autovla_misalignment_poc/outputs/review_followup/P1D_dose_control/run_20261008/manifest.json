@@ -1,0 +1,31 @@
+{
+ "experiment": "P1-D dose-controlled execution structure (DRAFT, not launched)",
+ "date": "2026-10-08",
+ "model": "/root/VLA/spatialvla/spatialvla-4b-224-sft-fractal (bf16)",
+ "gpu": "RTX 5090 (CUDA_VISIBLE_DEVICES=1, PCI_BUS_ID)",
+ "env": "/root/VLA/simpler/env.sh (SimplerEnv ManiSkill2_real2sim, SAPIEN 2.2.2, Mesa lavapipe)",
+ "decode": "greedy, fixed batch 8 per prompt-length group (svla_protection.decode_fixed)",
+ "reset": "reset(seed, options={reconfigure: True[, obj_init_options.episode_id]})",
+ "code_sha256": {
+  "scripts/review_followup/p1d/analyze_p1d.py": "bb58d1f2f1edbc497ba212e3c0c3e58646bb5ca3aee368d246f76a340c7f796c",
+  "scripts/review_followup/p1d/build_units.py": "b396a964c21dc562250de15699775808cac6935e928f465f9e514a89eaa2a21e",
+  "scripts/review_followup/p1d/check_initial_states.py": "700d87e581a55a1c878b492e17cd1043e89e12889e5bad348f8e4a487b150502",
+  "scripts/review_followup/p1d/p1d_runner.py": "96e79a60470221a7f9f255c5d54a42ba81cec0b047ebf55947749bb4afed1a9a",
+  "scripts/review_followup/p1d/precision_analysis.py": "dc4891c639ddf1fffacd4ba0d7d759d0ac9c591559a2e33e97a5756477836a90"
+ },
+ "imported_unmodified": {
+  "scripts/spatialvla_protection/svla_protection.py": "190aef3a4f2d7a0b8f610581e411d7cfdc8516eaf9c93b307b9ad9423efdf8cb",
+  "scripts/cross_domain_temporal/spatialvla_core.py": "8a6e710eb02be034cb43331b229af21de63817f11c37e374b850ccf5b395fb3b",
+  "scripts/cross_domain_temporal/svla_rollouts.py": "479cb3ca149ec0f42acdabb29c8eadc4c2859d758f4840a796fa597abc373545"
+ },
+ "inputs_read_only": {
+  "outputs/spatialvla_feedback_protection_ablation/rollouts/episodes.jsonl": "77a8c2bf4e489f7060af9c6c8f374edc41475aeff92e4a51db057b2af78eef87",
+  "outputs/spatialvla_feedback_protection_ablation/rollouts_ext/episodes.jsonl": "2e7ca6d21b8e5e2786c171888a7788e958b643a2fc01975d843042e0f5087c75"
+ },
+ "units": "outputs/review_followup/P1D_dose_control/run_20261008/units.json",
+ "units_sha256": "d7f7cd4f9497d185cb516546eef738f2cc3132c4f6a21b163445936c0fdce1a0",
+ "smoke": {
+  "s1": "12 episodes (2 runs, <=8 each)",
+  "s2": "7 episodes"
+ }
+}

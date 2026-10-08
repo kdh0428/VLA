@@ -1,0 +1,8 @@
+config,condition,n_episodes,gen_calls_per_ep,injections_per_ep,achieved_dnorm_mean,flip_frac,w0_mean,delta_phys_m_mean,direct_exec_dose_per_ep_m,ctx_exec_dev_trans_per_ep_m,ctx_exec_dev_rot_per_ep_rad,ctx_exec_dev_grip_per_ep,ctx_weight_exposure_per_ep,success_rate,wall_s_per_ep,decode_s_per_ep
+r1e1,feedback,1,72.0,4.0,0.32159,0.25,1.0,0.06287,0.2515,0.0,0.36753,1.0,0.0,1.0,61.37,25.27
+r1e1,gen,1,72.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,1.0,66.2,28.8
+r1e1,natural,1,80.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,1.0,80.64,42.52
+r1e1,reverse,1,72.0,4.0,0.29595,0.25,1.0,0.05858,0.0,0.0,0.41618,1.0,0.0,1.0,62.36,25.27
+r2e1,feedback,1,36.0,4.0,0.28439,0.25,1.0,0.0568,0.22719,0.08959,0.57071,1.0,4.0,1.0,33.52,25.16
+r2e1,natural,1,40.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,1.0,74.42,15.48
+r2e1,reverse,1,36.0,4.0,0.29989,0.5,1.0,0.05986,0.0,0.10574,0.58088,2.0,4.0,1.0,64.96,25.35

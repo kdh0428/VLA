@@ -1,0 +1,16 @@
+{
+ "google_robot_pick_coke_can": {
+  "n_seeds": 520,
+  "n_distinct_states": 520,
+  "n_seeds_0_119_distinct": 120,
+  "new_seeds_colliding_with_0_119": 0,
+  "n_new": 400
+ },
+ "google_robot_move_near": {
+  "n_seeds": 520,
+  "n_distinct_states": 21,
+  "n_seeds_0_119_distinct": 15,
+  "new_seeds_colliding_with_0_119": 386,
+  "n_new": 400
+ }
+}

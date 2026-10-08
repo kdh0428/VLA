@@ -1,0 +1,88 @@
+/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/design_20261008/scripts/power_sim.py:178: RuntimeWarning: divide by zero encountered in divide
+  clustert_typeI05=np.mean((np.abs(h0[:, 0] / h0[:, 1]) > tdist.ppf(0.975, np.maximum(h0[:, 2] - 1, 1)))[ok0]))
+/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/design_20261008/scripts/power_sim.py:184: RuntimeWarning: divide by zero encountered in divide
+  row[f"power_clustertHolm_{h}"] = np.mean((np.abs(a[:, 0] / a[:, 1]) > q)[ok])
+drive 8
+drive 12
+drive 16
+drive 20
+drive 24
+drive 32
+drive 48
+segment 8
+segment 12
+segment 16
+segment 20
+segment 24
+segment 32
+segment 48
+{
+ "dev_mean_scene": {
+  "A-": {
+   "rn": -0.39789377289377287,
+   "dm": 0.09851953601953602
+  },
+  "A+": {
+   "rn": -0.03352665852665853,
+   "dm": 0.045024420024420024
+  }
+ },
+ "centre_under_sim": {
+  "A-": [
+   -0.4300526344797178,
+   0.12936370149911813
+  ],
+  "A+": [
+   -0.019691334610290188,
+   0.04711417986779057
+  ]
+ },
+ "rv_dev": {
+  "A-": 0.29,
+  "A+": 0.0307
+ },
+ "rv_scale": {
+  "A-": 0.8086124401913876,
+  "A+": 0.8222222222222223
+ },
+ "eval_drives": 24,
+ "eval_F": 111,
+ "eval_S": 2090,
+ "drives_with_F": 20,
+ "F_per_drive": [
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  3,
+  3,
+  5,
+  6,
+  7,
+  8,
+  9,
+  12,
+  13,
+  13,
+  20
+ ],
+ "tstar_weights": [
+  0.5824936673233887,
+  0.5812962157459765,
+  1.2973342447026657,
+  2.724401913875598,
+  3.694736842105263
+ ],
+ "reps": 2000,
+ "seed": 20261008,
+ "note": "drives>24 are hypothetical (eval drives resampled with replacement)"
+}

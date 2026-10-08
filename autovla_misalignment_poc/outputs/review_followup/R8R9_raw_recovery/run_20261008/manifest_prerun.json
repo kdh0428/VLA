@@ -1,0 +1,136 @@
+{
+ "experiment": "R8R9_raw_recovery",
+ "written_utc": "2026-10-08T14:55:18Z",
+ "note": "PRE-RUN manifest after lead decisions 2026-10-08: final protocol + smoke only; main run not launched",
+ "repo_head_VLA": "e10374a733c4f3411ce9a7bff1095fb565cb6282",
+ "repo_head_autovla": "ba34eed74ce6729e7986592d0e66cbaca397b4fa",
+ "inputs": {
+  "ed_records": "/root/VLA/autovla_misalignment_poc/outputs/equal_distance_perturbation/records.jsonl",
+  "ed_records_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+  "full_records": "/root/VLA/autovla_misalignment_poc/outputs/full_extract/records.jsonl",
+  "action_history_records": "/root/VLA/autovla_misalignment_poc/outputs/action_history_causal/records.jsonl",
+  "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+  "config_sha256": "8eea938f70f945f45fe70d9c528355a4dd790893a7c2d6f204c6f39ed9918caf",
+  "checkpoint": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+  "checkpoint_bytes": 16292664780
+ },
+ "gpu_env": {
+  "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+  "CUDA_VISIBLE_DEVICES": "1",
+  "device": "NVIDIA GeForce RTX 5090"
+ },
+ "scripts_review_followup_p1ab": {
+  "p1_common.py": "6382306aaa32c38acd662f91d600a7a27fbe5d2e5e95c6bdb10400f0cf05aa77",
+  "p1_manifest.py": "e1a2d0f7a43ea808d5220ff75b7a9bb1d704452e02a29f3cd0e0f63904d26ac9",
+  "p1_reference.py": "42b75ecd6512719305a2913493851ae77cb86520af8a946bd7e9ed9a597ddd38",
+  "p1_stats.py": "f11f565d125b64a4894c6f828e7849fd1d7244bdd0364a5602219055bde35c41",
+  "p1a_analyze.py": "7bbc6a71d9d400bce744d84b0e107fbb60076a6521625525c7ba5ff81714d0c8",
+  "p1a_gt_free_reference.py": "f5470a4d911d03c38c33626f3cbe421823e51aaed9495f322e99436f9cd44a61",
+  "p1b_analyze.py": "6d624b9ef4d98dd4826cf68b348c047df28040d4c95445cca22b70a27b86580f",
+  "p1b_start_position.py": "1aad392abae221605bb712ce3891ac50704bc186ef9b78dc05c23ca54834ef7f",
+  "r8r9_build_units.py": "6c53a10140f933ab5e319d6e5c8234b53d8936514b2206882acce701b66fb947",
+  "r8r9_run.sh": "212547c47a28d0d2e8c3d4a254000d7006ff0665ac4e28b143f96834e9460fed",
+  "run_all_main.sh": "6bae5bed2c44e5d7d2effd90bc1a7168e0c8d4fa721975cd402a960dd5769b26",
+  "smoke_p1.sh": "85921a309d851db14fe9021c9668174ea85510b4a64aebc3b26f8dac16c18ec9",
+  "smoke_p1a_fixedpos.sh": "0ed2223e821f6bed540c584b7b57dad41120e0db57613f825d0b1e406b8ce3de"
+ },
+ "original_scripts_sha256": {
+  "action_history_causal.py": "221c5c932c15928b4262e4f292f0cc6ac0b5ba4ce1d181e64fc9746c63c68dc7",
+  "analyze_action_history.py": "42259869e54346b3703c1af423e974014b3a7346bb0c426b329d441c57c96804",
+  "prev_action_state_patching.py": "ce8f15d007522ecb518dd6e8420007397f1d794fa3ecbac12c1e85d72c67f68d",
+  "temporal_feedback_window.py": "2e5ece5002a1cfba633c1011c5176714c208e6cc42caac1896c773f970608ce4",
+  "analyze_prev_action_state_patching.py": "57b3470c27f372f2c5ab8a6a6af7031fcafd68823e7d8f66aee94a6d6b94f3fc",
+  "analyze_temporal_feedback_window.py": "844777eb9f371c0a0de3fcde5941a855bd40b8f1fbf7cb22a9daf2b21c19c395",
+  "equal_distance_perturbation.py": "1dcf612c85898c8e6633a867ff9184a3dbac74b032f8787496f74a5f8fa254a0"
+ },
+ "files": {
+  "protocol.md": {
+   "sha256": "1f055edd48ceaaa77356522ecba9c821af5feb8caf7ff5b27e162b3524ac2166",
+   "bytes": 8577
+  },
+  "smoke/comparison_with_original_summary.csv": {
+   "sha256": "49997d7d6205cd0206241aba2ad6f8d072aaa267e9a7db6aa3d1205c93591fe9",
+   "bytes": 7506
+  },
+  "smoke/condition_summary.csv": {
+   "sha256": "a595d8de7f1cc842835547e7c1cc5c508b4686f1ffc1834216c87e584f05822f",
+   "bytes": 8523
+  },
+  "smoke/loo_logs.csv": {
+   "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+   "bytes": 1
+  },
+  "smoke/paired_effects.csv": {
+   "sha256": "518cba3eff69ea910f83eb2e08014f8a66889cf385ea28ccac4cc5468d7abd5b",
+   "bytes": 29459
+  },
+  "smoke/smoke_verification.json": {
+   "sha256": "9b3c110a11cfb4d0935ef4aae2a33b22763c4c87b5c562b32ce24a810ced3947",
+   "bytes": 9340
+  },
+  "smoke/units.parquet": {
+   "sha256": "cd5c7148ce1176e87e0937d02b4b490d1f190b8c8b01d30ad30660d70f611445",
+   "bytes": 23144
+  },
+  "smoke/raw/exp8/debug_checks.json": {
+   "sha256": "7d6fba35135365795f60a34dbd993204de777779f3bedd2ff57349fe39e7b9f3",
+   "bytes": 8097
+  },
+  "smoke/raw/exp8/errors.jsonl": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  "smoke/raw/exp8/records.jsonl": {
+   "sha256": "98b77cdbce232ef5a91c67d0e30040d98bda0a065efd378c22e7473907b47c7c",
+   "bytes": 201483
+  },
+  "smoke/raw/exp8/run_meta.json": {
+   "sha256": "8ed4003b0eb3d5db09949d74c7bd5b880a1121a46662eedf717f21ff91bf0253",
+   "bytes": 13332
+  },
+  "smoke/raw/exp8/sanity/debug_checks.json": {
+   "sha256": "7d6fba35135365795f60a34dbd993204de777779f3bedd2ff57349fe39e7b9f3",
+   "bytes": 8097
+  },
+  "smoke/raw/exp9/errors.jsonl": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  "smoke/raw/exp9/records.jsonl": {
+   "sha256": "86c053d625cc22633afe8517b2561041e6e8ce4efc6dff530879292df31dddde",
+   "bytes": 40497
+  },
+  "smoke/raw/exp9/run_meta.json": {
+   "sha256": "5f08000ea84755f77f16637914f1369f6737ecd5a25766a4e2bd785e755ab2d2",
+   "bytes": 1510
+  },
+  "smoke/logs/build_units.log": {
+   "sha256": "b3ae0d0072ba26585783a841eafcae02472098702e8e2bb7002fb0ec8d27d5d9",
+   "bytes": 83
+  },
+  "smoke/logs/done": {
+   "sha256": "b92ff21c57c64cd0881076e9cbfce4ad16e735112c614fb09a6299705738d1f5",
+   "bytes": 32
+  },
+  "smoke/logs/exp8.log": {
+   "sha256": "563ddc8a3a3cc41859c69c602b5b5e1b6b777bd3c46647560edb5a6028d158cf",
+   "bytes": 2390
+  },
+  "smoke/logs/exp9.log": {
+   "sha256": "ef172c0dd7ab626a09f298b3294a23992dce20ca8527e4452e22185d670452ff",
+   "bytes": 2379
+  },
+  "smoke/logs/original_script_sha256.txt": {
+   "sha256": "88a77ee71a57f2f2d3bb79e0df7dc79338b2ef3f3d2fca94ff02a15cfa186b87",
+   "bytes": 703
+  },
+  "smoke/logs/raw_sha256.txt": {
+   "sha256": "594ace51c1809952dfe1549cf96d8fa5aa64d8f192646431c23afebce48381ae",
+   "bytes": 625
+  },
+  "smoke/logs/resources_before.txt": {
+   "sha256": "571c845e0f9409c690011fe288719e788b870e5ef081f6704d6b3b4e4ac3e7e9",
+   "bytes": 390
+  }
+ }
+}

@@ -1,0 +1,30 @@
+[plan] 1 scenes (A- 1, A+ 0), 93 rows per batched step
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.60s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[prog] 1/1 scenes ok=1 fail=0 units=2 unit_fail=0 5.8s/scene eta 0.0min
+[done] scenes ok=1 fail=0 units=2 unit_fail=0
+	Command being timed: "nice -n 19 python /root/VLA/autovla_misalignment_poc/scripts/prev_action_state_patching.py --limit 1 --max-alts 1 --debug --output /root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/smoke/raw/exp8"
+	User time (seconds): 98.42
+	System time (seconds): 225.42
+	Percent of CPU this job got: 551%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:58.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4147844
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5903882
+	Minor (reclaiming a frame) page faults: 1992191
+	Voluntary context switches: 283482
+	Involuntary context switches: 140173
+	Swaps: 0
+	File system inputs: 47375405
+	File system outputs: 445
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,397 @@
+{
+ "time_utc": "2026-10-08T14:34:03Z",
+ "host": "dhkang0428",
+ "python": "3.9.23",
+ "torch": "2.8.0+cu128",
+ "transformers": "4.49.0",
+ "cuda": "12.8",
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "CUDA_VISIBLE_DEVICES": "1",
+ "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+ "repo_head_VLA": "e10374a733c4f3411ce9a7bff1095fb565cb6282",
+ "repo_head_autovla": "ba34eed74ce6729e7986592d0e66cbaca397b4fa",
+ "checkpoint": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+ "checkpoint_size": 16292664780,
+ "codebook": "/root/VLA/autovla/codebook_cache/agent_vocab.pkl",
+ "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+ "config": "/root/VLA/autovla/config/training/qwen2.5-vl-3B-nuplan-grpo-cot.yaml",
+ "config_sha256": "8eea938f70f945f45fe70d9c528355a4dd790893a7c2d6f204c6f39ed9918caf",
+ "ed_records_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+ "precision": "bf16 model weights (AutoVLA default, autovla/models/autovla.py torch_dtype=bfloat16); logits cast to float64 before softmax/sampling",
+ "kv_cache": "prefix KV once per scene, expanded to B rows; post-t* span recomputed each step; cache.crop(P)",
+ "script": "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1ab/p1b_start_position.py",
+ "rows": [
+  {
+   "name": "normal",
+   "kind": "none",
+   "src": null
+  },
+  {
+   "name": "full_gt",
+   "kind": "full",
+   "src": "gt"
+  },
+  {
+   "name": "full_self",
+   "kind": "full",
+   "src": "self"
+  },
+  {
+   "name": "recent_gt",
+   "kind": "recent",
+   "src": "gt"
+  },
+  {
+   "name": "recent_self",
+   "kind": "recent",
+   "src": "self"
+  },
+  {
+   "name": "P_gt_s1_w1",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 1,
+   "w": 1
+  },
+  {
+   "name": "P_gt_s1_w2",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 1,
+   "w": 2
+  },
+  {
+   "name": "P_gt_s1_w3",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 1,
+   "w": 3
+  },
+  {
+   "name": "P_gt_s2_w1",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 2,
+   "w": 1
+  },
+  {
+   "name": "P_gt_s2_w2",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 2,
+   "w": 2
+  },
+  {
+   "name": "P_gt_s2_w3",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 2,
+   "w": 3
+  },
+  {
+   "name": "P_gt_s3_w1",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 3,
+   "w": 1
+  },
+  {
+   "name": "P_gt_s3_w2",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 3,
+   "w": 2
+  },
+  {
+   "name": "P_gt_s3_w3",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 3,
+   "w": 3
+  },
+  {
+   "name": "P_gt_s4_w1",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 4,
+   "w": 1
+  },
+  {
+   "name": "P_gt_s4_w2",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 4,
+   "w": 2
+  },
+  {
+   "name": "P_gt_s4_w3",
+   "kind": "persistent",
+   "src": "gt",
+   "s": 4,
+   "w": 3
+  },
+  {
+   "name": "P_self_s1_w1",
+   "kind": "persistent",
+   "src": "self",
+   "s": 1,
+   "w": 1
+  },
+  {
+   "name": "P_self_s1_w2",
+   "kind": "persistent",
+   "src": "self",
+   "s": 1,
+   "w": 2
+  },
+  {
+   "name": "P_self_s1_w3",
+   "kind": "persistent",
+   "src": "self",
+   "s": 1,
+   "w": 3
+  },
+  {
+   "name": "P_self_s2_w1",
+   "kind": "persistent",
+   "src": "self",
+   "s": 2,
+   "w": 1
+  },
+  {
+   "name": "P_self_s2_w2",
+   "kind": "persistent",
+   "src": "self",
+   "s": 2,
+   "w": 2
+  },
+  {
+   "name": "P_self_s2_w3",
+   "kind": "persistent",
+   "src": "self",
+   "s": 2,
+   "w": 3
+  },
+  {
+   "name": "P_self_s3_w1",
+   "kind": "persistent",
+   "src": "self",
+   "s": 3,
+   "w": 1
+  },
+  {
+   "name": "P_self_s3_w2",
+   "kind": "persistent",
+   "src": "self",
+   "s": 3,
+   "w": 2
+  },
+  {
+   "name": "P_self_s3_w3",
+   "kind": "persistent",
+   "src": "self",
+   "s": 3,
+   "w": 3
+  },
+  {
+   "name": "P_self_s4_w1",
+   "kind": "persistent",
+   "src": "self",
+   "s": 4,
+   "w": 1
+  },
+  {
+   "name": "P_self_s4_w2",
+   "kind": "persistent",
+   "src": "self",
+   "s": 4,
+   "w": 2
+  },
+  {
+   "name": "P_self_s4_w3",
+   "kind": "persistent",
+   "src": "self",
+   "s": 4,
+   "w": 3
+  },
+  {
+   "name": "T_gt_s1_w1",
+   "kind": "transient",
+   "src": "gt",
+   "s": 1,
+   "w": 1
+  },
+  {
+   "name": "T_gt_s1_w2",
+   "kind": "transient",
+   "src": "gt",
+   "s": 1,
+   "w": 2
+  },
+  {
+   "name": "T_gt_s1_w3",
+   "kind": "transient",
+   "src": "gt",
+   "s": 1,
+   "w": 3
+  },
+  {
+   "name": "T_gt_s2_w1",
+   "kind": "transient",
+   "src": "gt",
+   "s": 2,
+   "w": 1
+  },
+  {
+   "name": "T_gt_s2_w2",
+   "kind": "transient",
+   "src": "gt",
+   "s": 2,
+   "w": 2
+  },
+  {
+   "name": "T_gt_s2_w3",
+   "kind": "transient",
+   "src": "gt",
+   "s": 2,
+   "w": 3
+  },
+  {
+   "name": "T_gt_s3_w1",
+   "kind": "transient",
+   "src": "gt",
+   "s": 3,
+   "w": 1
+  },
+  {
+   "name": "T_gt_s3_w2",
+   "kind": "transient",
+   "src": "gt",
+   "s": 3,
+   "w": 2
+  },
+  {
+   "name": "T_gt_s3_w3",
+   "kind": "transient",
+   "src": "gt",
+   "s": 3,
+   "w": 3
+  },
+  {
+   "name": "T_gt_s4_w1",
+   "kind": "transient",
+   "src": "gt",
+   "s": 4,
+   "w": 1
+  },
+  {
+   "name": "T_gt_s4_w2",
+   "kind": "transient",
+   "src": "gt",
+   "s": 4,
+   "w": 2
+  },
+  {
+   "name": "T_gt_s4_w3",
+   "kind": "transient",
+   "src": "gt",
+   "s": 4,
+   "w": 3
+  },
+  {
+   "name": "T_self_s1_w1",
+   "kind": "transient",
+   "src": "self",
+   "s": 1,
+   "w": 1
+  },
+  {
+   "name": "T_self_s1_w2",
+   "kind": "transient",
+   "src": "self",
+   "s": 1,
+   "w": 2
+  },
+  {
+   "name": "T_self_s1_w3",
+   "kind": "transient",
+   "src": "self",
+   "s": 1,
+   "w": 3
+  },
+  {
+   "name": "T_self_s2_w1",
+   "kind": "transient",
+   "src": "self",
+   "s": 2,
+   "w": 1
+  },
+  {
+   "name": "T_self_s2_w2",
+   "kind": "transient",
+   "src": "self",
+   "s": 2,
+   "w": 2
+  },
+  {
+   "name": "T_self_s2_w3",
+   "kind": "transient",
+   "src": "self",
+   "s": 2,
+   "w": 3
+  },
+  {
+   "name": "T_self_s3_w1",
+   "kind": "transient",
+   "src": "self",
+   "s": 3,
+   "w": 1
+  },
+  {
+   "name": "T_self_s3_w2",
+   "kind": "transient",
+   "src": "self",
+   "s": 3,
+   "w": 2
+  },
+  {
+   "name": "T_self_s3_w3",
+   "kind": "transient",
+   "src": "self",
+   "s": 3,
+   "w": 3
+  },
+  {
+   "name": "T_self_s4_w1",
+   "kind": "transient",
+   "src": "self",
+   "s": 4,
+   "w": 1
+  },
+  {
+   "name": "T_self_s4_w2",
+   "kind": "transient",
+   "src": "self",
+   "s": 4,
+   "w": 2
+  },
+  {
+   "name": "T_self_s4_w3",
+   "kind": "transient",
+   "src": "self",
+   "s": 4,
+   "w": 3
+  }
+ ],
+ "n_scenes": 2,
+ "n_units": 4,
+ "seed": 0,
+ "temperature": 0.01,
+ "batch_rows": 53,
+ "reference_dir": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/smoke/reference",
+ "reference_sha256": "724d4d5353e2837c12b6aada6adb4cd56700e0543949909aeb06998bddff7f82",
+ "elapsed_min": 0.13836976687113445,
+ "sec_per_unit_mean": 1.0512155890464783,
+ "gpu_checked": "NVIDIA GeForce RTX 5090",
+ "peak_mem_gb": 10.860356608
+}

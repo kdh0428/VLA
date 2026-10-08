@@ -1,0 +1,81 @@
+[plan] 7 episodes (roots 2)
+Some kwargs in processor config are unused and will not have any effect: intrinsic_config, action_chunk_size, num_obs_steps, statistics, bin_policy, action_config, obs_delta. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.76it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.93it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.90it/s]
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-08 14:44:02.301] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-08 14:44:02.301] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-08 14:44:08.135] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-08 14:44:08.136] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+The 'batch_size' attribute of HybridCache is deprecated and will be removed in v4.49. Use the more precisely named 'self.max_batch_size' attribute instead.
+Traceback (most recent call last):
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1d/p1d_runner.py", line 394, in <module>
+    main()
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1d/p1d_runner.py", line 307, in main
+    exe, cx, nat1 = decode_fixed(m, inps, override, decode_chunks)
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1d/../../spatialvla_protection/svla_protection.py", line 132, in decode_fixed
+    e, c, g = decode_chunks(m, ins, list(range(FIXED_B)), lambda r, gg: override(part[r], gg) if r < len(part) else None)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1d/../../cross_domain_temporal/spatialvla_core.py", line 142, in decode_chunks
+    out = m.vla(input_ids=ids, attention_mask=am, pixel_values=pv, intrinsic=inps[rows[rs[0]]]["intrinsic"].cuda(),
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/spatialvla-4b-224-sft-fractal/modeling_spatialvla.py", line 378, in forward
+    image_features = self.get_image_features(pixel_values, intrinsic)
+  File "/root/.cache/huggingface/modules/transformers_modules/spatialvla-4b-224-sft-fractal/modeling_spatialvla.py", line 319, in get_image_features
+    depth = self.vision_zoe_model(pixel_values=zoe_pixel_values).predicted_depth
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/VLA/spatialvla/site/transformers/models/zoedepth/modeling_zoedepth.py", line 1365, in forward
+    outputs = self.backbone.forward_with_filtered_kwargs(
+  File "/root/VLA/spatialvla/site/transformers/utils/backbone_utils.py", line 235, in forward_with_filtered_kwargs
+    return self(*args, **filtered_kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/VLA/spatialvla/site/transformers/models/beit/modeling_beit.py", line 1538, in forward
+    outputs = self.encoder(
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/VLA/spatialvla/site/transformers/models/beit/modeling_beit.py", line 665, in forward
+    layer_outputs = layer_module(
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/VLA/spatialvla/site/transformers/models/beit/modeling_beit.py", line 485, in forward
+    self_attention_outputs = self.attention(
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/VLA/spatialvla/site/transformers/models/beit/modeling_beit.py", line 416, in forward
+    self_outputs = self.attention(
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/VLA/spatialvla/site/transformers/models/beit/modeling_beit.py", line 328, in forward
+    attention_scores = attention_scores / math.sqrt(self.attention_head_size)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 82.00 MiB. GPU 0 has a total capacity of 31.40 GiB of which 78.50 MiB is free. Including non-PyTorch memory, this process has 8.68 GiB memory in use. Process 2349324 has 7.80 GiB memory in use. Of the allocated memory 7.90 GiB is allocated by PyTorch, and 170.06 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

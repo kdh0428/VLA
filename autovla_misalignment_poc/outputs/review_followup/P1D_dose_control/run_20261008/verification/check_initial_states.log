@@ -1,0 +1,25 @@
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-08 14:30:35.766] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-08 14:30:35.766] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+{"task": "google_robot_pick_coke_can", "recheck_identical": "12/12"}
+[2026-10-08 14:32:13.659] [svulkan2] [warning] A second renderer will share the same internal context with the first one. Arguments passed to constructor will be ignored.
+{"task": "google_robot_move_near", "recheck_identical": "11/12"}
+{
+ "google_robot_pick_coke_can": {
+  "n_seeds": 520,
+  "n_distinct_states": 520,
+  "n_seeds_0_119_distinct": 120,
+  "new_seeds_colliding_with_0_119": 0,
+  "n_new": 400
+ },
+ "google_robot_move_near": {
+  "n_seeds": 520,
+  "n_distinct_states": 21,
+  "n_seeds_0_119_distinct": 15,
+  "new_seeds_colliding_with_0_119": 386,
+  "n_new": 400
+ }
+}

@@ -1,0 +1,21 @@
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  7.00s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Traceback (most recent call last):
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1ab/p1a_gt_free_reference.py", line 282, in <module>
+    main()
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1ab/p1a_gt_free_reference.py", line 121, in main
+    torch, model, llm, A0, temp, agent, vis_box, cfg = C.load_model()
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1ab/p1_common.py", line 207, in load_model
+    model = AutoVLA(cfg, inference=True, device="cuda:0")
+  File "/root/VLA/autovla/models/autovla.py", line 488, in __init__
+    self.vlm.resize_token_embeddings(len(self.processor.tokenizer))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2109, in resize_token_embeddings
+    model_embeds = self._resize_token_embeddings(new_num_tokens, pad_to_multiple_of, mean_resizing)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2134, in _resize_token_embeddings
+    new_embeddings = self._get_resized_embeddings(
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2261, in _get_resized_embeddings
+    new_embeddings = nn.Embedding(
+  File "/root/miniforge3/envs/autovla/lib/python3.9/site-packages/torch/nn/modules/sparse.py", line 169, in __init__
+    torch.empty((num_embeddings, embedding_dim), **factory_kwargs),
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 602.00 MiB. GPU 0 has a total capacity of 31.40 GiB of which 78.50 MiB is free. Process 2348973 has 8.68 GiB memory in use. Including non-PyTorch memory, this process has 7.80 GiB memory in use. Of the allocated memory 7.11 GiB is allocated by PyTorch, and 213.33 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

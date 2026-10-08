@@ -1,0 +1,11 @@
+{
+ "output_prefix_locked": 1.0,
+ "decoder_origin_zero": 1.0,
+ "prefix_pose_err_zero": 1.0,
+ "U_equals_reference": 1.0,
+ "O1_suffix_equals_U": 1.0,
+ "OC_suffix_equals_C1": 1.0,
+ "numpy_rollout_maxabs": 3.885148032622965e-06,
+ "prefix_logprob_maxabs_vs_reference_run": 7.633071561485849e-07,
+ "n_units": 4
+}

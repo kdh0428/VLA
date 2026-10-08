@@ -1,0 +1,102 @@
+{
+ "time_utc": "2026-10-08T14:32:43Z",
+ "host": "dhkang0428",
+ "python": "3.9.23",
+ "torch": "2.8.0+cu128",
+ "transformers": "4.49.0",
+ "cuda": "12.8",
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "CUDA_VISIBLE_DEVICES": "1",
+ "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+ "repo_head_VLA": "e10374a733c4f3411ce9a7bff1095fb565cb6282",
+ "repo_head_autovla": "ba34eed74ce6729e7986592d0e66cbaca397b4fa",
+ "checkpoint": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+ "checkpoint_size": 16292664780,
+ "codebook": "/root/VLA/autovla/codebook_cache/agent_vocab.pkl",
+ "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+ "config": "/root/VLA/autovla/config/training/qwen2.5-vl-3B-nuplan-grpo-cot.yaml",
+ "config_sha256": "8eea938f70f945f45fe70d9c528355a4dd790893a7c2d6f204c6f39ed9918caf",
+ "ed_records_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+ "precision": "bf16 model weights (AutoVLA default, autovla/models/autovla.py torch_dtype=bfloat16); logits cast to float64 before softmax/sampling",
+ "kv_cache": "prefix KV once per scene, expanded to B rows; post-t* span recomputed each step; cache.crop(P)",
+ "script": "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1ab/p1a_gt_free_reference.py",
+ "rows": [
+  {
+   "name": "U",
+   "out": "r",
+   "ctx": "r",
+   "rule": "own"
+  },
+  {
+   "name": "OC",
+   "out": "p",
+   "ctx": "p",
+   "rule": "own"
+  },
+  {
+   "name": "O1",
+   "out": "p",
+   "ctx": "r",
+   "rule": "own"
+  },
+  {
+   "name": "C1",
+   "out": "r",
+   "ctx": "p",
+   "rule": "own"
+  },
+  {
+   "name": "OC_ref1",
+   "out": "p",
+   "ctx": "p",
+   "rule": "ref_once"
+  },
+  {
+   "name": "OC_refR",
+   "out": "p",
+   "ctx": "p",
+   "rule": "ref_recent"
+  },
+  {
+   "name": "OC_refH",
+   "out": "p",
+   "ctx": "p",
+   "rule": "ref_hist"
+  },
+  {
+   "name": "O_refH",
+   "out": "p",
+   "ctx": "r",
+   "rule": "ref_hist"
+  },
+  {
+   "name": "OC_gtR",
+   "out": "p",
+   "ctx": "p",
+   "rule": "gt_recent"
+  },
+  {
+   "name": "OC_gtH",
+   "out": "p",
+   "ctx": "p",
+   "rule": "gt_hist"
+  }
+ ],
+ "families": [
+  "G",
+  "E"
+ ],
+ "d_target_m": 0.1,
+ "tol_m": 0.03,
+ "n_scenes": 2,
+ "n_units": 4,
+ "seed": 0,
+ "temperature": 0.01,
+ "batch_rows": 10,
+ "reference_dir": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/smoke/reference",
+ "reference_sha256": "724d4d5353e2837c12b6aada6adb4cd56700e0543949909aeb06998bddff7f82",
+ "elapsed_min": 0.07752038637797037,
+ "sec_per_unit_mean": 0.2826318144798279,
+ "gpu_checked": "NVIDIA GeForce RTX 5090",
+ "peak_mem_gb": 10.860356608
+}

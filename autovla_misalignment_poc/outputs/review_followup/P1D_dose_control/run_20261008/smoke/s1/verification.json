@@ -1,0 +1,32 @@
+{
+ "restore_ok": {
+  "r4e1:null": "1/1",
+  "r4e1:reverse": "1/1",
+  "r4e1:feedback": "1/1",
+  "r1e4:null": "1/1",
+  "r1e4:feedbackD": "1/1",
+  "r1e4:reverse": "1/1",
+  "r4e1:corrected": "1/1",
+  "r1e4:correctedD": "1/1"
+ },
+ "null_identical_to_N": {
+  "r4e1:null": "1/1",
+  "r1e4:null": "1/1"
+ },
+ "rerun_identical_to_N": {
+  "r4e1:natural#rerun": "1/1",
+  "r1e4:natural#rerun": "1/1"
+ },
+ "prefix_identical_to_N": {
+  "r4e1:null": "1/1",
+  "r4e1:reverse": "1/1",
+  "r4e1:feedback": "1/1",
+  "r1e4:null": "1/1",
+  "r1e4:feedbackD": "1/1",
+  "r1e4:reverse": "1/1",
+  "r4e1:natural#rerun": "1/1",
+  "r4e1:corrected": "1/1",
+  "r1e4:natural#rerun": "1/1",
+  "r1e4:correctedD": "1/1"
+ }
+}

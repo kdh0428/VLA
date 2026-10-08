@@ -1,0 +1,67 @@
+estimand,n_source,unit,observed_mean,frac_nonzero,sd_per_ep,sd_per_ep_boot90,note
+success:r1e1:R-N,69,pp/100,-0.058,0.145,0.3811,0.4399,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e1:F-C,69,pp/100,-0.029,0.377,0.6214,0.6711,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e1:N-F,69,pp/100,0.2319,0.348,0.5317,0.5815,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e2:R-N,69,pp/100,0.0,0.174,0.4222,0.4833,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e2:F-C,69,pp/100,0.029,0.348,0.5976,0.6531,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e2:N-F,69,pp/100,0.1594,0.275,0.505,0.5536,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e4:R-N,69,pp/100,-0.029,0.174,0.4138,0.4721,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e4:F-C,69,pp/100,-0.0435,0.304,0.5562,0.607,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e4:N-F,69,pp/100,0.2609,0.319,0.4897,0.5269,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r2e1:R-N,69,pp/100,-0.0145,0.159,0.3987,0.4548,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r2e1:F-C,69,pp/100,0.087,0.319,0.5566,0.608,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r2e1:N-F,69,pp/100,0.1304,0.246,0.4645,0.5145,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r2e2:R-N,69,pp/100,-0.0145,0.217,0.4727,0.5308,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r2e2:F-C,69,pp/100,0.0,0.261,0.5168,0.5703,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r2e2:N-F,69,pp/100,0.087,0.29,0.529,0.5804,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r4e1:R-N,69,pp/100,0.0145,0.188,0.4381,0.4972,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r4e1:F-C,69,pp/100,-0.0145,0.275,0.5316,0.5859,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r4e1:N-F,69,pp/100,0.0725,0.304,0.5413,0.5935,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+success:r1e4:R-N,173,pp/100,-0.0405,0.179,0.4206,0.4595,exp35 seed 0-119
+success:r1e4:F-C,173,pp/100,0.0347,0.324,0.5673,0.6042,exp35 seed 0-119
+success:r4e1:R-N,173,pp/100,-0.0462,0.208,0.456,0.4927,exp35 seed 0-119
+success:r4e1:F-C,173,pp/100,0.0,0.301,0.5507,0.5859,exp35 seed 0-119
+success:r1e4:gen-N,69,pp/100,0.058,0.058,0.237,0.2864,numeric-path rerun noise
+success:r4e1:gen-N,69,pp/100,0.0,0.116,0.3461,0.4035,numeric-path rerun noise
+success:DiD r2e1-r1e1:R-N,69,pp/100,0.0435,0.217,0.5562,0.637,exp35 seed 0-39
+success:DiD r2e1-r1e1:F-C,69,pp/100,0.1159,0.435,0.7788,0.8674,exp35 seed 0-39
+success:DiD r4e1-r1e1:R-N,69,pp/100,0.0725,0.304,0.5514,0.609,exp35 seed 0-39
+success:DiD r4e1-r1e1:F-C,69,pp/100,0.0145,0.536,0.8542,0.9257,exp35 seed 0-39
+success:DiD r1e2-r1e1:R-N,69,pp/100,0.058,0.232,0.5695,0.6527,exp35 seed 0-39
+success:DiD r1e2-r1e1:F-C,69,pp/100,0.058,0.449,0.7698,0.8429,exp35 seed 0-39
+success:DiD r1e4-r1e1:R-N,69,pp/100,0.029,0.217,0.5139,0.5907,exp35 seed 0-39
+success:DiD r1e4-r1e1:F-C,69,pp/100,-0.0145,0.449,0.8005,0.876,exp35 seed 0-39
+success:DiD r1e4-r1e2:R-N,69,pp/100,-0.029,0.188,0.5694,0.6687,exp35 seed 0-39
+success:DiD r1e4-r1e2:F-C,69,pp/100,-0.0725,0.348,0.6967,0.781,exp35 seed 0-39
+success:DiD r4e1-r1e4:R-N,173,pp/100,-0.0058,0.277,0.5765,0.6247,exp35 seed 0-119 (cross-axis)
+success:DiD r4e1-r1e4:F-C,173,pp/100,-0.0347,0.462,0.7779,0.8283,exp35 seed 0-119 (cross-axis)
+area:r1e1:R-N,69,cm*step,344.0705,1.0,247.3635,285.213,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r1e1:F-C,69,cm*step,563.2183,1.0,391.7485,435.0271,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r1e2:R-N,69,cm*step,295.5455,1.0,203.8679,220.8875,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r1e2:F-C,69,cm*step,406.2048,1.0,335.5025,395.3978,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r1e4:R-N,69,cm*step,293.171,1.0,208.5834,251.4774,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r1e4:F-C,69,cm*step,400.1258,1.0,289.3688,334.9697,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r2e1:R-N,69,cm*step,328.4615,1.0,262.4906,295.8812,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r2e1:F-C,69,cm*step,443.4592,1.0,311.3051,351.2462,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r2e2:R-N,69,cm*step,303.554,1.0,202.4598,236.4067,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r2e2:F-C,69,cm*step,331.1017,1.0,191.2421,215.4483,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r4e1:R-N,69,cm*step,393.33,1.0,246.2945,294.8746,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r4e1:F-C,69,cm*step,482.1878,1.0,245.3937,273.106,exp35 seed 0-39 (16/8/4 perturbed chunks for r1/r2/r4)
+area:r1e4:R-N,173,cm*step,284.1358,1.0,223.4884,258.979,exp35 seed 0-119
+area:r1e4:F-C,173,cm*step,410.47,1.0,308.9803,340.5814,exp35 seed 0-119
+area:r4e1:R-N,173,cm*step,404.8247,1.0,279.2018,308.5954,exp35 seed 0-119
+area:r4e1:F-C,173,cm*step,453.0512,1.0,244.2472,265.723,exp35 seed 0-119
+area:r1e4:gen-N,69,cm*step,191.077,0.957,245.2222,295.0729,numeric-path rerun noise
+area:r4e1:gen-N,69,cm*step,179.0425,0.783,255.6023,298.5567,numeric-path rerun noise
+area:DiD r2e1-r1e1:R-N,69,cm*step,-15.609,1.0,277.7395,308.0013,exp35 seed 0-39
+area:DiD r2e1-r1e1:F-C,69,cm*step,-119.7591,1.0,466.0019,526.2563,exp35 seed 0-39
+area:DiD r4e1-r1e1:R-N,69,cm*step,49.2595,1.0,297.3316,348.8024,exp35 seed 0-39
+area:DiD r4e1-r1e1:F-C,69,cm*step,-81.0306,1.0,444.1687,489.3307,exp35 seed 0-39
+area:DiD r1e2-r1e1:R-N,69,cm*step,-48.525,1.0,214.5817,245.3357,exp35 seed 0-39
+area:DiD r1e2-r1e1:F-C,69,cm*step,-157.0136,1.0,413.4858,456.3458,exp35 seed 0-39
+area:DiD r1e4-r1e1:R-N,69,cm*step,-50.8995,1.0,254.0856,292.9729,exp35 seed 0-39
+area:DiD r1e4-r1e1:F-C,69,cm*step,-163.0926,1.0,394.6046,443.0146,exp35 seed 0-39
+area:DiD r1e4-r1e2:R-N,69,cm*step,-2.3745,1.0,241.9095,287.2266,exp35 seed 0-39
+area:DiD r1e4-r1e2:F-C,69,cm*step,-6.079,1.0,285.1231,325.62,exp35 seed 0-39
+area:DiD r4e1-r1e4:R-N,173,cm*step,120.6889,1.0,316.3139,350.8658,exp35 seed 0-119 (cross-axis)
+area:DiD r4e1-r1e4:F-C,173,cm*step,42.5812,1.0,357.0513,382.9795,exp35 seed 0-119 (cross-axis)

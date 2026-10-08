@@ -1,0 +1,4 @@
+{"token": "013fbdcd9db35b43", "log": "2021.05.25.14.24.08_veh-25_04059_04203", "group": "A-", "t_star": 1, "t_p": 1, "family": "GF1", "sectors_available": ["faster-right", "slower", "slower-left", "slower-right"], "n_sectors": 4}
+{"token": "013fbdcd9db35b43", "log": "2021.05.25.14.24.08_veh-25_04059_04203", "group": "A-", "t_star": 1, "t_p": 3, "family": "GF3", "sectors_available": ["faster", "faster-left", "faster-right", "right", "slower", "slower-left"], "n_sectors": 6}
+{"token": "12d283af921a5f09", "log": "2021.05.25.14.24.08_veh-25_00934_01067", "group": "A-", "t_star": 3, "t_p": 1, "family": "GF1", "sectors_available": ["faster", "faster-left", "faster-right", "left", "right", "slower-left", "slower-right"], "n_sectors": 7}
+{"token": "12d283af921a5f09", "log": "2021.05.25.14.24.08_veh-25_00934_01067", "group": "A-", "t_star": 3, "t_p": 3, "family": "GF3", "sectors_available": ["faster-left", "left", "slower", "slower-left", "slower-right"], "n_sectors": 5}

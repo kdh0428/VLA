@@ -1,0 +1,98 @@
+{
+  "n_scenes_ok": 1,
+  "n_scene_fail": 0,
+  "n_units": 3,
+  "n_unit_fail": 0,
+  "rows": [
+    {
+      "name": "normal",
+      "start": 1,
+      "length": 0
+    },
+    {
+      "name": "win1",
+      "start": 1,
+      "length": 1
+    },
+    {
+      "name": "win2",
+      "start": 1,
+      "length": 2
+    },
+    {
+      "name": "win3",
+      "start": 1,
+      "length": 3
+    },
+    {
+      "name": "win4",
+      "start": 1,
+      "length": 4
+    },
+    {
+      "name": "win5",
+      "start": 1,
+      "length": 5
+    },
+    {
+      "name": "win6",
+      "start": 1,
+      "length": 6
+    },
+    {
+      "name": "win7",
+      "start": 1,
+      "length": 7
+    },
+    {
+      "name": "win8",
+      "start": 1,
+      "length": 8
+    },
+    {
+      "name": "gt_history",
+      "start": 1,
+      "length": 99
+    },
+    {
+      "name": "delay2_len1",
+      "start": 2,
+      "length": 1
+    },
+    {
+      "name": "delay3_len1",
+      "start": 3,
+      "length": 1
+    },
+    {
+      "name": "delay4_len1",
+      "start": 4,
+      "length": 1
+    },
+    {
+      "name": "delay2_len2",
+      "start": 2,
+      "length": 2
+    },
+    {
+      "name": "delay3_len2",
+      "start": 3,
+      "length": 2
+    },
+    {
+      "name": "skipfirst2_full",
+      "start": 2,
+      "length": 99
+    },
+    {
+      "name": "skipfirst3_full",
+      "start": 3,
+      "length": 99
+    }
+  ],
+  "temperature": 0.01,
+  "seed": 0,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cuda_visible_devices": "1",
+  "elapsed_min": 0.0523161252339681
+}

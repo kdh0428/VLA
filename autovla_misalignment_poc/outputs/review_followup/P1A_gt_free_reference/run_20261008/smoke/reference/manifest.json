@@ -1,0 +1,8 @@
+{
+ "files": {
+  "references.jsonl": "724d4d5353e2837c12b6aada6adb4cd56700e0543949909aeb06998bddff7f82",
+  "prefix_logprobs.npz": "16e54d9f318f9e7ef5049c5543a0cf3e85fb8eec5b0e2542ca4029ddeebc9e40",
+  "run_meta.json": "7d510460df8b2421b9adf153c44761637177d4004b0676edf74337c292335827"
+ },
+ "note": "reference fixed before any condition run; consumers verify references.jsonl sha256"
+}

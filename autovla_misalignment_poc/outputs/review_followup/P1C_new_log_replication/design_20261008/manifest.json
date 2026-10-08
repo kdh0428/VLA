@@ -1,0 +1,92 @@
+{
+ "experiment": "P1-C new-log replication - design stage",
+ "created_utc": "2026-10-08T14:49:29Z",
+ "status": "design only; no GPU, no inference, no download, no commit; existing files unchanged",
+ "repo_head": "e10374a (VLA; review_followup dirs untracked)",
+ "autovla_commit": "ba34eed",
+ "checkpoint": {
+  "path": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+  "bytes": 16292664780
+ },
+ "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+ "disk_free_at_design": "9.0G of 96G (df -h /)",
+ "split_summary": {
+  "dev_logs": 28,
+  "dev_drives": 20,
+  "eval_logs": 64,
+  "eval_drives": 24,
+  "eval_day_vehicles": 16,
+  "eval_scenes": 5671,
+  "eval_Aminus_eligible_planning": 111,
+  "eval_Aplus_eligible_planning": 2090,
+  "pilot_logs": 2,
+  "excluded_drive_adjacent": 42,
+  "reserve_non_navtest": 11
+ },
+ "chosen_design": {
+  "drives": "all 24 (64 logs)",
+  "F": "all eligible A- (t*<=7)",
+  "S_per_log_segment": 4,
+  "units_per_scene": "all distance-matched (original + alts)",
+  "expected_scenes": 359,
+  "expected_units": 2425
+ },
+ "sim": {
+  "reps": 2000,
+  "seed": 20261008,
+  "signflip_check_reps": 1000
+ },
+ "inputs": {
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet": "09d50443bf7ca417482a2750122781e3d922564d294dcc8b2f859a99364140ac",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/paired_effects.csv": "8687a0722ca8a733a9d170694d9800f776b86e6ef65725b0c45ba8d763187125",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0A_audit/run_20261008/metric_spec.md": "d88cb49fecf513fe324287d10d70b5b8e453d8aaea89a2fda41f792712ed5074",
+  "/root/VLA/autovla_misalignment_poc/outputs/equal_distance_perturbation/records.jsonl": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+  "/root/VLA/autovla_misalignment_poc/outputs/prev_action_state_patching/summary.json": "3a8f3e8a9a1d2b095339dcfd205ea6878dd6c0aacccd5c7e8205664e9750cf05",
+  "/root/VLA/autovla_misalignment_poc/outputs/full_extract/records.jsonl": "582daf0a117bf3da8790fd2db53756732492ce7701eaa170b0c5f51308b13ada",
+  "/root/VLA/autovla_misalignment_poc/configs/scene_filter_navtest_subset.yaml": "88161039315e4a51fb522b5fb6268f045472348e858b525df81a05d8904d1d9d",
+  "/root/VLA/autovla/navsim/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml": "61284edf5003c0291f843ce9817c822ba306609a62d54544223adae3fc7fc9cd",
+  "/root/VLA/navhard/navhard_two_stage/synthetic_scenes_attributes.csv": "dabe0ff0e3dc1da6b56525e9be8a84f3d6df0d5858f49ee6b15b648d6949e255",
+  "/root/VLA/autovla_misalignment_poc/outputs/expanded_best_of_n/gpu0/records.jsonl": "e7a715219b442301a24771806aed69ee1dd4ac36d47bac797539d3bb2dc02ca6",
+  "/root/VLA/autovla_misalignment_poc/outputs/expanded_best_of_n/gpu1/records.jsonl": "3f331a7a71489b91eeaf085ba0c17357f3678ebd1c436b7932ec51ab044185df",
+  "/root/VLA/autovla_misalignment_poc/outputs/expanded_best_of_n_5090/gpu1/records.jsonl": "07da0205aa66ce1ad02d72a15e6346dc9ca9b51e9507deb168069bd36f0a3f19",
+  "/root/VLA/autovla_misalignment_poc/outputs/heldout_best_of_n/gpu0/records.jsonl": "255c5474681b3d88593a13205c81efbc8317102cec6caabe80f877854bacb011",
+  "/root/VLA/autovla_misalignment_poc/outputs/heldout_best_of_n/gpu1/records.jsonl": "c4cf58e6f0a5b048d079ca04017d2d7fcf5c91f9a3fa8f2bc28f8e0006a12182",
+  "/root/VLA/autovla_misalignment_poc/outputs/heldout_best_of_n_5090/gpu1/records.jsonl": "3615722d1e549f8d9e79f1b5dcf88a249ba4f2456c2d0d91ebbd6cd2ad65947b"
+ },
+ "dev_scripts_sha256": {
+  "/root/VLA/autovla_misalignment_poc/scripts/_planner.py": "54f0cf95b9e6baddd3143a377613970b008316ba89a35d4f4646aece4da37224",
+  "/root/VLA/autovla_misalignment_poc/scripts/equal_distance_perturbation.py": "1dcf612c85898c8e6633a867ff9184a3dbac74b032f8787496f74a5f8fa254a0",
+  "/root/VLA/autovla_misalignment_poc/scripts/action_history_causal.py": "221c5c932c15928b4262e4f292f0cc6ac0b5ba4ce1d181e64fc9746c63c68dc7",
+  "/root/VLA/autovla_misalignment_poc/scripts/prev_action_state_patching.py": "ce8f15d007522ecb518dd6e8420007397f1d794fa3ecbac12c1e85d72c67f68d",
+  "/root/VLA/autovla_misalignment_poc/scripts/temporal_feedback_window.py": "2e5ece5002a1cfba633c1011c5176714c208e6cc42caac1896c773f970608ce4",
+  "/root/VLA/autovla_misalignment_poc/scripts/motion_semantics_ablation.py": "ff2ac119d4182f1d8d8c16475522978cb30e8d0b00a869269093fe9a97eb43be",
+  "/root/VLA/autovla_misalignment_poc/scripts/full_extract.py": "03b8183881047628685aba40ad6086b25418652c518f1584bcc2e288bedc995c",
+  "/root/VLA/autovla_misalignment_poc/scripts/expanded_best_of_n.py": "e6f0ed8d6d7f739996da9e901c5b48b84b5a4ab71f092edc04ad7b064e634d0a",
+  "/root/VLA/autovla_misalignment_poc/scripts/analyze_action_history.py": "42259869e54346b3703c1af423e974014b3a7346bb0c426b329d441c57c96804"
+ },
+ "outputs": {
+  "leakage_check.md": "7d250896ee6588159dc287778d1fb9a24dfc08cc06c5d1ad21dbacabb499e68b",
+  "power_simulation.csv": "8af234248762516f6c9a6e2c86ee5221faf91fa64014437a6c9e840cfdeb5d62",
+  "power_simulation.png": "295c881eb9f0ef6530f6647ebd09bd39d2df06980370d70dd99dbf587f6a6b72",
+  "protocol.md": "c5bb9876de089e09da88cd281d9e717e5f90a7df135b152a3884ae8feef18d02",
+  "scripts/build_split.py": "194da35bb4adadb26981d1f6580aad5108fbfa4a21dc22175b8ee6936cdfcf06",
+  "scripts/per_scene5090.py": "fe1a5c9b4d9eee968b25ee596ffaa6db9710d179099185721582d949de89fc57",
+  "scripts/plot_power.py": "f9eca6faee8264fb1a306bdc3aab7c13e4a1a49ccacecbf95700028f1a0237d5",
+  "scripts/power_sim.py": "a41d6bbbf340fecc4d4a7e9ce466de687bab8da44c3ddacb0f06f0bdef9d7d54",
+  "scripts/scan_logs.py": "f29ad2d21f9957de2e60c7d31811eecb88e9af6e372e251906cd1df56b98a787",
+  "scripts/scan_tokens.py": "76999f8ee927a0e6794a8a546db5ee9e1a046c1508f84bcbcaf418b3955a331d",
+  "scripts/signflip_check.py": "cdd0472f1d32aab7845c71892cafbf483a7771964391c1f5953645b22682bed0",
+  "split.csv": "d72ef4dab0156b4da6c2230d7e33fba2b03fdb6b327040185ef0a639f0afed74",
+  "work/eval_pool.json": "f8b5f16b3851f96ce9525ae6de77c31d891a0cc12b89417c8fd6ad5f96ccf633",
+  "work/frame_labels_5090.json": "e057f870925b963871c01ea31d0d6962f4500b6e8739f143b8642b4960768dda",
+  "work/log_usage_by_dir.json": "8a3dc5254a7c67d027f80ed6e8032c23c8a5dee50da2c5b400d268456acb3cc6",
+  "work/navhard_logs.json": "4fef4608da30080fb0c82005ee0e055ac0cbc0de5a564487a71d4706a2af59dc",
+  "work/power_sim.log": "5c7a797ab75b772e57373618b0dc7d3bc6b28a6c31353e15742c6b088817185d",
+  "work/power_sim_meta.json": "a7f891357a1b0c81eab1870eddd980ce52dfe2d4c415fbdee470a7077fd553dc",
+  "work/shard_budget.json": "d1bb4a5a2d724f1d8c372f5330e6e1bad8888362e7b87f7e51bd1f589c6e23b0",
+  "work/signflip_calibration.csv": "8b3bd2e24cb9cf0c11dc87af90c6983b885756a8f0651d9c88b6decafe63e93b",
+  "work/signflip_check.log": "1988e472f22ab55111543cc2c778de31d47d8cac5e9e56c6e6f8169e95fe0f4a",
+  "work/token_usage_by_dir.json": "5903baf24c95e1595a0fb6d7eec134fa43a6c1c7fe78a97beabc7341098a0647"
+ },
+ "note": "analysis.md was not written by the design agent (report-file write blocked in agent environment); its content was returned to the parent session."
+}
