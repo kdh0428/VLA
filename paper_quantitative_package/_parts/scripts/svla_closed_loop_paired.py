@@ -10,7 +10,7 @@ sys.path.insert(0, "/root/VLA/autovla_misalignment_poc/scripts/cross_domain_temp
 from analyze_svla import boot, paired  # noqa: E402  (module-level imports: numpy/scipy only)
 
 SRC = "/root/VLA/autovla_misalignment_poc/outputs/cross_domain_temporal_replication/closed_loop/episodes.jsonl"
-OUT = "/root/VLA/autovla_misalignment_poc/outputs/paper_quantitative_package/spatialvla_closed_loop_paired.csv"
+OUT = "/root/VLA/paper_quantitative_package/spatialvla_closed_loop_paired.csv"
 E = {}
 for l in open(SRC):
     r = json.loads(l)

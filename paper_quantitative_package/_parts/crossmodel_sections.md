@@ -2,7 +2,7 @@
 
 경로는 모두 `/root/VLA/autovla_misalignment_poc/` 기준입니다. 이 문서는 기존 결과만 사용했고, 새 실험은 하지 않았습니다.
 
-- "(recomputed: …)" 표시: raw 데이터에서 **원 분석 스크립트와 같은 방법**으로 이 패키지에서 다시 계산한 값입니다. 계산 script는 `outputs/paper_quantitative_package/_parts/scripts/`에 있습니다.
+- "(recomputed: …)" 표시: raw 데이터에서 **원 분석 스크립트와 같은 방법**으로 이 패키지에서 다시 계산한 값입니다. 계산 script는 `paper_quantitative_package/_parts/scripts/`에 있습니다.
 - 그 밖의 값: `analysis.json`(JSON key 표기)이나 RESULTS.md에서 그대로 옮겼습니다.
 - 출처 상세: `source_map_crossmodel.md`. 충돌·불일치: `conflicts_crossmodel.md`.
 

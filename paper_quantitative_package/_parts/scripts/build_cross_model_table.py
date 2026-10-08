@@ -2,7 +2,7 @@
 """Writes paper_cross_model_table.csv / .tex. All numbers transcribed from analysis.json / RESULTS / recomputed CSV
 (see _parts/source_map_crossmodel.md). No new statistics."""
 import csv
-P = "/root/VLA/autovla_misalignment_poc/outputs/paper_quantitative_package/"
+P = "/root/VLA/paper_quantitative_package/"
 H = ["row", "AutoVLA", "Impromptu VLA 3B", "OpenVLA-7B", "SpatialVLA-4B"]
 R = [
  ["Backbone", "Qwen2.5-VL-3B", "Qwen2.5-VL-3B (full fine-tune)", "Llama-2 7B", "PaliGemma2-3B (Gemma2) + SigLIP + Ego3D"],

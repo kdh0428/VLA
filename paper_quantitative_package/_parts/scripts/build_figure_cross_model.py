@@ -96,10 +96,10 @@ for c, v in CL["vs_natural"].items():
     add("SpatialVLA-4B", "34", "closed-loop task", "success - natural", c, pc(v["mean"]), pc(v["ci95"][0]), pc(v["ci95"][1]), v["n"], "pp", "episode", "McNemar exact", v["mcnemar"]["p"], src, f"closed_loop.vs_natural.{c}")
 for c, v in CL["final_traj_divergence_vs_natural_m"].items():
     add("SpatialVLA-4B", "34", "closed-loop trajectory", "endpoint divergence vs natural", c, round(v["mean"], 4), round(v["ci95"][0], 4), round(v["ci95"][1], 4), v["n"], "m", "episode", "-", "", src, f"closed_loop.final_traj_divergence_vs_natural_m.{c}")
-for r in csv.DictReader(open(B + "paper_quantitative_package/spatialvla_closed_loop_paired.csv")):
+for r in csv.DictReader(open("/root/VLA/paper_quantitative_package/spatialvla_closed_loop_paired.csv")):
     if r["task"] == "all" and r["block"] in ("context_feedback_effect", "executed_action_effect"):
         add("SpatialVLA-4B", "34", "closed-loop task", r["block"] + ": " + r["label"], "contrast", r["diff_pp_a_minus_b"], r["ci95_lo_pp"], r["ci95_hi_pp"], r["N_episodes"], "pp", "episode", "McNemar exact", r["mcnemar_exact_p"],
-            "outputs/paper_quantitative_package/spatialvla_closed_loop_paired.csv", r["label"], "recomputed: _parts/scripts/svla_closed_loop_paired.py")
+            "paper_quantitative_package/spatialvla_closed_loop_paired.csv", r["label"], "recomputed: _parts/scripts/svla_closed_loop_paired.py")
 A = TL["all"]
 for row in ("normal", "recent_ref", "full_ref", "win1", "reverse"):
     for k in ("amp", "dev4"):
@@ -124,6 +124,6 @@ for row in ("recent_ref", "win1"):
     f = (nr - A["means"][row]["dev4"]["mean"]) / (nr - fr)
     add("SpatialVLA-4B", "34", "token (offline)", "fraction of full_ref step-4 deviation reduction", row, round(100 * f, 1), "", "", TL["n_units"], "%", "episode", "-", "", src, f"derived from token_level.all.means.{{normal,full_ref,{row}}}.dev4", "derived ratio; CI not reported")
 fields = list(rows[0].keys())
-with open(B + "paper_quantitative_package/figure_cross_model.csv", "w", newline="") as f:
+with open("/root/VLA/paper_quantitative_package/figure_cross_model.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)
 print(len(rows), "rows")

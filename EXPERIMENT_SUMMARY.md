@@ -1,6 +1,6 @@
 # Driving VLA 실패 기전 연구 — 전체 실험 총정리
 
-최종 갱신: 2026-10-06 (실험 34 추가). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
+최종 갱신: 2026-10-08 (실험 35 추가, 논문 수치 패키지 `paper_quantitative_package/`). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
 누적 결론 문서는 [CONCLUSIONS.md](CONCLUSIONS.md), 새 서버 인계는 [HANDOFF.md](HANDOFF.md)입니다.
 
 - 주 대상: **AutoVLA** (Qwen2.5-VL-3B, action codebook 2,048 token, NAVSIM/nuPlan). 비교: ORION (Bench2Drive, 실험 1), **OpenVLA-7B** (LIBERO, 실험 28), **Impromptu VLA 3B** (navtest, 실험 33), **SpatialVLA-4B** (SimplerEnv 로봇 조작, 실험 34).
@@ -29,6 +29,11 @@
    직전 action 교정으로 step-4 편차 −82%, 오차 있는 직전 action 재삽입으로 완전 복원, 1-step 교정이 효과의 87%. 그러나 closed loop에서
    문맥만 교정해도 실패가 줄지 않고 문맥에만 교란을 넣어도 실패가 늘지 않아(재실행 불일치 13.8%), 실패는 실행된 action 자체에서 옵니다.
    → feedback 구조는 driving/Qwen 특이가 아닌 일반적 token 수준 기전이지만, task 실패로 이어지는지는 chunk 길이·매 step 재계획·ensemble 같은 구조에 달려 있습니다(실험 34).
+5c. **실행 구조 ablation (실험 35, 사전 등록 판정 Partial support).**
+   - 재계획 간격을 4 step으로 늘리면(실행 action 중 step 2–4 비율 0.75) 문맥 feedback이 만든 궤적 오차가 커지고 오래 남습니다(+1.8 cm, p = 1e-10; 재정렬 +11 step).
+   - task 효과는 reverse −6.2%p(p = 0.04, 공식 설정과의 차이는 n.s.)뿐이고, 교정이 성공률을 회복시키지는 않았습니다.
+   - ensemble은 보호 장치로 작동하지 않았습니다. ensemble을 없애면 오히려 feedback 대 corrected의 궤적 차이가 커졌습니다.
+   - → 재계획 빈도가 feedback의 지속을 조절하는 것은 확인했지만, 그것만으로 driving 수준의 실패는 재현되지 않습니다.
 6. **불안정 rollout은 이탈 전에는 예측되지 않습니다**: 엔트로피·likelihood·margin·후보 합의·hidden-state probe 모두 이탈 전 AUROC 0.57–0.63(장면 내 0.50–0.65),
    이탈 후 0.75–0.90입니다(실험 22, 31).
 7. **GT 없는 완화**: 참조로 조건화를 교정하면 정상 장면이 손해를 봐 순이득이 없고(실험 12–17), 모델 자신의 후보 중 확신도로 고르면 open-loop 실패율 −33%,
@@ -70,7 +75,8 @@
 | 31 (P4) | 불안정 탐지 baseline | 이탈 전 AUROC 0.57–0.63(hidden probe 포함), 이탈 후 0.75–0.90 → 이탈 전에는 예측 불가 | `outputs/instability_detection_baselines/` |
 | 32 (P5) | previous-action motion semantics | 방향 오차가 크기 오차보다 해로움 | `outputs/motion_semantics_ablation/` |
 | 33 | **시간축 action-chunk VLA(Impromptu VLA 3B)에서 기전 재현** | correction 98%, reverse로 복원, 약 3 step window, 방향 > 크기 → Strong replication (궤적 수준 안정 분기는 미재현) | `outputs/cross_vla_temporal_replication/` |
-| 34 | **다른 backbone·domain(SpatialVLA-4B, Gemma2, SimplerEnv 로봇 조작)에서 기전 재현** | token: 교정 step-4 편차 −82%, reverse 완전 복원, 1-step 87%; closed loop: 교정·문맥 교란 모두 성공률 효과 없음 → Partial replication | `outputs/cross_domain_temporal_replication/` |
+| 34 | **다른 backbone·domain(SpatialVLA-4B, Gemma2, SimplerEnv 로봇 조작)에서 기전 재현** | token: 교정 step-4 편차 −82%, reverse 완전 복원, 1-step 86% (RESULTS 표기 87%); closed loop: 교정·문맥 교란 모두 성공률 효과 없음 → Partial replication | `outputs/cross_domain_temporal_replication/` |
+| 35 | **SpatialVLA 실행 구조 ablation (재계획 간격 × ensemble)** | 4 step 재계획에서 문맥 feedback 궤적 오차 증가(+1.8 cm, p = 1e-10)·재정렬 지연; task는 reverse −6.2%p(p = 0.04)뿐, 교정 효과 없음, ensemble 보호 효과 없음 → Partial support | `outputs/spatialvla_feedback_protection_ablation/` |
 | P6 | 연속 closed-loop (CARLA) | 현재 환경에서 수행 불가 (checkpoint·렌더링·디스크) | `outputs/continuous_closed_loop/STATUS.md` |
 
 (경로의 `outputs/`는 `autovla_misalignment_poc/outputs/`입니다.)
@@ -263,6 +269,40 @@ closed loop task 수준 교정·reverse **미충족** → **Partial replication*
 그러나 **task 실패 기전이 되는지는 구조 의존적**입니다. feedback이 짧은 chunk(4 step) 안에 갇히고 매 step 새 관측으로 재계획·ensemble되는 SpatialVLA에서는
 궤적은 바뀌어도 성공은 바뀌지 않았습니다(OpenVLA 실험 28과 같은 양상). 현재 증거로 주장할 수 있는 것은 "일반적 기전 + 구조 의존적 실패"입니다.
 
+
+## 6d. 실행 구조 ablation: SpatialVLA 재계획 간격 × ensemble (실험 35)
+
+- 사전 등록 8fc20bf, 분석 스크립트 44266eb(결과 보기 전), 결과 2b0212d. RTX 5090.
+- 상세: `outputs/spatialvla_feedback_protection_ablation/RESULTS.md`, `paper_quantitative_package/EXP35_RESULTS.md`.
+- 설계: 실험 34와 같은 과제·교란(opposite, d = 0.3, step 8–23)을 6개 실행 설정 × 4조건으로 돌렸습니다. 각 80 에피소드(seed 0–39)입니다.
+- seed 추가: 사전 등록 규칙이 발동해 r1e4와 r4e1을 seed 40–119로 확장했고, 두 설정은 합동 240 에피소드로 판정했습니다.
+- 실행 가중치 정정: ActionEnsembler의 가중치는 최신 예측이 가장 큽니다(57/26/12/5%). 실험 34 문서의 반대 설명은 오류이며, 결과에는 영향이 없습니다.
+
+| 설정 (재계획 / ensemble / 노출) | N | F | C | R | F − C | R − N |
+|---|---|---|---|---|---|---|
+| r1e4 (1 / 4 / 0.43, 공식, 240) | 82.9 | 67.1 | 60.0 | 82.1 | +7.1 [+0.4, +14.2], p = 0.06 | −0.8, p = 0.88 |
+| r1e2 (1 / 2 / 0.31) | 85.0 | 70.0 | 68.8 | 86.2 | +1.2, Holm 1 | +1.2, Holm 1 |
+| r1e1 (1 / 없음 / 0) | 85.0 | 67.5 | 68.8 | 80.0 | −1.2, Holm 1 | −5.0, Holm 1 |
+| r2e2 (2 / 2 / 0.66) | 82.5 | 77.5 | 77.5 | 83.8 | 0.0, Holm 1 | +1.2, Holm 1 |
+| r2e1 (2 / 없음 / 0.50) | 87.5 | 76.2 | 68.8 | 85.0 | +7.5, Holm 1 | −2.5, Holm 1 |
+| r4e1 (4 / 없음 = 4 / 0.75, 240) | 81.7 | 69.6 | 65.0 | 75.4 | +4.6, p = 0.22 | **−6.2 [−12.1, −1.2], p = 0.040** |
+
+궤적 지속 (r4e1 − r1e4, 합동):
+- reverse 대 natural: 평균 위치 오차 +1.84 cm [+1.26, +2.46], p = 1e-10. 궤적 발산 +0.116 m, p = 7e-11. 재정렬 +10.9 step, p = 1e-6.
+- feedback 대 corrected: +1.32 cm, p = 2e-4.
+- r2e1: 재정렬 +13 step, p = 5e-4.
+- r1e1(ensemble 없음): feedback 대 corrected +1.8 cm, p = 0.03.
+- 모든 설정에서 교란 뒤 오차가 줄지 않았습니다(반감기 없음).
+
+사전 등록 기준:
+- 1 (공식 설정에서 효과 없음): 충족
+- 2 (보호를 줄이면 교정 효과 증가): **미충족** (방향 반대)
+- 3 (reverse가 실패 증가): r4e1에서만 충족 (상호작용 n.s.)
+- 4 (오차 지속 증가): 재계획 축에서 충족
+- → **Partial support**
+
+→ 자기 생성 action이 실행에 오래 남을수록(재계획 간격) 문맥 feedback이 궤적에 더 오래 남습니다. ensemble은 보호 장치가 아닙니다. 그러나 4-step chunk의 최대 노출로도 성공률 변화는 6%p 이내라서, driving 모델과의 차이를 실행 구조만으로 설명할 수는 없습니다.
+
 ---
 
 ## 7. 불안정 rollout 탐지: 이탈 전에 예측 가능한가 (실험 31, P4)
@@ -314,7 +354,7 @@ perception (대체로 보존)
 ```
 
 - 실패의 축은 "무엇을 보았는가"가 아니라 **"직전에 무엇을 출력했는가"**이고, 그 정보의 핵심은 진행 방향입니다.
-- token 수준 feedback은 다른 autoregressive VLA(OpenVLA)에서도 나타나지만, 궤적 실패로의 증폭은 시간축 action history를 autoregressive하게 생성하는 구조에서 생깁니다. 그런 구조의 다른 모델(Impromptu VLA)에서는 교정·reverse·짧은 window·방향 효과까지 재현되었습니다(실험 33). 비-Qwen·로봇 조작 모델(SpatialVLA)에서는 token 수준 교정·reverse·window가 재현되었지만, 짧은 chunk·매 step 재계획·ensemble 구조가 효과를 흡수해 task 실패로 이어지지 않았습니다(실험 34) — 기전은 일반적이고, 실패로의 전환은 구조 의존적입니다.
+- token 수준 feedback은 다른 autoregressive VLA(OpenVLA)에서도 나타나지만, 궤적 실패로의 증폭은 시간축 action history를 autoregressive하게 생성하는 구조에서 생깁니다. 그런 구조의 다른 모델(Impromptu VLA)에서는 교정·reverse·짧은 window·방향 효과까지 재현되었습니다(실험 33). 비-Qwen·로봇 조작 모델(SpatialVLA)에서는 token 수준 교정·reverse·window가 재현되었지만, 짧은 chunk·매 step 재계획·ensemble 구조가 효과를 흡수해 task 실패로 이어지지 않았습니다(실험 34) — 기전은 일반적이고, 실패로의 전환은 구조 의존적입니다. 실행 구조 ablation(실험 35)에서 재계획 간격이 feedback의 궤적 지속을 조절함을 확인했지만, task 실패는 최대 −6%p에 그쳤습니다.
 - 불안정성은 이탈 전에는 보이지 않고 이탈 후에만 보이므로, 실용적인 완화는 "이탈을 미리 막기"가 아니라 **여러 후보를 만들고 이탈 후 신호와 현재 frame 안전 규칙으로 거르기**입니다.
 
 ---
@@ -328,6 +368,7 @@ perception (대체로 보존)
 - OpenVLA 재현(실험 28)은 LIBERO-Spatial 한 suite, 100 에피소드 규모이고, OpenVLA는 시간축 action history가 없어 step 내 차원 간 feedback만 직접 비교할 수 있습니다.
 - Impromptu 재현(실험 33)은 open-loop 궤적 실패 기준이고, 절대 위치 표현 때문에 GT 문맥 교정에 GT 정보 누출이 섞여 있습니다. 궤적 수준 안정 분기(사전 등록 기준 3)는 재현되지 않았습니다.
 - SpatialVLA 재현(실험 34)은 과제 2개·80 에피소드라 closed loop에서 약 10%p 미만 차이는 검출하기 어렵고, closed-loop 교란은 d = 0.3·방향 2개·step 8–23만 다뤘으며, chunk가 4 step이라 window를 2 step보다 길게 볼 수 없습니다.
+- 실험 35는 과제 2개(r1e4·r4e1 seed 120개, 나머지 40개)라 약 7%p 미만 차이는 검출이 어렵고, 재계획 간격에 따라 교란 chunk 수(16/8/4)가 함께 바뀌며, 관측 갱신과 sequence reset의 분리(F)는 수행하지 못했습니다.
 
 ---
 

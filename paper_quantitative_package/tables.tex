@@ -1,6 +1,6 @@
-% Main-paper tables generated from outputs/paper_quantitative_package (sources: SOURCE_MAP.md).
+% Main-paper tables generated from paper_quantitative_package (sources: SOURCE_MAP.md).
 % Requires \usepackage{booktabs,multirow,graphicx}. Bold marks only the conditions that the paper's claims rest on.
-% Experiment 35 is still running; no Experiment 35 number appears here.
+% Experiment 35 (2b0212d) appears in Table 6.
 
 % ---------------------------------------------------------------- Table 1
 \begin{table*}[t]
@@ -131,3 +131,28 @@ Oracle (17 candidates)$^\dagger$ & 0.4053 & $+0.1767$ [$+0.1515$, $+0.2012$] & $
 \multicolumn{5}{l}{\footnotesize $^{a}$Descriptive in the pre-registration (not a judged hypothesis). $^{b}$Half-wise point estimate from Exp.~27; CI not reported per half.}
 \end{tabular}
 \end{table}
+
+% ---------------------------------------------------------------- Table 6
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.5pt}
+\caption{SpatialVLA execution-architecture ablation (Exp.~35; pre-registered). Replan = control steps between new chunks; Ens.\ = number of overlapping chunk predictions averaged with the official weights; Exp.\ = measured share of the executed translation that comes from chunk steps 2--4 (feedback-affected). Success in \%; differences in pp with task-stratified paired bootstrap 95\% CI and exact McNemar $p$. r1e4 and r4e1: seeds 0--119 (240 episodes per condition, pre-registered extension); others: seeds 0--39 (80 episodes; Holm-adjusted $p=1$ for all). Negative values are in the hypothesized direction. With a 4-step chunk, 4-step replanning admits one prediction per step, so ensemble-4 equals no ensemble.}
+\label{tab:exp35}
+\begin{tabular}{lccccccc}
+\toprule
+Config & Exp. & N & F & C & R & F$-$C & R$-$N \\
+\midrule
+r1e4 (official) & 0.43 & 82.9 & 67.1 & 60.0 & 82.1 & $+7.1$ [$+0.4$, $+14.2$], $p{=}0.06$ & $-0.8$ [$-6.2$, $+4.6$], $p{=}0.88$ \\
+r1e2 & 0.31 & 85.0 & 70.0 & 68.8 & 86.2 & $+1.2$ [$-10.0$, $+13.8$] & $+1.2$ [$-7.5$, $+10.0$] \\
+r1e1 & 0 & 85.0 & 67.5 & 68.8 & 80.0 & $-1.2$ [$-13.8$, $+11.2$] & $-5.0$ [$-12.5$, $+2.5$] \\
+r2e2 & 0.66 & 82.5 & 77.5 & 77.5 & 83.8 & $0.0$ [$-10.0$, $+10.0$] & $+1.2$ [$-10.0$, $+12.5$] \\
+r2e1 & 0.50 & 87.5 & 76.2 & 68.8 & 85.0 & $+7.5$ [$-5.0$, $+18.8$] & $-2.5$ [$-11.2$, $+6.2$] \\
+\textbf{r4e1} & 0.75 & 81.7 & 69.6 & 65.0 & 75.4 & $+4.6$ [$-2.5$, $+11.7$], $p{=}0.22$ & $\mathbf{-6.2}$ [$-12.1$, $-1.2$], $p{=}0.040$ \\
+\midrule
+\multicolumn{8}{l}{\footnotesize r4e1 $-$ r1e4 (pooled, paired Wilcoxon): reverse vs.\ natural position error $+1.84$\,cm [$+1.26$, $+2.46$], $p=10^{-10}$; realignment $+10.9$ steps, $p=10^{-6}$.} \\
+\multicolumn{8}{l}{\footnotesize Interaction on success: R$-$N $-5.4$ pp [$-13.3$, $+2.1$], sign-flip $p=0.20$.} \\
+\bottomrule
+\end{tabular}
+\end{table}
+

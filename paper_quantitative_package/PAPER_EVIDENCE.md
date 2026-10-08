@@ -13,7 +13,7 @@
 ## AutoVLA 기전 실험 — 논문용 정량 근거 (섹션 A–F)
 
 모델: AutoVLA (Qwen2.5-VL-3B backbone, action codebook 2,048 token, natural fast-thinking 경로). 벤치마크: NAVSIM/nuPlan navtest PoC 28 log, 장면 2,747개(arm N).
-경로 약어: `O/` = `/root/VLA/autovla_misalignment_poc/outputs/`, `S/` = `/root/VLA/autovla_misalignment_poc/scripts/`, `P/` = `O/paper_quantitative_package/`.
+경로 약어: `O/` = `/root/VLA/autovla_misalignment_poc/outputs/`, `S/` = `/root/VLA/autovla_misalignment_poc/scripts/`, `P/` = `/root/VLA/paper_quantitative_package/`.
 표기 규칙
 - `[a, b]`는 원 분석 스크립트가 계산한 **log 단위 cluster bootstrap 95% percentile CI**입니다(별도 표시 없으면 2,000회, seed 0, 재표본 단위 = navtest log). 이진 지표의 p는 **McNemar exact(binomial) 검정**, 연속 지표의 p는 **Wilcoxon signed-rank**(단위별 쌍대)입니다.
 - "not reported" = 원 결과에 없고, 원 스크립트의 같은 방법으로 재계산할 수 없거나 재계산하지 않은 값.
@@ -398,7 +398,7 @@ A+ (1,043): 실험 11 Normal 4.2%, GT-motion 최근접 0.8%, 자기-motion 최�
 
 경로는 모두 `/root/VLA/autovla_misalignment_poc/` 기준입니다. 이 문서는 기존 결과만 사용했고, 새 실험은 하지 않았습니다.
 
-- "(recomputed: …)" 표시: raw 데이터에서 **원 분석 스크립트와 같은 방법**으로 이 패키지에서 다시 계산한 값입니다. 계산 script는 `outputs/paper_quantitative_package/_parts/scripts/`에 있습니다.
+- "(recomputed: …)" 표시: raw 데이터에서 **원 분석 스크립트와 같은 방법**으로 이 패키지에서 다시 계산한 값입니다. 계산 script는 `paper_quantitative_package/_parts/scripts/`에 있습니다.
 - 그 밖의 값: `analysis.json`(JSON key 표기)이나 RESULTS.md에서 그대로 옮겼습니다.
 - 출처 상세: `source_map_crossmodel.md`. 충돌·불일치: `conflicts_crossmodel.md`.
 

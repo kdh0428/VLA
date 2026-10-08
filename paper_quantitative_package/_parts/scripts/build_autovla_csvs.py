@@ -13,7 +13,7 @@ import os
 import statistics
 
 OUT = "/root/VLA/autovla_misalignment_poc/outputs"
-PKG = os.path.join(OUT, "paper_quantitative_package")
+PKG = "/root/VLA/paper_quantitative_package"
 REL = "autovla_misalignment_poc/outputs/"
 
 
@@ -47,7 +47,7 @@ def write(name, header, rows):
 # ---------------------------------------------------------------- equal distance (exp 6)
 ED = "equal_distance_perturbation/summary.json"
 ed = J(ED)
-EDS = "paper_quantitative_package/_parts/recomputed/equal_distance_summary_strict_rerun.json"
+EDS = "/root/VLA/paper_quantitative_package/_parts/recomputed/equal_distance_summary_strict_rerun.json"
 eds = J(EDS)
 rows = []
 hdr = ["panel", "subset", "group", "condition", "metric", "value", "CI_low", "CI_high", "unit", "n", "n_scenes",

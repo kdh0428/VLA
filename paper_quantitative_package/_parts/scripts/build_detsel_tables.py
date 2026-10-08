@@ -2,14 +2,14 @@
 """
 Build paper_detection_table.{csv,tex}, figure_detection_pre_post.csv and figure_candidate_count.csv
 from EXISTING summary JSONs only (no recomputation of any statistic; only formatting and simple ratios
-that are labelled 'derived'). CPU only, writes only into outputs/paper_quantitative_package/.
+that are labelled 'derived'). CPU only, writes only into paper_quantitative_package/.
 
   nice -n 19 python build_detsel_tables.py
 """
 import csv, json, os
 
 O = "/root/VLA/autovla_misalignment_poc/outputs"
-PKG = os.path.join(O, "paper_quantitative_package")
+PKG = "/root/VLA/paper_quantitative_package"
 DET = os.path.join(O, "instability_detection_baselines/detection.json")
 REL = lambda p: os.path.relpath(p, "/root/VLA")  # noqa: E731
 

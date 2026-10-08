@@ -6,7 +6,7 @@
 - p 검정: 이진 지표는 exact McNemar, 연속 지표는 Wilcoxon signed-rank입니다. navhard는 log 단위 paired sign-flip permutation입니다.
 - 비교는 모두 같은 장면·단위·에피소드끼리의 paired 비교입니다.
 - 경로 약어: `O/` = `/root/VLA/autovla_misalignment_poc/outputs/`. 상세 표는 `_parts/*_sections.md`, 출처는 `SOURCE_MAP.md`, 불일치는 `CONSISTENCY_AUDIT.md`.
-- **실험 35는 결과가 없어 어떤 claim에도 쓰지 않았습니다** (`EXP35_RESULTS_TEMPLATE.md`).
+- 실험 35(2b0212d) 결과는 Claim 11과 Claim 17에 반영했습니다. 상세는 `EXP35_RESULTS.md`에 있습니다.
 - 공통 모집단 (AutoVLA 기전 실험 6–11, 32): equal-distance set.
   - 208 장면: A− 52 장면(16 log), A+ 156 장면.
   - perturbation 단위 1,408개: A− 365, A+ 1,043.
@@ -175,11 +175,13 @@
   - SpatialVLA −8.3 pp
 - **Open-loop trajectory or task effects appear only in the two driving models**, which keep a 10-step autoregressive action history.
 - **The two closed-loop manipulation models show no context-induced task effect:** OpenVLA has no temporal history; SpatialVLA has a 4-step chunk, replans every step, and steps 2–4 make up 42.6% of the executed action.
+- **Experiment 35 (execution-architecture ablation):** lengthening SpatialVLA's replanning interval to 4 steps (feedback exposure 0.75) makes context-induced trajectory deviations larger and longer-lived (+1.8 cm, p = 1e-10; realignment +11 steps). A small task effect appears only for reverse (−6.2 pp [−12.1, −1.2], p = 0.04); correction does not restore success. See Claim 17.
 
 **Source:** Claims 3 and 8–10; `paper_cross_model_table.csv`.
 **Manuscript-safe:** "Previous-action feedback is a general token-level property of autoregressive VLA decoders; whether it becomes a task-level failure mechanism depends on how long self-generated action history persists in execution."
 **Overclaim:**
-- "Replanning and ensembling cause the absorption." That is not tested; it is the Experiment 35 hypothesis, and its results are not available.
+- "Replanning and ensembling cause the absorption." Experiment 35 supports only the replanning half, and only at trajectory level; ensembling did not protect.
+- "Execution architecture fully explains the driving vs. manipulation difference." Maximal exposure in a 4-step chunk did not reproduce driving-scale failure.
 - "General failure mechanism of all VLAs."
 - Comparing amplification magnitudes across models (the definitions differ).
 
@@ -247,3 +249,23 @@
 **Overclaim:**
 - "Deployable methods reach 69% of the oracle" without noting post-hoc method choice (F1 gives 67%).
 - Treating the oracle as a true upper bound (it is an approximation that ignores two-stage weighting).
+
+# Claim 17. Replanning interval governs feedback persistence; ensembling does not protect (Experiment 35)
+**Evidence** (preregistered 8fc20bf; r1e4 and r4e1 pooled over seeds 0–119, 240 episodes each; other configurations seeds 0–39)
+- **Trajectory, 4-step replanning (r4e1) vs official (r1e4):**
+  - Reverse vs natural: mean position error **+1.84 cm [+1.26, +2.46], p = 1e-10**; trajectory divergence +0.116 m, p = 7e-11; realignment +10.9 steps, p = 1e-6.
+  - Feedback vs corrected: +1.32 cm, p = 2e-4.
+- **Task, 4-step replanning:** reverse − natural **−6.2 pp [−12.1, −1.2], p = 0.040**. The difference from official execution is −5.4 pp [−13.3, +2.1], sign-flip p = 0.20.
+- **Correction does not restore success:** feedback − corrected = +7.1 pp (r1e4, p = 0.06) and +4.6 pp (r4e1, p = 0.22), opposite to the hypothesis.
+- **Removing the ensemble (r1e1, exposure 0):** no task effect, and feedback vs corrected position error rises (+1.8 cm, p = 0.03). Ensemble-2 equals ensemble-4.
+- **No decay:** in every configuration, errors keep growing after the perturbation window (no half-life).
+
+**N / test:** 240 or 80 episodes per condition; task-stratified paired bootstrap; exact McNemar; Wilcoxon; Holm across the 4 auxiliary configurations; sign-flip permutation for configuration differences.
+**Source:** `O/spatialvla_feedback_protection_ablation/RESULTS.md`, `analysis.json`, `pooled_seed0_119/analysis.json`; `EXP35_RESULTS.md`.
+**Manuscript-safe:** "In SpatialVLA, how long self-generated actions remain in execution, rather than temporal ensembling, controls how persistent previous-action feedback is: 4-step replanning makes context-induced deviations larger and longer-lived, yet task success changes by at most 6 pp."
+**Overclaim:**
+- "Ensembling protects against feedback."
+- "Removing protections turns SpatialVLA into an AutoVLA-like failure mode."
+- "Correction restores success in SpatialVLA."
+- Reporting the reverse p = 0.04 without noting that the interaction with official execution is not significant.
+

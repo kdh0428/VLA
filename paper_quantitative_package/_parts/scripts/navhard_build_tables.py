@@ -2,7 +2,7 @@
 """
 Build the navhard paper table (full navhard, 76 logs / 225 groups) from the EXISTING analysis JSONs only.
 No statistic is recomputed: every mean / Δ / CI / p / group count is copied from the JSON key named in `source`.
-Outputs (in outputs/paper_quantitative_package/):
+Outputs (in paper_quantitative_package/):
   paper_navhard_table.csv, paper_navhard_table.tex, figure_navhard_methods.csv
 """
 import csv
@@ -10,7 +10,7 @@ import json
 import os
 
 POC = "/root/VLA/autovla_misalignment_poc/outputs"
-PKG = f"{POC}/paper_quantitative_package"
+PKG = "/root/VLA/paper_quantitative_package"
 J26 = "navhard_full_validation/navhard_full_comparison.json"
 J27 = "safety_filter_ablation/ablation.json"
 J29 = "safety_filter_components/components.json"

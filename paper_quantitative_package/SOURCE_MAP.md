@@ -32,7 +32,7 @@
 | 32 | motion semantics | AutoVLA / navtest PoC | `motion_semantics_ablation` | af2eb10 | aee41e5 |
 | 33 | Impromptu temporal replication | Impromptu VLA 3B / navtest PoC | `cross_vla_temporal_replication` | **038a6d3** | 698148a |
 | 34 | SpatialVLA cross-domain | SpatialVLA-4B / SimplerEnv | `cross_domain_temporal_replication` | **f578eae** | f4cf886 |
-| 35 | SpatialVLA 보호 구조 ablation | 〃 | `spatialvla_feedback_protection_ablation` | **8fc20bf** | 실행 중 (결과 없음) |
+| 35 | SpatialVLA 보호 구조 ablation | 〃 | `spatialvla_feedback_protection_ablation` | **8fc20bf** | 2b0212d (Partial; seed 40–119 확장 포함) |
 
 ## 기록해 둘 정정 (원본 파일은 수정하지 않음)
 
@@ -85,7 +85,7 @@
 #### S3. 실험 6 — Equal-distance perturbation
 - 보고서: `O/equal_distance_perturbation/EQUAL_DISTANCE.md`, `EQUAL_DISTANCE_strict.md`(STRICT=1); `summary.json`; `run_meta.json`(208 장면, seed 0, rel_levels 0.1/0.2/0.35, abs_tol 0.005 m, min_alts 5, A+ 3/A−, 5090, 6.1분).
 - raw: `O/equal_distance_perturbation/records.jsonl`(208), `rows.jsonl`(1,824 = 조건 행), `run.log`.
-- strict summary json은 디렉토리에 없음 → `O/paper_quantitative_package/_parts/recomputed/equal_distance_summary_strict_rerun.json` (recomputed: `_parts/scripts/rerun_equal_distance_analysis.sh`, 원 스크립트 무수정, 사본 디렉토리에서 실행). 같은 재실행으로 full summary가 Q4 AUROC(±0.01)를 제외하고 동일함을 확인.
+- strict summary json은 디렉토리에 없음 → `/root/VLA/paper_quantitative_package/_parts/recomputed/equal_distance_summary_strict_rerun.json` (recomputed: `_parts/scripts/rerun_equal_distance_analysis.sh`, 원 스크립트 무수정, 사본 디렉토리에서 실행). 같은 재실행으로 full summary가 Q4 AUROC(±0.01)를 제외하고 동일함을 확인.
 - 사전등록: not preregistered (증폭 임계 3.0 m "사전 고정"은 스크립트 docstring 서술). 분석 커밋 1541f30.
 - N: 장면 208 (A− 52 / A+ 156, log 16 / 26), 조건 행 1,824, perturbation 단위(original+대안) A− 365 / A+ 1,043.
 - seed 0 (original_reseed는 다른 seed); GPU RTX 5090.
@@ -172,8 +172,8 @@
 - `O/mechanism_selection_link/{dev,heldout}{,_5090}/summary.json` (커밋 e3bc8db, 1b91b0f): 선택 vs 버림 rollout의 이탈 전/후 엔트로피(5090 held-out 이탈 전 −0.016 [−0.023, −0.009], 이탈 후 −0.396 [−0.420, −0.373]). 기전 섹션 A–F 표에는 사용하지 않음.
 
 #### S13. 패키지 내 재계산 산출물
-- `O/paper_quantitative_package/_parts/scripts/build_autovla_csvs.py`: summary json → CSV 복사, distinct log 개수, layer 점추정의 min/max/SD/CI 폭 중앙값, 실험 7 비율 점추정.
-- `O/paper_quantitative_package/_parts/scripts/rerun_equal_distance_analysis.sh`: 원 `analyze_equal_distance.py` 재실행(full + STRICT=1) → `_parts/recomputed/`.
+- `/root/VLA/paper_quantitative_package/_parts/scripts/build_autovla_csvs.py`: summary json → CSV 복사, distinct log 개수, layer 점추정의 min/max/SD/CI 폭 중앙값, 실험 7 비율 점추정.
+- `/root/VLA/paper_quantitative_package/_parts/scripts/rerun_equal_distance_analysis.sh`: 원 `analyze_equal_distance.py` 재실행(full + STRICT=1) → `_parts/recomputed/`.
 
 ---
 

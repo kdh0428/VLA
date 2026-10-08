@@ -38,6 +38,8 @@
 | 표본 수 | MINOR 몇 건 (population) | navtest 2,747 vs 2,748(fork 실패 1개). 실험 22 혼합 GPU 43,517 / 2,550 vs 실험 31 5090 전용 43,469 / 2,538. 실험 5의 N은 1,159 장면이며 equal-distance 208이 아닙니다(ES §10 오기, MAJOR). held-out 자연 실패 72(혼합) vs 73(5090). |
 
 ## 이 패키지를 만들면서 추가로 확인한 항목
+- **[MINOR] 실험 35 PROTOCOL의 "+640 에피소드"는 계산 표기 오류입니다.** 규칙이 정한 seed 40–119는 1,280 에피소드이고, 그대로 실행했습니다. 실험 35 RESULTS에 기록했습니다.
+- **[MINOR] 실험 35 분석 스크립트를 결과 commit 전에 1건 고쳤습니다.** seed ≥ 40에서 실험 34 비교 부분이 KeyError를 냈습니다. 통계 정의는 그대로입니다.
 - **[MINOR] 비교표의 AutoVLA 자연 성능 한 칸에 서로 다른 모집단 값이 섞여 있습니다.** A− 1.9%는 52/2,747이고, FDE5 0.66 m는 500 장면 subset 값입니다. 실험 33 RESULTS §2가 같은 방식으로 섞어 적었습니다. `paper_cross_model_table.csv`에는 두 모집단을 각각 표기했습니다.
 - **[MINOR] analyze_svla.py docstring은 "stratified by task"라고 하지만, 코드는 층화하지 않은 에피소드 bootstrap입니다.** 보고된 CI는 모두 층화하지 않은 값입니다. 반면 실험 35 사전 등록은 "과제로 층화"한다고 명시했으므로, 두 실험의 CI 방법이 다릅니다. 실험 35 RESULTS에 이를 함께 적어야 합니다.
 - **[MAJOR] SpatialVLA closed loop의 opposite 교란 실패는 pick_coke_can에 집중됩니다.** feedback −37.5%p, p = 6e-5이고, move_near는 −2.5%p입니다. 원 RESULTS에는 합계만 있습니다. 결론(문맥 효과 0, 실행 효과 있음)은 바뀌지 않지만, 논문에서는 과제별 이질성을 밝혀야 합니다.
