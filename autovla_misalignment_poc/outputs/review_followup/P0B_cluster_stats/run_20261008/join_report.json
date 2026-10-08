@@ -1,0 +1,89 @@
+{
+ "join": {
+  "exp32_units_without_substitution": {},
+  "autovla": {
+   "exp07_action_history_causal": {
+    "n_units": 1408,
+    "missing_vs_exp06_units": 0,
+    "extra_vs_exp06_units": 0,
+    "log_or_group_mismatch_vs_exp06": 0,
+    "A-": {
+     "units": 365,
+     "scenes": 52,
+     "logs": 16
+    },
+    "A+": {
+     "units": 1043,
+     "scenes": 156,
+     "logs": 26
+    }
+   },
+   "exp11_prev_action_identity": {
+    "n_units": 1408,
+    "missing_vs_exp06_units": 0,
+    "extra_vs_exp06_units": 0,
+    "log_or_group_mismatch_vs_exp06": 0,
+    "A-": {
+     "units": 365,
+     "scenes": 52,
+     "logs": 16
+    },
+    "A+": {
+     "units": 1043,
+     "scenes": 156,
+     "logs": 26
+    }
+   },
+   "exp32_motion_semantics": {
+    "n_units": 1408,
+    "missing_vs_exp06_units": 0,
+    "extra_vs_exp06_units": 0,
+    "log_or_group_mismatch_vs_exp06": 0,
+    "A-": {
+     "units": 365,
+     "scenes": 52,
+     "logs": 16
+    },
+    "A+": {
+     "units": 1043,
+     "scenes": 156,
+     "logs": 26
+    }
+   },
+   "common_units_exp07_exp11_exp32": 1408
+  },
+  "impromptu": {
+   "units_used": 2398,
+   "reference_units_dir_none_excluded": 300,
+   "parse_fail_excluded": 2,
+   "scenes": 300,
+   "logs": 28
+  },
+  "svla_closed_loop": {
+   "episodes": 80,
+   "complete_episodes": 80,
+   "conditions": [
+    "corrected_opposite",
+    "corrected_perp_left",
+    "feedback_opposite",
+    "feedback_perp_left",
+    "natural",
+    "natural_gen",
+    "natural_mix",
+    "reverse_opposite",
+    "reverse_perp_left"
+   ],
+   "per_task": {
+    "google_robot_move_near": 40,
+    "google_robot_pick_coke_can": 40
+   }
+  },
+  "svla_token_level": {
+   "units": 18975,
+   "frames": 1600,
+   "episodes": 80,
+   "motion_units_e_gt_0": 10542
+  }
+ },
+ "runtime_s": 42.66236352920532
+}

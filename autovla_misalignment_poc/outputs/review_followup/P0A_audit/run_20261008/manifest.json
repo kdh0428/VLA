@@ -1,0 +1,110 @@
+{
+ "task": "P0-A (VLA_experiment_plan_20261008.md \u00a73)",
+ "run_dir": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0A_audit/run_20261008",
+ "date_utc": "Thu Oct  8 02:12:55 PM UTC 2026",
+ "repo": {
+  "path": "/root/VLA",
+  "branch": "autovla-experiments-11-19",
+  "head": "8fd4ee24e237f027f6d4bd02d3d5298335a98178",
+  "scripts_dirty_vs_head": "clean"
+ },
+ "autovla_repo": {
+  "path": "/root/VLA/autovla",
+  "head": "ba34eed74ce6729e7986592d0e66cbaca397b4fa"
+ },
+ "navsim": {
+  "navsim_v2_head": "0a380a9063d7162ec93d0f51e9990ebac585f720",
+  "navsim_v2_describe": "v2.2-1-g0a380a9",
+  "human_filter_fix_359c7f7_ancestor": "yes",
+  "vendored_v1": "/root/VLA/autovla/navsim (setup.py 1.1.0, no own git)"
+ },
+ "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+ "checkpoint": {
+  "path": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+  "bytes": 16292664780
+ },
+ "environment": {
+  "python": "3.9.23 (conda autovla)",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.49.0",
+  "numpy": "1.23.4",
+  "scipy": "1.13.1",
+  "driver": "610.43.02"
+ },
+ "raw_files_read": {
+  "full_extract/records.jsonl": {
+   "sha256": "582daf0a117bf3da8790fd2db53756732492ce7701eaa170b0c5f51308b13ada",
+   "bytes": 69571657,
+   "mtime": 1790512169.6146605
+  },
+  "equal_distance_perturbation/records.jsonl": {
+   "sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+   "bytes": 2292990,
+   "mtime": 1790512604.9271085
+  },
+  "equal_distance_perturbation/rows.jsonl": {
+   "sha256": "28d7be5d4909f929738534647c26d4d207b078f27b0934c8b59bf23fb0ce9fe9",
+   "bytes": 1254079,
+   "mtime": 1790512628.2280216
+  },
+  "action_history_causal/records.jsonl": {
+   "sha256": "b81169505c89f11e0c7571795dcd4ac54f9a82d34d0566d7b57085f79264526d",
+   "bytes": 9527164,
+   "mtime": 1790513674.5631375
+  },
+  "action_history_causal/units.jsonl": {
+   "sha256": "db6550e58ca87a3216e6c8f3d81227d18de16428069d1a2d512f2b3df892eedf",
+   "bytes": 2820678,
+   "mtime": 1790513703.1182203
+  },
+  "motion_semantics_ablation/records.jsonl": {
+   "sha256": "cf4d018e717a2bfa7b67b3783d780a939b1b2535478ca1e6f9d06f58c3f67087",
+   "bytes": 12910590,
+   "mtime": 1791055709.1686878
+  },
+  "prev_action_identity_decomposition/records.jsonl": {
+   "sha256": "53db9166e6c14b3d8f3b506c8d62510714d40747a4c267c07d3613cc85520fc8",
+   "bytes": 18273076,
+   "mtime": 1790514042.849083
+  }
+ },
+ "summaries_read": [
+  "O/action_history_causal/summary.json",
+  "O/prev_action_state_patching/{summary,run_meta,layer_results}.json, sanity/run_meta.json",
+  "O/temporal_feedback_window/{summary,run_meta}.json",
+  "O/motion_semantics_ablation/{summary,row_contrasts,run_meta}.json",
+  "O/first_mismatch_causal/{summary,run_meta}.json",
+  "O/equal_distance_perturbation/{summary,run_meta}.json",
+  "O/cross_domain_temporal_replication/*",
+  "O/spatialvla_feedback_protection_ablation/* (+pooled_seed0_119)",
+  "O/cross_vla_temporal_replication/*",
+  "paper_quantitative_package/{PAPER_NUMBERS,SOURCE_MAP,CONSISTENCY_AUDIT,EXP35_RESULTS}.md",
+  "EXPERIMENT_SUMMARY.md",
+  "autovla_misalignment_poc/REPRODUCTION.md",
+  "navhard/exp/*/*/code/hydra/config.yaml, log.txt (75 runs)"
+ ],
+ "gpu_use": {
+  "what": "tiny re-runs with UNCHANGED original scripts: temporal_feedback_window.py and prev_action_state_patching.py --limit 1 --max-alts 2 (--debug for exp 8): 1 A- scene (013fbdcd9db35b43) x 3 units each",
+  "gpu": "RTX 5090 (CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1)",
+  "started_utc": "Thu Oct  8 02:05:04 PM UTC 2026",
+  "finished_utc": "Thu Oct  8 02:07:10 PM UTC 2026",
+  "reason": "exp 8/9 main-run records.jsonl absent; trace impossible from raw",
+  "outputs": "rerun_tiny/exp8, rerun_tiny/exp9",
+  "note": "another process held ~9-18 GB on the 5090 during the run; 3080 Ti not used"
+ },
+ "subaudits": {
+  "spatialvla": "scripts/svla_subaudit (CPU re-execution of analyze_svla.py / analyze_protection.py on symlinked raw in scratch; outputs identical to stored analysis.json)",
+  "navsim_impromptu": "scripts/navsim_subaudit/report_navsim_impromptu.md"
+ },
+ "outputs": [
+  "claim_to_code.csv",
+  "denominator_flow.csv",
+  "intervention_trace.jsonl",
+  "metric_spec.md",
+  "rerun_tiny",
+  "scripts",
+  "unresolved_items.md",
+  "work"
+ ],
+ "existing_files_modified": "none; nothing committed"
+}

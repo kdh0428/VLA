@@ -1,0 +1,88 @@
+{
+ "task": "P0-C experiment 35 fixed-axis paired reanalysis (post-hoc, not preregistered)",
+ "date": "2026-10-08",
+ "inputs": {
+  "/root/VLA/autovla_misalignment_poc/outputs/spatialvla_feedback_protection_ablation/rollouts/episodes.jsonl": {
+   "sha256": "77a8c2bf4e489f7060af9c6c8f374edc41475aeff92e4a51db057b2af78eef87"
+  },
+  "/root/VLA/autovla_misalignment_poc/outputs/spatialvla_feedback_protection_ablation/rollouts_ext/episodes.jsonl": {
+   "sha256": "2e7ca6d21b8e5e2786c171888a7788e958b643a2fc01975d843042e0f5087c75"
+  }
+ },
+ "token_table": "token_table.npz (processor of /root/VLA/spatialvla/spatialvla-4b-224-sft-fractal, CPU)",
+ "code": [
+  "code/export_token_table.py",
+  "code/p0c_analysis.py"
+ ],
+ "python": "/root/miniforge3/envs/autovla/bin/python",
+ "n_episodes_loaded": 3360,
+ "episode_length_counts": {
+  "80": 3360
+ },
+ "common_units": 80,
+ "extension_units": 240,
+ "bootstrap": "task-stratified episode bootstrap 2000, numpy default_rng(0), shared indices across configs/conditions",
+ "permutation_reps": 10000,
+ "plus_1_8cm_check": {
+  "definition": "mean_{t=8..79} ||p_feedback(t) - p_corrected(t)|| per episode, config r1e1 minus r1e4, seed 0-39 (n=80)",
+  "estimate_cm": 1.7569,
+  "ci_orig_random_module": [
+   0.6594,
+   2.8842
+  ],
+  "ci_this_run": [
+   0.6378,
+   3.0002
+  ],
+  "wilcoxon_p": 0.02838,
+  "signflip_p": 0.004,
+  "r1e1_FC_mean_dev": 7.2693,
+  "r1e4_FC_mean_dev": 5.5124,
+  "by_task": {
+   "google_robot_move_near": 0.4976,
+   "google_robot_pick_coke_can": 3.0161
+  }
+ },
+ "outputs": [
+  "protocol.md",
+  "manifest.json",
+  "condition_summary.csv",
+  "paired_effects.csv",
+  "did_effects.csv",
+  "dose_table.csv",
+  "extension_240.csv",
+  "units_seed0_39.csv",
+  "token_table.npz",
+  "figures/error_curves_e1_fixed_replanning.png",
+  "figures/error_curves_r1_fixed_ensemble.png",
+  "figures/error_curves_r2_fixed_ensemble.png",
+  "figures/did_forest_primary.png",
+  "figures/extension240_r1e4_r4e1.png",
+  "analysis.md",
+  "code/export_token_table.py",
+  "code/p0c_analysis.py"
+ ],
+ "post_protocol_additions": [
+  "sticky_onsets_win_diff, sticky_steps_diff (exploratory; see protocol.md appendix)"
+ ],
+ "holm_original_style_check": {
+  "note": "Holm over the 5 reduced configs vs r1e4 (seed 0-39) for F-C mean_dev Wilcoxon",
+  "p_raw": {
+   "r1e2": 0.5267,
+   "r1e1": 0.0284,
+   "r2e2": 0.1585,
+   "r2e1": 0.2741,
+   "r4e1": 0.1009
+  },
+  "p_holm5": {
+   "r1e2": 0.5483,
+   "r1e1": 0.1419,
+   "r2e2": 0.4755,
+   "r2e1": 0.5483,
+   "r4e1": 0.4037
+  }
+ },
+ "rerun_command": "cd code; PYTHONPATH=/root/VLA/spatialvla/site nice -n 19 /root/miniforge3/envs/autovla/bin/python export_token_table.py ../token_table.npz; nice -n 19 /root/miniforge3/envs/autovla/bin/python p0c_analysis.py <run_dir>",
+ "gpu_used": false,
+ "new_inference": false
+}

@@ -1,0 +1,14 @@
+{
+ "r1e4": {
+  "natural": 0.829,
+  "feedback": 0.671,
+  "corrected": 0.6,
+  "reverse": 0.821
+ },
+ "r4e1": {
+  "natural": 0.817,
+  "feedback": 0.696,
+  "corrected": 0.65,
+  "reverse": 0.754
+ }
+}

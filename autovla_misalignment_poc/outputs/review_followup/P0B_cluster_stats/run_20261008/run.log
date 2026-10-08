@@ -1,0 +1,35 @@
+[    1.5s] AutoVLA loaded {'exp07_action_history_causal': 1408, 'exp11_prev_action_identity': 1408, 'exp32_motion_semantics': 1408, 'exp06_equal_distance': 1824}
+[    5.0s] Impromptu loaded {'units_used': 2398, 'reference_units_dir_none_excluded': 300, 'parse_fail_excluded': 2, 'scenes': 300, 'logs': 28}
+Some kwargs in processor config are unused and will not have any effect: action_config, action_chunk_size, intrinsic_config, obs_delta, statistics, bin_policy, num_obs_steps. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+[   32.7s] SpatialVLA loaded 80 {'units': 18975, 'frames': 1600, 'episodes': 80, 'motion_units_e_gt_0': 10542}
+[   33.0s] done AV-P1 Recent-Normal scene -0.3979 [-0.5000365497076023, -0.28755484077689053] p=0.000122
+[   33.0s] done AV-P3 Direction-Magnitude scene +0.0985 [0.03839136904761904, 0.2038539426523297] p=0.00562
+[   33.0s] done AV-S Recent-Normal FDE scene -4.0596 [-4.725591261400696, -3.202837661507922] p=3.05e-05
+[   33.0s] done AV-S Direction-Magnitude FDE scene +1.2249 [0.7103926785096127, 2.0962284965279494] p=0.000183
+[   33.1s] done AV-S GT-history-Normal scene -0.4253 [-0.5334884733814116, -0.3078114058123249] p=6.1e-05
+[   33.1s] done AV-S Recent-Normal (exp11 harness) scene -0.3879 [-0.49900879173508483, -0.27447048611111113] p=0.000122
+[   33.1s] done AV-S GeoNN(GT)-RecentGT [equivalence] scene +0.0078 [-0.016117553081838792, 0.06579857759545259] p=0.734
+[   33.2s] done AV-S Mirror-Normal scene -0.3363 [-0.4410811720521542, -0.2184523607061873] p=0.000122
+[   33.3s] done AV-S Recent-Normal A+ scene -0.0335 [-0.055739665102086805, -0.010032476040730764] p=0.0219
+[   33.5s] done AV-S Direction-Magnitude A+ scene +0.0450 [0.017514701135390793, 0.07319742545772304] p=0.0109
+[   33.8s] LOO done AV-P1 Recent-Normal
+[   34.0s] LOO done AV-P3 Direction-Magnitude
+[   34.2s] LOO done AV-S Recent-Normal (exp11 harness)
+[   34.3s] LOO done AV-S Recent-Normal FDE
+[   34.5s] LOO done AV-S Direction-Magnitude FDE
+[   34.9s] Impromptu done IMP Recent-Normal
+[   35.5s] Impromptu done IMP GT-history-Normal
+[   36.1s] Impromptu done IMP Reverse-Full
+[   36.5s] Impromptu done IMP Direction-Magnitude
+[   36.8s] closed loop done SV-CL Feedback-Corrected opposite 0.012500000000000004 [-0.1125, 0.1375] 1.0
+[   37.0s] closed loop done SV-CL Reverse-Natural opposite -0.012500000000000004 [-0.1125, 0.0875] 1.0
+[   37.3s] closed loop done SV-CL Feedback-Corrected perp_left -0.05 [-0.125, 0.0125] 0.2882085589572052
+[   37.6s] closed loop done SV-CL Reverse-Natural perp_left 0.05 [-0.0375, 0.1375] 0.3874680626596867
+[   38.1s] token done SV-TOK Correction (recent_ref-normal) -0.08315346502009358 [-0.09278508121665723, -0.07434988806979341] 4.9999750001249995e-06
+[   38.7s] token done SV-TOK Reverse (reverse-full_ref) 0.05101036438350712 [0.04428911242906267, 0.05826106771423377] 4.9999750001249995e-06
+[   39.2s] token done SV-TOK Full-ref-normal -0.08557468185949504 [-0.09611957118668248, -0.07577088136363976] 4.9999750001249995e-06
+[   39.9s] token done SV-TOK Direction-Magnitude 0.018940821597899025 [0.0067239687472383704, 0.030616859731835182] 0.0030249848750756245
+[   42.7s] all written 252048 unit rows

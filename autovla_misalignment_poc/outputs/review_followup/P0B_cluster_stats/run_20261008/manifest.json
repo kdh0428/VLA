@@ -1,0 +1,136 @@
+{
+ "task": "P0-B cluster statistics reanalysis (VLA_experiment_plan_20261008.md \u00a74)",
+ "preregistered": false,
+ "nature": "reanalysis of already-seen data; protocol written before the new cluster statistics were computed",
+ "protocol": {
+  "file": "protocol.md",
+  "mtime_utc": "2026-10-08T14:01:22.828Z",
+  "sha256_at_write": "614491a04a3747999bf761c52cce0e23e4c9421128e4aa40c444d6e7a8970f03",
+  "sha256_now": "614491a04a3747999bf761c52cce0e23e4c9421128e4aa40c444d6e7a8970f03"
+ },
+ "analysis_run": {
+  "script": "p0b_analysis.py",
+  "first_output_mtime_utc": "2026-10-08T14:06:57.709829Z",
+  "command": "PYTHONPATH=/root/VLA/spatialvla/site CUDA_VISIBLE_DEVICES='' nice -n 19 /root/miniforge3/envs/autovla/bin/python p0b_analysis.py > run.log"
+ },
+ "no_new_inference": true,
+ "gpu_used": false,
+ "note_spatialvla_table": "SpatialVLA translation-token table rebuilt from the processor/tokenizer (analyze_svla.table(), transformers 4.47 from /root/VLA/spatialvla/site); model weights not loaded",
+ "settings": {
+  "seed": 20261008,
+  "bootstrap_B": 10000,
+  "bootstrap_B_loo": 2000,
+  "signflip_exact_if_G_le": 20,
+  "signflip_mc": 200000,
+  "signflip_mc_loo": 20000,
+  "ci": "percentile",
+  "alpha": 0.05,
+  "multiplicity": {
+   "AutoVLA primary": "Holm m=3 (Reverse-Full untestable, p=1)",
+   "SpatialVLA primary": "Holm m=6",
+   "Impromptu": "Holm m=4 (secondary)"
+  },
+  "equivalence_margins": {
+   "SpatialVLA closed-loop success": 0.1,
+   "AutoVLA/Impromptu amplification": 0.05,
+   "SpatialVLA token amplification": 0.02
+  }
+ },
+ "inputs": {
+  "action_history_causal/units.jsonl": {
+   "sha256": "db6550e58ca87a3216e6c8f3d81227d18de16428069d1a2d512f2b3df892eedf",
+   "bytes": 2820678
+  },
+  "action_history_causal/summary.json": {
+   "sha256": "9cf8fc21e809db50336c24dfebcb00d0c9521724c517fd7934e8e7e883cbf0c0",
+   "bytes": 145367
+  },
+  "prev_action_identity_decomposition/units.jsonl": {
+   "sha256": "616b3e7e99fd9812502f426aeb719630c6422ef6d528232db6eb113c67c26504",
+   "bytes": 4751186
+  },
+  "prev_action_identity_decomposition/summary.json": {
+   "sha256": "5962aa7587ed6b76868dfba0e76c249c13a45eb34e11a4c2a8965d853c6d2fe3",
+   "bytes": 76503
+  },
+  "motion_semantics_ablation/records.jsonl": {
+   "sha256": "cf4d018e717a2bfa7b67b3783d780a939b1b2535478ca1e6f9d06f58c3f67087",
+   "bytes": 12910590
+  },
+  "motion_semantics_ablation/row_contrasts.json": {
+   "sha256": "8563e2f07a891205d0a03491350397d10b204b06c9c2f3a5e9067128004923d5",
+   "bytes": 3579
+  },
+  "equal_distance_perturbation/rows.jsonl": {
+   "sha256": "28d7be5d4909f929738534647c26d4d207b078f27b0934c8b59bf23fb0ce9fe9",
+   "bytes": 1254079
+  },
+  "equal_distance_perturbation/summary.json": {
+   "sha256": "a65e6203384509c831144af80861965616b9e03582e9bdd8c701820ff02d11da",
+   "bytes": 72673
+  },
+  "prev_action_state_patching/summary.json": {
+   "sha256": "3a8f3e8a9a1d2b095339dcfd205ea6878dd6c0aacccd5c7e8205664e9750cf05",
+   "bytes": 3326124
+  },
+  "cross_vla_temporal_replication/exp_cde/records.jsonl": {
+   "sha256": "e983d0516ee04e83cf561c3bf57794ac8cdc34009b19577fe32f178edda5900e",
+   "bytes": 18263261
+  },
+  "cross_vla_temporal_replication/analysis.json": {
+   "sha256": "7100167ba3df5a4fcb0a3573643f42a4d0e77d7ab17dd3381ec1d68821a86389",
+   "bytes": 57796
+  },
+  "cross_domain_temporal_replication/closed_loop/episodes.jsonl": {
+   "sha256": "fe0226b5935b5686f815859f3b809ab8eab05ec4ce50e054184d22fb77c3bd23",
+   "bytes": 13808515
+  },
+  "cross_domain_temporal_replication/token_level/units.jsonl": {
+   "sha256": "8aafa30e810a7fcbca70b12d9cbffebeac457e1be5576ba6dcf65c0045833a31",
+   "bytes": 39508473
+  },
+  "cross_domain_temporal_replication/analysis.json": {
+   "sha256": "83b0fc53161d5c28196a37fd68e8e1788a3b335485fa67e6204f08aeae228f9b",
+   "bytes": 66773
+  }
+ },
+ "original_analysis_code_imported": {
+  "analyze_action_history.py": "42259869e54346b3703c1af423e974014b3a7346bb0c426b329d441c57c96804",
+  "analyze_prev_action_identity.py": "662658e9bce2abe2dd3ac77b0f7af0b35392acfe947e0f3bb3648d9e762d8fa0",
+  "analyze_motion_semantics.py": "87137c5f435aacfef4f86fa434f571d96da9b1610bf5e12e149fdb51f0f82751",
+  "analyze_equal_distance.py": "0db43c3d8402f1e5376a99c7b5202ff56e96f07176fed5e388ca56c74c157f4c",
+  "cross_vla_temporal/analyze_temporal.py": "0679602c70ccb14a4622798c8cdef1666e0b003e0dd4bbb69bf963a342e82abc",
+  "cross_domain_temporal/analyze_svla.py": "443c2f61cab00ee2aa9aac3068db971859057d12d77d8f27d12bde137b0f968b"
+ },
+ "repo": {
+  "path": "/root/VLA",
+  "git_head": "8fd4ee24e237f027f6d4bd02d3d5298335a98178",
+  "branch": "autovla-experiments-11-19"
+ },
+ "software": {
+  "python": "3.9.23",
+  "numpy": "1.23.4",
+  "scipy": "1.13.1",
+  "pandas": "2.3.3",
+  "pyarrow": "21.0.0"
+ },
+ "raw_unavailable": {
+  "exp05_first_mismatch_causal": "directory has summary.json, run_meta.json, report only; no per-scene records (filesystem search for *.jsonl under this name: none)",
+  "exp08_prev_action_state_patching": "summary.json/layer_results.json only; no per-unit records -> AutoVLA primary Reverse-Full (reverse@emb - gt_history) cannot be cluster-reanalysed",
+  "exp09_temporal_feedback_window": "summary.json only; no per-unit records",
+  "exp10_horizon_controlled_window": "summary.json only; errors.jsonl cited in report is absent; no per-unit records",
+  "needed": "per-unit rows with (scene token, log, group, perturbation, condition, action_idx/trajectory_pred or the per-unit amplification/FDE) - i.e. the records.jsonl the run scripts would write; recoverable only by re-running the GPU harness"
+ },
+ "outputs": {
+  "protocol.md": "614491a04a3747999bf761c52cce0e23e4c9421128e4aa40c444d6e7a8970f03",
+  "p0b_analysis.py": "c5591e5c7eb5f81a717d6e01b088f42e3035ed741b11367ef89adc2c1ad27811",
+  "run.log": "4aa3007fea896e385210693ace662f5dd5b248bfa41d651d6aef5eb31666325c",
+  "join_report.json": "bf47de9ed5175776cd03a46f3651765ef356fa1efc01827297dd05f493cd07d3",
+  "units.parquet": "09d50443bf7ca417482a2750122781e3d922564d294dcc8b2f859a99364140ac",
+  "condition_summary.csv": "0c2eeb077e49e951bc573d89ca725a99b0c8e9698c969a7727e0c7ba0a2b46d0",
+  "paired_effects.csv": "8687a0722ca8a733a9d170694d9800f776b86e6ef65725b0c45ba8d763187125",
+  "loo_logs.csv": "79585b7ed11abd903a507ddda30e72fa2d5c9fe75a968fae743b84e936daf65a",
+  "comparison_with_original.csv": "b2df60570c3ad62a15a7e00d2deed59f9c872782a968937fdc7c7736e696567c"
+ },
+ "outputs_note": "analysis.md NOT written: the subagent harness refused creation of the .md report file; its full Korean content was returned to the caller in the handback message for the caller to save as analysis.md"
+}

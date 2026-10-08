@@ -1,0 +1,208 @@
+[
+ {
+  "experiment": "4-5 (full_extract arm N)",
+  "stage": "records in full_extract/records.jsonl",
+  "group": "all",
+  "n_units": 2748,
+  "n_clusters": null,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "excluded: no arm-N trajectory (fork failed)",
+  "group": "all",
+  "n_units": 0,
+  "unit_type": "scene"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "excluded: CoT present in natural arm",
+  "group": "all",
+  "n_units": 1,
+  "unit_type": "scene"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "excluded: runaway action tokens (>10)",
+  "group": "all",
+  "n_units": 0,
+  "unit_type": "scene"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "excluded: <10 poses",
+  "group": "all",
+  "n_units": 0,
+  "unit_type": "scene"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "valid natural fast scenes (A label computable)",
+  "group": "all",
+  "n_units": 2747,
+  "n_clusters": null,
+  "unit_type": "scene"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "A- among valid (label_A false)",
+  "group": "A-",
+  "n_units": 52,
+  "n_clusters": 16,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "4-5",
+  "stage": "excluded: no token mismatch in 10 steps",
+  "group": "all",
+  "n_units": 1588,
+  "unit_type": "scene"
+ },
+ {
+  "experiment": "5 (first_mismatch_causal)",
+  "stage": "scenes with a first mismatch t* (= exp 5 population)",
+  "group": "A-",
+  "n_units": 52,
+  "n_clusters": 16,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "5 (first_mismatch_causal)",
+  "stage": "scenes with a first mismatch t* (= exp 5 population)",
+  "group": "A+",
+  "n_units": 1107,
+  "n_clusters": 28,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "5",
+  "stage": "total exp 5 scenes",
+  "group": "all",
+  "n_units": 1159,
+  "n_clusters": 28,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "6 (equal_distance)",
+  "stage": "scenes picked (A-: all mismatch-A-; A+: 3 per A- at same t*, seeded shuffle)",
+  "group": "A-",
+  "n_units": 52,
+  "n_clusters": 16,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "6",
+  "stage": "perturbation units original+alt (= units of exp 7-11, 32)",
+  "group": "A-",
+  "n_units": 365,
+  "n_clusters": 16,
+  "unit_type": "(scene, perturbation)",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "6",
+  "stage": "of which valid 10-token rollouts in exp 6 (HF generate may leave the action span)",
+  "group": "A-",
+  "n_units": 364,
+  "unit_type": "(scene, perturbation)"
+ },
+ {
+  "experiment": "6",
+  "stage": "alternatives only (Claim 2 denominators)",
+  "group": "A-",
+  "n_units": 313,
+  "unit_type": "(scene, alternative)"
+ },
+ {
+  "experiment": "6",
+  "stage": "alternatives meeting strict tolerance (matched_strict)",
+  "group": "A-",
+  "n_units": 292,
+  "unit_type": "(scene, alternative)"
+ },
+ {
+  "experiment": "6 (equal_distance)",
+  "stage": "scenes picked (A-: all mismatch-A-; A+: 3 per A- at same t*, seeded shuffle)",
+  "group": "A+",
+  "n_units": 156,
+  "n_clusters": 26,
+  "unit_type": "scene",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "6",
+  "stage": "perturbation units original+alt (= units of exp 7-11, 32)",
+  "group": "A+",
+  "n_units": 1043,
+  "n_clusters": 26,
+  "unit_type": "(scene, perturbation)",
+  "cluster_type": "log"
+ },
+ {
+  "experiment": "6",
+  "stage": "of which valid 10-token rollouts in exp 6 (HF generate may leave the action span)",
+  "group": "A+",
+  "n_units": 1043,
+  "unit_type": "(scene, perturbation)"
+ },
+ {
+  "experiment": "6",
+  "stage": "alternatives only (Claim 2 denominators)",
+  "group": "A+",
+  "n_units": 887,
+  "unit_type": "(scene, alternative)"
+ },
+ {
+  "experiment": "6",
+  "stage": "alternatives meeting strict tolerance (matched_strict)",
+  "group": "A+",
+  "n_units": 771,
+  "unit_type": "(scene, alternative)"
+ },
+ {
+  "experiment": "7 (action_history_causal)",
+  "stage": "units analysed (all 7 conditions, no unit exclusion; OOD rule is per condition)",
+  "group": "A-",
+  "n_units": 365,
+  "n_clusters": 16,
+  "unit_type": "(scene, perturbation)",
+  "cluster_type": "log",
+  "note": "scenes 52"
+ },
+ {
+  "experiment": "32 (motion_semantics_ablation)",
+  "stage": "units analysed (6 rows, errors.jsonl empty)",
+  "group": "A-",
+  "n_units": 365,
+  "n_clusters": 16,
+  "unit_type": "(scene, perturbation)",
+  "cluster_type": "log",
+  "note": "scenes 52"
+ },
+ {
+  "experiment": "7 (action_history_causal)",
+  "stage": "units analysed (all 7 conditions, no unit exclusion; OOD rule is per condition)",
+  "group": "A+",
+  "n_units": 1043,
+  "n_clusters": 26,
+  "unit_type": "(scene, perturbation)",
+  "cluster_type": "log",
+  "note": "scenes 156"
+ },
+ {
+  "experiment": "32 (motion_semantics_ablation)",
+  "stage": "units analysed (6 rows, errors.jsonl empty)",
+  "group": "A+",
+  "n_units": 1043,
+  "n_clusters": 26,
+  "unit_type": "(scene, perturbation)",
+  "cluster_type": "log",
+  "note": "scenes 156"
+ }
+]

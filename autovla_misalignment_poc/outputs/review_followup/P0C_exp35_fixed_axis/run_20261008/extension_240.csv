@@ -1,0 +1,145 @@
+part,n,row,config,contrast_type,metric,estimate,ci_lo,ci_hi,x_only,y_only,p,test,move_near_est,pick_coke_can_est
+seed0-119,240,within,r1e4,R-N,success,-0.0083,-0.0667,0.0458,22,24,0.883,McNemar,0.0583,-0.075
+seed0-119,240,within,r4e1,R-N,success,-0.0625,-0.1167,-0.0083,16,31,0.03999,McNemar,-0.0667,-0.0583
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,success,-0.0542,-0.1292,0.025,,,0.2012,sign-flip,-0.125,0.0167
+seed0-119,240,within,r1e4,R-N,area_dev_cmstep,292.472,260.1959,326.6156,,,,,319.002,265.942
+seed0-119,240,within,r4e1,R-N,area_dev_cmstep,424.9147,388.6215,462.2634,,,,,482.8824,366.9471
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,area_dev_cmstep,132.4427,89.9636,177.146,,,0.0,Wilcoxon,163.8804,101.0051
+seed0-119,240,within,r1e4,R-N,mean_dev_cm,4.0621,3.6138,4.5363,,,,,4.4306,3.6936
+seed0-119,240,within,r4e1,R-N,mean_dev_cm,5.9016,5.3975,6.4203,,,,,6.7067,5.0965
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,mean_dev_cm,1.8395,1.2495,2.4604,,,0.0,Wilcoxon,2.2761,1.4028
+seed0-119,240,within,r1e4,R-N,max_dev_cm,8.3531,7.4734,9.3017,,,,,9.1359,7.5704
+seed0-119,240,within,r4e1,R-N,max_dev_cm,12.0018,10.9973,13.0556,,,,,13.9842,10.0194
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,max_dev_cm,3.6487,2.5151,4.8387,,,0.0,Wilcoxon,4.8484,2.449
+seed0-119,240,within,r1e4,R-N,final_dev_cm,6.8395,6.0698,7.6729,,,,,6.7166,6.9624
+seed0-119,240,within,r4e1,R-N,final_dev_cm,9.501,8.6258,10.365,,,,,10.121,8.8809
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,final_dev_cm,2.6615,1.6264,3.6988,,,2e-06,Wilcoxon,3.4045,1.9184
+seed0-119,240,within,r1e4,R-N,cmd_final_m,0.2331,0.2008,0.2683,,,,,0.272,0.1941
+seed0-119,240,within,r4e1,R-N,cmd_final_m,0.3486,0.3082,0.3862,,,,,0.3919,0.3052
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,cmd_final_m,0.1155,0.0748,0.1563,,,0.0,Wilcoxon,0.1199,0.1111
+seed0-119,240,within,r1e4,R-N,realigned,0.4583,0.4,0.5208,,,,,0.5667,0.35
+seed0-119,240,within,r4e1,R-N,realigned,0.2792,0.225,0.3333,,,,,0.2417,0.3167
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,realigned,-0.1792,-0.2625,-0.0917,,,0.0002,sign-flip,-0.325,-0.0333
+seed0-119,240,within,r1e4,R-N,realign_t80,55.2042,51.7999,58.4834,,,,,48.925,61.4833
+seed0-119,240,within,r4e1,R-N,realign_t80,66.1042,63.2542,68.809,,,,,68.3667,63.8417
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,realign_t80,10.9,6.2915,15.3958,,,1e-06,Wilcoxon,19.4417,2.3583
+seed0-119,240,within,r1e4,F-C,success,0.0708,0.0042,0.1417,45,28,0.06037,McNemar,0.15,-0.0083
+seed0-119,240,within,r4e1,F-C,success,0.0458,-0.0208,0.1125,39,28,0.22155,McNemar,0.1083,-0.0167
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,success,-0.025,-0.1208,0.0708,,,0.6585,sign-flip,-0.0417,-0.0083
+seed0-119,240,within,r1e4,F-C,area_dev_cmstep,401.7577,363.9723,439.1532,,,,,401.2519,402.2636
+seed0-119,240,within,r4e1,F-C,area_dev_cmstep,496.6079,465.1739,526.9591,,,,,610.2754,382.9404
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,area_dev_cmstep,94.8501,50.2308,143.6994,,,0.000187,Wilcoxon,209.0235,-19.3232
+seed0-119,240,within,r1e4,F-C,mean_dev_cm,5.58,5.0552,6.0994,,,,,5.5729,5.587
+seed0-119,240,within,r4e1,F-C,mean_dev_cm,6.8973,6.4607,7.3189,,,,,8.476,5.3186
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,mean_dev_cm,1.3174,0.6977,1.9958,,,0.000187,Wilcoxon,2.9031,-0.2684
+seed0-119,240,within,r1e4,F-C,max_dev_cm,10.9727,9.9079,12.0867,,,,,11.4765,10.4689
+seed0-119,240,within,r4e1,F-C,max_dev_cm,12.6914,11.8544,13.5779,,,,,15.6199,9.7629
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,max_dev_cm,1.7187,0.4423,3.0259,,,0.001809,Wilcoxon,4.1434,-0.706
+seed0-119,240,within,r1e4,F-C,final_dev_cm,8.9482,7.9044,10.0098,,,,,8.5324,9.3641
+seed0-119,240,within,r4e1,F-C,final_dev_cm,10.316,9.5102,11.135,,,,,12.1672,8.4648
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,final_dev_cm,1.3678,0.0473,2.6459,,,0.002039,Wilcoxon,3.6348,-0.8992
+seed0-119,240,within,r1e4,F-C,cmd_final_m,0.3009,0.2595,0.3504,,,,,0.3089,0.2928
+seed0-119,240,within,r4e1,F-C,cmd_final_m,0.3788,0.3443,0.414,,,,,0.4408,0.3168
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,cmd_final_m,0.0779,0.0157,0.1322,,,9e-06,Wilcoxon,0.1319,0.024
+seed0-119,240,within,r1e4,F-C,realigned,0.3875,0.325,0.45,,,,,0.425,0.35
+seed0-119,240,within,r4e1,F-C,realigned,0.1833,0.1375,0.2375,,,,,0.1333,0.2333
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,realigned,-0.2042,-0.2793,-0.1292,,,0.0,sign-flip,-0.2917,-0.1167
+seed0-119,240,within,r1e4,F-C,realign_t80,60.4708,57.2036,63.5961,,,,,58.4583,62.4833
+seed0-119,240,within,r4e1,F-C,realign_t80,71.1,68.4125,73.4424,,,,,72.8333,69.3667
+seed0-119,240,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,realign_t80,10.6292,6.766,14.4753,,,0.0,Wilcoxon,14.375,6.8833
+seed0-39,80,within,r1e4,R-N,success,0.0,-0.1,0.0875,8,8,1.0,McNemar,0.1,-0.1
+seed0-39,80,within,r4e1,R-N,success,-0.0125,-0.1,0.075,7,8,1.0,McNemar,-0.075,0.05
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,success,-0.0125,-0.1625,0.1375,,,1.0,sign-flip,-0.175,0.15
+seed0-39,80,within,r1e4,R-N,area_dev_cmstep,299.461,249.5172,354.8726,,,,,287.4863,311.4358
+seed0-39,80,within,r4e1,R-N,area_dev_cmstep,401.153,350.0951,461.9254,,,,,465.3242,336.9817
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,area_dev_cmstep,101.6919,38.0662,168.2428,,,0.001401,Wilcoxon,177.8379,25.5459
+seed0-39,80,within,r1e4,R-N,mean_dev_cm,4.1592,3.4655,4.9288,,,,,3.9929,4.3255
+seed0-39,80,within,r4e1,R-N,mean_dev_cm,5.5716,4.8624,6.4156,,,,,6.4628,4.6803
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,mean_dev_cm,1.4124,0.5287,2.3367,,,0.001401,Wilcoxon,2.47,0.3548
+seed0-39,80,within,r1e4,R-N,max_dev_cm,8.5363,7.0556,10.1521,,,,,8.5997,8.473
+seed0-39,80,within,r4e1,R-N,max_dev_cm,11.2034,9.7951,12.837,,,,,13.307,9.0999
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,max_dev_cm,2.6671,1.0215,4.2451,,,0.00328,Wilcoxon,4.7074,0.6269
+seed0-39,80,within,r1e4,R-N,final_dev_cm,6.9241,5.5851,8.4111,,,,,6.0965,7.7518
+seed0-39,80,within,r4e1,R-N,final_dev_cm,9.4704,8.1035,10.9075,,,,,10.7968,8.144
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,final_dev_cm,2.5463,0.7697,4.3634,,,0.006926,Wilcoxon,4.7003,0.3923
+seed0-39,80,within,r1e4,R-N,cmd_final_m,0.2405,0.1865,0.3027,,,,,0.2674,0.2136
+seed0-39,80,within,r4e1,R-N,cmd_final_m,0.3442,0.2841,0.4113,,,,,0.407,0.2815
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,cmd_final_m,0.1037,0.0242,0.182,,,0.001736,Wilcoxon,0.1395,0.0678
+seed0-39,80,within,r1e4,R-N,realigned,0.4125,0.3125,0.5125,,,,,0.55,0.275
+seed0-39,80,within,r4e1,R-N,realigned,0.3375,0.2375,0.45,,,,,0.325,0.35
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,realigned,-0.075,-0.225,0.0625,,,0.4079,sign-flip,-0.225,0.075
+seed0-39,80,within,r1e4,R-N,realign_t80,57.75,52.0994,63.1878,,,,,49.35,66.15
+seed0-39,80,within,r4e1,R-N,realign_t80,62.8375,57.2372,68.1381,,,,,63.575,62.1
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,realign_t80,5.0875,-1.9753,12.3503,,,0.092017,Wilcoxon,14.225,-4.05
+seed0-39,80,within,r1e4,F-C,success,-0.05,-0.1625,0.0625,9,13,0.52347,McNemar,-0.025,-0.075
+seed0-39,80,within,r4e1,F-C,success,-0.0125,-0.125,0.1,10,11,1.0,McNemar,0.0,-0.025
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,success,0.0375,-0.1125,0.1878,,,0.7461,sign-flip,0.025,0.05
+seed0-39,80,within,r1e4,F-C,area_dev_cmstep,396.8934,334.3666,460.013,,,,,383.1715,410.6153
+seed0-39,80,within,r4e1,F-C,area_dev_cmstep,478.4637,426.6101,533.0682,,,,,586.3782,370.5492
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,area_dev_cmstep,81.5703,15.8089,155.9934,,,0.100928,Wilcoxon,203.2067,-40.066
+seed0-39,80,within,r1e4,F-C,mean_dev_cm,5.5124,4.644,6.3891,,,,,5.3218,5.703
+seed0-39,80,within,r4e1,F-C,mean_dev_cm,6.6453,5.9251,7.4037,,,,,8.1441,5.1465
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,mean_dev_cm,1.1329,0.2196,2.1666,,,0.100928,Wilcoxon,2.8223,-0.5565
+seed0-39,80,within,r1e4,F-C,max_dev_cm,10.8484,8.9508,12.7684,,,,,10.8656,10.8312
+seed0-39,80,within,r4e1,F-C,max_dev_cm,11.6616,10.3178,13.0714,,,,,14.1715,9.1518
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,max_dev_cm,0.8132,-1.1812,2.8902,,,0.32078,Wilcoxon,3.3059,-1.6794
+seed0-39,80,within,r1e4,F-C,final_dev_cm,8.9892,7.1655,10.8507,,,,,8.0711,9.9073
+seed0-39,80,within,r4e1,F-C,final_dev_cm,9.7353,8.5627,10.9779,,,,,11.4256,8.045
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,final_dev_cm,0.7461,-1.1685,2.8333,,,0.147473,Wilcoxon,3.3545,-1.8623
+seed0-39,80,within,r1e4,F-C,cmd_final_m,0.3019,0.2343,0.3712,,,,,0.3189,0.285
+seed0-39,80,within,r4e1,F-C,cmd_final_m,0.3958,0.3319,0.4714,,,,,0.4251,0.3666
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,cmd_final_m,0.0939,0.0013,0.1851,,,0.00371,Wilcoxon,0.1062,0.0816
+seed0-39,80,within,r1e4,F-C,realigned,0.425,0.3125,0.5375,,,,,0.45,0.4
+seed0-39,80,within,r4e1,F-C,realigned,0.225,0.1375,0.3128,,,,,0.175,0.275
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,realigned,-0.2,-0.3375,-0.0625,,,0.0085,sign-flip,-0.275,-0.125
+seed0-39,80,within,r1e4,F-C,realign_t80,58.3125,52.6719,64.2384,,,,,57.175,59.45
+seed0-39,80,within,r4e1,F-C,realign_t80,68.4875,63.3875,73.0125,,,,,70.475,66.5
+seed0-39,80,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,realign_t80,10.175,2.9872,17.4128,,,0.004755,Wilcoxon,13.3,7.05
+seed40-119,160,within,r1e4,R-N,success,-0.0125,-0.075,0.05,14,16,0.85554,McNemar,0.0375,-0.0625
+seed40-119,160,within,r4e1,R-N,success,-0.0875,-0.1562,-0.0248,9,23,0.02006,McNemar,-0.0625,-0.1125
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,success,-0.075,-0.1625,0.0125,,,0.1264,sign-flip,-0.1,-0.05
+seed40-119,160,within,r1e4,R-N,area_dev_cmstep,288.9775,247.6955,335.4497,,,,,334.7599,243.1951
+seed40-119,160,within,r4e1,R-N,area_dev_cmstep,436.7956,391.1731,486.5065,,,,,491.6615,381.9297
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,area_dev_cmstep,147.8182,93.1236,205.0705,,,0.0,Wilcoxon,156.9016,138.7347
+seed40-119,160,within,r1e4,R-N,mean_dev_cm,4.0136,3.4402,4.659,,,,,4.6494,3.3777
+seed40-119,160,within,r4e1,R-N,mean_dev_cm,6.0666,5.433,6.757,,,,,6.8286,5.3046
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,mean_dev_cm,2.053,1.2934,2.8482,,,0.0,Wilcoxon,2.1792,1.9269
+seed40-119,160,within,r1e4,R-N,max_dev_cm,8.2616,7.1554,9.5162,,,,,9.404,7.1192
+seed40-119,160,within,r4e1,R-N,max_dev_cm,12.401,11.144,13.7599,,,,,14.3228,10.4792
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,max_dev_cm,4.1394,2.6478,5.6227,,,0.0,Wilcoxon,4.9189,3.36
+seed40-119,160,within,r1e4,R-N,final_dev_cm,6.7972,5.8185,7.8568,,,,,7.0266,6.5678
+seed40-119,160,within,r4e1,R-N,final_dev_cm,9.5162,8.4065,10.6739,,,,,9.7832,9.2493
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,final_dev_cm,2.719,1.4766,3.952,,,0.000125,Wilcoxon,2.7566,2.6815
+seed40-119,160,within,r1e4,R-N,cmd_final_m,0.2293,0.1883,0.274,,,,,0.2743,0.1844
+seed40-119,160,within,r4e1,R-N,cmd_final_m,0.3507,0.3023,0.401,,,,,0.3844,0.3171
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,cmd_final_m,0.1214,0.076,0.1678,,,0.0,Wilcoxon,0.1101,0.1327
+seed40-119,160,within,r1e4,R-N,realigned,0.4813,0.4061,0.5563,,,,,0.575,0.3875
+seed40-119,160,within,r4e1,R-N,realigned,0.25,0.1875,0.3187,,,,,0.2,0.3
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,realigned,-0.2313,-0.3375,-0.1187,,,0.0001,sign-flip,-0.375,-0.0875
+seed40-119,160,within,r1e4,R-N,realign_t80,53.9312,49.7747,58.2,,,,,48.7125,59.15
+seed40-119,160,within,r4e1,R-N,realign_t80,67.7375,64.3556,70.9,,,,,70.7625,64.7125
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,R-N,realign_t80,13.8063,7.9425,19.4133,,,3e-06,Wilcoxon,22.05,5.5625
+seed40-119,160,within,r1e4,F-C,success,0.1313,0.05,0.2188,36,15,0.0046,McNemar,0.2375,0.025
+seed40-119,160,within,r4e1,F-C,success,0.075,-0.0063,0.15,29,17,0.10381,McNemar,0.1625,-0.0125
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,success,-0.0563,-0.1688,0.0563,,,0.3957,sign-flip,-0.075,-0.0375
+seed40-119,160,within,r1e4,F-C,area_dev_cmstep,404.1899,358.2799,451.8737,,,,,410.2921,398.0877
+seed40-119,160,within,r4e1,F-C,area_dev_cmstep,505.68,468.7661,546.5441,,,,,622.224,389.136
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,area_dev_cmstep,101.49,39.254,157.5112,,,0.000866,Wilcoxon,211.9319,-8.9518
+seed40-119,160,within,r1e4,F-C,mean_dev_cm,5.6137,4.9761,6.276,,,,,5.6985,5.529
+seed40-119,160,within,r4e1,F-C,mean_dev_cm,7.0233,6.5106,7.5909,,,,,8.642,5.4047
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,mean_dev_cm,1.4096,0.5452,2.1877,,,0.000866,Wilcoxon,2.9435,-0.1243
+seed40-119,160,within,r1e4,F-C,max_dev_cm,11.0348,9.7248,12.3853,,,,,11.782,10.2877
+seed40-119,160,within,r4e1,F-C,max_dev_cm,13.2063,12.2331,14.2447,,,,,16.3442,10.0685
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,max_dev_cm,2.1715,0.5353,3.6774,,,0.00201,Wilcoxon,4.5622,-0.2192
+seed40-119,160,within,r1e4,F-C,final_dev_cm,8.9277,7.6654,10.2473,,,,,8.7631,9.0924
+seed40-119,160,within,r4e1,F-C,final_dev_cm,10.6063,9.5668,11.6391,,,,,12.5379,8.6747
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,final_dev_cm,1.6786,-0.0372,3.2837,,,0.006649,Wilcoxon,3.7749,-0.4177
+seed40-119,160,within,r1e4,F-C,cmd_final_m,0.3003,0.2454,0.3645,,,,,0.3039,0.2967
+seed40-119,160,within,r4e1,F-C,cmd_final_m,0.3703,0.3332,0.4093,,,,,0.4487,0.2919
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,cmd_final_m,0.07,-0.0064,0.142,,,0.000575,Wilcoxon,0.1448,-0.0048
+seed40-119,160,within,r1e4,F-C,realigned,0.3688,0.2938,0.4437,,,,,0.4125,0.325
+seed40-119,160,within,r4e1,F-C,realigned,0.1625,0.1062,0.2188,,,,,0.1125,0.2125
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,realigned,-0.2062,-0.2938,-0.1125,,,0.0,sign-flip,-0.3,-0.1125
+seed40-119,160,within,r1e4,F-C,realign_t80,61.55,57.6434,65.35,,,,,59.1,64.0
+seed40-119,160,within,r4e1,F-C,realign_t80,72.4062,69.3497,74.9881,,,,,74.0125,70.8
+seed40-119,160,DiD r4e1 - r1e4 (cross-axis; not replanning-only),r4e1-r1e4,F-C,realign_t80,10.8562,6.2059,15.4191,,,1.6e-05,Wilcoxon,14.9125,6.8

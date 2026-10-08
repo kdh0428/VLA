@@ -1,0 +1,326 @@
+Some kwargs in processor config are unused and will not have any effect: action_chunk_size, num_obs_steps, statistics, action_config, intrinsic_config, bin_policy, obs_delta. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+{
+ "closed_loop": {
+  "success": {
+   "corrected_opposite": {
+    "mean": 0.6375,
+    "ci95": [
+     0.5375,
+     0.7375
+    ],
+    "n": 80
+   },
+   "corrected_perp_left": {
+    "mean": 0.9125,
+    "ci95": [
+     0.85,
+     0.9625
+    ],
+    "n": 80
+   },
+   "feedback_opposite": {
+    "mean": 0.65,
+    "ci95": [
+     0.55,
+     0.75
+    ],
+    "n": 80
+   },
+   "feedback_perp_left": {
+    "mean": 0.8625,
+    "ci95": [
+     0.775,
+     0.9375
+    ],
+    "n": 80
+   },
+   "natural": {
+    "mean": 0.85,
+    "ci95": [
+     0.775,
+     0.925
+    ],
+    "n": 80
+   },
+   "natural_gen": {
+    "mean": 0.9375,
+    "ci95": [
+     0.875,
+     0.9875
+    ],
+    "n": 80
+   },
+   "natural_mix": {
+    "mean": 0.85,
+    "ci95": [
+     0.775,
+     0.925
+    ],
+    "n": 80
+   },
+   "reverse_opposite": {
+    "mean": 0.8375,
+    "ci95": [
+     0.75,
+     0.9125
+    ],
+    "n": 80
+   },
+   "reverse_perp_left": {
+    "mean": 0.9,
+    "ci95": [
+     0.8375,
+     0.9625
+    ],
+    "n": 80
+   }
+  },
+  "n_paired_episodes": 80,
+  "vs_natural": {
+   "corrected_opposite": {
+    "mean": -0.2125,
+    "ci95": [
+     -0.3375,
+     -0.075
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 9,
+     "b_only": 26,
+     "p": 0.005988120567053557
+    }
+   },
+   "corrected_perp_left": {
+    "mean": 0.0625,
+    "ci95": [
+     -0.0125,
+     0.1375
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 8,
+     "b_only": 3,
+     "p": 0.2265625
+    }
+   },
+   "feedback_opposite": {
+    "mean": -0.2,
+    "ci95": [
+     -0.3125,
+     -0.0875
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 5,
+     "b_only": 21,
+     "p": 0.002493917942047119
+    }
+   },
+   "feedback_perp_left": {
+    "mean": 0.0125,
+    "ci95": [
+     -0.0875,
+     0.1125
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 10,
+     "b_only": 9,
+     "p": 1.0
+    }
+   },
+   "natural_gen": {
+    "mean": 0.0875,
+    "ci95": [
+     0.0125,
+     0.1625
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 9,
+     "b_only": 2,
+     "p": 0.0654296875
+    }
+   },
+   "natural_mix": {
+    "mean": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 0,
+     "b_only": 0,
+     "p": 1.0
+    }
+   },
+   "reverse_opposite": {
+    "mean": -0.0125,
+    "ci95": [
+     -0.1125,
+     0.0875
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 8,
+     "b_only": 9,
+     "p": 1.0
+    }
+   },
+   "reverse_perp_left": {
+    "mean": 0.05,
+    "ci95": [
+     -0.0375,
+     0.1375
+    ],
+    "n": 80,
+    "mcnemar": {
+     "a_only": 8,
+     "b_only": 4,
+     "p": 0.3876953125
+    }
+   }
+  },
+  "discordant_vs_natural": {
+   "corrected_opposite": 0.4375,
+   "corrected_perp_left": 0.1375,
+   "feedback_opposite": 0.325,
+   "feedback_perp_left": 0.2375,
+   "natural_gen": 0.1375,
+   "natural_mix": 0.0,
+   "reverse_opposite": 0.2125,
+   "reverse_perp_left": 0.15
+  },
+  "corrected_vs_feedback_perp_left": {
+   "mean": 0.05,
+   "ci95": [
+    -0.0125,
+    0.125
+   ],
+   "n": 80,
+   "mcnemar": {
+    "a_only": 6,
+    "b_only": 2,
+    "p": 0.2890625
+   }
+  },
+  "reverse_vs_corrected_perp_left": {
+   "mean": -0.0125,
+   "ci95": [
+    -0.0875,
+    0.0625
+   ],
+   "n": 80,
+   "mcnemar": {
+    "a_only": 4,
+    "b_only": 5,
+    "p": 1.0
+   }
+  },
+  "corrected_vs_feedback_opposite": {
+   "mean": -0.0125,
+   "ci95": [
+    -0.1375,
+    0.125
+   ],
+   "n": 80,
+   "mcnemar": {
+    "a_only": 13,
+    "b_only": 14,
+    "p": 1.0
+   }
+  },
+  "reverse_vs_corrected_opposite": {
+   "mean": 0.2,
+   "ci95": [
+    0.075,
+    0.3125
+   ],
+   "n": 80,
+   "mcnemar": {
+    "a_only": 22,
+    "b_only": 6,
+    "p": 0.0037191659212112427
+   }
+  },
+  "final_traj_divergence_vs_natural_m": {
+   "corrected_opposite": {
+    "mean": 0.42321434807044883,
+    "ci95": [
+     0.36993496622136596,
+     0.4820725745754643
+    ],
+    "n": 80
+   },
+   "corrected_perp_left": {
+    "mean": 0.41589424071799713,
+    "ci95": [
+     0.37018324055858026,
+     0.46347050414647717
+    ],
+    "n": 80
+   },
+   "feedback_opposite": {
+    "mean": 0.4367057202098774,
+    "ci95": [
+     0.37809726949987443,
+     0.4996007742922184
+    ],
+    "n": 80
+   },
+   "feedback_perp_left": {
+    "mean": 0.42173872900364506,
+    "ci95": [
+     0.37980593750707625,
+     0.4705998403772346
+    ],
+    "n": 80
+   },
+   "natural_gen": {
+    "mean": 0.13958473704814883,
+    "ci95": [
+     0.10021930127043677,
+     0.1854849942994361
+    ],
+    "n": 80
+   },
+   "natural_mix": {
+    "mean": 0.0027110760701758926,
+    "ci95": [
+     0.0,
+     0.007238924265062266
+    ],
+    "n": 80
+   },
+   "reverse_opposite": {
+    "mean": 0.23221705843203608,
+    "ci95": [
+     0.18385308158529523,
+     0.2849034372354301
+    ],
+    "n": 80
+   },
+   "reverse_perp_left": {
+    "mean": 0.20920416016076956,
+    "ci95": [
+     0.17052921377052668,
+     0.2523198338671187
+    ],
+    "n": 80
+   }
+  }
+ },
+ "token_level": {
+  "n_units": 18975,
+  "n_frames": 1600,
+  "generate_vs_stepwise_chunk_equal": 0.929375,
+  "all": {
+   "means": {
+    "normal": {
+     "amp": {
+      "mean": 0.22055335968379447,
+  

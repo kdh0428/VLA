@@ -1,0 +1,8 @@
+[plan] 1 scenes (A- 1, A+ 0), 17 rows per batched step
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  8.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  8.28s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[prog] 1/1 scenes ok=1 fail=0 units=3 unit_fail=0 4.2s/scene eta 0.0min
+[done] scenes ok=1 fail=0 units=3 unit_fail=0
+exit 0

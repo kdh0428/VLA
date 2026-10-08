@@ -1,0 +1,10 @@
+experiment,stage,group,n_units,n_clusters,unit_type,cluster_type,source,verified_from,note
+34,token_level,frames,1600,80,"frame (natural episode obs every 4 steps, t=0..76)","episode (task,seed)",outputs/cross_domain_temporal_replication/token_level/units.jsonl,raw,20 frames x 80 episodes
+34,token_level,units (all),18975,80,"(frame,d,dir)",episode,outputs/cross_domain_temporal_replication/token_level/units.jsonl,raw,"of 19,200 possible; 225 excluded (p==g or achieved dist outside [0.5d,1.5d]); exclusion per condition identical (all rows share unit)"
+34,token_level,normal_amplified subset,4185,,unit,episode,outputs/cross_domain_temporal_replication/token_level/units.jsonl,raw,post-hoc subset on Normal outcome
+34,token_level,motion subset (e>0),10542,,unit,episode,outputs/cross_domain_temporal_replication/token_level/units.jsonl,raw,units whose step-3 own token != R token
+34,closed_loop,per condition,80,80,"episode (task, seed 0-39)",episode,outputs/cross_domain_temporal_replication/closed_loop/episodes.jsonl,raw,9 conditions x 80 = 720; no exclusions; 40 per task
+35,closed_loop seed0-39,per config x mode,80,80,episode,episode (stratified by task),outputs/spatialvla_feedback_protection_ablation/rollouts/episodes.jsonl,raw,"6 configs x 4 modes x 80 + natural_gen 2x80 = 2,080"
+35,closed_loop ext seed40-119,"r1e4,r4e1 x 4 modes",160,160,episode,episode,outputs/spatialvla_feedback_protection_ablation/rollouts_ext/episodes.jsonl,raw,"1,280 (PROTOCOL said +640)"
+35,closed_loop pooled seed0-119,"r1e4,r4e1 x 4 modes",240,240,episode,episode,"outputs/spatialvla_feedback_protection_ablation/pooled_seed0_119/rollouts/episodes.jsonl (= rollouts r1e4/r4e1 + rollouts_ext, 1920/1920 identical)",raw,"1,920; identical to rollouts+ext; natural_gen only seed 0-39 (80)"
+35,comparison,A vs exp34,80,80,episode,episode,outputs/spatialvla_feedback_protection_ablation/rollouts/episodes.jsonl,raw,seed 0-39 only; exp 34 variable batch vs exp 35 fixed batch -> episode agreement 85-92.5%

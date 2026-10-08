@@ -1,0 +1,3 @@
+index, name, memory.used [MiB]
+0, NVIDIA GeForce RTX 3080 Ti, 771 MiB
+1, NVIDIA GeForce RTX 5090, 18053 MiB

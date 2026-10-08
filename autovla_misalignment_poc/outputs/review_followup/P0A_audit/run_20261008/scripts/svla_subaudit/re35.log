@@ -1,0 +1,40 @@
+{
+ "r1e4": {
+  "natural": 0.863,
+  "feedback": 0.65,
+  "corrected": 0.7,
+  "reverse": 0.863,
+  "natural_gen": 0.938
+ },
+ "r1e2": {
+  "natural": 0.85,
+  "feedback": 0.7,
+  "corrected": 0.688,
+  "reverse": 0.863
+ },
+ "r1e1": {
+  "natural": 0.85,
+  "feedback": 0.675,
+  "corrected": 0.688,
+  "reverse": 0.8
+ },
+ "r2e2": {
+  "natural": 0.825,
+  "feedback": 0.775,
+  "corrected": 0.775,
+  "reverse": 0.838
+ },
+ "r2e1": {
+  "natural": 0.875,
+  "feedback": 0.762,
+  "corrected": 0.688,
+  "reverse": 0.85
+ },
+ "r4e1": {
+  "natural": 0.825,
+  "feedback": 0.738,
+  "corrected": 0.75,
+  "reverse": 0.812,
+  "natural_gen": 0.8
+ }
+}
