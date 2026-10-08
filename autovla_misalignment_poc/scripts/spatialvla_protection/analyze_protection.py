@@ -210,8 +210,10 @@ def main() -> None:
     if base and os.path.exists(EXP34):
         old = {(r["cond"], r["task"], r["seed"]): r["success"] for r in map(json.loads, open(EXP34))}
         mp = {"natural": "natural", "feedback": "feedback_opposite", "corrected": "corrected_opposite", "reverse": "reverse_opposite"}
-        res["A_vs_exp34"] = {m: {"exp34": float(np.mean([old[(mp[m], *k)] for k in keys])), "now": base["success"][m]["mean"],
-                                 "episode_agreement": float(np.mean([old[(mp[m], *k)] == base["_S"][m][i] for i, k in enumerate(keys)]))}
+        ks = [(i, k) for i, k in enumerate(keys) if (mp["natural"], *k) in old]      # exp 34 has seeds 0-39 only
+        res["A_vs_exp34"] = {m: {"n": len(ks), "exp34": float(np.mean([old[(mp[m], *k)] for _, k in ks])),
+                                 "now": float(np.mean([base["_S"][m][i] for i, _ in ks])),
+                                 "episode_agreement": float(np.mean([old[(mp[m], *k)] == base["_S"][m][i] for i, k in ks]))}
                              for m in MODES}
     for R in res["configs"].values():
         R.pop("_per_ep"); R.pop("_S")
