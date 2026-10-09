@@ -254,3 +254,4 @@ Two families, each with Holm FWER control:
   - 1단계 seed key는 "0:{token}"이다.
 - **GPU 예산:** 측정 기반 재추정치는 9.35 GPU 시간이다(외부 프로세스와 GPU 공유). 사용자 재승인 여부를 아래에 기록한다.
 - **분석 스크립트 고정:** `scripts/review_followup/p1c/analyze_p1c.py`, sha256 60345dedfc9d3aeb14d21ec74590c6bb9a00a386b8962754f615be58b69cfc94.
+- GPU budget re-approved by the user on 2026-10-09: 9.35 GPU h (1.5x pause line 14 h); P1-C runs before P1-D.
