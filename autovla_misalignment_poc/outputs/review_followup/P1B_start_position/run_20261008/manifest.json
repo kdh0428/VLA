@@ -1,0 +1,172 @@
+{
+ "experiment": "P1B_start_position",
+ "written_utc": "2026-10-08T17:11:01Z",
+ "note": "",
+ "repo_head_VLA": "b212637e50b27cec306b78539231cd847a1c7e76",
+ "repo_head_autovla": "ba34eed74ce6729e7986592d0e66cbaca397b4fa",
+ "inputs": {
+  "ed_records": "/root/VLA/autovla_misalignment_poc/outputs/equal_distance_perturbation/records.jsonl",
+  "ed_records_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+  "full_records": "/root/VLA/autovla_misalignment_poc/outputs/full_extract/records.jsonl",
+  "action_history_records": "/root/VLA/autovla_misalignment_poc/outputs/action_history_causal/records.jsonl",
+  "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+  "config_sha256": "8eea938f70f945f45fe70d9c528355a4dd790893a7c2d6f204c6f39ed9918caf",
+  "checkpoint": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+  "checkpoint_bytes": 16292664780
+ },
+ "gpu_env": {
+  "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+  "CUDA_VISIBLE_DEVICES": "1",
+  "device": "NVIDIA GeForce RTX 5090"
+ },
+ "scripts_review_followup_p1ab": {
+  "p1_common.py": "6382306aaa32c38acd662f91d600a7a27fbe5d2e5e95c6bdb10400f0cf05aa77",
+  "p1_manifest.py": "e1a2d0f7a43ea808d5220ff75b7a9bb1d704452e02a29f3cd0e0f63904d26ac9",
+  "p1_reference.py": "42b75ecd6512719305a2913493851ae77cb86520af8a946bd7e9ed9a597ddd38",
+  "p1_stats.py": "f11f565d125b64a4894c6f828e7849fd1d7244bdd0364a5602219055bde35c41",
+  "p1a_analyze.py": "7bbc6a71d9d400bce744d84b0e107fbb60076a6521625525c7ba5ff81714d0c8",
+  "p1a_gt_free_reference.py": "f5470a4d911d03c38c33626f3cbe421823e51aaed9495f322e99436f9cd44a61",
+  "p1b_analyze.py": "6d624b9ef4d98dd4826cf68b348c047df28040d4c95445cca22b70a27b86580f",
+  "p1b_start_position.py": "1aad392abae221605bb712ce3891ac50704bc186ef9b78dc05c23ca54834ef7f",
+  "r8r9_build_units.py": "6c53a10140f933ab5e319d6e5c8234b53d8936514b2206882acce701b66fb947",
+  "r8r9_run.sh": "212547c47a28d0d2e8c3d4a254000d7006ff0665ac4e28b143f96834e9460fed",
+  "run_all_main.sh": "6bae5bed2c44e5d7d2effd90bc1a7168e0c8d4fa721975cd402a960dd5769b26",
+  "smoke_p1.sh": "85921a309d851db14fe9021c9668174ea85510b4a64aebc3b26f8dac16c18ec9",
+  "smoke_p1a_fixedpos.sh": "0ed2223e821f6bed540c584b7b57dad41120e0db57613f825d0b1e406b8ce3de"
+ },
+ "original_scripts_sha256": {
+  "action_history_causal.py": "221c5c932c15928b4262e4f292f0cc6ac0b5ba4ce1d181e64fc9746c63c68dc7",
+  "analyze_action_history.py": "42259869e54346b3703c1af423e974014b3a7346bb0c426b329d441c57c96804",
+  "prev_action_state_patching.py": "ce8f15d007522ecb518dd6e8420007397f1d794fa3ecbac12c1e85d72c67f68d",
+  "temporal_feedback_window.py": "2e5ece5002a1cfba633c1011c5176714c208e6cc42caac1896c773f970608ce4",
+  "analyze_prev_action_state_patching.py": "57b3470c27f372f2c5ab8a6a6af7031fcafd68823e7d8f66aee94a6d6b94f3fc",
+  "analyze_temporal_feedback_window.py": "844777eb9f371c0a0de3fcde5941a855bd40b8f1fbf7cb22a9daf2b21c19c395",
+  "equal_distance_perturbation.py": "1dcf612c85898c8e6633a867ff9184a3dbac74b032f8787496f74a5f8fa254a0"
+ },
+ "files": {
+  "condition_summary.csv": {
+   "sha256": "4098f506d20557265e81d073928dde49d39c64fd41ff9c885764f49f0ff9f017",
+   "bytes": 136987
+  },
+  "deviation_curves.csv": {
+   "sha256": "eedc1e1236c32f009ded298bf1bf7e44bdaa765cb25a69016bcf932bcbae9757",
+   "bytes": 130064
+  },
+  "free_horizon_rediverge.csv": {
+   "sha256": "732bc11b828863e779d1f88f7c0a7f42970daff507a45ee8171e3a8520ed7621",
+   "bytes": 23834
+  },
+  "free_horizon_units.parquet": {
+   "sha256": "e4046158cc75ff8d3ef9a7c0a749d7b13dcf3e7985f54b262d5c4c7e5c0ccb48",
+   "bytes": 1653492
+  },
+  "intervention_trace.jsonl": {
+   "sha256": "79831c7f9e7a19acd1219ce82faf52293261e9da06184dfc14296272ad8a0b9b",
+   "bytes": 1481122
+  },
+  "loo_logs.csv": {
+   "sha256": "cd40eb265270e9dda65cd722c19fc8112dee7c101372a999cd438a5dae054b8f",
+   "bytes": 7206
+  },
+  "manifest_prerun.json": {
+   "sha256": "cfea01e300116c4f728f52f20b063eff8c71bd757490fb14e092beca0b2bc1cc",
+   "bytes": 5073
+  },
+  "paired_effects.csv": {
+   "sha256": "3a325080bfeddc3d85ef07f5bc5c5d6c06255a1dca712ceaea54409c8212c8f7",
+   "bytes": 563985
+  },
+  "protocol.md": {
+   "sha256": "123a67f4fdfafb4fd5ac18c1c727a5d0e513ac1521d7fe9c6bf4bb19d71ac9fd",
+   "bytes": 12252
+  },
+  "trace_verification.json": {
+   "sha256": "ad5a1f2d37835de5a0f409542c529daf23e516e4b2113842692d78ade364f58d",
+   "bytes": 59
+  },
+  "units.parquet": {
+   "sha256": "f3aeaf807c04da89530f25331e7ad8c20676e99fbe412fc90b16a047e614ba0c",
+   "bytes": 3920434
+  },
+  "raw/errors.jsonl": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  "raw/intervention_trace.jsonl": {
+   "sha256": "79831c7f9e7a19acd1219ce82faf52293261e9da06184dfc14296272ad8a0b9b",
+   "bytes": 1481122
+  },
+  "raw/records.jsonl": {
+   "sha256": "17b738dd0abe25eaf8aa9d2fea46ecafc4c307ae47fcc543826bd118b87511ca",
+   "bytes": 68033429
+  },
+  "raw/run_meta.json": {
+   "sha256": "006c44cd5df3e8501482e9775d751431e7ebcefc28170cea95460e2d5a8c0575",
+   "bytes": 6741
+  },
+  "logs/p1b.log": {
+   "sha256": "09bddb88066f879465730841ce9a281948086044c3cb231fd183f4161dccfa19",
+   "bytes": 3027
+  },
+  "logs/p1b.log.attempt1": {
+   "sha256": "09bddb88066f879465730841ce9a281948086044c3cb231fd183f4161dccfa19",
+   "bytes": 3027
+  },
+  "logs/p1b_analyze.log": {
+   "sha256": "a76881243e7a1949c04889a32a358b14375620afb5cc5101fa45cc272d599074",
+   "bytes": 115
+  },
+  "smoke/p1b.log": {
+   "sha256": "512f2a452cbe6ce05732ebeae70122e579dc78b3a09c9c7b967a95d4a29cd5fa",
+   "bytes": 2008
+  },
+  "smoke/analysis/condition_summary.csv": {
+   "sha256": "d3c90c8f92f9cd3c690defe72d61399a1cc525e034275c53b981d3b8e6a340b2",
+   "bytes": 45413
+  },
+  "smoke/analysis/deviation_curves.csv": {
+   "sha256": "8c24a1a2706c3244e0be59cbf085e7826c7edff26a21e501b613e4976b64e5b8",
+   "bytes": 63001
+  },
+  "smoke/analysis/free_horizon_rediverge.csv": {
+   "sha256": "621dd703aeb091b0fb7b8bc3399d3916c13d12dd337b64dea0df2ef6aa568a40",
+   "bytes": 3763
+  },
+  "smoke/analysis/free_horizon_units.parquet": {
+   "sha256": "f280f3e56b84e0ee7126fd95502cafe71be625c01ed6b336f47f2a3cc2205eda",
+   "bytes": 21701
+  },
+  "smoke/analysis/loo_logs.csv": {
+   "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+   "bytes": 1
+  },
+  "smoke/analysis/paired_effects.csv": {
+   "sha256": "0fdc60c086c9ab997fdf9440c09cf309ed2037e1108024580e422277cb842638",
+   "bytes": 134410
+  },
+  "smoke/analysis/trace_verification.json": {
+   "sha256": "56da5ace5faffdf904b4f8c4f3d27b0e9c57154eda20b99485042c4eda9c06da",
+   "bytes": 56
+  },
+  "smoke/analysis/units.parquet": {
+   "sha256": "98a356b6066796b3e6901f923bc406ca4ca55d7b0d1721f768c185e8e6ad259f",
+   "bytes": 41610
+  },
+  "smoke/raw/errors.jsonl": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  "smoke/raw/intervention_trace.jsonl": {
+   "sha256": "d97aa4616730c186c6bf10736c11bc71a854612f13ad61fe123c554c6994a3f8",
+   "bytes": 209156
+  },
+  "smoke/raw/records.jsonl": {
+   "sha256": "cdc93dcd2af01eb37568b0c7cd5f072ba68b5ad6173f65a29a290c08a64e5f09",
+   "bytes": 210060
+  },
+  "smoke/raw/run_meta.json": {
+   "sha256": "904150634df2803931ce7d70cd0d1456d9873c3d8b4494b6d3a06102b22be773",
+   "bytes": 6745
+  }
+ }
+}
