@@ -255,3 +255,15 @@ Two families, each with Holm FWER control:
 - **GPU 예산:** 측정 기반 재추정치는 9.35 GPU 시간이다(외부 프로세스와 GPU 공유). 사용자 재승인 여부를 아래에 기록한다.
 - **분석 스크립트 고정:** `scripts/review_followup/p1c/analyze_p1c.py`, sha256 60345dedfc9d3aeb14d21ec74590c6bb9a00a386b8962754f615be58b69cfc94.
 - GPU budget re-approved by the user on 2026-10-09: 9.35 GPU h (1.5x pause line 14 h); P1-C runs before P1-D.
+
+## Amendment 2 (2026-10-10): H8 기술적 실패와 재실행
+- **무엇이 실패했나:** 본 실행의 H8(prev_action_state_patching, 93행 batch) 단계에서 2,436 단위 전부가 CUDA OOM으로 실패했다(units = 0, unit_fail = 2436). 원인은 RTX 5090을 함께 쓰는 외부 프로세스가 메모리를 차지한 것이다.
+- **왜 진행됐나:** launcher의 오류율 정지 규칙이 1단계에만 적용되어, 이 실패에도 run이 멈추지 않았다.
+- **이미 실행된 분석:** 동결된 분석 스크립트가 H8 없이 한 번 실행됐다(2026-10-10 08:3x UTC). 이때 RN과 DM 결과는 열람됐다. RF는 계산되지 않았고 분모는 0이었다.
+- **조치**
+  1. 실패한 출력은 `mech/_failed_attempt1_prev_action_state_patching/`로 옮겨 보존한다.
+  2. 선택된 353 장면의 CAM_F0/L1/R1을 다시 받아 H8만 같은 명령으로 재실행한다(GPU 대기와 재시도 포함).
+  3. 같은 동결 스크립트(sha256 60345ded…)로 분석을 다시 실행해 최종 결과로 삼는다.
+- **판정 규칙은 그대로다.** family는 사전 등록대로 {RN, RF, DM}이고, Holm m = 3이다.
+- **첫 분석 산출물 보존:** H8 없이 돌린 첫 분석의 산출물은 `analysis_incomplete_noH8/`로 옮겨 보존하고, 결과 보고에 함께 적는다.
+- 이 재실행은 기술적 실패에 따른 것이며, 결과에 근거한 결정이 아니다.
