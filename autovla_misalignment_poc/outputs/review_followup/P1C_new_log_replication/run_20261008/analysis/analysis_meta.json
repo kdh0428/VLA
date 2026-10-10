@@ -1,0 +1,17 @@
+{
+ "script": "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1c/analyze_p1c.py",
+ "script_sha256": "60345dedfc9d3aeb14d21ec74590c6bb9a00a386b8962754f615be58b69cfc94",
+ "run": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008",
+ "masked": false,
+ "n_unit_rows": 60900,
+ "blocks_present": [
+  "H32",
+  "H7",
+  "H8",
+  "H9"
+ ],
+ "n_selected": 353,
+ "flagged_logs": [],
+ "bootstrap_B": 10000,
+ "seed": 20261008
+}

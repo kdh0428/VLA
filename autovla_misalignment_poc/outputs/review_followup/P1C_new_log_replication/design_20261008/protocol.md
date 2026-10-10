@@ -267,3 +267,4 @@ Two families, each with Holm FWER control:
 - **판정 규칙은 그대로다.** family는 사전 등록대로 {RN, RF, DM}이고, Holm m = 3이다.
 - **첫 분석 산출물 보존:** H8 없이 돌린 첫 분석의 산출물은 `analysis_incomplete_noH8/`로 옮겨 보존하고, 결과 보고에 함께 적는다.
 - 이 재실행은 기술적 실패에 따른 것이며, 결과에 근거한 결정이 아니다.
+- 표기 정정(2026-10-10): 수정 2에서 "RF"라고 쓴 대비는 사전 등록 §8과 analyze_p1c.py의 **RV**(Reverse−Full, Normal-branch token injection)와 같은 것이다. 분석과 판정에는 영향이 없다.
