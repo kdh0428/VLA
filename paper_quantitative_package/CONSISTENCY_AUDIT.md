@@ -1,5 +1,7 @@
 # CONSISTENCY_AUDIT — 요약 문서와 원 결과의 불일치 점검
 
+> **2026-10-13 개정 안내.** 이 감사는 2026-10-08 시점의 요약 문서 대 원 결과 대조 기록입니다(역사 기록으로 유지). 이후의 판정 변경(drive 군집 p, 반복 Recent-GT, 3 step ≈ 90%, 실험 35 −6.2%p 철회 등)은 `autovla_misalignment_poc/outputs/review_followup2/CLAIM_EVIDENCE_MATRIX.md`와 `CONTRADICTION_CHECK.md`를 보십시오.
+
 ## 검사 범위
 - 저장소에 논문 초안 파일은 없습니다(`*.tex`, `*paper*`, `*draft*` 검색). 그래서 현재 "main summary"인 다음 두 문서를 원 결과와 대조했습니다.
   - `/root/VLA/EXPERIMENT_SUMMARY.md` (ES)

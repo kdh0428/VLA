@@ -1,5 +1,7 @@
 # SOURCE_MAP — 논문 수치 출처 지도
 
+> **2026-10-13 개정 안내.** 2026-10-13 수치의 출처는 `autovla_misalignment_poc/outputs/review_followup2/`(A: `A_autovla_cluster/run_20261013`, `A_spatialvla_states/run_20261013`; B: `B_spatialvla_direct/run_20261013`; C: `C_baseline_window/run_20261013`)이며 재생성 명령은 같은 디렉터리의 `RUN_COMMANDS.md`입니다. 아래의 원 출처·검정 표기(단위 수준 McNemar 등)는 2026-10-08 기록으로 남깁니다.
+
 이 문서는 논문에 쓰는 모든 수치를 원 결과 파일까지 거슬러 갈 수 있게 정리한 것입니다.
 - 각 항목에 원 결과 파일, raw data, 사전 등록·분석 commit, N, seed, GPU, 지표 정의, 검정, cluster 단위, 통계를 만든 스크립트를 적었습니다.
 - 아래 네 절은 각 영역 담당 추출 결과를 그대로 합친 것입니다.

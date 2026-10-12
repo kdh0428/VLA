@@ -1,5 +1,7 @@
 # Experiment 35 — results (SpatialVLA feedback-protection ablation)
 
+> **2026-10-13 개정 안내.** 아래 표는 원 episode 수준 분석입니다. 초기 상태 군집 재분석(`autovla_misalignment_poc/outputs/review_followup2/DIRECT_EFFECTS.md`)에서 r4e1 R−N −6.2%p는 p = 0.14(primary) / 0.26(physical)로 비유의이고 P1-D에서 재현되지 않아(+1.2%p [−5.6, +8.0]) **철회**했습니다. r1e4 R−N의 ±10%p 동등성도 군집 후 사라집니다. "ensemble 보호/흡수" 주장도 삭제(P1-D H2). m 단위 궤적 발산은 실행 명령 누적값입니다. 현재 수치는 `PAPER_NUMBERS.md` Claim 17·18과 `tables.tex` Table 6·7을 따릅니다.
+
 **출처**
 - 사전 등록: commit **8fc20bf** (`O/spatialvla_feedback_protection_ablation/PROTOCOL.md`).
 - 분석 스크립트: `analyze_protection.py` (commit 44266eb, 결과를 보기 전).
@@ -75,7 +77,7 @@ seed 0–39 보조 설정의 r1e4 대비 차이:
 → **Partial support.**
 
 ## 논문 문장
-- **써도 되는 문장:** "Lengthening the replanning interval from 1 to 4 steps makes context-induced trajectory deviations larger and longer-lived (reverse vs. natural: +1.8 cm mean position error, p = 1e-10; realignment +11 steps), but task success changes little: only the reverse condition at 4-step replanning reaches −6.2 pp [−12.1, −1.2] (p = 0.04), and the difference from official execution is not significant."
+- **써도 되는 문장:** "Lengthening the replanning interval from 1 to 4 steps makes context-induced trajectory deviations larger and longer-lived (reverse vs. natural: +1.8 cm mean position error, p = 1e-10; realignment +11 steps), but task success changes little: only the reverse condition at 4-step replanning reaches −6.2 pp [−12.1, −1.2] (p = 0.04), and the difference from official execution is not significant." [개정 2026-10-13: 이 문장은 쓰지 않음 — −6.2%p는 초기 상태 군집 후 비유의·P1-D 미재현으로 철회. PAPER_NUMBERS Claim 17의 문장 사용]
 - **과장이 되는 문장:**
   - "Temporal ensembling protects against feedback."
   - "Removing protections makes SpatialVLA fail like AutoVLA."

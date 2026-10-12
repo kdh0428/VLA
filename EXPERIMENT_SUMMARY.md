@@ -1,46 +1,62 @@
 # Driving VLA 실패 기전 연구 — 전체 실험 총정리
 
-최종 갱신: 2026-10-12 (후속 검증 P0–P1 추가 §6e, 논문 수치 패키지 `paper_quantitative_package/`). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
+최종 갱신: 2026-10-13 (review_followup2 사후 재분석 반영: drive·초기 상태 군집, SpatialVLA 직접 효과, 외삽 baseline·교정 window 재점검; §1·§3·§6b–§6e·§9·§10 개정).
+이전 갱신 2026-10-12 (후속 검증 P0–P1 §6e, 논문 수치 패키지 `paper_quantitative_package/`). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
 누적 결론 문서는 [CONCLUSIONS.md](CONCLUSIONS.md), 새 서버 인계는 [HANDOFF.md](HANDOFF.md)입니다.
+주장별 유지·축소·삭제 판정은 `autovla_misalignment_poc/outputs/review_followup2/CLAIM_EVIDENCE_MATRIX.md`, 새 실험 미수행 근거는 같은 디렉터리의 `GAP_DECISION.md`, 자료 감사는 `DATA_AUDIT.md`를 따릅니다.
 
 - 주 대상: **AutoVLA** (Qwen2.5-VL-3B, action codebook 2,048 token, NAVSIM/nuPlan). 비교: ORION (Bench2Drive, 실험 1), **OpenVLA-7B** (LIBERO, 실험 28), **Impromptu VLA 3B** (navtest, 실험 33), **SpatialVLA-4B** (SimplerEnv 로봇 조작, 실험 34).
-- 통계: 별도 표시가 없으면 [ ]는 log(또는 clip·과제) 단위 cluster bootstrap 95% CI, 이진 지표 McNemar, 연속 지표 Wilcoxon,
-  navhard는 log 단위 paired sign-flip permutation과 그룹 단위 Wilcoxon을 함께 보고했습니다.
+- 통계(2026-10-13 개정):
+  - AutoVLA·Impromptu 기전 대비의 독립 단위는 **drive**입니다(A− 16 log = 13 drive, Impromptu 28 log = 20 drive, P1-C eval 24 drive). [ ]는 drive cluster bootstrap 95% CI, p는 **drive 합에 대한 exact sign-flip**입니다. 13 drive에서 가능한 최소 p는 2/2^13 = 2.4e-4, 20 drive에서는 1.9e-6입니다. 단위 수준 McNemar p(8e-42, 6.7e-31, 2e-31, 7e-261 등)는 표본을 과대 계산한 값이라 쓰지 않습니다.
+  - SpatialVLA closed loop의 독립 단위는 **과제별 초기 상태 cluster**입니다(coke는 seed마다 고유; move_near는 지시문 포함 primary 29/53/120개, **물리 배치 10개**). p·CI는 cluster sign-flip(역산 CI)이고 primary와 physical 두 clustering을 함께 보고합니다.
+  - sign-flip은 drive(또는 cluster) 합이 H0에서 독립·0에 대칭이라는 가정 아래의 조건부 검정이며, 무작위 배정 검정이 아닙니다.
+  - 그 밖의 표(실험 1–4, 12–31 등)는 원 표기(log·clip·과제 단위 cluster bootstrap, McNemar/Wilcoxon, navhard log 단위 sign-flip)를 그대로 둡니다.
 - 재현성 규칙: held-out·검증 실험은 결과를 보기 전에 프로토콜/사전 등록을 커밋했고(커밋 해시 표기), threshold와 규칙은 결과를 보고 바꾸지 않았습니다.
+  예외와 시점은 `review_followup2/DATA_AUDIT.md` §4·§7에 정리했습니다: AutoVLA 기전 실험 4–11은 사전 등록이 없는 탐색 실험이고, P1-C는 pilot 기준 완화(수정 1, 평가 자료 전)와 H8 OOM 재실행(수정 2, RN·DM 결과 열람 후)이 있었습니다.
   기존 결과 파일은 덮어쓰지 않았습니다. 실험 25 이후의 모든 새 GPU 작업은 RTX 5090만 사용했습니다.
+- 표기: **[사전 등록]** = 결과 전 commit된 판정, **[사후]** = 결과를 본 뒤의 재분석(review_followup2 A–C 포함).
 
 ---
 
 ## 1. 한눈에 보는 결론
 
 1. **실패는 perception보다 결정·실행 결합 단계에서 나고**, CoT 텍스트는 action과 느슨하게 결합되어 있습니다(실험 1–4).
-2. **작은 첫 action-token 편차가 궤적 실패로 증폭되는 기전은 1-step autoregressive feedback**입니다: 직전에 생성한 action token이 residual stream을 통해
-   다음 token을 조건화하고, 직전 token 1개만 GT로 바꿔도 효과의 93%가 사라집니다(실험 5–8). 첫 이탈 직후 2–4 step이 임계 window입니다(실험 9–10).
-3. 그 직전 token에서 결과를 결정하는 것은 embedding이 아니라 **motion**, 그중에서도 **방향**입니다. 같은 크기 오차라도 자기 이탈과 같은 방향이면 증폭되고
-   반대 방향이면 대부분 회복됩니다(실험 11, 32).
+2. **직전 action 문맥이 이후 생성을 인과적으로 바꿉니다**(AutoVLA, 실험 7·8은 탐색 실험; R8R9 복구; P1-C 새 drive [사전 등록]).
+   - **매 생성 step 직전 위치를 GT로 바꾸는 반복 개입**(Recent-GT; 단위당 평균 6.8회 적용, 실제 token 변경 4.3회)이 증폭을 **−39.8%p [−49.0, −29.9]** 줄이고, 자기 이전 action(별도 Normal 행의 embedding)을 다시 넣으면 **+28.6%p [+20.9, +36.1]** 복원됩니다(13 drive, 두 대비 모두 exact sign-flip p = 2.4e-4 = 13 drive의 최소값, Holm 7.3e-4) [사후 drive 재분석].
+   - 기전 실험과 drive가 겹치지 않는 **새 24 drive**(P1-C)에서 재현: 실패 조건부 RN −34.2%p, RV +26.8%p; 모집단 −4.1 / +3.6%p [사전 등록]. 단 day-vehicle 10개는 공유합니다.
+   - "직전 token 1개로 93%"는 **반복 교정이 full GT-history 교정 효과의 92.9% [89.4, 99.1]**를 회복한다는 뜻입니다(분모 = GT-history 효과; Normal 증폭률 대비로는 85%). 한 번의 1-token 교정이 아닙니다.
+   - 교정 길이: 연속 3개 문맥 step 교정이 full-history 효과의 **약 90% [81, 99]**를 회복합니다(1/2/3/4 step = 47 / 77 / 90 / 96%; R9). "2–4 step이면 90%"는 틀린 표현입니다. 교정 길이와 해제 후 남은 horizon이 함께 변합니다.
+   - **초기 위치 특수성(early critical window)은 근거가 없습니다**: 같은 길이의 교정을 첫 이탈 직후와 2 step 뒤에 넣은 차이는 w = 1/2/3에서 +10.7 / +4.3 / +0.5%p로 모두 비유의입니다(P1-B [사전 등록], 12 drive).
+3. 그 직전 token에서 embedding 근접보다 **motion**이 중요하고(실험 11), 방향 오답이 크기 오답보다 해롭습니다(실험 32).
+   - GT와 motion이 가장 가까운 다른 token은 GT token과 차이가 작고 비유의합니다(+0.8%p [−1.6, +6.6]). 그러나 **±5%p 동등성은 성립하지 않습니다**(TOST p = 0.09). "identity와 무관/GT와 같다"로 쓰지 않습니다.
+   - 방향 − 크기: 개발 13 drive에서 +9.9%p [+3.9, +21.0], p = 0.0056이지만, **새 drive(P1-C)에서는 같은 방향 +6.2%p, p = 0.073으로 결론이 나지 않았습니다**(사전 등록 판정 inconclusive). 일반화 주장은 하지 않습니다.
+3b. **GT 없는 action-context 효과(AutoVLA 한정, P1-A [사전 등록])**: GT 정보 없이 문맥 token 하나만 교란해도 이후 local action이 +0.57 m/seg 변하고, 순수 좌표 누적(기하 baseline)보다 endpoint가 +4.37 m [+3.32, +5.19] 더 움직입니다(13 drive, Holm 9.8e-4).
+   - 등속(constant-motion) 외삽 대비 초과 변화는 **실패 선택 층(A−)에서만** +2.35 m [+1.27, +3.19]이고, A+에서는 −0.52 m, 전체에서는 +0.20 m(p = 0.51)로 외삽과 구별되지 않습니다 [사후 C1]. "외삽을 넘는 일반적 자기증폭"은 삭제합니다.
+   - GT 없는 reference 교정(−3.50 m)은 모델 자신의 rollout과의 **일관성 회복**이며 GT 기준 실패를 줄이지 않습니다(A− 증폭 +19.7%p 악화).
 4. **다른 VLA(OpenVLA-7B)에서도 token 수준 feedback은 재현됩니다**: 한 step 안에서 첫 token을 8 bin 바꾸면 나머지 차원이 93%에서 그 이상 움직이고,
    이를 결정하는 것은 문맥에 들어간 이전 token입니다. 그러나 OpenVLA는 이전 action을 다음 step에 넣지 않아 feedback이 시간축으로 누적되지 않고,
    LIBERO 과제 실패에 대한 효과는 closed-loop 기저 변동(자연 재실행끼리도 결과 20% 불일치) 안에 있었습니다(실험 28).
-5. **시간 순서가 있는 action chunk를 autoregressive하게 생성하는 다른 VLA(Impromptu VLA 3B)에서는 시간축 증폭 기전까지 재현됩니다**(사전 등록 판정 Strong):
-   직전 waypoint 하나만 GT로 바꾸면 증폭 63.4 → 1.3%(98% 제거), 잘못된 직전 waypoint를 다시 넣으면 0 → 81.9%로 복원, 1/2/3/4-step 교정이 효과의
-   24/39/91/95%(AutoVLA 47/76/90/96%), motion이 GT와 가까우면 identity와 무관, 방향 오답이 크기 오답보다 해롭습니다. 다만 Impromptu는 작은 편차를
-   거의 흡수하지 못해(0.2 m 편차의 97%가 3배 이상 커짐) 궤적 수준의 안정 분기는 재현되지 않았습니다(실험 33).
-5b. **비-Qwen backbone·다른 domain(SpatialVLA-4B, Gemma2, 로봇 조작)에서는 token 수준 기전만 재현됩니다**(사전 등록 판정 Partial):
-   직전 action 교정으로 step-4 편차 −82%, 오차 있는 직전 action 재삽입으로 완전 복원, 1-step 교정이 효과의 87%. 그러나 closed loop에서
-   문맥만 교정해도 실패가 줄지 않고 문맥에만 교란을 넣어도 실패가 늘지 않아(재실행 불일치 13.8%), 실패는 실행된 action 자체에서 옵니다.
-   → feedback 구조는 driving/Qwen 특이가 아닌 일반적 token 수준 기전이지만, task 실패로 이어지는지는 chunk 길이·매 step 재계획·ensemble 같은 구조에 달려 있습니다(실험 34).
-5c. **실행 구조 ablation (실험 35, 사전 등록 판정 Partial support).**
-   - 재계획 간격을 4 step으로 늘리면(실행 action 중 step 2–4 비율 0.75) 문맥 feedback이 만든 궤적 오차가 커지고 오래 남습니다(+1.8 cm, p = 1e-10; 재정렬 +11 step).
-   - task 효과는 reverse −6.2%p(p = 0.04, 공식 설정과의 차이는 n.s.)뿐이고, 교정이 성공률을 회복시키지는 않았습니다.
-   - ensemble은 보호 장치로 작동하지 않았습니다. ensemble을 없애면 오히려 feedback 대 corrected의 궤적 차이가 커졌습니다.
-   - → 재계획 빈도가 feedback의 지속을 조절하는 것은 확인했지만, 그것만으로 driving 수준의 실패는 재현되지 않습니다.
-6. **불안정 rollout은 이탈 전에는 예측되지 않습니다**: 엔트로피·likelihood·margin·후보 합의·hidden-state probe 모두 이탈 전 AUROC 0.57–0.63(장면 내 0.50–0.65),
+5. **시간 순서가 있는 action chunk를 autoregressive하게 생성하는 다른 VLA(Impromptu VLA 3B)에서도 문맥 교정·재삽입 효과가 재현됩니다**(사전 등록 판정 Strong, 실험 33):
+   매 waypoint 생성마다 직전 문맥 waypoint를 GT로 바꾸면 증폭 63.4 → 1.3%(−62.2%p [−65.4, −59.1], 20 drive, exact sign-flip p = 1.9e-6 = 최소값), 자기 오차 waypoint를 다시 넣으면 0 → 81.9%.
+   - Impromptu의 Reverse는 **자기 branch의 오차를 다시 넣는** 처치이고, AutoVLA의 Reverse(별도 Normal 행 embedding 삽입)와 다른 처치입니다. 증폭 정의·효과 크기는 모델 간에 비교하지 않습니다.
+   - 절대 좌표 표현이라 GT 문맥 교정에는 GT 정보 누출이 섞입니다. GT 근접 waypoint ≈ GT(p = 0.87)도 동등성 검정이 아닙니다.
+   - Impromptu는 작은 편차를 거의 흡수하지 못해(0.2 m 편차의 97%가 3배 이상 커짐) 궤적 수준의 안정 분기는 재현되지 않았습니다.
+5b. **SpatialVLA-4B(Gemma2, 로봇 조작)에서는 token 수준 문맥 효과가 재현되고, 생성 action과 실제 TCP 궤적도 바뀌지만, 성공률 효과는 작은 범위로만 제한할 수 있습니다**(실험 34 Partial, 실험 35, P1-D [사전 등록]; 직접 효과 재분석 [사후]).
+   - token 수준: 직전 action 교정으로 step-4 편차 −82%, 교란 token 재삽입으로 복원(episode cluster p ≤ 5e-6; 초기 상태 군집 재분석은 하지 않음).
+   - closed loop: 문맥 교란은 생성 suffix token의 50–58%를 바꾸고 실제 TCP를 평균 2.7–6.0 cm 이동시킵니다(P1-D·실험 35; 실험 34의 "0.21–0.23 m"는 실제 TCP가 아니라 **실행 명령의 누적값**이며 실험 34에는 TCP 기록이 없습니다).
+   - 성공률 직접 효과(δR = R − N, δC = C − F): P1-D 공식 r1e4와 r4e1에서 **두 과제 평균(pooled)**은 ±10%p 동등(초기 상태 두 clustering, Holm)이지만 ±5%p 동등은 성립하지 않고, **과제별로는 CI 폭 18–29%p로 불확실**합니다. 실험 34/35 결과는 초기 상태 군집 후 모두 불확실입니다.
+   - 실행된 교란 자체는 성공률을 낮춥니다(C − N −11.7 ~ −22.9%p). 실패는 주로 실행된 action에서 옵니다.
+5c. **실행 구조 (실험 35 → P1-D).**
+   - 재계획 간격을 늘리면 문맥 교란이 만든 궤적 편차가 더 오래 남습니다. 문맥 교란 예산을 고정해도 R − N 궤적 면적 DiD +214 cm·step [+171, +255](P1-D H1 지지). 단 관측 갱신·문맥 reset·실행 노출이 함께 바뀌는 **복합 설정 효과**입니다.
+   - **실험 35의 "4 step 재계획에서 reverse가 실패를 늘린다(−6.2%p, p = 0.04)"는 삭제합니다**: 초기 상태 군집 후 p = 0.14(primary) / 0.26(physical)이고 P1-D에서 +1.2%p [−5.6, +8.0]로 재현되지 않았습니다.
+   - **"ensemble이 보호/흡수한다"는 주장도 삭제합니다**: 실행 교란량을 맞추면 ensemble 축 DiD +21 cm·step [−25, +68]로 사전 정의 ±100 범위 안이고 방향도 흡수 쪽이 아닙니다(P1-D H2). P0-C의 ensemble 감쇠는 실행 교란량 차이로 설명됩니다.
+6. **불안정 rollout은 이탈 전에는 약하게만 예측됩니다**: 엔트로피·likelihood·margin·후보 합의·hidden-state probe 모두 이탈 전 AUROC 0.57–0.63(장면 내 0.50–0.65),
    이탈 후 0.75–0.90입니다(실험 22, 31).
 7. **GT 없는 완화**: 참조로 조건화를 교정하면 정상 장면이 손해를 봐 순이득이 없고(실험 12–17), 모델 자신의 후보 중 확신도로 고르면 open-loop 실패율 −33%,
-   사전 등록 held-out PDMS +0.0095로 유의합니다(실험 20–21).
+   사전 등록 held-out PDMS +0.0095로 유의합니다(실험 20–21). 단 held-out은 dev와 **log만 분리되고 drive 22개를 공유**합니다(held-out 장면의 85%; "held-out logs, not drive-disjoint").
 8. **반응형 2단계 평가(NAVSIM v2 navhard 전체 225 그룹)에서는 확신도 선택의 이득이 작고 불안정**하며(+0.02, max log-lik은 사전 등록 절반에서 미재현),
    **현재 frame 안전 필터가 이득의 대부분**을 만듭니다(EPDMS 0.229 → 0.333, +0.105; 선택기를 더해 0.347–0.350). 필터 이득의 86%는 주행 가능 영역 제약이고,
-   진행도를 희생해 얻은 점수가 아닙니다(실험 25–27, 29).
+   진행도를 희생해 얻은 점수가 아닙니다(실험 25–27, 29). navhard 두 절반도 log만 분리되고 drive 16개를 공유합니다.
 9. **남은 병목은 후보 생성**입니다: 17개 후보 중 oracle을 골라도 EPDMS 0.405이고, token의 31%는 안전한 후보가 하나도 없습니다(실험 30).
 10. 연속 closed-loop(CARLA) 평가는 checkpoint·렌더링·디스크 제약으로 수행하지 못했습니다(P6).
 
@@ -56,15 +72,15 @@
 | 4 | Natural/Fast 기전 재검증 | late action formation, L35 MLP 지배 재현 | `outputs/natural_fast_mechanism/` |
 | 5 | 첫 mismatch 인과 | 첫 token 하나 교정으로 A− 장면 A+ 17 → 73% | `outputs/first_mismatch_causal/` |
 | 6 | 등거리 perturbation | 같은 크기 편차가 장면에 따라 증폭(45%)/회복으로 갈림 | `outputs/equal_distance_perturbation/` |
-| 7 | Action history 인과 | 직전 token 1개 교정이 효과의 93% (증폭 47 → 7%) | `outputs/action_history_causal/` |
-| 8 | Layer-wise state patching | 특정 layer가 아니라 residual 전체가 운반 | `outputs/prev_action_state_patching/` |
-| 9 | Temporal feedback window | 2–4 step 교정으로 효과의 90–96% | `outputs/temporal_feedback_window/` |
+| 7 | Action history 인과 | 매 step 직전 위치를 GT로 바꾸는 반복 교정이 증폭 47 → 7% (GT-history 효과의 93%; drive p = 2.4e-4) | `outputs/action_history_causal/` |
+| 8 | Layer-wise state patching | 특정 layer가 아니라 residual 전체가 운반 (원 raw 없음, R8로 복구) | `outputs/prev_action_state_patching/` |
+| 9 | Temporal feedback window | 1/2/3/4 step 교정이 효과의 47/77/90/96% (3 step ≈ 90% [81, 99]; 원 raw 없음, R9로 복구) | `outputs/temporal_feedback_window/` |
 | 10 | Horizon-controlled window | horizon 착시가 아님, 단 해제 후 감쇠 | `outputs/horizon_controlled_window/` |
 | 11 | 직전 token identity 분해 | embedding이 아니라 motion(codebook 기하)이 결정 | `outputs/prev_action_identity_decomposition/` |
 | 12–17 | GT 없는 참조로 조건화 교정 | 모델이 참조를 66–89% 따라가 정상 장면 손해, 배포 조건 순이득 없음 | `outputs/*reference_stabilization*/` |
 | 18–19 | Best-of-N 선택 | 조건화 대신 확신도 선택이 실패 장면을 구함 | `outputs/best_of_n_selection*/` |
 | 20 | 표본 확대 (새 log 56개) | rank-sum: A− 2.15 → 1.45%, FDE −36% | `outputs/expanded_best_of_n/` |
-| 21–24 | 사전 등록 held-out 52 log | PDMS +0.0095, 안전 필터 F1 +0.032 | `outputs/selection_validation/` |
+| 21–24 | 사전 등록 held-out 52 log (log 분리, drive 22개 dev와 공유) | PDMS +0.0095, 안전 필터 F1 +0.032 | `outputs/selection_validation/` |
 | – | 3080 Ti 결과 5090 재실행 | 결론 동일 | `outputs/gpu5090_reanalysis/` |
 | 25 | NAVSIM v2 navhard 절반 | F1 EPDMS +0.125 | `outputs/navhard_eval/` |
 | 26 | navhard 나머지 절반 사전 등록 + 전체 | F1 재현(+0.112), max log-lik 미재현 | `outputs/navhard_full_validation/` |
@@ -74,9 +90,9 @@
 | 30 (P3) | 후보 oracle 상한 | oracle 0.405 vs 최선 0.350, 병목은 생성 | `outputs/candidate_oracle/` |
 | 31 (P4) | 불안정 탐지 baseline | 이탈 전 AUROC 0.57–0.63(hidden probe 포함), 이탈 후 0.75–0.90 → 이탈 전에는 예측 불가 | `outputs/instability_detection_baselines/` |
 | 32 (P5) | previous-action motion semantics | 방향 오차가 크기 오차보다 해로움 | `outputs/motion_semantics_ablation/` |
-| 33 | **시간축 action-chunk VLA(Impromptu VLA 3B)에서 기전 재현** | correction 98%, reverse로 복원, 약 3 step window, 방향 > 크기 → Strong replication (궤적 수준 안정 분기는 미재현) | `outputs/cross_vla_temporal_replication/` |
-| 34 | **다른 backbone·domain(SpatialVLA-4B, Gemma2, SimplerEnv 로봇 조작)에서 기전 재현** | token: 교정 step-4 편차 −82%, reverse 완전 복원, 1-step 86% (RESULTS 표기 87%); closed loop: 교정·문맥 교란 모두 성공률 효과 없음 → Partial replication | `outputs/cross_domain_temporal_replication/` |
-| 35 | **SpatialVLA 실행 구조 ablation (재계획 간격 × ensemble)** | 4 step 재계획에서 문맥 feedback 궤적 오차 증가(+1.8 cm, p = 1e-10)·재정렬 지연; task는 reverse −6.2%p(p = 0.04)뿐, 교정 효과 없음, ensemble 보호 효과 없음 → Partial support | `outputs/spatialvla_feedback_protection_ablation/` |
+| 33 | **시간축 action-chunk VLA(Impromptu VLA 3B)에서 기전 재현** | correction 98%, 자기 오차 재삽입(Impromptu식 reverse)으로 복원, 약 3 step window, 방향 > 크기 → Strong replication (궤적 수준 안정 분기는 미재현) | `outputs/cross_vla_temporal_replication/` |
+| 34 | **다른 backbone·domain(SpatialVLA-4B, Gemma2, SimplerEnv 로봇 조작)에서 기전 재현** | token: 교정 step-4 편차 −82%, reverse 완전 복원, 1-step 86% (RESULTS 표기 87%); closed loop: 문맥 교정·교란의 성공률 효과는 검출되지 않음(초기 상태 군집 후 불확실, 동등성 미성립) → Partial replication | `outputs/cross_domain_temporal_replication/` |
+| 35 | **SpatialVLA 실행 구조 ablation (재계획 간격 × ensemble)** | 4 step 재계획에서 문맥 교란의 실제 TCP 궤적 편차 증가(+1.8 cm)·재정렬 지연; task 효과는 초기 상태 군집 후 모두 불확실(원 보고 reverse −6.2%p는 군집 후 p = 0.14, P1-D 미재현 → 삭제), 교정 효과 없음, ensemble 보호 효과 없음 → Partial support | `outputs/spatialvla_feedback_protection_ablation/` |
 | P6 | 연속 closed-loop (CARLA) | 현재 환경에서 수행 불가 (checkpoint·렌더링·디스크) | `outputs/continuous_closed_loop/STATUS.md` |
 
 (경로의 `outputs/`는 `autovla_misalignment_poc/outputs/`입니다.)
@@ -100,17 +116,20 @@
 
 ### 3.2 작은 첫 편차가 증폭되는 기전 (실험 5–10)
 
+실험 5–11은 사전 등록이 없는 탐색 실험입니다. 아래 p는 2026-10-13 drive 군집 재분석 값입니다(13 drive, exact sign-flip, 최소 p = 2.4e-4) [사후].
+
 | 실험 | 결과 |
 |---|---|
-| 5. 첫 mismatch 1-token 교정 | A− 장면 A+ 17.3 → 73.1% (+55.8%p), FDE 8.18 → 2.09 m |
-| 6. 같은 거리(8.8 mm) 대안 token | A− 장면 증폭 45.0% vs A+ 장면 4.8%; A− 장면의 71%에서 증폭·회복이 공존 → 장면 맥락이 결정 |
-| 7. 조건화 교정 | Normal 47.4% → Recent-GT(직전 1개만 GT) 7.1%, GT-history 4.1%; attention mask는 효과 없음 |
-| 8. layer patching (37 layer) | 어느 layer에서 patch해도 3.8–7.4%; 역방향 patch(자기 token embedding 1개 삽입)로 4.4 → 33.4% 복귀 |
-| 9. 교정 window | 1-step 47%, 2-step 76%, 3-step 90%, 4-step 96% (효과 대비) |
-| 10. horizon 통제 | 같은 free horizon에서도 1-step 62% vs 4-step 95% 회복; 해제 후 25–29% 재발산 |
+| 5. 첫 mismatch 1-token 교정 (출력 수준의 유일한 단발 교정) | A− 장면 A+ 17.3 → 73.1% (+55.8%p), FDE 8.18 → 2.09 m — per-unit raw 없음, cluster 재검정 불가 |
+| 6. 같은 크기 대안 token (perturbation 중앙값 0.129 m, 대안 간 거리 매칭 오차 중앙값 8.8 mm / 7.9%) | A− 장면 증폭 45.0% vs A+ 장면 4.8%; A− 장면의 71%에서 증폭·회복이 공존 → 장면 맥락이 결정 |
+| 7. 조건화 교정 (문맥만, 실행 출력은 모델 자신) | Normal 47.4% → Recent-GT 7.1%, GT-history 4.1%. Recent-GT는 **매 생성 step 직전 위치를 GT로 바꾸는 반복 개입**(단위당 6.8회, 실효 4.3회). Recent − Normal **−39.8%p [−49.0, −29.9]**(장면 가중), p = 2.4e-4, Holm 7.3e-4. attention mask 두 종: −1.4 / −3.3%p, 효과 검출 안 됨(동등성 미검정) |
+| 8. layer patching (embedding + 36 decoder layer) | 어느 site에서 patch해도 3.8–7.4%(원 summary; 원 raw 없음). Reverse(GT-history 문맥에 **별도 Normal 행**의 위치 k−1 embedding 삽입): R8 복구 run에서 Reverse − Full **+28.6%p [+20.9, +36.1]**, p = 2.4e-4, Holm 7.3e-4 |
+| 9. 교정 길이 (persistent window, 고정 위치) | 1/2/3/4 step = **47 [30, 62] / 77 [63, 88] / 90 [81, 99] / 96 [93, 100]%** of full-history 효과(R9, 분모 = 같은 run의 Normal − GT-history; drive CI). 3 step의 CI가 81–99%이고 f ≥ 0.9일 확률은 약 50%; 전체 CI가 90% 위인 것은 4 step부터. 해제 후 free horizon도 5.8 → 2.9 pose로 함께 줄어듭니다 |
+| 10. horizon 통제 | 같은 free horizon에서도 1-step 62% vs 4-step 95% 회복; 해제 후 25–29% 재발산 — per-unit raw 없음 |
+| P1-B. 시작 위치 [사전 등록] | 같은 길이 w의 교정을 s = 1(첫 이탈 직후) vs s = 3에 넣은 early − late: w1 +10.7 [−0.7, +20.6], w2 +4.3 [−2.6, +9.7], w3 +0.5 [−4.5, +3.1]%p, 모두 비유의(12 drive). ±10%p 동등성은 w3만 Holm 후 성립(w2는 보정 전만). 같은 해제 후 horizon으로 맞추면 연속 지표의 부호가 처리 방식에 따라 바뀝니다 [사후 C2] |
 
-→ **직전에 생성한 action token의 identity가 residual stream을 통해 다음 action을 조건화하는 1-step autoregressive feedback**이 증폭을 만듭니다.
-첫 이탈 직후 2–4 step이 임계 window이지만, 교정을 멈추면 서서히 재발산합니다.
+→ **직전 action 문맥이 다음 action 생성을 인과적으로 조건화**하고, 그 정보는 embedding에서 주입돼 residual로 운반됩니다(실험 8; layer별 동치는 summary 수준).
+교정 길이 효과는 크지만(1 → 3 step: 47 → 90%), **첫 이탈 직후 step이 특별하다는 근거는 없습니다**(P1-B). 교정을 멈추면 서서히 재발산합니다(실험 10, summary 수준).
 
 ### 3.3 그 identity의 무엇이 중요한가 (실험 11, 32)
 
@@ -118,16 +137,17 @@
 |---|---:|---:|
 | 자기 token | 47.1–47.9% | – |
 | GT | 7.7–7.9% | 100% |
-| GT와 motion이 가장 비슷한 다른 token (실험 11) | 8.5% | 99% |
+| GT와 motion이 가장 비슷한 다른 token (실험 11) | 8.5% | 99% (GT 대비 +0.8%p [−1.6, +6.6]; ±5%p 동등성 미성립, TOST p = 0.09) |
 | 자기와 motion이 비슷한 다른 token (실험 11) | 43.8% | 8% |
 | **방향 정답 + 크기 오답** (실험 32) | 17.3% | 76% |
 | **크기 정답 + 방향 오답** (실험 32, GT와의 거리는 더 작음) | 26.3% | 54% |
 | **같은 거리 오차를 GT 반대편에** (실험 32) | 13.7% | 85% |
 | 크기만 맞춘 무작위 (실험 32) | 19.2% | 71% |
 
-- embedding 근접은 motion을 고정하면 효과가 없고(실험 11), **motion 중에서도 방향(횡방향·heading)이 크기보다 중요**합니다:
-  방향 오답 − 크기 오답 = 증폭 +9.0%p [+3.1, +18.7], FDE +1.21 m (A−); 정상 장면에서도 방향 오답은 증폭 4.3 → 8.6%, 크기 오답은 3.7%로 무해.
-- 같은 크기의 오차라도 모델 자신의 이탈과 반대 방향이면 증폭이 47.9 → 13.7%로 줄어듭니다 → **자기 이탈 방향을 확인해 주는 직전 action이 feedback을 자기 강화**합니다.
+- embedding 근접은 motion을 고정하면 효과가 검출되지 않고(실험 11), GT 근접 motion token은 GT token과 차이가 작고 비유의합니다. 그러나 **동등성은 성립하지 않으므로**(drive 균등 가중에서는 90% CI [+0.2, +10.4]로 GT 근접 token이 약간 나쁠 수 있음) "identity와 무관/GT와 같다"로 쓰지 않습니다 [사후 drive 재분석].
+- **방향 오답 − 크기 오답** = 증폭 +9.9%p [+3.9, +21.0](장면 가중, 13 drive), p = 0.0056, Holm 0.0056, FDE +1.22 m (A−); 가중 방식에 민감합니다(unit +9.0, drive 균등 +15.5%p). 정상 장면에서도 방향 오답은 증폭 4.3 → 8.6%, 크기 오답은 3.7%.
+- **새 drive(P1-C, 18 drive)에서는 +6.2%p [+0.6, +12.1], sign-flip p = 0.073으로 사전 등록 판정 "결론 안 남"**입니다(bootstrap CI만 보고 "효과 있음"으로 쓰지 않음). 따라서 방향 > 크기는 **개발 drive에서의 결과**로 한정합니다.
+- 같은 크기의 오차라도 모델 자신의 이탈과 반대 방향이면 증폭이 47.9 → 13.7%로 줄어듭니다(달성 거리는 약 11% 작음) → 자기 이탈 방향을 확인해 주는 직전 action이 feedback을 강화한다는 해석과 일치합니다(개발 drive).
 
 ---
 
@@ -139,11 +159,11 @@
 
 | 데이터 | 규칙 | 결과 |
 |---|---|---|
-| 새 log 56개 (실험 20, 4,563 장면) | rank-sum (엔트로피 순위 + log-lik 순위) | A− 2.15 → 1.45% (−0.70%p [−1.07, −0.33], p = 4e-4), FDE 0.76 → 0.48 m |
-| 사전 등록 held-out 52 log (실험 21, 4,814 장면) | rank-sum | PDMS 0.8893 → 0.8988 (+0.0095 [+0.0046, +0.0148]), 충돌 0.56 → 0.23% |
+| 새 log 56개 (실험 20, 4,563 장면; PoC 기전 집합과 drive 13개 공유) | rank-sum (엔트로피 순위 + log-lik 순위) | A− 2.15 → 1.45% (−0.70%p [−1.07, −0.33], p = 4e-4), FDE 0.76 → 0.48 m |
+| 사전 등록 held-out 52 log (실험 21, 4,814 장면; **log 분리, dev와 drive 22개 공유**, drive-disjoint 부분은 7 log / 6 drive뿐이고 재계산하지 않음) | rank-sum | PDMS 0.8893 → 0.8988 (+0.0095 [+0.0046, +0.0148]), 충돌 0.56 → 0.23% |
 | 같은 held-out (실험 24) | rank-sum + 현재 frame 안전 필터(F1) | PDMS 0.9209 (+0.0315 [+0.0234, +0.0410]), 충돌 0.10% |
 
-- 실험 22: 선택된 후보와 버려진 후보는 **이탈 전 엔트로피가 같고(차이 −0.016, 장면 내 AUROC 0.51) 이탈 후에만 갈라집니다(−0.40)**.
+- 실험 22: 선택된 후보와 버려진 후보는 **이탈 전 엔트로피 차이가 작고(−0.016 [−0.023, −0.010], CI는 0을 제외; 장면 내 AUROC 0.51; 동등성은 검정하지 않음) 이탈 후에 크게 갈라집니다(−0.40)**.
   rank-sum은 장면 안에서 증폭 rollout을 AUROC 0.85–0.87로 구별합니다.
 - 실험 23: 후보 8개에서 이득의 85%, 12–16에서 포화; N 16 추론 비용 1.2–1.3배(batch 디코딩).
 - 5090 재실행: 3080 Ti로 돌린 모든 run을 5090에서 다시 해도 held-out rank-sum +0.0099, F1 +0.0316으로 같습니다.
@@ -167,7 +187,7 @@
 | 필터 + max log-lik | 0.350 | +0.122 [+0.101, +0.142] | 141 / 33 |
 | oracle (17개 중 최고, 분석용 상한) | 0.405 | +0.177 [+0.152, +0.201] | 180 / 18 |
 
-- **재현성(실험 26)**: F1은 사전 등록한 두 번째 절반에서 +0.112 [+0.082, +0.140], p 5e-5로 재현. max log-lik은 +0.010 [−0.004, +0.024]로 미재현.
+- **재현성(실험 26)**: (두 절반은 log만 분리되고 drive 16개를 공유하므로 "새 log" 재현입니다.) F1은 사전 등록한 두 번째 절반에서 +0.112 [+0.082, +0.140], p 5e-5로 재현. max log-lik은 +0.010 [−0.004, +0.024]로 미재현.
 - **분해(실험 27)**: F1 개선 +0.118 중 필터 자체 +0.105(89%), 선택기 추가분 rank-sum +0.014 [−0.002, +0.030](n.s.), max log-lik +0.017 [+0.003, +0.031].
   통과 후보 중 무작위 선택은 필터만보다 나을 게 없고(−0.005) 승차감만 나빠집니다.
 - **구성요소(실험 29)**: 두 제약의 Shapley 몫은 주행 가능 영역 86%, 충돌 14%. 점수 이득의 99–104%가 곱셈 항(안전 위반 감소)이고 진행도 항은 −0.0001 ~ −0.0055 →
@@ -217,18 +237,19 @@ A− 33.4%, FDE5 5.75 m로 AutoVLA보다 훨씬 낮습니다. 자연 재실행(b
 |---|---|---|
 | A. 작은 초기 편차(0.2 m) | 기준 A+ 장면의 49.5%가 A−로 전환(재실행 기저 4.6%); 궤적 수준에서는 97%가 3배 이상 커짐(흡수 0.5%) | 상당수 흡수 (A+ 장면 증폭 4.8%) |
 | B. 같은 크기 분기 | 사전 등록 기준(궤적 수준 안정 r ≤ 1 공존) 2.2–3.2% < 재실행 5.9% → **미충족**; 탐색적으로 task 수준 통과/증폭 공존 87–93%, 횡·대각 교란이 전후보다 약 2배 증폭 | 같은 크기 편차가 장면에 따라 갈림 |
-| C. 직전 action 교정 (문맥만) | recent_gt 증폭 63.4 → **1.3%**(−62.2%p [−65.6, −59.1]); gt_history 0% | 47 → 7% (93%) |
-| C. 교정 window 1/2/3/4 step | 효과의 24 / 39 / **91** / 95% | 47 / 76 / 90 / 96% |
-| D. reverse (교정 문맥 + 자기 오차 재삽입) | 증폭 0 → **81.9%** (+81.9%p [+80.4, +84.2]), 발산 +40.5 m | 4.4 → 33.4% |
-| E. motion semantics | GT와 5 cm 다른 값 = GT와 같은 효과(p = 0.87); 방향 오답 − 크기 오답 증폭 +15.6%p(p = 2e-31), 오차 크기를 맞춘 첫 대체 시점에서도 +0.29 m(p = 2e-99, 탐색적) | motion > embedding, 방향 > 크기 (+9.0%p) |
+| C. 직전 action 교정 (문맥만, 매 waypoint 생성마다 직전 문맥 위치를 GT로 = 반복 개입) | recent_gt 증폭 63.4 → **1.3%**(−62.2%p [−65.4, −59.1], 20 drive, exact sign-flip p = 1.9e-6 = 최소값, Holm 7.6e-6); gt_history 0% | 47 → 7% (반복 교정, GT-history 효과의 93%; −39.8%p, 13 drive p = 2.4e-4) |
+| C. 교정 window 1/2/3/4 step | 효과의 24 / 39 / **91** / 95% | 47 / 77 / 90 [81, 99] / 96% |
+| D. reverse — **모델마다 다른 처치** | 교정 문맥에 **자기 branch의 오차 waypoint 재삽입**: 증폭 0 → **81.9%** (+81.9%p [+80.5, +83.9], p = 1.9e-6), 발산 +40.5 m | **별도 Normal 행의 embedding 삽입**(reverse@emb): 4.4 → 33.4% (R8: +28.6%p, p = 2.4e-4) |
+| E. motion semantics | GT와 5 cm 다른 값 vs GT: 차이 비유의(p = 0.87; 동등성 검정 아님); 방향 오답 − 크기 오답 증폭 +15.7%p [+9.1, +24.7](20 drive, p = 8.2e-5), 오차 크기를 맞춘 첫 대체 시점에서도 +0.29 m(탐색적, 단위 수준 p라 인용하지 않음) | motion > embedding, 방향 > 크기 (+9.9%p, 개발 drive; 새 drive에서 미결론) |
 
 사전 등록 기준: 1 correction **충족**, 2 reverse **충족**, 3 궤적 수준 분기 **미충족**, 4 짧은 window **충족**, 5 방향 > 크기 **충족**,
 task 수준(교란이 기저 변동보다 큰 실패를 만들고 교정이 실패를 줄임) **충족** → **Strong replication**.
 제한: 여기서 task 실패는 AutoVLA와 같은 open-loop 궤적 실패이고, Impromptu는 절대 위치를 쓰므로 GT 문맥 교정에 GT 정보 누출이 섞여 있습니다
 (정보를 더하지 않는 reverse와 motion 대체가 이를 배제하는 근거). 교정 해제 후 재발산은 AutoVLA와 달리 거의 없었습니다.
 
-→ **AutoVLA의 오류 증폭은 특정 모델의 특성이 아니라 시간 순서가 있는 action chunk를 autoregressive하게 생성하는 구조에서 반복되는 failure mechanism**으로
-보입니다. 시간축 action history가 없는 OpenVLA(실험 28)에서는 궤적·과제 실패로 증폭되지 않았고, 증폭의 정도(작은 편차의 흡수)는 action 표현과 모델 정확도에 따라 크게 다릅니다.
+→ 문맥 교정이 증폭을 줄이고 오차 문맥이 증폭을 되살리는 패턴은 시간 순서가 있는 action chunk를 autoregressive하게 생성하는 두 driving 모델에서 반복됩니다.
+다만 개입은 **취지가 맞춰진 것이지 동일하지 않고**(Reverse 정의, 좌표 표현, GT 누출 여부가 다름), 증폭 정의도 모델마다 달라 **효과 크기를 열끼리 비교하지 않습니다**.
+Impromptu에는 GT 없는 대조(P1-A에 해당)가 없으므로 GT-free 결론은 AutoVLA에 한정합니다. 시간축 action history가 없는 OpenVLA(실험 28)에서는 궤적·과제 실패로 증폭되지 않았고, 작은 편차의 흡수 정도는 action 표현과 모델 정확도에 따라 크게 다릅니다.
 
 ## 6c. 다른 backbone·domain에서의 재현: SpatialVLA-4B / SimplerEnv (실험 34)
 
@@ -243,9 +264,9 @@ SimplerEnv Google Robot `pick_coke_can`·`move_near`, seed 0–39(80 에피소�
 
 | 실험 | SpatialVLA-4B (token 수준, 18,975 단위) | SpatialVLA-4B (closed loop, d = 0.3) |
 |---|---|---|
-| B. 작은 교란 | step 2/3/4 translation token 변경 56/36/28%; 증폭(A ≥ 1) 22.1%, 완전 흡수 36.7%; 같은 상태에서 흡수·증폭 방향 공존 15–25% | opposite 교란 −20.0%p (p = 0.002), perp_left 영향 없음 |
-| C. 직전 action 교정 (문맥만) | 증폭 22.1 → 13.5%, step-4 편차 −82% | corrected vs feedback: +5.0 / −1.2%p (n.s.); 궤적 발산 0.42 → 0.42 m |
-| D. reverse | step-4 편차 0.010 → 0.057 (normal 0.056 수준 완전 복원) | 문맥에만 교란: 성공률 −1.2 / +5.0%p (n.s.), 궤적 발산 0.21–0.23 m (> 재실행 0.14 m) |
+| B. 작은 교란 | step 2/3/4 translation token 변경 56/36/28%; 증폭(A ≥ 1) 22.1%, 완전 흡수 36.7%; 같은 상태에서 흡수·증폭 방향 공존 15–25% | opposite 교란 실행 −20.0%p (원 episode 수준 p = 0.002; 초기 상태 군집 후 C − N −21.2%p, Holm p = 0.041 primary / 0.094 physical), perp_left 영향 검출 안 됨 |
+| C. 직전 action 교정 (문맥만) | 증폭 22.1 → 13.5%, step-4 편차 −82% (episode cluster p ≤ 5e-6) | corrected − feedback(δC): +5.0 / −1.2%p, 불확실(동등성 미성립); 실행 명령 누적 차 0.42 → 0.42 m(실제 TCP 아님) |
+| D. reverse (SpatialVLA closed loop: 정상 action 실행 + 문맥만 교란) | step-4 편차 0.010 → 0.057 (normal 0.056 수준; token 수준 reverse는 Normal 행 token 삽입) | 문맥에만 교란(δR): 성공률 +5.0 / −1.2%p, 불확실; **실행 명령 누적** 차 0.21–0.23 m (재실행 0.14 m) — 실험 34는 실제 TCP를 기록하지 않음 |
 | E. window | 1 step 전 교정 87%, 2 step 전 63% (chunk 4 step이라 그 이상 측정 불가) | – |
 | F. motion semantics | 방향 오답 − 크기 오답 +1.6%p (방향 오답이 기준에 더 가까운데도); 한 bin 옆 token ≠ 기준(+4.3%p) → identity 민감 | – |
 
@@ -253,21 +274,30 @@ SimplerEnv Google Robot `pick_coke_can`·`move_near`, seed 0–39(80 에피소�
 closed loop task 수준 교정·reverse **미충족** → **Partial replication**. opposite 교란의 실패는 문맥을 교정해도 그대로(corrected −21.2%p)여서
 실행된 action 자체가 원인입니다. 실행 중 범위 밖 translation token 1건은 tokenizer decode처럼 clip해 처리했습니다(RESULTS.md에 기록).
 
+**2026-10-13 초기 상태 군집 재분석 [사후]** (`review_followup2/DIRECT_EFFECTS.md`, `DATA_AUDIT.md` §3):
+- 실험 34의 독립 초기 상태는 coke 40, move_near **primary 29 / 물리 배치 10**입니다(seed 40개가 아님).
+- 4개 pooled closed-loop 직접 효과(δR, δC × perp_left, opposite) 모두 ±10%p 동등성이 성립하지 않습니다(P0-B 판정 재현, Holm p_equiv 0.33–0.38). 판정: **불확실**("효과 없음" 아님).
+- opposite 방향에서는 coke와 move_near의 효과 부호가 반대(δR −10.0 vs +7.5%p, δC +7.5 vs −10.0%p)라 pooled 평균에서 상쇄됩니다(모두 비유의).
+- 실험 34/35는 reset이 이력에 의존하고(복원 hash 없음), 조건 쌍이 bit 단위로 복원 검증되지 않았습니다.
+
 | | AutoVLA | Impromptu VLA | SpatialVLA |
 |---|---|---|---|
 | Backbone | Qwen2.5-VL 3B | Qwen2.5-VL 3B | PaliGemma2 3B (Gemma2) |
 | Domain | 자율주행 | 자율주행 | 로봇 조작 |
 | Action representation | codebook | absolute waypoint text | 구면 bin token, 4-step chunk |
 | Temporal AR | ✓ | ✓ | ✓ |
-| Correction effect | ✓ | ✓ | token ✓ / task ✗ |
-| Reverse effect | ✓ | ✓ | token ✓ / task ✗ |
-| Critical window | 2–4 | ~3 | ≥ 1–2 (chunk 한계) |
-| Direction > magnitude | ✓ | ✓ | 약한 ✓ |
+| Correction (문맥 교정) | ✓ (매 step 직전 위치 := GT, 반복) | ✓ (매 waypoint 직전 위치 := GT, 반복; GT 누출 포함) | token ✓ (reference = 자기 greedy chunk) / task: 불확실 |
+| Reverse — **처치 정의가 다름** | 별도 Normal 행 embedding 삽입 ✓ | 자기 branch 오차 재삽입 ✓ | token: Normal 행 token 삽입 ✓ / closed loop: 정상 실행 + 문맥만 교란, task 불확실 |
+| 교정 길이 (share of full effect) | 1/2/3/4 step 47/77/90/96%; 3 step ≈ 90% [81, 99] | 1/2/3/4 step 24/39/91/95% | 1 step 86%, 2nd-last 63% (chunk 한계) |
+| 초기 위치 특수성 | 근거 없음 (P1-B) | 미검정 | 미검정 |
+| Direction > magnitude | 개발 drive ✓ (+9.9%p) / 새 drive 미결론 (+6.2%p, p = 0.073) | ✓ (+15.7%p) | 약한 ✓ (+1.6%p, token) |
 | Stable / unstable absorption | ✓ | ✗ | ✓ |
 
-→ previous-action temporal feedback은 **driving·Qwen에 특이한 현상이 아니라 temporally autoregressive VLA 디코더의 일반적 token 수준 인과 구조**입니다.
-그러나 **task 실패 기전이 되는지는 구조 의존적**입니다. feedback이 짧은 chunk(4 step) 안에 갇히고 매 step 새 관측으로 재계획·ensemble되는 SpatialVLA에서는
-궤적은 바뀌어도 성공은 바뀌지 않았습니다(OpenVLA 실험 28과 같은 양상). 현재 증거로 주장할 수 있는 것은 "일반적 기전 + 구조 의존적 실패"입니다.
+증폭 정의도 모델마다 다르므로(AutoVLA·Impromptu: A− ∧ FDE5 > 3 m; SpatialVLA token: 누적 step 2–4 편차 ≥ 주입 편차) **효과 크기를 열끼리 비교하지 않습니다**. 개입은 취지가 맞춰졌을 뿐 동일하지 않습니다.
+
+→ 직전 action 문맥이 이후 생성을 바꾸는 token 수준 인과 구조는 driving·Qwen에 한정되지 않고 temporally autoregressive VLA 디코더에서 반복됩니다.
+그러나 **task 실패 기전이 되는지는 구조 의존적**입니다. feedback이 짧은 chunk(4 step) 안에 갇히고 매 step 새 관측으로 재계획되는 SpatialVLA에서는
+생성 action과 실제 궤적은 바뀌지만 성공률 효과는 두 과제 평균 ±10%p 이내로만 제한되고(P1-D, 검증한 설정), 과제별 효과는 불확실합니다(OpenVLA 실험 28과 비슷한 양상).
 
 
 ## 6d. 실행 구조 ablation: SpatialVLA 재계획 간격 × ensemble (실험 35)
@@ -277,6 +307,7 @@ closed loop task 수준 교정·reverse **미충족** → **Partial replication*
 - 설계: 실험 34와 같은 과제·교란(opposite, d = 0.3, step 8–23)을 6개 실행 설정 × 4조건으로 돌렸습니다. 각 80 에피소드(seed 0–39)입니다.
 - seed 추가: 사전 등록 규칙이 발동해 r1e4와 r4e1을 seed 40–119로 확장했고, 두 설정은 합동 240 에피소드로 판정했습니다.
 - 실행 가중치 정정: ActionEnsembler의 가중치는 최신 예측이 가장 큽니다(57/26/12/5%). 실험 34 문서의 반대 설명은 오류이며, 결과에는 영향이 없습니다.
+- 초기 상태: seed 0–119는 coke 120개, move_near primary 53개 / **물리 배치 10개**입니다. reset이 이력에 의존해(reconfigure 없음) 물체 상태가 허용오차 이상 drift한 행이 있고, 조건 쌍의 복원은 검증되지 않았습니다(`review_followup2/DATA_AUDIT.md` §3).
 
 | 설정 (재계획 / ensemble / 노출) | N | F | C | R | F − C | R − N |
 |---|---|---|---|---|---|---|
@@ -285,60 +316,58 @@ closed loop task 수준 교정·reverse **미충족** → **Partial replication*
 | r1e1 (1 / 없음 / 0) | 85.0 | 67.5 | 68.8 | 80.0 | −1.2, Holm 1 | −5.0, Holm 1 |
 | r2e2 (2 / 2 / 0.66) | 82.5 | 77.5 | 77.5 | 83.8 | 0.0, Holm 1 | +1.2, Holm 1 |
 | r2e1 (2 / 없음 / 0.50) | 87.5 | 76.2 | 68.8 | 85.0 | +7.5, Holm 1 | −2.5, Holm 1 |
-| r4e1 (4 / 없음 = 4 / 0.75, 240) | 81.7 | 69.6 | 65.0 | 75.4 | +4.6, p = 0.22 | **−6.2 [−12.1, −1.2], p = 0.040** |
+| r4e1 (4 / 없음 = 4 / 0.75, 240) | 81.7 | 69.6 | 65.0 | 75.4 | +4.6, p = 0.22 | −6.2 [−12.1, −1.2], p = 0.040 (episode 수준; **군집 후 비유의, 삭제**) |
 
-궤적 지속 (r4e1 − r1e4, 합동):
-- reverse 대 natural: 평균 위치 오차 +1.84 cm [+1.26, +2.46], p = 1e-10. 궤적 발산 +0.116 m, p = 7e-11. 재정렬 +10.9 step, p = 1e-6.
+(위 표의 p와 CI는 원 episode 수준 분석입니다. move_near seed 0–119는 primary 53 / 물리 배치 10개의 초기 상태뿐이라 표본을 과대 계산합니다.)
+
+**초기 상태 군집 재분석 [사후]** (r1e4·r4e1, seed 0–119; `review_followup2/DIRECT_EFFECTS.md`):
+
+| 설정 | δR = R − N, pooled [95% CI] (primary / physical p) | δC = C − F, pooled [95% CI] | ±10%p 동등성 (Holm, primary / physical) |
+|---|---|---|---|
+| r1e4 | −0.8 [−9.6, 7.5] (0.93) | −7.1 [−15.9, 2.1] (0.15 / 0.35) | 0.082 / 0.20 — 불성립 (episode 수준에서 성립하던 동등성이 군집 후 사라짐) |
+| r4e1 | −6.2 [−13.6, 1.1] (**0.136 / 0.256**, 보정 전) | −4.6 [−13.5, 4.8] | 0.37 / 0.47 — 불성립 |
+
+- r4e1 − r1e4 상호작용(사전 등록 주 대비): δR −5.4 [−17.3, 7.0], δC +2.5 [−8.9, 14.1]; 차이도 동등성도 성립하지 않음(불확실).
+- move_near r1e4 δC −15.0%p는 episode 수준 p = 0.002였지만 군집 후 0.058(primary) / 0.28(physical)입니다.
+- 실행 교란 양성 대조: r1e4 C − N −22.9 [−34.9, −11.4], Holm p = 0.001 → 성공률 지표는 실행된 교란에는 반응합니다.
+
+궤적 지속 (r4e1 − r1e4, 합동; 실제 TCP 위치 거리, episode 수준 Wilcoxon p):
+- reverse 대 natural: 평균 위치 오차 +1.84 cm [+1.26, +2.46], p = 1e-10. 실행 명령 누적 차 +0.116 m(실제 TCP 아님), p = 7e-11. 재정렬 +10.9 step, p = 1e-6.
 - feedback 대 corrected: +1.32 cm, p = 2e-4.
 - r2e1: 재정렬 +13 step, p = 5e-4.
-- r1e1(ensemble 없음): feedback 대 corrected +1.8 cm, p = 0.03.
+- r1e1(ensemble 없음): feedback 대 corrected +1.76 cm, 보정 전 p = 0.028, 5개 설정 Holm 후 0.14(P0-A F4) → 비유의.
 - 모든 설정에서 교란 뒤 오차가 줄지 않았습니다(반감기 없음).
+- 이 궤적 p들은 초기 상태 군집을 반영하지 않습니다. 같은 방향의 효과가 P1-D(복원 검증, 교란 예산 고정)에서 군집 단위로 확인됐습니다(§6e H1).
 
-사전 등록 기준:
+사전 등록 기준(원 판정, 그대로 보고):
 - 1 (공식 설정에서 효과 없음): 충족
 - 2 (보호를 줄이면 교정 효과 증가): **미충족** (방향 반대)
-- 3 (reverse가 실패 증가): r4e1에서만 충족 (상호작용 n.s.)
+- 3 (reverse가 실패 증가): r4e1에서만 충족 (상호작용 n.s.) — **군집 재분석 후 r4e1 효과도 비유의, P1-D 미재현**
 - 4 (오차 지속 증가): 재계획 축에서 충족
 - → **Partial support**
 
-→ 자기 생성 action이 실행에 오래 남을수록(재계획 간격) 문맥 feedback이 궤적에 더 오래 남습니다. ensemble은 보호 장치가 아닙니다. 그러나 4-step chunk의 최대 노출로도 성공률 변화는 6%p 이내라서, driving 모델과의 차이를 실행 구조만으로 설명할 수는 없습니다.
+→ 자기 생성 action이 실행에 오래 남을수록(재계획 간격) 문맥 교란이 만든 궤적 편차가 더 오래 남습니다. ensemble이 문맥 효과를 흡수한다는 근거는 없습니다(실행 교란량을 맞춘 P1-D H2). 성공률 효과는 실험 35 자료만으로는 군집 후 불확실하고, P1-D에서 두 과제 평균 ±10%p 이내로 제한됩니다. 따라서 driving 모델과의 차이를 실행 구조만으로 설명할 수는 없습니다.
 
 
-## 6e. 후속 검증 실험 (VLA_experiment_plan_20261008, P0–P1)
+## 6e. 후속 검증 실험 (VLA_experiment_plan_20261008 P0–P1, review_followup2 A–C)
 
-종합: `autovla_misalignment_poc/outputs/review_followup/REVIEW_FOLLOWUP_SUMMARY.md`. P0는 사후 재분석이고, P1은 사전 등록이다(b212637). R8R9는 원 자료 복구 실행이다.
+종합: `autovla_misalignment_poc/outputs/review_followup/REVIEW_FOLLOWUP_SUMMARY.md`(P0–P1, 2026-10-12)와 `autovla_misalignment_poc/outputs/review_followup2/`(A–C 사후 재분석, 2026-10-13).
+P0와 review_followup2 A–C는 **사후 재분석**이고, P1-A–D는 **사전 등록**이다(b212637; P1-C는 수정 b216920·9b3d4af 포함). R8R9는 원 수치를 아는 상태의 **복구 실행(재현성 감사)**이며 확인 실험이 아니다.
 
-- **P0-B 군집 통계:** 결론은 유지되지만 p는 크게 약해진다.
-  - AutoVLA Recent−Normal: 단위 수준 p 8e-42 → log sign-flip 1.2e-4.
-  - Direction−Magnitude: 6e-4 → 0.0056.
-  - 극소 p값은 쓰지 않는다. A−의 16 log는 13 drive다.
-- **P0-A 감사:**
-  - "Recent-GT"는 매 step 직전 위치를 교정하는 반복 개입이다.
-  - "Reverse"는 모델마다 다른 개입이다.
-  - SpatialVLA의 m 단위 궤적 발산은 실행 명령의 누적값이다(실제 TCP가 아님).
-  - move_near seed는 중복된 초기 상태가 많다.
-- **P1-A (GT 없는 reference):**
-  - 문맥만 바뀌어도 이후 action이 +0.57 m/seg 변한다. 기하 baseline 대비 +4.37 m, GT 없는 교정 −3.50 m(모두 Holm 9e-5).
-  - A−에서는 등속 외삽 baseline과 구별되지 않는다. 그래서 "특수 자기증폭" 주장은 축소한다.
-- **P1-B (시작 위치):**
-  - 교정 횟수가 같으면 early와 late의 차이가 비유의다. w = 2, 3에서는 ±10%p 동등성이 성립한다.
-  - 길이 효과는 크다(48 → 77 → 89%).
-- **R8R9:** 실험 8·9 원 수치를 220/220 재현했다. Reverse−Full +28.6%p, sign-flip p = 6e-5. AutoVLA primary 3개 모두 Holm < 0.01.
-- **P1-C (새 64 log / 24 drive):**
-  - Recent−Normal과 Reverse−Full이 실패 조건부(−34.2 / +26.8%p)와 모집단(−4.1 / +3.7%p) 모두에서 재현됐다.
-  - Direction−Magnitude는 결론이 나지 않았다.
-- **P1-D (SpatialVLA 교란량 통제, 4,800 에피소드):**
-  - 문맥 예산을 고정해도 재계획 간격이 문맥 궤적 편차를 키운다(+214 cm·step, 복합 설정 효과).
-  - 실행 교란량을 맞추면 ensemble 효과는 동등 범위 안이다.
-  - 성공률 상호작용 4개는 모두 ±10%p 동등이다. 즉 생성 편차가 task outcome과 분리된다.
-  - 실험 35의 r4e1 reverse −6.2%p는 재현되지 않았다.
+| 실험 | 결과 (2026-10-13 기준) | 판정 |
+|---|---|---|
+| **P0-A 감사** [사후] | Recent-GT는 매 step 직전 위치를 교정하는 **반복 개입**(단위당 6.8회, 실효 4.3회). Reverse는 모델마다 다른 처치. SpatialVLA 실험 34/35의 m 단위 "궤적 발산"은 **실행 명령의 누적값**(실험 35에서 실제 TCP의 약 4배). 실험 5/8/9/10은 per-unit raw 없음 | 서술 정정 |
+| **P0-B → A3 군집 통계** [사후] | 독립 단위를 log(16)에서 **drive(13)**로 올려도 판정 변화 없음. Recent−Normal −39.8%p [−49.0, −29.9], Reverse−Full +28.6%p [+20.9, +36.1], 둘 다 p = 2.4e-4(13 drive 최소값, Holm 7.3e-4); Direction−Magnitude +9.9%p [+3.9, +21.0], p = 0.0056. leave-one-drive-out에서 부호 반전·CI 0 포함 없음. 실험 11 GT 근접 token: +0.8%p [−1.6, +6.6], ±5%p 동등성 **미성립**(TOST p = 0.090) | p 표기를 drive 수준으로 교체 |
+| **P1-A GT 없는 reference** [사전 등록] + C1 [사후] | 문맥만 교란해도 suffix local motion +0.57 m/seg [+0.44, +0.68]; 기하 baseline 대비 endpoint +4.37 m [+3.34, +5.18]; reference 교정 −3.50 m (drive p = 2.4e-4, Holm 7.3e-4). 원 비교 "A−에서 등속 외삽(CM)과 구별되지 않음(−0.59 m)"은 CM 자체의 외삽 오차(4.69 m)가 섞인 잘못된 대비였다. 교란 전후 변화량으로 다시 비교하면 모델 − CM = A− **+2.35 m [+1.27, +3.19]**, A+ −0.52 m [−0.82, −0.26], 전체 +0.20 m [−0.32, +0.56] (p = 0.51) | GT-free 문맥 효과 유지(AutoVLA 한정). 외삽 초과는 실패 선택 층에서만 → 일반 주장 삭제. reference 교정은 GT 실패를 줄이지 않음(A− 증폭 +19.7%p) |
+| **P1-B 시작 위치** [사전 등록] + C2 [사후] | early − late (같은 w): +10.7 / +4.3 / +0.5%p, 모두 비유의(12 drive). ±10%p 동등성: w3 성립(Holm 0.002), **w2는 보정 전만(Holm 0.064)**, w1 불성립. 늦은 window는 해제 후 horizon이 2 pose 짧고, 같은 해제 후 horizon에서는 연속 지표 부호가 처리 방식에 따라 바뀜 | early window 특수성 근거 없음. 위치 효과 크기는 불확실 |
+| **R8R9 복구** | 실험 8·9 원 수치 220/220 재현(재현성 감사). 교정 길이 회복률 1/2/3/4 step = 47 / 77 / **90 [81, 99]** / 96% (분모: 같은 run의 Normal − GT-history; drive CI). 반복 Recent-GT = GT-history 효과의 92.9% [89.4, 99.1] | "3 step ≈ 90%"로 표기. "2–4 step 90%"는 틀림 |
+| **P1-C 새 drive** [사전 등록] | 64 log / 24 drive, 기전 집합과 drive 0 공유(day-vehicle 10 공유). RN F −34.2 [−38.3, −29.5] / P −4.1; RV F +26.8 [+21.9, +30.7] / P +3.6 — replicated(drive exact sign-flip, Holm). DM F +6.2 [+0.6, +12.1], sign-flip p = 0.073 / P +2.6, p = 0.10 — **inconclusive**. 독립 재계산이 사전 등록 결과를 완전히 재현 | 핵심 기전의 **새 drive** 재현. 방향 > 크기는 미결론 |
+| **P1-C 실행 기록** | 수정 1: pilot 기준 85%를 arm-N 자기 재현성 기준으로 완화(평가 자료 전). 수정 2: H8 2,436 단위 전부 OOM → 같은 명령 재실행; H8 없는 첫 분석에서 RN·DM이 열람된 뒤 commit, 첫 분석은 `analysis_incomplete_noH8/`에 보존, RN·DM 판정 동일 | 결과 기반 제외 없음. 원고에 보고 |
+| **P1-D SpatialVLA 교란량 통제** [사전 등록] + B [사후] | H1: 문맥 예산 고정, R − N 궤적 면적 DiD r4e1 − r1e1 **+214 cm·step [+171, +255]**(복합 설정 효과). H2: 실행 dose를 맞추면 ensemble 축 DiD +21 [−25, +68], ±100 동등(흡수 방향 아님). 성공률 상호작용 S1–S4: ±10%p 동등, **초기 상태 군집(primary·physical)과 Holm 후에도 유지**, ±5%p는 불성립. 직접 효과 δR·δC pooled r1e4/r4e1: ±10%p 동등(두 clustering, Holm), ±5%p 불성립, **과제별 CI 18–29%p로 불확실**. 실험 35 r4e1 reverse −6.2%p는 미재현(+1.2 [−5.6, +8.0]). move_near 120 unit은 물리적으로 실험 34/35와 같은 10개 배치 | 생성·물리 궤적 변화는 확인, 성공률 효과는 두 과제 평균 ±10%p 이내(검증한 설정)로 제한, 과제별 불확실 |
 
-→ 핵심 기전(교정하면 효과가 줄고, 오류를 다시 넣으면 돌아옴)은 다음 세 가지에서 유지된다.
-- GT 정보 없이
-- cluster 통계에서
-- 새 log에서
-
-실행 구조는 SpatialVLA에서 문맥 효과의 **궤적** 지속을 조절하지만, 성공률로는 번지지 않는다. 위치 특수성과 방향 대조의 일반화는 지지되지 않거나 결론이 나지 않았다.
+→ 유지되는 것: 문맥 교정이 증폭을 줄이고 오차 문맥이 증폭을 되살리는 AutoVLA 기전(drive 군집 통계, **새 drive** 재현), GT 정보 없는 문맥 효과(AutoVLA, 순수 좌표 누적 초과), 교정 길이 효과(3 step ≈ 90%).
+축소·삭제: 외삽을 넘는 일반적 자기증폭(실패 층에서만), early window 특수성(근거 없음), 방향 > 크기의 일반화(새 drive 미결론), GT 근접 token의 동등성(미성립), 실험 35 −6.2%p와 ensemble 보호(삭제), SpatialVLA 성공률 효과는 "두 과제 평균 ±10%p 이내"로만.
+새 GPU 실험은 하지 않았다(`review_followup2/GAP_DECISION.md`: 독립 drive를 더 확보할 수 없고, move_near 물리 배치는 10개로 고정).
 
 ---
 
@@ -373,6 +402,8 @@ NVIDIA EGL/Vulkan 라이브러리가 없고(LIBERO도 Mesa 소프트웨어 렌�
 
 ## 9. 종합 그림
 
+(2026-10-13 개정: review_followup2 판정 반영. 이전 그림의 "2–4 step이면 90–95% 차단", "방향이 핵심", "구조가 효과를 흡수"는 축소·삭제됐습니다.)
+
 ```
 perception (대체로 보존)
    │
@@ -380,32 +411,41 @@ perception (대체로 보존)
 결정/CoT 텍스트 ──(느슨한 결합)──▶ action token 생성 (마지막 layer에서 형성)
                                         │ 첫 이탈 t*
                                         ▼
-            직전 action token의 motion(특히 방향)이 residual을 통해 다음 token을 조건화
-            → 자기 이탈 방향을 확인하는 1-step feedback이 자기 강화 (장면 맥락이 증폭 여부를 좌우)
+            직전 action 문맥(특히 motion)이 residual을 통해 다음 token을 조건화
+            → 매 step 문맥을 GT로 교정하면 증폭 −40%p, 자기 이전 action을 다시 넣으면 +29%p (13 drive; 새 24 drive에서 재현)
+            → GT 없이 문맥 하나만 교란해도 이후 local action이 바뀜 (AutoVLA; 외삽 초과는 실패 층에서만)
+            (장면 맥락이 증폭 여부를 좌우; 방향 > 크기는 개발 drive에서만, 새 drive 미결론)
                                         │
-          oracle 교정: 2–4 step이면 90–95% 차단 (해제 후 감쇠)
-          GT 없는 조건화 교정: 정상 장면 손해로 순이득 없음
-          배포 가능한 완화: 후보 선택 (open-loop·PDMS에서 유의)
+          oracle 문맥 교정: 연속 3 step ≈ 90% [81, 99] 회복 (첫 step이 특별하다는 근거 없음; 해제 후 감쇠)
+          GT 없는 조건화 교정: 정상 장면 손해로 순이득 없음; reference 교정은 일관성 회복이지 실패 감소가 아님
+          배포 가능한 완화: 후보 선택 (open-loop·PDMS에서 유의; held-out은 log 분리·drive 비분리)
                          + 현재 frame 안전 필터 (반응형 navhard에서 이득의 대부분, DA 제약이 핵심)
           남은 병목: 후보 생성 (oracle 0.405, token의 1/3은 안전한 후보가 없음)
 ```
 
-- 실패의 축은 "무엇을 보았는가"가 아니라 **"직전에 무엇을 출력했는가"**이고, 그 정보의 핵심은 진행 방향입니다.
-- token 수준 feedback은 다른 autoregressive VLA(OpenVLA)에서도 나타나지만, 궤적 실패로의 증폭은 시간축 action history를 autoregressive하게 생성하는 구조에서 생깁니다. 그런 구조의 다른 모델(Impromptu VLA)에서는 교정·reverse·짧은 window·방향 효과까지 재현되었습니다(실험 33). 비-Qwen·로봇 조작 모델(SpatialVLA)에서는 token 수준 교정·reverse·window가 재현되었지만, 짧은 chunk·매 step 재계획·ensemble 구조가 효과를 흡수해 task 실패로 이어지지 않았습니다(실험 34) — 기전은 일반적이고, 실패로의 전환은 구조 의존적입니다. 실행 구조 ablation(실험 35)에서 재계획 간격이 feedback의 궤적 지속을 조절함을 확인했지만, task 실패는 최대 −6%p에 그쳤습니다.
-- 불안정성은 이탈 전에는 보이지 않고 이탈 후에만 보이므로, 실용적인 완화는 "이탈을 미리 막기"가 아니라 **여러 후보를 만들고 이탈 후 신호와 현재 frame 안전 규칙으로 거르기**입니다.
+- 실패의 축은 "무엇을 보았는가"보다 **"직전에 무엇을 출력했는가"**입니다. 직전 action의 motion이 embedding 근접보다 중요하다는 것까지는 지지되지만, 방향이 핵심이라는 주장은 개발 drive에 한정됩니다.
+- 직전 action 문맥의 token 수준 인과 효과는 다른 autoregressive VLA(OpenVLA, Impromptu, SpatialVLA)에서도 나타납니다. 궤적 수준 증폭은 시간축 action history를 생성하는 두 driving 모델에서 나타났습니다(Impromptu, 실험 33). 다만 모델마다 Reverse 정의와 증폭 정의가 달라 효과 크기는 비교하지 않습니다.
+- SpatialVLA(로봇 조작)에서는 문맥 교란이 생성 action과 실제 TCP 궤적을 바꾸고, 재계획 간격이 길수록 그 편차가 오래 남습니다(P1-D, 복합 설정 효과). 성공률 효과는 두 과제 평균 ±10%p 이내로만 제한되고(검증한 r1e4·r4e1), 과제별 효과와 ±5%p 수준은 불확실합니다. "구조가 효과를 흡수한다", "ensemble이 보호한다", "4 step 재계획에서 reverse가 실패를 늘린다(−6.2%p)"는 근거가 없습니다.
+- 불안정성은 이탈 전에는 약하게만 보이고(AUROC 0.57–0.63) 이탈 후에 강하게 보이므로, 실용적인 완화는 "이탈을 미리 막기"가 아니라 **여러 후보를 만들고 이탈 후 신호와 현재 frame 안전 규칙으로 거르기**입니다.
 
 ---
 
 ## 10. 한계
 
-- AutoVLA 기전 실험(5–11, 32)은 equal-distance set(208 장면, A− 52 장면)에 기반해 log cluster CI가 넓고, 단일 seed·T 0.01입니다.
+- **독립 표본 수가 작습니다.** AutoVLA 기전 실험(5–11, 32)의 A−는 52 장면이지만 독립 단위는 **13 drive**(10 day-vehicle)이고, exact sign-flip p는 2.4e-4보다 작을 수 없습니다. 단일 seed·T 0.01입니다. day-vehicle 수준 상관은 모형화하지 않았습니다.
+- **탐색 실험과 사전 등록의 구분.** 실험 4–11은 사전 등록이 없고, R8R9는 원 수치를 아는 상태의 복구 실행입니다. 새 자료에서의 확인은 P1-C(24 drive, day-vehicle 10개 공유)뿐이며, 방향 > 크기는 거기서 결론이 나지 않았습니다(사전 설계 검정력 0.19–0.33).
+- **분할 경계.** 선택 실험의 held-out과 navhard 2차 절반은 log만 분리되고 drive를 공유합니다(22개 / 16개). drive-disjoint 재계산은 하지 않았습니다.
+- **개입 정의.** Recent-GT는 매 step 반복 개입이고, Reverse는 모델마다 다른 처치입니다. GT 없는 대조(P1-A)는 AutoVLA에만 있고, 교란 위치와 A−/A+ 층은 GT 정의를 상속합니다. 외삽 baseline은 repeat-p constant-motion 하나뿐이고 turn-rate baseline은 없습니다.
+- **교정 위치·길이.** 교정 길이와 해제 후 horizon이 함께 변하고, 절대 pose와 해제 후 horizon을 동시에 맞출 수 없습니다(10 token 한계). 실험 5·10의 per-unit raw가 없어 1-token 교정과 재발산은 summary 수준입니다.
 - 평가 horizon은 5 s(10 token)이며, 그 이상은 모델 분포 밖입니다.
 - navhard 결과는 2단계 pseudo closed-loop이고, 안전 필터와 채점이 같은 규칙을 씁니다. 연속 closed-loop(P6)는 수행하지 못했습니다.
 - GPU·batch 구성이 달라지면 경계 장면의 디코딩이 bf16 수치 차이로 갈릴 수 있어, 모든 비교는 같은 실행 안의 쌍대 비교로 했습니다.
 - OpenVLA 재현(실험 28)은 LIBERO-Spatial 한 suite, 100 에피소드 규모이고, OpenVLA는 시간축 action history가 없어 step 내 차원 간 feedback만 직접 비교할 수 있습니다.
-- Impromptu 재현(실험 33)은 open-loop 궤적 실패 기준이고, 절대 위치 표현 때문에 GT 문맥 교정에 GT 정보 누출이 섞여 있습니다. 궤적 수준 안정 분기(사전 등록 기준 3)는 재현되지 않았습니다.
-- SpatialVLA 재현(실험 34)은 과제 2개·80 에피소드라 closed loop에서 약 10%p 미만 차이는 검출하기 어렵고, closed-loop 교란은 d = 0.3·방향 2개·step 8–23만 다뤘으며, chunk가 4 step이라 window를 2 step보다 길게 볼 수 없습니다.
-- 실험 35는 과제 2개(r1e4·r4e1 seed 120개, 나머지 40개)라 약 7%p 미만 차이는 검출이 어렵고, 재계획 간격에 따라 교란 chunk 수(16/8/4)가 함께 바뀌며, 관측 갱신과 sequence reset의 분리(F)는 수행하지 못했습니다.
+- Impromptu 재현(실험 33)은 open-loop 궤적 실패 기준이고, 절대 위치 표현 때문에 GT 문맥 교정에 GT 정보 누출이 섞여 있습니다. 궤적 수준 안정 분기(사전 등록 기준 3)는 재현되지 않았습니다. GT 없는 대조는 없습니다.
+- **SpatialVLA 초기 상태.** 과제가 2개뿐이고, move_near는 물리 배치가 **10개**뿐이며 실험 34·35·P1-D가 모두 같은 10개를 씁니다(지시문 포함 primary 상태는 29/53/120). 따라서 move_near의 독립 표본은 명목 seed 수보다 훨씬 작고, 과제별 성공률 CI가 넓습니다(P1-D 18–29%p). 과제별 ±5%p를 검증하려면 수백–천여 개 상태가 필요하지만 move_near는 상태를 늘릴 수 없습니다(GAP_DECISION #3).
+- 실험 34/35는 reset이 이력에 의존하고(reconfigure 없음, 굴러가는 물체 최대 40× 허용오차 drift) 복원 hash가 없으며, 실험 34에는 실제 TCP 기록이 없습니다(m 단위 "궤적 발산"은 실행 명령 누적). closed-loop 교란은 d = 0.3·방향 2개·step 8–23만 다뤘고, chunk가 4 step이라 window를 2 step보다 길게 볼 수 없습니다.
+- P1-D의 재계획 축 효과(H1)는 관측 갱신·문맥 reset·실행 노출이 함께 바뀐 복합 설정 효과이고, 관측 갱신과 sequence reset의 분리는 실행 가능한 정책 안에서 하지 못했습니다.
+- ±5%p는 이번 검토가 제안한 사후 민감도 범위이며 분야의 공인 기준이 아닙니다. ±10%p 동등성은 두 과제 평균에 대한 진술이고, 과제별로 반대 부호 효과가 일부 상쇄됩니다.
 
 ---
 
@@ -417,5 +457,6 @@ perception (대체로 보존)
 - Impromptu VLA: `autovla_misalignment_poc/scripts/cross_vla_temporal/` (`impromptu_core.py`, `exp_ab.py`, `exp_cde.py`, `analyze_temporal.py`), checkpoint `/root/VLA/impromptu/3B_AD`; 실험 33 디스크 정리 기록 `outputs/cross_vla_temporal_replication/DISK_CLEANUP.md`.
 - SpatialVLA: `autovla_misalignment_poc/scripts/cross_domain_temporal/` (`spatialvla_core.py`, `spatialvla_policy.py`, `svla_rollouts.py`, `svla_offline.py`, `analyze_svla.py`), 환경 `/root/VLA/simpler/env.sh`(transformers 4.47 target dir + SimplerEnv + Mesa lavapipe Vulkan), checkpoint `/root/VLA/spatialvla/spatialvla-4b-224-sft-fractal`; 실험 34 디스크 정리 기록 `outputs/cross_domain_temporal_replication/DISK_CLEANUP.md`(OpenVLA LIBERO checkpoint 15 GB 삭제, `snapshot_download`로 재생성).
 - OpenVLA: `autovla_misalignment_poc/scripts/cross_vla/` (`openvla_core.py`, `openvla_rollouts.py`, `openvla_token_feedback.py`, `analyze_cross_vla.py`).
+- review_followup2 사후 재분석(drive·초기 상태 군집, 직접 효과, baseline·window)의 재생성 명령: `autovla_misalignment_poc/outputs/review_followup2/RUN_COMMANDS.md`(CPU만, 모델 재실행 불필요).
 - 원시 rollout·hidden state·submission은 용량 때문에 저장소에 넣지 않았고, 위 스크립트로 재생성됩니다.
 - 디스크 정리 기록: 사용하지 않는 카메라(CAM_B0/L0/L2/R0/R2, 약 19 GB)를 삭제했습니다. 원 전처리(preprocess_scenes)를 처음부터 다시 하려면 shard 0–5를 다시 받아야 합니다.

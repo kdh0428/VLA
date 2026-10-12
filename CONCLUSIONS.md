@@ -2,7 +2,31 @@
 
 대상 모델: **AutoVLA** (Qwen2.5-VL-3B 기반, nuPlan/navsim), **ORION** (Bench2Drive).
 모든 실험은 저장된 inference 결과 또는 GPU1 재추론으로 수행했고, 기존 결과 파일은 수정하지 않았습니다.
-[ ]는 log/clip 단위 cluster bootstrap 95% CI이며, 이진 지표는 McNemar, 연속 지표는 Wilcoxon 쌍대 검정입니다.
+[ ]는 log/clip 단위 cluster bootstrap 95% CI이며, 이진 지표는 McNemar, 연속 지표는 Wilcoxon 쌍대 검정입니다. [개정: 기전 대비의 단위 수준 p는 쓰지 않음 — drive exact sign-flip으로 교체, 위 2026-10-13 개정 절]
+
+---
+
+## 2026-10-13 개정 (review_followup2 반영 — 아래 본문은 역사 기록으로 그대로 두고, 틀리게 된 문장 옆에 [개정: …]을 달았습니다)
+
+근거: `autovla_misalignment_poc/outputs/review_followup2/CLAIM_EVIDENCE_MATRIX.md`(판정), `GAP_DECISION.md`, `DATA_AUDIT.md`, `CLUSTER_REANALYSIS.md`, `BASELINE_WINDOW_RECHECK.md`, `DIRECT_EFFECTS.md`. 모두 기존 자료의 **사후** 재분석입니다. 현재 요약은 [EXPERIMENT_SUMMARY.md](EXPERIMENT_SUMMARY.md)입니다.
+
+**통계 표기 교체.** 본문의 단위 수준 McNemar/Wilcoxon p(예: 8e-42, 6.7e-31, 4.2e-07)는 같은 장면·log의 섭동 단위를 독립으로 센 값이라 쓰지 않습니다. 기전 대비의 독립 단위는 **drive**(A− 16 log = 13 drive)이고, p는 drive 합의 exact sign-flip입니다(13 drive의 최소 p = 2.4e-4). CI는 거의 같습니다(예: Recent−Normal log [−50.0, −28.8] → drive [−49.0, −29.9]%p).
+
+| 이전 결론 | 판정 | 현재 쓸 수 있는 표현 |
+|---|---|---|
+| 직전 action 문맥이 이후 생성을 인과적으로 바꾼다 (Recent−Normal, Reverse) | **유지** | Recent-GT −39.8%p [−49.0, −29.9], Reverse +28.6%p [+20.9, +36.1] (13 drive, p = 2.4e-4); 기전 집합과 drive가 겹치지 않는 새 24 drive(P1-C, 사전 등록)에서 재현(day-vehicle은 일부 공유) |
+| "직전 토큰 1개만 교정해도 효과의 93%" | **축소** | Recent-GT는 **매 생성 step 직전 위치를 GT로 바꾸는 반복 개입**(단위당 6.8회, 실효 4.3회)이고, 93%(92.9% [89.4, 99.1])의 분모는 GT-history 효과입니다(Normal 대비 85%) |
+| "2–4 step이면 90–95%", "genuine short early window" | **축소 / 삭제** | 교정 길이: 3 step ≈ 90% [81, 99] (1/2/3/4 = 47/77/90/96%). 초기 위치 특수성: 근거 없음(P1-B, early − late 모두 비유의) |
+| "GT와 motion이 같으면 충분 / identity와 무관" (실험 11) | **축소** | GT 근접 token − GT = +0.8%p [−1.6, +6.6], ±5%p 동등성 미성립(TOST p = 0.09) |
+| 방향 > 크기 (실험 32) | **축소** | 개발 13 drive +9.9%p [+3.9, +21.0], p = 0.0056; 새 drive에서는 +6.2%p, p = 0.073(결론 안 남) |
+| attention mask "효과 없음" | **축소** | 효과가 검출되지 않음(−1.4 / −3.3%p, 동등성 미검정; 결과 선택 부분집합에서는 −16 ~ −19%p) |
+| 선택 이탈 전 "엔트로피가 같다" | **축소** | 차이가 작다(−0.016 [−0.023, −0.010], CI는 0 제외; 동등성 미검정) |
+| 사전 등록 held-out(실험 21–24)·navhard 2차 절반(실험 26)의 "새 log 재현" | **축소(표기)** | "held-out logs, not drive-disjoint": dev와 drive 22개(held-out 장면 85%), navhard 두 절반은 drive 16개 공유 |
+| GT 없는 action-context 효과 (P1-A) | **유지(AutoVLA 한정)** | 기하 baseline 대비 +4.37 m; 등속 외삽 초과는 실패 층(A−)에서만 +2.35 m, 전체에서는 구별 안 됨 → "외삽을 넘는 일반적 자기증폭" 삭제. GT 없는 reference 교정은 실패를 고치지 않음(삭제) |
+| SpatialVLA: "4 step 재계획에서 reverse −6.2%p", "ensemble이 흡수/보호", "궤적 발산 0.21–0.23 m" | **삭제 / 정정** | −6.2%p는 초기 상태 군집 후 p = 0.14–0.26, P1-D 미재현. ensemble 흡수 근거 없음. m 단위 발산은 실행 명령 누적(실제 TCP 아님). 성공률 효과는 두 과제 평균 ±10%p 이내(P1-D r1e4/r4e1), 과제별 불확실 |
+| 모델 간 "Reverse" 비교 | **축소** | 모델마다 다른 처치(AutoVLA: 별도 Normal 행 embedding; Impromptu: 자기 오차 재삽입; SpatialVLA closed loop: 정상 실행 + 문맥만 교란). 효과 크기를 열끼리 비교하지 않음 |
+| 실험 5·10 (1-token 교정 +55.8%p, horizon-controlled 재발산) | **검증 불가(유지하되 표기)** | per-unit raw 없음, summary 수준 |
+| 실험 4–11의 성격 | **표기** | 사전 등록이 없는 탐색 실험. R8R9(실험 8·9 복구)는 재현성 감사이며 독립 확인이 아님 |
 
 ---
 
@@ -10,11 +34,11 @@
 
 1. 실패는 **perception 단계보다 결정·실행 결합 단계**에서 주로 발생합니다.
 2. **CoT 텍스트는 action의 원인이라기보다 느슨하게 결합**되어 있고, CoT를 강제하면 오히려 성능이 떨어집니다.
-3. 작은 action-token 편차가 궤적 실패로 증폭되는 기전은 **직전에 생성한 action 토큰의 identity가 residual stream을 통해 다음 action을 조건화하는 1-step autoregressive feedback**입니다. 특정 layer나 긴 history attention이 아닙니다. 그 identity 중 결과를 결정하는 것은 **토큰이 뜻하는 motion(codebook 기하)**이며, embedding 벡터의 근접성이 아닙니다.
-4. 첫 mismatch 직후 **2–4 step**의 feedback만 안정화해도 이후 발산의 대부분(90–95%)이 사라집니다. 다만 교정을 멈추면 효과가 서서히 감쇠하므로 영구적 안정화는 아닙니다.
+3. 작은 action-token 편차가 궤적 실패로 증폭되는 기전은 **직전에 생성한 action 토큰의 identity가 residual stream을 통해 다음 action을 조건화하는 1-step autoregressive feedback**입니다. 특정 layer나 긴 history attention이 아닙니다. [개정: attention mask는 '효과 검출 안 됨'이지 '효과 없음'이 아님(동등성 미검정)] 그 identity 중 결과를 결정하는 것은 **토큰이 뜻하는 motion(codebook 기하)**이며, embedding 벡터의 근접성이 아닙니다. [개정: 1-step feedback = 매 step 반복 교정으로 측정한 것; GT 근접 motion token ≈ GT는 동등성 미성립]
+4. 첫 mismatch 직후 **2–4 step**의 feedback만 안정화해도 이후 발산의 대부분(90–95%)이 사라집니다. [개정: '3 step ≈ 90% [81, 99]'(2 step 77%, 4 step 96%)로 축소; 첫 이탈 직후 위치가 특별하다는 근거 없음(P1-B)] 다만 교정을 멈추면 효과가 서서히 감쇠하므로 영구적 안정화는 아닙니다.
 5. 모델은 **조건화된 motion을 66–89% 그대로 따라갑니다.** 그래서 GT 없이 쓸 수 있는 참조로 조건화를 교정하면 참조 품질이 전부를 결정하고, 배포 조건에서는 정상 장면의 손해 때문에 순이득이 없습니다(실험 12–16).
-6. 대신 **모델 자신이 샘플한 후보(T 1.0, 16개) 중 디코딩 확신도로 하나를 고르면**, GT·외부 참조·교정 시점 없이 실패율과 궤적 오차가 모두 줄어듭니다. 이전에 쓰지 않은 log 56개(장면 4,563개)에서 규칙을 고정한 채 확인했을 때, 엔트로피 순위 + log-likelihood 순위의 합으로 고르면 A− 비율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(−36%)였습니다(실험 18–20).
-7. 이 선택은 **실제 주행 지표로도 이어지고, 기전과 직접 연결됩니다**(실험 21–24, 사전 등록한 held-out log 52개에서 확인). NAVSIM PDM Score +0.0095, at-fault 충돌 0.56 → 0.23%이고, 현재 frame 정보만 쓰는 안전 필터를 더하면 PDMS +0.032, 충돌 0.10%입니다. 선택된 후보와 버려진 후보는 첫 이탈 **전** 엔트로피가 같고 **이탈 후에만** 갈라지므로(0.57 vs 0.97), 확신도는 feedback으로 불안정해지는 rollout을 골라내는 신호입니다.
+6. 대신 **모델 자신이 샘플한 후보(T 1.0, 16개) 중 디코딩 확신도로 하나를 고르면**, GT·외부 참조·교정 시점 없이 실패율과 궤적 오차가 모두 줄어듭니다. 이전에 쓰지 않은 log 56개(장면 4,563개)에서 규칙을 고정한 채 확인했을 때 [개정: 새 log이지만 PoC 기전 집합과 drive 13개 공유], 엔트로피 순위 + log-likelihood 순위의 합으로 고르면 A− 비율 2.15 → 1.45%(−33%, p = 4e-4), FDE 0.76 → 0.48 m(−36%)였습니다(실험 18–20).
+7. 이 선택은 **실제 주행 지표로도 이어지고, 기전과 직접 연결됩니다**(실험 21–24, 사전 등록한 held-out log 52개에서 확인). NAVSIM PDM Score +0.0095, at-fault 충돌 0.56 → 0.23%이고, 현재 frame 정보만 쓰는 안전 필터를 더하면 PDMS +0.032, 충돌 0.10%입니다. 선택된 후보와 버려진 후보는 첫 이탈 **전** 엔트로피가 같고 **이탈 후에만** 갈라지므로(0.57 vs 0.97) [개정: '같다'가 아니라 차이가 작음(−0.016, CI는 0 제외, 동등성 미검정); held-out은 log 분리·drive 22개 공유], 확신도는 feedback으로 불안정해지는 rollout을 골라내는 신호입니다.
 
 ---
 
@@ -112,7 +136,7 @@
 
 | 지표 | A− original | A− GT 1-token 교정 | A+ (step-matched) |
 |---|---:|---:|---:|
-| A+ (5 s) | 17.3% | **73.1%** (+55.8%p, p=4.2e-07) | 99.0% → 98.7% (변화 없음) |
+| A+ (5 s) | 17.3% | **73.1%** (+55.8%p, p=4.2e-07) [개정: 단위 수준 p; 실험 5 per-unit raw가 없어 cluster 재검정 불가 — 수치는 summary 수준] | 99.0% → 98.7% (변화 없음) |
 | FDE 5 s (m) | 8.18 | 2.09 (−6.09 m) | 2.01 → 0.75 |
 | 오차 증가 속도 (m/step) | 1.035 | 0.246 | 0.239 → 0.083 |
 
@@ -122,7 +146,7 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 
 ## 6. 결과를 가르는 것은 편차의 크기가 아니라 장면이다 (실험 6)
 
-같은 거리(중앙값 상대차 7.9%, 절대 8.8 mm)의 대안 토큰을 강제했을 때:
+같은 거리(중앙값 상대차 7.9%, 절대 8.8 mm)의 대안 토큰을 강제했을 때 [개정 아님, 표기 보충: 8.8 mm는 매칭 오차이고 perturbation 자체는 중앙값 0.129 m]:
 
 - A− 장면: alt 전체 증폭률 **45.0%**, recovery 49.2% — **같은 크기의 편차가 장면 안에서도 회복과 증폭으로 갈립니다**(A− 장면의 71%에서 두 결과가 공존).
 - A+ 장면: 같은 편차의 증폭률은 **4.8%**뿐입니다.
@@ -137,12 +161,12 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 | 조건 | A− 증폭률 |
 |---|---:|
 | Normal AR | 47.4% |
-| Action-history attention mask | 46.0% (효과 없음) |
-| Recent-action attention mask | 44.1% (효과 없음) |
-| **Recent-GT (직전 1개만 GT)** | **7.1%** |
+| Action-history attention mask | 46.0% (효과 없음) [개정: 효과 검출 안 됨, 동등성 미검정] |
+| Recent-action attention mask | 44.1% (효과 없음) [개정: 위와 같음] |
+| **Recent-GT (직전 1개만 GT)** | **7.1%** [개정: 매 생성 step 직전 위치를 GT로 바꾸는 반복 개입(단위당 6.8회); Recent − Normal −39.8%p [−49.0, −29.9], 13 drive p = 2.4e-4] |
 | **GT-history (전부 GT)** | **4.1%** |
 
-**직전 토큰 1개만 교정해도 전체 효과의 93%가 나옵니다.** attention mask는 효과가 없으므로, 기전은 긴 history 참조가 아니라 **생성 위치 자신의 입력 토큰**입니다.
+**직전 토큰 1개만 교정해도 전체 효과의 93%가 나옵니다.** attention mask는 효과가 없으므로, 기전은 긴 history 참조가 아니라 **생성 위치 자신의 입력 토큰**입니다. [개정: '매 step 직전 위치를 반복 교정하면 GT-history 효과의 93%(92.9% [89.4, 99.1]; Normal 대비 85%)'로 축소. mask 결과는 '효과 검출 안 됨']
 
 ---
 
@@ -150,9 +174,9 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 
 직전 action 위치의 hidden state를 layer별로 GT-history state로 교체(37개 layer 전수):
 
-- 증폭률은 **어느 layer에서 patch해도 3.8–7.4%** (GT-history 효과의 93–101%).
-- 구조적 동치를 수치로 확인: `patch@embedding` ≡ Recent-GT, `patch@L35` ≡ GT-history (1408/1408 토큰 일치, logits L1 = 0). 직전 action 위치가 곧 다음 action의 생성 위치이기 때문입니다.
-- **역방향(reverse) patch**: GT 문맥에 자기 생성 토큰의 embedding 하나만 넣어도 증폭이 4.4% → **33.4%**로 복귀(+29.0%p, Normal−GT 간격의 68%). identity만으로 충분조건에 근접합니다.
+- 증폭률은 **어느 layer에서 patch해도 3.8–7.4%** (GT-history 효과의 93–101%). [개정: 실험 8 본 실행의 per-unit raw 없음 — summary 수준; 후기 layer는 약 3%p 추가 감소가 유의]
+- 구조적 동치를 수치로 확인: `patch@embedding` ≡ Recent-GT, `patch@L35` ≡ GT-history (1408/1408 토큰 일치, logits L1 = 0). 직전 action 위치가 곧 다음 action의 생성 위치이기 때문입니다. [개정 아님: 코드 구조상의 동치이며 유지. 단 실험 8 원 raw는 없고 R8 복구 run에서 재현]
+- **역방향(reverse) patch**: GT 문맥에 자기 생성 토큰의 embedding 하나만 넣어도 증폭이 4.4% → **33.4%**로 복귀(+29.0%p, Normal−GT 간격의 68%). identity만으로 충분조건에 근접합니다. [개정: 삽입되는 embedding은 같은 batch의 **별도 Normal 행**에서 복사(Normal-branch token injection)되며 매 step 적용; R8 복구 run 기준 +28.6%p [+20.9, +36.1], 13 drive p = 2.4e-4. 다른 모델의 'Reverse'와 같은 처치가 아님]
 - layer에 따라 달라지는 부분은 **과거 GT 문맥의 통합**이며 주로 **L17–L33**(L19, L30에서 계단식)에서 들어옵니다. 이 성분은 GT 재정렬(+25%p)과 entropy(−0.49 nat)를 크게 바꾸지만 증폭은 약 3%p만 바꿉니다.
 - KV cache 검증: patch layer 이하 K/V 차이 0, 이후 layer에서 K 3.8 / V 17 이상, logits L1 ≥ 2.4e3. 거짓 음성 없음.
 
@@ -160,7 +184,7 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 
 ---
 
-## 9. 임계 시간 window: 2–4 step (실험 9, 10)
+## 9. 임계 시간 window: 2–4 step (실험 9, 10) [개정: 제목의 '2–4 step 임계 window'는 철회 — 교정 길이 효과(3 step ≈ 90% [81, 99])만 유지, 초기 위치 특수성은 근거 없음]
 
 **(9) 10-token horizon에서의 window 길이** — 교정 step 수를 늘려가며(A− 365 단위):
 
@@ -185,12 +209,12 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 | 3-step | **90% [83, 97]** | 93% | 98% → 87% (N=5) |
 | 4-step | **95% [90, 100]** | 89% | 101% → 95% (N=4) |
 
-- **horizon 교란만으로 생긴 착시가 아닙니다.** 같은 2 s를 줘도 1-step(62%)과 4-step(95%)의 차이가 큽니다.
+- **horizon 교란만으로 생긴 착시가 아닙니다.** 같은 2 s를 줘도 1-step(62%)과 4-step(95%)의 차이가 큽니다. [개정: 실험 10 per-unit raw 없음 — cluster 재검정 불가. R9에서는 교정 길이와 해제 후 horizon(5.8 → 2.9 pose)이 함께 변함]
 - 그러나 **감쇠합니다**. 모든 window에서 N 증가에 따른 회복률 감소의 CI가 0을 포함하지 않습니다(3-step −11%p [−19, −4]). 교정 지속 대비 초과 오차도 3-step 기준 0.03 → 0.75 m로 누적됩니다.
 - 해제 후 재발산: 3–4 step 교정에서 25–29% (Normal 49%, Full 12%).
 - **5 s 이후는 분포 밖이라 검증 불가**: AutoVLA는 10번째 action 뒤 `\n</answer>`로 답을 닫으려 하며 action 토큰 확률이 ≈0입니다(1049/1049 단위).
 
-**수정된 claim**: *AutoVLA has a genuine short early window (the first ~2–4 autoregressive transitions after a deviation) in which stabilizing the previous-action feedback removes most of the subsequent 1.5–2 s divergence even at an equal free-generation horizon; the benefit is not a horizon artefact, but it decays after release, so the window delays rather than permanently prevents re-divergence.*
+**수정된 claim**: *AutoVLA has a genuine short early window (the first ~2–4 autoregressive transitions after a deviation) in which stabilizing the previous-action feedback removes most of the subsequent 1.5–2 s divergence even at an equal free-generation horizon; the benefit is not a horizon artefact, but it decays after release, so the window delays rather than permanently prevents re-divergence.* [개정: 철회. 허용 문장 — "Correcting three consecutive context steps recovered about 90% of the full-history effect (95% CI 81–99%)"; "We found no evidence that corrections at the first deviating steps are more effective than equally long later corrections."]
 
 ---
 
@@ -203,13 +227,13 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 |---|---:|---:|---:|
 | 자기 토큰 (Normal) | 47.1% | – | 4.2% |
 | GT (Recent-GT) | 7.9% | 100% | 0.7% |
-| **GT와 motion이 가장 비슷한 다른 토큰** | **8.5%** | **99%** | **0.8%** |
+| **GT와 motion이 가장 비슷한 다른 토큰** | **8.5%** | **99%** [개정: GT 대비 +0.8%p [−1.6, +6.6], ±5%p 동등성 미성립] | **0.8%** |
 | **자기와 motion이 가장 비슷한 다른 토큰** | **43.8%** (p = 0.18) | 8% | 7.2% |
 | 무작위 토큰 / 평균 embedding | 51.5 / 52.1% | – | **43.2 / 40.5%** |
 
-- motion과 embedding 근접을 공동 회귀하면(두 변수 상관 −0.04), 대체 토큰이 motion으로 GT에서 1 SD 멀어질 때 A− FDE +1.99 m [+1.52, +2.70], 증폭 +16.1%p이고, embedding 근접은 motion을 고정하면 효과가 없습니다(전체 +0.03 m [−0.13, +0.19]).
+- motion과 embedding 근접을 공동 회귀하면(두 변수 상관 −0.04), 대체 토큰이 motion으로 GT에서 1 SD 멀어질 때 A− FDE +1.99 m [+1.52, +2.70], 증폭 +16.1%p이고, embedding 근접은 motion을 고정하면 효과가 없습니다(전체 +0.03 m [−0.13, +0.19]). [개정: '효과 검출 안 됨'으로; A− FDE에서는 embedding cosine +0.50 m [+0.04, +0.97]]
 - motion 정보를 없애면 정상 장면(A+)도 4% → 40%대로 무너집니다. 직전 action의 motion은 오류를 증폭하는 경로이자 정상 주행을 유지하는 운동학적 prior이므로, 조건화를 끊는 방식은 해결책이 아닙니다.
-- **mitigation 함의**: 안정화에 정확한 GT 토큰은 필요 없고, GT와 motion이 같으면 충분합니다. 다만 실험 12–16에서 보듯 비-oracle 참조는 GT보다 훨씬 부정확해, 외부 planner 궤적을 조건화하는 것은 오히려 해롭습니다(§9c).
+- **mitigation 함의**: 안정화에 정확한 GT 토큰은 필요 없고, GT와 motion이 같으면 충분합니다. [개정: 동등성 미성립 — "GT-like motion token produced a small, non-significant difference from the GT token (equivalence not established)"까지만] 다만 실험 12–16에서 보듯 비-oracle 참조는 GT보다 훨씬 부정확해, 외부 planner 궤적을 조건화하는 것은 오히려 해롭습니다(§9c).
 - 한계: embedding 조건의 조작 강도가 약하고(Δcos 약 ±0.1), motion 거리는 codebook 48-d L2 정의입니다.
 
 ## 9c. GT 없는 mitigation: 조건화는 실패하고, 선택은 통한다 (실험 12–19)
@@ -266,7 +290,7 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 | rank-sum + 현재 frame 안전 필터(F1) | **0.9209 (+0.0315 [+0.0234, +0.0410])** | **0.10%** | **1.23%** | 1.33% | 1.08% |
 
 - **주행 품질(실험 21)**: rank-sum은 개발 셋(+0.016)과 held-out(+0.0095) 모두에서 PDMS를 올리고 충돌을 절반 이하로 줄이며 진행도를 떨어뜨리지 않습니다. 자연 실패 장면에서는 PDMS +0.11–0.14입니다.
-- **기전 연결(실험 22)**: 선택 vs 버림의 이탈 **전** 엔트로피 차이는 −0.016(장면 내 증폭 AUROC 0.51 = 우연), 이탈 **후**는 −0.40(held-out)입니다. 버려진 후보는 오차 증가가 1.8배 빠르고 GT 재정렬률이 낮으며(0.24 vs 0.39) 증폭률이 3–6배 높습니다. rank-sum은 장면 안에서 증폭 rollout을 AUROC 0.85–0.87로 구별합니다. 확신도는 장면 난이도가 아니라 **이탈 이후 feedback의 자기 강화**를 포착합니다.
+- **기전 연결(실험 22)**: 선택 vs 버림의 이탈 **전** 엔트로피 차이는 −0.016(장면 내 증폭 AUROC 0.51 = 우연), 이탈 **후**는 −0.40(held-out)입니다. 버려진 후보는 오차 증가가 1.8배 빠르고 GT 재정렬률이 낮으며(0.24 vs 0.39) 증폭률이 3–6배 높습니다. rank-sum은 장면 안에서 증폭 rollout을 AUROC 0.85–0.87로 구별합니다. 확신도는 장면 난이도가 아니라 **이탈 이후 feedback의 자기 강화**를 포착합니다. [개정: 이탈 전 차이는 '우연'이 아니라 작음(−0.016, CI 0 제외); held-out은 log 분리·drive 22개 공유]
 - **후보 수(실험 23)**: N = 8에서 held-out PDMS 이득의 85%, 12–16에서 포화. 후보를 한 batch로 디코딩하면 N = 16의 추론 비용은 1.3배입니다.
 - **안전 필터(실험 24)**: 현재 객체의 등속 외삽과 지도만으로 충돌·주행 가능 영역 이탈이 예측된 후보를 지우면 PDMS 이득이 2–3배가 됩니다. 다만 open-loop A−(사람 궤적과의 거리)는 rank-sum 단독보다 덜 줄어, 필터는 선택을 "사람처럼"보다 "규칙 준수" 쪽으로 옮깁니다. 필터와 평가가 같은 채점 규칙을 쓰는 점도 감안해야 합니다.
 - 한계: PDMS는 비반응형 시뮬레이션입니다(반응형 2단계 평가는 §9e).
@@ -301,7 +325,7 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 | **F1** | +0.125 | **+0.112 [+0.082, +0.140], 5e-5 — 재현됨** | **0.347 (+0.118 [+0.096, +0.140])**, 그룹 147 개선 / 51 악화 |
 | F1 + max log-lik | +0.133 | +0.112 [+0.085, +0.136] | 0.350 (+0.122), 그룹 141 / 33 |
 
-- **안전 필터의 closed-loop 개선은 새 log에서 재현됩니다.** 주행 가능 영역 위반(원본 16.7 → 5.6%, 합성 41 → 26%)과 합성 장면 충돌(22 → 16%)이 줄고, 진행도·승차감은 0.01–0.015 낮아집니다.
+- **안전 필터의 closed-loop 개선은 새 log에서 재현됩니다.** [개정: 새 log이지만 1차 절반과 drive 16개 공유 — 'new logs, not drive-disjoint'] 주행 가능 영역 위반(원본 16.7 → 5.6%, 합성 41 → 26%)과 합성 장면 충돌(22 → 16%)이 줄고, 진행도·승차감은 0.01–0.015 낮아집니다.
 - **max log-lik의 첫 절반 이득은 재현되지 않았습니다**(첫 절반 추정치가 두 번째 절반 CI 밖). 확신도만으로 고르는 규칙은 closed-loop에서 +0.02 정도의 작고 불안정한 이득입니다. open-loop·PDMS에서의 확신도 선택 효과(§9c–9d)가 반응형 평가로 그대로 옮겨가지는 않습니다.
 
 ## 9g. F1 개선의 분해: 필터 vs 확신도 선택기 (실험 27)
@@ -327,7 +351,7 @@ A−의 궤적 실패는 **경로 의존적**입니다. 첫 토큰 하나를 되
 - **29 필터 구성요소**: 주행 가능 영역 제약 +0.087(Shapley 86%), 충돌 제약 +0.012(14%); 이득의 99–104%가 곱셈(안전) 항, 진행도 항 −0.0001 ~ −0.0055.
 - **30 oracle**: 17개 후보 oracle EPDMS 0.405 vs 최선 방법 0.350(남은 선택 여지 +0.055); token의 31%는 모든 후보가 0점 → 주 병목은 후보 생성.
 - **31 탐지**: 이탈 전 AUROC 0.57–0.63(hidden probe 포함, 장면 내 0.50–0.65), 이탈 후 0.75–0.90(disagreement 0.900 최고) → 이탈 전에는 예측 불가.
-- **32 motion semantics**: 방향 오답이 크기 오답보다 해로움(A− 증폭 26.3 vs 17.3%, +9.0%p [+3.1, +18.7], GT와의 거리는 더 작음); 같은 크기 오차를 GT 반대편에 두면 47.9 → 13.7%.
+- **32 motion semantics**: 방향 오답이 크기 오답보다 해로움(A− 증폭 26.3 vs 17.3%, +9.0%p [+3.1, +18.7], GT와의 거리는 더 작음); 같은 크기 오차를 GT 반대편에 두면 47.9 → 13.7%. [개정: drive 기준 +9.9%p [+3.9, +21.0], p = 0.0056(개발 13 drive); 새 drive(P1-C)에서는 +6.2%p, p = 0.073으로 결론 안 남 → 일반화 주장 안 함]
 - **P6 연속 closed-loop**: CARLA용 AutoVLA checkpoint 부재, NVIDIA EGL/Vulkan 부재, 디스크 부족으로 수행 불가.
 
 ---
@@ -346,18 +370,18 @@ perception (대체로 보존)
 장면 맥락이 증폭 여부를 지배          직전 토큰 identity가 residual로
 (같은 거리 편차: A− 45% vs A+ 5%)     다음 action을 조건화 (1-step feedback)
                                                          │
-                                          2–4 step 안정화 시 90–95% 차단
+                                          2–4 step 안정화 시 90–95% 차단  [개정: 3 step ≈ 90% [81, 99]]
                                           (단, 해제 후 서서히 재발산)
 ```
 
 - 실패의 축은 "무엇을 보았는가"가 아니라 **"직전에 무엇을 출력했는가"**입니다.
-- oracle 교정으로는 2–4 step 안정화가 궤적 실패의 대부분을 막지만, GT 없는 참조로 조건화를 교정하면 모델이 그 참조를 따라가 정상 장면이 손해를 봅니다(§9c). 배포 가능한 순이득은 **조건화가 아니라 선택**에서 나왔습니다: 모델 자신의 다양한 후보 중 디코딩 확신도(엔트로피 순위 + log-likelihood 순위)가 가장 높은 계획을 고르면, 새 log 56개에서 실패율 −33%, FDE −36%였습니다(open-loop 기준).
+- oracle 교정으로는 2–4 step 안정화가 궤적 실패의 대부분을 막지만 [개정: 연속 3 step 문맥 교정 ≈ 90% [81, 99]; 위치 특수성 없음], GT 없는 참조로 조건화를 교정하면 모델이 그 참조를 따라가 정상 장면이 손해를 봅니다(§9c). 배포 가능한 순이득은 **조건화가 아니라 선택**에서 나왔습니다: 모델 자신의 다양한 후보 중 디코딩 확신도(엔트로피 순위 + log-likelihood 순위)가 가장 높은 계획을 고르면, 새 log 56개에서 실패율 −33%, FDE −36%였습니다(open-loop 기준).
 
 ---
 
 ## 11. 한계
 
-- **표본**: A− 장면은 52개(그중 t*=0은 17개)입니다. log cluster CI가 넓습니다.
+- **표본**: A− 장면은 52개(그중 t*=0은 17개)입니다. log cluster CI가 넓습니다. [개정: 독립 단위는 16 log가 아니라 13 drive(10 day-vehicle)]
 - **seed와 decoding**: 실험 1–16은 단일 seed, T = 0.01입니다. 실험 12의 핵심 효과는 seed 0–2 × T 0.01/0.5에서 재현되었고(실험 17), 실험 19는 3 seed를 합산했습니다.
 - **평가 horizon 5 s**. 모델의 계획 길이가 10 token이라 그 이상은 분포 밖입니다. 실험 13의 8 s 재계획은 카메라가 로그를 따르는 pseudo closed loop이며, 진짜 closed-loop 평가(NAVSIM v2 pseudo-simulation 등)는 하지 않았습니다.
 - **GPU**: 실험 14, 15, 18, 19(seed 0–2)는 RTX 3080 Ti, 나머지는 RTX 5090입니다. 실패 장면은 모델이 확신하지 못하는 경계 장면이라 GPU 간 부동소수 차이만으로도 결과가 바뀝니다(3080 Ti에서 5090 자연 실패 장면의 A− 재현 65%). 모든 비교는 같은 실행 안의 쌍대 비교입니다.

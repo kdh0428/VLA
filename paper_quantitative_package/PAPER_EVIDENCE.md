@@ -1,5 +1,7 @@
 # PAPER_EVIDENCE — 논문 본문용 정량 근거 전체 (요청 §2–§6)
 
+> **2026-10-13 개정 안내.** 이 문서는 2026-10-08 시점의 정량 근거 기록이며 본문을 수정하지 않았습니다. 단위 수준 p(예: 8e-42, 6.7e-31, 7e-261), "2–4 step window", "직전 token 1개로 93%"(반복 개입·분모 미표기), 실험 11 "GT 근접 = GT", 실험 35 −6.2%p와 ensemble 관련 문장, SpatialVLA m 단위 "궤적 발산"(실행 명령 누적) 등은 `PAPER_NUMBERS.md`(2026-10-13)와 `autovla_misalignment_poc/outputs/review_followup2/CLAIM_EVIDENCE_MATRIX.md`의 판정으로 대체됩니다.
+
 이 문서는 영역별 추출 결과를 그대로 합친 것입니다. 원 파일은 `_parts/`에 있습니다.
 - §A–F (AutoVLA): `autovla_sections.md`
 - 실험 33, 28, 34 상세: `crossmodel_sections.md`
