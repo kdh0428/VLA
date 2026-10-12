@@ -1,0 +1,15 @@
+set,n_logs,n_drives,n_day_vehicles,n_scenes
+mech_poc_units,26,19,13,208.0
+mech_poc_Aminus,16,13,10,52.0
+impromptu_exp33,28,20,14,300.0
+poc_dev_discovery,28,20,14,
+sel_dev,56,32,16,4563.0
+sel_heldout,52,28,14,4814.0
+navhard_src,76,34,15,
+navhard_half1_exp25,36,22,11,
+navhard_half2_exp26,40,28,12,
+p1c_eval_all,64,24,16,5671.0
+p1c_eval_units,64,24,16,353.0
+p1c_eval_units_F,41,18,10,105.0
+p1c_pilot,2,2,2,10.0
+excluded_drive_adjacent_to_dev,42,14,9,

@@ -1,0 +1,122 @@
+{
+ "created_utc": "2026-10-12T21:57:17Z",
+ "status": "POST-HOC analysis of existing data",
+ "B": 10000,
+ "B_LOO": 2000,
+ "MC_reps": 200000,
+ "seed_drive": 20261013,
+ "seed_log_P0B_scheme": "20261008 + 100 i / 700 + 10 i",
+ "seed_drive_P1C": 20261008,
+ "exact_max_clusters": 26,
+ "pair_reports": {
+  "AV-P1 Recent-Normal": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-P2 Reverse-Full": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-P3 Direction-Magnitude": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S GeoNN(GT)-RecentGT [equivalence]": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S Recent-Normal FDE": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S Reverse-Full FDE": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S Direction-Magnitude FDE": {
+   "n_keys": 365,
+   "n_paired": 365,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S Recent-Normal A+": {
+   "n_keys": 1043,
+   "n_paired": 1043,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S Reverse-Full A+": {
+   "n_keys": 1043,
+   "n_paired": 1043,
+   "n_unpaired_or_missing": 0
+  },
+  "AV-S Direction-Magnitude A+": {
+   "n_keys": 1043,
+   "n_paired": 1043,
+   "n_unpaired_or_missing": 0
+  },
+  "IMP Recent-Normal": {
+   "n_keys": 2398,
+   "n_paired": 2398,
+   "n_unpaired_or_missing": 0
+  },
+  "IMP GT-history-Normal": {
+   "n_keys": 2398,
+   "n_paired": 2398,
+   "n_unpaired_or_missing": 0
+  },
+  "IMP Reverse-Full": {
+   "n_keys": 2398,
+   "n_paired": 2398,
+   "n_unpaired_or_missing": 0
+  },
+  "IMP Direction-Magnitude": {
+   "n_keys": 2398,
+   "n_paired": 2398,
+   "n_unpaired_or_missing": 0
+  },
+  "P1C RN F": {
+   "n_keys": 2436,
+   "n_paired": 2436,
+   "n_unpaired_or_missing": 0
+  },
+  "P1C RN P": {
+   "n_keys": 2436,
+   "n_paired": 2436,
+   "n_unpaired_or_missing": 0
+  },
+  "P1C RV F": {
+   "n_keys": 2436,
+   "n_paired": 2436,
+   "n_unpaired_or_missing": 0
+  },
+  "P1C RV P": {
+   "n_keys": 2436,
+   "n_paired": 2436,
+   "n_unpaired_or_missing": 0
+  },
+  "P1C DM F": {
+   "n_keys": 2436,
+   "n_paired": 2436,
+   "n_unpaired_or_missing": 0
+  },
+  "P1C DM P": {
+   "n_keys": 2436,
+   "n_paired": 2436,
+   "n_unpaired_or_missing": 0
+  }
+ },
+ "inputs": [
+  "P0B_cluster_stats/run_20261008/units.parquet",
+  "R8R9_raw_recovery/run_20261008/units.parquet",
+  "P1C_new_log_replication/run_20261008/analysis/units.parquet",
+  "P0B .../comparison_with_original.csv, paired_effects.csv",
+  "R8R9 .../paired_effects.csv",
+  "P1C .../decisions.json",
+  "P1C design split.csv"
+ ]
+}

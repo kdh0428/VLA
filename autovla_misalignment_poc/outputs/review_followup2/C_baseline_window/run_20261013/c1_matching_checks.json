@@ -1,0 +1,13 @@
+{
+ "n_units": 5553,
+ "prefix_equal": 1.0,
+ "first_token_p_all": 1.0,
+ "pose_t_maxdiff_OC_Geo_CM_max": 0.0,
+ "pose_t_maxdiff_U_ref_CM0_max_over_U_eq_ref_units": 5.385375601463238e-06,
+ "n_poses_equal_10": 1.0,
+ "cm_rollout_np_vs_decoder_max_m": 1.88945219541381e-05,
+ "ref_rollout_np_vs_file_max_m": 1.1020635696468162e-05,
+ "OC_suffix_eq_C1": 1.0,
+ "U_eq_ref": 0.8723212677831803,
+ "cm_sfx_equals_d0_maxabs": 1.1102230246251565e-16
+}

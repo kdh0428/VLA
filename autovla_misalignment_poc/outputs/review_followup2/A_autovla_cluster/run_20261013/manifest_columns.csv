@@ -1,0 +1,29 @@
+column,required_by_prompt,definition,dtype,missing_rate,n_unique
+model,True,"AutoVLA (AutoVLA_PDMS_89.ckpt, Qwen2.5-VL-3B, 2048-token action codebook) or Impromptu-VLA-3B",category,0.0,2
+experiment,True,experiment id; P1-C split per mechanism block (each block has its own Normal row),category,0.0,13
+run_id,True,run directory (relative to autovla_misalignment_poc/),category,0.0,9
+split,True,data split the unit belongs to (PoC mechanism dev set vs P1-C drive-disjoint eval set),category,0.0,2
+task,True,task family; all rows are open-loop navtest trajectory planning (no closed-loop simulator),category,0.0,1
+drive_id,True,<date.time>_veh-NN = first two '_' fields of the navsim log name (same rule as P1-C split.csv),category,0.0,44
+log_id,True,navsim log segment <date.time>_veh-NN_<start>_<end>,category,0.0,92
+scene_id,True,navtest scene token (anchor frame),object,0.0,843
+anchor_id,True,"scene token + t* (first natural token mismatch, the injection position); t* from the units table (R8R9 for exp 6/7/11/32 scenes; NA for Impromptu, whose units are direction perturbations at a fixed step)",string,0.0,861
+intervention,True,condition name as in the original script (definitions in DATA_AUDIT_autovla),category,0.0,191
+execution_config,True,"harness script and fixed settings (temperature, precision, GPU, executed-vs-context intervention)",category,0.0,10
+simulator_seed,True,null: no simulator (open-loop on logged frames),Int64,1.0,0
+policy_rng_seed,True,sampling seed recorded in the units table (0 where present); null where the source table did not store it (exp 6/7/11/32/33 via P0-B units) -- not inferred,Int64,0.141904,1
+repeat_id,True,"0: one decode per (unit, condition); there are no stochastic repeats in these experiments",int64,0.0,1
+initial_state_cluster_id,True,physical initial state = logged navtest frame + ego state at the scene token; identical for all perturbations/conditions/models of one scene (navtest:<scene_id>),object,0.0,843
+complete_restore_hash,True,"null: not applicable -- open-loop forward pass on logged inputs, no simulator/controller state to restore; reproducibility of the driving harness is audited by re-running (R8R9 220/220 rows exact)",object,1.0,0
+pair_id,True,experiment|unit_id (unit = scene|perturbation); rows with the same pair_id are the paired conditions,object,0.0,25275
+outcome_name,True,"amplification (primary binary), fde5 (m), dev9_ref (P1-A primary, m), recovery (P1-C, binary)",category,0.0,4
+outcome_value,True,value of the outcome (amplification/recovery 0/1; invalid outputs count 0 per the dev rule),float64,1e-06,174790
+unit,True,measurement unit of outcome_value,category,0.0,4
+source_file,True,units table used here <- original raw location,category,0.0,10
+protocol_commit,True,commit of the governing protocol / preregistration ('none' = exploratory experiment),category,0.0,7
+code_commit,True,last git commit touching the run directory (results commit); null if untracked,category,0.0,6
+group_or_stratum,False,AutoVLA A-/A+ group (PoC) or P1-C stratum F/S; null for Impromptu,category,0.066315,4
+perturbation,False,perturbation id inside the scene (original / alt_k / direction),object,0.0,36
+t_star,False,first natural mismatch position (integer),Int64,0.066315,8
+design_weight,False,P1-C Hajek weight 1/pi (F = 1); 1 elsewhere,float64,0.0,39
+block,False,P1-C mechanism block (H7/H8/H9/H32); null elsewhere,category,0.789481,4

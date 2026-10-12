@@ -1,0 +1,119 @@
+A2 (SpatialVLA): initial-state clusters for experiments 34, 35 and P1-D -- findings
+Post-hoc audit of existing data, 2026-10-12/13. CPU only (SAPIEN 2.2.2 + Mesa lavapipe), no model/GPU.
+Method, cluster levels and tolerance fixed in METHOD.md before clustering; tolerance not changed afterwards.
+Code: scripts/review_followup2/svla_reset_states.py, scripts/review_followup2/cluster_states.py
+
+1. UNIQUE INITIAL-STATE COUNTS
+Levels:
+- primary  = initial_state_cluster_id (goal/instruction + asset ids + poses/velocities)
+- scene    = primary without the instruction
+- physical = physics only (no instruction, no visual-only robot urdf_version)
+
+task       experiment (seeds/units)   episodes  primary  scene  physical
+coke       exp34 (0-39)                    360       40     40        40
+coke       exp35 (0-119)                 1,680      120    120       120
+coke       P1-D (200-319)                2,400      120    120       120
+coke       union of the three            4,440      240    240       240
+move_near  exp34 (0-39)                    360       29     24        10
+move_near  exp35 (0-119)                 1,680       53     35        10
+move_near  exp35 0-39 / 40-119      1,040 / 640  29 / 47 24 / 34   10 / 10
+move_near  P1-D (120 units)              2,400      120     40        10
+move_near  union of the three            4,440      173     40        10
+
+Full table: cluster_counts.csv (also episodes per cluster).
+Seed -> cluster map: state_manifest.csv. Cluster membership: cluster_sizes.csv.
+Episodes per cluster:
+- coke: one seed per cluster at every level.
+- move_near primary: up to 6 seeds / 104 episodes per cluster in exp35; up to 140 episodes across exp34+35.
+- move_near physical: 16-34 seeds per layout; one layout carries up to 604 of 4,440 episodes.
+
+2. THE "53 / 29" CLAIM
+It holds exactly at the (episode_id, urdf_version) level, which is what P1-D called a "configuration":
+- move_near seeds 0-119 give 53 distinct primary states; seeds 0-39 give 29.
+- This now comes from re-created poses and assets, not only from the RNG mapping.
+- The recorded instructions of all exp34/35 episodes match the re-created ones (0 mismatches).
+
+But the claim understates the dependence. A move_near episode_id codes three things:
+- an object triplet (5 options);
+- a source/target pair (6 options), which changes only the instruction;
+- an xy layout (2 options).
+So there are only 10 physical object layouts. The P1-D "overlay" is the robot urdf_version: its URDFs differ
+only in visual mesh paths; collision meshes, inertias and joints are identical. As a result:
+- exp34, exp35 and P1-D each use the same 10 physical layouts.
+- Without the instruction, exp35 has 35 distinct scenes (layout x robot texture) and P1-D has 40.
+- get_state() ignores the instruction and the robot texture. The earlier P1-D CPU check (15/21 distinct
+  hashes) already reflected this, mixed with history drift because it reset without reconfigure.
+
+3. CROSS-EXPERIMENT OVERLAP (cluster_overlap.csv)
+- coke: exp34 is a subset of exp35 (40 shared); no overlap with P1-D.
+- move_near, primary level: exp34 is a subset of exp35 (29 of 29); no overlap with P1-D.
+- move_near, scene level: exp34 and exp35 share 24 of 24; P1-D contains all 24 exp34 scenes and all 35 exp35
+  scenes, plus 5 new ones.
+- move_near, physical level: all three experiments share the same 10 of 10 layouts.
+Consequences:
+- P1-D's claim "120 distinct configurations, so the effective move_near n equals the nominal n" holds only at
+  the primary level. Physically, P1-D move_near has 10 independent initial states, the same 10 as exp34/35.
+- P1-D coke is disjoint from exp34/35. The closest pair of coke positions over all 240 states is 1.2 mm apart in xy.
+
+4. DETERMINISM AND RE-CREATION CHECKS
+- Canonical reset (reconfigure=True) is bit-identical (state sha1 and 224x224 image sha1):
+  - same process: 14/14 per task;
+  - fresh process: 7/7 per task.
+- P1-D:
+  - re-created state hash = recorded init.state_hash for 120/120 units per task; img_hash also 120/120;
+  - one state hash per unit across all its episodes;
+  - in-run restore.ok 3,840/3,840.
+- exp34:
+  - no state hash was recorded;
+  - the saved t=0 frames match the re-created observations pixel-exactly for coke 34/40 and move_near 38/40;
+  - mismatches (coke 19, 20, 33, 34, 36, 38; move_near 19, 36) are small (max 2-19/255) and on the object region.
+- exp35:
+  - no object state was recorded; the instruction and TCP pose0 match exactly;
+  - object state is inferred from the seed -> reset code path, not verified from run records.
+
+5. HISTORY-DEPENDENT DRIFT OF exp34/35-STYLE RESETS (reset(seed) without reconfigure; drift_summary.csv)
+Tests: after random predecessor seeds, a sequential chain, both task envs in one process, and after replaying
+the actions of 200 recorded exp35 episodes.
+- move_near:
+  - not bit-identical in 6-9% of resets;
+  - exceeds the tolerance only for the rolling objects: apple up to 20x tol, orange up to 40x tol
+    (max 0.26 mm, quaternion difference 4.0e-3, about 0.5 deg).
+- coke:
+  - drift is 0 unless the reset follows a stepped episode;
+  - after a stepped episode, 27/102 resets differ and 7 exceed the tolerance (max 4.5e-5 m, quaternion 5.5e-4,
+    angular velocity 8.9e-3 rad/s).
+- One drifted coke state (seed 20) reproduced the exp34 frame pixel-exactly. So the frame mismatches are this
+  drift, not a rendering difference.
+- This drift is also a plausible (unproven) cause of the exp35 pre-branch divergence noted in P1-D section 0.3.
+- Per the rule in METHOD.md, the affected exp34/35 rows are flagged "physical state uncertain beyond tol": all coke
+  rows, and 30/40 (exp34) and 95/120 (exp35) move_near rows.
+- Cluster assignment stays unambiguous:
+  - the largest drift (coke 5.5x tol) is below half of the smallest between-cluster distance (17.4x tol);
+  - move_near clusters with the same discrete keys are 2,000x tol or more apart;
+  - so drift could only create sub-0.3-mm near-duplicate variants, which by rule are not counted as clusters.
+
+6. initial_state_cluster_id vs complete_restore_hash
+- initial_state_cluster_id identifies the physical starting problem, within tolerance.
+- A complete_restore_hash would also need:
+  - controller targets and gripper state (not in get_state);
+  - the policy chunk/ensemble buffer and sticky-gripper state;
+  - the reset RNG; decoding is greedy, so there is no policy RNG.
+- P1-D verified restore:
+  - get_state and image hashes at reset and at every replayed step t < 8;
+  - controller and gripper targets restored by re-simulating the same action prefix;
+  - the executor deep-copied at T0;
+  - P1-D did not hash controller internals directly.
+- exp34/35 verified nothing beyond the seed, and their resets were history-dependent. Their condition pairs share
+  a cluster but were not restore-verified.
+
+7. CONSEQUENCES FOR A3/B (not executed here)
+- coke: count seeds as independent initial states.
+- move_near: report both clusterings:
+  - primary: exp34 = 29, exp35 = 53, P1-D = 120;
+  - physical: 10 layouts, the same in all three experiments. This leaves few clusters, so small-sample cluster
+    methods are needed, and P1-D move_near is not physically independent of exp34/35.
+
+8. LIMITS
+- The in-run exact object states of exp34/35 cannot be recovered. Their status is "verified up to tolerance-level
+  drift", not bit-verified.
+- The P1-D smoke runs and the _aborted_start run were not included.

@@ -1,0 +1,101 @@
+{
+ "status": "POST-HOC audit of existing files",
+ "drive_definition": "drive_id = first two '_' fields of the log name; identical to split.csv `drive` (all 147 rows) and to P1-C units drive_id (verified)",
+ "Aminus_logs": 16,
+ "Aminus_drives": 13,
+ "Aminus_multi_log_drives": {
+  "2021.05.25.14.24.08_veh-25": [
+   "2021.05.25.14.24.08_veh-25_00934_01067",
+   "2021.05.25.14.24.08_veh-25_04059_04203"
+  ],
+  "2021.06.03.13.55.17_veh-35": [
+   "2021.06.03.13.55.17_veh-35_00789_00999",
+   "2021.06.03.13.55.17_veh-35_02866_03582"
+  ],
+  "2021.09.29.14.44.26_veh-28": [
+   "2021.09.29.14.44.26_veh-28_00238_00320",
+   "2021.09.29.14.44.26_veh-28_01059_01191"
+  ]
+ },
+ "mech_poc_units_logs_drives": [
+  26,
+  19
+ ],
+ "impromptu_logs_drives": [
+  28,
+  20
+ ],
+ "impromptu_vs_autovla_mech_scene_overlap": 18,
+ "p1c_eval_vs_mech_poc_shared_drives": [],
+ "p1c_eval_vs_poc_dev_discovery_shared_drives": [],
+ "p1c_eval_vs_impromptu_shared_drives": [],
+ "p1c_eval_vs_pilot_shared_drives": [],
+ "p1c_eval_vs_poc_shared_day_vehicles": [
+  "2021.05.25_veh-25",
+  "2021.05.25_veh-35",
+  "2021.06.03_veh-35",
+  "2021.06.28_veh-14",
+  "2021.06.28_veh-26",
+  "2021.06.28_veh-38",
+  "2021.09.16_veh-42",
+  "2021.09.16_veh-45",
+  "2021.09.29_veh-28",
+  "2021.10.06_veh-52"
+ ],
+ "p1c_eval_units_logs_in_sel_dev_or_heldout": 64,
+ "p1c_eval_units_scenes_in_sel_dev_or_heldout": 353,
+ "p1c_eval_logs_navhard_source": 34,
+ "p1c_eval_drives_with_navhard_source_log": 19,
+ "sel_dev_vs_sel_heldout_shared_logs": 0,
+ "sel_dev_vs_sel_heldout_shared_drives": [
+  "2021.05.25.14.16.10_veh-35",
+  "2021.05.25.15.59.03_veh-30",
+  "2021.05.25.16.37.23_veh-25",
+  "2021.05.25.17.54.41_veh-35",
+  "2021.06.03.12.02.06_veh-35",
+  "2021.06.03.13.55.17_veh-35",
+  "2021.06.03.17.06.58_veh-35",
+  "2021.06.03.18.47.39_veh-35",
+  "2021.06.28.20.24.43_veh-38",
+  "2021.08.30.13.45.25_veh-40",
+  "2021.08.30.16.16.44_veh-40",
+  "2021.09.09.14.18.22_veh-48",
+  "2021.09.09.17.18.51_veh-48",
+  "2021.09.09.18.04.06_veh-40",
+  "2021.09.16.13.53.10_veh-42",
+  "2021.09.16.14.39.34_veh-42",
+  "2021.09.16.19.12.04_veh-42",
+  "2021.09.29.14.44.26_veh-28",
+  "2021.09.29.18.19.40_veh-28",
+  "2021.09.29.19.02.14_veh-28",
+  "2021.10.06.07.26.10_veh-52",
+  "2021.10.06.08.16.17_veh-52"
+ ],
+ "sel_dev_vs_sel_heldout_shared_day_vehicles": 12,
+ "sel_heldout_logs_in_drives_shared_with_sel_dev": 45,
+ "sel_heldout_scenes_in_drives_shared_with_sel_dev": 4077,
+ "sel_dev_vs_mech_poc_shared_drives": 13,
+ "sel_heldout_vs_mech_poc_shared_drives": 11,
+ "navhard_half1_vs_half2_shared_logs": 0,
+ "navhard_half1_vs_half2_shared_drives": [
+  "2021.05.25.15.59.03_veh-30",
+  "2021.05.25.17.54.41_veh-35",
+  "2021.06.03.13.55.17_veh-35",
+  "2021.06.03.17.06.58_veh-35",
+  "2021.06.03.18.47.39_veh-35",
+  "2021.08.30.13.45.25_veh-40",
+  "2021.08.30.16.16.44_veh-40",
+  "2021.09.16.13.53.10_veh-42",
+  "2021.09.16.14.39.34_veh-42",
+  "2021.09.16.19.12.04_veh-42",
+  "2021.09.29.14.44.26_veh-28",
+  "2021.09.29.15.23.04_veh-28",
+  "2021.09.29.18.19.40_veh-28",
+  "2021.09.29.19.02.14_veh-28",
+  "2021.10.06.07.26.10_veh-52",
+  "2021.10.06.08.16.17_veh-52"
+ ],
+ "navhard_src_vs_mech_poc_shared_logs": 12,
+ "navhard_src_vs_mech_poc_shared_drives": 14,
+ "sel_heldout_n_scenes": 4814
+}

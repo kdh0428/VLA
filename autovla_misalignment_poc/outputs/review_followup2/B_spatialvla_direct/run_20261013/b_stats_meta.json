@@ -1,0 +1,17 @@
+{
+ "seed": 20261013,
+ "bootstrap_B": 10000,
+ "signflip_MC": 100000,
+ "signflip_MC_inversion_R": 20000,
+ "exact_max_clusters": 26,
+ "margins": [
+  0.1,
+  0.05
+ ],
+ "clusterings": [
+  "primary",
+  "physical",
+  "episode"
+ ],
+ "runtime_s": 71.79909181594849
+}

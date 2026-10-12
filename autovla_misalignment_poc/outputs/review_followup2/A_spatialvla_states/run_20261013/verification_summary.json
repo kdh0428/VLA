@@ -1,0 +1,30 @@
+{
+ "google_robot_pick_coke_can": {
+  "P1D_state_hash_match": 120,
+  "P1D_units": 120,
+  "P1D_img_hash_match": 120,
+  "exp34_t0_frame_pixel_exact": 34,
+  "exp34_seeds": 40,
+  "exp34_frame_mismatch_seeds": [
+   19,
+   20,
+   33,
+   34,
+   36,
+   38
+  ],
+  "instr_mismatch_rows": []
+ },
+ "google_robot_move_near": {
+  "P1D_state_hash_match": 120,
+  "P1D_units": 120,
+  "P1D_img_hash_match": 120,
+  "exp34_t0_frame_pixel_exact": 38,
+  "exp34_seeds": 40,
+  "exp34_frame_mismatch_seeds": [
+   19,
+   36
+  ],
+  "instr_mismatch_rows": []
+ }
+}

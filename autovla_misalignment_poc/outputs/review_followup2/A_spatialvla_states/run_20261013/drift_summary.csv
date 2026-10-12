@@ -1,0 +1,9 @@
+kind,task,n_resets,n_bit_identical,n_exceeding_tol,max_dev_in_tol_units,seeds_exceeding_tol,objects_in_exceeding_layouts,n_frame_exact,max_obj_pos_diff_m,max_obj_quat_diff,max_obj_linvel_diff,max_obj_angvel_diff
+drift_chain,google_robot_move_near,120,114,5,40.484,36 56 82 92 98,baked_apple_v2 baked_opened_7up_can_v2 baked_opened_coke_can_v2 baked_opened_pepsi_can_v2 baked_opened_redbull_can_v2 baked_sponge_v2 blue_plastic_bottle orange,,2.63e-04,4.05e-03,0.00e+00,0.00e+00
+drift_chain,google_robot_pick_coke_can,120,120,0,0.0,,,,0.00e+00,0.00e+00,0.00e+00,0.00e+00
+drift_pred,google_robot_move_near,60,57,2,15.969,37 70,baked_apple_v2 baked_opened_7up_can_v2 baked_sponge_v2,,1.72e-04,1.60e-03,0.00e+00,0.00e+00
+drift_pred,google_robot_pick_coke_can,60,60,0,0.0,,,,0.00e+00,0.00e+00,0.00e+00,0.00e+00
+mixed,google_robot_move_near,300,281,14,40.484,12 15 21 27 33 34 35 36 52 55 67 79 95,baked_apple_v2 baked_opened_7up_can_v2 baked_opened_coke_can_v2 baked_opened_pepsi_can_v2 baked_opened_redbull_can_v2 baked_sponge_v2 blue_plastic_bottle orange,186,2.63e-04,4.05e-03,0.00e+00,0.00e+00
+mixed,google_robot_pick_coke_can,300,300,0,0.0,,,175,0.00e+00,0.00e+00,0.00e+00,0.00e+00
+stepped,google_robot_move_near,98,89,6,19.716,20 28 32 34 39,baked_apple_v2 baked_opened_7up_can_v2 baked_opened_coke_can_v2 baked_opened_pepsi_can_v2 baked_opened_redbull_can_v2 baked_sponge_v2 blue_plastic_bottle orange,85,1.91e-04,1.97e-03,0.00e+00,0.00e+00
+stepped,google_robot_pick_coke_can,102,75,7,5.545,7 13 16 22 33 39,opened_coke_can,65,4.52e-05,5.55e-04,2.90e-04,8.89e-03

@@ -1,0 +1,14 @@
+experiment,rows,pairs,scenes,logs,drives,interventions,init_states
+P1A_gt_free_reference,34332,2861,208,26,19,12,208
+P1B_start_position,74624,1408,208,26,19,53,208
+P1C_H32,14616,2436,353,64,24,6,353
+P1C_H7,17052,2436,353,64,24,7,353
+P1C_H8,14616,2436,353,64,24,6,353
+P1C_H9,14616,2436,353,64,24,6,353
+R8,130944,1408,208,26,19,93,208
+R9,23936,1408,208,26,19,17,208
+exp06_equal_distance,1824,1824,208,26,19,4,208
+exp07_action_history_causal,9856,1408,208,26,19,7,208
+exp11_prev_action_identity,12672,1408,208,26,19,9,208
+exp32_motion_semantics,8448,1408,208,26,19,6,208
+exp33_impromptu_cde,28776,2398,300,28,20,12,300

@@ -1,0 +1,25 @@
+{
+ "script": "/root/VLA/autovla_misalignment_poc/scripts/review_followup2/c_baseline_window.py",
+ "seed": 20261013,
+ "bootstrap_B": 10000,
+ "stats_core": "/root/VLA/autovla_misalignment_poc/scripts/review_followup2/stats_core.py",
+ "inputs": [
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw/records.jsonl",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw_fixedpos/records.jsonl",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/units.parquet",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/fixedpos/units.parquet",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1B_start_position/run_20261008/units.parquet",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/units.parquet",
+  "/root/VLA/autovla_misalignment_poc/outputs/equal_distance_perturbation/records.jsonl",
+  "/root/VLA/autovla/codebook_cache/agent_vocab.pkl"
+ ],
+ "inputs_sha256": {
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw/records.jsonl": "c8d0fd0acce827da00fd80c562ba95a65bb05c81da84e53c5e88cdf9d79aa796",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw_fixedpos/records.jsonl": "c90dc104916e84703110e7bf98288dacdc627b53cfba3d1388c1e9877aa7d6e3",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1B_start_position/run_20261008/units.parquet": "f3aeaf807c04da89530f25331e7ad8c20676e99fbe412fc90b16a047e614ba0c",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/units.parquet": "52463c66c86238ef46a3b9219553f4d3a76523b320b7777e03d46777e8f73fb7"
+ },
+ "elapsed_s": 20.570314407348633,
+ "time_utc": "2026-10-12T22:11:43Z",
+ "nature": "POST-HOC analysis of existing data; CPU only; no model inference"
+}

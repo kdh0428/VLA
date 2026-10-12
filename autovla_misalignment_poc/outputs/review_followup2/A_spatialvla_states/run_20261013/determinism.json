@@ -1,0 +1,29 @@
+{
+ "tolerances": {
+  "pos_quat_qpos": 0.0001,
+  "lin_vel": 0.001,
+  "ang_vel_qvel": 0.01
+ },
+ "cluster_diagnostics": {
+  "primary": {
+   "max_within_dev_tol_units": 0.0,
+   "min_between_dev_tol_units": 23.079290986061096
+  },
+  "scene": {
+   "max_within_dev_tol_units": 0.0,
+   "min_between_dev_tol_units": 23.079290986061096
+  },
+  "physical": {
+   "max_within_dev_tol_units": 0.0,
+   "min_between_dev_tol_units": 17.414391040802002
+  }
+ },
+ "google_robot_pick_coke_can": {
+  "repeat_same_process_bit_identical": "14/14",
+  "fresh_process_bit_identical": "7/7"
+ },
+ "google_robot_move_near": {
+  "repeat_same_process_bit_identical": "14/14",
+  "fresh_process_bit_identical": "7/7"
+ }
+}

@@ -1,0 +1,15 @@
+,mech_poc_units,mech_poc_Aminus,impromptu_exp33,poc_dev_discovery,sel_dev,sel_heldout,navhard_src,navhard_half1_exp25,navhard_half2_exp26,p1c_eval_all,p1c_eval_units,p1c_eval_units_F,p1c_pilot,excluded_drive_adjacent_to_dev
+mech_poc_units,19,13,19,19,13,11,14,12,11,0,0,0,2,14
+mech_poc_Aminus,13,13,13,13,10,8,11,9,9,0,0,0,2,11
+impromptu_exp33,19,13,20,20,13,11,15,13,11,0,0,0,2,14
+poc_dev_discovery,19,13,20,20,13,11,15,13,11,0,0,0,2,14
+sel_dev,13,10,13,13,32,22,27,18,24,19,19,15,2,13
+sel_heldout,11,8,11,11,22,28,24,19,21,17,17,14,2,11
+navhard_src,14,11,15,15,27,24,34,22,28,19,19,16,2,13
+navhard_half1_exp25,12,9,13,13,18,19,22,22,16,9,9,8,2,11
+navhard_half2_exp26,11,9,11,11,24,21,28,16,28,17,17,15,2,11
+p1c_eval_all,0,0,0,0,19,17,19,9,17,24,24,18,0,0
+p1c_eval_units,0,0,0,0,19,17,19,9,17,24,24,18,0,0
+p1c_eval_units_F,0,0,0,0,15,14,16,8,15,18,18,18,0,0
+p1c_pilot,2,2,2,2,2,2,2,2,2,0,0,0,2,2
+excluded_drive_adjacent_to_dev,14,11,14,14,13,11,13,11,11,0,0,0,2,14

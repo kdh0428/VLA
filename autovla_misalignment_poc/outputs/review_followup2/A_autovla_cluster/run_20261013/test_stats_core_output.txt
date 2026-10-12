@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.23, pytest-8.4.2, pluggy-1.6.0 -- /root/miniforge3/envs/autovla/bin/python
+rootdir: /root/VLA/autovla_misalignment_poc/scripts/review_followup2
+plugins: hydra-core-1.2.0
+collecting ... collected 9 items
+
+test_stats_core.py::test_identical_pairs_give_zero PASSED
+test_stats_core.py::test_condition_swap_reverses_exactly PASSED
+test_stats_core.py::test_duplication_does_not_add_clusters_or_shrink_ci 
+[dup] naive row-bootstrap CI width 0.1169 -> 0.0649 after x3 duplication; cluster CI unchanged
+PASSED
+test_stats_core.py::test_simulated_coverage_and_boundary 
+[sim] {'G': 13, 'delta': 0.0, 'p_base': 0.08, 'nsim': 300, 'coverage_boot95': 0.93, 'coverage_sf95': 0.9666666666666667, 'reject_signflip_05': 0.023333333333333334, 'tost_equiv_rate_05': 0.5266666666666666}
+[sim] {'G': 24, 'delta': 0.0, 'p_base': 0.08, 'nsim': 300, 'coverage_boot95': 0.9633333333333334, 'coverage_sf95': 1.0, 'reject_signflip_05': 0.013333333333333334, 'tost_equiv_rate_05': 0.9133333333333333}
+[sim] {'G': 13, 'delta': 0.05, 'p_base': 0.08, 'nsim': 300, 'coverage_boot95': 0.86, 'coverage_sf95': 0.8666666666666667, 'reject_signflip_05': 0.4866666666666667, 'tost_equiv_rate_05': 0.056666666666666664}
+[sim] {'G': 24, 'delta': 0.05, 'p_base': 0.08, 'nsim': 300, 'coverage_boot95': 0.9266666666666666, 'coverage_sf95': 0.95, 'reject_signflip_05': 0.7933333333333333, 'tost_equiv_rate_05': 0.05333333333333334}
+[sim] {'G': 13, 'delta': 0.25, 'p_base': 0.3, 'nsim': 200, 'coverage_boot95': 0.9, 'coverage_sf95': 0.975, 'reject_signflip_05': 1.0, 'tost_equiv_rate_05': None}
+PASSED
+test_stats_core.py::test_direct_effect_vs_zero_interaction_not_confused 
+[direct/interaction] direct -0.201 [-0.21612499999999998, -0.18450000000000003] p=1.9e-06 -> different_from_0; interaction -0.006 [-0.024874999999999998, 0.012628125000000014] p=0.56 p_equiv=0.00032 -> equivalent_within_margin
+PASSED
+test_stats_core.py::test_exact_signflip_matches_brute_force PASSED
+test_stats_core.py::test_mc_fallback_close_to_exact_and_formula PASSED
+test_stats_core.py::test_min_attainable_p_and_holm PASSED
+test_stats_core.py::test_weightings_are_different_estimands PASSED
+
+============================== 9 passed in 54.02s ==============================

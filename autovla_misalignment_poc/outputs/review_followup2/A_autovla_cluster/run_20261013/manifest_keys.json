@@ -1,0 +1,25 @@
+{
+ "status": "POST-HOC bookkeeping of existing data",
+ "rows": 867856,
+ "unique_key": [
+  "experiment",
+  "pair_id",
+  "intervention",
+  "outcome_name",
+  "repeat_id"
+ ],
+ "duplicate_rows_on_unique_key": 0,
+ "duplicates_by_experiment": {},
+ "secondary_keys": {
+  "(experiment, pair_id, intervention) per outcome": "unique if duplicate_rows_on_unique_key == 0",
+  "initial_state_cluster_id": 843,
+  "drives": 44,
+  "logs": 92,
+  "scenes": 843
+ },
+ "notes": [
+  "simulator_seed and complete_restore_hash are null by construction (no simulator).",
+  "policy_rng_seed null for exp 6/7/11/32/33 rows: not stored in the P0-B units table.",
+  "Each P1-C block is a separate experiment value because each contrast uses its own block Normal."
+ ]
+}
