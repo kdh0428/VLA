@@ -430,3 +430,29 @@ dev: 42,078 / 2,877(혼합) vs 42,095 / 2,885(5090, P4). 이탈 전 엔트로피
 | "자연 계획이 바뀌는 장면 8.5% / 18% / 20.5%" | `plan_reach.json` `n_changed` / 5,912 = 8.5 / 18.1 / 20.5% | 일치 |
 
 ---
+
+---
+
+## 추가 (2026-10-12): 후속 검증 P0–P1 반영 사항
+원 결과 파일은 그대로 두었다. 근거와 상세 수치는 `autovla_misalignment_poc/outputs/review_followup/REVIEW_FOLLOWUP_SUMMARY.md` §2에 있다.
+
+**MAJOR**
+- **극소 p값:** PAPER_NUMBERS Claim 3·7 등의 단위 수준 p값(8e-42, 6e-4, 6.7e-31 등)은 log 단위 sign-flip p로 바꿔야 한다.
+  - Recent−Normal: 1.2e-4
+  - Direction−Magnitude: 0.0056
+  - Reverse−Full: 6e-5 (R8R9 복구)
+  - 독립 cluster는 16 log(= 13 drive)라는 점을 함께 적는다.
+- **Claim 6 "as effective as GT":** 동등성 주장을 철회하고 "작고 비유의한 차이"로 바꾼다(P0-B).
+- **Claim 10·17의 SpatialVLA m 단위 궤적 수치:** 실행 명령 누적값이다. 실제 TCP 지표는 P1-D를 인용한다.
+- **Claim 17 (실험 35):** P1-D로 교체한다.
+  - 재계획 축 효과: 문맥 예산을 고정해도 성립한다(+214 cm·step).
+  - ensemble: 실행 교란량을 맞추면 동등 범위 안이다.
+  - 성공률 상호작용: ±10%p 동등이다.
+  - r4e1 reverse −6.2%p: 재현되지 않았다.
+- **SpatialVLA move_near:** seed 중복으로 유효 n이 과대 계산됐다(seed 0–119 → 초기 상태 53개). 실험 34·35의 CI가 실제보다 좁다.
+
+**새로 쓸 수 있는 claim**
+- GT 정보 없이도 문맥 효과가 유지된다(P1-A). 단 A−에서는 등속 외삽 baseline과 구별되지 않는다.
+- 핵심 기전이 새 log에서 재현됐다(P1-C).
+- 초기 위치가 특별하지 않다(P1-B).
+- 생성 편차와 task outcome이 분리된다(P1-D).

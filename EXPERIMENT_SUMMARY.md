@@ -1,6 +1,6 @@
 # Driving VLA 실패 기전 연구 — 전체 실험 총정리
 
-최종 갱신: 2026-10-08 (실험 35 추가, 논문 수치 패키지 `paper_quantitative_package/`). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
+최종 갱신: 2026-10-12 (후속 검증 P0–P1 추가 §6e, 논문 수치 패키지 `paper_quantitative_package/`). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
 누적 결론 문서는 [CONCLUSIONS.md](CONCLUSIONS.md), 새 서버 인계는 [HANDOFF.md](HANDOFF.md)입니다.
 
 - 주 대상: **AutoVLA** (Qwen2.5-VL-3B, action codebook 2,048 token, NAVSIM/nuPlan). 비교: ORION (Bench2Drive, 실험 1), **OpenVLA-7B** (LIBERO, 실험 28), **Impromptu VLA 3B** (navtest, 실험 33), **SpatialVLA-4B** (SimplerEnv 로봇 조작, 실험 34).
@@ -302,6 +302,43 @@ closed loop task 수준 교정·reverse **미충족** → **Partial replication*
 - → **Partial support**
 
 → 자기 생성 action이 실행에 오래 남을수록(재계획 간격) 문맥 feedback이 궤적에 더 오래 남습니다. ensemble은 보호 장치가 아닙니다. 그러나 4-step chunk의 최대 노출로도 성공률 변화는 6%p 이내라서, driving 모델과의 차이를 실행 구조만으로 설명할 수는 없습니다.
+
+
+## 6e. 후속 검증 실험 (VLA_experiment_plan_20261008, P0–P1)
+
+종합: `autovla_misalignment_poc/outputs/review_followup/REVIEW_FOLLOWUP_SUMMARY.md`. P0는 사후 재분석이고, P1은 사전 등록이다(b212637). R8R9는 원 자료 복구 실행이다.
+
+- **P0-B 군집 통계:** 결론은 유지되지만 p는 크게 약해진다.
+  - AutoVLA Recent−Normal: 단위 수준 p 8e-42 → log sign-flip 1.2e-4.
+  - Direction−Magnitude: 6e-4 → 0.0056.
+  - 극소 p값은 쓰지 않는다. A−의 16 log는 13 drive다.
+- **P0-A 감사:**
+  - "Recent-GT"는 매 step 직전 위치를 교정하는 반복 개입이다.
+  - "Reverse"는 모델마다 다른 개입이다.
+  - SpatialVLA의 m 단위 궤적 발산은 실행 명령의 누적값이다(실제 TCP가 아님).
+  - move_near seed는 중복된 초기 상태가 많다.
+- **P1-A (GT 없는 reference):**
+  - 문맥만 바뀌어도 이후 action이 +0.57 m/seg 변한다. 기하 baseline 대비 +4.37 m, GT 없는 교정 −3.50 m(모두 Holm 9e-5).
+  - A−에서는 등속 외삽 baseline과 구별되지 않는다. 그래서 "특수 자기증폭" 주장은 축소한다.
+- **P1-B (시작 위치):**
+  - 교정 횟수가 같으면 early와 late의 차이가 비유의다. w = 2, 3에서는 ±10%p 동등성이 성립한다.
+  - 길이 효과는 크다(48 → 77 → 89%).
+- **R8R9:** 실험 8·9 원 수치를 220/220 재현했다. Reverse−Full +28.6%p, sign-flip p = 6e-5. AutoVLA primary 3개 모두 Holm < 0.01.
+- **P1-C (새 64 log / 24 drive):**
+  - Recent−Normal과 Reverse−Full이 실패 조건부(−34.2 / +26.8%p)와 모집단(−4.1 / +3.7%p) 모두에서 재현됐다.
+  - Direction−Magnitude는 결론이 나지 않았다.
+- **P1-D (SpatialVLA 교란량 통제, 4,800 에피소드):**
+  - 문맥 예산을 고정해도 재계획 간격이 문맥 궤적 편차를 키운다(+214 cm·step, 복합 설정 효과).
+  - 실행 교란량을 맞추면 ensemble 효과는 동등 범위 안이다.
+  - 성공률 상호작용 4개는 모두 ±10%p 동등이다. 즉 생성 편차가 task outcome과 분리된다.
+  - 실험 35의 r4e1 reverse −6.2%p는 재현되지 않았다.
+
+→ 핵심 기전(교정하면 효과가 줄고, 오류를 다시 넣으면 돌아옴)은 다음 세 가지에서 유지된다.
+- GT 정보 없이
+- cluster 통계에서
+- 새 log에서
+
+실행 구조는 SpatialVLA에서 문맥 효과의 **궤적** 지속을 조절하지만, 성공률로는 번지지 않는다. 위치 특수성과 방향 대조의 일반화는 지지되지 않거나 결론이 나지 않았다.
 
 ---
 
