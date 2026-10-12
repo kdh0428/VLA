@@ -1,0 +1,180 @@
+{
+"r1e1:feedback": {
+"n": 240,
+"zero_flip": 26,
+"hist": {
+"0": 26,
+"1": 85,
+"2": 73,
+"3": 43,
+"4": 13
+}
+},
+"r1e1:corrected": {
+"n": 240,
+"zero_flip": 28,
+"hist": {
+"0": 28,
+"1": 74,
+"2": 86,
+"3": 42,
+"4": 10
+}
+},
+"r1e1:reverse": {
+"n": 240,
+"zero_flip": 16,
+"hist": {
+"0": 16,
+"1": 74,
+"2": 91,
+"3": 50,
+"4": 9
+}
+},
+"r2e1:feedback": {
+"n": 240,
+"zero_flip": 24,
+"hist": {
+"0": 24,
+"1": 83,
+"2": 78,
+"3": 40,
+"4": 15
+}
+},
+"r2e1:corrected": {
+"n": 240,
+"zero_flip": 35,
+"hist": {
+"0": 35,
+"1": 73,
+"2": 74,
+"3": 51,
+"4": 7
+}
+},
+"r2e1:reverse": {
+"n": 240,
+"zero_flip": 20,
+"hist": {
+"0": 20,
+"1": 66,
+"2": 92,
+"3": 51,
+"4": 11
+}
+},
+"r4e1:feedback": {
+"n": 240,
+"zero_flip": 66,
+"hist": {
+"0": 66,
+"1": 88,
+"2": 50,
+"3": 29,
+"4": 7
+}
+},
+"r4e1:corrected": {
+"n": 240,
+"zero_flip": 53,
+"hist": {
+"0": 53,
+"1": 85,
+"2": 65,
+"3": 33,
+"4": 4
+}
+},
+"r4e1:reverse": {
+"n": 240,
+"zero_flip": 41,
+"hist": {
+"0": 41,
+"1": 83,
+"2": 78,
+"3": 34,
+"4": 4
+}
+},
+"r1e4:feedback": {
+"n": 240,
+"zero_flip": 27,
+"hist": {
+"0": 27,
+"1": 64,
+"2": 85,
+"3": 54,
+"4": 10
+}
+},
+"r1e4:corrected": {
+"n": 240,
+"zero_flip": 30,
+"hist": {
+"0": 30,
+"1": 57,
+"2": 96,
+"3": 49,
+"4": 8
+}
+},
+"r1e4:reverse": {
+"n": 240,
+"zero_flip": 13,
+"hist": {
+"0": 13,
+"1": 67,
+"2": 94,
+"3": 59,
+"4": 7
+}
+},
+"r1e4:feedbackD": {
+"n": 240,
+"zero_flip": 39,
+"hist": {
+"0": 39,
+"1": 71,
+"2": 68,
+"3": 50,
+"4": 12
+}
+},
+"r1e4:correctedD": {
+"n": 240,
+"zero_flip": 38,
+"hist": {
+"0": 38,
+"1": 72,
+"2": 79,
+"3": 42,
+"4": 9
+}
+}
+}
+H1 area_dev_cmstep all: n=240 per_task={'google_robot_move_near': (120, 227.309), 'google_robot_pick_coke_can': (120, 200.389)} est=213.849 CI95=[170.625,255.181] CI90=[177.776,247.923] p_signflip=0.0000
+H1 area_dev_cmstep zero_flip: n=8 per_task={'google_robot_move_near': (8, 206.713), 'google_robot_pick_coke_can': (0, nan)} est=206.713 CI95=[33.633,441.211] CI90=[53.297,403.146] p_signflip=0.0617
+H2 area_dev_cmstep all: n=240 per_task={'google_robot_move_near': (120, 11.955), 'google_robot_pick_coke_can': (120, 29.348)} est=20.652 CI95=[-24.568,67.962] CI90=[-17.015,58.935] p_signflip=0.3853
+H2 area_dev_cmstep zero_flip: n=8 per_task={'google_robot_move_near': (8, -62.759), 'google_robot_pick_coke_can': (0, nan)} est=-62.759 CI95=[-172.958,45.890] CI90=[-155.414,31.824] p_signflip=0.3487
+S1 success all: n=240 per_task={'google_robot_move_near': (120, 0.033), 'google_robot_pick_coke_can': (120, -0.05)} est=-0.008 CI95=[-0.092,0.075] CI90=[-0.079,0.062] p_signflip=0.9247
+S1 success zero_flip: n=8 per_task={'google_robot_move_near': (8, -0.125), 'google_robot_pick_coke_can': (0, nan)} est=-0.125 CI95=[-0.375,0.000] CI90=[-0.375,0.000] p_signflip=1.0000
+S2 success all: n=240 per_task={'google_robot_move_near': (120, -0.033), 'google_robot_pick_coke_can': (120, 0.017)} est=-0.008 CI95=[-0.087,0.071] CI90=[-0.079,0.062] p_signflip=0.9204
+S2 success zero_flip: n=8 per_task={'google_robot_move_near': (8, 0.125), 'google_robot_pick_coke_can': (0, nan)} est=0.125 CI95=[0.000,0.375] CI90=[0.000,0.375] p_signflip=1.0000
+S3 success all: n=240 per_task={'google_robot_move_near': (120, -0.083), 'google_robot_pick_coke_can': (120, 0.092)} est=0.004 CI95=[-0.083,0.096] CI90=[-0.071,0.079] p_signflip=1.0000
+S3 success zero_flip: n=5 per_task={'google_robot_move_near': (5, 0.0), 'google_robot_pick_coke_can': (0, nan)} est=0.000 CI95=[0.000,0.000] CI90=[0.000,0.000] p_signflip=1.0000
+S4 success all: n=240 per_task={'google_robot_move_near': (120, 0.042), 'google_robot_pick_coke_can': (120, -0.067)} est=-0.013 CI95=[-0.079,0.054] CI90=[-0.067,0.046] p_signflip=0.7935
+S4 success zero_flip: n=5 per_task={'google_robot_move_near': (5, 0.0), 'google_robot_pick_coke_can': (0, nan)} est=0.000 CI95=[0.000,0.000] CI90=[0.000,0.000] p_signflip=1.0000
+T1 area_dev_cmstep all: n=240 per_task={'google_robot_move_near': (120, 72.606), 'google_robot_pick_coke_can': (120, 83.711)} est=78.158 CI95=[47.270,106.924] CI90=[51.746,102.249] p_signflip=0.0000
+T1 area_dev_cmstep zero_flip: n=8 per_task={'google_robot_move_near': (8, 135.921), 'google_robot_pick_coke_can': (0, nan)} est=135.921 CI95=[38.497,242.846] CI90=[51.570,223.417] p_signflip=0.0643
+T2 area_dev_cmstep all: n=240 per_task={'google_robot_move_near': (120, 157.877), 'google_robot_pick_coke_can': (120, 122.081)} est=139.979 CI95=[95.514,181.232] CI90=[101.736,175.641] p_signflip=0.0000
+T2 area_dev_cmstep zero_flip: n=5 per_task={'google_robot_move_near': (5, 88.551), 'google_robot_pick_coke_can': (0, nan)} est=88.551 CI95=[-11.522,185.748] CI90=[16.694,160.408] p_signflip=0.1950
+T3 area_dev_cmstep all: n=240 per_task={'google_robot_move_near': (120, -42.36), 'google_robot_pick_coke_can': (120, -1.79)} est=-22.075 CI95=[-51.749,7.007] CI90=[-48.304,2.643] p_signflip=0.1445
+T3 area_dev_cmstep zero_flip: n=5 per_task={'google_robot_move_near': (5, -52.535), 'google_robot_pick_coke_can': (0, nan)} est=-52.535 CI95=[-124.250,23.458] CI90=[-114.694,6.309] p_signflip=0.3754
+T4 area_dev_cmstep all: n=240 per_task={'google_robot_move_near': (120, -117.392), 'google_robot_pick_coke_can': (120, -60.041)} est=-88.717 CI95=[-131.653,-47.742] CI90=[-124.760,-54.559] p_signflip=0.0000
+T4 zero_flip n 3
+T5 max_dev_cm all: n=240 per_task={'google_robot_move_near': (120, 6.633), 'google_robot_pick_coke_can': (120, 5.687)} est=6.160 CI95=[5.107,7.157] CI90=[5.269,7.005] p_signflip=0.0000
+T5 max_dev_cm zero_flip: n=8 per_task={'google_robot_move_near': (8, 7.703), 'google_robot_pick_coke_can': (0, nan)} est=7.703 CI95=[2.953,13.668] CI90=[3.586,12.591] p_signflip=0.0080
+T6 realign_t80 all: n=240 per_task={'google_robot_move_near': (120, 16.925), 'google_robot_pick_coke_can': (120, 18.758)} est=17.842 CI95=[13.603,21.571] CI90=[14.437,21.134] p_signflip=0.0000
+T6 realign_t80 zero_flip: n=8 per_task={'google_robot_move_near': (8, 1.0), 'google_robot_pick_coke_can': (0, nan)} est=1.000 CI95=[-19.753,21.625] CI90=[-13.375,15.250] p_signflip=0.5595

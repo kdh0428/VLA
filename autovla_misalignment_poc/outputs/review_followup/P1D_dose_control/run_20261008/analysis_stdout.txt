@@ -1,0 +1,54 @@
+{
+ "restore_ok": {
+  "r1e1:feedback": "240/240",
+  "r1e1:corrected": "240/240",
+  "r1e1:reverse": "240/240",
+  "r1e1:null": "80/80",
+  "r1e1:gen": "80/80",
+  "r1e4:feedback": "240/240",
+  "r1e4:corrected": "240/240",
+  "r1e4:reverse": "240/240",
+  "r1e4:null": "80/80",
+  "r1e4:feedbackD": "240/240",
+  "r1e4:correctedD": "240/240",
+  "r2e1:feedback": "240/240",
+  "r2e1:corrected": "240/240",
+  "r2e1:reverse": "240/240",
+  "r2e1:null": "80/80",
+  "r4e1:feedback": "240/240",
+  "r4e1:corrected": "240/240",
+  "r4e1:reverse": "240/240",
+  "r4e1:null": "80/80",
+  "r4e1:gen": "80/80"
+ },
+ "null_identical_to_N": {
+  "r1e1:null": "80/80",
+  "r1e4:null": "80/80",
+  "r2e1:null": "80/80",
+  "r4e1:null": "80/80"
+ },
+ "rerun_identical_to_N": {},
+ "prefix_identical_to_N": {
+  "r1e1:feedback": "240/240",
+  "r1e1:corrected": "240/240",
+  "r1e1:reverse": "240/240",
+  "r1e1:null": "80/80",
+  "r1e1:gen": "80/80",
+  "r1e4:feedback": "240/240",
+  "r1e4:corrected": "240/240",
+  "r1e4:reverse": "240/240",
+  "r1e4:null": "80/80",
+  "r1e4:feedbackD": "240/240",
+  "r1e4:correctedD": "240/240",
+  "r2e1:feedback": "240/240",
+  "r2e1:corrected": "240/240",
+  "r2e1:reverse": "240/240",
+  "r2e1:null": "80/80",
+  "r4e1:feedback": "240/240",
+  "r4e1:corrected": "240/240",
+  "r4e1:reverse": "240/240",
+  "r4e1:null": "80/80",
+  "r4e1:gen": "80/80"
+ }
+}
+wrote /root/VLA/autovla_misalignment_poc/outputs/review_followup/P1D_dose_control/run_20261008

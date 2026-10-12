@@ -1,0 +1,8 @@
+n units with gen: 80
+r1e1 gen-N: n=80 est=89.6 CI95=[50.6,133.8] p=0.0000
+r1e1 R-N (units0-39): n=80 est=235.8 CI95=[181.3,297.3] p=0.0000
+r4e1 gen-N: n=80 est=144.3 CI95=[102.7,189.0] p=0.0000
+r4e1 R-N (units0-39): n=80 est=457.0 CI95=[388.8,527.9] p=0.0000
+gen DiD r4e1-r1e1: n=80 est=54.7 CI95=[12.1,99.9] p=0.0144
+H1 on units 0-39: n=80 est=221.2 CI95=[140.4,298.3] p=0.0000
+H1 minus gen DiD (units 0-39): n=80 est=166.5 CI95=[82.5,246.9] p=0.0002
