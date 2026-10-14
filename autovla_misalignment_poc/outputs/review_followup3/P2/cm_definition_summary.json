@@ -1,0 +1,14 @@
+{
+ "n_units": 5553,
+ "body_frame_SE2_repeat_max_err_m": 7.466230119490547e-06,
+ "body_frame_yaw_increment_max_err_rad": 1.1702680744463123e-06,
+ "compose_vs_stored_decoder_max_err": 1.8894521939927245e-05,
+ "share_units_|dyaw_p|>0.5deg": 0.8390059427336575,
+ "median_|dyaw_p|_deg": 2.215467931800707,
+ "p90_|dyaw_p|_deg": 7.093574296680018,
+ "global_disp_repeat_maxdev_m_median_over_turning_units": 0.5158960000000001,
+ "global_disp_repeat_maxdev_m_max": 7.5791390000000005,
+ "median_|chord_angle - dyaw/2|_deg": 1.7162608517354385,
+ "p90_|chord_angle - dyaw/2|_deg": 8.104403640170728,
+ "verdict": "CM = repeat of the perturbed token's body-frame SE(2) increment (translation in the current heading frame + heading change dyaw[p]) -> constant body twist = discrete constant turn-rate & constant speed (incl. the token's lateral/chord-angle component). NOT a global-velocity repeat."
+}

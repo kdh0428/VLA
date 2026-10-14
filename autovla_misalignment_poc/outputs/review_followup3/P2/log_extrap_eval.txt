@@ -1,0 +1,22 @@
+[PASS] X1 prefix_features invariant to poses after j (no future leakage): max err 0.000e+00 (tol 0e+00)
+[PASS] X2 SE(2) to_frame/from_frame round trip: max err 4.263e-14 (tol 1e-09)
+[PASS] X3 targets/assemble round trip on training plans: max err 2.383e-06 (tol 1e-05)
+[PASS] X4 GT->token port vs stored AutoVLA GT tokens (208 scenes): share mismatching tokens: max err 0.000e+00 (tol 0e+00)
+[PASS] X5 tokenizer running pose == decoder rollout: max err 9.232e-06 (tol 1e-04)
+[PASS] X6 ego speed feature == |velocity| from the scene JSON: max err 3.261e-09 (tol 1e-06)
+[    5.0s] units 5553
+[    9.2s] predictions done
+[  293.7s] coverage done
+[  295.0s] G A-
+[  296.7s] G A+
+[  298.3s] G all
+[  299.3s] E A-
+[  300.8s] E A+
+[  302.3s] E all
+[  303.2s] GF1 A-
+[  304.8s] GF1 A+
+[  306.4s] GF1 all
+[  307.3s] GF3 A-
+[  308.9s] GF3 A+
+[  310.6s] GF3 all
+[  320.4s] done

@@ -1,0 +1,5 @@
+     H      lr  final_val_mean_pos_err_m  final_train_loss  selected
+2  512  0.0010                  0.724090          0.031107      True
+0  256  0.0010                  0.734379          0.031499     False
+3  512  0.0003                  0.749104          0.032208     False
+1  256  0.0003                  0.765846          0.032811     False

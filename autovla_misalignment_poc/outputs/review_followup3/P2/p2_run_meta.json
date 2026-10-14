@@ -1,0 +1,21 @@
+{
+ "script": "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p2_motion_baselines.py",
+ "seed_base": 20261014,
+ "bootstrap_B": 10000,
+ "spec_lock": {
+  "locked_utc": "2026-10-14T10:53:20Z",
+  "MOTION_BASELINE_AUDIT.md_sha256": "7330c46d6e33f14678ac05d534f093bd40b86a8c8a0e5b434a80dd73dc3ca49e",
+  "p2_kinematics.py_sha256": "5f4b975cc45793213a196df2875dbbbcf821b9d0c3fb91866e62882aae2d2208",
+  "note": "locked before any new-baseline (CV0/CTRV-K3/CTRA-2) evaluation result was computed; only CM-definition check and C1 reproduction had been run"
+ },
+ "inputs": {
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw/records.jsonl": "c8d0fd0acce827da00fd80c562ba95a65bb05c81da84e53c5e88cdf9d79aa796",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw_fixedpos/records.jsonl": "c90dc104916e84703110e7bf98288dacdc627b53cfba3d1388c1e9877aa7d6e3",
+  "/root/VLA/autovla/codebook_cache/agent_vocab.pkl": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup2/C_baseline_window/run_20261013/c1_excess_effects.csv": "b7eb88a617c7e03d4ef03bfe6835eefd8f919a7db2765cca0319fc92cde73d62"
+ },
+ "n_units": 5553,
+ "status": "PROVISIONAL (AutoVLA P1 no-op/cache parity gate not judged at run time; P1-A rollouts = C1 input path, manuscript section 6.2 / Figure 1 held until the gate passes)",
+ "p1_gate_file_present_at_run": false,
+ "elapsed_s": 20.515021324157715
+}

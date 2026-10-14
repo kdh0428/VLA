@@ -1,0 +1,6 @@
+{
+ "locked_utc": "2026-10-14T14:44:28Z",
+ "LEARNED_EXTRAPOLATOR_PROTOCOL.md_sha256": "b7e49a6e610b3ad62194ba344cf3175a54f77f917dce43984e92000b55bad6f5",
+ "p2_extrap_common.py_sha256": "8cfcf491cf869d6773815147fdfa9eac5b5590284995c5afc5fee48a6053c62e",
+ "note": "locked before training-data extraction, training, and any P2-A new-baseline or extrapolator result"
+}

@@ -1,0 +1,18 @@
+/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p2_extrap_train.py:95: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  tl += float(loss); nb += 1
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 1, "train_loss": 0.06934420355722971, "val_mean_pos_err_m": 0.9131591824652103, "elapsed_s": 36.9902126789093}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 2, "train_loss": 0.03627856608949453, "val_mean_pos_err_m": 0.9140942655123897, "elapsed_s": 75.08225989341736}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 3, "train_loss": 0.03509573469771081, "val_mean_pos_err_m": 0.8294776612242853, "elapsed_s": 118.02931261062622}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 4, "train_loss": 0.03431353420620003, "val_mean_pos_err_m": 0.8597491317222277, "elapsed_s": 157.5848662853241}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 5, "train_loss": 0.03383685885206117, "val_mean_pos_err_m": 0.8057646761494709, "elapsed_s": 197.1559774875641}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 6, "train_loss": 0.0334680367478623, "val_mean_pos_err_m": 0.7940425543922428, "elapsed_s": 239.61333632469177}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 7, "train_loss": 0.03321181697922597, "val_mean_pos_err_m": 0.8014419082914523, "elapsed_s": 280.585467338562}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 8, "train_loss": 0.03300545005107759, "val_mean_pos_err_m": 0.8016155948796584, "elapsed_s": 309.3247227668762}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 9, "train_loss": 0.032804777802822226, "val_mean_pos_err_m": 0.7761801441479184, "elapsed_s": 338.4529459476471}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 10, "train_loss": 0.03262864189585828, "val_mean_pos_err_m": 0.8067602492990822, "elapsed_s": 366.8002517223358}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 11, "train_loss": 0.03250050272924193, "val_mean_pos_err_m": 0.7518095635425494, "elapsed_s": 394.79756784439087}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 12, "train_loss": 0.03238122750319735, "val_mean_pos_err_m": 0.7568968731854847, "elapsed_s": 421.7941863536835}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 13, "train_loss": 0.03229040266822926, "val_mean_pos_err_m": 0.7437856527743449, "elapsed_s": 450.8106756210327}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 14, "train_loss": 0.03222762600314187, "val_mean_pos_err_m": 0.7505158928402412, "elapsed_s": 479.07337641716003}
+{"run": "grid_H512_lr0.0003", "variant": "prefix", "H": 512, "lr": 0.0003, "seed": 0, "epoch": 15, "train_loss": 0.03220797535861784, "val_mean_pos_err_m": 0.7491041138940014, "elapsed_s": 507.4231677055359}

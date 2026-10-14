@@ -1,0 +1,96 @@
+{
+ "n_units": 5553,
+ "body_frame_SE2_repeat_max_err_m": 7.466230119490547e-06,
+ "body_frame_yaw_increment_max_err_rad": 1.1702680744463123e-06,
+ "compose_vs_stored_decoder_max_err": 1.8894521939927245e-05,
+ "share_units_|dyaw_p|>0.5deg": 0.8390059427336575,
+ "median_|dyaw_p|_deg": 2.215467931800707,
+ "p90_|dyaw_p|_deg": 7.093574296680018,
+ "global_disp_repeat_maxdev_m_median_over_turning_units": 0.5158960000000001,
+ "global_disp_repeat_maxdev_m_max": 7.5791390000000005,
+ "median_|chord_angle - dyaw/2|_deg": 1.7162608517354385,
+ "p90_|chord_angle - dyaw/2|_deg": 8.104403640170728,
+ "verdict": "CM = repeat of the perturbed token's body-frame SE(2) increment (translation in the current heading frame + heading change dyaw[p]) -> constant body twist = discrete constant turn-rate & constant speed (incl. the token's lateral/chord-angle component). NOT a global-velocity repeat."
+}
+{
+ "units_rows_equal": true,
+ "table_rows_equal": true,
+ "units_numeric_maxabs_diff": 0.0,
+ "units_id_order_equal": true,
+ "table_numeric_maxabs_diff": 8.881784197001252e-16,
+ "key_cells": {
+  "G|A-|ex_geo_end": {
+   "est_scene": 4.372034952181851,
+   "ci95_lo": 3.3236218574742034,
+   "ci95_hi": 5.185328852085112,
+   "p_signflip": 0.000244140625
+  },
+  "G|A-|ex_cm_end": {
+   "est_scene": 2.34993305234565,
+   "ci95_lo": 1.2725437286808416,
+   "ci95_hi": 3.1926312486241635,
+   "p_signflip": 0.000732421875
+  },
+  "G|A-|ex_cm_sfx": {
+   "est_scene": 0.4814942313856055,
+   "ci95_lo": 0.3427826578304885,
+   "ci95_hi": 0.593691762786038,
+   "p_signflip": 0.000244140625
+  },
+  "G|A-|ex_cm_dref": {
+   "est_scene": 4.017219546581895,
+   "ci95_lo": 2.9272465971418433,
+   "ci95_hi": 4.776507695884774,
+   "p_signflip": 0.000244140625
+  },
+  "G|A+|ex_geo_end": {
+   "est_scene": 1.6402843755474297,
+   "ci95_lo": 1.2880270190844412,
+   "ci95_hi": 1.926907848799147,
+   "p_signflip": 3.814697265625e-06
+  },
+  "G|A+|ex_cm_end": {
+   "est_scene": -0.522030019294381,
+   "ci95_lo": -0.822228844753798,
+   "ci95_hi": -0.2643383217487603,
+   "p_signflip": 0.001941680908203125
+  },
+  "G|A+|ex_cm_sfx": {
+   "est_scene": 0.12489115244040264,
+   "ci95_lo": 0.08918298920835686,
+   "ci95_hi": 0.16005830012837965,
+   "p_signflip": 1.9073486328125e-05
+  },
+  "G|A+|ex_cm_dref": {
+   "est_scene": 1.2068766470544061,
+   "ci95_lo": 0.8008821739621443,
+   "ci95_hi": 1.524987800253271,
+   "p_signflip": 9.5367431640625e-05
+  },
+  "G|all|ex_geo_end": {
+   "est_scene": 2.3232220197060345,
+   "ci95_lo": 1.7880557041398408,
+   "ci95_hi": 2.6850536946930714,
+   "p_signflip": 3.814697265625e-06
+  },
+  "G|all|ex_cm_end": {
+   "est_scene": 0.19596074861562673,
+   "ci95_lo": -0.31602590594482277,
+   "ci95_hi": 0.5554786743378494,
+   "p_signflip": 0.5050888061523438
+  },
+  "G|all|ex_cm_sfx": {
+   "est_scene": 0.21404192217670334,
+   "ci95_lo": 0.15339932897964303,
+   "ci95_hi": 0.25450993037562003,
+   "p_signflip": 3.814697265625e-06
+  },
+  "G|all|ex_cm_dref": {
+   "est_scene": 1.9094623719362787,
+   "ci95_lo": 1.2879108641339871,
+   "ci95_hi": 2.345213975626506,
+   "p_signflip": 2.288818359375e-05
+  }
+ },
+ "reproduced_exactly": true
+}

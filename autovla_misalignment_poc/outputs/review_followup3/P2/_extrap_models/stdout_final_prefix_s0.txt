@@ -1,0 +1,18 @@
+/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p2_extrap_train.py:95: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  tl += float(loss); nb += 1
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 1, "train_loss": 0.05132934089589824, "val_mean_pos_err_m": 1.0504278570463514, "elapsed_s": 67.84753465652466}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 2, "train_loss": 0.03500951414272624, "val_mean_pos_err_m": 0.8348771182704162, "elapsed_s": 134.51929211616516}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 3, "train_loss": 0.033999915077378214, "val_mean_pos_err_m": 0.8226760276807993, "elapsed_s": 196.78417229652405}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 4, "train_loss": 0.03342212221017265, "val_mean_pos_err_m": 0.896179717644862, "elapsed_s": 256.5731580257416}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 5, "train_loss": 0.033102682040583704, "val_mean_pos_err_m": 0.7811858655415936, "elapsed_s": 313.6254029273987}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 6, "train_loss": 0.03263391136190355, "val_mean_pos_err_m": 0.7917911398901826, "elapsed_s": 369.0022511482239}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 7, "train_loss": 0.03237559589430026, "val_mean_pos_err_m": 0.7808912590918866, "elapsed_s": 429.1427049636841}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 8, "train_loss": 0.03211838467627443, "val_mean_pos_err_m": 0.777911582575528, "elapsed_s": 511.751252412796}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 9, "train_loss": 0.03189902788545999, "val_mean_pos_err_m": 0.7650226866523271, "elapsed_s": 575.702296257019}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 10, "train_loss": 0.03170938081696011, "val_mean_pos_err_m": 0.7505854875109239, "elapsed_s": 643.1325726509094}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 11, "train_loss": 0.03152394627926216, "val_mean_pos_err_m": 0.7261861231215475, "elapsed_s": 702.646600484848}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 12, "train_loss": 0.031370445702528255, "val_mean_pos_err_m": 0.7312249272370154, "elapsed_s": 804.5351185798645}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 13, "train_loss": 0.031243976078263718, "val_mean_pos_err_m": 0.7200567590818945, "elapsed_s": 857.3975322246552}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 14, "train_loss": 0.031145288331431268, "val_mean_pos_err_m": 0.7279532256259097, "elapsed_s": 927.9667265415192}
+{"run": "final_prefix_s0", "variant": "prefix", "H": 512, "lr": 0.001, "seed": 0, "epoch": 15, "train_loss": 0.031107005186825305, "val_mean_pos_err_m": 0.7240904977494492, "elapsed_s": 957.1036570072174}

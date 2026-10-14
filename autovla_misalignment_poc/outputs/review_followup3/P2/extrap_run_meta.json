@@ -1,0 +1,28 @@
+{
+ "protocol_lock": {
+  "locked_utc": "2026-10-14T14:44:28Z",
+  "LEARNED_EXTRAPOLATOR_PROTOCOL.md_sha256": "b7e49a6e610b3ad62194ba344cf3175a54f77f917dce43984e92000b55bad6f5",
+  "p2_extrap_common.py_sha256": "8cfcf491cf869d6773815147fdfa9eac5b5590284995c5afc5fee48a6053c62e",
+  "note": "locked before training-data extraction, training, and any P2-A new-baseline or extrapolator result"
+ },
+ "status": "PROVISIONAL (AutoVLA P1 no-op/cache parity gate not judged at run time; P1-A rollouts = C1 input path, manuscript section 6.2 / Figure 1 held until the gate passes)",
+ "p1_gate_file_present_at_run": true,
+ "n_units": 5553,
+ "seed_base": 20261015,
+ "train_seeds": [
+  0,
+  1,
+  2
+ ],
+ "bootstrap_B": 10000,
+ "models": {
+  "final_prefix_s0": "6b4d830c1d7a954c575525142d8f60fa4b5fc49af63c5885be2cd4870343eca9",
+  "final_prefix_s1": "1488c830d50bca3fa552cfb24c6368dde65192bbbecf5bc14e7d18f0a2c05c76",
+  "final_prefix_s2": "a346f2cd3f366a6fbd0b4c6c105b2ee49ce1e763f92e9141efe4af3571d18ffe",
+  "final_prefix_ego_s0": "eeffc92ade410d53ee9cce5ef7a4981cb25f0d42c2532694473744182a4f2922",
+  "final_prefix_ego_s1": "60187a05e793db02509179f22dec01a7b2cfdc645cc8c5bf120916742267563a",
+  "final_prefix_ego_s2": "e698819683aaf90b70e59c620f0a83b6baa92c28c38ac37f6ea04414db9f3e17"
+ },
+ "samples_npz_sha256": "8efdce88266035672c90863c4e2cb570c6e9f6749fd0e0b26fa2f47c2edb9f74",
+ "elapsed_s": 320.4136700630188
+}

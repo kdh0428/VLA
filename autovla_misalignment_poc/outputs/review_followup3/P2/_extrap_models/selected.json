@@ -1,0 +1,5 @@
+{
+ "H": 512,
+ "lr": 0.001,
+ "criterion": "final-epoch validation-drive mean position error (m)"
+}

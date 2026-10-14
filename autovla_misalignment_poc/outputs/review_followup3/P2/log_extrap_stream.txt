@@ -1,0 +1,23 @@
+[    20s] 100 logs 66924 frames
+[    28s] 200 logs 118166 frames
+[    36s] 300 logs 173618 frames
+[    47s] 400 logs 237147 frames
+[    56s] 500 logs 298848 frames
+[    62s] 600 logs 345057 frames
+[    72s] 700 logs 404496 frames
+[    78s] 800 logs 444669 frames
+[    86s] 900 logs 503815 frames
+[    96s] 1000 logs 559543 frames
+[   102s] 1100 logs 607567 frames
+[   110s] 1200 logs 657233 frames
+[   121s] 1300 logs 720668 frames
+{
+ "url": "https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/a76f840b65e972bc45e56c2adced897498e9a026/openscene-v1.1/openscene_metadata_trainval.tgz",
+ "curl_returncode": 0,
+ "stream_sha256": "193138ac68b29d977d4438a95dfda35a07ff4ad3efb1800b3ee47d6e1dcb3764",
+ "n_logs": 1310,
+ "n_frames": 723019,
+ "seconds": 122.7,
+ "created_utc": "2026-10-14T14:47:18Z",
+ "note": "streamed (7.05 GB network), tarball never written; only per-frame ego fields kept"
+}

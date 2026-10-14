@@ -1,0 +1,14 @@
+[PASS] T1 compose <-> body_increments round trip (random SE(2) increments): max err 4.441e-15 (tol 1e-09)
+[PASS] T2 tokens_to_poses (SE(2) chain) vs p1_common.rollout_np (decoder copy): max err 3.375e-14 (tol 1e-09)
+[PASS] T3a bl_cm(prefix) vs stored GPU-decoder CM trajectory (5553 units): max err 1.889e-05 (tol 5e-05)
+[PASS] T3b CM endpoint change from bl_cm vs C1 cm_end column: max err 1.714e-05 (tol 5e-05)
+[PASS] T4 CTRV with K=1 and no clip == CM (real units): max err 0.000e+00 (tol 1e-09)
+[PASS] T6 CTRA with a = 0 (t=0 fallback, or equal last-two speeds) == CM: max err 6.040e-14 (tol 1e-09)
+T5 omega->0 (eps, discrete-CTRV vs CV endpoint err, closed-form CTRV vs CV err): 1e-02: 4.43e-01, 4.98e-01; 1e-04: 4.47e-03, 5.03e-03; 1e-06: 4.47e-05, 5.03e-05; 1e-08: 4.47e-07, 4.96e-07
+[PASS] T5a discrete CTRV -> CV as omega -> 0 (eps = 1e-8): max err 4.471e-07 (tol 1e-06)
+[PASS] T5b closed-form CTRV -> CV as omega -> 0 (eps = 1e-8): max err 4.955e-07 (tol 1e-06)
+[PASS] T5c error decreases monotonically with eps: max err 0.000e+00 (tol 0e+00)
+[PASS] T5d CV0 == CTRV-K1 when the last yaw increment w_t = 0: max err 1.421e-14 (tol 1e-09)
+[PASS] T7 baselines invariant to poses after t (no future / evaluation-suffix leakage): max err 0.000e+00 (tol 0e+00)
+[PASS] T8 C1 reproduced exactly (max abs table diff): max err 8.882e-16 (tol 1e-09)
+ALL PASS

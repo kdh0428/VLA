@@ -1,0 +1,6 @@
+{
+ "locked_utc": "2026-10-14T10:53:20Z",
+ "MOTION_BASELINE_AUDIT.md_sha256": "7330c46d6e33f14678ac05d534f093bd40b86a8c8a0e5b434a80dd73dc3ca49e",
+ "p2_kinematics.py_sha256": "5f4b975cc45793213a196df2875dbbbcf821b9d0c3fb91866e62882aae2d2208",
+ "note": "locked before any new-baseline (CV0/CTRV-K3/CTRA-2) evaluation result was computed; only CM-definition check and C1 reproduction had been run"
+}

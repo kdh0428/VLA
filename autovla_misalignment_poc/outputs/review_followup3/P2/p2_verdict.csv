@@ -1,0 +1,4 @@
+stratum,exceeds_CM,exceeds_CV0,exceeds_CTRV-K3,exceeds_CTRA-2,exceeds_E_prefix,sens_sign_kept_E_prefix,exceeds_E_prefix_ego,sens_sign_kept_E_prefix_ego,beyond_motion_extrapolation,comparators_not_exceeded
+A-,True,True,True,True,True,True,True,True,True,
+A+,False,True,False,False,False,True,False,True,False,"CM, CTRV-K3, CTRA-2, E_prefix, E_prefix_ego"
+all,False,True,True,False,False,True,False,True,False,"CM, CTRA-2, E_prefix, E_prefix_ego"
