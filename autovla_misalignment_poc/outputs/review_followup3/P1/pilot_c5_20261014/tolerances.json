@@ -1,0 +1,37 @@
+{
+ "T_exact": 0.0,
+ "T_equiv": 0.75,
+ "c5c_tf_max_by_path": {
+  "H8": 0.375,
+  "H9": 0.375,
+  "P1A": 0.328125
+ },
+ "c5c_free_floor": {
+  "H8|greedy": {
+   "suffix_equal_rows": 18,
+   "n_rows": 18
+  },
+  "H8|t001": {
+   "suffix_equal_rows": 18,
+   "n_rows": 18
+  },
+  "H9|greedy": {
+   "suffix_equal_rows": 30,
+   "n_rows": 30
+  },
+  "H9|t001": {
+   "suffix_equal_rows": 30,
+   "n_rows": 30
+  },
+  "P1A|greedy": {
+   "suffix_equal_rows": 80,
+   "n_rows": 80
+  },
+  "P1A|t001": {
+   "suffix_equal_rows": 80,
+   "n_rows": 80
+  }
+ },
+ "rule": "\nSummarise the control-5 pilot and FIX the Stage-0 tolerances (CPU only). The rule below was written before the pilot\noutput was read (PROTOCOL_P1.md \u00a75 repeats it):\n\n  T_exact  = max |delta logit| over c5a (same process, same batch) and c5b (separate process, same batch), all paths,\n             rows, steps, decodings. Used for: c1, c2_hook (same batch slot), c2_token on H7 (B = 1), and any control\n             whose computation is claimed identical. If T_exact == 0 the exact-class controls must be bitwise equal.\n  T_equiv  = 2 x max |delta logit| over c5c_tf (experiment batch vs B = 1, teacher-forced on the same tokens = the\n             largest difference produced by an equivalent computation with a different kernel shape), max over paths.\n             Used for: c2_token on batched paths (cross-row), c3a, c3b, c4_tf.\n  flips    = a next-token disagreement on a step whose inputs are identical is EXPLAINED iff the comparator's\n             |delta logit| at that step <= the applicable tolerance AND (greedy) the reference top-2 margin <= that\n             tolerance. Unexplained flips fail the control.\n  floor    = c5c_free suffix disagreement rate per path and decoding (reported next to every free-run control).\nOutputs: tolerances.json, pilot_summary.csv (one row per control x path x decoding).\nusage: p1b_pilot_tolerances.py PILOT_DIR\n",
+ "units": "absolute logit difference over the 2,048 action rows (float64 of the bf16 forward)"
+}

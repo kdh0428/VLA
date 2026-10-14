@@ -1,0 +1,557 @@
+{
+ "rule": "\nStage-0 / P1-B AutoVLA verification manifest (CPU only, no model, no outcome read).\n\nFixed selection rule (written before any control was run; the rule never reads a perturbation outcome,\nan amplification label, or any control result):\n  population  = the 208 scenes of outputs/equal_distance_perturbation/records.jsonl (dev mechanism set,\n                the unit source of exps 7, 8, 9, 32 and of P1-A)\n  strata      = intervention position t* (inherited first-mismatch step):\n                  early  t* in {0, 1}\n                  middle t* in {2, 3}\n                  late   t* in {4, 5, 6, 7}\n  order       = sha256(\"P1-STAGE0-20261014|\" + scene_token) ascending, within stratum\n  take        = first 3 scenes per stratum  -> 9 scenes\n  units per scene (one per code path family; never chosen by outcome):\n    H7/H8/H9  (exp 7 action_history_causal = Recent-GT/Full-GT, exp 8 prev_action_state_patching = Reverse-N\n               (reverse@emb), exp 9 temporal_feedback_window = windows / Full-GT) : perturbation \"alt0\"\n               (first distance-matched alternative, present in every scene)\n    P1A       (P1-A self-reference path, rows U/OC/O1/C1/OC_ref*/O_refH/OC_gt*): family G at t_p = t*,\n               sector = lowest sector index available in the recorded perturbation_support (GT-free rule)\n    P1A-GF3   (P1-A fixed-position / coordinate-accumulation path, prefix = reference tokens r[:3]) for the\n               3 EARLY scenes only (t_p = 3 > t*, so the prefix contains reference-continuation tokens)\n  pilot       = the first scene of each stratum (3 scenes) -> control-5 pilot only\nThe A-/A+ group is recorded but never used for selection. A- share is reported, not balanced.\n",
+ "salt": "P1-STAGE0-20261014|",
+ "strata": {
+  "early": [
+   0,
+   1
+  ],
+  "middle": [
+   2,
+   3
+  ],
+  "late": [
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "inputs": {
+  "ed_records": "/root/VLA/autovla_misalignment_poc/outputs/equal_distance_perturbation/records.jsonl",
+  "ed_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+  "references": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/reference/references.jsonl",
+  "references_sha256": "64e82843a7a5fca4fadb6784e1cc9d2476d54871f869ceb596c223a907f3a602",
+  "perturbation_support": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw/perturbation_support.jsonl"
+ },
+ "n_scenes": 9,
+ "n_units": 21,
+ "group_counts": {
+  "A-": 3,
+  "A+": 6
+ },
+ "units": [
+  {
+   "scene": "c05f89f644505f4c",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "00211a8b9cd86719b7f49171d2d6f21c8a186e4fb84b2845ed5c7680b940d87b",
+   "unit_id": "c05f89f644505f4c|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1168,
+   "t_p": 1
+  },
+  {
+   "scene": "c05f89f644505f4c",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "00211a8b9cd86719b7f49171d2d6f21c8a186e4fb84b2845ed5c7680b940d87b",
+   "unit_id": "c05f89f644505f4c|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    372,
+    1459,
+    1298,
+    647,
+    1246,
+    1613,
+    1613,
+    611,
+    1187,
+    339
+   ]
+  },
+  {
+   "scene": "c05f89f644505f4c",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "00211a8b9cd86719b7f49171d2d6f21c8a186e4fb84b2845ed5c7680b940d87b",
+   "unit_id": "c05f89f644505f4c|GF3:GF3_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "GF3",
+   "sector": "faster",
+   "t_p": 3,
+   "ref_tokens": [
+    372,
+    1459,
+    1298,
+    647,
+    1246,
+    1613,
+    1613,
+    611,
+    1187,
+    339
+   ],
+   "note": "sector chosen by the same lowest-index rule at t_p=t*; GF3 sector support is re-derived by the harness at t_p=3"
+  },
+  {
+   "scene": "434f74e0c3e25cdd",
+   "log": "2021.06.28.16.57.59_veh-26_00016_00484",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "00ed917320aacb8abb8a162d2335c683281b07365153f6c408943a71b89d2bf3",
+   "unit_id": "434f74e0c3e25cdd|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 731,
+   "t_p": 1
+  },
+  {
+   "scene": "434f74e0c3e25cdd",
+   "log": "2021.06.28.16.57.59_veh-26_00016_00484",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "00ed917320aacb8abb8a162d2335c683281b07365153f6c408943a71b89d2bf3",
+   "unit_id": "434f74e0c3e25cdd|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    82,
+    13,
+    155,
+    182,
+    865,
+    42,
+    105,
+    208,
+    1034,
+    1315
+   ]
+  },
+  {
+   "scene": "434f74e0c3e25cdd",
+   "log": "2021.06.28.16.57.59_veh-26_00016_00484",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "00ed917320aacb8abb8a162d2335c683281b07365153f6c408943a71b89d2bf3",
+   "unit_id": "434f74e0c3e25cdd|GF3:GF3_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "GF3",
+   "sector": "faster",
+   "t_p": 3,
+   "ref_tokens": [
+    82,
+    13,
+    155,
+    182,
+    865,
+    42,
+    105,
+    208,
+    1034,
+    1315
+   ],
+   "note": "sector chosen by the same lowest-index rule at t_p=t*; GF3 sector support is re-derived by the harness at t_p=3"
+  },
+  {
+   "scene": "7f2a06cede325573",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "050cc9b1b3f7adcdf477ade09fc05a2047a77e0ffac69a9645cf63b21613db96",
+   "unit_id": "7f2a06cede325573|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 505,
+   "t_p": 1
+  },
+  {
+   "scene": "7f2a06cede325573",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "050cc9b1b3f7adcdf477ade09fc05a2047a77e0ffac69a9645cf63b21613db96",
+   "unit_id": "7f2a06cede325573|G:G_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster-left",
+   "t_p": 1,
+   "ref_tokens": [
+    1437,
+    1525,
+    1437,
+    1525,
+    1539,
+    981,
+    1565,
+    1249,
+    426,
+    834
+   ]
+  },
+  {
+   "scene": "7f2a06cede325573",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "050cc9b1b3f7adcdf477ade09fc05a2047a77e0ffac69a9645cf63b21613db96",
+   "unit_id": "7f2a06cede325573|GF3:GF3_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "GF3",
+   "sector": "faster-left",
+   "t_p": 3,
+   "ref_tokens": [
+    1437,
+    1525,
+    1437,
+    1525,
+    1539,
+    981,
+    1565,
+    1249,
+    426,
+    834
+   ],
+   "note": "sector chosen by the same lowest-index rule at t_p=t*; GF3 sector support is re-derived by the harness at t_p=3"
+  },
+  {
+   "scene": "a7fb000f96b35f94",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "02f60f014de2de4950780e71f645c7dfe0c9699134ee665d98ba16af76302d55",
+   "unit_id": "a7fb000f96b35f94|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 500,
+   "t_p": 2
+  },
+  {
+   "scene": "a7fb000f96b35f94",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "02f60f014de2de4950780e71f645c7dfe0c9699134ee665d98ba16af76302d55",
+   "unit_id": "a7fb000f96b35f94|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1251,
+    1688,
+    1251,
+    1688,
+    1249,
+    1551,
+    1249,
+    1688,
+    426,
+    1688
+   ]
+  },
+  {
+   "scene": "1a3c8066b86857b5",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "05e1d234cbf5237cc74ee26ea4d2e6af7ba6becddd9e04ef00a92f6d4201d295",
+   "unit_id": "1a3c8066b86857b5|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 976,
+   "t_p": 2
+  },
+  {
+   "scene": "1a3c8066b86857b5",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "05e1d234cbf5237cc74ee26ea4d2e6af7ba6becddd9e04ef00a92f6d4201d295",
+   "unit_id": "1a3c8066b86857b5|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1365,
+    1245,
+    1636,
+    1714,
+    1733,
+    1733,
+    1714,
+    1733,
+    1271,
+    327
+   ]
+  },
+  {
+   "scene": "78e3ba9d36dc59a0",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "07e51d7caf75e108ddae0046c83324c7b5183c92de36096af3fc9d58cda1b16c",
+   "unit_id": "78e3ba9d36dc59a0|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1,
+   "t_p": 2
+  },
+  {
+   "scene": "78e3ba9d36dc59a0",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "07e51d7caf75e108ddae0046c83324c7b5183c92de36096af3fc9d58cda1b16c",
+   "unit_id": "78e3ba9d36dc59a0|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    14,
+    14,
+    837,
+    16,
+    834,
+    1249,
+    752,
+    1770,
+    1496,
+    939
+   ]
+  },
+  {
+   "scene": "ac2da3da332b5a04",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A-",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "1bd93db2e5e45d71deddaffd02d36ec9513e03b2519db8863431df18c5936dde",
+   "unit_id": "ac2da3da332b5a04|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 474,
+   "t_p": 7
+  },
+  {
+   "scene": "ac2da3da332b5a04",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A-",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 0,
+   "pilot": true,
+   "hash": "1bd93db2e5e45d71deddaffd02d36ec9513e03b2519db8863431df18c5936dde",
+   "unit_id": "ac2da3da332b5a04|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 7,
+   "ref_tokens": [
+    12,
+    74,
+    312,
+    1041,
+    502,
+    1041,
+    842,
+    84,
+    89,
+    970
+   ]
+  },
+  {
+   "scene": "502fadfdde3554b2",
+   "log": "2021.08.30.14.54.34_veh-40_00885_00986",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "27d14e291542a5cd6aab9e2f4f0e8c13d4eb1e1d79f66fbfbe817d7d84549e36",
+   "unit_id": "502fadfdde3554b2|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1357,
+   "t_p": 4
+  },
+  {
+   "scene": "502fadfdde3554b2",
+   "log": "2021.08.30.14.54.34_veh-40_00885_00986",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "hash": "27d14e291542a5cd6aab9e2f4f0e8c13d4eb1e1d79f66fbfbe817d7d84549e36",
+   "unit_id": "502fadfdde3554b2|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 4,
+   "ref_tokens": [
+    167,
+    87,
+    562,
+    710,
+    1878,
+    1201,
+    700,
+    1998,
+    147,
+    585
+   ]
+  },
+  {
+   "scene": "c472d369df235104",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A-",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "3c18650a1c8fe25b71e50c0e10b66580d581eab301ce13e24ba3d611fc1ef14b",
+   "unit_id": "c472d369df235104|alt0",
+   "paths": [
+    "H7",
+    "H8",
+    "H9"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 125,
+   "t_p": 5
+  },
+  {
+   "scene": "c472d369df235104",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A-",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "hash": "3c18650a1c8fe25b71e50c0e10b66580d581eab301ce13e24ba3d611fc1ef14b",
+   "unit_id": "c472d369df235104|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    420,
+    1325,
+    310,
+    1643,
+    22,
+    87,
+    184,
+    155,
+    900,
+    37
+   ]
+  }
+ ]
+}
