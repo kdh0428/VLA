@@ -1,0 +1,31 @@
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.97s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:53<00:00, 29.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:53<00:00, 26.56s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[p1b] c05f89f644505f4c|alt0 H7 greedy 9.6s total 0.2 min
+[p1b] c05f89f644505f4c|alt0 H7 t001 4.1s total 0.2 min
+[p1b] c05f89f644505f4c|alt0 H8 greedy 7.3s total 0.4 min
+[p1b] c05f89f644505f4c|alt0 H8 t001 6.5s total 0.5 min
+[p1b] c05f89f644505f4c|alt0 H9 greedy 7.2s total 0.6 min
+[p1b] c05f89f644505f4c|alt0 H9 t001 8.2s total 0.7 min
+[p1b] c05f89f644505f4c|G:G_faster P1A greedy 14.2s total 1.0 min
+[p1b] c05f89f644505f4c|G:G_faster P1A t001 13.7s total 1.2 min
+[p1b] c05f89f644505f4c|GF3:GF3_faster P1A greedy 14.7s total 1.4 min
+[p1b] c05f89f644505f4c|GF3:GF3_faster P1A t001 12.4s total 1.6 min
+[p1b] a7fb000f96b35f94|alt0 H7 greedy 4.4s total 1.7 min
+[p1b] a7fb000f96b35f94|alt0 H7 t001 4.1s total 1.8 min
+[p1b] a7fb000f96b35f94|alt0 H8 greedy 6.6s total 1.9 min
+[p1b] a7fb000f96b35f94|alt0 H8 t001 5.9s total 2.0 min
+[p1b] a7fb000f96b35f94|alt0 H9 greedy 7.8s total 2.1 min
+[p1b] a7fb000f96b35f94|alt0 H9 t001 8.4s total 2.3 min
+[p1b] a7fb000f96b35f94|G:G_faster P1A greedy 14.6s total 2.5 min
+[p1b] a7fb000f96b35f94|G:G_faster P1A t001 12.6s total 2.7 min
+[p1b] ac2da3da332b5a04|alt0 H7 greedy 4.0s total 2.8 min
+[p1b] ac2da3da332b5a04|alt0 H7 t001 3.3s total 2.8 min
+[p1b] ac2da3da332b5a04|alt0 H8 greedy 5.2s total 2.9 min
+[p1b] ac2da3da332b5a04|alt0 H8 t001 4.9s total 3.0 min
+[p1b] ac2da3da332b5a04|alt0 H9 greedy 5.8s total 3.1 min
+[p1b] ac2da3da332b5a04|alt0 H9 t001 6.2s total 3.2 min
+[p1b] ac2da3da332b5a04|G:G_faster P1A greedy 13.5s total 3.4 min
+[p1b] ac2da3da332b5a04|G:G_faster P1A t001 12.8s total 3.6 min
+[done] 3.7 min

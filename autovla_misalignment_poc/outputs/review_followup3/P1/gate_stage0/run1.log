@@ -1,0 +1,83 @@
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:15<00:15, 15.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 11.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:24<00:00, 12.10s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[p1b] c05f89f644505f4c|alt0 H7 greedy 24.5s total 0.4 min
+[p1b] c05f89f644505f4c|alt0 H7 t001 21.2s total 0.8 min
+[p1b] c05f89f644505f4c|alt0 H8 greedy 21.6s total 1.1 min
+[p1b] c05f89f644505f4c|alt0 H8 t001 21.4s total 1.5 min
+[p1b] c05f89f644505f4c|alt0 H9 greedy 26.0s total 1.9 min
+[p1b] c05f89f644505f4c|alt0 H9 t001 26.7s total 2.4 min
+[p1b] c05f89f644505f4c|G:G_faster P1A greedy 52.3s total 3.2 min
+[p1b] c05f89f644505f4c|G:G_faster P1A t001 49.9s total 4.1 min
+[p1b] c05f89f644505f4c|GF3:GF3_faster P1A greedy 45.7s total 4.8 min
+[p1b] c05f89f644505f4c|GF3:GF3_faster P1A t001 48.9s total 5.6 min
+[p1b] 434f74e0c3e25cdd|alt0 H7 greedy 21.4s total 6.0 min
+[p1b] 434f74e0c3e25cdd|alt0 H7 t001 23.2s total 6.4 min
+[p1b] 434f74e0c3e25cdd|alt0 H8 greedy 21.8s total 6.7 min
+[p1b] 434f74e0c3e25cdd|alt0 H8 t001 23.4s total 7.1 min
+[p1b] 434f74e0c3e25cdd|alt0 H9 greedy 25.0s total 7.6 min
+[p1b] 434f74e0c3e25cdd|alt0 H9 t001 27.1s total 8.0 min
+[p1b] 434f74e0c3e25cdd|G:G_faster P1A greedy 51.8s total 8.9 min
+[p1b] 434f74e0c3e25cdd|G:G_faster P1A t001 51.7s total 9.7 min
+[p1b] 434f74e0c3e25cdd|GF3:GF3_faster P1A greedy 46.6s total 10.5 min
+[p1b] 434f74e0c3e25cdd|GF3:GF3_faster P1A t001 48.3s total 11.3 min
+[p1b] 7f2a06cede325573|alt0 H7 greedy 21.0s total 11.7 min
+[p1b] 7f2a06cede325573|alt0 H7 t001 37.6s total 12.3 min
+[p1b] 7f2a06cede325573|alt0 H8 greedy 24.0s total 12.7 min
+[p1b] 7f2a06cede325573|alt0 H8 t001 23.9s total 13.1 min
+[p1b] 7f2a06cede325573|alt0 H9 greedy 35.0s total 13.7 min
+[p1b] 7f2a06cede325573|alt0 H9 t001 69.1s total 14.8 min
+[p1b] 7f2a06cede325573|G:G_faster-left P1A greedy 86.2s total 16.3 min
+[p1b] 7f2a06cede325573|G:G_faster-left P1A t001 59.8s total 17.3 min
+[p1b] 7f2a06cede325573|GF3:GF3_faster-left P1A greedy 57.9s total 18.2 min
+[p1b] 7f2a06cede325573|GF3:GF3_faster-left P1A t001 71.0s total 19.4 min
+[p1b] a7fb000f96b35f94|alt0 H7 greedy 23.7s total 19.8 min
+[p1b] a7fb000f96b35f94|alt0 H7 t001 24.4s total 20.2 min
+[p1b] a7fb000f96b35f94|alt0 H8 greedy 156.0s total 22.8 min
+[p1b] a7fb000f96b35f94|alt0 H8 t001 54.7s total 23.7 min
+[p1b] a7fb000f96b35f94|alt0 H9 greedy 44.8s total 24.5 min
+[p1b] a7fb000f96b35f94|alt0 H9 t001 48.1s total 25.3 min
+[p1b] a7fb000f96b35f94|G:G_faster P1A greedy 67.4s total 26.4 min
+[p1b] a7fb000f96b35f94|G:G_faster P1A t001 52.0s total 27.3 min
+[p1b] 1a3c8066b86857b5|alt0 H7 greedy 23.1s total 27.6 min
+[p1b] 1a3c8066b86857b5|alt0 H7 t001 22.5s total 28.0 min
+[p1b] 1a3c8066b86857b5|alt0 H8 greedy 27.4s total 28.5 min
+[p1b] 1a3c8066b86857b5|alt0 H8 t001 23.1s total 28.9 min
+[p1b] 1a3c8066b86857b5|alt0 H9 greedy 35.2s total 29.4 min
+[p1b] 1a3c8066b86857b5|alt0 H9 t001 43.9s total 30.2 min
+[p1b] 1a3c8066b86857b5|G:G_faster P1A greedy 79.5s total 31.5 min
+[p1b] 1a3c8066b86857b5|G:G_faster P1A t001 54.8s total 32.4 min
+[p1b] 78e3ba9d36dc59a0|alt0 H7 greedy 32.7s total 33.0 min
+[p1b] 78e3ba9d36dc59a0|alt0 H7 t001 37.7s total 33.6 min
+[p1b] 78e3ba9d36dc59a0|alt0 H8 greedy 30.2s total 34.1 min
+[p1b] 78e3ba9d36dc59a0|alt0 H8 t001 27.6s total 34.6 min
+[p1b] 78e3ba9d36dc59a0|alt0 H9 greedy 50.5s total 35.4 min
+[p1b] 78e3ba9d36dc59a0|alt0 H9 t001 28.9s total 35.9 min
+[p1b] 78e3ba9d36dc59a0|G:G_faster P1A greedy 51.4s total 36.7 min
+[p1b] 78e3ba9d36dc59a0|G:G_faster P1A t001 52.5s total 37.6 min
+[p1b] ac2da3da332b5a04|alt0 H7 greedy 19.8s total 37.9 min
+[p1b] ac2da3da332b5a04|alt0 H7 t001 28.6s total 38.4 min
+[p1b] ac2da3da332b5a04|alt0 H8 greedy 26.6s total 38.9 min
+[p1b] ac2da3da332b5a04|alt0 H8 t001 19.7s total 39.2 min
+[p1b] ac2da3da332b5a04|alt0 H9 greedy 19.9s total 39.5 min
+[p1b] ac2da3da332b5a04|alt0 H9 t001 19.7s total 39.8 min
+[p1b] ac2da3da332b5a04|G:G_faster P1A greedy 67.7s total 41.0 min
+[p1b] ac2da3da332b5a04|G:G_faster P1A t001 48.1s total 41.8 min
+[p1b] 502fadfdde3554b2|alt0 H7 greedy 24.3s total 42.2 min
+[p1b] 502fadfdde3554b2|alt0 H7 t001 24.0s total 42.6 min
+[p1b] 502fadfdde3554b2|alt0 H8 greedy 20.3s total 42.9 min
+[p1b] 502fadfdde3554b2|alt0 H8 t001 23.2s total 43.3 min
+[p1b] 502fadfdde3554b2|alt0 H9 greedy 32.0s total 43.8 min
+[p1b] 502fadfdde3554b2|alt0 H9 t001 28.2s total 44.3 min
+[p1b] 502fadfdde3554b2|G:G_faster P1A greedy 54.3s total 45.2 min
+[p1b] 502fadfdde3554b2|G:G_faster P1A t001 52.0s total 46.1 min
+[p1b] c472d369df235104|alt0 H7 greedy 22.9s total 46.5 min
+[p1b] c472d369df235104|alt0 H7 t001 20.1s total 46.8 min
+[p1b] c472d369df235104|alt0 H8 greedy 18.8s total 47.1 min
+[p1b] c472d369df235104|alt0 H8 t001 21.1s total 47.5 min
+[p1b] c472d369df235104|alt0 H9 greedy 29.5s total 48.0 min
+[p1b] c472d369df235104|alt0 H9 t001 26.8s total 48.4 min
+[p1b] c472d369df235104|G:G_faster P1A greedy 52.7s total 49.3 min
+[p1b] c472d369df235104|G:G_faster P1A t001 49.9s total 50.1 min
+[done] 50.2 min

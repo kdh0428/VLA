@@ -1,0 +1,191 @@
+[plan] 160 episodes
+Some kwargs in processor config are unused and will not have any effect: action_chunk_size, statistics, num_obs_steps, intrinsic_config, action_config, bin_policy, obs_delta. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.24s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.21it/s]
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-14 16:00:11.618] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:11.618] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:19.379] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:19.379] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:24.434] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:24.434] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:29.602] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:29.602] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:35.046] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:35.046] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:40.099] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:40.099] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:45.466] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:45.466] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-14 16:00:50.807] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-14 16:00:50.807] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+The 'batch_size' attribute of HybridCache is deprecated and will be removed in v4.49. Use the more precisely named 'self.max_batch_size' attribute instead.
+Process SpawnProcess-8:
+Process SpawnProcess-1:
+Process SpawnProcess-7:
+Process SpawnProcess-4:
+Process SpawnProcess-6:
+Process SpawnProcess-2:
+Process SpawnProcess-3:
+Process SpawnProcess-5:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/svla_noop_restore.py", line 159, in worker
+    conn.send((img, bool(done), bool(trunc), fp, {k: v for k, v in scal(info).items() if isinstance(v, bool)}))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/root/miniforge3/envs/autovla/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe

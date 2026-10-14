@@ -58,6 +58,14 @@ def compare(a, b, rows=None, mapping=None, tol=None):
         ra, rb = a["rows"][na], b["rows"][nb]
         n = min(len(ra["span_sha"]), len(rb["span_sha"]))
         same_in = [ra["span_sha"][i] == rb["span_sha"][i] for i in range(n)]
+        subs = rb.get("substituted") or []
+        subst_verified = []
+        for i in range(n):                       # AMENDMENT A1: C4 token substitution of H8 emb-patch rows
+            if not same_in[i] and i < len(subs) and subs[i]:
+                tgt_tok, src_tok = subs[i]
+                ok = (ra["span"][i][:-1] == rb["span"][i][:-1] and ra["span"][i][-1] == tgt_tok and rb["span"][i][-1] == src_tok)
+                subst_verified.append(ok)
+                same_in[i] = ok
         same_pos = [ra["pos_sha"][i] == rb["pos_sha"][i] for i in range(n)]
         cmp_steps = [i for i in range(n) if same_in[i] and same_pos[i]]
         d = [np.abs(ra["logits"][i].astype(np.float64) - rb["logits"][i].astype(np.float64)) for i in cmp_steps]
@@ -79,6 +87,7 @@ def compare(a, b, rows=None, mapping=None, tol=None):
                "pose_maxabs": float(np.abs(pa - pb).max()) if pa.shape == pb.shape else None,
                "override_pos_b": rb["override_pos"], "override_effective_b": rb["override_effective"],
                "substituted_b": [s for s in rb.get("substituted", []) if s],
+               "substitution_steps_verified": subst_verified,
                "B_a": ra.get("B"), "B_b": rb.get("B")}
         if tol is not None and maxd:
             row["within_tol"] = max(maxd) <= tol

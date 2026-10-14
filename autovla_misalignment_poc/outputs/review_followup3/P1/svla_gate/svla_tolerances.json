@@ -1,0 +1,145 @@
+{
+ "bitwise": true,
+ "T_action": 0.0,
+ "T_tcp_m": 0.0,
+ "n_pairs": 8,
+ "pairs": [
+  {
+   "cmp": "c5a",
+   "key": [
+    "google_robot_pick_coke_can",
+    214,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5b",
+   "key": [
+    "google_robot_pick_coke_can",
+    214,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5a",
+   "key": [
+    "google_robot_pick_coke_can",
+    264,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5b",
+   "key": [
+    "google_robot_pick_coke_can",
+    264,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5a",
+   "key": [
+    "google_robot_move_near",
+    1043,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5b",
+   "key": [
+    "google_robot_move_near",
+    1043,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5a",
+   "key": [
+    "google_robot_move_near",
+    1092,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  },
+  {
+   "cmp": "c5b",
+   "key": [
+    "google_robot_move_near",
+    1092,
+    "r1e4"
+   ],
+   "n_steps": 80,
+   "steps_equal_len": true,
+   "actions_bytes_equal": true,
+   "action_maxabs": 0.0,
+   "tcp_maxabs_m": 0.0,
+   "executor_equal": true,
+   "first_divergent_step": null,
+   "components_at_first": [],
+   "success_equal": true
+  }
+ ],
+ "rule": "\nSpatialVLA P1-B / P1-C audit analysis (CPU only). PROTOCOL_P1.md \u00a78.4.\nusage:\n  svla_audit.py pilot RUN1 RUN2 OUT_DIR       -> svla_tolerances.json (pilot: natural vs natrep, natural vs separate process)\n  svla_audit.py gate  RUN1 RUN2 TOL OUT_PREFIX -> STATE_RESTORE_AUDIT.csv/.md + svla_noop_rows.csv\n\nComparison of an arm with the root N of the same (task, seed, cfg), step by step over the steps both cover\n(root-like arms: t = 0..79; branched arms: the replayed prefix is checked through `restore`, then t >= T0):\n  executed float64 action (bytes and max |diff|), every fingerprint component (hash equality), TCP max |diff| (m),\n  executor fingerprint. First divergent step and the components that differ there are recorded.\nTolerance rule (fixed before the pilot): if the pilot shows bitwise reruns (all actions bytes-equal and every component\nhash equal), T = 0 (bitwise) for every no-op arm. Otherwise T_action / T_tcp = 2 x the pilot maximum and hashes are\nreported, not required.\nPass: U0 == U0' == U0'' == U1 == U2 over all steps; U3 == U0 for t >= T0 and restore ok; F/C/R restore ok (identical\nfull-state fingerprint and executor state at every replayed step up to T0).\n"
+}

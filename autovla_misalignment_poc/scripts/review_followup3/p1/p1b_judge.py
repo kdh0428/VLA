@@ -32,10 +32,15 @@ def main():
         k = klass(r)
         key = (r["control"], r.get("path"), r.get("decoding"))
         s = summ[key]; s["n"] += 1
-        if k == "report":
+        if k == "report":                                   # AMENDMENT A3: report-only rows summarised, never judged
             if "suffix_equal" in r:
                 s["suffix_equal"] += int(r["suffix_equal"])
+            if r.get("logit_maxabs") is not None:
+                s["maxabs"] = max(s["maxabs"], r["logit_maxabs"])
+            s["flips"] += len(r.get("flip_steps") or [])
             continue
+        if "suffix_equal" in r:
+            s["suffix_equal"] += int(r["suffix_equal"])
         why = []
         m = r.get("logit_maxabs")
         lim = te if k == "exact" else tq
@@ -55,7 +60,7 @@ def main():
             why.append("token difference in exact control")
         if unexpl:
             why.append(f"unexplained flips {unexpl}")
-        if r["control"] in ("c2_hook", "c2_token") and any(e for e in r.get("override_effective_b", [])):
+        if r["control"] == "c2_token" and any(e for e in r.get("override_effective_b", [])):   # AMENDMENT A2
             why.append("effective override in self-patch")
         if r["control"] == "c4_tf" and r.get("pos_full_eq_cached_all") is False:
             why.append("full-recompute position ids differ")
@@ -82,6 +87,10 @@ def main():
     with open(f"{outp}.md", "w") as f:
         f.write(f"# NOOP_CACHE_AUDIT (Stage-0 gate)\n\nTolerances: T_exact = {te}, T_equiv = {tq} (from {tol_path}).\n\n")
         f.write("| path | verdict |\n|---|---|\n" + "".join(f"| {p} | {v} |\n" for p, v in verdict.items()))
+        f.write("\n| control | path | decoding | class | rows | fail | max abs dlogit | flips (all explained unless failed) | suffix-equal rows |\n|---|---|---|---|---|---|---|---|---|\n")
+        for (c, p, d), s in sorted(summ.items(), key=lambda x: tuple(map(str, x[0]))):
+            kl = klass({"control": c, "path": p}) if c != "c5b" else "exact"
+            f.write(f"| {c} | {p} | {d} | {kl} | {s['n']} | {s['fail']} | {s['maxabs']:.4g} | {s['flips']} | {s['suffix_equal']} |\n")
         f.write(f"\nFailures ({len(fails)}):\n\n")
         for x in fails:
             f.write(f"- {json.dumps(x)}\n")

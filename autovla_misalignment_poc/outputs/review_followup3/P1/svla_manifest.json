@@ -1,0 +1,126 @@
+{
+ "rule": "SpatialVLA P1-B/P1-C manifest (PROTOCOL_P1.md \u00a78.1), CPU only, never reads an outcome.\nUnits come from the P1-D unit list (outputs/review_followup/P1D_dose_control/run_20261008/units.json).\nPer task: order = sha256(\"P1-SVLA-20261014|\" + task + \"|\" + seed); take the first 5 (move_near: first 5 with distinct\nepisode_id = distinct physical layout). Configs r1e4, r4e1 for every unit -> 20 units. Pilot = first 2 per task.",
+ "units_source": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1D_dose_control/run_20261008/units.json",
+ "units": [
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 264,
+   "episode_id": null,
+   "overlay": null,
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": true,
+   "rank": 0
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 214,
+   "episode_id": null,
+   "overlay": null,
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": true,
+   "rank": 1
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 286,
+   "episode_id": null,
+   "overlay": null,
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": false,
+   "rank": 2
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 200,
+   "episode_id": null,
+   "overlay": null,
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": false,
+   "rank": 3
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 273,
+   "episode_id": null,
+   "overlay": null,
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": false,
+   "rank": 4
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1043,
+   "episode_id": 26,
+   "overlay": "recolor_tabletop_visual_matching_1",
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": true,
+   "rank": 0
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1092,
+   "episode_id": 46,
+   "overlay": "",
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": true,
+   "rank": 1
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1104,
+   "episode_id": 50,
+   "overlay": "recolor_tabletop_visual_matching_1",
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": false,
+   "rank": 2
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1007,
+   "episode_id": 1,
+   "overlay": "recolor_tabletop_visual_matching_2",
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": false,
+   "rank": 3
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1095,
+   "episode_id": 44,
+   "overlay": "recolor_tabletop_visual_matching_1",
+   "configs": [
+    "r1e4",
+    "r4e1"
+   ],
+   "pilot": false,
+   "rank": 4
+  }
+ ]
+}
