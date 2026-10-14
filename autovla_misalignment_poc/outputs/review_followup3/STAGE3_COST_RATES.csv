@@ -1,0 +1,24 @@
+model,rate_id,source,quantity,n,minutes,rate_per_min,note
+AutoVLA,AV_H7_P1C_B1,review_followup/P1C_new_log_replication/run_20261008/mech/action_history_causal/run_meta.json,"units (7 conditions, B=1 sequential)",2436.0000,66.9156,36.4041,"P1-C, 353 scenes"
+AutoVLA,AV_H8_P1C_B93,review_followup/P1C_new_log_replication/run_20261008/mech/prev_action_state_patching/run_meta.json,units (93 rows batched),2436.0000,63.3277,38.4666,"P1-C, 353 scenes"
+AutoVLA,AV_H9_P1C_B17,review_followup/P1C_new_log_replication/run_20261008/mech/temporal_feedback_window/run_meta.json,units (17 rows batched),2436.0000,27.5535,88.4098,"P1-C, 353 scenes"
+AutoVLA,AV_H32_P1C_B6,review_followup/P1C_new_log_replication/run_20261008/mech/motion_semantics_ablation/run_meta.json,units (6 rows batched),2436.0000,18.7908,129.6381,"P1-C, 353 scenes"
+AutoVLA,AV_H8_dev_B93,review_followup/R8R9_raw_recovery/run_20261008/raw/exp8/run_meta.json,units (93 rows batched),1408.0000,43.1004,32.6679,dev 208 scenes
+AutoVLA,AV_H9_dev_B17,review_followup/R8R9_raw_recovery/run_20261008/raw/exp9/run_meta.json,units (17 rows batched),1408.0000,18.4407,76.3527,dev 208 scenes
+AutoVLA,AV_P1A_raw_B10,review_followup/P1A_gt_free_reference/run_20261008/raw/run_meta.json,units (10 rows batched),2861.0000,23.7762,120.3306,dev 208 scenes
+AutoVLA,AV_P1B_raw,review_followup/P1B_start_position/run_20261008/raw/run_meta.json,units,1408.0000,38.1386,36.9180,dev 208 scenes (start-position script)
+AutoVLA,AV_P1C_stage1_natural,review_followup/P1C_new_log_replication/run_20261008/gpu_time.jsonl,scenes (natural plan),5671.0000,281.5333,20.1433,"26 navtest shards, 64 eval logs"
+AutoVLA,AV_P1C_units_build,review_followup/P1C_new_log_replication/run_20261008/gpu_time.jsonl,scenes analysed (unit building),353.0000,26.7000,13.2210,analysed scenes from the P0-A flow table
+AutoVLA,AV_gate_run1_total,review_followup3/P1/gate_stage0/run1.log,path-unit x decoding (c1-c5),78.0000,50.2000,1.5538,"21 path-units x 2 decodings, RTX 5090"
+AutoVLA,AV_gate_run1_H7,review_followup3/P1/gate_stage0/run1.log,path-unit x decoding (c1-c5),18.0000,7.5450,2.3857,
+AutoVLA,AV_gate_run1_H8,review_followup3/P1/gate_stage0/run1.log,path-unit x decoding (c1-c5),18.0000,9.7467,1.8468,
+AutoVLA,AV_gate_run1_H9,review_followup3/P1/gate_stage0/run1.log,path-unit x decoding (c1-c5),18.0000,10.2733,1.7521,
+AutoVLA,AV_gate_run1_P1A,review_followup3/P1/gate_stage0/run1.log,path-unit x decoding (c1-c5),24.0000,22.5400,1.0648,
+AutoVLA,AV_gate_run2_total,review_followup3/P1/gate_stage0/run2.log,path-unit x decoding (c5 only),78.0000,13.6000,5.7353,"21 path-units x 2 decodings, RTX 5090"
+AutoVLA,AV_gate_run2_H7,review_followup3/P1/gate_stage0/run2.log,path-unit x decoding (c5 only),18.0000,1.5200,11.8421,
+AutoVLA,AV_gate_run2_H8,review_followup3/P1/gate_stage0/run2.log,path-unit x decoding (c5 only),18.0000,2.6767,6.7248,
+AutoVLA,AV_gate_run2_H9,review_followup3/P1/gate_stage0/run2.log,path-unit x decoding (c5 only),18.0000,2.5817,6.9722,
+AutoVLA,AV_gate_run2_P1A,review_followup3/P1/gate_stage0/run2.log,path-unit x decoding (c5 only),24.0000,6.7050,3.5794,
+SpatialVLA,SV_P1gate_4workers,review_followup3/P1/svla_gate/gate_run1.log,episodes (80 steps),160.0000,29.3000,5.4608,4 SAPIEN workers (A4: 8 workers thrashed the page cache)
+SpatialVLA,SV_P1D_8workers,review_followup/P1D_dose_control/run_20261008/analysis.md,episodes (80 steps),4803.0000,2455.3000,1.9562,"P1-D main run, 2 blocks, 8 workers, GPU shared with an external process"
+Impromptu,IM_exp33_cde_mtime,cross_vla_temporal_replication/exp_cde (mtimes),units (12 rows),2700.0000,201.9741,13.3681,APPROXIMATE: from file mtimes; concurrent with exp_ab

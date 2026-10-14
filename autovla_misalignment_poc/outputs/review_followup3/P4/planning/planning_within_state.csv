@@ -1,0 +1,9 @@
+experiment,task,config,contrast,n_layouts,units_per_layout_min,units_per_layout_max,sd_layout_means_pp,sigma_between_pp,sd_within_pp,icc1
+P1D,move_near,r1e4,dR,10,9,16,14.4863,9.8790,37.7047,0.0642
+P1D,move_near,r1e4,dC,10,9,16,5.0999,0.0000,43.4157,0.0000
+P1D,move_near,r4e1,dR,10,9,16,12.0339,0.0000,51.7358,0.0000
+P1D,move_near,r4e1,dC,10,9,16,19.6274,13.9399,49.1121,0.0746
+exp35,move_near,r1e4,dR,10,5,21,27.7577,23.4989,39.7004,0.2595
+exp35,move_near,r1e4,dC,10,5,21,27.9674,27.4082,42.3679,0.2950
+exp35,move_near,r4e1,dR,10,5,21,25.5767,24.4356,33.2502,0.3507
+exp35,move_near,r4e1,dC,10,5,21,22.4691,19.9994,42.3715,0.1822

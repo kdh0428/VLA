@@ -1,0 +1,73 @@
+scenario,margin_pp,criterion,n_states_per_task_required,power_at_max_n,note
+true0,5.0000,min per-test power (raw) >= 0.8,1200.0000,0.9985,
+true0,5.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1500.0000,0.9975,
+true0,5.0000,"all 8 pass, Holm m=8 >= 0.8",1500.0000,0.9965,
+true0,6.0000,min per-test power (raw) >= 0.8,800.0000,1.0000,
+true0,6.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1000.0000,1.0000,
+true0,6.0000,"all 8 pass, Holm m=8 >= 0.8",1200.0000,1.0000,
+true0,7.5000,min per-test power (raw) >= 0.8,500.0000,1.0000,
+true0,7.5000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",600.0000,1.0000,
+true0,7.5000,"all 8 pass, Holm m=8 >= 0.8",700.0000,1.0000,
+true0,10.0000,min per-test power (raw) >= 0.8,300.0000,1.0000,
+true0,10.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",400.0000,1.0000,
+true0,10.0000,"all 8 pass, Holm m=8 >= 0.8",400.0000,1.0000,
+small_conc,5.0000,min per-test power (raw) >= 0.8,,0.7640,> 3000 states per task
+small_conc,5.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",,0.5375,> 3000 states per task
+small_conc,5.0000,"all 8 pass, Holm m=8 >= 0.8",,0.2815,> 3000 states per task
+small_conc,6.0000,min per-test power (raw) >= 0.8,2000.0000,0.9550,
+small_conc,6.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",2500.0000,0.9115,
+small_conc,6.0000,"all 8 pass, Holm m=8 >= 0.8",3000.0000,0.8610,
+small_conc,7.5000,min per-test power (raw) >= 0.8,800.0000,0.9980,
+small_conc,7.5000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1200.0000,0.9975,
+small_conc,7.5000,"all 8 pass, Holm m=8 >= 0.8",1500.0000,0.9975,
+small_conc,10.0000,min per-test power (raw) >= 0.8,400.0000,1.0000,
+small_conc,10.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",600.0000,1.0000,
+small_conc,10.0000,"all 8 pass, Holm m=8 >= 0.8",700.0000,1.0000,
+small_opp,5.0000,min per-test power (raw) >= 0.8,,0.5905,> 3000 states per task
+small_opp,5.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",,0.2200,> 3000 states per task
+small_opp,5.0000,"all 8 pass, Holm m=8 >= 0.8",,0.0405,> 3000 states per task
+small_opp,6.0000,min per-test power (raw) >= 0.8,2500.0000,0.8725,
+small_opp,6.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",,0.7505,> 3000 states per task
+small_opp,6.0000,"all 8 pass, Holm m=8 >= 0.8",,0.5985,> 3000 states per task
+small_opp,7.5000,min per-test power (raw) >= 0.8,1200.0000,0.9930,
+small_opp,7.5000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1500.0000,0.9890,
+small_opp,7.5000,"all 8 pass, Holm m=8 >= 0.8",2000.0000,0.9865,
+small_opp,10.0000,min per-test power (raw) >= 0.8,500.0000,1.0000,
+small_opp,10.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",600.0000,1.0000,
+small_opp,10.0000,"all 8 pass, Holm m=8 >= 0.8",800.0000,1.0000,
+het_state,5.0000,min per-test power (raw) >= 0.8,1500.0000,0.9900,
+het_state,5.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",2000.0000,0.9825,
+het_state,5.0000,"all 8 pass, Holm m=8 >= 0.8",2500.0000,0.9735,
+het_state,6.0000,min per-test power (raw) >= 0.8,1000.0000,1.0000,
+het_state,6.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1500.0000,1.0000,
+het_state,6.0000,"all 8 pass, Holm m=8 >= 0.8",1500.0000,1.0000,
+het_state,7.5000,min per-test power (raw) >= 0.8,700.0000,1.0000,
+het_state,7.5000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",800.0000,1.0000,
+het_state,7.5000,"all 8 pass, Holm m=8 >= 0.8",1000.0000,1.0000,
+het_state,10.0000,min per-test power (raw) >= 0.8,400.0000,1.0000,
+het_state,10.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",500.0000,1.0000,
+het_state,10.0000,"all 8 pass, Holm m=8 >= 0.8",500.0000,1.0000,
+stress35,5.0000,min per-test power (raw) >= 0.8,1500.0000,0.9945,
+stress35,5.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",2000.0000,0.9830,
+stress35,5.0000,"all 8 pass, Holm m=8 >= 0.8",2500.0000,0.9715,
+stress35,6.0000,min per-test power (raw) >= 0.8,1000.0000,1.0000,
+stress35,6.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1500.0000,1.0000,
+stress35,6.0000,"all 8 pass, Holm m=8 >= 0.8",1500.0000,1.0000,
+stress35,7.5000,min per-test power (raw) >= 0.8,600.0000,1.0000,
+stress35,7.5000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1000.0000,1.0000,
+stress35,7.5000,"all 8 pass, Holm m=8 >= 0.8",1000.0000,1.0000,
+stress35,10.0000,min per-test power (raw) >= 0.8,400.0000,1.0000,
+stress35,10.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",500.0000,1.0000,
+stress35,10.0000,"all 8 pass, Holm m=8 >= 0.8",600.0000,1.0000,
+boundary5,5.0000,min per-test power (raw) >= 0.8,,0.0465,> 3000 states per task
+boundary5,5.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",,0.0000,> 3000 states per task
+boundary5,5.0000,"all 8 pass, Holm m=8 >= 0.8",,0.0000,> 3000 states per task
+boundary5,6.0000,min per-test power (raw) >= 0.8,,0.2265,> 3000 states per task
+boundary5,6.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",,0.0030,> 3000 states per task
+boundary5,6.0000,"all 8 pass, Holm m=8 >= 0.8",,0.0000,> 3000 states per task
+boundary5,7.5000,min per-test power (raw) >= 0.8,,0.7310,> 3000 states per task
+boundary5,7.5000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",,0.4630,> 3000 states per task
+boundary5,7.5000,"all 8 pass, Holm m=8 >= 0.8",,0.2055,> 3000 states per task
+boundary5,10.0000,min per-test power (raw) >= 0.8,1000.0000,0.9980,
+boundary5,10.0000,"both tasks all-4 pass, Holm m=4 within task >= 0.8",1500.0000,0.9970,
+boundary5,10.0000,"all 8 pass, Holm m=8 >= 0.8",1500.0000,0.9970,

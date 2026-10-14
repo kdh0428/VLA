@@ -1,0 +1,98 @@
+{
+ "source": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/envs/custom_scenes/move_near_in_scene.py",
+ "info": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/custom/info_pick_custom_baked_tex_v1.json",
+ "triplets": [
+  [
+   "blue_plastic_bottle",
+   "baked_opened_pepsi_can_v2",
+   "orange"
+  ],
+  [
+   "baked_opened_7up_can_v2",
+   "baked_apple_v2",
+   "baked_sponge_v2"
+  ],
+  [
+   "baked_opened_coke_can_v2",
+   "baked_opened_redbull_can_v2",
+   "baked_apple_v2"
+  ],
+  [
+   "baked_sponge_v2",
+   "blue_plastic_bottle",
+   "baked_opened_7up_can_v2"
+  ],
+  [
+   "orange",
+   "baked_opened_pepsi_can_v2",
+   "baked_opened_redbull_can_v2"
+  ]
+ ],
+ "xy_configs": [
+  [
+   [
+    -0.33,
+    0.04
+   ],
+   [
+    -0.33,
+    0.34
+   ],
+   [
+    -0.13,
+    0.19
+   ]
+  ],
+  [
+   [
+    -0.13,
+    0.04
+   ],
+   [
+    -0.33,
+    0.19
+   ],
+   [
+    -0.13,
+    0.34
+   ]
+  ]
+ ],
+ "half_xy_diag_m": {
+  "blue_plastic_bottle": 0.04263877343451616,
+  "baked_opened_pepsi_can_v2": 0.046669047558312145,
+  "orange": 0.04949747468305833,
+  "baked_opened_7up_can_v2": 0.046669047558312145,
+  "baked_apple_v2": 0.0565685424949238,
+  "baked_sponge_v2": 0.06103277807866852,
+  "baked_opened_coke_can_v2": 0.046669047558312145,
+  "baked_opened_redbull_can_v2": 0.041365746699413036
+ },
+ "benchmark_min_pairwise_m": 0.25,
+ "regions": {
+  "R_bench": [
+   [
+    -0.33,
+    0.04
+   ],
+   [
+    -0.13,
+    0.34
+   ]
+  ],
+  "R_simpler": [
+   [
+    -0.35,
+    -0.02
+   ],
+   [
+    -0.12,
+    0.42
+   ]
+  ]
+ },
+ "dedup_m": 0.03,
+ "benchmark_min_near_margin_m": 0.03239867942640767,
+ "n_candidates": 200000,
+ "seed": 20261014
+}

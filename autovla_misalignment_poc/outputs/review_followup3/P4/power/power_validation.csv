@@ -1,0 +1,3 @@
+task,max_abs_diff_p,decision_agreement
+coke,0.021521218361545136,0.985
+move_near,0.025800000000000656,0.9825

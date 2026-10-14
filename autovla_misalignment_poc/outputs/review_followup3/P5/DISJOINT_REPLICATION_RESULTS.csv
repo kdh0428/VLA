@@ -1,0 +1,2 @@
+status,item,reason,protocol
+NOT_RUN,P5 day/vehicle-disjoint replication (AutoVLA RN/RV; DM secondary),BLOCKED (data): 0 day-and-vehicle-disjoint logs vs development / P1-C / training (P0-D inventory),DISJOINT_REPLICATION_PROTOCOL.md

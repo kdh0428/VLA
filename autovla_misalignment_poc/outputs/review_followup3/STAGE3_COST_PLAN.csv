@@ -1,0 +1,31 @@
+option,item,n,n_unit,gpu_h_optimistic,gpu_h_conservative,assumption,review_items_moved
+"O0 gate extension (H32, P1-B)",controls c1-c5 run1,36.00,path-unit x decoding,0.25,0.56,,
+"O0 gate extension (H32, P1-B)",c5 run2 (separate process),36.00,path-unit x decoding,0.05,0.17,,
+"O0 gate extension (H32, P1-B)",model loads,2.00,loads,0.10,0.10,load ~3 min,
+O1 P3 AutoVLA matched Reverse,"P3 code-path no-op gate (Stage-0 manifest, new rows)",18.00,path-unit x decoding,0.13,0.28,,M6 (new path)
+O1 P3 AutoVLA matched Reverse,P3 code-path c5 run2,18.00,path-unit x decoding,0.03,0.08,,
+O1 P3 AutoVLA matched Reverse,"frozen source bank (Normal + corrected branch), P1-C 353 scenes (primary)",2436.00,units,0.46,1.12,,
+O1 P3 AutoVLA matched Reverse,"one-shot single-anchor factorial (primary block), P1-C 353 scenes (primary)",2436.00,units,0.34,1.12,<= 12 rows per unit batched (6 factorial cells + Normal + Full-GT + 2 no-op/leak rows + spares),M2 (AutoVLA part)
+O1 P3 AutoVLA matched Reverse,"repeated-schedule factorial (secondary block), P1-C 353 scenes (primary)",2436.00,units,0.34,1.12,<= 12 rows per unit batched (6 factorial cells + Normal + Full-GT + 2 no-op/leak rows + spares),
+O1 P3 AutoVLA matched Reverse,"frozen source bank (Normal + corrected branch), dev 208 scenes (secondary)",1408.00,units,0.27,0.64,,
+O1 P3 AutoVLA matched Reverse,"one-shot single-anchor factorial (primary block), dev 208 scenes (secondary)",1408.00,units,0.20,0.64,<= 12 rows per unit batched (6 factorial cells + Normal + Full-GT + 2 no-op/leak rows + spares),M2 (AutoVLA part)
+O1 P3 AutoVLA matched Reverse,"repeated-schedule factorial (secondary block), dev 208 scenes (secondary)",1408.00,units,0.20,0.64,<= 12 rows per unit batched (6 factorial cells + Normal + Full-GT + 2 no-op/leak rows + spares),
+O1 P3 AutoVLA matched Reverse,model loads,8.00,loads,0.40,0.40,load ~3 min,
+O2 P3 Impromptu add-on,Impromptu no-op harness + gate (20 scenes),1.00,gate,1.00,2.00,PROTOCOL_P1 §9.4 estimate 1 h (conservative x2),M6 (Impromptu path)
+O2 P3 Impromptu add-on,"frozen source bank, exp 33 exp_cde scenes",2700.00,units,3.37,6.73,exp 33 rate from file mtimes (approximate; conservative = half rate),
+O2 P3 Impromptu add-on,"one-shot factorial (primary), exp 33 exp_cde scenes",2700.00,units,3.37,6.73,exp 33 rate from file mtimes (approximate; conservative = half rate),M2 (Impromptu part)
+O2 P3 Impromptu add-on,"repeated-schedule factorial (secondary), exp 33 exp_cde scenes",2700.00,units,3.37,6.73,exp 33 rate from file mtimes (approximate; conservative = half rate),
+O3 P4 SpatialVLA variant states,"+/-10 pp per task, Holm m=8, true 0: 400 states/task",6736.00,episodes (incl. 5% control arms + 2x16-state pilot),20.56,57.39,rates: P1 gate 4 workers (optimistic) / P1-D 8 workers (conservative),M4 (new-state part)
+O3 P4 SpatialVLA variant states,"+/-10 pp per task, Holm m=8, heterogeneous: 500 states/task",8356.00,episodes (incl. 5% control arms + 2x16-state pilot),25.50,71.19,rates: P1 gate 4 workers (optimistic) / P1-D 8 workers (conservative),M4 (new-state part)
+O3 P4 SpatialVLA variant states,"+/-10 pp per task, Holm m=8, discordance 0.35: 600 states/task",9976.00,episodes (incl. 5% control arms + 2x16-state pilot),30.45,84.99,rates: P1 gate 4 workers (optimistic) / P1-D 8 workers (conservative),M4 (new-state part)
+O3 P4 SpatialVLA variant states,"+/-7.5 pp per task, Holm m=8, true 0: 700 states/task",11596.00,episodes (incl. 5% control arms + 2x16-state pilot),35.39,98.80,rates: P1 gate 4 workers (optimistic) / P1-D 8 workers (conservative),M4
+O3 P4 SpatialVLA variant states,"+/-5 pp per task, Holm m=8, true 0: 1500 states/task",24556.00,episodes (incl. 5% control arms + 2x16-state pilot),74.95,209.22,rates: P1 gate 4 workers (optimistic) / P1-D 8 workers (conservative),M4 (+/-5 pp target)
+O4 held-out-drive replication (not P5),natural pass (all scenes of the 53 unused test logs),3654.00,scenes,3.02,3.02,images present locally for 4/53 logs: fetch needed,
+O4 held-out-drive replication (not P5),mechanism run AV_H7_P1C_B1 (units scaled from P1-C by scene count),1570.00,units,0.72,0.72,units = P1-C units x (scenes / P1-C stage-1 scenes),none resolved (M5 needs day/vehicle-disjoint logs)
+O4 held-out-drive replication (not P5),mechanism run AV_H8_P1C_B93 (units scaled from P1-C by scene count),1570.00,units,0.68,0.68,units = P1-C units x (scenes / P1-C stage-1 scenes),none resolved (M5 needs day/vehicle-disjoint logs)
+O4 held-out-drive replication (not P5),mechanism run AV_H9_P1C_B17 (units scaled from P1-C by scene count),1570.00,units,0.30,0.30,units = P1-C units x (scenes / P1-C stage-1 scenes),none resolved (M5 needs day/vehicle-disjoint logs)
+O4 held-out-drive replication (not P5),mechanism run AV_H32_P1C_B6 (units scaled from P1-C by scene count),1570.00,units,0.20,0.20,units = P1-C units x (scenes / P1-C stage-1 scenes),none resolved (M5 needs day/vehicle-disjoint logs)
+"O0 gate extension (H32, P1-B)",TOTAL,,,0.40,0.83,,
+O1 P3 AutoVLA matched Reverse,TOTAL,,,2.34,6.05,,
+O2 P3 Impromptu add-on,TOTAL,,,11.10,22.20,,
+O4 held-out-drive replication (not P5),TOTAL,,,4.92,4.92,,
