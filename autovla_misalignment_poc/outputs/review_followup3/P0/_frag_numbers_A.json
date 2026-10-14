@@ -1,0 +1,626 @@
+{
+ "P0A.P1C.RN.F": {
+  "value": -0.3421390778533635,
+  "ci95_boot": [
+   -0.3832933009419701,
+   -0.29452921272675736
+  ],
+  "ci95_sf": [
+   -0.38724489795792094,
+   -0.2820961718028514
+  ],
+  "p_raw": 7.62939453125e-06,
+  "p_holm": 2.288818359375e-05,
+  "family": "P1C_F {RN,RV,DM}",
+  "n_scenes": 105,
+  "n_drives": 18,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RN.F",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RN.S": {
+  "value": -0.02610943706341597,
+  "ci95_boot": [
+   -0.045762744739980855,
+   -0.012306882752078975
+  ],
+  "ci95_sf": [
+   -0.04781004834868465,
+   -0.010714876228950305
+  ],
+  "p_raw": 0.0001678466796875,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 248,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RN.S",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RN.P": {
+  "value": -0.04125462751660835,
+  "ci95_boot": [
+   -0.06362468841289108,
+   -0.024190644832630892
+  ],
+  "ci95_sf": [
+   -0.06638262322401589,
+   -0.021337909597676667
+  ],
+  "p_raw": 5.7220458984375e-06,
+  "p_holm": 1.1444091796875e-05,
+  "family": "P1C_P {RN,RV,DM}",
+  "n_scenes": 353,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RN.P",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RN.ALL_unweighted": {
+  "value": -0.11936800215837043,
+  "ci95_boot": [
+   -0.1528637773746392,
+   -0.08394111196274325
+  ],
+  "ci95_sf": [
+   -0.15392720306440738,
+   -0.07695238095285434
+  ],
+  "p_raw": 9.5367431640625e-07,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 353,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RN.ALL_unweighted",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RV.F": {
+  "value": 0.26832955404383974,
+  "ci95_boot": [
+   0.21889329805996474,
+   0.307460960960961
+  ],
+  "ci95_sf": [
+   0.20515046296394188,
+   0.31053894425757217
+  ],
+  "p_raw": 3.0517578125e-05,
+  "p_holm": 6.103515625e-05,
+  "family": "P1C_F {RN,RV,DM}",
+  "n_scenes": 105,
+  "n_drives": 18,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RV.F",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RV.S": {
+  "value": 0.02479278903955318,
+  "ci95_boot": [
+   0.012775429691557228,
+   0.0416801171766221
+  ],
+  "ci95_sf": [
+   0.01109325200649081,
+   0.04388043797733743
+  ],
+  "p_raw": 1.52587890625e-05,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 248,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RV.S",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RV.P": {
+  "value": 0.03646388001419951,
+  "ci95_boot": [
+   0.022229002339589937,
+   0.054875965531037095
+  ],
+  "ci95_sf": [
+   0.019739196256924746,
+   0.05728230757671668
+  ],
+  "p_raw": 9.5367431640625e-07,
+  "p_holm": 2.86102294921875e-06,
+  "family": "P1C_P {RN,RV,DM}",
+  "n_scenes": 353,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RV.P",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.RV.ALL_unweighted": {
+  "value": 0.09701987499437925,
+  "ci95_boot": [
+   0.06768550782806461,
+   0.12243066846213266
+  ],
+  "ci95_sf": [
+   0.06187810945329508,
+   0.1238389182833034
+  ],
+  "p_raw": 9.5367431640625e-07,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 353,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.RV.ALL_unweighted",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.DM.F": {
+  "value": 0.06160241874527588,
+  "ci95_boot": [
+   0.006127838039977896,
+   0.12068951037205002
+  ],
+  "ci95_sf": [
+   -0.004084967320146269,
+   0.12731481481436385
+  ],
+  "p_raw": 0.0732421875,
+  "p_holm": 0.0732421875,
+  "family": "P1C_F {RN,RV,DM}",
+  "n_scenes": 105,
+  "n_drives": 18,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.DM.F",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.DM.S": {
+  "value": 0.024405427719186107,
+  "ci95_boot": [
+   -0.006172137975616751,
+   0.05306546923842497
+  ],
+  "ci95_sf": [
+   -0.008114492200464316,
+   0.056636079133651776
+  ],
+  "p_raw": 0.12578868865966797,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 248,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.DM.S",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.DM.P": {
+  "value": 0.02618803112299233,
+  "ci95_boot": [
+   -0.003969188394771044,
+   0.05541484536424474
+  ],
+  "ci95_sf": [
+   -0.0064134444025604875,
+   0.058973984970443635
+  ],
+  "p_raw": 0.10456705093383789,
+  "p_holm": 0.10456705093383789,
+  "family": "P1C_P {RN,RV,DM}",
+  "n_scenes": 353,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.DM.P",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.P1C.DM.ALL_unweighted": {
+  "value": 0.04301002742929088,
+  "ci95_boot": [
+   0.01915546367694805,
+   0.06699343644681927
+  ],
+  "ci95_sf": [
+   0.015127303718572897,
+   0.0680246104552407
+  ],
+  "p_raw": 0.004491329193115234,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 353,
+  "n_drives": 24,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.P1C.DM.ALL_unweighted",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet via analyze_p1c.scene_table/estimate (seed 20261008, B 10000)"
+ },
+ "P0A.DEV.RN.Am": {
+  "value": -0.39789377289377287,
+  "ci95_boot": [
+   -0.49027921786994366,
+   -0.2987860159787185
+  ],
+  "ci95_sf": [
+   -0.5150462962966471,
+   -0.28658234126958204
+  ],
+  "p_raw": 0.000244140625,
+  "p_holm": 0.000732421875,
+  "family": "AutoVLA primary {AV-P1,AV-P2,AV-P3} (P0-B / review_followup2 A3)",
+  "n_scenes": 52,
+  "n_drives": 13,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RN.Am",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RN.Ap": {
+  "value": -0.03352665852665853,
+  "ci95_boot": [
+   -0.05766067274610993,
+   -0.010724902609983255
+  ],
+  "ci95_sf": [
+   -0.06142350557251523,
+   -0.00491307634157794
+  ],
+  "p_raw": 0.021484375,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 156,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RN.Ap",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RN.ALL_unweighted": {
+  "value": -0.1246184371184371,
+  "ci95_boot": [
+   -0.16208785204131948,
+   -0.07871067003190167
+  ],
+  "ci95_sf": [
+   -0.16890799529695177,
+   -0.06944444444423478
+  ],
+  "p_raw": 0.0001220703125,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 208,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RN.ALL_unweighted",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RN.ALL_tstar_hajek": {
+  "value": -0.04911994233618969,
+  "ci95_boot": [
+   -0.07347424450649252,
+   -0.026109895155518204
+  ],
+  "ci95_sf": [
+   -0.07796473987603698,
+   -0.02157286622374576
+  ],
+  "p_raw": 0.0006103515625,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 208,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RN.ALL_tstar_hajek",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RV.Am": {
+  "value": 0.2862866300366301,
+  "ci95_boot": [
+   0.2085217952429198,
+   0.36064204591763954
+  ],
+  "ci95_sf": [
+   0.1920351473920499,
+   0.37880291005320516
+  ],
+  "p_raw": 0.000244140625,
+  "p_holm": 0.000732421875,
+  "family": "AutoVLA primary {AV-P1,AV-P2,AV-P3} (P0-B / review_followup2 A3)",
+  "n_scenes": 52,
+  "n_drives": 13,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RV.Am",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RV.Ap": {
+  "value": 0.02896062271062271,
+  "ci95_boot": [
+   0.010902332832357756,
+   0.04964164327206596
+  ],
+  "ci95_sf": [
+   0.006725854183443836,
+   0.05224867724876025
+  ],
+  "p_raw": 0.01953125,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 156,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RV.Ap",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RV.ALL_unweighted": {
+  "value": 0.09329212454212453,
+  "ci95_boot": [
+   0.05795110811620246,
+   0.12266656373197425
+  ],
+  "ci95_sf": [
+   0.048029556650015945,
+   0.1268343815514652
+  ],
+  "p_raw": 0.000244140625,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 208,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RV.ALL_unweighted",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.RV.ALL_tstar_hajek": {
+  "value": 0.040745496557716025,
+  "ci95_boot": [
+   0.022718334476000166,
+   0.060667855256886026
+  ],
+  "ci95_sf": [
+   0.01837915592676425,
+   0.0637575823220215
+  ],
+  "p_raw": 0.000244140625,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 208,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.RV.ALL_tstar_hajek",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.DM.Am": {
+  "value": 0.09851953601953602,
+  "ci95_boot": [
+   0.03914317616648126,
+   0.20959963830029613
+  ],
+  "ci95_sf": [
+   0.03003246753234924,
+   0.24305555555615588
+  ],
+  "p_raw": 0.005615234375,
+  "p_holm": 0.005615234375,
+  "family": "AutoVLA primary {AV-P1,AV-P2,AV-P3} (P0-B / review_followup2 A3)",
+  "n_scenes": 52,
+  "n_drives": 13,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.DM.Am",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.DM.Ap": {
+  "value": 0.045024420024420024,
+  "ci95_boot": [
+   0.015605073207443905,
+   0.07763483189782983
+  ],
+  "ci95_sf": [
+   0.008367839889483952,
+   0.0824962797619822
+  ],
+  "p_raw": 0.02392578125,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 156,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.DM.Ap",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.DM.ALL_unweighted": {
+  "value": 0.058398199023199024,
+  "ci95_boot": [
+   0.034795565159293544,
+   0.09186600601779173
+  ],
+  "ci95_sf": [
+   0.030092592592450774,
+   0.097842261904867
+  ],
+  "p_raw": 0.0018310546875,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 208,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.DM.ALL_unweighted",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.DEV.DM.ALL_tstar_hajek": {
+  "value": 0.03672980692824775,
+  "ci95_boot": [
+   0.011013578238960252,
+   0.06726382293209601
+  ],
+  "ci95_sf": [
+   0.006115154984184152,
+   0.07334943423776252
+  ],
+  "p_raw": 0.02326202392578125,
+  "p_holm": NaN,
+  "family": "none (secondary / post-hoc)",
+  "n_scenes": 208,
+  "n_drives": 19,
+  "unit": "proportion (x100 = pp)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "source_row": "P0A.DEV.DM.ALL_tstar_hajek",
+  "upstream": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet via stats_core (seed 20261013, B 10000)"
+ },
+ "P0A.PREV.DEV.Aminus.2,747.drive": {
+  "value": 0.01892974153622133,
+  "events": 52,
+  "n": 2747,
+  "ci95_boot": [
+   0.011609019944144929,
+   0.026363190920645856
+  ],
+  "n_clusters": 20,
+  "denominator": "2,747 non-CoT valid natural plans",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.DEV.Aminus.2,747.day_vehicle": {
+  "value": 0.01892974153622133,
+  "events": 52,
+  "n": 2747,
+  "ci95_boot": [
+   0.011596749401165885,
+   0.026366591279539282
+  ],
+  "n_clusters": 14,
+  "denominator": "2,747 non-CoT valid natural plans",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.DEV.severe.2,747.drive": {
+  "value": 0.014561339643247179,
+  "events": 40,
+  "n": 2747,
+  "ci95_boot": [
+   0.00904973584608106,
+   0.01925603220442125
+  ],
+  "n_clusters": 20,
+  "denominator": "2,747 non-CoT valid natural plans",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.DEV.severe.2,747.day_vehicle": {
+  "value": 0.014561339643247179,
+  "events": 40,
+  "n": 2747,
+  "ci95_boot": [
+   0.00885270854254848,
+   0.019230769230769232
+  ],
+  "n_clusters": 14,
+  "denominator": "2,747 non-CoT valid natural plans",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.DEV.Aminus.first-mismatch.drive": {
+  "value": 0.04486626402070751,
+  "events": 52,
+  "n": 1159,
+  "ci95_boot": [
+   0.028494468616409408,
+   0.06143813521444256
+  ],
+  "n_clusters": 20,
+  "denominator": "first-mismatch scenes",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.DEV.Aminus.first-mismatch.day_vehicle": {
+  "value": 0.04486626402070751,
+  "events": 52,
+  "n": 1159,
+  "ci95_boot": [
+   0.028639618138424822,
+   0.06135724918763979
+  ],
+  "n_clusters": 14,
+  "denominator": "first-mismatch scenes",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.P1C.Aminus.valid.drive": {
+  "value": 0.018867924528301886,
+  "events": 107,
+  "n": 5671,
+  "ci95_boot": [
+   0.01319689165335042,
+   0.025270244786044838
+  ],
+  "n_clusters": 24,
+  "denominator": "valid non-CoT natural plans (64 logs)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.P1C.Aminus.valid.day_vehicle": {
+  "value": 0.018867924528301886,
+  "events": 107,
+  "n": 5671,
+  "ci95_boot": [
+   0.011399421505524627,
+   0.026285359845025082
+  ],
+  "n_clusters": 16,
+  "denominator": "valid non-CoT natural plans (64 logs)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.P1C.severe.valid.drive": {
+  "value": 0.015164873919943573,
+  "events": 86,
+  "n": 5671,
+  "ci95_boot": [
+   0.009505455061846593,
+   0.0217209793223873
+  ],
+  "n_clusters": 24,
+  "denominator": "valid non-CoT natural plans (64 logs)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.P1C.severe.valid.day_vehicle": {
+  "value": 0.015164873919943573,
+  "events": 86,
+  "n": 5671,
+  "ci95_boot": [
+   0.007709198051148855,
+   0.022710810500315926
+  ],
+  "n_clusters": 16,
+  "denominator": "valid non-CoT natural plans (64 logs)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.P1C.Aminus.eligible.drive": {
+  "value": 0.04792332268370607,
+  "events": 105,
+  "n": 2191,
+  "ci95_boot": [
+   0.034295952460284225,
+   0.06208603029372183
+  ],
+  "n_clusters": 24,
+  "denominator": "eligible E (t* <= 7) = P1-C population frame",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ },
+ "P0A.PREV.P1C.Aminus.eligible.day_vehicle": {
+  "value": 0.04792332268370607,
+  "events": 105,
+  "n": 2191,
+  "ci95_boot": [
+   0.029205524269776607,
+   0.06464558649355796
+  ],
+  "n_clusters": 16,
+  "denominator": "eligible E (t* <= 7) = P1-C population frame",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_prevalence.csv"
+ }
+}

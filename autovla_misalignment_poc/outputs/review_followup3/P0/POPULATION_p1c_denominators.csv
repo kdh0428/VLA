@@ -1,0 +1,13 @@
+contrast,estimand,n_scenes,n_units,n_logs,n_drives,n_day_vehicles,n_days,n_vehicles,n_drives_clusters,n_informative_drives,drives_not_in_estimand,harness_excluded_scenes,invalid_units_a,invalid_units_b
+RN,F,105,748,41,18,10,7,9,18,18,6,0,0,0
+RN,S,248,1688,64,24,16,8,14,24,17,0,0,0,0
+RN,P,353,2436,64,24,16,8,14,24,21,0,0,0,0
+RN,ALL_unweighted,353,2436,64,24,16,8,14,24,21,0,0,0,0
+RV,F,105,748,41,18,10,7,9,18,16,6,0,0,0
+RV,S,248,1688,64,24,16,8,14,24,17,0,0,0,0
+RV,P,353,2436,64,24,16,8,14,24,21,0,0,0,0
+RV,ALL_unweighted,353,2436,64,24,16,8,14,24,21,0,0,0,0
+DM,F,105,748,41,18,10,7,9,18,12,6,0,0,0
+DM,S,248,1688,64,24,16,8,14,24,22,0,0,0,0
+DM,P,353,2436,64,24,16,8,14,24,22,0,0,0,0
+DM,ALL_unweighted,353,2436,64,24,16,8,14,24,22,0,0,0,0

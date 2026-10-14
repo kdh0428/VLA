@@ -1,0 +1,19 @@
+manifest rows 9123 {'P1C_stage1': 5671, 'dev_natural_full_extract': 2748, 'SpatialVLA SimplerEnv (closed loop)': 560, 'OpenVLA LIBERO-Spatial (closed loop + offline frames)': 100, 'drive_map': 44}
+numbers rows 594
+POST-HOC (OpenVLA; not affected by AutoV    191
+PROVISIONAL (AutoVLA no-op parity, P1 St    110
+PROVISIONAL (AutoVLA parity not judged)      49
+POST-HOC re-analysis (SpatialVLA; not su     48
+post-hoc sensitivity (different estimand     48
+inventory (data availability; not an eff     25
+original estimand (from DIRECT_EFFECTS.c     24
+POST-HOC (SpatialVLA); unadjusted            16
+post-hoc (review_followup2); PROVISIONAL     16
+sensitivity (post-hoc); PROVISIONAL (Aut     16
+post-hoc estimand; PROVISIONAL (AutoVLA      15
+original (exploratory exp 9); PROVISIONA      8
+primary consistent estimator (post-hoc);      8
+invalid estimator shown for contrast; PR      8
+audit                                         6
+PROVISIONAL (AutoVLA parity not judged);      3
+predeclared estimand, drive re-analysis       3

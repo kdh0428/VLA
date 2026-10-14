@@ -1,0 +1,96 @@
+{
+ "P0C.plus437.V1": {
+  "label": "P1-A preregistered analysis (original)",
+  "value": 4.367547676046078,
+  "ci95": [
+   3.33703925076251,
+   5.132457940161594
+  ],
+  "p": 3.0517578125e-05,
+  "p_holm": 9.1552734375e-05,
+  "holm_family": "P1A_primary m = 3 {P1A-1, P1A-2, P1A-3}",
+  "cluster": "log (16)",
+  "units": "m",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/paired_effects.csv (family P1A_primary, contrast P1A-2)",
+  "source_code": "/root/VLA/autovla_misalignment_poc/scripts/review_followup/p1ab/p1a_analyze.py + p1_stats.py"
+ },
+ "P0C.plus437.V2": {
+  "label": "review_followup2 C: drive-level re-analysis of the predeclared P1A-2",
+  "value": 4.367547676046078,
+  "ci95": [
+   3.341391926180246,
+   5.17459941756813
+  ],
+  "p": 0.000244140625,
+  "p_holm": 0.000732421875,
+  "holm_family": "predeclared P1A family m = 3 (drive p)",
+  "cluster": "drive (13)",
+  "units": "m",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup2/C_baseline_window/run_20261013/c1_predeclared_and_gt_drive.csv (source=primary, family=G, group=A-, contrast='P1A-2 OC-Geo dev9_ref')",
+  "source_code": "/root/VLA/autovla_misalignment_poc/scripts/review_followup2/c_baseline_window.py::c1_predeclared"
+ },
+ "P0C.plus437.V3": {
+  "label": "review_followup2 C1 post-hoc 'excess model - Geo, endpoint'",
+  "value": 4.372034952181851,
+  "ci95": [
+   3.3236218574742034,
+   5.185328852085112
+  ],
+  "p": 0.000244140625,
+  "p_holm": 0.0009765625,
+  "holm_family": "post-hoc C1 excess family m = 4 {ex_geo_end, ex_cm_end, ex_geo_sfx, ex_cm_sfx}",
+  "cluster": "drive (13)",
+  "units": "m",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup2/C_baseline_window/run_20261013/c1_excess_effects.csv (family=G, group=A-, metric=ex_geo_end)",
+  "source_code": "/root/VLA/autovla_misalignment_poc/scripts/review_followup2/c_baseline_window.py::c1_units/c1_tables"
+ },
+ "P0C.plus437.AUTH": {
+  "label": "AUTHORITATIVE: predeclared P1A-2 estimand, drive-cluster inference (independent recompute, review_followup3)",
+  "value": 4.367547676046078,
+  "ci95": [
+   3.344249239815093,
+   5.173597907012892
+  ],
+  "p": 0.000244140625,
+  "p_holm": 0.000732421875,
+  "holm_family": "predeclared P1A family m = 3 (drive p)",
+  "cluster": "drive (13)",
+  "units": "m",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/units.parquet (family G, A-, exclusion_reason null; conditions OC, Geo; metric dev9_ref)",
+  "source_code": "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p0_c_reconcile.py::independent"
+ },
+ "P0C.P1A.P1A-1.drive.AUTH": {
+  "value": 0.5707173929437054,
+  "ci95": [
+   0.43498316727260194,
+   0.6805125899092225
+  ],
+  "sf_ci95": [
+   0.4038077663265344,
+   0.7053251653957007
+  ],
+  "p": 0.000244140625,
+  "p_holm": 0.000732421875,
+  "holm_family": "predeclared P1A m = 3",
+  "cluster": "drive (13)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/units.parquet",
+  "source_code": "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p0_c_reconcile.py"
+ },
+ "P0C.P1A.P1A-3.drive.AUTH": {
+  "value": -3.49785813369336,
+  "ci95": [
+   -4.2833647551137215,
+   -2.588895653877311
+  ],
+  "sf_ci95": [
+   -4.46828629075064,
+   -2.33850554022688
+  ],
+  "p": 0.000244140625,
+  "p_holm": 0.000732421875,
+  "holm_family": "predeclared P1A m = 3",
+  "cluster": "drive (13)",
+  "source_path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1A_gt_free_reference/run_20261008/units.parquet",
+  "source_code": "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p0_c_reconcile.py"
+ }
+}

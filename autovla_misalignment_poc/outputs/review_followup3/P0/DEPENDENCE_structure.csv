@@ -1,0 +1,10 @@
+n_drives,n_day_vehicle,n_vehicle,n_day,n_dv_component,vehicles_on_multiple_days,days_with_multiple_vehicles,max_days_per_vehicle,max_vehicles_per_day,crossed,multi_vehicle_days,multi_day_vehicles,contrast_id
+13,10,10,8,8,0,2,1,2,False,2021.06.28:veh-14+veh-38;2021.09.16:veh-42+veh-45,,AV-P1 Recent-Normal
+13,10,10,8,8,0,2,1,2,False,2021.06.28:veh-14+veh-38;2021.09.16:veh-42+veh-45,,AV-P2 Reverse-Full
+13,10,10,8,8,0,2,1,2,False,2021.06.28:veh-14+veh-38;2021.09.16:veh-42+veh-45,,AV-P3 Direction-Magnitude
+18,10,9,7,6,1,3,2,2,True,2021.05.25:veh-30+veh-35;2021.09.09:veh-40+veh-48;2021.09.16:veh-42+veh-45,veh-35:2021.05.25+2021.06.03,P1C RN F
+24,16,14,8,6,2,4,2,4,True,2021.05.25:veh-25+veh-30+veh-35;2021.06.28:veh-14+veh-16+veh-26+veh-38;2021.09.09:veh-40+veh-48;2021.09.16:veh-08+veh-42+veh-45,veh-35:2021.05.25+2021.06.03;veh-45:2021.08.16+2021.09.16,P1C RN P
+18,10,9,7,6,1,3,2,2,True,2021.05.25:veh-30+veh-35;2021.09.09:veh-40+veh-48;2021.09.16:veh-42+veh-45,veh-35:2021.05.25+2021.06.03,P1C RV F
+24,16,14,8,6,2,4,2,4,True,2021.05.25:veh-25+veh-30+veh-35;2021.06.28:veh-14+veh-16+veh-26+veh-38;2021.09.09:veh-40+veh-48;2021.09.16:veh-08+veh-42+veh-45,veh-35:2021.05.25+2021.06.03;veh-45:2021.08.16+2021.09.16,P1C RV P
+18,10,9,7,6,1,3,2,2,True,2021.05.25:veh-30+veh-35;2021.09.09:veh-40+veh-48;2021.09.16:veh-42+veh-45,veh-35:2021.05.25+2021.06.03,P1C DM F
+24,16,14,8,6,2,4,2,4,True,2021.05.25:veh-25+veh-30+veh-35;2021.06.28:veh-14+veh-16+veh-26+veh-38;2021.09.09:veh-40+veh-48;2021.09.16:veh-08+veh-42+veh-45,veh-35:2021.05.25+2021.06.03;veh-45:2021.08.16+2021.09.16,P1C DM P

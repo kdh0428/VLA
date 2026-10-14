@@ -1,0 +1,199 @@
+{
+ "created_utc": "2026-10-14T14:34:12Z",
+ "status": "POST-HOC inventory",
+ "training_split_definition": "OpenScene v1.1 trainval, all scenes (AutoVLA repo configs mix-sft + nuplan-grpo-cot); + nuScenes train (different dataset). Checkpoint model card silent; navtest is the configs' validation split (model selection on navtest not determinable).",
+ "openscene_provenance": {
+  "trainval": {
+   "split": "trainval",
+   "url": "https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/a76f840b65e972bc45e56c2adced897498e9a026/openscene-v1.1/openscene_metadata_trainval.tgz",
+   "dataset_repo_commit": "a76f840b65e972bc45e56c2adced897498e9a026",
+   "curl_returncode": 0,
+   "stream_sha256": "193138ac68b29d977d4438a95dfda35a07ff4ad3efb1800b3ee47d6e1dcb3764",
+   "n_tar_members": 1311,
+   "n_log_pickles": 1310,
+   "created_utc": "2026-10-14T14:09:03Z",
+   "seconds": 110.7,
+   "note": "streamed, never written to disk; only log-level fields kept"
+  },
+  "test": {
+   "split": "test",
+   "url": "https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/a76f840b65e972bc45e56c2adced897498e9a026/openscene-v1.1/openscene_metadata_test.tgz",
+   "dataset_repo_commit": "a76f840b65e972bc45e56c2adced897498e9a026",
+   "curl_returncode": 0,
+   "stream_sha256": "871ba786da584e03f5151924674ab006e83782f796a979ee5dd144b5c6dca1ab",
+   "n_tar_members": 148,
+   "n_log_pickles": 147,
+   "created_utc": "2026-10-14T14:07:12Z",
+   "seconds": 9.8,
+   "note": "streamed, never written to disk; only log-level fields kept"
+  }
+ },
+ "trainval": {
+  "n_logs": 1310,
+  "n_days": 19,
+  "vehicles": [
+   "veh-08",
+   "veh-12",
+   "veh-14",
+   "veh-16",
+   "veh-17",
+   "veh-26",
+   "veh-28",
+   "veh-35",
+   "veh-38",
+   "veh-39",
+   "veh-40",
+   "veh-42",
+   "veh-43",
+   "veh-45",
+   "veh-50",
+   "veh-52"
+  ],
+  "cities": {
+   "us-nv-las-vegas-strip": 818,
+   "us-ma-boston": 255,
+   "us-pa-pittsburgh-hazelwood": 140,
+   "sg-one-north": 97
+  }
+ },
+ "test": {
+  "n_logs": 147,
+  "n_days": 9,
+  "vehicles": [
+   "veh-08",
+   "veh-14",
+   "veh-16",
+   "veh-25",
+   "veh-26",
+   "veh-27",
+   "veh-28",
+   "veh-30",
+   "veh-35",
+   "veh-38",
+   "veh-39",
+   "veh-40",
+   "veh-42",
+   "veh-45",
+   "veh-48",
+   "veh-52"
+  ],
+  "cities": {
+   "us-ma-boston": 62,
+   "us-nv-las-vegas-strip": 50,
+   "us-pa-pittsburgh-hazelwood": 22,
+   "sg-one-north": 13
+  },
+  "navtest_logs": 136,
+  "navtest_logs_in_test": 136,
+  "navtest_tokens_yaml": 12146,
+  "navtest_scenes_split_csv_sum": 12125
+ },
+ "test_vs_trainval": {
+  "shared_logs": 0,
+  "test_days_not_in_trainval": [
+   "2021.05.25",
+   "2021.06.03",
+   "2021.06.28",
+   "2021.08.16",
+   "2021.08.30",
+   "2021.09.09",
+   "2021.09.16",
+   "2021.09.29"
+  ],
+  "test_vehicles_not_in_trainval": [
+   "veh-25",
+   "veh-27",
+   "veh-30",
+   "veh-48"
+  ]
+ },
+ "ref_sets": {
+  "dev": {
+   "log": 28,
+   "drive": 20,
+   "day": 8,
+   "vehicle": 12,
+   "day_vehicle": 14
+  },
+  "p1c": {
+   "log": 66,
+   "drive": 26,
+   "day": 8,
+   "vehicle": 14,
+   "day_vehicle": 16
+  },
+  "train": {
+   "log": 1310,
+   "drive": 171,
+   "day": 19,
+   "vehicle": 16,
+   "day_vehicle": 46
+  }
+ },
+ "ref_days": {
+  "dev": [
+   "2021.05.25",
+   "2021.06.03",
+   "2021.06.28",
+   "2021.08.30",
+   "2021.09.09",
+   "2021.09.16",
+   "2021.09.29",
+   "2021.10.06"
+  ],
+  "p1c": [
+   "2021.05.25",
+   "2021.06.03",
+   "2021.06.28",
+   "2021.08.16",
+   "2021.09.09",
+   "2021.09.16",
+   "2021.09.29",
+   "2021.10.06"
+  ]
+ },
+ "ref_vehicles": {
+  "dev": [
+   "veh-14",
+   "veh-25",
+   "veh-26",
+   "veh-27",
+   "veh-28",
+   "veh-35",
+   "veh-38",
+   "veh-39",
+   "veh-40",
+   "veh-42",
+   "veh-45",
+   "veh-52"
+  ],
+  "p1c": [
+   "veh-08",
+   "veh-14",
+   "veh-16",
+   "veh-25",
+   "veh-26",
+   "veh-28",
+   "veh-30",
+   "veh-35",
+   "veh-38",
+   "veh-40",
+   "veh-42",
+   "veh-45",
+   "veh-48",
+   "veh-52"
+  ]
+ },
+ "rates_used": {
+  "E_per_scene": 0.38635161347205077,
+  "F_per_scene": 0.018515253041791573,
+  "source": "P1-C stage 1 (POPULATION_selection_flow.csv)"
+ },
+ "inputs": [
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/design_20261008/split.csv",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup2/A_autovla_cluster/run_20261013/drive_membership.csv",
+  "/root/VLA/autovla/navsim/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/_external/openscene_v1.1_trainval_log_metadata.csv",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/_external/openscene_v1.1_test_log_metadata.csv"
+ ]
+}

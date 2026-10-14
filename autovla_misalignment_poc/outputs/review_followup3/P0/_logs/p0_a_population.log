@@ -1,0 +1,175 @@
+  cohort contrast                                            frame  W_F (sum of F weights = F scenes)  W_S (sum of Hajek S weights)  frame_size_E  W_F + W_S   share_F   theta_F  theta_S_hajek   theta_P  recomposed  F_contribution_to_theta_P  S_contribution_to_theta_P                                                                                  valid_decomposition                                                                                  status
+0   P1-C       RN  eligible E scenes of the 64 eval logs (t* <= 7)                              105.0                        2086.0          2191     2191.0  0.047923 -0.342139      -0.026109 -0.041255   -0.041255                  -0.016396                  -0.024858  yes: same frame (E), same scene-weighted Hajek estimand, known pi; weights reproduce the frame size  PROVISIONAL (AutoVLA parity not judged); post-hoc decomposition of the preregistered P
+1   P1-C       RV  eligible E scenes of the 64 eval logs (t* <= 7)                              105.0                        2086.0          2191     2191.0  0.047923  0.268330       0.024793  0.036464    0.036464                   0.012859                   0.023605  yes: same frame (E), same scene-weighted Hajek estimand, known pi; weights reproduce the frame size  PROVISIONAL (AutoVLA parity not judged); post-hoc decomposition of the preregistered P
+2   P1-C       DM  eligible E scenes of the 64 eval logs (t* <= 7)                              105.0                        2086.0          2191     2191.0  0.047923  0.061602       0.024405  0.026188    0.026188                   0.002952                   0.023236  yes: same frame (E), same scene-weighted Hajek estimand, known pi; weights reproduce the frame size  PROVISIONAL (AutoVLA parity not judged); post-hoc decomposition of the preregistered P
+{
+ "n_eqd": 208,
+ "n_eqd_Aminus": 52,
+ "n_eqd_Aplus": 156,
+ "all_eqd_tokens_in_full_extract": true,
+ "group_label_agrees": 208,
+ "t_star_agrees": 208,
+ "replica_selected_equals_eqd_set": true,
+ "n_replica_selected": 208
+}
+                              cohort                                                            step  n_scenes  n_logs  n_drives  n_days  n_vehicles  n_day_vehicles
+0   dev natural (full_extract arm N)              0 full_extract records (arm N, navtest shards 0-5)      2748      28        20       8          12              14
+1   dev natural (full_extract arm N)         1 non-CoT natural scenes (= the '2,747 natural scenes')      2747      28        20       8          12              14
+2   dev natural (full_extract arm N)                                   1x excluded: CoT stub present         1       1         1       1           1               1
+3   dev natural (full_extract arm N)                      1x excluded: runaway / fewer than 10 poses         0       0         0       0           0               0
+4   dev natural (full_extract arm N)                                           2 valid natural plans      2747      28        20       8          12              14
+5   dev natural (full_extract arm N)                                         2A- natural A- (all t*)        52      16        13       8          10              10
+6   dev natural (full_extract arm N)                                         2A+ natural A+ (all t*)      2695      28        20       8          12              14
+7   dev natural (full_extract arm N)                         2A-s natural A- and FDE5 > 3 m (severe)        40      15        13       8          10              10
+8   dev natural (full_extract arm N)                    2A-n natural A- and FDE5 <= 3 m (non-severe)        12       7         7       7           7               7
+9   dev natural (full_extract arm N)      3x no first token mismatch (not eligible for perturbation)      1588      28        20       8          12              14
+10  dev natural (full_extract arm N)                                                 3x  of which A-         0       0         0       0           0               0
+11  dev natural (full_extract arm N)              3 first token mismatch exists (selection-eligible)      1159      28        20       8          12              14
+12  dev natural (full_extract arm N)                                             3A- mismatch and A-        52      16        13       8          10              10
+13  dev natural (full_extract arm N)                                             3A+ mismatch and A+      1107      28        20       8          12              14
+14  dev natural (full_extract arm N)                             3A-s mismatch and A- and FDE5 > 3 m        40      15        13       8          10              10
+15  dev natural (full_extract arm N)        4 A+ pool at t* values present among A- (sampling frame)       944      28        20       8          12              14
+16  dev natural (full_extract arm N)               4x A+ at t* values with no A- (inclusion prob. 0)       163      23        17       8          12              13
+17  dev natural (full_extract arm N)                                     5 selected A- (all, pi = 1)        52      16        13       8          10              10
+18  dev natural (full_extract arm N)                    5 selected A+ (3 per A-, same t*, Random(0))       156      26        19       8          11              13
+19  dev natural (full_extract arm N)                                5 selected total (mechanism set)       208      26        19       8          11              13
+20       P1-C stage 1 (64 eval logs)  0 stage-1 natural pass, all navtest scenes of the 64 eval logs      5671      64        24       8          14              16
+21       P1-C stage 1 (64 eval logs)                                                 0x invalid plan         0       0         0       0           0               0
+22       P1-C stage 1 (64 eval logs)                                                     0x CoT stub         0       0         0       0           0               0
+23       P1-C stage 1 (64 eval logs)                                                      0x runaway         0       0         0       0           0               0
+24       P1-C stage 1 (64 eval logs)                                         1A- natural A- (all t*)       107      41        18       7           9              10
+25       P1-C stage 1 (64 eval logs)                                  1A-s natural A- and FDE5 > 3 m        86      38        18       7           9              10
+26       P1-C stage 1 (64 eval logs)                                            2x no first mismatch      3268      64        24       8          14              16
+27       P1-C stage 1 (64 eval logs)                                                 2x  of which A-         0       0         0       0           0               0
+28       P1-C stage 1 (64 eval logs)                                                  2x t* in {8,9}       212      49        22       8          12              14
+29       P1-C stage 1 (64 eval logs)                                                 2x  of which A-         2       2         2       2           2               2
+30       P1-C stage 1 (64 eval logs)                                          3 eligible E (t* <= 7)      2191      64        24       8          14              16
+31       P1-C stage 1 (64 eval logs)                      3F eligible A- = stratum F (all perturbed)       105      41        18       7           9              10
+32       P1-C stage 1 (64 eval logs)                                        3S eligible A+ = S frame      2086      64        24       8          14              16
+33       P1-C stage 1 (64 eval logs)                                                   4F selected F       105      41        18       7           9              10
+34       P1-C stage 1 (64 eval logs)                               4S selected S (m = 4 per segment)       248      64        24       8          14              16
+35       P1-C stage 1 (64 eval logs)                                 4 selected total (analysed 353)       353      64        24       8          14              16
+                              cohort outcome                                   denominator  events  n_scenes  prevalence cluster_level  n_clusters  boot_ci95_lo  boot_ci95_hi
+0   dev natural (full_extract arm N)  Aminus             2,747 non-CoT valid natural plans      52      2747    0.018930         drive          20      0.011609      0.026363
+1   dev natural (full_extract arm N)  Aminus             2,747 non-CoT valid natural plans      52      2747    0.018930   day_vehicle          14      0.011597      0.026367
+5   dev natural (full_extract arm N)  severe             2,747 non-CoT valid natural plans      40      2747    0.014561         drive          20      0.009050      0.019256
+6   dev natural (full_extract arm N)  severe             2,747 non-CoT valid natural plans      40      2747    0.014561   day_vehicle          14      0.008853      0.019231
+10  dev natural (full_extract arm N)  Aminus                         first-mismatch scenes      52      1159    0.044866         drive          20      0.028494      0.061438
+11  dev natural (full_extract arm N)  Aminus                         first-mismatch scenes      52      1159    0.044866   day_vehicle          14      0.028640      0.061357
+15                      P1-C stage 1  Aminus         valid non-CoT natural plans (64 logs)     107      5671    0.018868         drive          24      0.013197      0.025270
+16                      P1-C stage 1  Aminus         valid non-CoT natural plans (64 logs)     107      5671    0.018868   day_vehicle          16      0.011399      0.026285
+20                      P1-C stage 1  severe         valid non-CoT natural plans (64 logs)      86      5671    0.015165         drive          24      0.009505      0.021721
+21                      P1-C stage 1  severe         valid non-CoT natural plans (64 logs)      86      5671    0.015165   day_vehicle          16      0.007709      0.022711
+25                      P1-C stage 1  Aminus  eligible E (t* <= 7) = P1-C population frame     105      2191    0.047923         drive          24      0.034296      0.062086
+26                      P1-C stage 1  Aminus  eligible E (t* <= 7) = P1-C population frame     105      2191    0.047923   day_vehicle          16      0.029206      0.064646
+                        row_id         estimand  n_scenes  n_units  n_clusters  n_informative_clusters  events_a   n_a  events_b   n_b     theta  boot_ci95_lo  boot_ci95_hi  sf_ci95_lo  sf_ci95_hi  p_signflip_raw    p_holm
+0                 P0A.P1C.RN.F                F       105      748          18                      18        24   748       281   748 -0.342139     -0.383293     -0.294529   -0.387245   -0.282096    7.629395e-06  0.000023
+1                 P0A.P1C.RN.S                S       248     1688          24                      17        15  1688        59  1688 -0.026109     -0.045763     -0.012307   -0.047810   -0.010715    1.678467e-04       NaN
+2                 P0A.P1C.RN.P                P       353     2436          24                      21        39  2436       340  2436 -0.041255     -0.063625     -0.024191   -0.066383   -0.021338    5.722046e-06  0.000011
+3    P0A.P1C.RN.ALL_unweighted   ALL_unweighted       353     2436          24                      21        39  2436       340  2436 -0.119368     -0.152864     -0.083941   -0.153927   -0.076952    9.536743e-07       NaN
+4                 P0A.P1C.RV.F                F       105      748          18                      16       223   748        18   748  0.268330      0.218893      0.307461    0.205150    0.310539    3.051758e-05  0.000061
+5                 P0A.P1C.RV.S                S       248     1688          24                      17        54  1688        10  1688  0.024793      0.012775      0.041680    0.011093    0.043880    1.525879e-05       NaN
+6                 P0A.P1C.RV.P                P       353     2436          24                      21       277  2436        28  2436  0.036464      0.022229      0.054876    0.019739    0.057282    9.536743e-07  0.000003
+7    P0A.P1C.RV.ALL_unweighted   ALL_unweighted       353     2436          24                      21       277  2436        28  2436  0.097020      0.067686      0.122431    0.061878    0.123839    9.536743e-07       NaN
+8                 P0A.P1C.DM.F                F       105      748          18                      12       150   748       111   748  0.061602      0.006128      0.120690   -0.004085    0.127315    7.324219e-02  0.073242
+9                 P0A.P1C.DM.S                S       248     1688          24                      22       124  1688        59  1688  0.024405     -0.006172      0.053065   -0.008114    0.056636    1.257887e-01       NaN
+10                P0A.P1C.DM.P                P       353     2436          24                      22       274  2436       170  2436  0.026188     -0.003969      0.055415   -0.006413    0.058974    1.045671e-01  0.104567
+11   P0A.P1C.DM.ALL_unweighted   ALL_unweighted       353     2436          24                      22       274  2436       170  2436  0.043010      0.019155      0.066993    0.015127    0.068025    4.491329e-03       NaN
+12               P0A.DEV.RN.Am               A-        52      365          13                      13        26   365       173   365 -0.397894     -0.490279     -0.298786   -0.515046   -0.286582    2.441406e-04  0.000732
+13               P0A.DEV.RN.Ap               A+       156     1043          19                      10         7  1043        44  1043 -0.033527     -0.057661     -0.010725   -0.061424   -0.004913    2.148438e-02       NaN
+14   P0A.DEV.RN.ALL_unweighted   ALL_unweighted       208     1408          19                      14        33  1408       217  1408 -0.124618     -0.162088     -0.078711   -0.168908   -0.069444    1.220703e-04       NaN
+15  P0A.DEV.RN.ALL_tstar_hajek  ALL_tstar_hajek       208     1408          19                      14        33  1408       217  1408 -0.049120     -0.073474     -0.026110   -0.077965   -0.021573    6.103516e-04       NaN
+16               P0A.DEV.RV.Am               A-        52      365          13                      13       122   365        16   365  0.286287      0.208522      0.360642    0.192035    0.378803    2.441406e-04  0.000732
+17               P0A.DEV.RV.Ap               A+       156     1043          19                       9        40  1043         8  1043  0.028961      0.010902      0.049642    0.006726    0.052249    1.953125e-02       NaN
+18   P0A.DEV.RV.ALL_unweighted   ALL_unweighted       208     1408          19                      13       162  1408        24  1408  0.093292      0.057951      0.122667    0.048030    0.126834    2.441406e-04       NaN
+19  P0A.DEV.RV.ALL_tstar_hajek  ALL_tstar_hajek       208     1408          19                      13       162  1408        24  1408  0.040745      0.022718      0.060668    0.018379    0.063758    2.441406e-04       NaN
+20               P0A.DEV.DM.Am               A-        52      365          13                      13        96   365        63   365  0.098520      0.039143      0.209600    0.030032    0.243056    5.615234e-03  0.005615
+21               P0A.DEV.DM.Ap               A+       156     1043          19                      14        90  1043        39  1043  0.045024      0.015605      0.077635    0.008368    0.082496    2.392578e-02       NaN
+22   P0A.DEV.DM.ALL_unweighted   ALL_unweighted       208     1408          19                      19       186  1408       102  1408  0.058398      0.034796      0.091866    0.030093    0.097842    1.831055e-03       NaN
+23  P0A.DEV.DM.ALL_tstar_hajek  ALL_tstar_hajek       208     1408          19                      19       186  1408       102  1408  0.036730      0.011014      0.067264    0.006115    0.073349    2.326202e-02       NaN
+   contrast        estimand  n_scenes  n_units  n_logs  n_drives  n_day_vehicles  n_days  n_vehicles  n_drives_clusters  n_informative_drives  drives_not_in_estimand  harness_excluded_scenes  invalid_units_a  invalid_units_b
+0        RN               F       105      748      41        18              10       7           9                 18                    18                       6                        0                0                0
+1        RN               S       248     1688      64        24              16       8          14                 24                    17                       0                        0                0                0
+2        RN               P       353     2436      64        24              16       8          14                 24                    21                       0                        0                0                0
+3        RN  ALL_unweighted       353     2436      64        24              16       8          14                 24                    21                       0                        0                0                0
+4        RV               F       105      748      41        18              10       7           9                 18                    16                       6                        0                0                0
+5        RV               S       248     1688      64        24              16       8          14                 24                    17                       0                        0                0                0
+6        RV               P       353     2436      64        24              16       8          14                 24                    21                       0                        0                0                0
+7        RV  ALL_unweighted       353     2436      64        24              16       8          14                 24                    21                       0                        0                0                0
+8        DM               F       105      748      41        18              10       7           9                 18                    12                       6                        0                0                0
+9        DM               S       248     1688      64        24              16       8          14                 24                    22                       0                        0                0                0
+10       DM               P       353     2436      64        24              16       8          14                 24                    22                       0                        0                0                0
+11       DM  ALL_unweighted       353     2436      64        24              16       8          14                 24                    22                       0                        0                0                0
+[
+ {
+  "contrast": "RN",
+  "ours_theta": -0.39789377289377287,
+  "ours_p": 0.000244140625,
+  "ours_holm": 0.000732421875,
+  "ref_row": {
+   "contrast_id": "AV-P1 Recent-Normal",
+   "family": "AutoVLA primary (P0-B, Holm m=3)",
+   "model": "AutoVLA",
+   "experiment": "exp07_action_history_causal",
+   "group_or_estimand": "A-",
+   "cond_a": "recent_gt",
+   "cond_b": "normal",
+   "metric": "amplification",
+   "analysis_status": "POST-HOC re-analysis of existing data",
+   "n_units": 365,
+   "n_scenes": 52,
+   "n_logs": 16,
+   "n_drives": 13,
+   "n_informative_drives": 13,
+   "orig_estimate": -0.4027397260273972,
+   "orig_ci95_lo": -0.5033985214293792,
+   "orig_ci95_hi": -0.2999766355140188,
+   "orig_p": 8.041351237527963e-42,
+   "orig_method": "unit mean; log bootstrap 2000 seed 0; unit-level McNemar",
+   "orig_holm_p": NaN,
+   "logrep_estimate_scene": -0.3978937728937728,
+   "logrep_ci95_lo": -0.5000365497076023,
+   "logrep_ci95_hi": -0.2875548407768905,
+   "logrep_p_signflip": 0.0001220703125,
+   "log_estimate_scene": -0.3978937728937728,
+   "log_ci95_lo": -0.5000365497076023,
+   "log_ci95_hi": -0.2875548407768905,
+   "log_p_signflip": 0.0001220703125,
+   "log_sf_method": "exact 2^16",
+   "log_holm_p": 0.000244140625,
+   "drive_estimate_scene": -0.3978937728937728,
+   "drive_boot_ci95_lo": -0.4902792178699436,
+   "drive_boot_ci95_hi": -0.2987860159787185,
+   "drive_boot_ci90_lo": -0.476037851037851,
+   "drive_boot_ci90_hi": -0.3138423258580452,
+   "drive_sf_ci95_lo": -0.5150462962966471,
+   "drive_sf_ci95_hi": -0.286582341269582,
+   "drive_sf_ci90_lo": -0.4931027966744051,
+   "drive_sf_ci90_hi": -0.3017526455024782,
+   "drive_p_signflip": 0.000244140625,
+   "drive_sf_method": "exact 2^13",
+   "drive_p_min_attainable": 0.000244140625,
+   "drive_p_cluster_t": 4.7910635494076375e-06,
+   "drive_clt_ci95_lo": -0.5088659653735466,
+   "drive_clt_ci95_hi": -0.2869215804139992,
+   "drive_holm_p": 0.000732421875,
+   "drive_estimate_unit": -0.4027397260273972,
+   "drive_unit_ci95_lo": -0.4948983915600138,
+   "drive_unit_ci95_hi": -0.3067484662576687,
+   "drive_unit_p_signflip": 0.000244140625,
+   "drive_estimate_drive_equal": -0.4661468932302265,
+   "drive_equal_ci95_lo": -0.5860156991927825,
+   "drive_equal_ci95_hi": -0.3495431844390178,
+   "drive_equal_p_signflip": 0.000244140625,
+   "log_estimate_log_equal": -0.4300526344797177,
+   "lodo_min": -0.4353082318198597,
+   "lodo_max": -0.3622908622908623,
+   "lodo_max_p": 0.00048828125,
+   "lodo_n_ci_includes_0": 0,
+   "lodo_n_sign_change": 0,
+   "lodo_most_influential": "2021.06.28.18.03.27_veh-14",
+   "judgment_original": "significant (unit-level p)",
+   "judgment_log": "significant, sign as predicted",
+   "judgment_drive": "significant, sign as predicted",
+   "judgment_change_log_to_drive": "no change",
+   "small_cluster_caveat": "only 13 independent drives; percentile bootstrap may under-cover (sim coverage 0.86-0.93 at G=13); min attainable exact two-sided p = 0.00024 (13 informative drives); observed p equ

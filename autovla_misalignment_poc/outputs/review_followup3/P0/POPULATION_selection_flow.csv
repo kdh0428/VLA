@@ -1,0 +1,37 @@
+cohort,step,n_scenes,n_logs,n_drives,n_days,n_vehicles,n_day_vehicles
+dev natural (full_extract arm N),"0 full_extract records (arm N, navtest shards 0-5)",2748,28,20,8,12,14
+dev natural (full_extract arm N),"1 non-CoT natural scenes (= the '2,747 natural scenes')",2747,28,20,8,12,14
+dev natural (full_extract arm N),1x excluded: CoT stub present,1,1,1,1,1,1
+dev natural (full_extract arm N),1x excluded: runaway / fewer than 10 poses,0,0,0,0,0,0
+dev natural (full_extract arm N),2 valid natural plans,2747,28,20,8,12,14
+dev natural (full_extract arm N),2A- natural A- (all t*),52,16,13,8,10,10
+dev natural (full_extract arm N),2A+ natural A+ (all t*),2695,28,20,8,12,14
+dev natural (full_extract arm N),2A-s natural A- and FDE5 > 3 m (severe),40,15,13,8,10,10
+dev natural (full_extract arm N),2A-n natural A- and FDE5 <= 3 m (non-severe),12,7,7,7,7,7
+dev natural (full_extract arm N),3x no first token mismatch (not eligible for perturbation),1588,28,20,8,12,14
+dev natural (full_extract arm N),3x  of which A-,0,0,0,0,0,0
+dev natural (full_extract arm N),3 first token mismatch exists (selection-eligible),1159,28,20,8,12,14
+dev natural (full_extract arm N),3A- mismatch and A-,52,16,13,8,10,10
+dev natural (full_extract arm N),3A+ mismatch and A+,1107,28,20,8,12,14
+dev natural (full_extract arm N),3A-s mismatch and A- and FDE5 > 3 m,40,15,13,8,10,10
+dev natural (full_extract arm N),4 A+ pool at t* values present among A- (sampling frame),944,28,20,8,12,14
+dev natural (full_extract arm N),4x A+ at t* values with no A- (inclusion prob. 0),163,23,17,8,12,13
+dev natural (full_extract arm N),"5 selected A- (all, pi = 1)",52,16,13,8,10,10
+dev natural (full_extract arm N),"5 selected A+ (3 per A-, same t*, Random(0))",156,26,19,8,11,13
+dev natural (full_extract arm N),5 selected total (mechanism set),208,26,19,8,11,13
+P1-C stage 1 (64 eval logs),"0 stage-1 natural pass, all navtest scenes of the 64 eval logs",5671,64,24,8,14,16
+P1-C stage 1 (64 eval logs),0x invalid plan,0,0,0,0,0,0
+P1-C stage 1 (64 eval logs),0x CoT stub,0,0,0,0,0,0
+P1-C stage 1 (64 eval logs),0x runaway,0,0,0,0,0,0
+P1-C stage 1 (64 eval logs),1A- natural A- (all t*),107,41,18,7,9,10
+P1-C stage 1 (64 eval logs),1A-s natural A- and FDE5 > 3 m,86,38,18,7,9,10
+P1-C stage 1 (64 eval logs),2x no first mismatch,3268,64,24,8,14,16
+P1-C stage 1 (64 eval logs),2x  of which A-,0,0,0,0,0,0
+P1-C stage 1 (64 eval logs),"2x t* in {8,9}",212,49,22,8,12,14
+P1-C stage 1 (64 eval logs),2x  of which A-,2,2,2,2,2,2
+P1-C stage 1 (64 eval logs),3 eligible E (t* <= 7),2191,64,24,8,14,16
+P1-C stage 1 (64 eval logs),3F eligible A- = stratum F (all perturbed),105,41,18,7,9,10
+P1-C stage 1 (64 eval logs),3S eligible A+ = S frame,2086,64,24,8,14,16
+P1-C stage 1 (64 eval logs),4F selected F,105,41,18,7,9,10
+P1-C stage 1 (64 eval logs),4S selected S (m = 4 per segment),248,64,24,8,14,16
+P1-C stage 1 (64 eval logs),4 selected total (analysed 353),353,64,24,8,14,16

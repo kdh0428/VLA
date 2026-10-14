@@ -1,0 +1,111 @@
+{
+ "A-": {
+  "n_drives": 13,
+  "n_day_vehicle": 10,
+  "n_day": 8,
+  "n_vehicle": 10,
+  "p1c_eval_shared_drives": 0,
+  "p1c_eval_shared_day_vehicle": 8,
+  "p1c_eval_shared_days": 7,
+  "p1c_eval_shared_vehicles": 9,
+  "shared_day_vehicle_list": [
+   "2021.05.25_veh-25",
+   "2021.06.03_veh-35",
+   "2021.06.28_veh-14",
+   "2021.06.28_veh-38",
+   "2021.09.16_veh-42",
+   "2021.09.16_veh-45",
+   "2021.09.29_veh-28",
+   "2021.10.06_veh-52"
+  ]
+ },
+ "mech_poc": {
+  "n_drives": 19,
+  "n_day_vehicle": 13,
+  "n_day": 8,
+  "n_vehicle": 11,
+  "p1c_eval_shared_drives": 0,
+  "p1c_eval_shared_day_vehicle": 10,
+  "p1c_eval_shared_days": 7,
+  "p1c_eval_shared_vehicles": 10,
+  "shared_day_vehicle_list": [
+   "2021.05.25_veh-25",
+   "2021.05.25_veh-35",
+   "2021.06.03_veh-35",
+   "2021.06.28_veh-14",
+   "2021.06.28_veh-26",
+   "2021.06.28_veh-38",
+   "2021.09.16_veh-42",
+   "2021.09.16_veh-45",
+   "2021.09.29_veh-28",
+   "2021.10.06_veh-52"
+  ]
+ },
+ "dev_discovery": {
+  "n_drives": 20,
+  "n_day_vehicle": 14,
+  "n_day": 8,
+  "n_vehicle": 12,
+  "p1c_eval_shared_drives": 0,
+  "p1c_eval_shared_day_vehicle": 10,
+  "p1c_eval_shared_days": 7,
+  "p1c_eval_shared_vehicles": 10,
+  "shared_day_vehicle_list": [
+   "2021.05.25_veh-25",
+   "2021.05.25_veh-35",
+   "2021.06.03_veh-35",
+   "2021.06.28_veh-14",
+   "2021.06.28_veh-26",
+   "2021.06.28_veh-38",
+   "2021.09.16_veh-42",
+   "2021.09.16_veh-45",
+   "2021.09.29_veh-28",
+   "2021.10.06_veh-52"
+  ]
+ },
+ "navtrain_P1C_eval_24": {
+  "day": 1,
+  "vehicle": 20,
+  "day_vehicle": 0,
+  "drive": 0,
+  "n": 24
+ },
+ "trainval_P1C_eval_24": {
+  "day": 1,
+  "vehicle": 20,
+  "day_vehicle": 0,
+  "drive": 0,
+  "n": 24
+ },
+ "navtrain_P1C_F_18": {
+  "day": 1,
+  "vehicle": 15,
+  "day_vehicle": 0,
+  "drive": 0,
+  "n": 18
+ },
+ "trainval_P1C_F_18": {
+  "day": 1,
+  "vehicle": 15,
+  "day_vehicle": 0,
+  "drive": 0,
+  "n": 18
+ },
+ "navtrain_A-_13": {
+  "day": 1,
+  "vehicle": 12,
+  "day_vehicle": 0,
+  "drive": 0,
+  "n": 13
+ },
+ "trainval_A-_13": {
+  "day": 1,
+  "vehicle": 12,
+  "day_vehicle": 0,
+  "drive": 0,
+  "n": 13
+ },
+ "trainval_n_logs": 1310,
+ "navtrain_navtest_shared_logs": 0,
+ "navtrain_n_logs": 1192
+}

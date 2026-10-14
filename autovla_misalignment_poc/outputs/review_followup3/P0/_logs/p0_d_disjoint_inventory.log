@@ -1,0 +1,101 @@
+                                                           subset  n_logs  n_drives  n_days  n_vehicles  n_day_vehicles                                                                                  cities  navtest_scenes  exp_eligible_E  exp_F  images_local_logs
+0                                         ALL OpenScene test logs     147        46       9          16              20  us-ma-boston:62;us-nv-las-vegas-strip:50;us-pa-pittsburgh-hazelwood:22;sg-one-north:13           12125          4684.5  224.5                 32
+1                                              ref: dev_discovery      28        20       8          12              14     us-nv-las-vegas-strip:14;us-ma-boston:9;us-pa-pittsburgh-hazelwood:4;sg-one-north:1            2748          1061.7   50.9                 28
+2                                          ref: P1-C eval + pilot      66        26       8          14              16   us-nv-las-vegas-strip:24;us-ma-boston:23;us-pa-pittsburgh-hazelwood:12;sg-one-north:7            5723          2211.1  106.0                  0
+3    test logs not used by dev / P1-C (adjacent-to-dev + reserve)      53        17       8           9              11    us-ma-boston:30;us-nv-las-vegas-strip:12;us-pa-pittsburgh-hazelwood:6;sg-one-north:5            3654          1411.7   67.7                  4
+4            T1 day AND vehicle disjoint from dev, P1-C, training       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+5   day AND vehicle disjoint from dev and P1-C (training ignored)       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+6                     day AND vehicle disjoint from training only      25         7       2           4               4                                                us-ma-boston:13;us-nv-las-vegas-strip:12            1357           524.3   25.1                  4
+7             day-disjoint from all three (vehicle may be shared)       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+8             vehicle-disjoint from all three (day may be shared)       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+9                             day-vehicle-disjoint from all three       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+10                              test logs sharing NO day with dev       1         1       1           1               1                                                            us-pa-pittsburgh-hazelwood:1              76            29.4    1.4                  0
+11                          test logs sharing NO vehicle with dev      20         5       4           4               4                    us-ma-boston:13;us-nv-las-vegas-strip:6;us-pa-pittsburgh-hazelwood:1            1161           448.6   21.5                  0
+12                              test logs sharing NO day with p1c      11         3       1           1               1                                                                         us-ma-boston:11             789           304.8   14.6                  5
+13                          test logs sharing NO vehicle with p1c      11         3       2           2               2                                                 us-ma-boston:10;us-nv-las-vegas-strip:1             240            92.7    4.4                  6
+14                            test logs sharing NO day with train     134        44       8          15              19                  us-ma-boston:62;us-nv-las-vegas-strip:50;us-pa-pittsburgh-hazelwood:22           10212          3945.4  189.1                 31
+15                        test logs sharing NO vehicle with train      25         7       2           4               4                                                us-ma-boston:13;us-nv-las-vegas-strip:12            1357           524.3   25.1                  4
+16                                     other split: navmini (all)      62        50      20          13              34     us-nv-las-vegas-strip:47;sg-one-north:6;us-ma-boston:5;us-pa-pittsburgh-hazelwood:4            1364           527.0   25.3                  3
+17                              other split: navmini, in trainval      52        41      15          11              27     us-nv-las-vegas-strip:40;sg-one-north:5;us-ma-boston:4;us-pa-pittsburgh-hazelwood:3               0             0.0    0.0                  0
+18                  other split: navmini, T1 day+vehicle disjoint       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+19                             other split: warmup_test_e2e (all)      62        50      20          13              34     us-nv-las-vegas-strip:47;sg-one-north:6;us-ma-boston:5;us-pa-pittsburgh-hazelwood:4            1364           527.0   25.3                  3
+20                      other split: warmup_test_e2e, in trainval      52        41      15          11              27     us-nv-las-vegas-strip:40;sg-one-north:5;us-ma-boston:4;us-pa-pittsburgh-hazelwood:3               0             0.0    0.0                  0
+21          other split: warmup_test_e2e, T1 day+vehicle disjoint       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+22                            other split: private_test_e2e (all)       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+23                     other split: private_test_e2e, in trainval       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+24         other split: private_test_e2e, T1 day+vehicle disjoint       0         0       0           0               0                                                                                                       0             0.0    0.0                  0
+{
+ "test_vs_trainval": {
+  "shared_logs": 0,
+  "test_days_not_in_trainval": [
+   "2021.05.25",
+   "2021.06.03",
+   "2021.06.28",
+   "2021.08.16",
+   "2021.08.30",
+   "2021.09.09",
+   "2021.09.16",
+   "2021.09.29"
+  ],
+  "test_vehicles_not_in_trainval": [
+   "veh-25",
+   "veh-27",
+   "veh-30",
+   "veh-48"
+  ]
+ },
+ "ref_days": {
+  "dev": [
+   "2021.05.25",
+   "2021.06.03",
+   "2021.06.28",
+   "2021.08.30",
+   "2021.09.09",
+   "2021.09.16",
+   "2021.09.29",
+   "2021.10.06"
+  ],
+  "p1c": [
+   "2021.05.25",
+   "2021.06.03",
+   "2021.06.28",
+   "2021.08.16",
+   "2021.09.09",
+   "2021.09.16",
+   "2021.09.29",
+   "2021.10.06"
+  ]
+ },
+ "ref_vehicles": {
+  "dev": [
+   "veh-14",
+   "veh-25",
+   "veh-26",
+   "veh-27",
+   "veh-28",
+   "veh-35",
+   "veh-38",
+   "veh-39",
+   "veh-40",
+   "veh-42",
+   "veh-45",
+   "veh-52"
+  ],
+  "p1c": [
+   "veh-08",
+   "veh-14",
+   "veh-16",
+   "veh-25",
+   "veh-26",
+   "veh-28",
+   "veh-30",
+   "veh-35",
+   "veh-38",
+   "veh-40",
+   "veh-42",
+   "veh-45",
+   "veh-48",
+   "veh-52"
+  ]
+ }
+}

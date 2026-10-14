@@ -1,0 +1,115 @@
+{
+ "init_states_distinct": {
+  "n_states": 100,
+  "min_pairwise_maxabs_diff": 0.019941357040648203
+ },
+ "pairing": {
+  "n_states": 100,
+  "conds_per_state": [
+   8
+  ],
+  "episodes_per_state": [
+   8
+  ],
+  "episodes_total": 800,
+  "conditions": [
+   "corrected_d24",
+   "corrected_d8",
+   "feedback_d24",
+   "feedback_d8",
+   "natural",
+   "natural_rep",
+   "reverse_d24",
+   "reverse_d8"
+  ]
+ },
+ "delta_sign_rule_even_init_positive": true,
+ "phaseC_92.6_reproduced": {
+  "mean": 0.925754060324826,
+  "ci95_task_boot_1000": [
+   0.8980672619472462,
+   0.9435176071963998
+  ],
+  "n_units": 4741
+ },
+ "physical_conversion": [
+  {
+   "dim": "x",
+   "q01": -0.7454732114076613,
+   "q99": 0.9375,
+   "mask": true,
+   "env_input_per_bin": 0.006599894946696711,
+   "osc_output_max": 0.05,
+   "physical_per_bin": 0.0003299947473348356,
+   "unit": "m",
+   "delta8_physical": 0.0026399579786786846,
+   "delta24_physical": 0.007919873936036053
+  },
+  {
+   "dim": "y",
+   "q01": -0.6616071462631226,
+   "q99": 0.8758928775787354,
+   "mask": true,
+   "env_input_per_bin": 0.006029411858203364,
+   "osc_output_max": 0.05,
+   "physical_per_bin": 0.00030147059291016825,
+   "unit": "m",
+   "delta8_physical": 0.002411764743281346,
+   "delta24_physical": 0.007235294229844038
+  },
+  {
+   "dim": "z",
+   "q01": -0.9375,
+   "q99": 0.9321428537368774,
+   "mask": true,
+   "env_input_per_bin": 0.007331932759752461,
+   "osc_output_max": 0.05,
+   "physical_per_bin": 0.0003665966379876231,
+   "unit": "m",
+   "delta8_physical": 0.0029327731039009847,
+   "delta24_physical": 0.008798319311702954
+  },
+  {
+   "dim": "roll",
+   "q01": -0.1071428582072258,
+   "q99": 0.1039285734295845,
+   "mask": true,
+   "env_input_per_bin": 0.0008277311044580796,
+   "osc_output_max": 0.5,
+   "physical_per_bin": 0.0004138655522290398,
+   "unit": "rad",
+   "delta8_physical": 0.0033109244178323185,
+   "delta24_physical": 0.009932773253496955
+  },
+  {
+   "dim": "pitch",
+   "q01": -0.20678570866584778,
+   "q99": 0.17678570747375488,
+   "mask": true,
+   "env_input_per_bin": 0.0015042016319200104,
+   "osc_output_max": 0.5,
+   "physical_per_bin": 0.0007521008159600052,
+   "unit": "rad",
+   "delta8_physical": 0.006016806527680042,
+   "delta24_physical": 0.018050419583040125
+  },
+  {
+   "dim": "yaw",
+   "q01": -0.1842857152223587,
+   "q99": 0.14571428298950195,
+   "mask": true,
+   "env_input_per_bin": 0.0012941176400465123,
+   "osc_output_max": 0.5,
+   "physical_per_bin": 0.0006470588200232562,
+   "unit": "rad",
+   "delta8_physical": 0.005176470560186049,
+   "delta24_physical": 0.015529411680558148
+  }
+ ],
+ "gripper": {
+  "q01": 0.0,
+  "q99": 1.0,
+  "mask": false,
+  "handling": "excluded from the amplification metric (dims d+1..5 only); in the env the gripper value is binarised: a = sign(2n - 1) then inverted (to_env_action, run_libero_eval)"
+ }
+}

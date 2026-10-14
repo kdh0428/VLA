@@ -1,0 +1,125 @@
+                       row_id  n_units  n_scenes  n_logs  n_drives  n_day_vehicles  n_days  n_vehicles  post_release_free_steps_mean                             post_release_free_steps_distribution  n_units_identical_to_full_by_construction(w>=8-t*)
+0        P0C.R9.counts.normal      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+1    P0C.R9.counts.gt_history      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+2          P0C.R9.counts.win1      365        52      16        13              10     8.0        10.0                      5.800000  {"0": 8, "2": 12, "3": 6, "4": 13, "5": 49, "6": 161, "7": 116}                                                 8.0
+3          P0C.R9.counts.win2      365        52      16        13              10     8.0        10.0                      4.821918  {"0": 8, "1": 12, "2": 6, "3": 13, "4": 49, "5": 161, "6": 116}                                                 8.0
+4          P0C.R9.counts.win3      365        52      16        13              10     8.0        10.0                      3.843836          {"0": 20, "1": 6, "2": 13, "3": 49, "4": 161, "5": 116}                                                20.0
+5          P0C.R9.counts.win4      365        52      16        13              10     8.0        10.0                      2.898630                  {"0": 26, "1": 13, "2": 49, "3": 161, "4": 116}                                                26.0
+6          P0C.R9.counts.win5      365        52      16        13              10     8.0        10.0                      1.969863                           {"0": 39, "1": 49, "2": 161, "3": 116}                                                39.0
+7          P0C.R9.counts.win6      365        52      16        13              10     8.0        10.0                      1.076712                                    {"0": 88, "1": 161, "2": 116}                                                88.0
+8          P0C.R9.counts.win7      365        52      16        13              10     8.0        10.0                      0.317808                                             {"0": 249, "1": 116}                                               249.0
+9          P0C.R9.counts.win8      365        52      16        13              10     8.0        10.0                      0.000000                                                       {"0": 365}                                               365.0
+10  P0C.R9.counts.delay2_len1      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+11  P0C.R9.counts.delay3_len1      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+12  P0C.R9.counts.delay4_len1      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+13  P0C.R9.counts.delay2_len2      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+14  P0C.R9.counts.delay3_len2      365        52      16        13              10     8.0        10.0                           NaN                                                              NaN                                                 NaN
+15   P0C.R9.common_support.N1      339        48      16        13              10     NaN         NaN                           NaN                                                              NaN                                                 NaN
+16   P0C.R9.common_support.N2      326        46      15        12               9     NaN         NaN                           NaN                                                              NaN                                                 NaN
+17   P0C.R9.common_support.N3      277        39      14        11               9     NaN         NaN                           NaN                                                              NaN                                                 NaN
+                                          row_id  fraction   ci95_lo   ci95_hi           cluster  boot_den_min  boot_den_le0  boot_den_below_5pp  scenes_with_zero_denominator  boot_share_f_ge_09
+0                       P0C.R9.rec.win1.OLD_exp9  0.470968  0.328943  0.597990          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+1                      P0C.R9.rec.win1.RF2_scene  0.467466  0.296239  0.620920        drive (13)           NaN           NaN                 NaN                           NaN              0.0000
+2                       P0C.R9.rec.win1.RF2_unit  0.470968  0.307692  0.621053        drive (13)           NaN           NaN                 NaN                           NaN              0.0000
+3                P0C.R9.rec.win1.NEW_scene_drive  0.467466  0.296232  0.610592        drive (13)      0.178953           0.0                 0.0                           NaN              0.0000
+4                 P0C.R9.rec.win1.NEW_unit_drive  0.470968  0.305066  0.617025        drive (13)      0.180822           0.0                 0.0                           NaN              0.0000
+5          P0C.R9.rec.win1.NEW_scene_day_vehicle  0.467466  0.276154  0.612995  day_vehicle (10)      0.119391           0.0                 0.0                           NaN              0.0000
+6           P0C.R9.rec.win1.mean_of_scene_ratios  0.576541       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+7                       P0C.R9.rec.win2.OLD_exp9  0.761290  0.619955  0.867352          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+8                      P0C.R9.rec.win2.RF2_scene  0.766359  0.626525  0.879750        drive (13)           NaN           NaN                 NaN                           NaN              0.0135
+9                       P0C.R9.rec.win2.RF2_unit  0.761290  0.623853  0.880435        drive (13)           NaN           NaN                 NaN                           NaN              0.0123
+10               P0C.R9.rec.win2.NEW_scene_drive  0.766359  0.627403  0.881138        drive (13)      0.171703           0.0                 0.0                           NaN              0.0144
+11                P0C.R9.rec.win2.NEW_unit_drive  0.761290  0.619718  0.879518        drive (13)      0.180822           0.0                 0.0                           NaN              0.0110
+12         P0C.R9.rec.win2.NEW_scene_day_vehicle  0.766359  0.610401  0.886114  day_vehicle (10)      0.123397           0.0                 0.0                           NaN              0.0147
+13          P0C.R9.rec.win2.mean_of_scene_ratios  0.813778       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+14                      P0C.R9.rec.win3.OLD_exp9  0.896774  0.793853  0.988239          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+15                     P0C.R9.rec.win3.RF2_scene  0.900522  0.812733  0.989655        drive (13)           NaN           NaN                 NaN                           NaN              0.5613
+16                      P0C.R9.rec.win3.RF2_unit  0.896774  0.795276  0.988767        drive (13)           NaN           NaN                 NaN                           NaN              0.4986
+17               P0C.R9.rec.win3.NEW_scene_drive  0.900522  0.812153  0.989258        drive (13)      0.177579           0.0                 0.0                           NaN              0.5631
+18                P0C.R9.rec.win3.NEW_unit_drive  0.896774  0.795695  0.988889        drive (13)      0.178082           0.0                 0.0                           NaN              0.5045
+19         P0C.R9.rec.win3.NEW_scene_day_vehicle  0.900522  0.807295  0.988101  day_vehicle (10)      0.129006           0.0                 0.0                           NaN              0.5508
+20          P0C.R9.rec.win3.mean_of_scene_ratios  0.932300       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+21                      P0C.R9.rec.win4.OLD_exp9  0.961290  0.937494  1.000000          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+22                     P0C.R9.rec.win4.RF2_scene  0.957719  0.932600  1.000000        drive (13)           NaN           NaN                 NaN                           NaN              1.0000
+23                      P0C.R9.rec.win4.RF2_unit  0.961290  0.937500  1.000000        drive (13)           NaN           NaN                 NaN                           NaN              1.0000
+24               P0C.R9.rec.win4.NEW_scene_drive  0.957719  0.932814  1.000000        drive (13)      0.165560           0.0                 0.0                           NaN              1.0000
+25                P0C.R9.rec.win4.NEW_unit_drive  0.961290  0.937984  1.000000        drive (13)      0.178082           0.0                 0.0                           NaN              1.0000
+26         P0C.R9.rec.win4.NEW_scene_day_vehicle  0.957719  0.930248  1.000000  day_vehicle (10)      0.148810           0.0                 0.0                           NaN              1.0000
+27          P0C.R9.rec.win4.mean_of_scene_ratios  0.974751       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+28                      P0C.R9.rec.win5.OLD_exp9  0.974194  0.950202  1.000000          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+29                     P0C.R9.rec.win5.RF2_scene  0.969250  0.940991  1.000000        drive (13)           NaN           NaN                 NaN                           NaN              1.0000
+30                      P0C.R9.rec.win5.RF2_unit  0.974194  0.949791  1.000000        drive (13)           NaN           NaN                 NaN                           NaN              1.0000
+31               P0C.R9.rec.win5.NEW_scene_drive  0.969250  0.941493  1.000000        drive (13)      0.176969           0.0                 0.0                           NaN              1.0000
+32                P0C.R9.rec.win5.NEW_unit_drive  0.974194  0.949791  1.000000        drive (13)      0.172603           0.0                 0.0                           NaN              1.0000
+33         P0C.R9.rec.win5.NEW_scene_day_vehicle  0.969250  0.939838  1.000000  day_vehicle (10)      0.132212           0.0                 0.0                           NaN              1.0000
+34          P0C.R9.rec.win5.mean_of_scene_ratios  0.981395       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+35               P0C.R9.rec.delay2_len1.OLD_exp9  0.645161  0.538411  0.758276          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+36              P0C.R9.rec.delay2_len1.RF2_scene  0.644733  0.533428  0.762601        drive (13)           NaN           NaN                 NaN                           NaN              0.0000
+37               P0C.R9.rec.delay2_len1.RF2_unit  0.645161  0.532600  0.767866        drive (13)           NaN           NaN                 NaN                           NaN              0.0000
+38        P0C.R9.rec.delay2_len1.NEW_scene_drive  0.644733  0.530518  0.757903        drive (13)      0.162126           0.0                 0.0                           NaN              0.0000
+39         P0C.R9.rec.delay2_len1.NEW_unit_drive  0.645161  0.529850  0.766990        drive (13)      0.183562           0.0                 0.0                           NaN              0.0000
+40  P0C.R9.rec.delay2_len1.NEW_scene_day_vehicle  0.644733  0.516468  0.751366  day_vehicle (10)      0.128205           0.0                 0.0                           NaN              0.0000
+41   P0C.R9.rec.delay2_len1.mean_of_scene_ratios  0.679993       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+42               P0C.R9.rec.delay3_len1.OLD_exp9  0.703226  0.520993  0.807713          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+43              P0C.R9.rec.delay3_len1.RF2_scene  0.715109  0.549803  0.814553        drive (13)           NaN           NaN                 NaN                           NaN              0.0001
+44               P0C.R9.rec.delay3_len1.RF2_unit  0.703226  0.528000  0.809859        drive (13)           NaN           NaN                 NaN                           NaN              0.0001
+45        P0C.R9.rec.delay3_len1.NEW_scene_drive  0.715109  0.553222  0.813160        drive (13)      0.171131           0.0                 0.0                           NaN              0.0000
+46         P0C.R9.rec.delay3_len1.NEW_unit_drive  0.703226  0.529840  0.810219        drive (13)      0.172603           0.0                 0.0                           NaN              0.0001
+47  P0C.R9.rec.delay3_len1.NEW_scene_day_vehicle  0.715109  0.531884  0.808946  day_vehicle (10)      0.141140           0.0                 0.0                           NaN              0.0000
+48   P0C.R9.rec.delay3_len1.mean_of_scene_ratios  0.652732       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+49               P0C.R9.rec.delay4_len1.OLD_exp9  0.709677  0.534845  0.796410          log (16)           NaN           NaN                 NaN                           NaN                 NaN
+50              P0C.R9.rec.delay4_len1.RF2_scene  0.721332  0.566334  0.801612        drive (13)           NaN           NaN                 NaN                           NaN              0.0000
+51               P0C.R9.rec.delay4_len1.RF2_unit  0.709677  0.549617  0.798851        drive (13)           NaN           NaN                 NaN                           NaN              0.0000
+52        P0C.R9.rec.delay4_len1.NEW_scene_drive  0.721332  0.562565  0.802067        drive (13)      0.173306           0.0                 0.0                           NaN              0.0000
+53         P0C.R9.rec.delay4_len1.NEW_unit_drive  0.709677  0.552632  0.798077        drive (13)      0.189041           0.0                 0.0                           NaN              0.0000
+54  P0C.R9.rec.delay4_len1.NEW_scene_day_vehicle  0.721332  0.556612  0.800833  day_vehicle (10)      0.132326           0.0                 0.0                           NaN              0.0000
+55   P0C.R9.rec.delay4_len1.mean_of_scene_ratios  0.661083       NaN       NaN                 -           NaN           NaN                 NaN                           9.0                 NaN
+                                   row_id  n_units  n_scenes  n_drives  n_day_vehicles  estimate   ci95_lo   ci95_hi  p_signflip
+0         P0C.P1B.counts.Aminus_tstar_le2      326        46        12             9.0       NaN       NaN       NaN         NaN
+1   P0C.P1B.Etotal.pose9.w1.amplification      326        46        12             NaN  0.106539 -0.007456  0.205991    0.164062
+2   P0C.P1B.Etotal.pose9.w2.amplification      326        46        12             NaN  0.043047 -0.025797  0.096596    0.296875
+3   P0C.P1B.Etotal.pose9.w3.amplification      326        46        12             NaN  0.005003 -0.044514  0.031097    0.835938
+4       P0C.P1B.Epost.1.w1.err_diffindiff      326        46        12             NaN  0.361719  0.266896  0.446231    0.000977
+5       P0C.P1B.Epost.1.w2.err_diffindiff      326        46        12             NaN  0.549886  0.417384  0.675814    0.000488
+6       P0C.P1B.Epost.1.w3.err_diffindiff      326        46        12             NaN  0.714370  0.526847  0.858573    0.000488
+7              P0C.P1B.Epost.1.w1.err_raw      326        46        12             NaN -1.113520 -1.350248 -0.868097    0.000488
+8              P0C.P1B.Epost.1.w2.err_raw      326        46        12             NaN -1.220979 -1.474376 -0.906667    0.000488
+9              P0C.P1B.Epost.1.w3.err_raw      326        46        12             NaN -1.355148 -1.651869 -1.018123    0.000488
+10  P0C.P1B.Epost.1.w1.exceed3_diffindiff      326        46        12             NaN  0.051501 -0.052295  0.104678    0.367188
+11  P0C.P1B.Epost.1.w2.exceed3_diffindiff      326        46        12             NaN  0.128968  0.006758  0.194919    0.087891
+12  P0C.P1B.Epost.1.w3.exceed3_diffindiff      326        46        12             NaN  0.041365 -0.081349  0.101815    0.457031
+13             P0C.P1B.Epost.2.w1.err_raw      277        39        11             NaN -1.123637 -1.429290 -0.744481    0.000977
+14             P0C.P1B.Epost.2.w2.err_raw      277        39        11             NaN -1.313976 -1.648906 -0.866813    0.000977
+15             P0C.P1B.Epost.2.w3.err_raw      277        39        11             NaN -1.507215 -1.919690 -1.011459    0.000977
+16  P0C.P1B.Epost.2.w1.exceed3_diffindiff      277        39        11             NaN  0.107397 -0.000993  0.174028    0.106445
+17  P0C.P1B.Epost.2.w2.exceed3_diffindiff      277        39        11             NaN  0.069444 -0.033674  0.133558    0.182617
+18  P0C.P1B.Epost.2.w3.exceed3_diffindiff      277        39        11             NaN -0.095035 -0.174384  0.005685    0.146484
+{
+ "t_star_distribution_units": {
+  "0": 116,
+  "1": 161,
+  "2": 49,
+  "3": 13,
+  "4": 6,
+  "5": 12,
+  "7": 8
+ },
+ "NEW_scene_point_equals_RF2_scene": true,
+ "NEW_unit_point_equals_OLD_exp9": true,
+ "scene_weighted_levels": {
+  "normal": 0.45119810744810745,
+  "gt_history": 0.03426434676434676,
+  "win1": 0.2562957875457875,
+  "win2": 0.13167735042735043,
+  "win3": 0.075740231990232,
+  "win4": 0.051892551892551896
+ },
+ "unit_weighted_levels": {
+  "normal": 0.4657534246575342,
+  "gt_history": 0.0410958904109589,
+  "win1": 0.26575342465753427,
+  "win2": 0.14246575342465753,
+  "win3": 0.08493150684931507,
+  "win4": 0.057534246575342465
+ }
+}

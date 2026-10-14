@@ -1,0 +1,9 @@
+experiment,config,clustering,min,max
+P1D,r1e4,physical,6.912,21.64
+P1D,r1e4,primary,12.5,15.25
+P1D,r4e1,physical,18.11,29.28
+P1D,r4e1,primary,18.33,20.05
+exp35,r1e4,physical,15,46.78
+exp35,r1e4,primary,15,31.05
+exp35,r4e1,physical,17.39,40.13
+exp35,r4e1,primary,17.39,29.97

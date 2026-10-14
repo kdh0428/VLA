@@ -1,0 +1,52 @@
+HTTP/2 307 
+content-type: text/plain; charset=utf-8
+content-length: 290
+date: Wed, 14 Oct 2026 14:04:34 GMT
+location: /api/resolve-cache/models/openvla/openvla-7b-finetuned-libero-spatial/962318cec55ac10993ff0f5f43eda9a270b4c873/config.json?%2Fopenvla%2Fopenvla-7b-finetuned-libero-spatial%2Fresolve%2Fmain%2Fconfig.json=&etag=%22a526dfba05192d51edae48b070fbad7c8fd00236%22
+x-powered-by: huggingface-moon
+x-request-id: Root=1-6acf8bf2-10fd49477b35299c65b3f4e6
+ratelimit: "resolvers";r=2999;t=286
+ratelimit-policy: "fixed window";"resolvers";q=3000;w=300
+cross-origin-opener-policy: same-origin
+referrer-policy: strict-origin-when-cross-origin
+access-control-max-age: 86400
+access-control-allow-origin: https://huggingface.co
+vary: Origin, Accept
+access-control-expose-headers: X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash
+x-repo-commit: 962318cec55ac10993ff0f5f43eda9a270b4c873
+accept-ranges: bytes
+x-linked-etag: "a526dfba05192d51edae48b070fbad7c8fd00236"
+x-cache: Miss from cloudfront
+via: 1.1 da5253846842f4efc3e80679e4a7c250.cloudfront.net (CloudFront)
+x-amz-cf-pop: ICN57-P5
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: w3XQNaQ6KSb9k5MzNcv0HH9lo7HO_RSh-ifx7RZWjavidf2w3dRrOA==
+strict-transport-security: max-age=31536000
+
+HTTP/2 200 
+content-type: text/plain; charset=utf-8
+content-length: 3508
+date: Fri, 31 Jul 2026 01:18:44 GMT
+etag: "a526dfba05192d51edae48b070fbad7c8fd00236"
+x-powered-by: huggingface-moon
+x-request-id: Root=1-6a6bf7f4-64272890203b9bee704527e8
+ratelimit: "resolvers";r=2993;t=268
+ratelimit-policy: "fixed window";"resolvers";q=3000;w=300
+cross-origin-opener-policy: same-origin
+referrer-policy: strict-origin-when-cross-origin
+access-control-max-age: 86400
+access-control-allow-origin: https://huggingface.co
+access-control-expose-headers: X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash
+x-repo-commit: 962318cec55ac10993ff0f5f43eda9a270b4c873
+accept-ranges: bytes
+content-disposition: inline; filename*=UTF-8''config.json; filename="config.json";
+content-security-policy: default-src 'none'; sandbox
+vary: Origin
+x-cache: Hit from cloudfront
+via: 1.1 da5253846842f4efc3e80679e4a7c250.cloudfront.net (CloudFront)
+x-amz-cf-pop: ICN57-P5
+alt-svc: h3=":443"; ma=86400
+x-amz-cf-id: PxcnqRiKN3QP2yGzJBKEwwp_QRBq0eikgXWUMLRTJ6NwVwBFl2r9Zg==
+age: 6525950
+strict-transport-security: max-age=31536000
+

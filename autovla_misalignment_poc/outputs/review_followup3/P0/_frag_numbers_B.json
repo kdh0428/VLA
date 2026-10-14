@@ -1,0 +1,1698 @@
+{
+ "P0B.exp35.r1e4.R-N.coke.primary": {
+  "value_pp": -7.500000000000003,
+  "ci95_pp": [
+   -15.000000000072761,
+   7.275659241745557e-11
+  ],
+  "p_raw": 0.07887921120788792,
+  "p_holm": 0.315517,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.345237,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row110"
+ },
+ "P0B.exp35.r1e4.R-N.coke.physical": {
+  "value_pp": -7.500000000000003,
+  "ci95_pp": [
+   -15.000000000072761,
+   7.275659241745557e-11
+  ],
+  "p_raw": 0.07887921120788792,
+  "p_holm": 0.315517,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.345237,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row111"
+ },
+ "P0B.exp35.r1e4.R-N.move_near.primary": {
+  "value_pp": 5.833333333333334,
+  "ci95_pp": [
+   -10.00000000004244,
+   21.05263157899875
+  ],
+  "p_raw": 0.5402445975540244,
+  "p_holm": 0.792532,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 53,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row113"
+ },
+ "P0B.exp35.r1e4.R-N.move_near.physical": {
+  "value_pp": 5.833333333333336,
+  "ci95_pp": [
+   -16.279069767581394,
+   22.000000000119833
+  ],
+  "p_raw": 0.59375,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row114"
+ },
+ "P0B.exp35.r1e4.C-F.coke.primary": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -9.67741935490873,
+   11.320754717065332
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.185318,
+  "p_equiv_m5_holm": 0.895351,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row119"
+ },
+ "P0B.exp35.r1e4.C-F.coke.physical": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -9.67741935490873,
+   11.320754717065332
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.185318,
+  "p_equiv_m5_holm": 0.895351,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row120"
+ },
+ "P0B.exp35.r1e4.C-F.move_near.primary": {
+  "value_pp": -15.000000000000002,
+  "ci95_pp": [
+   -29.090909091009966,
+   5.4567461660326444e-11
+  ],
+  "p_raw": 0.05783942160578394,
+  "p_holm": 0.231358,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 53,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row122"
+ },
+ "P0B.exp35.r1e4.C-F.move_near.physical": {
+  "value_pp": -15.000000000000002,
+  "ci95_pp": [
+   -38.77551020420391,
+   8.000000000119984
+  ],
+  "p_raw": 0.28125,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row123"
+ },
+ "P0B.exp35.r4e1.R-N.coke.primary": {
+  "value_pp": -5.833333333333334,
+  "ci95_pp": [
+   -14.49275362319289,
+   2.8985507247004216
+  ],
+  "p_raw": 0.25088749112508874,
+  "p_holm": 0.752662,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.345237,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row155"
+ },
+ "P0B.exp35.r4e1.R-N.coke.physical": {
+  "value_pp": -5.833333333333334,
+  "ci95_pp": [
+   -14.49275362319289,
+   2.8985507247004216
+  ],
+  "p_raw": 0.25088749112508874,
+  "p_holm": 0.752662,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.345237,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row156"
+ },
+ "P0B.exp35.r4e1.R-N.move_near.primary": {
+  "value_pp": -6.666666666666667,
+  "ci95_pp": [
+   -18.91891891892252,
+   6.250000000084888
+  ],
+  "p_raw": 0.3962660373396266,
+  "p_holm": 0.792532,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 53,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row158"
+ },
+ "P0B.exp35.r4e1.R-N.move_near.physical": {
+  "value_pp": -6.666666666666668,
+  "ci95_pp": [
+   -29.4117647060588,
+   10.71428571449981
+  ],
+  "p_raw": 0.625,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row159"
+ },
+ "P0B.exp35.r4e1.C-F.coke.primary": {
+  "value_pp": 1.6666666666666663,
+  "ci95_pp": [
+   -8.69565217396788,
+   12.068965517325218
+  ],
+  "p_raw": 0.8743312566874332,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.186178,
+  "p_equiv_m5_holm": 0.895351,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row164"
+ },
+ "P0B.exp35.r4e1.C-F.coke.physical": {
+  "value_pp": 1.6666666666666663,
+  "ci95_pp": [
+   -8.69565217396788,
+   12.068965517325218
+  ],
+  "p_raw": 0.8743312566874332,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.186178,
+  "p_equiv_m5_holm": 0.895351,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row165"
+ },
+ "P0B.exp35.r4e1.C-F.move_near.primary": {
+  "value_pp": -10.833333333333336,
+  "ci95_pp": [
+   -25.423728813596735,
+   4.545454545520136
+  ],
+  "p_raw": 0.21126788732112678,
+  "p_holm": 0.633804,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 53,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row167"
+ },
+ "P0B.exp35.r4e1.C-F.move_near.physical": {
+  "value_pp": -10.833333333333336,
+  "ci95_pp": [
+   -29.508196721409814,
+   8.333333333458324
+  ],
+  "p_raw": 0.296875,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 1.0,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row168"
+ },
+ "P0B.P1D.r1e4.R-N.coke.primary": {
+  "value_pp": 0.0,
+  "ci95_pp": [
+   -6.2500000000909495,
+   6.2500000000909495
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00319997,
+  "p_equiv_m5_holm": 0.248198,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row524"
+ },
+ "P0B.P1D.r1e4.R-N.coke.physical": {
+  "value_pp": 0.0,
+  "ci95_pp": [
+   -6.2500000000909495,
+   6.2500000000909495
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00319997,
+  "p_equiv_m5_holm": 0.248198,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row525"
+ },
+ "P0B.P1D.r1e4.R-N.move_near.primary": {
+  "value_pp": 1.666666666666667,
+  "ci95_pp": [
+   -5.357142857222545,
+   8.771929824639907
+  ],
+  "p_raw": 0.8133018669813302,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0370796,
+  "p_equiv_m5_holm": 0.577834,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row527"
+ },
+ "P0B.P1D.r1e4.R-N.move_near.physical": {
+  "value_pp": 1.6666666666666667,
+  "ci95_pp": [
+   -8.823529411941148,
+   12.820512820666613
+  ],
+  "p_raw": 0.859375,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.138672,
+  "p_equiv_m5_holm": 0.511719,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row528"
+ },
+ "P0B.P1D.r1e4.C-F.coke.primary": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -2.0408163265832022,
+   10.909090909141621
+  ],
+  "p_raw": 0.33330666693333066,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.147059,
+  "p_equiv_m5_holm": 0.822252,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row533"
+ },
+ "P0B.P1D.r1e4.C-F.coke.physical": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -2.0408163265832022,
+   10.909090909141621
+  ],
+  "p_raw": 0.33330666693333066,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.147059,
+  "p_equiv_m5_holm": 0.822252,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row534"
+ },
+ "P0B.P1D.r1e4.C-F.move_near.primary": {
+  "value_pp": 0.8333333333333334,
+  "ci95_pp": [
+   -6.779661017014102,
+   8.474576271249438
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0370796,
+  "p_equiv_m5_holm": 0.577834,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row536"
+ },
+ "P0B.P1D.r1e4.C-F.move_near.physical": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -2.5641025642563404,
+   4.347826087086884
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0078125,
+  "p_equiv_m5_holm": 0.0546875,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row537"
+ },
+ "P0B.P1D.r4e1.R-N.coke.primary": {
+  "value_pp": 1.6666666666666674,
+  "ci95_pp": [
+   -8.333333333369712,
+   11.538461538499783
+  ],
+  "p_raw": 0.8676313236867631,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.147059,
+  "p_equiv_m5_holm": 0.772252,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row569"
+ },
+ "P0B.P1D.r4e1.R-N.coke.physical": {
+  "value_pp": 1.6666666666666674,
+  "ci95_pp": [
+   -8.333333333369712,
+   11.538461538499783
+  ],
+  "p_raw": 0.8676313236867631,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.147059,
+  "p_equiv_m5_holm": 0.772252,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row570"
+ },
+ "P0B.P1D.r4e1.R-N.move_near.primary": {
+  "value_pp": 0.8333333333333338,
+  "ci95_pp": [
+   -8.33333333338184,
+   10.144927536305962
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0533195,
+  "p_equiv_m5_holm": 0.577834,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row572"
+ },
+ "P0B.P1D.r4e1.R-N.move_near.physical": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -8.108108108270203,
+   10.000000000599977
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0820312,
+  "p_equiv_m5_holm": 0.474609,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row573"
+ },
+ "P0B.P1D.r4e1.C-F.coke.primary": {
+  "value_pp": -4.166666666666668,
+  "ci95_pp": [
+   -14.285714285748934,
+   5.7692307692680815
+  ],
+  "p_raw": 0.5091949080509195,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.147059,
+  "p_equiv_m5_holm": 0.822252,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row578"
+ },
+ "P0B.P1D.r4e1.C-F.coke.physical": {
+  "value_pp": -4.166666666666668,
+  "ci95_pp": [
+   -14.285714285748934,
+   5.7692307692680815
+  ],
+  "p_raw": 0.5091949080509195,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.147059,
+  "p_equiv_m5_holm": 0.822252,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row579"
+ },
+ "P0B.P1D.r4e1.C-F.move_near.primary": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -5.000000000048507,
+   13.333333333381841
+  ],
+  "p_raw": 0.47487525124748753,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.109939,
+  "p_equiv_m5_holm": 0.577834,
+  "n_units": 120,
+  "n_clusters": 120,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row581"
+ },
+ "P0B.P1D.r4e1.C-F.move_near.physical": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -10.52631578963151,
+   18.75000000012491
+  ],
+  "p_raw": 0.625,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.1875,
+  "p_equiv_m5_holm": 0.511719,
+  "n_units": 120,
+  "n_clusters": 10,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row582"
+ },
+ "P0B.exp35.r1e4.R-N.pooled.primary": {
+  "value_pp": -0.8333333333333334,
+  "ci95_pp": [
+   -9.565217391276141,
+   7.476635514000615
+  ],
+  "p_raw": 0.9259407405925941,
+  "p_holm": 0.925941,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0823592,
+  "p_equiv_m5_holm": 0.716833,
+  "n_units": 240,
+  "n_clusters": 173,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row116"
+ },
+ "P0B.exp35.r1e4.R-N.pooled.physical": {
+  "value_pp": -0.8333333333333331,
+  "ci95_pp": [
+   -11.594202898607664,
+   7.563025210117001
+  ],
+  "p_raw": 0.936490635093649,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.197718,
+  "p_equiv_m5_holm": 0.936391,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row117"
+ },
+ "P0B.exp35.r1e4.C-F.pooled.primary": {
+  "value_pp": -7.083333333333335,
+  "ci95_pp": [
+   -15.929203539793283,
+   2.061855670114406
+  ],
+  "p_raw": 0.15048849511504886,
+  "p_holm": 0.543755,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.365636,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 240,
+  "n_clusters": 173,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row125"
+ },
+ "P0B.exp35.r1e4.C-F.pooled.physical": {
+  "value_pp": -7.083333333333333,
+  "ci95_pp": [
+   -18.260869565268266,
+   5.468749999987875
+  ],
+  "p_raw": 0.34629653703462965,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.465155,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row126"
+ },
+ "P0B.exp35.r4e1.R-N.pooled.primary": {
+  "value_pp": -6.250000000000002,
+  "ci95_pp": [
+   -13.559322033870558,
+   1.1235955056690718
+  ],
+  "p_raw": 0.13593864061359387,
+  "p_holm": 0.543755,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.365636,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 240,
+  "n_clusters": 173,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row161"
+ },
+ "P0B.exp35.r4e1.R-N.pooled.physical": {
+  "value_pp": -6.249999999999999,
+  "ci95_pp": [
+   -15.966386554646306,
+   2.739726027357392
+  ],
+  "p_raw": 0.2555574444255557,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.465155,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row162"
+ },
+ "P0B.exp35.r4e1.C-F.pooled.primary": {
+  "value_pp": -4.583333333333336,
+  "ci95_pp": [
+   -13.461538461591168,
+   4.7619047619506665
+  ],
+  "p_raw": 0.3841361586384136,
+  "p_holm": 0.768272,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.365636,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 240,
+  "n_clusters": 173,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row170"
+ },
+ "P0B.exp35.r4e1.C-F.pooled.physical": {
+  "value_pp": -4.583333333333334,
+  "ci95_pp": [
+   -13.846153846110006,
+   5.982905982934121
+  ],
+  "p_raw": 0.4407255927440726,
+  "p_holm": 1.0,
+  "family": "exp35 core direct (seeds 0-119)",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.412736,
+  "p_equiv_m5_holm": 1.0,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row171"
+ },
+ "P0B.P1D.r1e4.R-N.pooled.primary": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -3.7735849056722754,
+   5.45454545455262
+  ],
+  "p_raw": 0.8594714052859471,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.000159998,
+  "p_equiv_m5_holm": 0.163598,
+  "n_units": 240,
+  "n_clusters": 240,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row530"
+ },
+ "P0B.P1D.r1e4.R-N.pooled.physical": {
+  "value_pp": 0.8333333333333331,
+  "ci95_pp": [
+   -4.89510489513729,
+   6.451612903232064
+  ],
+  "p_raw": 0.8825111748882511,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00163998,
+  "p_equiv_m5_holm": 0.295357,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row531"
+ },
+ "P0B.P1D.r1e4.C-F.pooled.primary": {
+  "value_pp": 2.5,
+  "ci95_pp": [
+   -2.5641025641198203,
+   7.627118644031724
+  ],
+  "p_raw": 0.41835581644183556,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00587994,
+  "p_equiv_m5_holm": 0.273677,
+  "n_units": 240,
+  "n_clusters": 240,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row539"
+ },
+ "P0B.P1D.r1e4.C-F.pooled.physical": {
+  "value_pp": 2.5,
+  "ci95_pp": [
+   -1.041666666660603,
+   6.521739130439527
+  ],
+  "p_raw": 0.26401735982640173,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00212998,
+  "p_equiv_m5_holm": 0.311607,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row540"
+ },
+ "P0B.P1D.r4e1.R-N.pooled.primary": {
+  "value_pp": 1.2500000000000007,
+  "ci95_pp": [
+   -5.555555555547471,
+   8.035714285706488
+  ],
+  "p_raw": 0.8066219337806622,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00587994,
+  "p_equiv_m5_holm": 0.273677,
+  "n_units": 240,
+  "n_clusters": 240,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row575"
+ },
+ "P0B.P1D.r4e1.R-N.pooled.physical": {
+  "value_pp": 1.25,
+  "ci95_pp": [
+   -5.050505050512584,
+   7.692307692304892
+  ],
+  "p_raw": 0.7909120908790912,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0103399,
+  "p_equiv_m5_holm": 0.311607,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row576"
+ },
+ "P0B.P1D.r4e1.C-F.pooled.primary": {
+  "value_pp": -3.469446951953615e-16,
+  "ci95_pp": [
+   -6.722689075650123,
+   6.779661016935279
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.00587994,
+  "p_equiv_m5_holm": 0.225388,
+  "n_units": 240,
+  "n_clusters": 240,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row584"
+ },
+ "P0B.P1D.r4e1.C-F.pooled.physical": {
+  "value_pp": -3.469446951953614e-16,
+  "ci95_pp": [
+   -8.641975308637484,
+   7.894736842172279
+  ],
+  "p_raw": 1.0,
+  "p_holm": 1.0,
+  "family": "P1D core direct",
+  "family_m": 4,
+  "p_equiv_m10_holm": 0.0135199,
+  "p_equiv_m5_holm": 0.311607,
+  "n_units": 240,
+  "n_clusters": 130,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_equal_task_mean.csv",
+  "upstream_source": "outputs/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.csv#row585"
+ },
+ "P0B.het.exp35.r1e4.R-N.primary": {
+  "value_pp": -13.333333333333336,
+  "ci95_pp": [
+   -30.158420517291486,
+   3.2259119790278126
+  ],
+  "p_raw": 0.12435036917040715,
+  "cancellation_share": 0.8749999999999999,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r1e4.R-N.physical": {
+  "value_pp": -13.33333333333334,
+  "ci95_pp": [
+   -29.285943223443216,
+   5.893487691686832
+  ],
+  "p_raw": 0.1694895269577341,
+  "cancellation_share": 0.875,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r1e4.C-F.primary": {
+  "value_pp": 15.833333333333336,
+  "ci95_pp": [
+   -1.0363150761380846,
+   33.698670504385944
+  ],
+  "p_raw": 0.07821973321754619,
+  "cancellation_share": 0.10526315789473684,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r1e4.C-F.physical": {
+  "value_pp": 15.833333333333336,
+  "ci95_pp": [
+   -6.280672579453067,
+   39.21111901375059
+  ],
+  "p_raw": 0.2112674295330582,
+  "cancellation_share": 0.10526315789473684,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r4e1.R-N.primary": {
+  "value_pp": 0.8333333333333325,
+  "ci95_pp": [
+   -13.418859649122808,
+   15.833333333333332
+  ],
+  "p_raw": 0.9134512608758036,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r4e1.R-N.physical": {
+  "value_pp": 0.8333333333333338,
+  "ci95_pp": [
+   -16.16990277096902,
+   20.833333333333332
+  ],
+  "p_raw": 0.9338422559140775,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r4e1.C-F.primary": {
+  "value_pp": 12.5,
+  "ci95_pp": [
+   -4.9391826602692275,
+   30.714285714285715
+  ],
+  "p_raw": 0.1738009831043801,
+  "cancellation_share": 0.2666666666666665,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.exp35.r4e1.C-F.physical": {
+  "value_pp": 12.5,
+  "ci95_pp": [
+   -5.860893117577611,
+   31.36759222084337
+  ],
+  "p_raw": 0.22197164570397174,
+  "cancellation_share": 0.2666666666666665,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r1e4.R-N.primary": {
+  "value_pp": -1.666666666666667,
+  "ci95_pp": [
+   -10.833333333333336,
+   7.500000000000001
+  ],
+  "p_raw": 0.7249592888162939,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r1e4.R-N.physical": {
+  "value_pp": -1.6666666666666667,
+  "ci95_pp": [
+   -12.407469969969972,
+   9.195752284114349
+  ],
+  "p_raw": 0.7743054155610019,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r1e4.C-F.primary": {
+  "value_pp": 3.333333333333334,
+  "ci95_pp": [
+   -6.666666666666667,
+   13.333333333333336
+  ],
+  "p_raw": 0.5176002406635098,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r1e4.C-F.physical": {
+  "value_pp": 3.333333333333334,
+  "ci95_pp": [
+   -4.000093984962408,
+   10.819838591174173
+  ],
+  "p_raw": 0.3750931381036413,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r4e1.R-N.primary": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -12.500000000000004,
+   14.166666666666666
+  ],
+  "p_raw": 0.9032420958842426,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r4e1.R-N.physical": {
+  "value_pp": 0.8333333333333338,
+  "ci95_pp": [
+   -11.440825755662203,
+   12.674587125042128
+  ],
+  "p_raw": 0.8954993434536909,
+  "cancellation_share": 0.0,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r4e1.C-F.primary": {
+  "value_pp": -8.333333333333334,
+  "ci95_pp": [
+   -21.666666666666668,
+   5.000000000000001
+  ],
+  "p_raw": 0.2269791600317246,
+  "cancellation_share": 0.9999999999999999,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.het.P1D.r4e1.C-F.physical": {
+  "value_pp": -8.333333333333334,
+  "ci95_pp": [
+   -23.844276521886375,
+   7.2680077223504265
+  ],
+  "p_raw": 0.31894554762327165,
+  "cancellation_share": 0.9999999999999999,
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_heterogeneity.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.coke.original": {
+  "value_pp": -7.5,
+  "ci95_pp": [
+   -15.0,
+   7.27566e-11
+  ],
+  "p_raw": 0.0788792,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.coke.physical_equal": {
+  "value_pp": -7.500000000000003,
+  "ci95_pp": [
+   -15.000000000072761,
+   7.275659241745557e-11
+  ],
+  "p_raw": 0.07887921120788792,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.coke.primary_equal": {
+  "value_pp": -7.500000000000003,
+  "ci95_pp": [
+   -15.000000000072761,
+   7.275659241745557e-11
+  ],
+  "p_raw": 0.07887921120788792,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.move_near.original": {
+  "value_pp": 5.83333,
+  "ci95_pp": [
+   -16.2791,
+   22.0
+  ],
+  "p_raw": 0.59375,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.move_near.physical_equal": {
+  "value_pp": -0.9417388167388164,
+  "ci95_pp": [
+   -21.111111111236085,
+   18.75000000049998
+  ],
+  "p_raw": 0.9375,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.move_near.primary_equal": {
+  "value_pp": 3.773584905660378,
+  "ci95_pp": [
+   -12.500000000331124,
+   19.04761904774516
+  ],
+  "p_raw": 0.8125,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.pooled.original": {
+  "value_pp": -0.833333,
+  "ci95_pp": [
+   -11.5942,
+   7.56303
+  ],
+  "p_raw": 0.936491,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.pooled.physical_equal": {
+  "value_pp": -4.220869408369408,
+  "ci95_pp": [
+   -13.929539295373772,
+   4.726965947405759
+  ],
+  "p_raw": 0.3800661993380066,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.R-N.pooled.primary_equal": {
+  "value_pp": -1.8632075471698115,
+  "ci95_pp": [
+   -10.768398268440441,
+   5.886228860096519
+  ],
+  "p_raw": 0.6632633673663263,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.coke.original": {
+  "value_pp": 0.833333,
+  "ci95_pp": [
+   -9.67742,
+   11.3208
+  ],
+  "p_raw": 1.0,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.coke.physical_equal": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -9.67741935490873,
+   11.320754717065332
+  ],
+  "p_raw": 1.0,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.coke.primary_equal": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -9.67741935490873,
+   11.320754717065332
+  ],
+  "p_raw": 1.0,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.move_near.original": {
+  "value_pp": -15.0,
+  "ci95_pp": [
+   -38.7755,
+   8.0
+  ],
+  "p_raw": 0.28125,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.move_near.physical_equal": {
+  "value_pp": -12.319444444444445,
+  "ci95_pp": [
+   -31.597222222472038,
+   7.217261904886879
+  ],
+  "p_raw": 0.234375,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.move_near.primary_equal": {
+  "value_pp": -13.9937106918239,
+  "ci95_pp": [
+   -36.11111111128773,
+   9.523809523935597
+  ],
+  "p_raw": 0.265625,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.pooled.original": {
+  "value_pp": -7.08333,
+  "ci95_pp": [
+   -18.2609,
+   5.46875
+  ],
+  "p_raw": 0.346297,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.pooled.physical_equal": {
+  "value_pp": -5.743055555555556,
+  "ci95_pp": [
+   -15.506456820000395,
+   5.226480836248003
+  ],
+  "p_raw": 0.3000669993300067,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r1e4.C-F.pooled.primary_equal": {
+  "value_pp": -6.580188679245283,
+  "ci95_pp": [
+   -17.061697123235888,
+   5.76091230833282
+  ],
+  "p_raw": 0.28797712022879773,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.coke.original": {
+  "value_pp": -5.83333,
+  "ci95_pp": [
+   -14.4928,
+   2.89855
+  ],
+  "p_raw": 0.250887,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.coke.physical_equal": {
+  "value_pp": -5.833333333333334,
+  "ci95_pp": [
+   -14.49275362319289,
+   2.8985507247004216
+  ],
+  "p_raw": 0.25088749112508874,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.coke.primary_equal": {
+  "value_pp": -5.833333333333334,
+  "ci95_pp": [
+   -14.49275362319289,
+   2.8985507247004216
+  ],
+  "p_raw": 0.25088749112508874,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.move_near.original": {
+  "value_pp": -6.66667,
+  "ci95_pp": [
+   -29.4118,
+   10.7143
+  ],
+  "p_raw": 0.625,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.move_near.physical_equal": {
+  "value_pp": -8.434523809523812,
+  "ci95_pp": [
+   -28.125000000249955,
+   9.920634920759852
+  ],
+  "p_raw": 0.34375,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.move_near.primary_equal": {
+  "value_pp": -1.8867924528301887,
+  "ci95_pp": [
+   -20.000000000132374,
+   13.63636363648405
+  ],
+  "p_raw": 1.0,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.pooled.original": {
+  "value_pp": -6.25,
+  "ci95_pp": [
+   -15.9664,
+   2.73973
+  ],
+  "p_raw": 0.255557,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.pooled.physical_equal": {
+  "value_pp": -7.133928571428571,
+  "ci95_pp": [
+   -16.056105610559047,
+   1.835317460327912
+  ],
+  "p_raw": 0.12839871601283986,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.R-N.pooled.primary_equal": {
+  "value_pp": -3.8600628930817615,
+  "ci95_pp": [
+   -12.52424494322446,
+   4.135791831786206
+  ],
+  "p_raw": 0.37026629733702665,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.coke.original": {
+  "value_pp": 1.66667,
+  "ci95_pp": [
+   -8.69565,
+   12.069
+  ],
+  "p_raw": 0.874331,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.coke.physical_equal": {
+  "value_pp": 1.6666666666666663,
+  "ci95_pp": [
+   -8.69565217396788,
+   12.068965517325218
+  ],
+  "p_raw": 0.8743312566874332,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.coke.primary_equal": {
+  "value_pp": 1.6666666666666663,
+  "ci95_pp": [
+   -8.69565217396788,
+   12.068965517325218
+  ],
+  "p_raw": 0.8743312566874332,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.move_near.original": {
+  "value_pp": -10.8333,
+  "ci95_pp": [
+   -29.5082,
+   8.33333
+  ],
+  "p_raw": 0.296875,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.move_near.physical_equal": {
+  "value_pp": -9.519480519480519,
+  "ci95_pp": [
+   -26.666666666791528,
+   7.792207792374442
+  ],
+  "p_raw": 0.234375,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.move_near.primary_equal": {
+  "value_pp": -3.773584905660378,
+  "ci95_pp": [
+   -17.647058823685207,
+   11.111111111258257
+  ],
+  "p_raw": 0.765625,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.pooled.original": {
+  "value_pp": -4.58333,
+  "ci95_pp": [
+   -13.8462,
+   5.98291
+  ],
+  "p_raw": 0.440726,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.pooled.physical_equal": {
+  "value_pp": -3.926406926406928,
+  "ci95_pp": [
+   -12.413586413608432,
+   5.562579013926876
+  ],
+  "p_raw": 0.3997260027399726,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.exp35.r4e1.C-F.pooled.primary_equal": {
+  "value_pp": -1.053459119496856,
+  "ci95_pp": [
+   -8.917525773243561,
+   7.383419689109851
+  ],
+  "p_raw": 0.8132818671813282,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.coke.original": {
+  "value_pp": 0.0,
+  "ci95_pp": [
+   -6.25,
+   6.25
+  ],
+  "p_raw": 1.0,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.coke.physical_equal": {
+  "value_pp": 0.0,
+  "ci95_pp": [
+   -6.2500000000909495,
+   6.2500000000909495
+  ],
+  "p_raw": 1.0,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.coke.primary_equal": {
+  "value_pp": 0.0,
+  "ci95_pp": [
+   -6.2500000000909495,
+   6.2500000000909495
+  ],
+  "p_raw": 1.0,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.move_near.original": {
+  "value_pp": 1.66667,
+  "ci95_pp": [
+   -8.82353,
+   12.8205
+  ],
+  "p_raw": 0.859375,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.move_near.physical_equal": {
+  "value_pp": 2.4641330891330893,
+  "ci95_pp": [
+   -7.967032967282896,
+   13.02083333345825
+  ],
+  "p_raw": 0.625,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.move_near.primary_equal": {
+  "value_pp": 1.6666666666666667,
+  "ci95_pp": [
+   -8.823529411941148,
+   12.820512820666613
+  ],
+  "p_raw": 0.859375,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.pooled.original": {
+  "value_pp": 0.833333,
+  "ci95_pp": [
+   -4.8951,
+   6.45161
+  ],
+  "p_raw": 0.882511,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.pooled.physical_equal": {
+  "value_pp": 1.232066544566545,
+  "ci95_pp": [
+   -4.417670682737739,
+   6.606606606642083
+  ],
+  "p_raw": 0.6575034249657503,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.R-N.pooled.primary_equal": {
+  "value_pp": 0.8333333333333331,
+  "ci95_pp": [
+   -4.89510489513729,
+   6.451612903232064
+  ],
+  "p_raw": 0.8825111748882511,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.coke.original": {
+  "value_pp": 4.16667,
+  "ci95_pp": [
+   -2.04082,
+   10.9091
+  ],
+  "p_raw": 0.333307,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.coke.physical_equal": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -2.0408163265832022,
+   10.909090909141621
+  ],
+  "p_raw": 0.33330666693333066,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.coke.primary_equal": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -2.0408163265832022,
+   10.909090909141621
+  ],
+  "p_raw": 0.33330666693333066,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.move_near.original": {
+  "value_pp": 0.833333,
+  "ci95_pp": [
+   -2.5641,
+   4.34783
+  ],
+  "p_raw": 1.0,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.move_near.physical_equal": {
+  "value_pp": 0.9920634920634922,
+  "ci95_pp": [
+   -2.777777777944431,
+   4.563492063617017
+  ],
+  "p_raw": 0.75,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.move_near.primary_equal": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -2.5641025642563404,
+   4.347826087086884
+  ],
+  "p_raw": 1.0,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.pooled.original": {
+  "value_pp": 2.5,
+  "ci95_pp": [
+   -1.04167,
+   6.52174
+  ],
+  "p_raw": 0.264017,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.pooled.physical_equal": {
+  "value_pp": 2.57936507936508,
+  "ci95_pp": [
+   -1.0638297872526248,
+   6.619385342802405
+  ],
+  "p_raw": 0.2119678803211968,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r1e4.C-F.pooled.primary_equal": {
+  "value_pp": 2.5,
+  "ci95_pp": [
+   -1.041666666660603,
+   6.521739130439527
+  ],
+  "p_raw": 0.26401735982640173,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.coke.original": {
+  "value_pp": 1.66667,
+  "ci95_pp": [
+   -8.33333,
+   11.5385
+  ],
+  "p_raw": 0.867631,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.coke.physical_equal": {
+  "value_pp": 1.6666666666666674,
+  "ci95_pp": [
+   -8.333333333369712,
+   11.538461538499783
+  ],
+  "p_raw": 0.8676313236867631,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.coke.primary_equal": {
+  "value_pp": 1.6666666666666674,
+  "ci95_pp": [
+   -8.333333333369712,
+   11.538461538499783
+  ],
+  "p_raw": 0.8676313236867631,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.move_near.original": {
+  "value_pp": 0.833333,
+  "ci95_pp": [
+   -8.10811,
+   10.0
+  ],
+  "p_raw": 1.0,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.move_near.physical_equal": {
+  "value_pp": 1.5944749694749696,
+  "ci95_pp": [
+   -7.36263736273729,
+   10.68948412710912
+  ],
+  "p_raw": 0.703125,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.move_near.primary_equal": {
+  "value_pp": 0.8333333333333335,
+  "ci95_pp": [
+   -8.108108108270203,
+   10.000000000599977
+  ],
+  "p_raw": 1.0,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.pooled.original": {
+  "value_pp": 1.25,
+  "ci95_pp": [
+   -5.05051,
+   7.69231
+  ],
+  "p_raw": 0.790912,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.pooled.physical_equal": {
+  "value_pp": 1.6305708180708187,
+  "ci95_pp": [
+   -4.739608217931989,
+   7.981859410466393
+  ],
+  "p_raw": 0.6008639913600864,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.R-N.pooled.primary_equal": {
+  "value_pp": 1.25,
+  "ci95_pp": [
+   -5.050505050512584,
+   7.692307692304892
+  ],
+  "p_raw": 0.7909120908790912,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.coke.original": {
+  "value_pp": -4.16667,
+  "ci95_pp": [
+   -14.2857,
+   5.76923
+  ],
+  "p_raw": 0.509195,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.coke.physical_equal": {
+  "value_pp": -4.166666666666668,
+  "ci95_pp": [
+   -14.285714285748934,
+   5.7692307692680815
+  ],
+  "p_raw": 0.5091949080509195,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.coke.primary_equal": {
+  "value_pp": -4.166666666666668,
+  "ci95_pp": [
+   -14.285714285748934,
+   5.7692307692680815
+  ],
+  "p_raw": 0.5091949080509195,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.move_near.original": {
+  "value_pp": 4.16667,
+  "ci95_pp": [
+   -10.5263,
+   18.75
+  ],
+  "p_raw": 0.625,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.move_near.physical_equal": {
+  "value_pp": 3.211843711843713,
+  "ci95_pp": [
+   -11.058201058367612,
+   17.39926739943398
+  ],
+  "p_raw": 0.640625,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.move_near.primary_equal": {
+  "value_pp": 4.166666666666667,
+  "ci95_pp": [
+   -10.52631578963151,
+   18.75000000012491
+  ],
+  "p_raw": 0.625,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.pooled.original": {
+  "value_pp": -3.46945e-16,
+  "ci95_pp": [
+   -8.64198,
+   7.89474
+  ],
+  "p_raw": 1.0,
+  "weighting": "ORIGINAL: unit-weighted within task (task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.pooled.physical_equal": {
+  "value_pp": -0.47741147741147716,
+  "ci95_pp": [
+   -8.791208791215139,
+   7.290662553852926
+  ],
+  "p_raw": 0.9033609663903361,
+  "weighting": "physical-state equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ },
+ "P0B.w.P1D.r4e1.C-F.pooled.primary_equal": {
+  "value_pp": -3.469446951953614e-16,
+  "ci95_pp": [
+   -8.641975308637484,
+   7.894736842172279
+  ],
+  "p_raw": 1.0,
+  "weighting": "primary-state (instruction-inclusive) equal weight (mean within state first; task-equal pooled)",
+  "source_path": "outputs/review_followup3/P0/SPATIAL_TASK_EFFECTS_weighting.csv"
+ }
+}

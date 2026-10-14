@@ -1,0 +1,1381 @@
+{
+ "_meta": {
+  "created_utc": "2026-10-14T14:34:11Z",
+  "status": "POST-HOC sensitivity; drive rows reproduce original",
+  "script": "scripts/review_followup3/p0_d_dependence.py",
+  "B": 10000,
+  "B_logo": 2000,
+  "MC": 200000,
+  "seeds": {
+   "drive_AV": 20261013,
+   "drive_P1C": 20261008,
+   "other_axes": "20261014+10*axis_index"
+  },
+  "swap_test_ok": true,
+  "reproduction_rows_matched": 15,
+  "inputs": [
+   "P0B_cluster_stats/run_20261008/units.parquet",
+   "R8R9_raw_recovery/run_20261008/units.parquet",
+   "P1C_new_log_replication/run_20261008/analysis/units.parquet",
+   "review_followup2/A_autovla_cluster/run_20261013/drive_membership.csv",
+   "/root/VLA/autovla/navsim/navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml",
+   "/root/VLA/autovla/navsim/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml",
+   "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/_external/openscene_v1.1_trainval_log_metadata.csv"
+  ]
+ },
+ "overlap_facts": {
+  "A-": {
+   "n_drives": 13,
+   "n_day_vehicle": 10,
+   "n_day": 8,
+   "n_vehicle": 10,
+   "p1c_eval_shared_drives": 0,
+   "p1c_eval_shared_day_vehicle": 8,
+   "p1c_eval_shared_days": 7,
+   "p1c_eval_shared_vehicles": 9,
+   "shared_day_vehicle_list": [
+    "2021.05.25_veh-25",
+    "2021.06.03_veh-35",
+    "2021.06.28_veh-14",
+    "2021.06.28_veh-38",
+    "2021.09.16_veh-42",
+    "2021.09.16_veh-45",
+    "2021.09.29_veh-28",
+    "2021.10.06_veh-52"
+   ]
+  },
+  "mech_poc": {
+   "n_drives": 19,
+   "n_day_vehicle": 13,
+   "n_day": 8,
+   "n_vehicle": 11,
+   "p1c_eval_shared_drives": 0,
+   "p1c_eval_shared_day_vehicle": 10,
+   "p1c_eval_shared_days": 7,
+   "p1c_eval_shared_vehicles": 10,
+   "shared_day_vehicle_list": [
+    "2021.05.25_veh-25",
+    "2021.05.25_veh-35",
+    "2021.06.03_veh-35",
+    "2021.06.28_veh-14",
+    "2021.06.28_veh-26",
+    "2021.06.28_veh-38",
+    "2021.09.16_veh-42",
+    "2021.09.16_veh-45",
+    "2021.09.29_veh-28",
+    "2021.10.06_veh-52"
+   ]
+  },
+  "dev_discovery": {
+   "n_drives": 20,
+   "n_day_vehicle": 14,
+   "n_day": 8,
+   "n_vehicle": 12,
+   "p1c_eval_shared_drives": 0,
+   "p1c_eval_shared_day_vehicle": 10,
+   "p1c_eval_shared_days": 7,
+   "p1c_eval_shared_vehicles": 10,
+   "shared_day_vehicle_list": [
+    "2021.05.25_veh-25",
+    "2021.05.25_veh-35",
+    "2021.06.03_veh-35",
+    "2021.06.28_veh-14",
+    "2021.06.28_veh-26",
+    "2021.06.28_veh-38",
+    "2021.09.16_veh-42",
+    "2021.09.16_veh-45",
+    "2021.09.29_veh-28",
+    "2021.10.06_veh-52"
+   ]
+  },
+  "navtrain_P1C_eval_24": {
+   "day": 1,
+   "vehicle": 20,
+   "day_vehicle": 0,
+   "drive": 0,
+   "n": 24
+  },
+  "trainval_P1C_eval_24": {
+   "day": 1,
+   "vehicle": 20,
+   "day_vehicle": 0,
+   "drive": 0,
+   "n": 24
+  },
+  "navtrain_P1C_F_18": {
+   "day": 1,
+   "vehicle": 15,
+   "day_vehicle": 0,
+   "drive": 0,
+   "n": 18
+  },
+  "trainval_P1C_F_18": {
+   "day": 1,
+   "vehicle": 15,
+   "day_vehicle": 0,
+   "drive": 0,
+   "n": 18
+  },
+  "navtrain_A-_13": {
+   "day": 1,
+   "vehicle": 12,
+   "day_vehicle": 0,
+   "drive": 0,
+   "n": 13
+  },
+  "trainval_A-_13": {
+   "day": 1,
+   "vehicle": 12,
+   "day_vehicle": 0,
+   "drive": 0,
+   "n": 13
+  },
+  "trainval_n_logs": 1310,
+  "navtrain_navtest_shared_logs": 0,
+  "navtrain_n_logs": 1192
+ },
+ "rows": {
+  "P0D-000": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P1 Recent-Normal",
+   "axis": "drive",
+   "G": 13,
+   "theta": -0.39789377289377287,
+   "boot_ci95": [
+    -0.49027921786994366,
+    -0.2987860159787185
+   ],
+   "sf_ci95": [
+    -0.5150462962966471,
+    -0.28658234126958204
+   ],
+   "p_signflip": 0.000244140625,
+   "p_min_attainable": 0.000244140625,
+   "holm_p": 0.000732421875,
+   "clt_ci95": [
+    -0.5088659653735466,
+    -0.2869215804139992
+   ],
+   "p_cluster_t": 4.7910635494076375e-06
+  },
+  "P0D-001": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P1 Recent-Normal",
+   "axis": "day_vehicle",
+   "G": 10,
+   "theta": -0.39789377289377287,
+   "boot_ci95": [
+    -0.4827481840193704,
+    -0.29475825276347095
+   ],
+   "sf_ci95": [
+    -0.5107936507937928,
+    -0.2696608946606996
+   ],
+   "p_signflip": 0.001953125,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.005859375,
+   "clt_ci95": [
+    -0.5135441594932882,
+    -0.2822433862942575
+   ],
+   "p_cluster_t": 2.7556905892290904e-05
+  },
+  "P0D-002": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P1 Recent-Normal",
+   "axis": "vehicle",
+   "G": 10,
+   "theta": -0.39789377289377287,
+   "boot_ci95": [
+    -0.48466826516395484,
+    -0.29460724859431753
+   ],
+   "sf_ci95": [
+    -0.5107936507937928,
+    -0.2696608946606996
+   ],
+   "p_signflip": 0.001953125,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.005859375,
+   "clt_ci95": [
+    -0.5135441594932882,
+    -0.2822433862942575
+   ],
+   "p_cluster_t": 2.7556905892290904e-05
+  },
+  "P0D-003": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P1 Recent-Normal",
+   "axis": "day",
+   "G": 8,
+   "theta": -0.39789377289377287,
+   "boot_ci95": [
+    -0.4791727772026685,
+    -0.28595454821539007
+   ],
+   "sf_ci95": [
+    -0.5042989417990664,
+    -0.24801587301556666
+   ],
+   "p_signflip": 0.0078125,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0234375,
+   "clt_ci95": [
+    -0.5245624750239114,
+    -0.27122507076363433
+   ],
+   "p_cluster_t": 0.00014593737549300275
+  },
+  "P0D-004": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P1 Recent-Normal",
+   "axis": "dv_component",
+   "G": 8,
+   "theta": -0.39789377289377287,
+   "boot_ci95": [
+    -0.48007774538386777,
+    -0.2863652008422418
+   ],
+   "sf_ci95": [
+    -0.5042989417990664,
+    -0.24801587301556666
+   ],
+   "p_signflip": 0.0078125,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0234375,
+   "clt_ci95": [
+    -0.5245624750239114,
+    -0.27122507076363433
+   ],
+   "p_cluster_t": 0.00014593737549300275
+  },
+  "P0D-005": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P1 Recent-Normal",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 8 x vehicle 10 (int. 10)",
+   "theta": -0.39789377289377287,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    -0.5245624750239114,
+    -0.27122507076363433
+   ],
+   "p_cluster_t": 0.00014593737549300275
+  },
+  "P0D-006": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P2 Reverse-Full",
+   "axis": "drive",
+   "G": 13,
+   "theta": 0.2862866300366301,
+   "boot_ci95": [
+    0.2085217952429198,
+    0.36064204591763954
+   ],
+   "sf_ci95": [
+    0.1920351473920499,
+    0.37880291005320516
+   ],
+   "p_signflip": 0.000244140625,
+   "p_min_attainable": 0.000244140625,
+   "holm_p": 0.000732421875,
+   "clt_ci95": [
+    0.20084179021753013,
+    0.37173146985573
+   ],
+   "p_cluster_t": 9.474095787414787e-06
+  },
+  "P0D-007": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P2 Reverse-Full",
+   "axis": "day_vehicle",
+   "G": 10,
+   "theta": 0.2862866300366301,
+   "boot_ci95": [
+    0.20120063795194004,
+    0.36229548113571663
+   ],
+   "sf_ci95": [
+    0.1706349206344779,
+    0.3856646825398944
+   ],
+   "p_signflip": 0.001953125,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.005859375,
+   "clt_ci95": [
+    0.19096270902619286,
+    0.3816105510470673
+   ],
+   "p_cluster_t": 7.959563175217032e-05
+  },
+  "P0D-008": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P2 Reverse-Full",
+   "axis": "vehicle",
+   "G": 10,
+   "theta": 0.28628663003663,
+   "boot_ci95": [
+    0.19940233037659508,
+    0.3641739930435451
+   ],
+   "sf_ci95": [
+    0.17063492063447785,
+    0.3856646825398943
+   ],
+   "p_signflip": 0.001953125,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.005859375,
+   "clt_ci95": [
+    0.1909627090261928,
+    0.3816105510470672
+   ],
+   "p_cluster_t": 7.95956317521705e-05
+  },
+  "P0D-009": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P2 Reverse-Full",
+   "axis": "day",
+   "G": 8,
+   "theta": 0.2862866300366301,
+   "boot_ci95": [
+    0.19228395061728393,
+    0.3566981390257252
+   ],
+   "sf_ci95": [
+    0.15838001867392448,
+    0.3807539682541196
+   ],
+   "p_signflip": 0.0078125,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0234375,
+   "clt_ci95": [
+    0.1860066041535881,
+    0.38656665591967204
+   ],
+   "p_cluster_t": 0.00026484186867586137
+  },
+  "P0D-010": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P2 Reverse-Full",
+   "axis": "dv_component",
+   "G": 8,
+   "theta": 0.2862866300366301,
+   "boot_ci95": [
+    0.1949404761904762,
+    0.3579835889157923
+   ],
+   "sf_ci95": [
+    0.15838001867392448,
+    0.3807539682541196
+   ],
+   "p_signflip": 0.0078125,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0234375,
+   "clt_ci95": [
+    0.1860066041535881,
+    0.38656665591967204
+   ],
+   "p_cluster_t": 0.00026484186867586137
+  },
+  "P0D-011": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P2 Reverse-Full",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 8 x vehicle 10 (int. 10)",
+   "theta": 0.28628663003663,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    0.18600660415358805,
+    0.386566655919672
+   ],
+   "p_cluster_t": 0.00026484186867586185
+  },
+  "P0D-012": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P3 Direction-Magnitude",
+   "axis": "drive",
+   "G": 13,
+   "theta": 0.09851953601953602,
+   "boot_ci95": [
+    0.03914317616648126,
+    0.20959963830029613
+   ],
+   "sf_ci95": [
+    0.03003246753234924,
+    0.24305555555615588
+   ],
+   "p_signflip": 0.005615234375,
+   "p_min_attainable": 0.000244140625,
+   "holm_p": 0.005615234375,
+   "clt_ci95": [
+    0.00869043706429419,
+    0.18834863497477783
+   ],
+   "p_cluster_t": 0.034160154339831536
+  },
+  "P0D-013": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P3 Direction-Magnitude",
+   "axis": "day_vehicle",
+   "G": 10,
+   "theta": 0.09851953601953602,
+   "boot_ci95": [
+    0.033607409381663116,
+    0.19868901353276353
+   ],
+   "sf_ci95": [
+    0.0146825396823599,
+    0.23776455026522048
+   ],
+   "p_signflip": 0.021484375,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.021484375,
+   "clt_ci95": [
+    0.0016438072557801164,
+    0.19539526478329192
+   ],
+   "p_cluster_t": 0.04695773172782359
+  },
+  "P0D-014": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P3 Direction-Magnitude",
+   "axis": "vehicle",
+   "G": 10,
+   "theta": 0.09851953601953602,
+   "boot_ci95": [
+    0.033507996632996646,
+    0.19797335600907023
+   ],
+   "sf_ci95": [
+    0.0146825396823599,
+    0.23776455026522048
+   ],
+   "p_signflip": 0.021484375,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.021484375,
+   "clt_ci95": [
+    0.0016438072557801164,
+    0.19539526478329192
+   ],
+   "p_cluster_t": 0.04695773172782359
+  },
+  "P0D-015": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P3 Direction-Magnitude",
+   "axis": "day",
+   "G": 8,
+   "theta": 0.09851953601953603,
+   "boot_ci95": [
+    0.030738555325511858,
+    0.20487264673311187
+   ],
+   "sf_ci95": [
+    0.012152777777437281,
+    0.24603174603207417
+   ],
+   "p_signflip": 0.0390625,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0390625,
+   "clt_ci95": [
+    -0.010681549609481825,
+    0.20772062164855387
+   ],
+   "p_cluster_t": 0.0703238015379478
+  },
+  "P0D-016": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P3 Direction-Magnitude",
+   "axis": "dv_component",
+   "G": 8,
+   "theta": 0.09851953601953603,
+   "boot_ci95": [
+    0.032560941043083894,
+    0.20507848972922502
+   ],
+   "sf_ci95": [
+    0.012152777777437281,
+    0.24603174603207417
+   ],
+   "p_signflip": 0.0390625,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0390625,
+   "clt_ci95": [
+    -0.010681549609481825,
+    0.20772062164855387
+   ],
+   "p_cluster_t": 0.0703238015379478
+  },
+  "P0D-017": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "AV-P3 Direction-Magnitude",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 8 x vehicle 10 (int. 10)",
+   "theta": 0.09851953601953602,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    -0.010681549609481839,
+    0.20772062164855387
+   ],
+   "p_cluster_t": 0.0703238015379478
+  },
+  "P0D-018": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN F",
+   "axis": "drive",
+   "G": 18,
+   "theta": -0.3421390778533635,
+   "boot_ci95": [
+    -0.3832933009419701,
+    -0.29452921272675736
+   ],
+   "sf_ci95": [
+    -0.3872448979592946,
+    -0.28209617180193247
+   ],
+   "p_signflip": 7.62939453125e-06,
+   "p_min_attainable": 7.62939453125e-06,
+   "holm_p": 2.288818359375e-05,
+   "clt_ci95": [
+    -0.3903233226954049,
+    -0.29395483301132214
+   ],
+   "p_cluster_t": 3.1588960677708596e-11
+  },
+  "P0D-019": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN F",
+   "axis": "day_vehicle",
+   "G": 10,
+   "theta": -0.3421390778533635,
+   "boot_ci95": [
+    -0.3752459684562857,
+    -0.28776241679467485
+   ],
+   "sf_ci95": [
+    -0.3822751322751985,
+    -0.27361111111069314
+   ],
+   "p_signflip": 0.001953125,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.005859375,
+   "clt_ci95": [
+    -0.39266712333447096,
+    -0.29161103237225605
+   ],
+   "p_cluster_t": 9.402468648182564e-08
+  },
+  "P0D-020": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN F",
+   "axis": "vehicle",
+   "G": 9,
+   "theta": -0.3421390778533635,
+   "boot_ci95": [
+    -0.3762326003941857,
+    -0.28971271752828404
+   ],
+   "sf_ci95": [
+    -0.38573232323238876,
+    -0.2736528822054071
+   ],
+   "p_signflip": 0.00390625,
+   "p_min_attainable": 0.00390625,
+   "holm_p": 0.01171875,
+   "clt_ci95": [
+    -0.39496193874323404,
+    -0.28931621696349297
+   ],
+   "p_cluster_t": 3.982827151500361e-07
+  },
+  "P0D-021": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN F",
+   "axis": "day",
+   "G": 7,
+   "theta": -0.3421390778533635,
+   "boot_ci95": [
+    -0.3789104638619202,
+    -0.2793383858096973
+   ],
+   "sf_ci95": [
+    -0.3876262626263247,
+    -0.2532596371878649
+   ],
+   "p_signflip": 0.015625,
+   "p_min_attainable": 0.015625,
+   "holm_p": 0.046875,
+   "clt_ci95": [
+    -0.40638117186846084,
+    -0.27789698383826617
+   ],
+   "p_cluster_t": 1.2580455177796103e-05
+  },
+  "P0D-022": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN F",
+   "axis": "dv_component",
+   "G": 6,
+   "theta": -0.3421390778533635,
+   "boot_ci95": [
+    -0.38020365378855947,
+    -0.27897805212620025
+   ],
+   "sf_ci95": [
+    -0.3988662131520117,
+    -0.25325963718787625
+   ],
+   "p_signflip": 0.03125,
+   "p_min_attainable": 0.03125,
+   "holm_p": 0.09375,
+   "clt_ci95": [
+    -0.41194405692549835,
+    -0.27233409878122866
+   ],
+   "p_cluster_t": 5.593591827234582e-05
+  },
+  "P0D-023": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN F",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 7 x vehicle 9 (int. 10)",
+   "theta": -0.3421390778533635,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    -0.40757279474898245,
+    -0.27670536095774456
+   ],
+   "p_cluster_t": 1.4000089097769505e-05
+  },
+  "P0D-024": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN P",
+   "axis": "drive",
+   "G": 24,
+   "theta": -0.04125462751660835,
+   "boot_ci95": [
+    -0.06362468841289108,
+    -0.024190644832630892
+   ],
+   "sf_ci95": [
+    -0.06638262322477351,
+    -0.021337909597174846
+   ],
+   "p_signflip": 5.7220458984375e-06,
+   "p_min_attainable": 9.5367431640625e-07,
+   "holm_p": 1.1444091796875e-05,
+   "clt_ci95": [
+    -0.06231716444514858,
+    -0.020192090588068114
+   ],
+   "p_cluster_t": 0.0004945767523603773
+  },
+  "P0D-025": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN P",
+   "axis": "day_vehicle",
+   "G": 16,
+   "theta": -0.04125462751660835,
+   "boot_ci95": [
+    -0.0610039137357044,
+    -0.021741349026892797
+   ],
+   "sf_ci95": [
+    -0.06530894605614046,
+    -0.017167271049973724
+   ],
+   "p_signflip": 0.000244140625,
+   "p_min_attainable": 0.000244140625,
+   "holm_p": 0.00048828125,
+   "clt_ci95": [
+    -0.06380782561908749,
+    -0.0187014294141292
+   ],
+   "p_cluster_t": 0.0014244865224709205
+  },
+  "P0D-026": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN P",
+   "axis": "vehicle",
+   "G": 14,
+   "theta": -0.04125462751660835,
+   "boot_ci95": [
+    -0.06260579619094811,
+    -0.021879379771332134
+   ],
+   "sf_ci95": [
+    -0.0672347535506197,
+    -0.017830078095807604
+   ],
+   "p_signflip": 0.0009765625,
+   "p_min_attainable": 0.0009765625,
+   "holm_p": 0.001953125,
+   "clt_ci95": [
+    -0.06416929117166655,
+    -0.01833996386155015
+   ],
+   "p_cluster_t": 0.0018630259678900877
+  },
+  "P0D-027": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN P",
+   "axis": "day",
+   "G": 8,
+   "theta": -0.04125462751660835,
+   "boot_ci95": [
+    -0.06089314982298772,
+    -0.02247818508271853
+   ],
+   "sf_ci95": [
+    -0.06941371681430253,
+    -0.016698136378959998
+   ],
+   "p_signflip": 0.0078125,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0234375,
+   "clt_ci95": [
+    -0.06590478385743018,
+    -0.016604471175786516
+   ],
+   "p_cluster_t": 0.005479532495251691
+  },
+  "P0D-028": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN P",
+   "axis": "dv_component",
+   "G": 6,
+   "theta": -0.04125462751660835,
+   "boot_ci95": [
+    -0.06046760071316688,
+    -0.023016709024433743
+   ],
+   "sf_ci95": [
+    -0.07341760961827903,
+    -0.013279183200979087
+   ],
+   "p_signflip": 0.03125,
+   "p_min_attainable": 0.03125,
+   "holm_p": 0.09375,
+   "clt_ci95": [
+    -0.0685237948720735,
+    -0.013985460161143208
+   ],
+   "p_cluster_t": 0.0115371619117223
+  },
+  "P0D-029": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RN P",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 8 x vehicle 14 (int. 16)",
+   "theta": -0.04125462751660835,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    -0.06596640589679785,
+    -0.01654284913641885
+   ],
+   "p_cluster_t": 0.005549190743513634
+  },
+  "P0D-030": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV F",
+   "axis": "drive",
+   "G": 18,
+   "theta": 0.26832955404383974,
+   "boot_ci95": [
+    0.21889329805996474,
+    0.307460960960961
+   ],
+   "sf_ci95": [
+    0.20515046296286185,
+    0.3105389442599643
+   ],
+   "p_signflip": 3.0517578125e-05,
+   "p_min_attainable": 3.0517578125e-05,
+   "holm_p": 6.103515625e-05,
+   "clt_ci95": [
+    0.22146504099650502,
+    0.3151940670911745
+   ],
+   "p_cluster_t": 9.088500014051626e-10
+  },
+  "P0D-031": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV F",
+   "axis": "day_vehicle",
+   "G": 10,
+   "theta": 0.26832955404383974,
+   "boot_ci95": [
+    0.20870499462411227,
+    0.30512874278499275
+   ],
+   "sf_ci95": [
+    0.18363095238069826,
+    0.31136621315198676
+   ],
+   "p_signflip": 0.001953125,
+   "p_min_attainable": 0.001953125,
+   "holm_p": 0.005859375,
+   "clt_ci95": [
+    0.2133947042371755,
+    0.323264403850504
+   ],
+   "p_cluster_t": 1.5500766665420493e-06
+  },
+  "P0D-032": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV F",
+   "axis": "vehicle",
+   "G": 9,
+   "theta": 0.26832955404383974,
+   "boot_ci95": [
+    0.20937547607702806,
+    0.30666217266885204
+   ],
+   "sf_ci95": [
+    0.18253968253941663,
+    0.3137698412699084
+   ],
+   "p_signflip": 0.00390625,
+   "p_min_attainable": 0.00390625,
+   "holm_p": 0.01171875,
+   "clt_ci95": [
+    0.21106355623560386,
+    0.3255955518520756
+   ],
+   "p_cluster_t": 4.747736766431143e-06
+  },
+  "P0D-033": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV F",
+   "axis": "day",
+   "G": 7,
+   "theta": 0.26832955404383974,
+   "boot_ci95": [
+    0.21666666666666665,
+    0.2974649406688242
+   ],
+   "sf_ci95": [
+    0.18363095238071847,
+    0.31001984127004845
+   ],
+   "p_signflip": 0.015625,
+   "p_min_attainable": 0.015625,
+   "holm_p": 0.046875,
+   "clt_ci95": [
+    0.21935390098438196,
+    0.3173052071032975
+   ],
+   "p_cluster_t": 1.066624994171157e-05
+  },
+  "P0D-034": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV F",
+   "axis": "dv_component",
+   "G": 6,
+   "theta": 0.26832955404383974,
+   "boot_ci95": [
+    0.22171201814058955,
+    0.29922323539344814
+   ],
+   "sf_ci95": [
+    0.17205215419465048,
+    0.3439153439157848
+   ],
+   "p_signflip": 0.03125,
+   "p_min_attainable": 0.03125,
+   "holm_p": 0.09375,
+   "clt_ci95": [
+    0.21332766419501908,
+    0.3233314438926604
+   ],
+   "p_cluster_t": 5.722043600383475e-05
+  },
+  "P0D-035": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV F",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 7 x vehicle 9 (int. 10)",
+   "theta": 0.26832955404383974,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    0.21773198659217402,
+    0.31892712149550545
+   ],
+   "p_cluster_t": 1.2895228690712242e-05
+  },
+  "P0D-036": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV P",
+   "axis": "drive",
+   "G": 24,
+   "theta": 0.03646388001419951,
+   "boot_ci95": [
+    0.02222900233958994,
+    0.054875965531037095
+   ],
+   "sf_ci95": [
+    0.019739196256507302,
+    0.0572823075771661
+   ],
+   "p_signflip": 9.5367431640625e-07,
+   "p_min_attainable": 9.5367431640625e-07,
+   "holm_p": 2.86102294921875e-06,
+   "clt_ci95": [
+    0.018952179843316687,
+    0.05397558018508233
+   ],
+   "p_cluster_t": 0.00026164962053920366
+  },
+  "P0D-037": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV P",
+   "axis": "day_vehicle",
+   "G": 16,
+   "theta": 0.03646388001419951,
+   "boot_ci95": [
+    0.0204529688845811,
+    0.052870779709972414
+   ],
+   "sf_ci95": [
+    0.01595536106400605,
+    0.05634594957519021
+   ],
+   "p_signflip": 0.0001220703125,
+   "p_min_attainable": 0.0001220703125,
+   "holm_p": 0.0003662109375,
+   "clt_ci95": [
+    0.01799011037002635,
+    0.05493764965837267
+   ],
+   "p_cluster_t": 0.0007619063294953135
+  },
+  "P0D-038": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV P",
+   "axis": "vehicle",
+   "G": 14,
+   "theta": 0.0364638800141995,
+   "boot_ci95": [
+    0.020435836820384246,
+    0.05362311416792988
+   ],
+   "sf_ci95": [
+    0.016633469211266703,
+    0.05777222222227059
+   ],
+   "p_signflip": 0.00048828125,
+   "p_min_attainable": 0.00048828125,
+   "holm_p": 0.00146484375,
+   "clt_ci95": [
+    0.017782391397687048,
+    0.055145368630711955
+   ],
+   "p_cluster_t": 0.0010076015094703926
+  },
+  "P0D-039": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV P",
+   "axis": "day",
+   "G": 8,
+   "theta": 0.03646388001419951,
+   "boot_ci95": [
+    0.020297642038661738,
+    0.054489620031448464
+   ],
+   "sf_ci95": [
+    0.014205879590458576,
+    0.061115634671105784
+   ],
+   "p_signflip": 0.0078125,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0234375,
+   "clt_ci95": [
+    0.014639526358399012,
+    0.05828823367
+   ],
+   "p_cluster_t": 0.005526438830183755
+  },
+  "P0D-040": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV P",
+   "axis": "dv_component",
+   "G": 6,
+   "theta": 0.03646388001419951,
+   "boot_ci95": [
+    0.021676216089803555,
+    0.05432998559365426
+   ],
+   "sf_ci95": [
+    0.014529596560784203,
+    0.07577253261061653
+   ],
+   "p_signflip": 0.03125,
+   "p_min_attainable": 0.03125,
+   "holm_p": 0.09375,
+   "clt_ci95": [
+    0.012473708186398546,
+    0.060454051842000464
+   ],
+   "p_cluster_t": 0.011327340792832343
+  },
+  "P0D-041": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C RV P",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 8 x vehicle 14 (int. 16)",
+   "theta": 0.0364638800141995,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    0.014683646243972955,
+    0.058244113784426045
+   ],
+   "p_cluster_t": 0.005470127168143911
+  },
+  "P0D-042": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM F",
+   "axis": "drive",
+   "G": 18,
+   "theta": 0.06160241874527588,
+   "boot_ci95": [
+    0.006127838039977896,
+    0.12068951037205002
+   ],
+   "sf_ci95": [
+    -0.004084967320515075,
+    0.12731481481492662
+   ],
+   "p_signflip": 0.0732421875,
+   "p_min_attainable": 0.00048828125,
+   "holm_p": 0.0732421875,
+   "clt_ci95": [
+    -0.0009278096969537533,
+    0.12413264718750552
+   ],
+   "p_cluster_t": 0.05312017430218211
+  },
+  "P0D-043": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM F",
+   "axis": "day_vehicle",
+   "G": 10,
+   "theta": 0.06160241874527589,
+   "boot_ci95": [
+    0.008757184703811765,
+    0.10623334903505763
+   ],
+   "sf_ci95": [
+    -0.008524397413442148,
+    0.11848072562373409
+   ],
+   "p_signflip": 0.08984375,
+   "p_min_attainable": 0.00390625,
+   "holm_p": 0.08984375,
+   "clt_ci95": [
+    0.007514018101370583,
+    0.11569081938918119
+   ],
+   "p_cluster_t": 0.029871608934525597
+  },
+  "P0D-044": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM F",
+   "axis": "vehicle",
+   "G": 9,
+   "theta": 0.06160241874527589,
+   "boot_ci95": [
+    0.01085798065238855,
+    0.1077407296825787
+   ],
+   "sf_ci95": [
+    -0.008524397413438765,
+    0.11899092970533628
+   ],
+   "p_signflip": 0.0859375,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.0859375,
+   "clt_ci95": [
+    0.0062413201599801835,
+    0.11696351733057159
+   ],
+   "p_cluster_t": 0.03333541458123633
+  },
+  "P0D-045": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM F",
+   "axis": "day",
+   "G": 7,
+   "theta": 0.06160241874527589,
+   "boot_ci95": [
+    0.0014021164021164015,
+    0.09782347282347281
+   ],
+   "sf_ci95": [
+    -0.019480519480911826,
+    0.10567186644778065
+   ],
+   "p_signflip": 0.15625,
+   "p_min_attainable": 0.015625,
+   "holm_p": 0.15625,
+   "clt_ci95": [
+    0.004121341314177122,
+    0.11908349617637465
+   ],
+   "p_cluster_t": 0.039461632436322884
+  },
+  "P0D-046": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM F",
+   "axis": "dv_component",
+   "G": 6,
+   "theta": 0.06160241874527589,
+   "boot_ci95": [
+    0.0016478342749529197,
+    0.10083395337301586
+   ],
+   "sf_ci95": [
+    -0.024234693877872845,
+    0.13724982746739076
+   ],
+   "p_signflip": 0.15625,
+   "p_min_attainable": 0.03125,
+   "holm_p": 0.15625,
+   "clt_ci95": [
+    -0.0028037804549291695,
+    0.12600861794548096
+   ],
+   "p_cluster_t": 0.057321696497613726
+  },
+  "P0D-047": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM F",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 7 x vehicle 9 (int. 10)",
+   "theta": 0.06160241874527589,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    0.003879096280010215,
+    0.11932574121054157
+   ],
+   "p_cluster_t": 0.04004796082041456
+  },
+  "P0D-048": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM P",
+   "axis": "drive",
+   "G": 24,
+   "theta": 0.02618803112299233,
+   "boot_ci95": [
+    -0.00396918839477103,
+    0.05541484536424474
+   ],
+   "sf_ci95": [
+    -0.006413444403085401,
+    0.05897398497117638
+   ],
+   "p_signflip": 0.10456705093383789,
+   "p_min_attainable": 4.76837158203125e-07,
+   "holm_p": 0.10456705093383789,
+   "clt_ci95": [
+    -0.005320668533608849,
+    0.0576967307795935
+   ],
+   "p_cluster_t": 0.09898472464058718
+  },
+  "P0D-049": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM P",
+   "axis": "day_vehicle",
+   "G": 16,
+   "theta": 0.026188031122992325,
+   "boot_ci95": [
+    -0.0021395580005126535,
+    0.05071814980654352
+   ],
+   "sf_ci95": [
+    -0.008864917902556797,
+    0.05401109307372014
+   ],
+   "p_signflip": 0.1290283203125,
+   "p_min_attainable": 0.0001220703125,
+   "holm_p": 0.1290283203125,
+   "clt_ci95": [
+    -0.003071917746434477,
+    0.05544797999241913
+   ],
+   "p_cluster_t": 0.0757648926755849
+  },
+  "P0D-050": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM P",
+   "axis": "vehicle",
+   "G": 14,
+   "theta": 0.026188031122992325,
+   "boot_ci95": [
+    -0.0009773393270590624,
+    0.04978860103964202
+   ],
+   "sf_ci95": [
+    -0.008982196482649491,
+    0.05284679089031456
+   ],
+   "p_signflip": 0.12451171875,
+   "p_min_attainable": 0.00048828125,
+   "holm_p": 0.12451171875,
+   "clt_ci95": [
+    -0.0026740110347577076,
+    0.05505007328074236
+   ],
+   "p_cluster_t": 0.07176114985493613
+  },
+  "P0D-051": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM P",
+   "axis": "day",
+   "G": 8,
+   "theta": 0.02618803112299233,
+   "boot_ci95": [
+    -0.002693465002625308,
+    0.049079759401131635
+   ],
+   "sf_ci95": [
+    -0.01385030864204602,
+    0.05440498054139091
+   ],
+   "p_signflip": 0.15625,
+   "p_min_attainable": 0.0078125,
+   "holm_p": 0.15625,
+   "clt_ci95": [
+    -0.008165665482753128,
+    0.06054172772873778
+   ],
+   "p_cluster_t": 0.11445354704982671
+  },
+  "P0D-052": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM P",
+   "axis": "dv_component",
+   "G": 6,
+   "theta": 0.02618803112299233,
+   "boot_ci95": [
+    -0.002562168689111694,
+    0.048785213640652386
+   ],
+   "sf_ci95": [
+    -0.03280526620387132,
+    0.06257314753867664
+   ],
+   "p_signflip": 0.15625,
+   "p_min_attainable": 0.03125,
+   "holm_p": 0.15625,
+   "clt_ci95": [
+    -0.011287792635666764,
+    0.06366385488165142
+   ],
+   "p_cluster_t": 0.13238374462877187
+  },
+  "P0D-053": {
+   "source": "outputs/review_followup3/P0/DEPENDENCE_SENSITIVITY.csv",
+   "contrast_id": "P1C DM P",
+   "axis": "twoway_CGM_day_x_vehicle",
+   "G": "day 8 x vehicle 14 (int. 16)",
+   "theta": 0.026188031122992325,
+   "boot_ci95": [
+    null,
+    null
+   ],
+   "sf_ci95": [
+    null,
+    null
+   ],
+   "p_signflip": null,
+   "p_min_attainable": null,
+   "holm_p": null,
+   "clt_ci95": [
+    -0.00734475719762423,
+    0.05972081944360888
+   ],
+   "p_cluster_t": 0.10728600639274377
+  }
+ }
+}

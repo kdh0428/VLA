@@ -1,0 +1,129 @@
+                 row_id  succ_a  succ_b  a_only  b_only  estimate  state_boot_ci95_lo  state_boot_ci95_hi  state_sf_inv_ci95_lo  state_sf_inv_ci95_hi  task_strat_boot_ci95_lo  task_strat_boot_ci95_hi  p_signflip_state_exact  p_holm_state  p_equiv_m10_posthoc  OLD_task_boot_ci95_lo  OLD_task_boot_ci95_hi  OLD_p_mcnemar
+0       P0E.succ.C-F_d8      79      82       8      11     -0.03               -0.12                0.06             -0.117647          5.882353e-02                    -0.11                  0.05000                0.647606      0.718567             0.058955                  -0.09                0.04000       0.647606
+1      P0E.succ.C-F_d24      79      84       7      12     -0.05               -0.14                0.03             -0.136364          3.921569e-02                    -0.13                  0.03000                0.359283      0.718567             0.133909                  -0.14                0.04000       0.359283
+2       P0E.succ.F-N_d8      82      87       6      11     -0.05               -0.13                0.03             -0.132075          3.174603e-02                    -0.13                  0.02025                0.332306      0.996918             0.119199                  -0.13                0.02025       0.332306
+3       P0E.succ.C-N_d8      79      87       6      14     -0.08               -0.17                0.00             -0.166667         -7.275670e-14                    -0.16                  0.00000                0.115318      0.691910             0.335258                  -0.15                0.00000       0.115318
+4       P0E.succ.R-N_d8      84      87       5       8     -0.03               -0.10                0.04             -0.102041          4.166667e-02                    -0.10                  0.04000                0.581055      1.000000             0.029030                  -0.09                0.03000       0.581055
+5      P0E.succ.F-N_d24      84      87       8      11     -0.03               -0.12                0.06             -0.117647          5.769231e-02                    -0.10                  0.05000                0.647606      1.000000             0.059905                  -0.14                0.08025       0.647606
+6      P0E.succ.C-N_d24      79      87       8      16     -0.08               -0.17                0.02             -0.176471          2.000000e-02                    -0.17                  0.01000                0.151590      0.691910             0.348993                  -0.17                0.01000       0.151590
+7      P0E.succ.R-N_d24      79      87       7      15     -0.08               -0.17                0.01             -0.171429          1.785714e-02                    -0.17                  0.01000                0.133801      0.691910             0.343148                  -0.15                0.00000       0.133801
+8    P0E.succ.F-Nrep_d8      82      81      10       9      0.01               -0.08                0.10             -0.076923          9.756098e-02                    -0.07                  0.09000                1.000000      1.000000             0.022235                  -0.06                0.07000       1.000000
+9    P0E.succ.C-Nrep_d8      79      81       6       8     -0.02               -0.09                0.05             -0.095238          5.660377e-02                    -0.09                  0.05000                0.790527      1.000000             0.018595                  -0.06                0.02000       0.790527
+10   P0E.succ.R-Nrep_d8      84      81      10       7      0.03               -0.05                0.11             -0.050000          1.111111e-01                    -0.05                  0.11000                0.629059      1.000000             0.049215                  -0.02                0.08000       0.629059
+11  P0E.succ.F-Nrep_d24      84      81      11       8      0.03               -0.06                0.12             -0.058824          1.153846e-01                    -0.05                  0.11000                0.647606      1.000000             0.059640                  -0.04                0.09000       0.647606
+12  P0E.succ.C-Nrep_d24      79      81      11      13     -0.02               -0.11                0.08             -0.116279          7.692308e-02                    -0.11                  0.08000                0.838820      1.000000             0.056240                  -0.08                0.04000       0.838820
+13  P0E.succ.R-Nrep_d24      79      81      11      13     -0.02               -0.12                0.08             -0.117647          7.843137e-02                    -0.11                  0.07000                0.838820      1.000000             0.055915                  -0.09                0.04025       0.838820
+14      P0E.succ.Nrep-N      81      87       7      13     -0.06               -0.15                0.03             -0.148936          2.325581e-02                    -0.14                  0.02000                0.263176           NaN             0.193054                  -0.14                0.02000       0.263176
+                      row_id  succ_a  succ_b  estimate  p_signflip_exact_2^10  sf_inv_ci95_lo  sf_inv_ci95_hi
+0    P0E.succ_task.C-F_d8.t0       8       7       0.1                  1.000   -3.333333e-01    5.000000e-01
+1    P0E.succ_task.C-F_d8.t1       9       9       0.0                  1.000   -3.333333e-01    3.333333e-01
+2    P0E.succ_task.C-F_d8.t2       8      10      -0.2                  0.500   -5.000000e-01    4.966361e-13
+3    P0E.succ_task.C-F_d8.t3      10       8       0.2                  0.500   -4.966361e-13    5.000000e-01
+4    P0E.succ_task.C-F_d8.t4       6       6       0.0                  1.000   -3.333333e-01    3.333333e-01
+5    P0E.succ_task.C-F_d8.t5      10      10       0.0                  1.000   -2.495781e-13    2.495781e-13
+6    P0E.succ_task.C-F_d8.t6       8       9      -0.1                  1.000   -5.000000e-01    3.333333e-01
+7    P0E.succ_task.C-F_d8.t7       7       8      -0.1                  1.000   -3.333333e-01    2.465417e-13
+8    P0E.succ_task.C-F_d8.t8       6       7      -0.1                  1.000   -5.000000e-01    3.333333e-01
+9    P0E.succ_task.C-F_d8.t9       7       8      -0.1                  1.000   -3.333333e-01    2.500944e-13
+10  P0E.succ_task.C-F_d24.t0       7       8      -0.1                  1.000   -3.333333e-01    2.465417e-13
+11  P0E.succ_task.C-F_d24.t1       9       7       0.2                  0.500   -4.966361e-13    5.000000e-01
+12  P0E.succ_task.C-F_d24.t2       9       8       0.1                  1.000   -3.333333e-01    5.000000e-01
+13  P0E.succ_task.C-F_d24.t3       8       9      -0.1                  1.000   -3.333333e-01    2.465417e-13
+14  P0E.succ_task.C-F_d24.t4       5       7      -0.2                  0.625   -6.666667e-01    2.500000e-01
+15  P0E.succ_task.C-F_d24.t5       9      10      -0.1                  1.000   -3.333333e-01    2.465417e-13
+16  P0E.succ_task.C-F_d24.t6      10      10       0.0                  1.000   -2.495781e-13    2.495781e-13
+17  P0E.succ_task.C-F_d24.t7       9       8       0.1                  1.000   -2.500944e-13    3.333333e-01
+18  P0E.succ_task.C-F_d24.t8       6       7      -0.1                  1.000   -5.000000e-01    3.333333e-01
+19  P0E.succ_task.C-F_d24.t9       7      10      -0.3                  0.250   -6.666667e-01    7.468109e-13
+                                                                                    0                                                           1                                                           2                                                           3
+row_id                                                     P0E.phaseC.d0_|8|_feedback                                 P0E.phaseC.d0_|24|_feedback                                  P0E.phaseC.d1_|8|_feedback                                 P0E.phaseC.d1_|24|_feedback
+key                                                                   d0_|8|_feedback                                            d0_|24|_feedback                                             d1_|8|_feedback                                            d1_|24|_feedback
+intervened_dim                                                                      x                                                           x                                                           y                                                           y
+abs_delta_bins                                                                      8                                                          24                                                           8                                                          24
+n_units                                                                          4741                                                        4741                                                        4869                                                        4869
+n_units_clipped_out                                                               183                                                         183                                                          55                                                          55
+n_frames                                                                         2462                                                        2462                                                        2462                                                        2462
+n_initial_states                                                                  100                                                         100                                                         100                                                         100
+n_tasks                                                                            10                                                          10                                                          10                                                          10
+frames_per_state_min                                                               14                                                          14                                                          14                                                          14
+frames_per_state_max                                                               44                                                          44                                                          44                                                          44
+amplified_events                                                                 4389                                                        3848                                                        4254                                                        3668
+amplified_rate                                                               0.925754                                                    0.811643                                                    0.873691                                                    0.753337
+state_boot_ci95_lo                                                           0.908028                                                    0.789023                                                    0.857737                                                    0.733493
+state_boot_ci95_hi                                                           0.940477                                                     0.83115                                                     0.88757                                                    0.771954
+state_clt_ci95_lo                                                            0.909055                                                    0.790118                                                    0.858487                                                     0.73368
+state_clt_ci95_hi                                                            0.942453                                                    0.833168                                                    0.888895                                                    0.772995
+task_boot_B10000_ci95_lo                                                      0.89678                                                    0.771374                                                     0.85242                                                    0.723509
+task_boot_B10000_ci95_hi                                                     0.944875                                                    0.840741                                                    0.891188                                                    0.778839
+equal_state_weight_rate                                                       0.92577                                                    0.805605                                                    0.871987                                                    0.748013
+equal_state_ci95_lo                                                          0.913218                                                    0.787973                                                    0.858895                                                      0.7314
+equal_state_ci95_hi                                                          0.937334                                                     0.82213                                                    0.884919                                                    0.764769
+recovered_rate                                                               0.014976                                                    0.002109                                                    0.041487                                                    0.012528
+mean_D_bins                                                                 87.726429                                                   106.51255                                                   64.157116                                                    83.90039
+injected_phys_mean                                                           0.002632                                                    0.007802                                                    0.002399                                                    0.007069
+injected_phys_unit                                                                  m                                                           m                                                           m                                                           m
+down_trans_phys_mean_m                                                       0.008107                                                    0.010295                                                    0.004808                                                    0.006219
+down_rot_phys_mean_rad                                                       0.027704                                                    0.031991                                                    0.024066                                                    0.030129
+phys_amp_translation_rate                                                    0.724109                                                     0.51487                                                    0.520435                                                    0.327993
+gripper_bin_changed_rate                                                     0.047247                                                    0.056317                                                    0.038406                                                    0.043335
+gripper_env_flip_rate                                                        0.047247                                                    0.056317                                                    0.038406                                                     0.04313
+OLD_amplified                                                                0.925754                                                    0.811643                                                    0.873691                                                    0.753337
+OLD_task_boot_ci95_lo                                                        0.898067                                                     0.77155                                                    0.853613                                                    0.723799
+OLD_task_boot_ci95_hi                                                        0.943518                                                    0.839451                                                    0.891461                                                      0.7782
+OLD_n                                                                            4741                                                        4741                                                        4869                                                        4869
+OLD_method                 unit mean; task-cluster bootstrap 1,000 (random.Random(0))  unit mean; task-cluster bootstrap 1,000 (random.Random(0))  unit mean; task-cluster bootstrap 1,000 (random.Random(0))  unit mean; task-cluster bootstrap 1,000 (random.Random(0))
+                            row_id              key downstream_dim  n_units  share_dbin_ge_delta  share_dbin_gt0  mean_abs_dbin  share_dim_is_argmax_of_downstream  per_bin_physical                       physical_unit  mean_abs_phys  p95_abs_phys  gripper_env_flip_rate  in_amplification_metric                                                                                                         status
+0        P0E.dim.d0_|8|_feedback.y  d0_|8|_feedback              y     4741             0.450538        0.713563      12.058216                           0.123181          0.000301                                   m       0.003635      0.013265                    NaN                     True  POST-HOC (OpenVLA; not affected by AutoVLA parity; OpenVLA intervention path not parity-verified, no new run)
+1        P0E.dim.d0_|8|_feedback.z  d0_|8|_feedback              z     4741             0.548829        0.788019      16.331154                           0.179920          0.000367                                   m       0.005987      0.020529                    NaN                     True  POST-HOC (OpenVLA; not affected by AutoVLA parity; OpenVLA intervention path not parity-verified, no new run)
+2     P0E.dim.d0_|8|_feedback.roll  d0_|8|_feedback           roll     4741             0.488083        0.585952      19.166421                           0.225058          0.000414                                 rad       0.007932      0.032695                    NaN                     True  POST-HOC (OpenVLA; not affected by AutoVLA parity; OpenVLA intervention path not parity-verified, no new run)
+3    P0E.dim.d0_|8|_feedback.pitch  d0_|8|_feedback          pitch     4741             0.594811        0.734655      22.943261                           0.283484          0.000752                                 rad       0.017256      0.060920                    NaN                     True  POST-HOC (OpenVLA; not affected by AutoVLA parity; OpenVLA intervention path not parity-verified, no new run)
+4      P0E.dim.d0_|8|_feedback.yaw  d0_|8|_feedback            yaw     4741             0.496942        0.652183      17.227378                           0.188357          0.000647                                 rad       0.011147      0.044000                    NaN                     True  POST-HOC (OpenVLA; not affected by AutoVLA parity; OpenVLA intervention path not parity-verified, no new run)
+5  P0E.dim.d0_|8|_feedback.gripper  d0_|8|_feedback        gripper     4741                  NaN        0.047247       6.000422                                NaN               NaN  binary (env: sign(2n-1), inverted)            NaN           NaN               0.047247                    False  POST-HOC (OpenVLA; not affected by AutoVLA parity; OpenVLA intervention path not parity-verified, no new run)
+     dim       q01       q99  mask  env_input_per_bin  osc_output_max  physical_per_bin unit  delta8_physical  delta24_physical
+0      x -0.745473  0.937500  True           0.006600            0.05          0.000330    m         0.002640          0.007920
+1      y -0.661607  0.875893  True           0.006029            0.05          0.000301    m         0.002412          0.007235
+2      z -0.937500  0.932143  True           0.007332            0.05          0.000367    m         0.002933          0.008798
+3   roll -0.107143  0.103929  True           0.000828            0.50          0.000414  rad         0.003311          0.009933
+4  pitch -0.206786  0.176786  True           0.001504            0.50          0.000752  rad         0.006017          0.018050
+5    yaw -0.184286  0.145714  True           0.001294            0.50          0.000647  rad         0.005176          0.015529
+{
+ "init_states_distinct": {
+  "n_states": 100,
+  "min_pairwise_maxabs_diff": 0.019941357040648203
+ },
+ "pairing": {
+  "n_states": 100,
+  "conds_per_state": [
+   8
+  ],
+  "episodes_per_state": [
+   8
+  ],
+  "episodes_total": 800,
+  "conditions": [
+   "corrected_d24",
+   "corrected_d8",
+   "feedback_d24",
+   "feedback_d8",
+   "natural",
+   "natural_rep",
+   "reverse_d24",
+   "reverse_d8"
+  ]
+ },
+ "delta_sign_rule_even_init_positive": true,
+ "phaseC_92.6_reproduced": {
+  "mean": 0.925754060324826,
+  "ci95_task_boot_1000": [
+   0.8980672619472462,
+   0.9435176071963998
+  ],
+  "n_units": 4741
+ },
+ "gripper": {
+  "q01": 0.0,
+  "q99": 1.0,
+  "mask": false,
+  "handling": "excluded from the amplification metric (dims d+1..5 only); in the env the gripper value is binarised: a = sign(2n - 1) then inverted (to_env_action, run_libero_eval)"
+ }
+}

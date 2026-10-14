@@ -1,0 +1,12 @@
+{
+ "split": "test",
+ "url": "https://huggingface.co/datasets/OpenDriveLab/OpenScene/resolve/a76f840b65e972bc45e56c2adced897498e9a026/openscene-v1.1/openscene_metadata_test.tgz",
+ "dataset_repo_commit": "a76f840b65e972bc45e56c2adced897498e9a026",
+ "curl_returncode": 0,
+ "stream_sha256": "871ba786da584e03f5151924674ab006e83782f796a979ee5dd144b5c6dca1ab",
+ "n_tar_members": 148,
+ "n_log_pickles": 147,
+ "created_utc": "2026-10-14T14:07:12Z",
+ "seconds": 9.8,
+ "note": "streamed, never written to disk; only log-level fields kept"
+}
