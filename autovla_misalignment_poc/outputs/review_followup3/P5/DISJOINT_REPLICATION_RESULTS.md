@@ -1,5 +1,7 @@
 # DISJOINT_REPLICATION_RESULTS — P5
 
+> **Final (2026-10-15):** NOT_RUN — no day- and vehicle-disjoint logs exist (unchanged).
+
 **Status: NOT_RUN** (2026-10-14, CP2).
 
 **Reason.** No day- and vehicle-disjoint logs exist in the available nuPlan/OpenScene data relative to development, P1-C and the AutoVLA training split:

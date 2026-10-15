@@ -6,7 +6,7 @@
 
 Inputs (never modified):
   P0  outputs/review_followup3/P0/numbers_p0.json                        (594 rows, generator p0_manifest_numbers.py)
-  P1  outputs/review_followup3/P1/NOOP_CACHE_AUDIT.csv, gate_stage0/judge.log, STATE_RESTORE_AUDIT.csv
+  P1  outputs/review_followup3/P1/NOOP_CACHE_AUDIT.csv, gate_stage0/judge.log, gate_O0/judge.log, STATE_RESTORE_AUDIT.csv
   P2  outputs/review_followup3/P2/MOTION_BASELINE_RESULTS.csv, LEARNED_EXTRAPOLATOR_RESULTS.csv, p2_verdict.csv,
       extrap_coverage.csv
 
@@ -14,7 +14,11 @@ Status rule (CP2; AutoVLA Stage-0 gate PASS for H7/H8/H9/P1A on the 21 manifest 
   AutoVLA rows whose code path is H7 (Recent-GT/Full-GT), H8 (Reverse-N), H9 (windows/Full-GT) or P1A (self-reference,
   coordinate accumulation, rollout-saving path = C1/P2 input) -> VERIFIED_MACHINERY_MANIFEST_SCOPE. Caveat: runs outside
   the 21-unit manifest are not retro-validated by the gate.
-  AutoVLA rows on paths NOT in the manifest (H32 = exp 32 / P1-C DM; P1-B start-position script) stay PROVISIONAL.
+  Final (2026-10-15): the gated path set is READ from the judge logs (gate_stage0: H7/H8/H9/P1A, commit 47efb95;
+  O0 extension gate_O0: H32 = exp 32 / P1-C DM and P1B = P1-B start position, AMENDMENT_P1_03, commit fae513c).
+  Rows on a path without a PASS verdict would stay PROVISIONAL (none at present).
+  SpatialVLA P1-D rows: VERIFIED_MACHINERY_MANIFEST_SCOPE iff every SpatialVLA audit control passes including the split-
+  fingerprint C2 re-verification (C2_A5_split, AMENDMENT_P1_02); the earlier strict 0/20 and post-hoc A5 20/20 rows are kept.
   AutoVLA natural-pass rows (selection flow, prevalence, inventory) use no intervention machinery -> GATE_NOT_APPLICABLE.
   SpatialVLA P1-D rows -> PENDING_DECISION_A5 (P1: PASS on actions/state; strict C2 FAIL on the executor bookkeeping
   hash; A5 post-hoc policy-state check 20/20; human decision pending). Exp 35 rows -> NOT_VERIFIED (no restore).
@@ -51,8 +55,13 @@ ST_NA = "GATE_NOT_APPLICABLE"
 ST_PEND = "PENDING_DECISION_A5"
 ST_NOTVER = "NOT_VERIFIED"
 ST_AUDIT = "AUDIT"
-CAVEAT_VER = ("AutoVLA Stage-0 gate PASS (commit 47efb95) covers the 21 manifest path-units at HEAD 817d166 + harness "
-              "0ef9334 (RTX 5090, bf16); the original full runs outside the manifest are not retro-validated")
+CAVEAT_VER = ("AutoVLA no-op/cache gate PASS: Stage 0 (H7/H8/H9/P1A, 21 path-units, commit 47efb95) and O0 extension "
+              "(H32/P1B, 18 path-units, commit fae513c), HEAD 817d166, RTX 5090, bf16; the original full runs outside "
+              "the verification manifests are not retro-validated")
+CAVEAT_SV = ("SpatialVLA P1-B/P1-C audit PASS on the 20-unit manifest (C1, C3/P1-C restore, C5a/b, branch restore 60/60; "
+             "C2 null arm PASS 20/20 under the split-fingerprint re-verification, AMENDMENT_P1_02, commit fae513c; the "
+             "earlier strict combined-hash rule 0/20 and the post-hoc A5 check 20/20 are kept on record); P1-D runs "
+             "outside the 20 audit units are not retro-validated")
 CAVEAT_PROV = ("code path not in the Stage-0 manifest (H32 = exp 32 / P1-C DM, or the P1-B start-position script); "
                "not verified by the gate")
 CAVEAT_NA = "natural HF-generate pass / data inventory: no intervention machinery involved"
@@ -65,6 +74,25 @@ CAVEAT_OVLA = "OpenVLA intervention path: spec only (INTERVENTION_SPEC M-O1), no
 USE = {ST_VER: "usable (state the manifest-scope caveat)", ST_NA: "usable",
        ST_PROV: "do not enter as final (PROVISIONAL)", ST_PEND: "hold final wording until the A5 decision",
        ST_NOTVER: "descriptive only", ST_AUDIT: "documentation fix"}
+
+
+def judge_verdicts():
+    out = {}
+    for gate in ("gate_stage0", "gate_O0"):
+        jl = f"{R3}/P1/{gate}/judge.log"
+        m = re.search(r"(\{[^}]*\})\s+(\d+) failures", open(jl).read())
+        out[gate] = (jl, m, json.loads(m.group(1).replace("'", '"')))
+    return out
+
+
+def sv_audit_ok():
+    s = pd.read_csv(f"{R3}/P1/STATE_RESTORE_AUDIT.csv")
+    need = ["C1", "C3_restore", "C5a", "C5b", "P1C_branch_restore", "C2_A5_split"]
+    return all((s[s.control == c]["pass"].astype(bool).all() and (s.control == c).any()) for c in need)
+
+
+GATED = {p for _, (_, m, v) in judge_verdicts().items() if int(m.group(2)) == 0 for p, x in v.items() if x == "PASS"}
+SV_OK = sv_audit_ok()
 
 
 def f(x):
@@ -131,15 +159,15 @@ def p0_rows():
             if ".exp35." in rid:
                 status, cav = ST_NOTVER, CAVEAT_EXP35
             else:
-                status, cav = ST_PEND, CAVEAT_PEND
+                status, cav = (ST_VER, CAVEAT_SV) if SV_OK else (ST_PEND, CAVEAT_PEND)
         elif rid.startswith("P0E"):
             tags = OVLA if rid.startswith("P0E.succ") else OVLA_OFF
             status, cav = ST_NOTVER, CAVEAT_OVLA
         else:
             tags = DRIVE
-            if path in ("H7", "H8", "H9", "P1A"):
+            if path in GATED:
                 status, cav = ST_VER, CAVEAT_VER
-            elif path in ("H32", "P1B"):
+            elif path in ("H7", "H8", "H9", "P1A", "H32", "P1B"):
                 status, cav = ST_PROV, CAVEAT_PROV
             else:
                 status, cav = ST_NA, CAVEAT_NA
@@ -180,21 +208,19 @@ def p1_rows():
                     "status_original": "", "package_use": USE[ST_AUDIT], "source_file": "outputs/review_followup3/P1/NOOP_CACHE_AUDIT.csv",
                     "source_key": f"row {i} (control={r.control}, path={r.path}, decoding={r.decoding})",
                     "fields": {k: (None if pd.isna(v) else (v.item() if hasattr(v, "item") else v)) for k, v in r.items()}})
-    jl = f"{R3}/P1/gate_stage0/judge.log"
-    m = re.search(r"(\{[^}]*'H7'[^}]*\})\s+(\d+) failures", open(jl).read())
-    verdicts = json.loads(m.group(1).replace("'", '"'))
-    for p, v in verdicts.items():
-        out.append({"row_id": f"P1.AV.verdict.{p}", "block": "P1", "item": "AutoVLA Stage-0 gate verdict per path",
+    for gate, (jl, m, verdicts) in judge_verdicts().items():
+      for p, v in verdicts.items():
+        out.append({"row_id": f"P1.AV.verdict.{p}", "block": "P1", "item": f"AutoVLA no-op/cache gate verdict per path ({gate})",
                     "value": v, "unit": "verdict", "ci95": None, "ci95_method": None, "p_raw": None, "p_adj": None,
                     "family": None, **DRIVE, "code_path": p, "status": ST_AUDIT,
                     "status_caveat": CAVEAT_VER, "analysis_type": "P1-B gate (PROTOCOL_P1 §6)", "status_original": "",
-                    "package_use": USE[ST_AUDIT], "source_file": "outputs/review_followup3/P1/gate_stage0/judge.log",
+                    "package_use": USE[ST_AUDIT], "source_file": os.path.relpath(jl, POC),
                     "source_key": f"judge dict['{p}'] (total failures {m.group(2)})", "fields": {}})
     src = f"{R3}/P1/STATE_RESTORE_AUDIT.csv"
     s = pd.read_csv(src)
     for ctrl, g in s.groupby("control"):
         agg = {"n_units": len(g)}
-        for col in ("pass", "pass_strict_prefixed_rule", "pass_policy_state_A5", "actions_bytes_equal",
+        for col in ("pass", "pass_strict_prefixed_rule", "pass_policy_state_A5", "exfp_policy_equal_all_steps", "actions_bytes_equal",
                     "b1_equal_batch8", "generate_equal_batch8", "restore_ok"):
             v = g[col].dropna()
             if len(v):
@@ -208,7 +234,10 @@ def p1_rows():
                         "item": "SpatialVLA P1-B/P1-C restore audit (aggregated over arm comparisons)",
                         "value": v, "unit": "count" if not k.endswith("_m_max") else "m", "ci95": None,
                         "ci95_method": None, "p_raw": None, "p_adj": None, "family": None, **SVLA, "code_path": "P1-D runner",
-                        "status": ST_AUDIT, "status_caveat": CAVEAT_PEND if ctrl == "C2" else "20-unit audit scope",
+                        "status": ST_AUDIT, "status_caveat": (("C2 strict combined-hash rule 0/20 and post-hoc A5 20/20 are historical rows; the binding C2 "
+                                           "verdict is C2_A5_split (AMENDMENT_P1_02)") if ctrl == "C2" else
+                                          "split-fingerprint C2 re-verification (AMENDMENT_P1_02)" if ctrl == "C2_A5_split"
+                                          else "20-unit audit scope"),
                         "analysis_type": "P1 audit (PROTOCOL_P1 §8)" + ("; A5 post hoc" if "A5" in k else ""),
                         "status_original": "", "package_use": USE[ST_AUDIT],
                         "source_file": "outputs/review_followup3/P1/STATE_RESTORE_AUDIT.csv",
@@ -285,16 +314,19 @@ def main():
     dup = {x for x in ids if ids.count(x) > 1}
     assert not dup, f"duplicate row ids: {sorted(dup)[:10]}"
     inputs = [f"{R3}/P0/numbers_p0.json", f"{R3}/P1/NOOP_CACHE_AUDIT.csv", f"{R3}/P1/gate_stage0/judge.log",
+              f"{R3}/P1/gate_O0/judge.log",
               f"{R3}/P1/STATE_RESTORE_AUDIT.csv", f"{R3}/P2/MOTION_BASELINE_RESULTS.csv",
               f"{R3}/P2/LEARNED_EXTRAPOLATOR_RESULTS.csv", f"{R3}/P2/p2_verdict.csv", f"{R3}/P2/extrap_coverage.csv"]
     counts = pd.Series([r["status"] for r in rows]).value_counts().to_dict()
-    meta = {"created_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "checkpoint": "CP2",
+    meta = {"created_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "checkpoint": "final (after CP2 decisions)",
+            "gated_autovla_paths": sorted(GATED), "spatialvla_audit_pass": SV_OK,
             "generator": f"{POC}/scripts/review_followup3/cp2/cp2_numbers.py", "n_rows": len(rows),
             "status_counts": counts,
-            "status_rule": {ST_VER: CAVEAT_VER, ST_PROV: CAVEAT_PROV, ST_NA: CAVEAT_NA, ST_PEND: CAVEAT_PEND,
+            "status_rule": {ST_VER: CAVEAT_VER + " | SpatialVLA: " + CAVEAT_SV, ST_PROV: CAVEAT_PROV, ST_NA: CAVEAT_NA, ST_PEND: CAVEAT_PEND,
                             ST_NOTVER: f"{CAVEAT_EXP35}; {CAVEAT_OVLA}", ST_AUDIT: "verification / document checks"},
             "package_use": USE,
-            "commits": {"P1_protocol": "0ef9334", "P0": "e9907fc", "P2": "5b158f2", "P1_results": "47efb95"},
+            "commits": {"P1_protocol": "0ef9334", "P0": "e9907fc", "P2": "5b158f2", "P1_results": "47efb95",
+                        "CP2_package": "d70d19c", "CP2_decision": "444299f", "P1_A5_rerun_and_O0": "fae513c"},
             "inputs_sha256": {os.path.relpath(p, POC): sha(p) for p in inputs},
             "note": "No hand-typed numbers. 'fields' holds the full source record. CI = 95% CI by ci95_method."}
     json.dump({"_meta": meta, "rows": {r["row_id"]: {k: v for k, v in r.items() if k != "row_id"} for r in rows}},

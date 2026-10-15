@@ -1,5 +1,7 @@
 # SPATIAL_STATE_EXPANSION_PROTOCOL — P4 (DRAFT for CP2; not frozen, not run)
 
+> **Final status (2026-10-15): NOT RUN by CP2 decision** (444299f). The precision target is approved as ±10 pp per task, but only for a future run. The new-state part of M4 stays "unresolved — addressed by narrowing".
+
 **Status: DRAFT.**
 - Nothing has been sampled in a simulator and no policy has been run.
 - The only computation so far is a pure-geometry pre-check (`planning/layout_geometry.csv`) and the power simulation (`POWER_PLAN.md`).

@@ -1,5 +1,7 @@
 # POWER_PLAN — P4 SpatialVLA new physical states (CP2, planning only)
 
+> **Final (2026-10-15):** CP2 approved ±10 pp per task as the target if P4 is ever run. P4 was not run in this round (444299f).
+
 **Status: planning.**
 - No confirmatory data exist.
 - Existing SpatialVLA data were used **only** as planning inputs (discordance, cross-contrast correlation, within-state structure). Nothing here tests a P4 hypothesis.

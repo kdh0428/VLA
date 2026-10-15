@@ -1,4 +1,4 @@
-# PAPER_NUMBERS — 논문용 수치 은행 (2026-10-13 개정)
+# PAPER_NUMBERS — 논문용 수치 은행 (2026-10-13 개정; 2026-10-15 review_followup3 개정)
 
 ## 읽는 법
 - 모든 수치는 기존 결과 파일에서 옮겼습니다. 이 패키지에서 다시 계산한 값은 "(recomputed)"로 표시했고, 원 분석 스크립트와 같은 방법·같은 seed를 썼습니다.
@@ -17,6 +17,30 @@
 - **p값 교체:** AutoVLA·Impromptu 기전 대비의 단위 수준 McNemar p(8e-42, 6.7e-31, 2e-31, "0", SpatialVLA 7e-261 등)는 쓰지 않습니다. drive 합에 대한 exact sign-flip p를 쓰고 하한을 함께 적습니다: 하한 2/2^G는 정보 있는(합 ≠ 0) drive 수 G로 정해집니다: 13 drive 2.4e-4, 18 drive 7.6e-6, 20 drive 1.9e-6. sign-flip은 drive 합이 H0에서 독립·0에 대칭이라는 가정 아래의 조건부 검정입니다. SpatialVLA closed loop은 과제별 초기 상태 cluster(coke = seed, move_near = primary 상태 또는 물리 배치 10개) 기준입니다.
 - **개정한 claim:** 3(반복 Recent-GT, 분모, drive p, 새 drive 재현), 5(3 step ≈ 90% [81, 99]; early window 삭제), 6(GT 근접 token 동등성 미성립), 7(새 drive 미결론), 10(실행 명령 누적 vs TCP, 초기 상태 수), 11(모델별 Reverse, −6.2%p 삭제), 17(ensemble 보호 삭제, P1-D H1/H2). **추가한 claim:** 18(SpatialVLA 직접 효과), 19(GT 없는 문맥 효과), 20(외삽 초과는 실패 층에서만), 21(held-out은 drive 비분리).
 - 원 수치를 남긴 claim(1, 2, 4, 8, 9, 12–16)의 단위 수준 p는 위 규칙으로 읽습니다. 원고에 쓸 때는 각 claim의 Manuscript-safe 문장과 아래 개정 메모를 따릅니다.
+
+## 2026-10-15 개정 (review_followup3 반영)
+
+**우선순위.** 이 문서와 `numbers.json`(2,164행, `autovla_misalignment_poc/scripts/review_followup3/cp2/cp2_numbers.py`가 생성)이 충돌하면 `numbers.json`이 우선합니다. 각 행에는 row ID, 값, 95% CI, p, status, 출처 파일과 key가 있습니다.
+
+**검증 상태.**
+- AutoVLA 여섯 경로가 no-op/cache 관문을 통과했습니다: H7, H8, H9, P1A, H32, P1B. 해당 수치의 status는 `VERIFIED_MACHINERY_MANIFEST_SCOPE`입니다.
+- SpatialVLA 복원 감사도 PASS입니다(분리 fingerprint C2 20/20).
+- 검증 manifest 밖의 원 run은 소급 검증되지 않았습니다. 원고에는 이 범위 문장을 함께 씁니다.
+- 실험 35와 OpenVLA는 `NOT_VERIFIED`이며 기술적 수준으로만 씁니다.
+
+**이번에 수정한 것**(`cp2_doc_fixes.py`가 원 값과 대조):
+- 반올림: +1.2 → +1.25, −6.2 → −6.25(half-even 경계값은 두 자리로 표기).
+- +4.37 m 행의 Holm 표기 혼동(Claim 19).
+- OpenVLA 92.6%와 +3 [−4, +9]가 task 군집 CI라는 표시(Claim 9).
+- 18–29%p를 r4e1로 한정(Claim 18).
+- 운동 baseline 서술 갱신(Claim 20).
+
+**새 claim과 표.**
+- Claim 22: 평가 모집단 추정량과 A− 빈도.
+- Claim 23: 운동 외삽 대조.
+- Claim 24: 개입 machinery 검증 범위.
+- `tables.tex` Table 8–11은 `numbers.json`에서 기계 생성했습니다(`cp2_tables.py`).
+- 최종 판정: `autovla_misalignment_poc/outputs/review_followup3/CLAIM_EVIDENCE_MATRIX.md`.
 
 ---
 
@@ -153,8 +177,8 @@
 
 # Claim 9. OpenVLA: local-only architectural control
 **Evidence** (commit 6b9e8ad + amendment 6d0375a; LIBERO-Spatial 10 tasks × 10 = 100 episodes)
-- **Within-step feedback is strong:** shifting the x token by 8 bins amplifies a downstream dimension in **92.6% [89.8, 94.4]** of 4,741 units (24 bins: 81.2%). Corrected gives 0%; reverse = feedback.
-- **Task level:** feedback − corrected **+3 pp [−4, +9], p = 0.65** (8 bins), +5 pp (p = 0.36, 24 bins). Every condition vs natural has p ≥ 0.115.
+- **Within-step feedback is strong:** shifting the x token by 8 bins amplifies a downstream dimension in **92.6% [89.8, 94.4]** of 4,741 units (task-cluster CI; initial-state-cluster CI [90.8, 94.0]; 24 bins: 81.2%). Corrected gives 0%; reverse = feedback.
+- **Task level:** feedback − corrected **+3 pp [−4, +9], p = 0.65** (8 bins; task-cluster CI — with initial-state clusters [−6, +12], review_followup3 P0-E), +5 pp (p = 0.36, 24 bins). Every condition vs natural has p ≥ 0.115.
 - **Rerun control:** 87 vs 81% (−6 pp [−14, +2], p = 0.26), outcome disagreement **20%**.
 
 **Source:** `O/cross_vla_replication/analysis.json` (`phaseC`, `vs_natural`, `natural_rep_vs_natural`).
@@ -194,13 +218,13 @@
 - **Interventions are matched in spirit, not identical**; amplification definitions differ (driving: A− ∧ FDE5 > 3 m; SpatialVLA token: accumulated step-2–4 deviation ≥ injected; OpenVLA: downstream bin shift). **Effect sizes are not comparable across columns.**
 - **Open-loop trajectory effects appear in the two driving models**, which keep a 10-step autoregressive action history.
 - **Closed-loop manipulation:** OpenVLA shows no task effect distinguishable from rerun variability. SpatialVLA context perturbations change generated actions (50–58% of suffix tokens) and the actual TCP trajectory (2.7–6.0 cm), and longer replanning intervals make these deviations persist (P1-D H1, composite configuration effect); the success direct effect, averaged over two tasks, is bounded within ±10 pp in the tested configurations (P1-D), task-specific effects are uncertain (Claim 18).
-- **Experiment 35 task effects are deleted:** the r4e1 reverse −6.2 pp (p = 0.040, episode level) is p = 0.14 / 0.26 after initial-state clustering and did not replicate in P1-D (+1.2 pp [−5.6, +8.0]).
+- **Experiment 35 task effects are deleted:** the r4e1 reverse −6.25 pp (p = 0.040, episode level) is p = 0.14 / 0.26 after initial-state clustering and did not replicate in P1-D (+1.25 pp [−5.6, +8.0]).
 
 **Source:** Claims 3, 7–10, 17, 18; `paper_cross_model_table.csv`; `O/review_followup2/CLAIM_EVIDENCE_MATRIX.md`.
 **Manuscript-safe:** "Previous-action context causally shapes subsequent action tokens in all temporally autoregressive decoders we tested; whether this produces task-level failure depends on the action horizon and execution scheme." / "Interventions were matched in spirit rather than identical across models; effect sizes are not comparable across columns."
 **Overclaim:**
 - "Replanning and ensembling absorb the feedback." Ensemble protection is deleted; replanning governs trajectory persistence only (composite effect).
-- "A small task effect appears for reverse at 4-step replanning (−6.2 pp)." Deleted.
+- "A small task effect appears for reverse at 4-step replanning (−6.25 pp)." Deleted.
 - "Execution architecture fully explains the driving vs. manipulation difference."
 - "General failure mechanism of all VLAs."
 - Placing the different "Reverse" treatments in one row without per-model definitions, or comparing amplification magnitudes across models.
@@ -278,13 +302,13 @@
 - **P1-D** (preregistered b212637; 4,800 episodes, restore verified 3,840/3,840; context-perturbation budget fixed at 4 chunks in every configuration):
   - **H1 (replanning axis):** area DiD[R − N] r4e1 − r1e1 **+213.8 cm·step [+170.6, +255.2]**, p < 1e-4 (both tasks same direction) → supported. Composite effect of replanning interval + observation refresh / context reset + execution exposure (context-attributable executed translation 0.32 vs 0 m/episode).
   - **H2 (ensemble axis, executed dose matched by a predefined online offset):** DiD +20.7 cm·step [−24.6, +68.0], p = 0.385; 90% CI inside the predefined ±100 → equivalent, and not in the absorption direction. The P0-C "ensemble attenuation" is explained by reduced executed dose.
-- **Task outcome:** see Claim 18. Experiment 35's r4e1 reverse −6.2 pp is deleted (clustered p = 0.14 / 0.26; P1-D +1.2 pp [−5.6, +8.0]). Experiment 35's "+1.8 cm without the ensemble" (r1e1 F vs C) is p = 0.028 unadjusted, 0.14 after Holm over 5 configurations.
+- **Task outcome:** see Claim 18. Experiment 35's r4e1 reverse −6.25 pp is deleted (clustered p = 0.14 / 0.26; P1-D +1.25 pp [−5.6, +8.0]). Experiment 35's "+1.8 cm without the ensemble" (r1e1 F vs C) is p = 0.028 unadjusted, 0.14 after Holm over 5 configurations.
 
 **Source:** `O/review_followup/P1D_dose_control/run_20261008/analysis.md`, `paired_effects.csv`; `O/review_followup2/B_spatialvla_direct/run_20261013/DIRECT_EFFECTS.md`; `O/spatialvla_feedback_protection_ablation/RESULTS.md`.
 **Manuscript-safe:** "Lengthening the replanning interval increased the persistence of context-induced trajectory deviations even at a fixed context-perturbation budget; temporal ensembling did not absorb context effects once executed dose was matched."
 **Overclaim (delete):**
 - "Ensembling protects against feedback."
-- "4-step replanning makes reverse increase failures (−6.2 pp)."
+- "4-step replanning makes reverse increase failures (−6.25 pp)."
 - "Task success changes by at most 6 pp" (Experiment 35 CIs after clustering are ±8–14 pp).
 - "Replanning interval alone" (it is a composite configuration effect).
 - "Removing protections turns SpatialVLA into an AutoVLA-like failure mode." / "Correction restores success."
@@ -297,10 +321,10 @@
 |---|---|---|---|---|---|---|
 | r1e4 (official) | δR | 0.0 [−6.2, 6.2] | +1.7 [−5.4, 8.8] / [−8.8, 12.8] | +0.8 [−3.8, 5.5] | <0.001 / 0.002 | 0.16 / 0.30 |
 | r1e4 | δC | +4.2 [−2.0, 10.9] | +0.8 [−6.8, 8.5] / [−2.6, 4.3] | +2.5 [−2.6, 7.6] | 0.006 / 0.002 | 0.27 / 0.31 |
-| r4e1 | δR | +1.7 [−8.3, 11.5] | +0.8 [−8.3, 10.1] / [−8.1, 10.0] | +1.2 [−5.6, 8.0] | 0.006 / 0.010 | 0.27 / 0.31 |
+| r4e1 | δR | +1.7 [−8.3, 11.5] | +0.8 [−8.3, 10.1] / [−8.1, 10.0] | +1.25 [−5.6, 8.0] | 0.006 / 0.010 | 0.27 / 0.31 |
 | r4e1 | δC | −4.2 [−14.3, 5.8] | +4.2 [−5.0, 13.3] / [−10.5, 18.8] | −0.0 [−6.7, 6.8] | 0.006 / 0.014 | 0.23 / 0.31 |
 
-- **Pooled two-task direct effects are equivalent within ±10 pp** under both clusterings after Holm (m = 4); **±5 pp is not established**; **task-level CIs span 18–29 pp** (r4e1: no task-level equivalence under either clustering). No direct effect differs from 0 after Holm.
+- **Pooled two-task direct effects are equivalent within ±10 pp** under both clusterings after Holm (m = 4); **±5 pp is not established**; **task-level CIs span 18–29 pp in r4e1** (r1e4: 6.9–21.6 pp; r4e1: no task-level equivalence under either clustering). No direct effect differs from 0 after Holm.
 - **Interactions S1–S4** (preregistered): ±10 pp equivalence survives initial-state clustering and Holm (primary 0.014–0.037, physical 0.026–0.047); ±5 pp not established (Holm ≈ 0.5). Per task, no interaction is equivalent; coke S3 −9.2 vs move_near +8.3 partly cancel.
 - **Same units, generated / executed / physical changes:** suffix tokens changed 49–55% (vs numeric rerun 3–7%); context-attributable executed translation 0.044 (r1e4) / 0.32 (r4e1) m/episode; actual TCP mean distance R − N 2.67 cm (r1e4) / 5.95 cm (r4e1) vs rerun 1.24–2.00 cm; time-integrated 193 / 428 cm·step (t = 8–79, 72 steps).
 - **Executed perturbation lowers success:** C − N r4e1 −11.7 pp [−18.3, −5.0] (Holm 0.009); exp 35 r1e4 C − N −22.9 pp.
@@ -314,7 +338,7 @@
 # Claim 19. GT-free action-context effect (AutoVLA only) (new 2026-10-13)
 **Evidence** (P1-A, preregistered b212637; family G = GT-free perturbation 0.10 ± 0.03 m/segment; A− 364 units / 52 scenes / 13 drives; reference = the model's own unperturbed rollout, no GT)
 - Context-only perturbation changes later local actions: suffix local motion **+0.571 m/seg [+0.435, +0.682]** (C1 − U).
-- Output + context perturbation vs pure coordinate accumulation (Geo baseline, no inference): endpoint **+4.37 m [+3.32, +5.19]** (drive p = 2.4e-4; Holm 9.8e-4 over the post-hoc excess family; predeclared family Holm 7.3e-4). The model's coordinate-accumulation part equals Geo's (+0.020 m [−0.015, +0.065]); the excess is entirely the context-driven change of later local actions. A+ +1.64 m, all scenes +2.32 m.
+- Output + context perturbation vs pure coordinate accumulation (Geo baseline, no inference): endpoint **+4.37 m [+3.32, +5.19]** (post-hoc C1 excess metric ‖OC9 − U9‖ − ‖Geo9 − r9‖; drive p = 2.4e-4; Holm 9.8e-4 over the post-hoc excess family, m = 4). The **predeclared** P1A-2 metric (dev9_ref, OC − Geo) is the authoritative row: **+4.37 m [+3.34, +5.17]**, sign-flip-inversion CI [+3.06, +5.35], Holm 7.3e-4 (P1A family, m = 3) — `numbers.json` `P0C.plus437.AUTHORITATIVE`. Do not attach the predeclared Holm to the post-hoc CI (corrected 2026-10-15). The model's coordinate-accumulation part equals Geo's (+0.020 m [−0.015, +0.065]); the excess is entirely the context-driven change of later local actions. A+ +1.64 m, all scenes +2.32 m.
 - Limits: AutoVLA only (no GT-free control for Impromptu or SpatialVLA); perturbation position t_p = t* and the A−/A+ strata inherit the GT definition; the reference requires a counterfactual rollout (not deployable online).
 
 **Source:** `O/review_followup2/C_baseline_window/run_20261013/BASELINE_WINDOW_RECHECK.md` §C1, `c1_excess_effects.csv`, `c1_predeclared_and_gt_drive.csv`; `O/review_followup/P1A_gt_free_reference/run_20261008/analysis.md`.
@@ -325,7 +349,8 @@
 **Evidence** (post-hoc C1; perturbed − unperturbed change for each predictor, so CM's own extrapolation error is removed)
 - Model − CM endpoint change: **A− +2.35 m [+1.27, +3.19]** (p = 7.3e-4, Holm 9.8e-4); **A+ −0.52 m [−0.82, −0.26]**; **all scenes +0.20 m [−0.32, +0.56], p = 0.51** (not detected; equivalence not tested — no margin was predeclared).
 - The original contrast OC − CM (A− −0.59 m, p = 0.23, "indistinguishable from extrapolation") mixed in CM's own unperturbed extrapolation error (4.69 m) and is withdrawn.
-- Suffix local-motion change exceeds CM's d0 in every stratum (+0.48 / +0.13 / +0.21 m/seg). CM is a single repeat-p baseline; no turn-rate or fitted constant-velocity baseline exists.
+- Suffix local-motion change exceeds CM's d0 in every stratum (+0.48 / +0.13 / +0.21 m/seg).
+- **Updated 2026-10-15 (review_followup3 P2):** CM is a body-frame SE(2) repeat of the perturbed token (yaw included), i.e. already a constant-turn-rate extrapolation. Added CV0 (zero-turn global velocity), CTRV-K3, CTRA-2 and a learned non-AR motion extrapolator (prefix / prefix + ego, 3 seeds). In A− the model exceeds all six; in A+ and all scenes it does not (see Claim 23).
 
 **Source:** `O/review_followup2/C_baseline_window/run_20261013/c1_excess_effects.csv`, `BASELINE_WINDOW_RECHECK.md` §C1.2.
 **Manuscript-safe:** "In failure-selected scenes the response exceeded constant-motion extrapolation; across all scenes it was not distinguishable from extrapolation."
@@ -339,4 +364,58 @@
 
 **Manuscript-safe:** "held-out logs (not drive-disjoint)"; for P1-C: "new drives (day/vehicle partly shared)".
 **Overclaim:** "independent held-out drives" for Experiments 21–26.
+
+# Claim 22. Evaluation-population estimand and A− frequency (new 2026-10-15; review_followup3 P0-A, post hoc)
+**Tag:** driving / AutoVLA / open-loop 5 s plan.
+
+**Evidence** (`numbers.json` `P0A.*`; Table 8)
+- **Selection flow.** 2,747 non-CoT dev natural scenes (20 drives) → **52 A−** (13 drives, 10 day–vehicles), which is **all** A− under the dev rule (π = 1; 0 A− lack a first mismatch). 156 A+ were sampled 3 per A− at the same t* (Random(0)); the replica equals the stored set (208/208).
+- **A− frequency in the evaluation set** (not a deployment or natural failure rate):
+  - dev: 52/2,747 = **1.89 % [1.16, 2.64]** (drive clusters);
+  - P1-C: 107/5,671 = 1.89 % [1.32, 2.53].
+- **Evaluation-population estimand.** Hajek, scene-weighted, over the 2,191 eligible scenes of the 64 P1-C logs:
+  - RN **−4.1 pp [−6.4, −2.4]**;
+  - RV **+3.6 pp [+2.2, +5.5]** (24 drives);
+  - P = F + S holds exactly; 60 % of RN P comes from the A+ stratum.
+
+**Manuscript-safe:** "On the evaluation population of the new-drive logs (2,191 eligible scenes, 24 drives), recent-context correction reduced amplification by 4.1 pp [2.4, 6.4]; the A− category occurred in 1.9 % of evaluation scenes (an evaluation-set frequency, not a deployment rate)."
+
+**Overclaim:** "natural failure rate 52/2,747"; "population/deployment effect"; prevalence × stratum effect products.
+
+# Claim 23. Response beyond motion extrapolation — A− only (new 2026-10-15; review_followup3 P2, post hoc; supersedes the baseline limits of Claim 20)
+**Tag:** driving / AutoVLA / open-loop 5 s plan; GT-free family G (P1-A rollouts).
+
+**Evidence** (`numbers.json` `P2A.*`, `P2B.*`, `P2.verdict.*`; Table 9)
+- **CM** (repeat-p constant motion) is a body-frame SE(2) repeat of the perturbed token, yaw included: already a constant-turn-rate extrapolation. C1 reproduces exactly.
+- **Endpoint Δ_model − Δ_control (m), A−:**
+
+| control | A− | Holm p |
+|---|---|---|
+| CM | +2.35 [+1.27, +3.19] | 0.0015 (m = 4) |
+| CV0 | +4.02 [+2.94, +4.83] | |
+| CTRV-K3 | +3.02 [+1.93, +3.87] | |
+| CTRA-2 | +1.43 [+0.44, +2.33] | 0.023 |
+| learned non-AR extrapolator, prefix | +1.97 [+1.06, +2.87] | |
+| learned non-AR extrapolator, prefix + ego | +2.27 [+1.50, +3.10] | |
+
+  The 3 training seeds differ by ≤ 0.04 m. Excluding out-of-range units keeps the sign.
+- **A+:** CM −0.52, CTRA-2 −1.56, extrapolator −1.11 / −0.56 (the model moves *less*).
+- **All scenes:** CM +0.20 (p = 0.51), extrapolator −0.34 / +0.15 (n.s.).
+
+**Manuscript-safe:** "In failure-selected scenes, AutoVLA's endpoint response to a GT-free context perturbation exceeded four kinematic extrapolations (including the original body-frame constant-motion repeat) and a small learned non-autoregressive motion extrapolator; across all scenes and in non-failure scenes it was not distinguishable from motion extrapolation."
+
+**Overclaim:** "beyond extrapolation" without the A− restriction; calling the extrapolator a non-AR VLA; "CM ignores curvature".
+
+# Claim 24. Intervention-machinery verification scope (new 2026-10-15; review_followup3 P1)
+**Evidence** (`numbers.json` `P1.*`; Table 11)
+- **AutoVLA no-op/cache gate.**
+  - Controls: hook no-op, self-patch, cache invalidation, full recompute vs cached edit, self-reproducibility.
+  - Decodings: greedy and T = 0.01. Tolerances: T_exact 0, T_equiv 0.75.
+  - Paths: H7 / H8 / H9 / P1A (21 path-units) and H32 / P1B (18 path-units).
+  - Result: PASS, 0 failures. Reverse-N ≡ token substitution (82/82 steps).
+- **SpatialVLA restore audit** (20 units): PASS, with the C2 null arm settled by the split-fingerprint re-verification (20/20). The earlier strict combined-hash 0/20 and post-hoc A5 20/20 are kept on record.
+- Arms equal HF `generate` only in 16/20 T0 chunks, so the exp 34 "identical to generate" wording is withdrawn.
+- **Not verified:** Impromptu and OpenVLA paths; exp 34/35 restore; runs outside the manifests.
+
+**Manuscript-safe:** "No-op, self-patch, cache and full-recompute parity of the intervention code was verified on fixed verification manifests (AutoVLA: all six intervention paths; SpatialVLA: state restoration on 20 units); earlier runs outside these manifests are not retro-validated, and the Impromptu and OpenVLA paths were not parity-verified."
 

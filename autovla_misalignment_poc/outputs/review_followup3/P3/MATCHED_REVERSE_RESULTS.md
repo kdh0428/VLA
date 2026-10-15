@@ -1,5 +1,7 @@
 # MATCHED_REVERSE_RESULTS — P3
 
+> **Final (2026-10-15):** NOT_RUN by CP2 decision (444299f). Not just awaiting approval.
+
 **Status: NOT_RUN** (2026-10-14, CP2).
 
 **Why.**

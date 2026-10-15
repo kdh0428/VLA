@@ -1,5 +1,7 @@
 # MATCHED_REVERSE_PROTOCOL — P3 (DRAFT for CP2; not frozen, not run)
 
+> **Final status (2026-10-15): NOT RUN by CP2 decision** (`../CP2_DECISION.md`, 444299f). This draft is kept as the protocol to use if P3 is ever approved. M2 stays "unresolved — addressed by narrowing".
+
 **Status: DRAFT.** This file is submitted at CP2 for approval.
 - Nothing has been run. No P3 code exists yet.
 - Freeze steps: after approval, (1) fix this file and commit it before any P3 output exists, then (2) write the code, run its no-op gate (§7), and freeze the source bank (§3).

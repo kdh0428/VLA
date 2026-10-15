@@ -1,5 +1,10 @@
 # CP2 REPORT — review_followup3 (2026-10-14)
 
+> **Historical CP2 submission (2026-10-14, d70d19c).**
+> - Decisions: `CP2_DECISION.md` (444299f).
+> - Executed: A5 re-verification PASS 20/20 and O0 gate PASS (fae513c).
+> - Final state: `STATUS.md`, `CLAIM_EVIDENCE_MATRIX.md`, `REVIEW_COVERAGE.md` (2026-10-15).
+
 **Checkpoint.** CP2 = Stage 0–2 complete, before any Stage-3 GPU run. **No Stage-3 GPU work has been run.** This round used the CPU only (`nice -n 19`), modified no existing result, and committed nothing.
 
 **Scope.** The manuscript is a driving-VLA study. Its main evidence is AutoVLA in open-loop 5 s plan evaluation; manipulation (SpatialVLA, OpenVLA) is complementary evidence.
