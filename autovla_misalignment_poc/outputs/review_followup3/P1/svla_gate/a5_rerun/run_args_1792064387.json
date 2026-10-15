@@ -1,0 +1,1 @@
+{"argv": ["scripts/review_followup3/p1/svla_noop_restore.py", "--out", "outputs/review_followup3/P1/svla_gate/a5_rerun", "--manifest", "outputs/review_followup3/P1/svla_manifest.json", "--units", "all", "--modes", "natural,nullfull", "--workers", "4"], "T0": 8, "inject": [8, 12, 16, 20], "start": "2026-10-15 11:39:47"}

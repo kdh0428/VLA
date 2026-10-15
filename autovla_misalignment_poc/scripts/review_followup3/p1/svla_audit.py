@@ -57,8 +57,60 @@ def cmp(root, arm, t_from=0):
             "first_divergent_step": first, "components_at_first": comps, "success_equal": root["success"] == arm["success"]}
 
 
+def a5split(run, csv_path, md_path):
+    """AMENDMENT P1-02: null arm vs natural with the split executor fingerprint. PASS iff actions bytes-equal, every
+    simulator component equal and exfp_policy equal at every one of the 80 steps; exfp_cf reported only."""
+    eps = load(run)
+    out = []
+    for k, d in sorted(eps.items()):
+        if "natural" not in d or "nullfull" not in d:
+            continue
+        ra = {r["t"]: r for r in d["natural"]["rec"]}; rb = {r["t"]: r for r in d["nullfull"]["rec"]}
+        ts = sorted(set(ra) & set(rb))
+        act = all(ra[t]["action_hex"] == rb[t]["action_hex"] for t in ts)
+        sim_bad = sorted({c for t in ts for c in COMP if ra[t]["fp"].get(c) != rb[t]["fp"].get(c)})
+        pol = all(ra[t]["exfp_policy"] == rb[t]["exfp_policy"] for t in ts)
+        cf_diff = [t for t in ts if ra[t]["exfp_cf"] != rb[t]["exfp_cf"]]
+        tcp = max(float(np.abs(np.asarray(ra[t]["fp"]["tcp"]) - np.asarray(rb[t]["fp"]["tcp"])).max()) for t in ts)
+        ok = act and not sim_bad and pol and len(ts) == 80 and len(ra) == len(rb)
+        out.append({"control": "C2_A5_split", "task": k[0], "seed": k[1], "cfg": k[2], "arm": "nullfull", "pass": ok,
+                    "n_steps": len(ts), "actions_bytes_equal": act, "sim_components_differing": sim_bad,
+                    "exfp_policy_equal_all_steps": pol, "tcp_maxabs_m": tcp,
+                    "exfp_cf_differs_steps_first": cf_diff[:1], "exfp_cf_n_steps_differ": len(cf_diff),
+                    "run": run})
+    old = list(csv.DictReader(open(csv_path))) if __import__("os").path.exists(csv_path) else []   # old rows kept verbatim
+    oldkeys = list(old[0]) if old else []
+    keys = oldkeys + [k for k in out[0] if k not in oldkeys]
+    with open(csv_path, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=keys)
+        w.writeheader()
+        for r in old:
+            w.writerow(r)
+        for r in out:
+            w.writerow({k: (json.dumps(v) if isinstance(v, (list, dict)) else v) for k, v in r.items()})
+    n_ok = sum(r["pass"] for r in out)
+    with open(md_path, "a") as f:
+        f.write("\n## C2 re-verification with the split executor fingerprint (AMENDMENT_P1_02, CP2 decision A5)\n\n")
+        f.write(f"Run `svla_gate/a5_rerun/` (natural + nullfull, same 20 units, 4 workers, RTX 5090). Pass rule fixed before the "
+                f"run: executed actions bytes-equal + every simulator fingerprint component equal + policy-state hash equal at all "
+                f"80 steps (tolerance 0); shadow-cf bookkeeping hash reported only.\n\n")
+        f.write(f"| control | pass / n |\n|---|---|\n| C2_A5_split | {n_ok}/{len(out)} |\n\n")
+        f.write(f"- actions bytes-equal: {sum(r['actions_bytes_equal'] for r in out)}/{len(out)}; simulator components all equal: "
+                f"{sum(not r['sim_components_differing'] for r in out)}/{len(out)}; policy-state hash equal at every step: "
+                f"{sum(r['exfp_policy_equal_all_steps'] for r in out)}/{len(out)}; max TCP diff {max(r['tcp_maxabs_m'] for r in out)} m.\n")
+        f.write(f"- bookkeeping (reported only): shadow-cf hash differs in {sum(r['exfp_cf_n_steps_differ'] > 0 for r in out)}/{len(out)} "
+                f"units, first at t = {sorted({r['exfp_cf_differs_steps_first'][0] for r in out if r['exfp_cf_differs_steps_first']})}.\n")
+        f.write("- Earlier rows are kept unchanged above: strict pre-fixed rule 0/20, A5 post-hoc policy-state check 20/20.\n")
+        fails = [r for r in out if not r["pass"]]
+        f.write(f"- Failures: {len(fails)}" + "".join(f"\n  - {r['task']} {r['seed']} {r['cfg']}: {r}" for r in fails) + "\n")
+    print("C2_A5_split", n_ok, "/", len(out))
+
+
 def main():
     mode = sys.argv[1]
+    if mode == "a5split":
+        a5split(*sys.argv[2:5])
+        return
     if mode == "pilot":
         r1, r2, od = sys.argv[2:5]
         e1, e2 = load(r1), load(r2)

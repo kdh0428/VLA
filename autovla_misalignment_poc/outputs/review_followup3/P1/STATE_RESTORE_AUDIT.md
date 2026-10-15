@@ -64,3 +64,16 @@ Failures: 0
 - executor (chunks, cf, sticky state).
 
 Not covered: the per-arm physical layout beyond these units. Scope: 20 units at HEAD 817d166 + these scripts; it does not retro-validate exp 34/35, whose resets had no reconfigure and showed reset drift (review_followup2).
+
+## C2 re-verification with the split executor fingerprint (AMENDMENT_P1_02, CP2 decision A5)
+
+Run `svla_gate/a5_rerun/` (natural + nullfull, same 20 units, 4 workers, RTX 5090). Pass rule fixed before the run: executed actions bytes-equal + every simulator fingerprint component equal + policy-state hash equal at all 80 steps (tolerance 0); shadow-cf bookkeeping hash reported only.
+
+| control | pass / n |
+|---|---|
+| C2_A5_split | 20/20 |
+
+- actions bytes-equal: 20/20; simulator components all equal: 20/20; policy-state hash equal at every step: 20/20; max TCP diff 0.0 m.
+- bookkeeping (reported only): shadow-cf hash differs in 20/20 units, first at t = [8].
+- Earlier rows are kept unchanged above: strict pre-fixed rule 0/20, A5 post-hoc policy-state check 20/20.
+- Failures: 0

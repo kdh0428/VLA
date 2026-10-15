@@ -91,6 +91,12 @@ def path_rows(path):
     if path == "P1A":
         import p1a_gt_free_reference as P1
         return [dict(r) for r in P1.ROWS]
+    if path == "H32":                                                    # AMENDMENT P1-03
+        import motion_semantics_ablation as MSA
+        return [{"name": n} for n in MSA.ROWS]
+    if path == "P1B":                                                    # AMENDMENT P1-03
+        import p1b_start_position as PB
+        return PB.build_rows()
     raise ValueError(path)
 
 
@@ -100,7 +106,24 @@ KEY_ROWS = {
            "selfpatch@L35", "reverse@L16", "patch_full@L35"],
     "H9": ["normal", "win1", "win3", "win4", "gt_history"],
     "P1A": ["U", "OC", "O1", "C1", "OC_ref1", "OC_refR", "OC_refH", "O_refH", "OC_gtR", "OC_gtH"],
+    "H32": ["normal", "recent_gt", "dir_ok_mag_wrong", "dir_wrong_mag_ok", "mirror_same_dist", "random_mag_matched"],
+    "P1B": ["normal", "full_gt", "full_self", "recent_gt", "recent_self", "P_gt_s1_w1", "T_gt_s1_w1", "P_self_s2_w2",
+            "T_self_s2_w2", "P_gt_s4_w3"],
 }
+
+_MSA = {}
+
+
+def msa_tables(llm, A0):
+    """motion_semantics_ablation.py:166-171: token motion table and trained-token ids (from the live embeddings)."""
+    if not _MSA:
+        import pickle
+        import motion_semantics_ablation as MSA
+        act_emb = llm.get_input_embeddings().weight[A0:A0 + MSA.N_CODES].detach().float().cpu().numpy()
+        codebook = np.asarray(pickle.load(open(C.CODEBOOK, "rb"))["token_all"]["veh"])
+        untrained, _, _, _, _ = MSA.token_spaces(act_emb, codebook)
+        _MSA.update(MOT=MSA.token_motion(codebook), trained=np.where(~untrained)[0], MSA=MSA)
+    return _MSA
 
 
 def base_of(path, row):
@@ -135,6 +158,25 @@ def context(path, row, k, t, own, gt, ref, p, self_override=False):
         else:
             ctx, src = list(own), ["own"] * len(own)
         return [p] + ctx, ["pert"] + src
+    if path == "H32":                                                    # motion_semantics_ablation.py:234-251
+        name = row["name"]
+        if name == "normal" or not own:
+            return [p] + list(own), ["pert"] + ["own"] * len(own)
+        T = _MSA
+        prev_own, g_prev = int(own[-1]), int(gt[k - 1])
+        if self_override:
+            sub = prev_own
+        elif name == "recent_gt":
+            sub = g_prev
+        else:
+            rng = np.random.default_rng(int.from_bytes(hashlib.sha256(f"{row['_seed']}:{row['_token']}:{row['_pert']}:{k}:rand".encode()).digest()[:4], "little"))
+            sub = T["MSA"].motion_sub(name, g_prev, prev_own, T["MOT"], T["trained"], rng)
+        return [p] + own[:-1] + [int(sub)], ["pert"] + ["own"] * (len(own) - 1) + ["sub"]
+    if path == "P1B":                                                    # p1b_start_position.py:50-68 (imported)
+        import p1b_start_position as PB
+        g, r = (dyn(gt), dyn(ref)) if self_override else (gt, ref)
+        toks, tags = PB.ctx_tokens(row, k, t, p, own, g, r)
+        return toks, ["pert"] + tags[1:]
     if path == "H9":                                                     # temporal_feedback_window.py:189-197
         g = dyn(gt) if self_override else gt
         ctx, src = [], []
@@ -398,8 +440,11 @@ class Engine:
             ref, p = unit["ref_tokens"], unit["p_token"]
             prefix_actions, key, base_seq = ref[:t], "original", ref
         else:
-            ref, p = None, unit["forced_token"]
+            ref, p = unit.get("ref_tokens") if path == "P1B" else None, unit["forced_token"]
             prefix_actions, key, base_seq = pred[:t], unit["perturbation"], pred
+        if path == "H32":
+            msa_tables(self.llm, A0)
+            rows = [dict(r, _seed=seed, _token=token, _pert=key) for r in rows]
         groups = [[r] for r in rows] if alone else [rows]
         res = {"rows": {}, "path": path, "unit_id": unit["unit_id"], "decoding": decoding, "batch": batch, "forward": forward,
                "hooks": hooks, "self_override": self_override, "teacher_forced": force is not None,

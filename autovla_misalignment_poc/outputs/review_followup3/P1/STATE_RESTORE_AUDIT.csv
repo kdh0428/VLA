@@ -1,181 +1,201 @@
-action_maxabs,actions_bytes_equal,arm,b1_equal_batch8,cfg,components_at_first,control,exec_ctx_tokens_equal_all_generations,executor_equal,first_divergent_step,generate_equal_batch8,n_steps,pass,pass_policy_state_A5,pass_strict_prefixed_rule,restore_ok,seed,steps_equal_len,strict_fail_reason,success_equal,task,tcp_maxabs_m
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1007,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1007,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1007,True,,True,google_robot_move_near,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1007,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1007,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1007,True,,True,google_robot_move_near,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1043,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1043,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1043,True,,True,google_robot_move_near,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1043,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1043,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1043,True,,True,google_robot_move_near,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1092,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1092,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1092,True,,True,google_robot_move_near,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1092,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1092,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1092,True,,True,google_robot_move_near,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1095,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1095,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1095,True,,True,google_robot_move_near,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1095,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1095,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1095,True,,True,google_robot_move_near,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1104,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1104,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1104,True,,True,google_robot_move_near,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1104,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1104,,,True,google_robot_move_near,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1104,True,,True,google_robot_move_near,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,200,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,200,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,200,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,200,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,200,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,200,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,214,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,214,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,214,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,214,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,214,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,214,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,264,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,264,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,264,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,264,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,264,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,264,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,273,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,273,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,273,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,273,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,273,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,273,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,286,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,286,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,286,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,
-,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,
-,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,
-0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0
-0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,286,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0
-0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,286,,,True,google_robot_pick_coke_can,0.0
-0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,286,True,,True,google_robot_pick_coke_can,0.0
-,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,
-,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,
-,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,200,,,,google_robot_pick_coke_can,
-,,T0 chunk,False,r4e1,,C4_t0_report,,,,False,,,,,,200,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,214,,,,google_robot_pick_coke_can,
-,,T0 chunk,False,r4e1,,C4_t0_report,,,,False,,,,,,214,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,264,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,264,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,273,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,273,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,286,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,286,,,,google_robot_pick_coke_can,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1007,,,,google_robot_move_near,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1007,,,,google_robot_move_near,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1043,,,,google_robot_move_near,
-,,T0 chunk,False,r4e1,,C4_t0_report,,,,False,,,,,,1043,,,,google_robot_move_near,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,False,,,,,,1092,,,,google_robot_move_near,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1092,,,,google_robot_move_near,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1095,,,,google_robot_move_near,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1095,,,,google_robot_move_near,
-,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1104,,,,google_robot_move_near,
-,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1104,,,,google_robot_move_near,
+action_maxabs,actions_bytes_equal,arm,b1_equal_batch8,cfg,components_at_first,control,exec_ctx_tokens_equal_all_generations,executor_equal,first_divergent_step,generate_equal_batch8,n_steps,pass,pass_policy_state_A5,pass_strict_prefixed_rule,restore_ok,seed,steps_equal_len,strict_fail_reason,success_equal,task,tcp_maxabs_m,sim_components_differing,exfp_policy_equal_all_steps,exfp_cf_differs_steps_first,exfp_cf_n_steps_differ,run
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1007,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1007,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1007,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1007,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1007,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1007,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1007,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1007,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1043,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1043,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1043,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1043,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1043,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1043,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1043,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1043,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1092,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1092,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1092,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1092,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1092,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1092,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1092,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1092,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1095,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1095,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1095,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1095,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1095,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1095,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1095,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1095,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,1104,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,1104,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,1104,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,1104,True,,True,google_robot_move_near,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,1104,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_move_near,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,1104,,,True,google_robot_move_near,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,1104,True,,True,google_robot_move_near,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,1104,,,,google_robot_move_near,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,200,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,200,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,200,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,200,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,200,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,200,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,200,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,200,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,214,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,214,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,214,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,214,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,214,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,214,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,214,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,214,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,264,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,264,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,264,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,264,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,264,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,264,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,264,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,264,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,273,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,273,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,273,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,273,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,273,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,273,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,273,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,273,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r1e4,[],C5a,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r1e4,[],C1,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r1e4,"[""executor""]",C2,True,False,8,,80,True,True,False,,286,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r1e4,[],C3_restore,True,True,,,72,True,,True,True,286,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r1e4,[],C5b,True,True,,,80,True,,,,286,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r1e4,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,,,,,,
+0.0,True,natrep,,r4e1,[],C5a,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,hooknone,,r4e1,[],C1,True,True,,,80,True,,True,,286,True,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,nullfull,,r4e1,"[""executor""]",C2,True,False,8,,80,True,True,False,,286,True,executor fingerprint differs (includes P1-D shadow cf dict filled by null mode),True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,branchN,,r4e1,[],C3_restore,True,True,,,72,True,,True,True,286,,,True,google_robot_pick_coke_can,0.0,,,,,
+0.0,True,natural(run2),,r4e1,[],C5b,True,True,,,80,True,,,,286,True,,True,google_robot_pick_coke_can,0.0,,,,,
+,,feedback,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,,,,,,
+,,corrected,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,,,,,,
+,,reverse,,r4e1,[],P1C_branch_restore,,True,,,8,True,,,True,286,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,200,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,False,r4e1,,C4_t0_report,,,,False,,,,,,200,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,214,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,False,r4e1,,C4_t0_report,,,,False,,,,,,214,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,264,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,264,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,273,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,273,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,286,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,286,,,,google_robot_pick_coke_can,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1007,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1007,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1043,,,,google_robot_move_near,,,,,,
+,,T0 chunk,False,r4e1,,C4_t0_report,,,,False,,,,,,1043,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,False,,,,,,1092,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1092,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1095,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1095,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r1e4,,C4_t0_report,,,,True,,,,,,1104,,,,google_robot_move_near,,,,,,
+,,T0 chunk,True,r4e1,,C4_t0_report,,,,True,,,,,,1104,,,,google_robot_move_near,,,,,,
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,1007,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,1007,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,1043,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,1043,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,1092,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,1092,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,1095,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,1095,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,1104,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,1104,,,,google_robot_move_near,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,200,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,200,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,214,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,214,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,264,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,264,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,273,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,273,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r1e4,,C2_A5_split,,,,,80,True,,,,286,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun
+,True,nullfull,,r4e1,,C2_A5_split,,,,,80,True,,,,286,,,,google_robot_pick_coke_can,0.0,[],True,[8],16,outputs/review_followup3/P1/svla_gate/a5_rerun

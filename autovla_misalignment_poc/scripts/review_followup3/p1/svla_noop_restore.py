@@ -115,6 +115,21 @@ def exec_fp(ex):
     return HB("|".join(parts).encode())
 
 
+def exec_fp_policy(ex):
+    """AMENDMENT P1-02: policy state only (chunks, sticky state, K, E); excludes the shadow-cf bookkeeping dict."""
+    parts = [f"{g}:{np.asarray(c, np.float64).tobytes().hex()}" for g, c in ex.chunks]
+    for a in ("sticky_on", "repeat", "sticky_action", "prev_grip", "K", "E"):
+        if hasattr(ex, a):
+            v = getattr(ex, a)
+            parts.append(f"{a}={np.asarray(v, np.float64).tolist() if v is not None else None}")
+    return HB("|".join(parts).encode())
+
+
+def exec_fp_cf(ex):
+    """AMENDMENT P1-02: the shadow-cf bookkeeping dict alone (reported only)."""
+    return HB("|".join(f"cf{g}:{np.asarray(c, np.float64).tobytes().hex()}" for g, c in sorted(ex.cf.items())).encode())
+
+
 def worker(conn):
     for k, v in (("LP_NUM_THREADS", "2"), ("OMP_NUM_THREADS", "1"), ("MKL_NUM_THREADS", "1"), ("OPENBLAS_NUM_THREADS", "1")):
         os.environ[k] = v
@@ -307,6 +322,7 @@ def main() -> None:
             ep = active[w]
             img, dn, tr, fp, binfo = pipes[w].recv()
             ep["img"] = img; ep["rec"][-1]["fp"] = fp; ep["rec"][-1]["exfp"] = exec_fp(ep["ex"])
+            ep["rec"][-1]["exfp_policy"] = exec_fp_policy(ep["ex"]); ep["rec"][-1]["exfp_cf"] = exec_fp_cf(ep["ex"])
             ep["t"] += 1; ep["success"] = dn
             for k, v in binfo.items():
                 ep["ever"][k] = ep["ever"].get(k, False) or v

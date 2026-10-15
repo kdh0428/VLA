@@ -137,3 +137,58 @@ Rollout-saving path (C1 input of §6.2 / Fig 1): stored `traj_xyh` vs re-decoded
 | C3 / P1-C restore | branchN | 20 | 20/20 bitwise for t ≥ 8, restore ok |
 | P1-C branch restore | F / C / R | 60 | 60/60 identical full state up to T0 |
 | C4 analogue (report) | T0 chunk | 20 | B = 1 == batch-8: 17/20; generate == batch-8: 16/20 |
+
+## O0 extension: exp 32 motion-semantics (H32) and P1-B start-position (P1B) paths (AMENDMENT_P1_03, CP2 Stage 3)
+
+Run `gate_O0/`: run1 = c1-c5, run2 = c5 in a separate process; 24.8 min + run2; peak 10.9 GB; RTX 5090. Manifest `stage0_manifest_O0.json` = the 9 Stage-0 alt0 units (same fixed hash rule, no outcome use) on both paths. Tolerances and rules unchanged (T_exact 0, T_equiv 0.75). Neither script installs hooks, so c1 / c2_hook are not applicable (as H9 / P1A).
+
+| path | verdict |
+|---|---|
+| H32 | PASS |
+| P1B | PASS |
+
+| control | path | decoding | class | rows | fail | max abs dlogit | flips (all explained unless failed) | suffix-equal rows |
+|---|---|---|---|---|---|---|---|---|
+| c2_token | H32 | greedy | equiv | 54 | 0 | 0 | 0 | 54 |
+| c2_token | H32 | t001 | equiv | 54 | 0 | 0 | 0 | 54 |
+| c2_token | P1B | greedy | equiv | 477 | 0 | 0 | 0 | 477 |
+| c2_token | P1B | t001 | equiv | 477 | 0 | 0 | 0 | 477 |
+| c3a_incremental | H32 | greedy | equiv | 9 | 0 | 0.4062 | 0 | 9 |
+| c3a_incremental | H32 | t001 | equiv | 9 | 0 | 0.4062 | 0 | 9 |
+| c3a_incremental | P1B | greedy | equiv | 54 | 0 | 0.4062 | 4 | 54 |
+| c3a_incremental | P1B | t001 | equiv | 54 | 0 | 0.4062 | 4 | 54 |
+| c3b_deep_invalidate | H32 | greedy | equiv | 54 | 0 | 0.625 | 5 | 54 |
+| c3b_deep_invalidate | H32 | t001 | equiv | 54 | 0 | 0.625 | 5 | 54 |
+| c3b_deep_invalidate | P1B | greedy | equiv | 90 | 0 | 0.375 | 11 | 90 |
+| c3b_deep_invalidate | P1B | t001 | equiv | 90 | 0 | 0.375 | 8 | 90 |
+| c4_free | H32 | greedy | report | 54 | 0 | 0.4375 | 8 | 46 |
+| c4_free | H32 | t001 | report | 54 | 0 | 0.4375 | 8 | 49 |
+| c4_free | P1B | greedy | report | 90 | 0 | 0.5312 | 16 | 74 |
+| c4_free | P1B | t001 | report | 90 | 0 | 0.5312 | 13 | 86 |
+| c4_tf | H32 | greedy | equiv | 54 | 0 | 0.4375 | 9 | 54 |
+| c4_tf | H32 | t001 | equiv | 54 | 0 | 0.4375 | 9 | 54 |
+| c4_tf | P1B | greedy | equiv | 90 | 0 | 0.5312 | 16 | 90 |
+| c4_tf | P1B | t001 | equiv | 90 | 0 | 0.5312 | 13 | 90 |
+| c5a | H32 | greedy | exact | 54 | 0 | 0 | 0 | 54 |
+| c5a | H32 | t001 | exact | 54 | 0 | 0 | 0 | 54 |
+| c5a | P1B | greedy | exact | 477 | 0 | 0 | 0 | 477 |
+| c5a | P1B | t001 | exact | 477 | 0 | 0 | 0 | 477 |
+| c5b | H32 | greedy | exact | 108 | 0 | 0 | 0 | 0 |
+| c5b | H32 | t001 | exact | 108 | 0 | 0 | 0 | 0 |
+| c5b | P1B | greedy | exact | 567 | 0 | 0 | 0 | 0 |
+| c5b | P1B | t001 | exact | 567 | 0 | 0 | 0 | 0 |
+| c5c_free | H32 | greedy | report | 54 | 0 | 0.5 | 3 | 51 |
+| c5c_free | H32 | t001 | report | 54 | 0 | 0.5 | 4 | 48 |
+| c5c_free | P1B | greedy | report | 90 | 0 | 0.5312 | 9 | 82 |
+| c5c_free | P1B | t001 | report | 90 | 0 | 0.5312 | 9 | 78 |
+| c5c_tf | H32 | greedy | equiv | 54 | 0 | 0.5 | 4 | 54 |
+| c5c_tf | H32 | t001 | equiv | 54 | 0 | 0.5 | 6 | 54 |
+| c5c_tf | P1B | greedy | equiv | 90 | 0 | 0.5312 | 10 | 90 |
+| c5c_tf | P1B | t001 | equiv | 90 | 0 | 0.5312 | 10 | 90 |
+| c5d | H32 | t001 | report | 54 | 0 | 0 | 0 | 0 |
+| c5d | P1B | t001 | report | 477 | 0 | 0 | 0 | 0 |
+
+Failures (0):
+
+
+Notes: c5b cross-process 1,350/1,350 rows with identical logits sha and suffix, max |dlogit| 0.0 (the c5b `suffix-equal rows` column is a display artefact, as above). c5d stored raw (T = 0.01): H32 vs exp 32 raw 54/54 rows equal; P1B vs P1-B raw 477/477 rows equal. Max |dlogit| over the equivalence controls 0.625 (H32 c3b) < 0.75; every flip explained. Free-run suffix agreement at B = 1 vs the experiment batch (c5c_free, report only): H32 48-51/54, P1B 78-82/90; full recompute free runs (c4_free): H32 46-49/54, P1B 74-86/90 - the batch-shape numeric floor, not the intervention machinery (M-A3).

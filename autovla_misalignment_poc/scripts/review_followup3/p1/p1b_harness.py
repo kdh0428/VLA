@@ -42,7 +42,11 @@ P1A_RAW = {"G": f"{E.POC}/outputs/review_followup/P1A_gt_free_reference/run_2026
            "GF": f"{E.POC}/outputs/review_followup/P1A_gt_free_reference/run_20261008/raw_fixedpos/records.jsonl"}
 APPEND_ONLY = {"H7": ["normal", "gt_history"], "H8": ["normal", "gt_history"],
                "H9": None,  # every H9 row is append-only (fixed absolute positions)
-               "P1A": ["U", "OC", "O1", "C1", "OC_ref1", "OC_refH", "O_refH", "OC_gtH"]}
+               "P1A": ["U", "OC", "O1", "C1", "OC_ref1", "OC_refH", "O_refH", "OC_gtH"],
+               "H32": ["normal"],                                                     # AMENDMENT P1-03
+               "P1B": ["normal", "full_gt", "full_self", "P_gt_s1_w1", "P_self_s2_w2", "P_gt_s4_w3"]}
+O0_RAW = {"H32": f"{E.POC}/outputs/motion_semantics_ablation/records.jsonl",
+          "P1B": f"{E.POC}/outputs/review_followup/P1B_start_position/run_20261008/raw/records.jsonl"}
 
 
 # ---------------------------------------------------------------------------------------------- comparison
@@ -131,6 +135,14 @@ def load_stored(units):
         x = json.loads(line)
         if x["token"] in want and "alt0" in x["perturbations"]:
             st[("H7", x["token"])] = {c: v["action_idx"] for c, v in x["perturbations"]["alt0"]["conditions"].items()}
+    for line in open(O0_RAW["H32"]):                                       # AMENDMENT P1-03 diagnostics
+        x = json.loads(line)
+        if x["token"] in want and x["perturbation"] == "alt0":
+            st[("H32", x["token"])] = {c: v["action_idx"] for c, v in x["conditions"].items()}
+    for line in open(O0_RAW["P1B"]):
+        x = json.loads(line)
+        if x["token"] in want and x["perturbation"] == "alt0":
+            st[("P1B", x["token"])] = {c: v["action_idx"] for c, v in x["rows"].items()}
     ids = {u["p1a_raw_unit_id"] for u in units if "P1A" in u["paths"]}
     for fam, f in P1A_RAW.items():
         for line in open(f):
@@ -213,14 +225,14 @@ def main():
                         B1f = eng.decode(path, u, e, stub_of[u["scene"]], batch="1", row_names=rows1, **kw)
                         emit("c5c_free", path, u, dec, compare(A, B1f))
                     if dec == "t001":
-                        key = ("H7", u["scene"]) if path == "H7" else ("P1A", u.get("p1a_raw_unit_id"))
+                        key = (path, u["scene"]) if path in ("H7", "H32", "P1B") else ("P1A", u.get("p1a_raw_unit_id"))
                         if key in stored:
                             for n, toks in stored[key].items():
                                 if n in A["rows"]:
                                     fc.write(C.jdump({"control": "c5d", "path": path, "unit_id": u["unit_id"], "decoding": dec,
                                                       "row_b": n, "stored_equal": A["rows"][n]["acts"] == toks,
                                                       "first_divergence_step_index": next((i for i, (x, y) in enumerate(zip(A["rows"][n]["acts"], toks)) if x != y), None),
-                                                      "stored_source": "exp7 raw (action_history_causal/records.jsonl)" if path == "H7" else "P1-A raw"}) + "\n")
+                                                      "stored_source": {"H7": "exp7 raw", "H32": "exp32 raw", "P1B": "P1-B raw"}.get(path, "P1-A raw")}) + "\n")
                             if path == "P1A":                                                # rollout-saving path (C1 input of section 6.2)
                                 for n, tr in stored[("P1A_traj", u["p1a_raw_unit_id"])].items():
                                     toks = stored[key][n]

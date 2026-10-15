@@ -1,0 +1,140 @@
+{
+ "script": "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/p1b_harness.py",
+ "argv": [
+  "/root/VLA/autovla_misalignment_poc/scripts/review_followup3/p1/p1b_harness.py",
+  "--manifest",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P1/stage0_manifest_O0.json",
+  "--out",
+  "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P1/gate_O0/run1",
+  "--controls",
+  "c1,c2,c3,c4,c5",
+  "--paths",
+  "H32,P1B",
+  "--decodings",
+  "greedy,t001"
+ ],
+ "manifest": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P1/stage0_manifest_O0.json",
+ "controls": [
+  "c1",
+  "c2",
+  "c3",
+  "c4",
+  "c5"
+ ],
+ "paths": [
+  "H32",
+  "P1B"
+ ],
+ "decodings": [
+  "greedy",
+  "t001"
+ ],
+ "units": [
+  "c05f89f644505f4c|alt0",
+  "434f74e0c3e25cdd|alt0",
+  "7f2a06cede325573|alt0",
+  "a7fb000f96b35f94|alt0",
+  "1a3c8066b86857b5|alt0",
+  "78e3ba9d36dc59a0|alt0",
+  "ac2da3da332b5a04|alt0",
+  "502fadfdde3554b2|alt0",
+  "c472d369df235104|alt0"
+ ],
+ "start_utc": "2026-10-15T12:14:38Z",
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "attn_implementation": "sdpa",
+ "dtype": "torch.bfloat16",
+ "temperature": 0.01,
+ "deterministic_algorithms": false,
+ "cudnn_deterministic": false,
+ "cudnn_benchmark": false,
+ "tf32_matmul": false,
+ "bf16_reduced_precision_reduction": true,
+ "CUBLAS_WORKSPACE_CONFIG": null,
+ "verbatim_sources": {
+  "H7_context_rule": {
+   "file": "action_history_causal.py",
+   "lines": "207-215",
+   "sha256": "449ead4cbb058fbe833cfbe3f3386004f12c7891f3e4124827bfdeba1e0ce875"
+  },
+  "H7_embed_hook": {
+   "file": "action_history_causal.py",
+   "lines": "118-128",
+   "sha256": "bc7b0fe3f452b3834ea85dd627d0b0e841f6c1fc742ffc24f3fbdb9db5a863a4"
+  },
+  "H7_attn_wrapper": {
+   "file": "action_history_causal.py",
+   "lines": "130-155",
+   "sha256": "4954f70f0a0dd58a4d0f21db66a207fc0a60d7a5fbb888970dafa423ebbc309f"
+  },
+  "H7_sampling": {
+   "file": "action_history_causal.py",
+   "lines": "227-235",
+   "sha256": "5ddbeb1e82ea579740c21a02ff882fc11d85fed07312c67478e5674b0344d5d3"
+  },
+  "H8_context_rule": {
+   "file": "prev_action_state_patching.py",
+   "lines": "288-296",
+   "sha256": "9a86805eaf9bb701c16ea2b9484db249ae52739d4a1f4ac795b06f30b53a65f2"
+  },
+  "H8_patch_plan": {
+   "file": "prev_action_state_patching.py",
+   "lines": "164-172",
+   "sha256": "9b0e4c20a7cb2f02677940e07cc625e47a863e0c9c1484ad69682505a979d95e"
+  },
+  "H8_apply_patch_and_hooks": {
+   "file": "prev_action_state_patching.py",
+   "lines": "174-213",
+   "sha256": "05bcecfac1fa25c24f89cd9387d5764feb0ecdd989243141c315356baca9662c"
+  },
+  "H8_sampling": {
+   "file": "prev_action_state_patching.py",
+   "lines": "319-326",
+   "sha256": "f0f7b860bd4f10527d564cea7004effe2209400920cb8724bd5b4a5981d891e0"
+  },
+  "H9_context_rule": {
+   "file": "temporal_feedback_window.py",
+   "lines": "189-197",
+   "sha256": "584c9a4df8a67b239364512bb93771ad8d1674e7d6b4dcbbea8e72511fee3665"
+  },
+  "P1A_context_for": {
+   "file": "review_followup/p1ab/p1a_gt_free_reference.py",
+   "lines": "72-85",
+   "sha256": "1c9df68e708744f4c6b372daa737835ad6b8eb31628d96aef870eedcdbf94f4a"
+  },
+  "P1A_exec_acts": {
+   "file": "review_followup/p1ab/p1a_gt_free_reference.py",
+   "lines": "206-208",
+   "sha256": "a018346f7d0c8a5986777240f73b9003ca8e70248cc38fcedd955fc190dddb01"
+  },
+  "prefix_cache": {
+   "file": "review_followup/p1ab/p1_common.py",
+   "lines": "231-256",
+   "sha256": "cef0a4082b11def9409c694ad57259881177a2f060349b50280ad4992708c91c"
+  },
+  "forward_spans": {
+   "file": "review_followup/p1ab/p1_common.py",
+   "lines": "268-281",
+   "sha256": "41d688bb6d342f9f0d5e1fab67e263287da38ef39fe964449eada5dabb325d81"
+  }
+ },
+ "time_utc": "2026-10-15T12:14:38Z",
+ "host": "dhkang0428",
+ "python": "3.9.23",
+ "torch": "2.8.0+cu128",
+ "transformers": "4.49.0",
+ "cuda": "12.8",
+ "CUDA_VISIBLE_DEVICES": "1",
+ "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
+ "repo_head_VLA": "444299f7664a71fa441c39db6cdb210280bff432",
+ "repo_head_autovla": "ba34eed74ce6729e7986592d0e66cbaca397b4fa",
+ "checkpoint": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+ "checkpoint_size": 16292664780,
+ "codebook": "/root/VLA/autovla/codebook_cache/agent_vocab.pkl",
+ "codebook_sha256": "e6bf8eff32497eaefca66f488dda1edefe97ed2696d1d23c01839dc27422408e",
+ "config": "/root/VLA/autovla/config/training/qwen2.5-vl-3B-nuplan-grpo-cot.yaml",
+ "config_sha256": "8eea938f70f945f45fe70d9c528355a4dd790893a7c2d6f204c6f39ed9918caf",
+ "ed_records_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+ "precision": "bf16 model weights (AutoVLA default, autovla/models/autovla.py torch_dtype=bfloat16); logits cast to float64 before softmax/sampling",
+ "kv_cache": "prefix KV once per scene, expanded to B rows; post-t* span recomputed each step; cache.crop(P)"
+}
