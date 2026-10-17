@@ -1,0 +1,80 @@
+{
+ "bank": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/gate_stage0/bank.jsonl",
+ "sha256": "8795539e572fe8de3b8c879c3dbbb4ca734ad8eef1f4e130e54e20c62799e24d",
+ "n_units": 9,
+ "frozen_utc": "2026-10-17T21:29:26Z",
+ "units": {
+  "c05f89f644505f4c|alt0": {
+   "scene": "c05f89f644505f4c",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "stratum": "A+",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "434f74e0c3e25cdd|alt0": {
+   "scene": "434f74e0c3e25cdd",
+   "log": "2021.06.28.16.57.59_veh-26_00016_00484",
+   "stratum": "A+",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "7f2a06cede325573|alt0": {
+   "scene": "7f2a06cede325573",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "stratum": "A-",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "a7fb000f96b35f94|alt0": {
+   "scene": "a7fb000f96b35f94",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "stratum": "A+",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "1a3c8066b86857b5|alt0": {
+   "scene": "1a3c8066b86857b5",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "stratum": "A+",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "78e3ba9d36dc59a0|alt0": {
+   "scene": "78e3ba9d36dc59a0",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "stratum": "A+",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "ac2da3da332b5a04|alt0": {
+   "scene": "ac2da3da332b5a04",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "stratum": "A-",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "502fadfdde3554b2|alt0": {
+   "scene": "502fadfdde3554b2",
+   "log": "2021.08.30.14.54.34_veh-40_00885_00986",
+   "stratum": "A+",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  },
+  "c472d369df235104|alt0": {
+   "scene": "c472d369df235104",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "stratum": "A-",
+   "weight": 1.0,
+   "drive": null,
+   "day_vehicle": null
+  }
+ }
+}

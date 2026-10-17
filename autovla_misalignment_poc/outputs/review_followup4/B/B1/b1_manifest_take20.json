@@ -1,0 +1,2648 @@
+{
+ "rule": "B1 manifest (CPU, no model, no outcome read): Stage-0 rule (p1_stage0_manifest.py) with take = 8 per t* stratum.\npopulation 208 dev ED scenes; strata early {0,1} / middle {2,3} / late {4..7}; order sha256(\"P1-STAGE0-20261014|\"+token);\nunits: alt0 on H7/H8; P1A family G at t_p = t*, lowest available sector. No GF3.",
+ "take_per_stratum": 20,
+ "inputs": {
+  "ed_sha256": "dbd29d1b412b5c0b9be3e96696f237ea034d8945fa5c75592d41027d63db8972",
+  "references_sha256": "64e82843a7a5fca4fadb6784e1cc9d2476d54871f869ceb596c223a907f3a602"
+ },
+ "n_scenes": 56,
+ "n_units": 112,
+ "group_counts_scenes": {
+  "A-": 15,
+  "A+": 41
+ },
+ "units": [
+  {
+   "scene": "c05f89f644505f4c",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 0,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "c05f89f644505f4c|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1168,
+   "t_p": 1
+  },
+  {
+   "scene": "c05f89f644505f4c",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 0,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "c05f89f644505f4c|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    372,
+    1459,
+    1298,
+    647,
+    1246,
+    1613,
+    1613,
+    611,
+    1187,
+    339
+   ]
+  },
+  {
+   "scene": "434f74e0c3e25cdd",
+   "log": "2021.06.28.16.57.59_veh-26_00016_00484",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "434f74e0c3e25cdd|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 731,
+   "t_p": 1
+  },
+  {
+   "scene": "434f74e0c3e25cdd",
+   "log": "2021.06.28.16.57.59_veh-26_00016_00484",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "434f74e0c3e25cdd|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    82,
+    13,
+    155,
+    182,
+    865,
+    42,
+    105,
+    208,
+    1034,
+    1315
+   ]
+  },
+  {
+   "scene": "7f2a06cede325573",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "7f2a06cede325573|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 505,
+   "t_p": 1
+  },
+  {
+   "scene": "7f2a06cede325573",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "7f2a06cede325573|G:G_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster-left",
+   "t_p": 1,
+   "ref_tokens": [
+    1437,
+    1525,
+    1437,
+    1525,
+    1539,
+    981,
+    1565,
+    1249,
+    426,
+    834
+   ]
+  },
+  {
+   "scene": "15959d7a3d3a53f5",
+   "log": "2021.09.29.14.44.26_veh-28_01059_01191",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 3,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "15959d7a3d3a53f5|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 444,
+   "t_p": 1
+  },
+  {
+   "scene": "15959d7a3d3a53f5",
+   "log": "2021.09.29.14.44.26_veh-28_01059_01191",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 3,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "15959d7a3d3a53f5|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    1,
+    70,
+    102,
+    167,
+    19,
+    22,
+    1003,
+    386,
+    1525,
+    1570
+   ]
+  },
+  {
+   "scene": "604bdac2bba05309",
+   "log": "2021.08.30.13.45.25_veh-40_01116_01336",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 4,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "604bdac2bba05309|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1761,
+   "t_p": 1
+  },
+  {
+   "scene": "604bdac2bba05309",
+   "log": "2021.08.30.13.45.25_veh-40_01116_01336",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 4,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "604bdac2bba05309|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    1,
+    167,
+    74,
+    1003,
+    196,
+    30,
+    142,
+    810,
+    2008,
+    1012
+   ]
+  },
+  {
+   "scene": "ec68073cb7a15741",
+   "log": "2021.08.30.14.54.34_veh-40_00439_00835",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 5,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ec68073cb7a15741|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 71,
+   "t_p": 0
+  },
+  {
+   "scene": "ec68073cb7a15741",
+   "log": "2021.08.30.14.54.34_veh-40_00439_00835",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 5,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ec68073cb7a15741|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    69,
+    436,
+    1683,
+    102,
+    1,
+    14,
+    796,
+    0,
+    0,
+    126
+   ]
+  },
+  {
+   "scene": "f4991b521fa15f17",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A-",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 6,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "f4991b521fa15f17|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 405,
+   "t_p": 0
+  },
+  {
+   "scene": "f4991b521fa15f17",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A-",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 6,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "f4991b521fa15f17|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    187,
+    12,
+    8,
+    1,
+    14,
+    0,
+    126,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "scene": "ef9d931830115c03",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 7,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ef9d931830115c03|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1084,
+   "t_p": 1
+  },
+  {
+   "scene": "ef9d931830115c03",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 7,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ef9d931830115c03|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    14,
+    1,
+    114,
+    167,
+    22,
+    334,
+    429,
+    476,
+    480,
+    54
+   ]
+  },
+  {
+   "scene": "69dec5959d7d53a9",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 8,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "69dec5959d7d53a9|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1457,
+   "t_p": 1
+  },
+  {
+   "scene": "69dec5959d7d53a9",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 8,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "69dec5959d7d53a9|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    28,
+    314,
+    507,
+    1380,
+    1298,
+    1646,
+    1246,
+    1613,
+    385,
+    1187
+   ]
+  },
+  {
+   "scene": "350a93fe67645bf1",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 9,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "350a93fe67645bf1|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 372,
+   "t_p": 1
+  },
+  {
+   "scene": "350a93fe67645bf1",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 9,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "350a93fe67645bf1|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    6,
+    70,
+    125,
+    22,
+    261,
+    71,
+    429,
+    20,
+    1129,
+    501
+   ]
+  },
+  {
+   "scene": "9fc65b945c175ebb",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 10,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9fc65b945c175ebb|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1637,
+   "t_p": 1
+  },
+  {
+   "scene": "9fc65b945c175ebb",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 10,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9fc65b945c175ebb|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    1516,
+    1609,
+    1637,
+    1998,
+    270,
+    1960,
+    1503,
+    383,
+    1096,
+    43
+   ]
+  },
+  {
+   "scene": "6b895016e28d513c",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 11,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "6b895016e28d513c|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 920,
+   "t_p": 1
+  },
+  {
+   "scene": "6b895016e28d513c",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 11,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "6b895016e28d513c|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    1835,
+    939,
+    874,
+    1498,
+    690,
+    1552,
+    2040,
+    1339,
+    1665,
+    1897
+   ]
+  },
+  {
+   "scene": "8723bbb08b8e5cc8",
+   "log": "2021.06.28.16.29.11_veh-38_01415_01821",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 12,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "8723bbb08b8e5cc8|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1230,
+   "t_p": 1
+  },
+  {
+   "scene": "8723bbb08b8e5cc8",
+   "log": "2021.06.28.16.29.11_veh-38_01415_01821",
+   "group": "A+",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 12,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "8723bbb08b8e5cc8|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    372,
+    6,
+    28,
+    0,
+    126,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "scene": "4f8d9bfa869553bb",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 13,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "4f8d9bfa869553bb|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 971,
+   "t_p": 0
+  },
+  {
+   "scene": "4f8d9bfa869553bb",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 13,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "4f8d9bfa869553bb|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    1547,
+    175,
+    231,
+    1450,
+    565,
+    75,
+    49,
+    177,
+    941,
+    266
+   ]
+  },
+  {
+   "scene": "947829285f5d5526",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 14,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "947829285f5d5526|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 21,
+   "t_p": 0
+  },
+  {
+   "scene": "947829285f5d5526",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 14,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "947829285f5d5526|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    11,
+    127,
+    199,
+    1874,
+    199,
+    21,
+    1874,
+    896,
+    896,
+    896
+   ]
+  },
+  {
+   "scene": "5e74b6a61b715f47",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 15,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "5e74b6a61b715f47|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 26,
+   "t_p": 1
+  },
+  {
+   "scene": "5e74b6a61b715f47",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A-",
+   "t_star": 1,
+   "stratum": "early",
+   "rank_in_stratum": 15,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "5e74b6a61b715f47|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 1,
+   "ref_tokens": [
+    1560,
+    2013,
+    1187,
+    1949,
+    1288,
+    1949,
+    1286,
+    1637,
+    1998,
+    606
+   ]
+  },
+  {
+   "scene": "9897a102ee075dee",
+   "log": "2021.09.29.19.02.14_veh-28_00273_00514",
+   "group": "A-",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 16,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9897a102ee075dee|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 424,
+   "t_p": 0
+  },
+  {
+   "scene": "9897a102ee075dee",
+   "log": "2021.09.29.19.02.14_veh-28_00273_00514",
+   "group": "A-",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 16,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9897a102ee075dee|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    70,
+    51,
+    16,
+    167,
+    19,
+    22,
+    261,
+    69,
+    71,
+    226
+   ]
+  },
+  {
+   "scene": "17a6a4a6137553cd",
+   "log": "2021.06.28.16.29.11_veh-38_01415_01821",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 17,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "17a6a4a6137553cd|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1053,
+   "t_p": 0
+  },
+  {
+   "scene": "17a6a4a6137553cd",
+   "log": "2021.06.28.16.29.11_veh-38_01415_01821",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 17,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "17a6a4a6137553cd|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    116,
+    189,
+    30,
+    196,
+    1003,
+    22,
+    125,
+    102,
+    70,
+    1132
+   ]
+  },
+  {
+   "scene": "d45dddb7bbfe5914",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 18,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "d45dddb7bbfe5914|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1266,
+   "t_p": 0
+  },
+  {
+   "scene": "d45dddb7bbfe5914",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 18,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "d45dddb7bbfe5914|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    860,
+    1903,
+    1738,
+    1366,
+    734,
+    1809,
+    1809,
+    184,
+    184,
+    184
+   ]
+  },
+  {
+   "scene": "604f30d83d8652ae",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 19,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "604f30d83d8652ae|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1004,
+   "t_p": 0
+  },
+  {
+   "scene": "604f30d83d8652ae",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 0,
+   "stratum": "early",
+   "rank_in_stratum": 19,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "604f30d83d8652ae|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 0,
+   "ref_tokens": [
+    1397,
+    268,
+    1770,
+    1045,
+    1437,
+    1570,
+    392,
+    910,
+    1249,
+    416
+   ]
+  },
+  {
+   "scene": "a7fb000f96b35f94",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 0,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "a7fb000f96b35f94|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 500,
+   "t_p": 2
+  },
+  {
+   "scene": "a7fb000f96b35f94",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 0,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "a7fb000f96b35f94|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1251,
+    1688,
+    1251,
+    1688,
+    1249,
+    1551,
+    1249,
+    1688,
+    426,
+    1688
+   ]
+  },
+  {
+   "scene": "1a3c8066b86857b5",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "1a3c8066b86857b5|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 976,
+   "t_p": 2
+  },
+  {
+   "scene": "1a3c8066b86857b5",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "1a3c8066b86857b5|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1365,
+    1245,
+    1636,
+    1714,
+    1733,
+    1733,
+    1714,
+    1733,
+    1271,
+    327
+   ]
+  },
+  {
+   "scene": "78e3ba9d36dc59a0",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "78e3ba9d36dc59a0|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1,
+   "t_p": 2
+  },
+  {
+   "scene": "78e3ba9d36dc59a0",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "78e3ba9d36dc59a0|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    14,
+    14,
+    837,
+    16,
+    834,
+    1249,
+    752,
+    1770,
+    1496,
+    939
+   ]
+  },
+  {
+   "scene": "ec8a3deaeb1a53ac",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 3,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ec8a3deaeb1a53ac|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1230,
+   "t_p": 2
+  },
+  {
+   "scene": "ec8a3deaeb1a53ac",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 3,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ec8a3deaeb1a53ac|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    0,
+    28,
+    6,
+    102,
+    312,
+    3,
+    226,
+    189,
+    116,
+    1012
+   ]
+  },
+  {
+   "scene": "12d283af921a5f09",
+   "log": "2021.05.25.14.24.08_veh-25_00934_01067",
+   "group": "A-",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 4,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "12d283af921a5f09|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1506,
+   "t_p": 3
+  },
+  {
+   "scene": "12d283af921a5f09",
+   "log": "2021.05.25.14.24.08_veh-25_00934_01067",
+   "group": "A-",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 4,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "12d283af921a5f09|G:G_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster-left",
+   "t_p": 3,
+   "ref_tokens": [
+    728,
+    258,
+    728,
+    1806,
+    1814,
+    1659,
+    212,
+    1205,
+    39,
+    371
+   ]
+  },
+  {
+   "scene": "750d0f9df6ef55a2",
+   "log": "2021.05.25.18.38.25_veh-25_04058_04186",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 5,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "750d0f9df6ef55a2|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 656,
+   "t_p": 2
+  },
+  {
+   "scene": "750d0f9df6ef55a2",
+   "log": "2021.05.25.18.38.25_veh-25_04058_04186",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 5,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "750d0f9df6ef55a2|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    0,
+    14,
+    372,
+    12,
+    187,
+    71,
+    189,
+    116,
+    54,
+    79
+   ]
+  },
+  {
+   "scene": "ac3410e696505284",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 6,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ac3410e696505284|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1761,
+   "t_p": 2
+  },
+  {
+   "scene": "ac3410e696505284",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 6,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ac3410e696505284|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    16,
+    16,
+    319,
+    372,
+    110,
+    28,
+    126,
+    0,
+    0,
+    28
+   ]
+  },
+  {
+   "scene": "110bec4c6d2153d7",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 7,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "110bec4c6d2153d7|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 967,
+   "t_p": 2
+  },
+  {
+   "scene": "110bec4c6d2153d7",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 7,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "110bec4c6d2153d7|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1806,
+    1806,
+    1257,
+    1814,
+    592,
+    1923,
+    692,
+    251,
+    1968,
+    1543
+   ]
+  },
+  {
+   "scene": "d44241b93dc95d36",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 8,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "d44241b93dc95d36|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1221,
+   "t_p": 3
+  },
+  {
+   "scene": "d44241b93dc95d36",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A+",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 8,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "d44241b93dc95d36|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 3,
+   "ref_tokens": [
+    1540,
+    1246,
+    385,
+    1613,
+    1187,
+    1434,
+    932,
+    274,
+    828,
+    1606
+   ]
+  },
+  {
+   "scene": "85159c024a355d8d",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A-",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 9,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "85159c024a355d8d|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 397,
+   "t_p": 2
+  },
+  {
+   "scene": "85159c024a355d8d",
+   "log": "2021.05.25.14.24.08_veh-25_04059_04203",
+   "group": "A-",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 9,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "85159c024a355d8d|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    11,
+    935,
+    21,
+    127,
+    127,
+    21,
+    1874,
+    1256,
+    309,
+    896
+   ]
+  },
+  {
+   "scene": "9cdaa8f652bf5a27",
+   "log": "2021.08.30.16.16.44_veh-40_01099_01351",
+   "group": "A-",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 10,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9cdaa8f652bf5a27|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1755,
+   "t_p": 2
+  },
+  {
+   "scene": "9cdaa8f652bf5a27",
+   "log": "2021.08.30.16.16.44_veh-40_01099_01351",
+   "group": "A-",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 10,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9cdaa8f652bf5a27|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    169,
+    1454,
+    303,
+    171,
+    515,
+    452,
+    42,
+    328,
+    712,
+    178
+   ]
+  },
+  {
+   "scene": "7b7ce3374d1e51dc",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A-",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 11,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "7b7ce3374d1e51dc|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1748,
+   "t_p": 3
+  },
+  {
+   "scene": "7b7ce3374d1e51dc",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A-",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 11,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "7b7ce3374d1e51dc|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 3,
+   "ref_tokens": [
+    1525,
+    836,
+    1325,
+    448,
+    753,
+    1560,
+    907,
+    1560,
+    754,
+    1560
+   ]
+  },
+  {
+   "scene": "a19dd8ff9c4e5fc7",
+   "log": "2021.09.16.14.39.34_veh-42_00032_00186",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 12,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "a19dd8ff9c4e5fc7|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 109,
+   "t_p": 2
+  },
+  {
+   "scene": "a19dd8ff9c4e5fc7",
+   "log": "2021.09.16.14.39.34_veh-42_00032_00186",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 12,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "a19dd8ff9c4e5fc7|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1208,
+    336,
+    42,
+    885,
+    1732,
+    425,
+    120,
+    120,
+    115,
+    731
+   ]
+  },
+  {
+   "scene": "e51779c52d7956bd",
+   "log": "2021.08.30.13.45.25_veh-40_01116_01336",
+   "group": "A-",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 13,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "e51779c52d7956bd|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 745,
+   "t_p": 2
+  },
+  {
+   "scene": "e51779c52d7956bd",
+   "log": "2021.08.30.13.45.25_veh-40_01116_01336",
+   "group": "A-",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 13,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "e51779c52d7956bd|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    191,
+    1770,
+    1835,
+    1770,
+    1019,
+    1498,
+    1552,
+    134,
+    366,
+    1831
+   ]
+  },
+  {
+   "scene": "bfbc82c4f65a5208",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 14,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "bfbc82c4f65a5208|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 16,
+   "t_p": 2
+  },
+  {
+   "scene": "bfbc82c4f65a5208",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 14,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "bfbc82c4f65a5208|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    16,
+    70,
+    14,
+    0,
+    0,
+    126,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "scene": "b958e6967993560f",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 15,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "b958e6967993560f|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1247,
+   "t_p": 3
+  },
+  {
+   "scene": "b958e6967993560f",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 15,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "b958e6967993560f|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 3,
+   "ref_tokens": [
+    1646,
+    1540,
+    696,
+    1613,
+    1613,
+    1187,
+    1932,
+    750,
+    988,
+    639
+   ]
+  },
+  {
+   "scene": "e6dae41a69575555",
+   "log": "2021.09.09.18.29.25_veh-39_00569_00903",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 16,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "e6dae41a69575555|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 804,
+   "t_p": 2
+  },
+  {
+   "scene": "e6dae41a69575555",
+   "log": "2021.09.09.18.29.25_veh-39_00569_00903",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 16,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "e6dae41a69575555|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    50,
+    50,
+    295,
+    295,
+    295,
+    23,
+    106,
+    1390,
+    328,
+    105
+   ]
+  },
+  {
+   "scene": "9fe281ced54b55b2",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 17,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9fe281ced54b55b2|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1245,
+   "t_p": 2
+  },
+  {
+   "scene": "9fe281ced54b55b2",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 17,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "9fe281ced54b55b2|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    1365,
+    1245,
+    1835,
+    1636,
+    1835,
+    976,
+    1636,
+    1733,
+    1636,
+    1733
+   ]
+  },
+  {
+   "scene": "c93a302d2fb2508f",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 18,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "c93a302d2fb2508f|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 530,
+   "t_p": 2
+  },
+  {
+   "scene": "c93a302d2fb2508f",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 2,
+   "stratum": "middle",
+   "rank_in_stratum": 18,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "c93a302d2fb2508f|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 2,
+   "ref_tokens": [
+    182,
+    523,
+    383,
+    202,
+    951,
+    202,
+    1174,
+    927,
+    1174,
+    1174
+   ]
+  },
+  {
+   "scene": "7ccfef5040b359df",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A+",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 19,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "7ccfef5040b359df|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1324,
+   "t_p": 3
+  },
+  {
+   "scene": "7ccfef5040b359df",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A+",
+   "t_star": 3,
+   "stratum": "middle",
+   "rank_in_stratum": 19,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "7ccfef5040b359df|G:G_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster-left",
+   "t_p": 3,
+   "ref_tokens": [
+    931,
+    931,
+    1130,
+    1130,
+    931,
+    1130,
+    347,
+    347,
+    931,
+    958
+   ]
+  },
+  {
+   "scene": "ac2da3da332b5a04",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A-",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 0,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "ac2da3da332b5a04|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 474,
+   "t_p": 7
+  },
+  {
+   "scene": "ac2da3da332b5a04",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A-",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 0,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "ac2da3da332b5a04|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 7,
+   "ref_tokens": [
+    12,
+    74,
+    312,
+    1041,
+    502,
+    1041,
+    842,
+    84,
+    89,
+    970
+   ]
+  },
+  {
+   "scene": "502fadfdde3554b2",
+   "log": "2021.08.30.14.54.34_veh-40_00885_00986",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "502fadfdde3554b2|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1357,
+   "t_p": 4
+  },
+  {
+   "scene": "502fadfdde3554b2",
+   "log": "2021.08.30.14.54.34_veh-40_00885_00986",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 1,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "502fadfdde3554b2|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 4,
+   "ref_tokens": [
+    167,
+    87,
+    562,
+    710,
+    1878,
+    1201,
+    700,
+    1998,
+    147,
+    585
+   ]
+  },
+  {
+   "scene": "c472d369df235104",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A-",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "c472d369df235104|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 125,
+   "t_p": 5
+  },
+  {
+   "scene": "c472d369df235104",
+   "log": "2021.09.16.19.27.01_veh-45_01749_03230",
+   "group": "A-",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 2,
+   "pilot": false,
+   "in_stage0": true,
+   "unit_id": "c472d369df235104|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    420,
+    1325,
+    310,
+    1643,
+    22,
+    87,
+    184,
+    155,
+    900,
+    37
+   ]
+  },
+  {
+   "scene": "2da6f8c86c135473",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 3,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "2da6f8c86c135473|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 639,
+   "t_p": 5
+  },
+  {
+   "scene": "2da6f8c86c135473",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 3,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "2da6f8c86c135473|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    575,
+    1060,
+    1187,
+    905,
+    318,
+    456,
+    419,
+    516,
+    1158,
+    1321
+   ]
+  },
+  {
+   "scene": "f36dbc258c8b5e17",
+   "log": "2021.06.28.16.29.11_veh-38_01415_01821",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 4,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "f36dbc258c8b5e17|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 281,
+   "t_p": 5
+  },
+  {
+   "scene": "f36dbc258c8b5e17",
+   "log": "2021.06.28.16.29.11_veh-38_01415_01821",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 4,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "f36dbc258c8b5e17|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    653,
+    2,
+    282,
+    1255,
+    32,
+    394,
+    32,
+    394,
+    1537,
+    464
+   ]
+  },
+  {
+   "scene": "1134d05b608b54e8",
+   "log": "2021.09.16.19.12.04_veh-42_00289_00398",
+   "group": "A+",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 5,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "1134d05b608b54e8|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 115,
+   "t_p": 7
+  },
+  {
+   "scene": "1134d05b608b54e8",
+   "log": "2021.09.16.19.12.04_veh-42_00289_00398",
+   "group": "A+",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 5,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "1134d05b608b54e8|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 7,
+   "ref_tokens": [
+    224,
+    1277,
+    371,
+    371,
+    534,
+    13,
+    422,
+    534,
+    1752,
+    408
+   ]
+  },
+  {
+   "scene": "3d6cbc2a95885eef",
+   "log": "2021.09.09.18.29.25_veh-39_00569_00903",
+   "group": "A-",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 6,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "3d6cbc2a95885eef|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1492,
+   "t_p": 4
+  },
+  {
+   "scene": "3d6cbc2a95885eef",
+   "log": "2021.09.09.18.29.25_veh-39_00569_00903",
+   "group": "A-",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 6,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "3d6cbc2a95885eef|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 4,
+   "ref_tokens": [
+    51,
+    102,
+    167,
+    537,
+    125,
+    125,
+    12,
+    19,
+    74,
+    22
+   ]
+  },
+  {
+   "scene": "11356a48a75c5e31",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 7,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "11356a48a75c5e31|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 2037,
+   "t_p": 4
+  },
+  {
+   "scene": "11356a48a75c5e31",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 7,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "11356a48a75c5e31|G:G_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster-left",
+   "t_p": 4,
+   "ref_tokens": [
+    1019,
+    2021,
+    1498,
+    1601,
+    690,
+    1521,
+    2040,
+    113,
+    805,
+    1013
+   ]
+  },
+  {
+   "scene": "ecdc079932755e4e",
+   "log": "2021.08.30.13.45.25_veh-40_01116_01336",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 8,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ecdc079932755e4e|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 252,
+   "t_p": 5
+  },
+  {
+   "scene": "ecdc079932755e4e",
+   "log": "2021.08.30.13.45.25_veh-40_01116_01336",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 8,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "ecdc079932755e4e|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    303,
+    891,
+    66,
+    689,
+    142,
+    1229,
+    910,
+    1251,
+    19,
+    12
+   ]
+  },
+  {
+   "scene": "982671de6e755ca0",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 9,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "982671de6e755ca0|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 1714,
+   "t_p": 5
+  },
+  {
+   "scene": "982671de6e755ca0",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 9,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "982671de6e755ca0|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    1871,
+    1791,
+    1365,
+    1365,
+    1245,
+    920,
+    920,
+    1811,
+    687,
+    171
+   ]
+  },
+  {
+   "scene": "b9182baaae3b5ab2",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 10,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "b9182baaae3b5ab2|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 342,
+   "t_p": 4
+  },
+  {
+   "scene": "b9182baaae3b5ab2",
+   "log": "2021.06.03.13.55.17_veh-35_02866_03582",
+   "group": "A+",
+   "t_star": 4,
+   "stratum": "late",
+   "rank_in_stratum": 10,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "b9182baaae3b5ab2|G:G_faster-left",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster-left",
+   "t_p": 4,
+   "ref_tokens": [
+    2040,
+    931,
+    134,
+    112,
+    1010,
+    342,
+    1831,
+    112,
+    1208,
+    1497
+   ]
+  },
+  {
+   "scene": "40c083a3c4ff5b45",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 11,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "40c083a3c4ff5b45|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 123,
+   "t_p": 5
+  },
+  {
+   "scene": "40c083a3c4ff5b45",
+   "log": "2021.06.28.18.03.27_veh-14_00620_01581",
+   "group": "A-",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 11,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "40c083a3c4ff5b45|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    1952,
+    162,
+    2022,
+    315,
+    1193,
+    1193,
+    1154,
+    1683,
+    1988,
+    436
+   ]
+  },
+  {
+   "scene": "b8314864431a5665",
+   "log": "2021.08.30.16.16.44_veh-40_01099_01351",
+   "group": "A+",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 12,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "b8314864431a5665|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 84,
+   "t_p": 7
+  },
+  {
+   "scene": "b8314864431a5665",
+   "log": "2021.08.30.16.16.44_veh-40_01099_01351",
+   "group": "A+",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 12,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "b8314864431a5665|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 7,
+   "ref_tokens": [
+    480,
+    484,
+    1229,
+    226,
+    386,
+    261,
+    84,
+    842,
+    74,
+    12
+   ]
+  },
+  {
+   "scene": "f2d7208949535747",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 13,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "f2d7208949535747|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 454,
+   "t_p": 7
+  },
+  {
+   "scene": "f2d7208949535747",
+   "log": "2021.10.06.08.16.17_veh-52_01949_02501",
+   "group": "A+",
+   "t_star": 7,
+   "stratum": "late",
+   "rank_in_stratum": 13,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "f2d7208949535747|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 7,
+   "ref_tokens": [
+    2006,
+    369,
+    737,
+    737,
+    1719,
+    1719,
+    2022,
+    1246,
+    427,
+    427
+   ]
+  },
+  {
+   "scene": "7b095ec7e3f95c4a",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 14,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "7b095ec7e3f95c4a|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 952,
+   "t_p": 5
+  },
+  {
+   "scene": "7b095ec7e3f95c4a",
+   "log": "2021.06.28.16.29.11_veh-38_00022_00368",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 14,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "7b095ec7e3f95c4a|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    282,
+    2,
+    1127,
+    1265,
+    61,
+    285,
+    64,
+    1265,
+    451,
+    287
+   ]
+  },
+  {
+   "scene": "8cd8d1a23e4351f8",
+   "log": "2021.08.30.14.54.34_veh-40_00439_00835",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 15,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "8cd8d1a23e4351f8|alt0",
+   "paths": [
+    "H7",
+    "H8"
+   ],
+   "perturbation": "alt0",
+   "forced_token": 810,
+   "t_p": 5
+  },
+  {
+   "scene": "8cd8d1a23e4351f8",
+   "log": "2021.08.30.14.54.34_veh-40_00439_00835",
+   "group": "A+",
+   "t_star": 5,
+   "stratum": "late",
+   "rank_in_stratum": 15,
+   "pilot": false,
+   "in_stage0": false,
+   "unit_id": "8cd8d1a23e4351f8|G:G_faster",
+   "paths": [
+    "P1A"
+   ],
+   "family": "G",
+   "sector": "faster",
+   "t_p": 5,
+   "ref_tokens": [
+    41,
+    16,
+    74,
+    386,
+    476,
+    169,
+    216,
+    913,
+    79,
+    452
+   ]
+  }
+ ]
+}

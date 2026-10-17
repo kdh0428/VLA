@@ -1,0 +1,47 @@
+{
+ "unit_anchors": 16,
+ "units": 8,
+ "checks": {
+  "G1_noop_vs_NAT_NSRC": {
+   "n": 16,
+   "fail": 0,
+   "max": 0.0
+  },
+  "G1_value_identity": {
+   "n": 174,
+   "fail": 0,
+   "max": 0.0
+  },
+  "G2_bank_identity": {
+   "n": 16,
+   "fail": 0,
+   "max": 0.0
+  },
+  "G3_c5a": {
+   "n": 112,
+   "fail": 0,
+   "max": 0.0
+  },
+  "G4_full_recompute": {
+   "n": 112,
+   "fail": 0,
+   "max": 0.375
+  },
+  "G5_incremental": {
+   "n": 112,
+   "fail": 0,
+   "max": 0.375
+  },
+  "G6_pre_anchor_exec": {
+   "n": 16,
+   "fail": 0,
+   "max": 0.0
+  },
+  "G6_prefix_sha": {
+   "n": 16,
+   "fail": 0,
+   "max": 0.0
+  }
+ },
+ "PASS": true
+}

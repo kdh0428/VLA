@@ -1,0 +1,24 @@
+[gpu_wait] free 32149 MiB 2026-10-17T21:28:26Z
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.83s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.89s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[b2:A] c05f89f644505f4c|alt0 2.6s
+[b2:A] 434f74e0c3e25cdd|alt0 1.1s
+[b2:A] 7f2a06cede325573|alt0 1.1s
+[b2:A] a7fb000f96b35f94|alt0 1.0s
+[b2:A] 1a3c8066b86857b5|alt0 1.0s
+[b2:A] 78e3ba9d36dc59a0|alt0 1.0s
+[b2:A] ac2da3da332b5a04|alt0 0.9s
+[b2:A] 502fadfdde3554b2|alt0 1.0s
+[b2:A] c472d369df235104|alt0 0.9s
+[b2:B] c05f89f644505f4c|alt0 7.8s total 0.3 min
+[b2:B] 434f74e0c3e25cdd|alt0 7.7s total 0.4 min
+[b2:B] 7f2a06cede325573|alt0 7.7s total 0.6 min
+[b2:B] a7fb000f96b35f94|alt0 6.6s total 0.7 min
+[b2:B] 1a3c8066b86857b5|alt0 6.5s total 0.8 min
+[b2:B] 78e3ba9d36dc59a0|alt0 6.6s total 0.9 min
+[b2:B] ac2da3da332b5a04|alt0 0.4s total 0.9 min
+[b2:B] 502fadfdde3554b2|alt0 4.2s total 1.0 min
+[b2:B] c472d369df235104|alt0 3.1s total 1.0 min
+[done] 1.0 min

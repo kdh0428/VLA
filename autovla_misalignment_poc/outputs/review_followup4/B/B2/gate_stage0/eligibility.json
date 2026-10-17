@@ -1,0 +1,7 @@
+{
+ "cohort": "stage0",
+ "n_units_all": 9,
+ "n_units_eligible": 9,
+ "t_star_max": 4,
+ "excluded_t_star": []
+}
