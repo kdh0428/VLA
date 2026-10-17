@@ -73,7 +73,7 @@ Self-generated action context is a causal input to subsequent action generation 
 
 **Sources.**
 - Numbers: `numbers.json` (row IDs in brackets).
-- Verdicts: `autovla_misalignment_poc/outputs/review_followup3/CLAIM_EVIDENCE_MATRIX.md` (final).
+- Verdicts: `review_followup3/CLAIM_EVIDENCE_MATRIX.md` (final).
 - **This section supersedes conflicting wording above.** In particular, the abstract's opening sentence and the conclusion's first sentence are replaced (R1, R2).
 
 ### A. KEEP (use as written)

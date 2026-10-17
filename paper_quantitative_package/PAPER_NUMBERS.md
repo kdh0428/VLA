@@ -40,7 +40,7 @@
 - Claim 23: 운동 외삽 대조.
 - Claim 24: 개입 machinery 검증 범위.
 - `tables.tex` Table 8–11은 `numbers.json`에서 기계 생성했습니다(`cp2_tables.py`).
-- 최종 판정: `autovla_misalignment_poc/outputs/review_followup3/CLAIM_EVIDENCE_MATRIX.md`.
+- 최종 판정: `review_followup3/CLAIM_EVIDENCE_MATRIX.md`.
 
 ---
 
