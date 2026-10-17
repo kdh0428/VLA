@@ -1,0 +1,22 @@
+call_site,data,what,affected
+scripts/review_followup2/stats_core.py:244 signflip_ci,library,test inversion on shifted totals,AFFECTED for discrete/paired-binary outcomes with ties (zero-width / endpoint at 0); assumption false for delta != 0
+scripts/review_followup2/stats_core.py:310 tost(method='signflip'),library,one-sided sign-flip at +-margin,AFFECTED for paired-binary outcomes: size up to 0.078 at the margin in A1_TOST_SIZE_SIM (nominal 0.05)
+"scripts/review_followup2/stats_core.py:364 analyze(ci_inversion=True, margin=...)",library,calls signflip_ci/tost,affected via signflip_ci/tost when outcome is binary
+scripts/review_followup2/stats_core.py:166 signflip_test (delta=0),library,test at 0,NOT affected: valid under its stated symmetry null at 0 (= exact McNemar for iid paired binary)
+scripts/review_followup2/b_direct_effects.py:143/147 infer (signflip_ci / mc_inv_ci),SpatialVLA success,CIs of all 819 DIRECT_EFFECTS rows,AFFECTED -> recomputed here (CI_VALIDITY_AUDIT.csv block SpatialVLA)
+scripts/review_followup2/b_direct_effects.py:150 SC.tost(signflip),SpatialVLA success,TOST m=10/5 + Holm,AFFECTED -> recomputed (new_p_equiv_*)
+scripts/review_followup2/b_direct_effects.py:481/483 infer_light,SpatialVLA success (B4 table),success CI in B4_TRAJECTORY_VS_SUCCESS.csv,"AFFECTED (15 zero-width, 19 endpoint-at-0 rows); descriptive table; use CI_VALIDITY_AUDIT values for the same contrasts"
+scripts/review_followup3/p0_b_spatial_task_effects.py:110/112/114 infer_ND,SpatialVLA weighting sensitivity,physical/primary-equal-weight rows (different estimand),AFFECTED (3 endpoint-at-0 rows); not recomputed: post-hoc sensitivity estimand -> descriptive only
+scripts/review_followup3/p0_b_spatial_task_effects.py (via BDE.infer),SpatialVLA core per-task/pooled,SPATIAL_TASK_EFFECTS*.csv,AFFECTED -> = DIRECT_EFFECTS core rows (row_id P0B.*) recomputed here
+scripts/review_followup3/p0_e_openvla.py:108 BDE.mc_inv_ci,"OpenVLA success, 100 states",state_sf_inv_ci95,AFFECTED (C-N d8 upper end -7e-14: tie artefact) -> recomputed
+"scripts/review_followup3/p0_e_openvla.py:109 SC.tost(signflip, m=0.10)",OpenVLA success,p_equiv_m10_posthoc,AFFECTED -> recomputed
+scripts/review_followup3/p0_e_openvla.py:205 SC.signflip_ci per task,"OpenVLA success, 10 states/task",sf_inv_ci95 (150 rows),AFFECTED: 11 zero-width + 75 endpoint-at-0 -> recomputed
+scripts/review_followup2/a3_cluster_reanalysis.py:151/246 SC.analyze(margin=...),"AutoVLA scene-level rates / continuous metrics, drive clusters","sf_ci95/90, TOST","PARTLY affected: binary-event contrasts with many zero drive totals (1 endpoint-at-0 row: P1C DM F unit-weighted sf_ci90 lower -0.0); continuous metrics unaffected by ties; not recomputed here (AutoVLA, out of A1 scope) -> flag only"
+scripts/review_followup2/a3_cluster_reanalysis.py:362 SC.tost(bootstrap),AutoVLA,drive bootstrap TOST,not sign-flip; bootstrap percentile degenerates when all cluster totals equal (not observed in outputs)
+scripts/review_followup2/c_baseline_window.py:76/88/358 SC.analyze,AutoVLA baseline/window metrics,sf CI / TOST,continuous metrics; no degenerate rows found by the CSV scan
+scripts/review_followup3/p0_a_population.py:347 SC.analyze(ci_inversion=True),AutoVLA population effects,sf_ci95,no degenerate rows found by the CSV scan
+scripts/review_followup3/p0_d_dependence.py:200/296/390 SC.analyze,AutoVLA dependence subsets (6-7 drives),sf_ci95,"4 endpoint-at-0 rows in DEPENDENCE_disjoint_subsets.csv (vehicle/day-vehicle disjoint subsets, G=6-7) -> CI end at 0 is a tie artefact; read p (>= p_min = 2/2^G) not the CI; flag only"
+scripts/review_followup3/p0_c_reconcile.py:156 SC.analyze,AutoVLA reconciliation,sf_ci95,no degenerate rows found
+scripts/review_followup/p1c/analyze_p1c.py:226 signflip_ci (own copy),AutoVLA P1-C,sf_ci95/90,"same construction; 1 endpoint-at-0 row in A_autovla_cluster/p1c_subsets_drive_level.csv (S2 day-vehicle disjoint, G=7, RN P, CI [-0.064, 0.0], p = 0.0625 = p_min); flag only"
+scripts/review_followup3/p2_* MOTION_BASELINE_RESULTS (Geo rows),AutoVLA motion baseline,"ci95 [0,0]","12 zero-width rows = privileged Geo control that is 0 BY CONSTRUCTION (structural zero, n_informative_drives = 0): descriptive; not evidence of equality"
+scripts/review_followup3/cp2/p4_power_sim.py:123 diff_tost,power planning (not run),-,not a result

@@ -1,0 +1,181 @@
+{
+ "rule": "(written before any real-data recomputation; the real data are not read here):\n  R1  a method that returns a zero-width interval with positive probability while the true discordance probability\n      is > 0 is not a valid population interval -> excluded.\n  R2  iid paired units (OpenVLA initial states, SpatialVLA coke singletons): among the remaining candidates pick the\n      method with the highest MINIMUM coverage over the n = 100 scenarios (required >= 0.925); ties (within 0.005)\n      -> smaller mean |coverage - 0.95| -> smaller mean width. n = 10 coverage is reported (per-task OpenVLA rows) and,\n      if the selected method's minimum n = 10 coverage is < 0.925, per-task intervals are labelled low-validity.\n  R3  clustered units (SpatialVLA repeated states): same rule over the clustered scenarios for G = 53 and G = 10\n      separately among {old sign-flip inversion, cluster-robust t, cluster bootstrap percentile, Rao-Scott Newcombe}.\n      The naive (cluster-ignoring) Newcombe interval is shown for reference only and cannot be selected. If no method\n      reaches 0.925 minimum coverage for a cluster regime, intervals in that regime are marked NR (no valid\n      population interval) and used descriptively only.\n  R4  equivalence: a TOST procedure must keep P(declare equivalence | true |delta| = margin) <= 0.05 (+ MC error).",
+ "iid": {
+  "candidates": {
+   "old_signflip_inv": {
+    "min_cov_n100": 0.6334331242627741,
+    "mean_abs_dev_n100": 0.06048940804844262,
+    "mean_width_n100": 0.10480900386840893,
+    "max_P_zero_width_when_discordance>0": 0.9043820750088083,
+    "min_cov_n10": 0.09561792478830211,
+    "excluded_R1": true
+   },
+   "wald": {
+    "min_cov_n100": 0.6334331242627741,
+    "mean_abs_dev_n100": 0.05669331631122784,
+    "mean_width_n100": 0.10558139663728613,
+    "max_P_zero_width_when_discordance>0": 0.9043820750088083,
+    "min_cov_n10": 0.09550407587329028,
+    "excluded_R1": true
+   },
+   "newcombe10": {
+    "min_cov_n100": 0.9511726557143981,
+    "mean_abs_dev_n100": 0.025260964582847767,
+    "mean_width_n100": 0.12775303196724913,
+    "max_P_zero_width_when_discordance>0": 0.0,
+    "min_cov_n10": 0.9910302506000002,
+    "excluded_R1": false
+   },
+   "tango": {
+    "min_cov_n100": 0.9396736240196873,
+    "mean_abs_dev_n100": 0.012411781028685981,
+    "mean_width_n100": 0.12719357352877952,
+    "max_P_zero_width_when_discordance>0": 0.0,
+    "min_cov_n10": 0.9871487786000002,
+    "excluded_R1": false
+   }
+  },
+  "selected": "newcombe10",
+  "per_task_n10_low_validity": false
+ },
+ "clustered": {
+  "G=10": {
+   "candidates": {
+    "old_signflip_inv": {
+     "min_cov": 0.713,
+     "mean_abs_dev": 0.05624999999999998,
+     "mean_width": 0.2147194581219582,
+     "max_P_zero_width": 0.185,
+     "excluded_R1": true
+    },
+    "cluster_t": {
+     "min_cov": 0.778,
+     "mean_abs_dev": 0.03749999999999998,
+     "mean_width": 0.22352409101680681,
+     "max_P_zero_width": 0.185,
+     "excluded_R1": true
+    },
+    "cluster_bootstrap_pct": {
+     "min_cov": 0.693,
+     "mean_abs_dev": 0.08687499999999995,
+     "mean_width": 0.17998012020603193,
+     "max_P_zero_width": 0.185,
+     "excluded_R1": true
+    },
+    "rs_newcombe10": {
+     "min_cov": 0.937,
+     "mean_abs_dev": 0.018125000000000002,
+     "mean_width": 0.25023445180163706,
+     "max_P_zero_width": 0.0,
+     "excluded_R1": false
+    }
+   },
+   "selected": "rs_newcombe10",
+   "naive_newcombe_min_cov (reference)": 0.616,
+   "regime_NR": false
+  },
+  "G=53": {
+   "candidates": {
+    "old_signflip_inv": {
+     "min_cov": 0.927,
+     "mean_abs_dev": 0.012999999999999984,
+     "mean_width": 0.13843728970485186,
+     "max_P_zero_width": 0.021,
+     "excluded_R1": true
+    },
+    "cluster_t": {
+     "min_cov": 0.936,
+     "mean_abs_dev": 0.008874999999999994,
+     "mean_width": 0.13957288880450872,
+     "max_P_zero_width": 0.021,
+     "excluded_R1": true
+    },
+    "cluster_bootstrap_pct": {
+     "min_cov": 0.902,
+     "mean_abs_dev": 0.02862499999999993,
+     "mean_width": 0.13433006657301005,
+     "max_P_zero_width": 0.021,
+     "excluded_R1": true
+    },
+    "rs_newcombe10": {
+     "min_cov": 0.948,
+     "mean_abs_dev": 0.013500000000000012,
+     "mean_width": 0.154928024508154,
+     "max_P_zero_width": 0.0,
+     "excluded_R1": false
+    }
+   },
+   "selected": "rs_newcombe10",
+   "naive_newcombe_min_cov (reference)": 0.857,
+   "regime_NR": false
+  },
+  "G=120": {
+   "candidates": {
+    "old_signflip_inv": {
+     "min_cov": 0.873,
+     "mean_abs_dev": 0.0295,
+     "mean_width": 0.11793827809839058,
+     "max_P_zero_width": 0.015,
+     "excluded_R1": true
+    },
+    "cluster_t": {
+     "min_cov": 0.947,
+     "mean_abs_dev": 0.0072500000000000064,
+     "mean_width": 0.11885324722416843,
+     "max_P_zero_width": 0.015,
+     "excluded_R1": true
+    },
+    "cluster_bootstrap_pct": {
+     "min_cov": 0.919,
+     "mean_abs_dev": 0.012999999999999984,
+     "mean_width": 0.11625843749999998,
+     "max_P_zero_width": 0.015,
+     "excluded_R1": true
+    },
+    "rs_newcombe10": {
+     "min_cov": 0.96,
+     "mean_abs_dev": 0.018750000000000017,
+     "mean_width": 0.12801080016579885,
+     "max_P_zero_width": 0.0,
+     "excluded_R1": false
+    }
+   },
+   "selected": "rs_newcombe10",
+   "naive_newcombe_min_cov (reference)": 0.96,
+   "regime_NR": false
+  }
+ },
+ "interaction": {
+  "G=10": {
+   "old_signflip_inv": {
+    "min_cov": 0.928,
+    "max_P_zero_width": 0.016
+   },
+   "cluster_t": {
+    "min_cov": 0.942,
+    "max_P_zero_width": 0.016
+   },
+   "rs_newcombe10 MOVER difference": {
+    "min_cov": 0.98,
+    "max_P_zero_width": 0.0
+   }
+  },
+  "G=53": {
+   "old_signflip_inv": {
+    "min_cov": 0.938,
+    "max_P_zero_width": 0.002
+   },
+   "cluster_t": {
+    "min_cov": 0.947,
+    "max_P_zero_width": 0.002
+   },
+   "rs_newcombe10 MOVER difference": {
+    "min_cov": 0.982,
+    "max_P_zero_width": 0.0
+   }
+  }
+ },
+ "runtime_s": 167.87871479988098,
+ "seed": 20261017,
+ "R_cluster": 1000
+}

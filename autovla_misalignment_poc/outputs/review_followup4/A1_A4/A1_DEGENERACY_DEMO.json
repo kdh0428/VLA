@@ -1,0 +1,60 @@
+{
+ "input": "10 initial states, paired success difference d = 0 for all (e.g. C-F d8 task 5: 10/10 vs 10/10)",
+ "stats_core.signflip_ci": [
+  -2.495781359357352e-13,
+  2.495781359357352e-13
+ ],
+ "p_of_delta": [
+  {
+   "delta": 0.0,
+   "shifted_totals": "all 10 equal -0",
+   "p_two_sided": 1.0
+  },
+  {
+   "delta": 1e-14,
+   "shifted_totals": "all 10 equal -1e-14",
+   "p_two_sided": 1.0
+  },
+  {
+   "delta": 1e-13,
+   "shifted_totals": "all 10 equal -1e-13",
+   "p_two_sided": 1.0
+  },
+  {
+   "delta": 2.4e-13,
+   "shifted_totals": "all 10 equal -2.4e-13",
+   "p_two_sided": 0.109375
+  },
+  {
+   "delta": 2.6e-13,
+   "shifted_totals": "all 10 equal -2.6e-13",
+   "p_two_sided": 0.021484375
+  },
+  {
+   "delta": 1e-06,
+   "shifted_totals": "all 10 equal -1e-06",
+   "p_two_sided": 0.001953125
+  },
+  {
+   "delta": 0.05,
+   "shifted_totals": "all 10 equal -0.05",
+   "p_two_sided": 0.001953125
+  },
+  {
+   "delta": 0.3,
+   "shifted_totals": "all 10 equal -0.3",
+   "p_two_sided": 0.001953125
+  }
+ ],
+ "explanation": "signflip_ci keeps delta iff p(N - delta D) > 0.05. At delta = 0 all totals are 0 -> p = 1. For any delta whose shifted totals exceed the 1e-12 * max(1, sum|T|) tie tolerance (|delta| > ~2.5e-13 here), all 10 totals are -delta, i.e. the same sign; the observed sum is the most extreme of the 2^10 sign patterns -> p = 2/1024 = 0.002 < 0.05 -> rejected. Bisection therefore converges to the tolerance, giving +-2.4958e-13. The sign-flip null 'shifted totals symmetric about 0' can only hold at delta = 0 for a {-1, 0, 1} difference with zeros: the zeros become -delta, so H0: theta = delta != 0 never implies symmetry. The interval is an artefact of the tie tolerance, not a statement about any estimand.",
+ "one_sided_case": {
+  "input": "1 discordant state (-1), 9 concordant (e.g. C-F d8 task 7)",
+  "stats_core.signflip_ci": [
+   -0.3333333333339418,
+   2.4654167596338535e-13
+  ],
+  "p_at_delta=+1e-6": 0.001953125,
+  "p_at_delta=0": 1.0,
+  "explanation": "any delta > tol makes all 10 shifted totals negative -> p = 2/1024; the upper end is pinned at 0 (+tol) although only ONE state is discordant and the exact McNemar p is 1."
+ }
+}

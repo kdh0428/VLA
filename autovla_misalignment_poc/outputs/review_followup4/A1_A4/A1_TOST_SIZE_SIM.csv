@@ -1,0 +1,43 @@
+design,scenario,n,true_delta,margin,procedure,P_declare_equivalent,nominal_max,computation,kappa,G,reps
+iid paired units,"T1 n=100 delta=-0.10, m=0.10",100,-0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.0556772,0.05,exact enumeration,,,
+iid paired units,"T1 n=100 delta=-0.10, m=0.10",100,-0.1,0.1,newcombe10 90% CI inside +-m,0.0478602,0.05,exact enumeration,,,
+iid paired units,"T1 n=100 delta=-0.10, m=0.10",100,-0.1,0.1,tango score TOST (90% CI inside +-m),0.0476497,0.05,exact enumeration,,,
+iid paired units,"T1 n=100 delta=-0.10, m=0.10",100,-0.1,0.1,wald 90% CI inside +-m,0.0561788,0.05,exact enumeration,,,
+iid paired units,"T2 n=100 delta=+0.05, m=0.05",100,0.05,0.05,old_signflip_TOST (p_equiv<0.05),0.078606,0.05,exact enumeration,,,
+iid paired units,"T2 n=100 delta=+0.05, m=0.05",100,0.05,0.05,newcombe10 90% CI inside +-m,0.0417725,0.05,exact enumeration,,,
+iid paired units,"T2 n=100 delta=+0.05, m=0.05",100,0.05,0.05,tango score TOST (90% CI inside +-m),0.024453,0.05,exact enumeration,,,
+iid paired units,"T2 n=100 delta=+0.05, m=0.05",100,0.05,0.05,wald 90% CI inside +-m,0.078606,0.05,exact enumeration,,,
+iid paired units,"T3 n=120 delta=+0.10, m=0.10 (low discordance)",120,0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.0762744,0.05,exact enumeration,,,
+iid paired units,"T3 n=120 delta=+0.10, m=0.10 (low discordance)",120,0.1,0.1,newcombe10 90% CI inside +-m,0.0495739,0.05,exact enumeration,,,
+iid paired units,"T3 n=120 delta=+0.10, m=0.10 (low discordance)",120,0.1,0.1,tango score TOST (90% CI inside +-m),0.0418164,0.05,exact enumeration,,,
+iid paired units,"T3 n=120 delta=+0.10, m=0.10 (low discordance)",120,0.1,0.1,wald 90% CI inside +-m,0.0762744,0.05,exact enumeration,,,
+G=10 (move_near physical layouts),"C2 low discordance, delta=+0.05",120,0.05,0.05,old_signflip_TOST (p_equiv<0.05),0.06,0.05,Monte Carlo,2,10,1000
+G=10 (move_near physical layouts),"C2 low discordance, delta=+0.05",120,0.05,0.05,rs_newcombe10 90% CI inside +-m,0.038,0.05,Monte Carlo,2,10,1000
+G=10 (move_near physical layouts),"C2 low discordance, delta=+0.05",120,0.05,0.05,cluster_t 90% CI inside +-m,0.059,0.05,Monte Carlo,2,10,1000
+G=10 (move_near physical layouts),"C2 low discordance, delta=+0.05",120,0.05,0.05,old_signflip_TOST (p_equiv<0.05),0.025,0.05,Monte Carlo,10,10,1000
+G=10 (move_near physical layouts),"C2 low discordance, delta=+0.05",120,0.05,0.05,rs_newcombe10 90% CI inside +-m,0.015,0.05,Monte Carlo,10,10,1000
+G=10 (move_near physical layouts),"C2 low discordance, delta=+0.05",120,0.05,0.05,cluster_t 90% CI inside +-m,0.028,0.05,Monte Carlo,10,10,1000
+G=10 (move_near physical layouts),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.04,0.05,Monte Carlo,2,10,1000
+G=10 (move_near physical layouts),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,rs_newcombe10 90% CI inside +-m,0.046,0.05,Monte Carlo,2,10,1000
+G=10 (move_near physical layouts),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,cluster_t 90% CI inside +-m,0.047,0.05,Monte Carlo,2,10,1000
+G=10 (move_near physical layouts),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.052,0.05,Monte Carlo,10,10,1000
+G=10 (move_near physical layouts),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,rs_newcombe10 90% CI inside +-m,0.052,0.05,Monte Carlo,10,10,1000
+G=10 (move_near physical layouts),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,cluster_t 90% CI inside +-m,0.051,0.05,Monte Carlo,10,10,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C2 low discordance, delta=+0.05",120,0.05,0.05,old_signflip_TOST (p_equiv<0.05),0.021,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,2,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C2 low discordance, delta=+0.05",120,0.05,0.05,rs_newcombe10 90% CI inside +-m,0.006,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,2,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C2 low discordance, delta=+0.05",120,0.05,0.05,cluster_t 90% CI inside +-m,0.022,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,2,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C2 low discordance, delta=+0.05",120,0.05,0.05,old_signflip_TOST (p_equiv<0.05),0.01,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,10,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C2 low discordance, delta=+0.05",120,0.05,0.05,rs_newcombe10 90% CI inside +-m,0.004,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,10,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C2 low discordance, delta=+0.05",120,0.05,0.05,cluster_t 90% CI inside +-m,0.011,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,10,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.063,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,2,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,rs_newcombe10 90% CI inside +-m,0.063,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,2,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,cluster_t 90% CI inside +-m,0.07,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,2,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.053,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,10,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,rs_newcombe10 90% CI inside +-m,0.05,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,10,53,1000
+G=53 (move_near instruction-inclusive initial states; exp35 design),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,cluster_t 90% CI inside +-m,0.056,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,10,53,1000
+G=120 singletons (coke),"C2 low discordance, delta=+0.05",120,0.05,0.05,old_signflip_TOST (p_equiv<0.05),0.017,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,inf,120,1000
+G=120 singletons (coke),"C2 low discordance, delta=+0.05",120,0.05,0.05,rs_newcombe10 90% CI inside +-m,0.009,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,inf,120,1000
+G=120 singletons (coke),"C2 low discordance, delta=+0.05",120,0.05,0.05,cluster_t 90% CI inside +-m,0.023,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,inf,120,1000
+G=120 singletons (coke),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,old_signflip_TOST (p_equiv<0.05),0.052,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,inf,120,1000
+G=120 singletons (coke),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,rs_newcombe10 90% CI inside +-m,0.055,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,inf,120,1000
+G=120 singletons (coke),"C4 moderate discordance, delta=-0.10",120,-0.1,0.1,cluster_t 90% CI inside +-m,0.055,0.05,Monte Carlo; old TOST MC sign-flip reps=2000,inf,120,1000
