@@ -1,0 +1,12 @@
+{
+ "tokens": [
+  "00137a5ce92d591c",
+  "003a1fdca9505c09",
+  "008844070af456e3",
+  "00abc794f8ce5195"
+ ],
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "torch": "2.8.0+cu128",
+ "elapsed_min": 1.8657316446304322,
+ "peak_mem_gb": 17.652793856
+}

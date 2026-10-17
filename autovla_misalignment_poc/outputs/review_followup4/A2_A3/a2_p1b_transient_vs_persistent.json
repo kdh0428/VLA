@@ -1,0 +1,189 @@
+{
+ "common_tstar_le2": {
+  "n_units": 326,
+  "n_scenes": 46,
+  "n_drives": 12,
+  "amplification_levels": {
+   "normal": 0.48339371980676327,
+   "full_gt": 0.036016218081435465,
+   "P_gt_s1_w3": 0.08531746031746032,
+   "T_gt_s1_w3": 0.13297964113181507,
+   "recent_gt": 0.07561249137336093
+  },
+  "amplification_fraction_P_gt_s1_w3": {
+   "est": 0.8897994600848438,
+   "ci95": [
+    0.7945768039440447,
+    0.9801980198019801
+   ]
+  },
+  "amplification_fraction_T_gt_s1_w3": {
+   "est": 0.7832626301581184,
+   "ci95": [
+    0.6400486167146913,
+    0.8655270797965834
+   ]
+  },
+  "amplification_fraction_recent_gt": {
+   "est": 0.9114924797531817,
+   "ci95": [
+    0.8784565394634218,
+    0.9619801951533735
+   ]
+  },
+  "amplification_T_minus_P": {
+   "est": 0.047662180814354735,
+   "ci95": [
+    0.028990299823633152,
+    0.07799785623061484
+   ],
+   "unit": "pp/100"
+  },
+  "amplification_unit_discordant": {
+   "T_only": 22,
+   "P_only": 5
+  },
+  "fde5_levels": {
+   "normal": 6.61877206470423,
+   "full_gt": 1.7992550509665322,
+   "P_gt_s1_w3": 2.1771468044138387,
+   "T_gt_s1_w3": 2.9558736893550397,
+   "recent_gt": 2.4074876812637456
+  },
+  "fde5_fraction_P_gt_s1_w3": {
+   "est": 0.9215913643690534,
+   "ci95": [
+    0.8703779138829114,
+    0.9732231842102764
+   ]
+  },
+  "fde5_fraction_T_gt_s1_w3": {
+   "est": 0.7600135791425475,
+   "ci95": [
+    0.6997758076089576,
+    0.8280864352818251
+   ]
+  },
+  "fde5_fraction_recent_gt": {
+   "est": 0.873798011592554,
+   "ci95": [
+    0.8201873464313763,
+    0.9549891566032844
+   ]
+  },
+  "fde5_T_minus_P": {
+   "est": 0.7787268849412009,
+   "ci95": [
+    0.4428786359184309,
+    1.0782815638505492
+   ],
+   "unit": "m"
+  },
+  "exposure_mean_per_unit": {
+   "P_gt_s1_w3": {
+    "corrected_positions_n": 3.0,
+    "corrected_pairs": 18.616564417177916,
+    "corrected_pairs_effective": 12.576687116564417
+   },
+   "T_gt_s1_w3": {
+    "corrected_positions_n": 3.0,
+    "corrected_pairs": 3.0,
+    "corrected_pairs_effective": 2.196319018404908
+   }
+  }
+ },
+ "all_units": {
+  "n_units": 365,
+  "n_scenes": 52,
+  "n_drives": 13,
+  "amplification_levels": {
+   "normal": 0.46058455433455436,
+   "full_gt": 0.03426434676434676,
+   "P_gt_s1_w3": 0.07787698412698413,
+   "T_gt_s1_w3": 0.12324481074481074,
+   "recent_gt": 0.06929181929181928
+  },
+  "amplification_fraction_P_gt_s1_w3": {
+   "est": 0.8976998120468987,
+   "ci95": [
+    0.8118637943409405,
+    0.9830636624829879
+   ]
+  },
+  "amplification_fraction_T_gt_s1_w3": {
+   "est": 0.7912825561621768,
+   "ci95": [
+    0.6576701350677023,
+    0.8691761863845731
+   ]
+  },
+  "amplification_fraction_recent_gt": {
+   "est": 0.9178376443211316,
+   "ci95": [
+    0.884627154696687,
+    0.9672047353871012
+   ]
+  },
+  "amplification_T_minus_P": {
+   "est": 0.045367826617826616,
+   "ci95": [
+    0.028851109159510797,
+    0.0724704569327731
+   ],
+   "unit": "pp/100"
+  },
+  "amplification_unit_discordant": {
+   "T_only": 23,
+   "P_only": 5
+  },
+  "fde5_levels": {
+   "normal": 6.246403304867193,
+   "full_gt": 1.703007465122212,
+   "P_gt_s1_w3": 2.037127804054576,
+   "T_gt_s1_w3": 2.7504894393529193,
+   "recent_gt": 2.260831127997203
+  },
+  "fde5_fraction_P_gt_s1_w3": {
+   "est": 0.9264602181457475,
+   "ci95": [
+    0.881306273816358,
+    0.9778965857173171
+   ]
+  },
+  "fde5_fraction_T_gt_s1_w3": {
+   "est": 0.7694495458512586,
+   "ci95": [
+    0.7153154775528503,
+    0.8347589914882029
+   ]
+  },
+  "fde5_fraction_recent_gt": {
+   "est": 0.8772231866756514,
+   "ci95": [
+    0.8245323138276455,
+    0.9509459270982086
+   ]
+  },
+  "fde5_T_minus_P": {
+   "est": 0.7133616352983438,
+   "ci95": [
+    0.4198868791898402,
+    0.9806316935282103
+   ],
+   "unit": "m"
+  },
+  "exposure_mean_per_unit": {
+   "P_gt_s1_w3": {
+    "corrected_positions_n": 2.956164383561644,
+    "corrected_pairs": 17.421917808219177,
+    "corrected_pairs_effective": 11.704109589041096
+   },
+   "T_gt_s1_w3": {
+    "corrected_positions_n": 2.956164383561644,
+    "corrected_pairs": 2.956164383561644,
+    "corrected_pairs_effective": 2.126027397260274
+   }
+  }
+ },
+ "note": "POST-HOC descriptive; scene-weighted, drive-cluster bootstrap (10,000, joint num/den); T and P differ in exposure (pairs) as well as retention."
+}
