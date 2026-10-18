@@ -555,7 +555,7 @@ AutoVLA 참조값 (모두 open-loop, navtest PoC, log 단위 cluster bootstrap 2
 - 자연 성공 87개 중 교란 후 실패 비율은 9.2–18.4%입니다. 교란 없는 재실행의 실패 비율은 15%입니다.
 
 #### B.5 OpenVLA가 구조적 대조군이라는 수치 근거
-1. **step 안 feedback은 강합니다.** x token 8 bin 교란에서 하위 차원 증폭이 92.6%입니다. 이는 AutoVLA·Impromptu의 문맥 의존성과 같은 "문맥 token이 다음 token을 결정"하는 구조입니다.
+1. **step 안 feedback은 강합니다.** x token 8 bin 교란에서 하위 성분 중 적어도 하나가 주입 bin 이상 변한 단위가 92.6%입니다. 이는 AutoVLA·Impromptu의 문맥 의존성과 같은 "문맥 token이 다음 token을 결정"하는 구조입니다. (2026-10-18 수정)
 2. **시간축으로는 전달되지 않습니다.**
    - 모든 교란 조건이 natural 대비 −3 ~ −8%p이고, McNemar p ≥ 0.115, 과제 permutation p ≥ 0.14입니다.
    - feedback − corrected는 +3 / +5%p이고 CI가 0을 포함합니다.
@@ -713,7 +713,7 @@ AutoVLA 참조값 (모두 open-loop, navtest PoC, log 단위 cluster bootstrap 2
   - OpenVLA: feedback − corrected +3 / +5%p, p ≥ 0.36. 시간축 history가 없습니다.
   - SpatialVLA: |Δ| ≤ 5%p, p ≥ 0.29. 4-step chunk, 매 step 재계획, ensemble에서 step 2–4의 몫은 42.6%입니다.
 - 두 closed-loop 모델 모두 재실행 noise가 큽니다(불일치 20%, 13.75%).
-- 이 결과는 "기전은 일반적이지만, task 실패로 이어지는지는 구조에 따라 다르다"는 해석을 지지합니다. 반대로 closed-loop task 효과가 없다는 것은 검정력 한계(N = 80–100) 안에서의 결론입니다.
+- 이 결과는 "기전은 일반적이지만, task 실패로 이어지는지는 구조에 따라 다르다"는 해석을 지지합니다. 반대로 closed-loop task 효과가 검출되지 않았다는 것은(동등성 미검정) 검정력 한계(N = 80–100) 안에서의 결론입니다. (2026-10-18 수정)
 
 ---
 
@@ -799,7 +799,7 @@ pre_dev_entropy 0.631 / 장면 내 0.513 — 모집단(GPU) 차이이며 충돌�
 | 14 (`consensus_reference_stabilization`) | 3080 Ti | 0.5/1.0/1.5 s 전 세 계획의 medoid 합의 (`consmed_all`) | 27.9% (prev_all 35.1% 대비 −7.1%p [−12.9, −2.7]) | FDE +0.28 m [+0.01, +0.58] | 트레이드오프 |
 | 16 (`pdm_reference_stabilization`) | 5090 | PDM-Closed 궤적 (`pdm_all`) | 47.1 → 31.0% (FDE 6.13 m, 거의 불변) | **4.2 → 20.1%** (p = 2e-31) | 해로움 |
 | 17 (`robustness_reference_stabilization`) | 5090 | prev_w4, seed 0–2 × T 0.01/0.5 | 6개 실행 모두 44.7–48.5 → 31.2–33.4% (GT 효과의 30–37%) | 해 없음 | 강건 (oracle 시점) |
-| **15** (`natural_reference_stabilization`) | 3080 Ti | prev_w4, **교정 시점 없이 상시** | 자연 실패 52 장면 A− 65.4 → 32.7% (−32.7%p [−48.1, −9.7], p = 0.002) | 정상 297 장면 A− 0 → 2.0% (p = 0.03), FDE +0.80 m | **모집단 A− 1.24 → 2.60%로 악화** |
+| **15** (`natural_reference_stabilization`) | 3080 Ti | prev_w4, **교정 시점 없이 상시** | 자연 실패 52 장면 A− 65.4 → 32.7% (−32.7%p [−48.1, −9.7], p = 0.002) | 정상 297 장면 A− 0 → 2.0% (p = 0.03), FDE +0.80 m | **dev 평가 집합(52/2,695) 재가중 A− 1.24 → 2.60%로 악화** (2026-10-18 수정) |
 
 - 모델은 조건화된 참조 motion으로 실행 token을 66–89% 끌어갑니다(`PDM_REFERENCE.md`). 효과는 참조↔GT motion 거리로 결정됩니다(실험 12 w4 삼분위: 가까움 −30.6%p, 멂 +13.1%p).
 - 실험 15의 엔트로피 trigger: 인과적으로 쓸 수 있는 첫 step 엔트로피(A− vs 정상 AUROC 0.70)로 고른 정책은 모집단 A− −0.18%p [−0.53, +0.19](n.s.). AUROC 0.88–0.89 신호는 교정 위치보다 뒤를 봐야 얻어집니다.
@@ -814,7 +814,7 @@ pre_dev_entropy 0.631 / 장면 내 0.513 — 모집단(GPU) 차이이며 충돌�
 (`scripts/analyze_best_of_n.py::pick`). rank-sum은 실험 19의 결과를 본 뒤 정의했고(스크립트 docstring에 명시) 커밋 e6d9dff(09:26 UTC)로 고정한 뒤
 실험 20 디코딩(첫 shard 10:05)을 시작했습니다. 실험 20은 형식적 사전 등록 문서는 없지만 규칙은 데이터 전에 커밋되어 있었습니다.
 
-#### 3.1 실험 18–19 (PoC 28 log, 실패 52 + 정상 297 장면, 모집단 가중 52/2,695)
+#### 3.1 실험 18–19 (PoC 28 log, 실패 52 + 정상 297 장면, dev 평가 집합 가중 52/2,695) (2026-10-18 수정)
 
 - N 16 T 1.0, 5 seed 합산(`pool_best_of_n.py`): rank-sum 모집단 ΔA− −0.42%p [−0.85, +0.09](n.s.), ΔFDE5 −0.178 m [−0.276, −0.059] (자연 A− 1.51%, FDE 0.582 m) — `BEST_OF_N_16.md`.
 - 실패 장면 52개만으로는 실패율 감소가 경계선이었고, 이것이 실험 20(표본 확대)의 동기입니다.

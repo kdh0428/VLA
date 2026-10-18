@@ -15,7 +15,7 @@
 - 보조 설정(r1e2, r1e1, r2e2, r2e1)은 Holm 보정.
 - 설정 간 대비 차이: sign-flip permutation 10,000회.
 
-**판정: Partial support.** 재계획 간격을 늘리면 문맥 feedback의 궤적 오차가 커지고 오래 남습니다. 그러나 task 수준에서는 교정 효과가 없고, reverse 효과만 4 step 재계획에서 작게 나타납니다.
+**판정: Partial support.** 재계획 간격을 늘리면 문맥 feedback의 궤적 오차가 커지고 오래 남습니다. 그러나 task 수준에서는 교정 효과가 검출되지 않았고(동등성 미검정; 군집 후 불확실), reverse 효과만 4 step 재계획에서 작게 나타납니다. (2026-10-18 수정)
 
 ## Protocol notes
 - **실제 실행 가중치** (ActionEnsembler, temp −0.8): 현재 chunk step 1 57%, 이전 chunk step 2 26%, step 3 12%, step 4 5%. 실험 34 문서의 반대 설명은 오류입니다.
@@ -33,7 +33,7 @@
 
 Feedback − Corrected < 0과 Reverse − Natural < 0이 가설 방향입니다.
 
-| configuration | replan_interval | ensemble_size | feedback_exposure | natural_success | feedback_success | corrected_success | reverse_success | feedback_minus_corrected [CI], p | reverse_minus_natural [CI], p | trajectory_divergence F 대 C / R 대 N (m) |
+| configuration | replan_interval | ensemble_size | feedback_exposure | natural_success | feedback_success | corrected_success | reverse_success | feedback_minus_corrected [CI], p | reverse_minus_natural [CI], p | commanded_cumulative_divergence F 대 C / R 대 N (m; TCP 아님) (2026-10-18 수정) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | r1e4 | 1 | 4 | 0.43 | 86.2 | 65.0 | 70.0 | 86.2 | −5.0 [−16.2, +6.2], 0.52 | 0.0 [−10.0, +8.8], 1 | 0.302 / 0.241 |
 | r1e2 | 1 | 2 | 0.31 | 85.0 | 70.0 | 68.8 | 86.2 | +1.2 [−10.0, +13.8], 1 (Holm 1) | +1.2 [−7.5, +10.0], 1 (Holm 1) | 0.282 / 0.200 |
@@ -53,7 +53,7 @@ Feedback − Corrected < 0과 Reverse − Natural < 0이 가설 방향입니다.
 
 ## 오차 지속 (r4e1 − r1e4, 합동, paired Wilcoxon)
 
-| 대비 | 평균 위치 오차 | 궤적 발산 | 최종 오차 | 재정렬 시점 |
+| 대비 | 평균 위치 오차 | 실행 명령 누적 끝점 거리 (commanded, TCP 아님) | 최종 오차 | 재정렬 시점 (2026-10-18 수정) |
 |---|---|---|---|---|
 | reverse 대 natural | +1.84 cm [+1.26, +2.46], p = 1e-10 | +0.116 m [+0.075, +0.155], p = 7e-11 | +2.66 cm, p = 2e-6 | +10.9 step, p = 1e-6 |
 | feedback 대 corrected | +1.32 cm [+0.66, +1.92], p = 2e-4 | +0.078 m [+0.017, +0.135], p = 9e-6 | +1.37 cm, p = 0.002 | +10.6 step, p = 3e-7 |

@@ -44,7 +44,7 @@
 - **[MINOR] 실험 35 분석 스크립트를 결과 commit 전에 1건 고쳤습니다.** seed ≥ 40에서 실험 34 비교 부분이 KeyError를 냈습니다. 통계 정의는 그대로입니다.
 - **[MINOR] 비교표의 AutoVLA 자연 성능 한 칸에 서로 다른 모집단 값이 섞여 있습니다.** A− 1.9%는 52/2,747이고, FDE5 0.66 m는 500 장면 subset 값입니다. 실험 33 RESULTS §2가 같은 방식으로 섞어 적었습니다. `paper_cross_model_table.csv`에는 두 모집단을 각각 표기했습니다.
 - **[MINOR] analyze_svla.py docstring은 "stratified by task"라고 하지만, 코드는 층화하지 않은 에피소드 bootstrap입니다.** 보고된 CI는 모두 층화하지 않은 값입니다. 반면 실험 35 사전 등록은 "과제로 층화"한다고 명시했으므로, 두 실험의 CI 방법이 다릅니다. 실험 35 RESULTS에 이를 함께 적어야 합니다.
-- **[MAJOR] SpatialVLA closed loop의 opposite 교란 실패는 pick_coke_can에 집중됩니다.** feedback −37.5%p, p = 6e-5이고, move_near는 −2.5%p입니다. 원 RESULTS에는 합계만 있습니다. 결론(문맥 효과 0, 실행 효과 있음)은 바뀌지 않지만, 논문에서는 과제별 이질성을 밝혀야 합니다.
+- **[MAJOR] SpatialVLA closed loop의 opposite 교란 실패는 pick_coke_can에 집중됩니다.** feedback −37.5%p, p = 6e-5이고, move_near는 −2.5%p입니다. 원 RESULTS에는 합계만 있습니다. 결론(문맥 효과 검출 안 됨, 실행 효과 있음)은 바뀌지 않지만, 과제별 점추정 차이(coke −37.5 vs move_near −2.5%p)는 이질성 검정 없이 '집중'이나 이질성으로 쓰지 않습니다. (2026-10-18 수정)
 
 ---
 
@@ -72,7 +72,7 @@
 ##### M-2. attention mask "효과 없음"은 전체 집합에서만 성립 (결과로 선택된 부분집합에서는 유의한 감소)
 - `ES` §3.2 행 7 "attention mask는 효과 없음", `CC` §7 "attention mask는 효과가 없으므로, 기전은 긴 history 참조가 아니라 …".
 - 원 결과(`O/action_history_causal/summary.json`, 보고서 `ACTION_HISTORY_CAUSAL.md`):
-  - all perturbations A− (365): action-history mask −1.4%p [−8.5, +7.4], p = 0.63; recent-action mask −3.3%p [−9.7, +2.9], p = 0.18 → 효과 없음 ✔.
+  - all perturbations A− (365): action-history mask −1.4%p [−8.5, +7.4], p = 0.63; recent-action mask −3.3%p [−9.7, +2.9], p = 0.18 → 효과 검출 안 됨(동등성 미검정). (2026-10-18 수정)
   - **previously amplified A− (175 단위, 45 장면)**: −16.0%p [−23.7, −6.2], p = 4.3e-06 / −19.4%p [−28.1, −10.1], p = 5.7e-08; A+ previously amplified (43): −37.2 / −48.8%p.
   - original token only A− (52): −11.5%p [−25.5, +5.4], p = 0.11.
 - population 차이(부분집합이 equal-distance run의 결과로 선택됨 → 평균회귀 가능성; 그러나 같은 부분집합에서 Normal은 94.3%로 유지). 결론 방향(직전 1 token GT 교정 −81%p가 mask 효과보다 훨씬 큼)은 유지되지만, "mask는 효과 없음"은 "전체 perturbation 집합에서 유의한 효과 없음(증폭이 이미 일어난 단위에서는 −16~−19%p)"로 한정해야 함.
@@ -454,7 +454,7 @@ dev: 42,078 / 2,877(혼합) vs 42,095 / 2,885(5090, P4). 이탈 전 엔트로피
 - **SpatialVLA move_near:** seed 중복으로 유효 n이 과대 계산됐다(seed 0–119 → 초기 상태 53개). 실험 34·35의 CI가 실제보다 좁다.
 
 **새로 쓸 수 있는 claim**
-- GT 정보 없이도 문맥 효과가 유지된다(P1-A). 단 A−에서는 등속 외삽 baseline과 구별되지 않는다.
+- GT 정보 없이도 문맥 효과가 유지된다(P1-A). 단 등속 외삽 초과는 A−(실패 선택 층)에서만 성립한다(review_followup3 P2). (2026-10-18 수정)
 - 핵심 기전이 새 log에서 재현됐다(P1-C).
 - 초기 위치가 특별하지 않다(P1-B).
 - 생성 편차와 task outcome이 분리된다(P1-D).

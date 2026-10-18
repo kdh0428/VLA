@@ -44,6 +44,21 @@
 
 ---
 
+## 2026-10-18 개정 (review_followup4 반영)
+
+**우선순위.** `numbers.json`에 review_followup4 행 1,532개(`RF4.*`)를 추가했습니다(`autovla_misalignment_poc/scripts/review_followup4/c/c_numbers.py`). 원래 행의 값은 바꾸지 않았고, 쓰임이 바뀐 행에는 `rf4_note`를 붙였습니다. 이 문서·`tables.tex`와 충돌하면 `numbers.json`과 `outputs/review_followup4/{STATUS, CLAIM_CHANGES, MANUSCRIPT_REVISION}.md`가 우선합니다. 수정한 줄에는 "(2026-10-18 수정)"을 표시했고, 원문은 `outputs/review_followup4/DOC_EDITS_APPLIED.csv`와 git에 있습니다.
+
+**이번에 고친 것 (corrections).**
+- **A1 (post-hoc correction):** sign-flip-inversion CIs for paired binary success are invalid at the boundary (zero width ±2.5e−13 or an end pinned at 0). Corrected intervals: Newcombe 10 (OpenVLA states), Rao–Scott design-effect Newcombe / MOVER (SpatialVLA clusters) — `RF4.A1.*`, Table 13. Judgment changes: OpenVLA C − N "CI excludes 0" deleted ([−17.1, +1.0]); OpenVLA per-task CIs are descriptive only; exp34 perp_left coke C − F → ±10 pp unadjusted only; P1-D r2e1 − r1e1 C − F interaction (physical) not established; r1e4 C − F move_near physical ±5 pp lost; task-level CI widths **18–25 pp (r4e1; r1e4 13–20 pp)** instead of 18–29 / 6.9–21.6. P1-D pooled ±10 pp, per-task 3 of 8 and S1–S4 pooled survive.
+- **A2:** the correction window keeps its GT positions in all later contexts; nothing is released. Claim 5 wording changed to "three fixed context positions replaced with ground truth and retained in later contexts"; "post-release horizon" renamed "steps after the last added GT position".
+- **A3:** Claim 8 (Impromptu) downgraded to descriptive / parity not established (numerical floor 5–6% scene-level verdict flips).
+- **A4:** denominators and definitions (F = 105 scenes / 18 drives; P = 2,191 eligible scenes estimated from 353 sampled scenes with weights; "all" in the motion-baseline rows = 208 selected scenes; OpenVLA 92.6% = at least one downstream component ≥ injected bins; commanded vs TCP; heterogeneity not established from opposite point estimates; A−/severe formula with the 3 s thresholds applied at 5 s).
+- **B3:** OpenVLA gate NOT_RUN (user decision 2026-10-17): OpenVLA stays descriptive and is excluded from the core evidence.
+
+**새 claim과 표.** Claim 25 (B2 matched-prefix), Claim 26 (B1 numerical sensitivity), Claim 27 (A1 corrected intervals). `tables.tex`: Tables 8–11 captions corrected (machine-generated block), new Tables 12–14 (`c_tables.py`).
+
+---
+
 # Claim 1. Token mismatch ≠ failure
 **Evidence**
 - natural 2,747 장면 중 A−(5 s 궤적 실패)는 52개(1.89%)입니다.
@@ -82,13 +97,13 @@
   - Recent − Normal **−39.8 pp [−49.0, −29.9]**, p = 2.4e-4 (the minimum attainable with 13 drives; all 13 drives have the same sign), Holm 7.3e-4. Sign-flip-inverted 95% CI [−51.5, −28.7]. Unit-weighted estimate −40.3 pp.
   - Share of the GT-history effect: **92.9% [89.4, 99.1]** (R8, unit-weighted; scene-weighted 93.6% [90.3, 99.8]). Denominator = GT-history − Normal in the same run; relative to the Normal rate the reduction is 85%.
 - **Reverse (Normal-branch token injection):** in a GT-history context, the embedding at position k−1 is copied at every step from the **separate Normal row in the same batch**. Reverse − Full **+28.6 pp [+20.9, +36.1]**, p = 2.4e-4, Holm 7.3e-4 (R8 recovery run; 220/220 rates reproduced exactly — a reproducibility audit, not an independent confirmation).
-- **New drives (P1-C, preregistered b212637 + amendments b216920, 9b3d4af):** 64 logs / 24 drives with **0 drives shared** with the mechanism set (10 day-vehicles shared). Failure-conditional stratum F (18 drives): RN −34.2 pp [−38.3, −29.5], RV +26.8 pp [+21.9, +30.7]; population estimand P (24 drives, Hajek-weighted): RN −4.1 pp [−6.4, −2.4], RV +3.6 pp [+2.2, +5.5]; all "replicated" under the preregistered drive-level exact sign-flip + Holm rule.
+- **New drives (P1-C, preregistered b212637 + amendments b216920, 9b3d4af):** 64 logs / 24 drives with **0 drives shared** with the mechanism set (10 day-vehicles shared). Failure-conditional stratum F (18 drives): RN −34.2 pp [−38.3, −29.5], RV +26.8 pp [+21.9, +30.7]; evaluation-frame estimand P (2,191 eligible scenes; 353 sampled, Hajek-weighted; 24 drives): RN −4.1 pp [−6.4, −2.4], RV +3.6 pp [+2.2, +5.5]; all "replicated" under the preregistered drive-level exact sign-flip + Holm rule. (2026-10-18 수정)
 - **Leave-one-drive-out:** range −43.5 to −36.2 (RN) and +26.4 to +31.4 (RV); max p 4.9e-4; no sign change.
 - **Attention masks** (Experiment 7): −1.4 pp and −3.3 pp, not detected (unit-level p 0.63 / 0.18; not re-tested at drive level; equivalence not tested).
 - **One-token GT correction at the first mismatch** (Experiment 5, output-level, the only true single correction): recovery 17.3 → 73.1% (+55.8 pp [+35.4, +69.2]). Per-unit raw is missing; no cluster-level p is available.
 
 **Source:** `O/review_followup2/A_autovla_cluster/run_20261013/CLUSTER_REANALYSIS.csv` (rows AV-P1, AV-P2), `O/review_followup2/C_baseline_window/run_20261013/c2_recovery_fractions.csv` (R8 recent_gt), `O/review_followup/P1C_new_log_replication/run_20261008/analysis/decisions.json`; original: `O/action_history_causal/summary.json`, `O/prev_action_state_patching/summary.json`.
-**Manuscript-safe:** "Repeatedly replacing the most recent action context with ground truth reduced amplification by 40 pp (13 drives; replicated on 24 new drives), and re-inserting the model's own previous action restored it." / "Last-position correction applied at every step recovered 93% of the full-history correction effect."
+**Manuscript-safe:** "Repeatedly replacing the most recent action context with ground truth reduced amplification by 40 pp (A− stratum, 52 scenes / 13 drives; replicated in the P1-C failure stratum, 105 scenes / 18 new drives), and injecting the separate Normal branch's previous token restored it." / "Last-position correction applied at every step recovered 93% of the full-history correction effect." (2026-10-18 수정)
 **Overclaim:**
 - "Replacing a single token once removes 93% of failures." Recent-GT is repeated at every step, and 93% is a share of the GT-history effect.
 - Unit-level p values (8e-42, 6.7e-31). Report the drive-level p with its floor (2.4e-4 for 13 drives).
@@ -113,18 +128,18 @@
 # Claim 5. Correction length matters; no evidence for a special early window (revised 2026-10-13)
 **Evidence** (A−, 13 drives; R9 recovery run of Experiment 9 and P1-B preregistered; drive-cluster CIs)
 - **Length (R9, persistent windows at fixed positions t*+1…t*+w):** recovery fraction f = (Normal − window)/(Normal − GT-history), same run and units: **1/2/3/4 steps = 46.7 [29.6, 62.1] / 76.6 [62.7, 88.0] / 90.1 [81.3, 99.0] / 95.8 [93.3, 100]%**. Bootstrap share P(f ≥ 0.9): 0.00 / 0.01 / 0.56 / 1.00. FDE fractions 57.5 / 82.1 / 92.5 / 96.5%.
-  - The post-release free horizon shrinks with w (5.8 → 2.9 poses), so the length effect is partly a post-release-horizon effect.
+  - The number of steps after the last added GT position (GT retained; formerly called the 'post-release free horizon') shrinks with w (5.8 → 2.9 poses), so the length effect is partly a horizon effect. (2026-10-18 수정)
 - **Position (P1-B, preregistered, A− with t* ≤ 2: 326 units / 12 drives):** early (s = 1) − late (s = 3) at equal window length, total horizon, binary amplification: w1 **+10.7 [−0.7, +20.6]**, w2 **+4.3 [−2.6, +9.7]**, w3 **+0.5 [−4.5, +3.1]** pp; sign-flip p 0.16 / 0.30 / 0.84 (Holm 0.49 / 0.59 / 0.84). ±10 pp equivalence (predeclared margin): w3 established (Holm 0.002); w2 only unadjusted (p_equiv 0.032, Holm 0.064); w1 not established.
-  - Late windows have 2 fewer free poses after release. At a common post-release horizon (post-hoc), the sign of the continuous early − late contrast depends on the handling of the absolute-pose confound (raw error and same-pose recovery favour early; difference-in-differences favours late).
-- **Horizon-controlled extension (Experiment 10, summary only, no per-unit raw):** FDE recovery 62 / 87 / 90 / 95% at free horizon N = 4; re-divergence after release 25–29%.
+  - Late windows have 2 fewer poses after the last added GT position. At a common horizon after the last GT position (post-hoc), the sign of the continuous early − late contrast depends on the handling of the absolute-pose confound (raw error and same-pose recovery favour early; difference-in-differences favours late). (2026-10-18 수정)
+- **Horizon-controlled extension (Experiment 10, summary only, no per-unit raw):** FDE recovery 62 / 87 / 90 / 95% at free horizon N = 4; re-divergence while the w corrected GT positions remain in the context 25–29% (formerly 'after release'). (2026-10-18 수정)
 
 **Source:** `O/review_followup2/C_baseline_window/run_20261013/c2_recovery_fractions.csv`, `c2_position_length.csv`, `BASELINE_WINDOW_RECHECK.md` §C2; `O/horizon_controlled_window/summary.json`.
-**Manuscript-safe:** "Correcting three consecutive context steps recovered about 90% of the full-history effect (95% CI 81–99%)." / "We found no evidence that corrections at the first deviating steps are more effective than equally long later corrections."
+**Manuscript-safe:** "Three fixed context positions replaced with ground truth and retained in later contexts recovered about 90% of the full-history correction effect (95% CI 81–99%)." / "We found no evidence that corrections at the first deviating steps are more effective than equally long later corrections." (2026-10-18 수정)
 **Overclaim (delete):**
 - "Correcting 2–4 steps recovers 90%" / "a short 2–4 step critical window". Two steps give 77% (CI upper bound 88%); only four steps have the whole CI above 90%.
 - "The first steps after a deviation are special." Not supported (P1-B).
 - "Position does not matter." Only w = 3 equivalence is established, at the predeclared binary endpoint and total horizon; do not generalize it to w = 1, other starts, A+, or other horizons.
-- "A permanent fix." Recovery decays after release (Experiment 10, summary-level).
+- "A permanent fix." Re-divergence while the GT positions remain in the context (Experiment 10, summary-level); no release experiment exists. (2026-10-18 수정)
 
 # Claim 6. Motion matters more than embedding proximity; GT-like motion ≈ GT is not established (revised 2026-10-13)
 **Evidence** (Experiment 11, A− 365 units / 13 drives; drive-cluster re-analysis, post-hoc)
@@ -154,7 +169,7 @@
 - "Exactly matched distance" (the mirror condition is about 11% smaller).
 - Claiming the effect is equally large across models.
 
-# Claim 8. Impromptu VLA: Strong replication (preregistered)
+# Claim 8. Impromptu VLA: descriptive, parity not established (preregistered verdict 'Strong' kept on record; downgraded by review_followup4 A3) (2026-10-18 수정)
 **Evidence** (commit 038a6d3; 2,728 scenes / 28 logs; C–E 2,398 units / 300 scenes)
 - **Natural performance:** A− 33.4% [26.2, 38.0], FDE5 5.75 m.
 - **Rerun noise:** batch-only rerun gives A− disagreement 5.9% [5.2, 6.9]; an A+ scene turns A− in 4.6%.
@@ -177,12 +192,12 @@
 
 # Claim 9. OpenVLA: local-only architectural control
 **Evidence** (commit 6b9e8ad + amendment 6d0375a; LIBERO-Spatial 10 tasks × 10 = 100 episodes)
-- **Within-step feedback is strong:** shifting the x token by 8 bins amplifies a downstream dimension in **92.6% [89.8, 94.4]** of 4,741 units (task-cluster CI; initial-state-cluster CI [90.8, 94.0]; 24 bins: 81.2%). Corrected gives 0%; reverse = feedback.
+- **Within-step feedback is strong:** shifting the x token by 8 bins changes at least one downstream component (y..yaw; gripper excluded) by at least the effective injected bin shift (bins mix m and rad; translation components alone 72%) in **92.6% [89.8, 94.4]** of 4,741 units (task-cluster CI; initial-state-cluster CI [90.8, 94.0]; 24 bins: 81.2%). Corrected gives 0%; reverse = feedback. (2026-10-18 수정)
 - **Task level:** feedback − corrected **+3 pp [−4, +9], p = 0.65** (8 bins; task-cluster CI — with initial-state clusters [−6, +12], review_followup3 P0-E), +5 pp (p = 0.36, 24 bins). Every condition vs natural has p ≥ 0.115.
 - **Rerun control:** 87 vs 81% (−6 pp [−14, +2], p = 0.26), outcome disagreement **20%**.
 
 **Source:** `O/cross_vla_replication/analysis.json` (`phaseC`, `vs_natural`, `natural_rep_vs_natural`).
-**Manuscript-safe:** "OpenVLA, which does not condition on its previous actions, shows strong within-step token feedback (92.6%) but no task-level effect distinguishable from re-run variability (20% outcome disagreement)."
+**Manuscript-safe:** "OpenVLA, which does not condition on its previous actions, shows strong within-step token feedback (92.6%) but no detected task-level effect (C − F −3 pp [−11.9, +5.9]; equivalence not established), while re-running alone changed 20% of outcomes." (2026-10-18 수정)
 **Overclaim:**
 - "OpenVLA is immune to feedback." Within-step feedback is strong.
 - "No effect proven." 100 episodes cannot detect effects of about 10 pp.
@@ -194,7 +209,7 @@
   - Correction (recent_ref − normal; the reference is the model's own greedy chunk, not GT): −8.3 pp [−9.3, −7.4], p ≤ 5e-6; step-4 deviation −82%.
   - Reverse (Normal-row token inserted into the reference context): +5.1 pp [+4.4, +5.8], p ≤ 5e-6; step-4 deviation restored to 0.0566 (Normal 0.0561).
   - Window: 1 step 86% (RESULTS says 87%), 2nd-last step only 63%.
-- **Closed loop, direct context effects** (initial-state clusters, post-hoc B re-analysis; pooled = task-equal mean): δR = R − N and δC = C − F for perp_left and opposite are +5.0 / +5.0 / −1.2 / −1.2 pp with 95% CIs about ±10–14 pp; **±10 pp equivalence not established** for any of the four (Holm p_equiv 0.33–0.38; reproduces P0-B). In the opposite direction, coke and move_near have opposite-signed effects that cancel in the pooled mean. Judgment: **uncertain**.
+- **Closed loop, direct context effects** (initial-state clusters, post-hoc B re-analysis; pooled = task-equal mean): δR = R − N and δC = C − F for perp_left and opposite are +5.0 / +5.0 / −1.2 / −1.2 pp with 95% CIs about ±10–14 pp; **±10 pp equivalence not established** for any of the four (Holm p_equiv 0.33–0.38; reproduces P0-B). In the opposite direction, coke and move_near have opposite-signed task point estimates (heterogeneity not tested; task CIs wide), so the pooled mean may hide task differences. Judgment: **uncertain**. (2026-10-18 수정)
 - **Closed loop, executed perturbation:** opposite C − N −21.2 pp, Holm p = 0.041 (primary clusters) / 0.094 (physical).
 - **Trajectories:** the "0.21–0.23 m vs rerun 0.14 m" values are **cumulative commanded actions**, not the actual TCP; Experiment 34 did not record the TCP. Generated-suffix tokens change in 58% of positions after the perturbation (vs 6% for a numeric rerun).
 - **Rerun noise:** numeric-path rerun success disagreement 13.75%.
@@ -217,7 +232,7 @@
   - SpatialVLA: token-level correction −8.3 pp (reference = own greedy chunk); reverse = Normal-row token insertion.
 - **Interventions are matched in spirit, not identical**; amplification definitions differ (driving: A− ∧ FDE5 > 3 m; SpatialVLA token: accumulated step-2–4 deviation ≥ injected; OpenVLA: downstream bin shift). **Effect sizes are not comparable across columns.**
 - **Open-loop trajectory effects appear in the two driving models**, which keep a 10-step autoregressive action history.
-- **Closed-loop manipulation:** OpenVLA shows no task effect distinguishable from rerun variability. SpatialVLA context perturbations change generated actions (50–58% of suffix tokens) and the actual TCP trajectory (2.7–6.0 cm), and longer replanning intervals make these deviations persist (P1-D H1, composite configuration effect); the success direct effect, averaged over two tasks, is bounded within ±10 pp in the tested configurations (P1-D), task-specific effects are uncertain (Claim 18).
+- **Closed-loop manipulation:** OpenVLA showed no detectable task effect (equivalence not established). SpatialVLA context perturbations change generated actions (50–58% of suffix tokens) and the actual TCP trajectory (2.7–6.0 cm), and longer replanning intervals make these deviations persist (P1-D H1, composite configuration effect); the success direct effect, averaged over two tasks, is bounded within ±10 pp in the tested configurations (P1-D), task-specific effects are uncertain (Claim 18). (2026-10-18 수정)
 - **Experiment 35 task effects are deleted:** the r4e1 reverse −6.25 pp (p = 0.040, episode level) is p = 0.14 / 0.26 after initial-state clustering and did not replicate in P1-D (+1.25 pp [−5.6, +8.0]).
 
 **Source:** Claims 3, 7–10, 17, 18; `paper_cross_model_table.csv`; `O/review_followup2/CLAIM_EVIDENCE_MATRIX.md`.
@@ -325,7 +340,7 @@
 | r4e1 | δC | −4.2 [−14.3, 5.8] | +4.2 [−5.0, 13.3] / [−10.5, 18.8] | −0.0 [−6.7, 6.8] | 0.006 / 0.014 | 0.23 / 0.31 |
 
 - **Pooled two-task direct effects are equivalent within ±10 pp** under both clusterings after Holm (m = 4); **±5 pp is not established**; **task-level CIs span 18–29 pp in r4e1** (r1e4: 6.9–21.6 pp; r4e1: no task-level equivalence under either clustering). No direct effect differs from 0 after Holm.
-- **Interactions S1–S4** (preregistered): ±10 pp equivalence survives initial-state clustering and Holm (primary 0.014–0.037, physical 0.026–0.047); ±5 pp not established (Holm ≈ 0.5). Per task, no interaction is equivalent; coke S3 −9.2 vs move_near +8.3 partly cancel.
+- **Interactions S1–S4** (preregistered): ±10 pp equivalence survives initial-state clustering and Holm (primary 0.014–0.037, physical 0.026–0.047); ±5 pp not established (Holm ≈ 0.5). Per task, no interaction is equivalent; coke S3 −9.2 vs move_near +8.3 (opposite point estimates; heterogeneity not established). (2026-10-18 수정)
 - **Same units, generated / executed / physical changes:** suffix tokens changed 49–55% (vs numeric rerun 3–7%); context-attributable executed translation 0.044 (r1e4) / 0.32 (r4e1) m/episode; actual TCP mean distance R − N 2.67 cm (r1e4) / 5.95 cm (r4e1) vs rerun 1.24–2.00 cm; time-integrated 193 / 428 cm·step (t = 8–79, 72 steps).
 - **Executed perturbation lowers success:** C − N r4e1 −11.7 pp [−18.3, −5.0] (Holm 0.009); exp 35 r1e4 C − N −22.9 pp.
 - **Experiments 34/35** (episode-level judgments): all direct effects are **uncertain** after initial-state clustering; Experiment 35's pooled r1e4 δR ±10 equivalence (episode level) is lost after clustering.
@@ -347,13 +362,13 @@
 
 # Claim 20. Excess over constant-motion extrapolation only in failure-selected scenes (new 2026-10-13; general claim deleted)
 **Evidence** (post-hoc C1; perturbed − unperturbed change for each predictor, so CM's own extrapolation error is removed)
-- Model − CM endpoint change: **A− +2.35 m [+1.27, +3.19]** (p = 7.3e-4, Holm 9.8e-4); **A+ −0.52 m [−0.82, −0.26]**; **all scenes +0.20 m [−0.32, +0.56], p = 0.51** (not detected; equivalence not tested — no margin was predeclared).
+- Model − CM endpoint change: **A− +2.35 m [+1.27, +3.19]** (p = 7.3e-4, Holm 9.8e-4); **A+ −0.52 m [−0.82, −0.26]**; **all 208 selected mechanism scenes (52 A− + 156 A+) +0.20 m [−0.32, +0.56], p = 0.51** (not detected; equivalence not tested — no margin was predeclared). (2026-10-18 수정)
 - The original contrast OC − CM (A− −0.59 m, p = 0.23, "indistinguishable from extrapolation") mixed in CM's own unperturbed extrapolation error (4.69 m) and is withdrawn.
 - Suffix local-motion change exceeds CM's d0 in every stratum (+0.48 / +0.13 / +0.21 m/seg).
 - **Updated 2026-10-15 (review_followup3 P2):** CM is a body-frame SE(2) repeat of the perturbed token (yaw included), i.e. already a constant-turn-rate extrapolation. Added CV0 (zero-turn global velocity), CTRV-K3, CTRA-2 and a learned non-AR motion extrapolator (prefix / prefix + ego, 3 seeds). In A− the model exceeds all six; in A+ and all scenes it does not (see Claim 23).
 
 **Source:** `O/review_followup2/C_baseline_window/run_20261013/c1_excess_effects.csv`, `BASELINE_WINDOW_RECHECK.md` §C1.2.
-**Manuscript-safe:** "In failure-selected scenes the response exceeded constant-motion extrapolation; across all scenes it was not distinguishable from extrapolation."
+**Manuscript-safe:** "In failure-selected scenes the response exceeded constant-motion extrapolation; across the 208 selected mechanism scenes no difference from extrapolation was detected (equivalence not tested)." (2026-10-18 수정)
 **Overclaim (delete):** "self-amplification beyond extrapolation" as a general property; "indistinguishable from extrapolation in failing scenes" (the old, mismatched comparison).
 
 # Claim 21. Held-out and navhard validations are log-disjoint, not drive-disjoint (new 2026-10-13; labelling)
@@ -402,7 +417,7 @@
 - **A+:** CM −0.52, CTRA-2 −1.56, extrapolator −1.11 / −0.56 (the model moves *less*).
 - **All scenes:** CM +0.20 (p = 0.51), extrapolator −0.34 / +0.15 (n.s.).
 
-**Manuscript-safe:** "In failure-selected scenes, AutoVLA's endpoint response to a GT-free context perturbation exceeded four kinematic extrapolations (including the original body-frame constant-motion repeat) and a small learned non-autoregressive motion extrapolator; across all scenes and in non-failure scenes it was not distinguishable from motion extrapolation."
+**Manuscript-safe:** "In failure-selected scenes, AutoVLA's endpoint response to a GT-free context perturbation exceeded four kinematic extrapolations (including the original body-frame constant-motion repeat) and a small learned non-autoregressive motion extrapolator; in non-failure scenes and across the 208 selected mechanism scenes no excess over motion extrapolation was detected (equivalence not tested)." (2026-10-18 수정)
 
 **Overclaim:** "beyond extrapolation" without the A− restriction; calling the extrapolator a non-AR VLA; "CM ignores curvature".
 
@@ -419,3 +434,32 @@
 
 **Manuscript-safe:** "No-op, self-patch, cache and full-recompute parity of the intervention code was verified on fixed verification manifests (AutoVLA: all six intervention paths; SpatialVLA: state restoration on 20 units); earlier runs outside these manifests are not retro-validated, and the Impromptu and OpenVLA paths were not parity-verified."
 
+---
+
+# Claim 25. The latest context value matters; no dependence on an older GT prefix in a one-shot schedule (new 2026-10-18; review_followup4 B2, preregistered 552b3ac)
+**Evidence** (driving / AutoVLA / open-loop 5 s plan; P1-C cohort, primary anchor a = t*+3, t* ≤ 4; one edited prefix per unit-anchor, edit **retained** at fixed positions; every cell B = 1; severe = A− ∧ FDE5 > 3 m; scene-weighted; drive-cluster bootstrap 95% CI; exact drive sign-flip p; Holm m = 4)
+- Failure stratum F (100 scenes / 711 unit-anchors / 18 drives; α = 0.05): **C_GT = GT_NSRC − GT_REF +25.3 pp [+20.5, +29.3]** (Holm 4.6e-5); **C_NAT = NAT_NSRC − NAT_REF +25.5 pp [+21.6, +29.0]** (Holm 3.1e-5); **INT = C_GT − C_NAT −0.2 pp [−3.8, +3.1]** (p = 0.92); C_PROV = GT_CSRC − GT_NSRC −15.8 pp [−20.1, −10.2] (Holm 1.5e-3).
+- B2 eligible domain E4 (Hajek, recomputed weights; 312 sampled scenes / 2,160 / 24 drives; α = 0.025): C_GT +3.3 pp [+1.0, +5.6] (Holm 0.051, **not rejected**); C_NAT +4.0 pp [+2.7, +5.7] (Holm 6.5e-5); INT −0.7 pp [−2.2, +0.8]; C_PROV −2.2 pp [−4.2, −0.2] (Holm 0.13).
+- INT where the older values truly differ: F −1.7 pp [−5.4, +1.9]. Older-prefix main effects within a latest level: F +2.0 to +4.8 pp, P ≈ 0. Day–vehicle clustering (F 10 groups): C_GT, C_NAT p = 0.002, C_PROV p = 0.0098, INT p = 0.85.
+- Development cohort (A− 49 scenes / 13 drives; descriptive): C_GT +28.5, C_NAT +28.4, INT +0.1, C_PROV −16.3 pp.
+- Sensitivity anchor (n_old = 2): F INT −0.3 pp; P INT +2.7 pp [+1.1, +4.6], p = 0.0046 (not a preregistered test).
+- Integrity: identity checks on 100% of 4,160 (P1-C) and 2,630 (dev) unit-anchors; P1-C inputs reproduce the stored P1-C Normal tokens in 2,160/2,160 units.
+
+**Source:** `O/review_followup4/B/MATCHED_PREFIX_RESULTS.{md,csv}`; `numbers.json` `RF4.B2.*`; Table 12.
+**Manuscript-safe:** "In a preregistered matched-prefix diagnostic with a single retained edit, placing the frozen Normal-branch token instead of ground truth in the most recent context position raised severe outcomes in the P1-C failure stratum by 25.3 pp behind a ground-truth older prefix and by 25.5 pp behind the model's own natural older prefix (18 drives); the interaction was −0.2 pp [−3.8, +3.1]. This oracle-conditioned diagnostic indicates that, in a one-shot schedule, the effect tracks the value of the latest context token rather than an older ground-truth prefix; across the B2 eligible domain the effect was small (+3–4 pp)."
+**Overclaim:** "the effect requires a GT history"; "pure provenance effect" (NSRC vs CSRC are value differences); "online correction" / "deployment improvement"; "external replication" (existing drives); "release of the correction was tested"; pooling with the repeated Recent-GT / Reverse-N results; quoting the E4 numbers as the original 2,191-scene estimand.
+
+# Claim 26. Numerical sensitivity of the AutoVLA contrasts (new 2026-10-18; review_followup4 B1)
+**Evidence** (56 dev scenes, Stage-0 rule take 20; t001; RTX 5090)
+- Same-process repeat: bitwise. Batch shape alone changes **8.9%** of free-run suffixes (logit Δ ≤ 0.5); eager attention 26.4%, fp32 arithmetic 25.0% (logit Δ ≈ 2). Severe flips ≤ 1.2% of row-runs.
+- RN / Full-GT / RV paired contrasts: not material under any setting (severe Δ ≤ 0.036; FDE5 Δ ≤ 0.16 m vs effects of 1.5–1.9 m).
+- P1-A self-reference contrasts (OC − U, OC_refR − OC, OC_refH − OC): material — the near-zero FDE5 contrasts change sign with the numeric setting (unit-level noise 0.4–0.8 m under SE/SF).
+
+**Source:** `O/review_followup4/B/B1/NUMERICAL_SENSITIVITY.{md,csv}`; `RF4.B1.*`; Table 14.
+**Manuscript-safe:** "The Recent-GT, Full-GT and Reverse-N contrasts were unchanged in direction and nearly unchanged in size under batch-shape, attention-backend and fp32-arithmetic changes; near-zero differences between ground-truth-free self-reference conditions could not be distinguished from numerical implementation variation."
+**Overclaim:** subtracting the numeric floor from effects; "all P1-A contrasts are numerically robust"; calling B1 a replication of the main effects.
+
+# Claim 27. Corrected paired success-rate intervals (new 2026-10-18; review_followup4 A1, post hoc)
+**Evidence:** see the 2026-10-18 section above and `O/review_followup4/A1_A4/CI_VALIDITY_AUDIT.md`; `RF4.A1.*`; Table 13.
+**Manuscript-safe:** "Paired success-rate differences are reported with Newcombe score intervals (independent initial states) or Rao–Scott design-effect Newcombe intervals (repeated physical states), chosen by a coverage rule fixed before recomputation; difference-from-zero tests are exact sign-flip / McNemar tests."
+**Overclaim:** citing any sign-flip-inversion success CI with zero width or an end at 0; "no difference in task k" from 10 OpenVLA states; reading the exp35 r1e4 C − F move_near corrected CI (barely excluding 0) as an effect while the δ = 0 test does not reject.

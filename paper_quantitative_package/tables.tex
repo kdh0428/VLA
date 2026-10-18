@@ -34,7 +34,7 @@ Evaluation & open-loop 5\,s; navhard two-stage pseudo closed loop & open-loop 5\
 \centering
 \small
 \setlength{\tabcolsep}{3.5pt}
-\caption{AutoVLA causal intervention on the conditioning context only (executed actions are always the model's own output). $N=365$ perturbation units from 52 failing (A$-$) scenes in 16 logs, i.e.\ \textbf{13 independent drives} (equal-distance set; exploratory experiments, not pre-registered). Amplification = A$-$ and FDE$_{5\,s}>3$\,m. Rates are unit-weighted (Exp.~7). $\Delta$ = scene-weighted paired difference with drive-cluster bootstrap 95\% CI (10{,}000 resamples); $p_\text{drive}$ = exact sign-flip on drive totals (minimum attainable with 13 drives: $2.4\times10^{-4}$), Holm over the primary family ($m=3$) in brackets (post-hoc re-analysis). Recent-GT is a \emph{repeated} intervention: at every generation step the most recent context position is replaced by GT (6.8 applications per unit on average; 4.3 actual token changes). It recovers 92.9\% [89.4, 99.1] of the GT-history effect (denominator: GT-history $-$ Normal in the same run; relative to the Normal rate the reduction is 85\%). Row 6: R8 recovery run of Exp.~8 (Normal 46.9\%, GT-history 4.4\%); Reverse copies the position-$k{-}1$ embedding from the separate Normal row of the same batch at every step (Normal-branch token injection); its $\Delta$ is vs.\ GT-history. Attention-mask and GT-history rows were not re-tested at drive level (n.s.\ = not significant at unit level; equivalence not tested).}
+\caption{AutoVLA causal intervention on the conditioning context only (executed actions are always the model's own output). $N=365$ perturbation units from 52 failing (A$-$) scenes in 16 logs, i.e.\ \textbf{13 independent drives} (equal-distance set; exploratory experiments, not pre-registered). Amplification = A$-$ and FDE$_{5\,s}>3$\,m, where A$-$ = failure of the coarse action-category rule (longitudinal class from start/end speed with tolerance $\max(0.5$\,m/s$, 15\%)$; lateral class from final offset $>2$\,m or final heading $>15^\circ$, tolerance $\pm1$\,m/$\pm10^\circ$) applied to the 5\,s plan with thresholds originally specified for a 3\,s horizon. Rates are unit-weighted (Exp.~7). $\Delta$ = scene-weighted paired difference with drive-cluster bootstrap 95\% CI (10{,}000 resamples); $p_\text{drive}$ = exact sign-flip on drive totals (minimum attainable with 13 drives: $2.4\times10^{-4}$), Holm over the primary family ($m=3$) in brackets (post-hoc re-analysis). Recent-GT is a \emph{repeated} intervention: at every generation step the most recent context position is replaced by GT (6.8 applications per unit on average; 4.3 actual token changes). It recovers 92.9\% [89.4, 99.1] of the GT-history effect (denominator: GT-history $-$ Normal in the same run; relative to the Normal rate the reduction is 85\%). Row 6: R8 recovery run of Exp.~8 (Normal 46.9\%, GT-history 4.4\%); Reverse copies the position-$k{-}1$ embedding from the separate Normal row of the same batch at every step (Normal-branch token injection); its $\Delta$ is vs.\ GT-history. Attention-mask and GT-history rows were not re-tested at drive level (n.s.\ = not significant at unit level; equivalence not tested).}  % corrected 2026-10-18 (review_followup4)
 \label{tab:autovla_causal}
 \begin{tabular}{lcccc}
 \toprule
@@ -48,7 +48,7 @@ GT-history (all context := GT) & 4.1 [1, 8] & 1.80 & $-42.5$$^{b}$ & -- \\
 \midrule
 \textbf{Reverse: GT history + Normal-row last token} & \textbf{33.4 [26.3, 43.2]} & -- & $\mathbf{+28.6}$ [$+20.9$, $+36.1$]$^{a}$ & $2.4\times10^{-4}$ [$7.3\times10^{-4}$] \\
 \midrule
-\multicolumn{5}{l}{\footnotesize New drives (P1-C, pre-registered; 0 drives shared with this set): RN $-34.2$ [$-38.3$, $-29.5$] (18 drives), RV $+26.8$ [$+21.9$, $+30.7$], both replicated.} \\
+\multicolumn{5}{l}{\footnotesize New drives (P1-C, pre-registered; failure stratum 105 scenes / 18 drives; 0 drives but 10 day--vehicle combinations shared with this set): RN $-34.2$ [$-38.3$, $-29.5$], RV $+26.8$ [$+21.9$, $+30.7$], both replicated.} \\  % corrected 2026-10-18 (review_followup4)
 \bottomrule
 \multicolumn{5}{l}{\footnotesize $^{a}$vs.\ GT-history in the R8 run; rate 33.4\% from the original Exp.~8 summary. FDE $\Delta=+3.59$\,m [+2.82, +4.17] (drive).} \\
 \multicolumn{5}{l}{\footnotesize $^{b}$Original log-cluster CI (masks, unit-weighted) or scene-weighted point estimate (GT-history); not re-tested at drive level.}
@@ -66,7 +66,7 @@ GT-history (all context := GT) & 4.1 [1, 8] & 1.80 & $-42.5$$^{b}$ & -- \\
 \toprule
  & AutoVLA & Impromptu VLA 3B & OpenVLA-7B & SpatialVLA-4B \\
 \midrule
-Normal amplification & 47.4 [38, 57] & 63.4 [60.6, 66.7] & within-step 92.6 [89.8, 94.4] (task CI; state CI [90.8, 94.0]) & token 22.1 [19.5, 24.7] \\
+Normal amplification & 47.4 [38, 57] & 63.4 [60.6, 66.7] & within-step, $\ge$1 later component $\ge$ injected bins: 92.6 [89.8, 94.4] (task CI; state CI [90.8, 94.0]; bins, not physical units) & token 22.1 [19.5, 24.7] \\  % corrected 2026-10-18 (review_followup4)
 Correction treatment & last context position := GT, repeated every step & last context waypoint := GT, repeated every waypoint (absolute coords, GT leak) & downstream sees natural token & last step := own greedy reference chunk \\
 Corrected amplification & 7.1 [4, 10] & 1.3 [0.8, 1.8] & 0 (by construction) & 13.7 [11.8, 15.8] \\
 Correction effect & $\mathbf{-39.8}$ [$-49.0$, $-29.9$], $p=2.4\times10^{-4}$ & $\mathbf{-62.2}$ [$-65.4$, $-59.1$], $p=1.9\times10^{-6}$ & -- & $\mathbf{-8.3}$ [$-9.3$, $-7.4$], $p\le5\times10^{-6}$; step-4 dev.\ $-82\%$ \\
@@ -171,7 +171,7 @@ r4e1 & 0.75 & 81.7 & 69.6 & 65.0 & 75.4 & $+4.6$ [$-2.5$, $+11.7$], $p{=}0.22$ &
 \centering
 \small
 \setlength{\tabcolsep}{2.5pt}
-\caption{SpatialVLA success-rate direct effects at a fixed context-perturbation budget (P1-D, pre-registered b212637; 4{,}800 episodes, restore verified; direct-effect analysis post-hoc). Per configuration 240 units: pick\_coke\_can 120 seeds (each a distinct initial state) and move\_near 120 units (120 distinct initial states including the instruction, but only 10 physical layouts). $\delta_R=$ S(R)$-$S(N) (context-only perturbation, natural step-1 action executed); $\delta_C=$ S(C)$-$S(F) (correction benefit; F$-$C$=-\delta_C$). pp with sign-flip-inversion 95\% CI on initial-state clusters (move\_near: primary states; physical-layout CI in brackets); pooled = task-equal mean. Equivalence: Holm-adjusted TOST $p$ over $\{\delta_R,\delta_C\}\times\{$r1e4, r4e1$\}$ ($m=4$), primary / physical clustering. $\pm5$ pp is a post-hoc sensitivity margin proposed in this review.}
+\caption{SpatialVLA success-rate direct effects at a fixed context-perturbation budget (P1-D, pre-registered b212637; 4{,}800 episodes, restore verified; direct-effect analysis post-hoc). Per configuration 240 units: pick\_coke\_can 120 seeds (each a distinct initial state) and move\_near 120 units (120 distinct initial states including the instruction, but only 10 physical layouts). $\delta_R=$ S(R)$-$S(N) (context-only perturbation, natural step-1 action executed); $\delta_C=$ S(C)$-$S(F) (correction benefit; F$-$C$=-\delta_C$). pp with original sign-flip-inversion 95\% CI on initial-state clusters (invalid at the boundary for paired binary data; post-hoc corrected Rao--Scott Newcombe CIs in Table~\ref{tab:rf4_ci}) (move\_near: primary states; physical-layout CI in brackets); pooled = task-equal mean. Equivalence: Holm-adjusted TOST $p$ over $\{\delta_R,\delta_C\}\times\{$r1e4, r4e1$\}$ ($m=4$), primary / physical clustering. $\pm5$ pp is a post-hoc sensitivity margin proposed in this review.}  % corrected 2026-10-18 (review_followup4)
 \label{tab:p1d_direct}
 \begin{tabular}{llcccc}
 \toprule
@@ -184,18 +184,18 @@ r4e1 & $\delta_C$ & $-4.2$ [$-14.3$, $5.8$] & $+4.2$ [$-5.0$, $13.3$] ([$-10.5$,
 \midrule
 \multicolumn{6}{l}{\footnotesize Same units, R$-$N: suffix tokens changed 51\% / 52\%; actual TCP mean distance 2.67 / 5.95\,cm (rerun 1.24 / 2.00\,cm) for r1e4 / r4e1.} \\
 \multicolumn{6}{l}{\footnotesize Executed perturbation: r4e1 C$-$N $-11.7$ [$-18.3$, $-5.0$] pp (Holm $p=0.009$). Interactions S1--S4: $\pm10$ pp equivalent after clustering; $\pm5$ pp not.} \\
-\multicolumn{6}{l}{\footnotesize Pooled effects are equivalent within $\pm10$ pp; task-level CIs span up to 18--29 pp (r4e1; r1e4 6.9--21.6 pp), so task-specific effects remain uncertain.} \\
+\multicolumn{6}{l}{\footnotesize Pooled effects are equivalent within $\pm10$ pp; task-level CIs span up to 18--25 pp (r4e1; r1e4 13--20 pp; post-hoc corrected intervals, Table~\ref{tab:rf4_ci}), so task-specific effects remain uncertain.} \\  % corrected 2026-10-18 (review_followup4)
 \bottomrule
 \end{tabular}
 \end{table}
 
 % >>> BEGIN machine-generated review_followup3 (cp2_tables.py) >>>
-% Generated from numbers.json; do not edit by hand. Regenerate with cp2_tables.py.
+% Generated from numbers.json; do not edit by hand. Regenerate with cp2_tables.py (captions/labels corrected 2026-10-18 by review_followup4/c/c_tables.py).
 % ---------------------------------------------------------------- Table 8
 \begin{table}[t]
 \centering
 \small
-\caption{AutoVLA (driving, open-loop 5\,s plan): conditional and evaluation-population effects (review\_followup3 P0-A; machine-generated from \texttt{numbers.json} rows \texttt{P0A.*}). RN = Recent-GT$-$Normal (repeated sliding correction), RV = Reverse@emb$-$Full (Normal-branch token injection), DM = direction$-$magnitude error. pp, scene-weighted paired difference, drive-cluster bootstrap 95\% CI, exact drive sign-flip $p$; Holm within the original family. P = Hajek-weighted estimand over the 2{,}191 eligible scenes of the 64 P1-C logs: an \emph{evaluation-population} estimand, not a deployment effect. Code paths verified by the no-op/cache gate on the verification manifests (H7, H8, H32); runs outside the manifests are not retro-validated. A$-$ frequency (evaluation set, not deployment): dev natural, A$-$: 52/2747 = 1.89\% [1.16, 2.64]; P1-C stage 1, A$-$: 107/5671 = 1.89\% [1.32, 2.53].}
+\caption{AutoVLA (driving, open-loop 5\,s plan): conditional and evaluation-population effects (review\_followup3 P0-A; machine-generated from \texttt{numbers.json} rows \texttt{P0A.*}). RN = Recent-GT$-$Normal (repeated sliding correction), RV = Reverse@emb$-$Full (Normal-branch token injection), DM = direction$-$magnitude error. pp, scene-weighted paired difference, drive-cluster bootstrap 95\% CI, exact drive sign-flip $p$; Holm within the original family. P = Hajek-weighted estimand over the 2{,}191 eligible scenes of the 64 P1-C logs, estimated from 353 sampled scenes with design weights (24 drives): an \emph{evaluation-frame} estimand, not a deployment effect; about 60\% of the RN P effect comes from the non-failure (A+) stratum. F = failure stratum, 105 scenes / 18 drives (corrected 2026-10-18, review\_followup4). Code paths verified by the no-op/cache gate on the verification manifests (H7, H8, H32); runs outside the manifests are not retro-validated. A$-$ frequency (evaluation set, not deployment): dev natural, A$-$: 52/2747 = 1.89\% [1.16, 2.64]; P1-C stage 1, A$-$: 107/5671 = 1.89\% [1.32, 2.53].}
 \label{tab:rf3_population}
 \begin{tabular}{llcccc c}
 \toprule
@@ -219,15 +219,15 @@ P1-C P (eval.-population) & DM & +2.6 [$-$0.4, +5.5] & 0.10 & 0.10 & 353 / 2436 
 \centering
 \scriptsize
 \setlength{\tabcolsep}{2pt}
-\caption{AutoVLA (driving, open-loop): endpoint response beyond motion extrapolation (review\_followup3 P2; post hoc on P1-A rollouts, GT-free family G; machine-generated from \texttt{numbers.json} rows \texttt{P2A.*}, \texttt{P2B.*}, \texttt{P2.verdict.*}). Entries: $\Delta_{\text{model}}-\Delta_{\text{control}}$ in m (M1 endpoint displacement), drive-cluster bootstrap 95\% CI; $^{*}$ Holm $p<0.05$ and CI excludes 0 (kinematic: $m=4$; learned: $m=2$). CM = the original repeat-p constant-motion baseline, a body-frame SE(2) repeat (already constant turn rate); CV0 = zero-turn global velocity; CTRV-K3 = turn rate and speed averaged over the last 3 steps; CTRA-2 = constant turn rate and acceleration; E = small learned non-AR motion extrapolator (MLP, 3 seeds, trained on drive-disjoint OpenScene trainval GT; not a non-AR version of the VLA). Last column: exceeds every control (locked rule).}
+\caption{AutoVLA (driving, open-loop): endpoint response beyond motion extrapolation (review\_followup3 P2; post hoc on P1-A rollouts, GT-free family G; machine-generated from \texttt{numbers.json} rows \texttt{P2A.*}, \texttt{P2B.*}, \texttt{P2.verdict.*}). Entries: $\Delta_{\text{model}}-\Delta_{\text{control}}$ in m (M1 endpoint displacement), drive-cluster bootstrap 95\% CI; $^{*}$ Holm $p<0.05$ and CI excludes 0 (kinematic: $m=4$; learned: $m=2$). CM = the original repeat-p constant-motion baseline, a body-frame SE(2) repeat (already constant turn rate); CV0 = zero-turn global velocity; CTRV-K3 = turn rate and speed averaged over the last 3 steps; CTRA-2 = constant turn rate and acceleration; L = small learned non-AR motion extrapolator (MLP, 3 seeds, trained on drive-disjoint OpenScene trainval GT; not a non-AR version of the VLA). Last column: exceeds every control (locked rule). \emph{all} = the 208 selected mechanism scenes (52 A$-$ + 156 A+), not the natural set or a population; a non-significant excess is not equivalence. L is unrelated to the P1-C target set E (corrected 2026-10-18, review\_followup4).}
 \label{tab:rf3_motion}
 \begin{tabular}{lccccccc}
 \toprule
-Stratum & CM & CV0 & CTRV-K3 & CTRA-2 & E prefix & E prefix+ego & beyond all \\
+Stratum & CM & CV0 & CTRV-K3 & CTRA-2 & L prefix & L prefix+ego & beyond all \\
 \midrule
 A$-$ & +2.35 [+1.27, +3.19]$^{*}$ & +4.02 [+2.94, +4.83]$^{*}$ & +3.02 [+1.93, +3.87]$^{*}$ & +1.43 [+0.44, +2.33]$^{*}$ & +1.97 [+1.06, +2.87]$^{*}$ & +2.27 [+1.50, +3.10]$^{*}$ & yes \\
 A+ & $-$0.52 [$-$0.82, $-$0.27]$^{*}$ & +1.35 [+0.98, +1.63]$^{*}$ & +0.17 [$-$0.14, +0.45] & $-$1.56 [$-$1.86, $-$1.27]$^{*}$ & $-$1.11 [$-$1.44, $-$0.80]$^{*}$ & $-$0.56 [$-$0.86, $-$0.29]$^{*}$ & no \\
-all & +0.20 [$-$0.33, +0.56] & +2.01 [+1.46, +2.37]$^{*}$ & +0.88 [+0.37, +1.25]$^{*}$ & $-$0.81 [$-$1.24, $-$0.51]$^{*}$ & $-$0.34 [$-$0.77, $-$0.01] & +0.15 [$-$0.28, +0.45] & no \\
+all (208 selected) & +0.20 [$-$0.33, +0.56] & +2.01 [+1.46, +2.37]$^{*}$ & +0.88 [+0.37, +1.25]$^{*}$ & $-$0.81 [$-$1.24, $-$0.51]$^{*}$ & $-$0.34 [$-$0.77, $-$0.01] & +0.15 [$-$0.28, +0.45] & no \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -237,7 +237,7 @@ all & +0.20 [$-$0.33, +0.56] & +2.01 [+1.46, +2.37]$^{*}$ & +0.88 [+0.37, +1.25]
 \centering
 \scriptsize
 \setlength{\tabcolsep}{2pt}
-\caption{SpatialVLA-4B (manipulation, closed loop, SimplerEnv Google Robot): per-task success direct effects, P1-D (review\_followup3 P0-B, post hoc; machine-generated from \texttt{numbers.json} rows \texttt{P0B.P1D.*}). pp, sign-flip-inversion 95\% CI on initial-state clusters (move\_near: primary states; physical-layout CI in parentheses, 10 layouts). TOST $p$ Holm-adjusted within the original family ($m=4$), $\pm10$ pp (original margin) / $\pm5$ pp (post-hoc). Per-task effects are reported in full; the two-task mean (last column) does not replace them. Restore machinery verified on 20 audit units (split-fingerprint null-arm check 20/20); P1-D runs outside the audit units are not retro-validated.}
+\caption{SpatialVLA-4B (manipulation, closed loop, SimplerEnv Google Robot): per-task success direct effects, P1-D (review\_followup3 P0-B, post hoc; machine-generated from \texttt{numbers.json} rows \texttt{P0B.P1D.*}). pp, original sign-flip-inversion 95\% CI on initial-state clusters (kept for the record; invalid at the boundary for paired binary data; post-hoc corrected Rao--Scott Newcombe CIs in Table~\ref{tab:rf4_ci} (corrected 2026-10-18, review\_followup4)) (move\_near: primary states; physical-layout CI in parentheses, 10 layouts). TOST $p$ Holm-adjusted within the original family ($m=4$), $\pm10$ pp (original margin) / $\pm5$ pp (post-hoc). Per-task effects are reported in full; the two-task mean (last column) does not replace them. Restore machinery verified on 20 audit units (split-fingerprint null-arm check 20/20); P1-D runs outside the audit units are not retro-validated.}
 \label{tab:rf3_spatial}
 \begin{tabular}{llccccc}
 \toprule
@@ -255,7 +255,7 @@ r4e1 & $\delta_C$ & $-$4.2 [$-$14.3, +5.8] & 0.15 / 0.82 & +4.2 [$-$5.0, +13.3] 
 \begin{table}[t]
 \centering
 \small
-\caption{Intervention-machinery verification (review\_followup3 P1; machine-generated from \texttt{numbers.json} rows \texttt{P1.*}). AutoVLA no-op/cache gate (controls c1--c5, greedy and $T=0.01$, $T_\text{exact}=0$, $T_\text{equiv}=0.75$ logits): H7: PASS (0 failing rows); H8: PASS (0 failing rows); H9: PASS (0 failing rows); P1A: PASS (0 failing rows); H32: PASS (0 failing rows); P1B: PASS (0 failing rows); Stage-0 manifest 21 path-units (H7/H8/H9/P1A) and O0 extension 18 path-units (H32/P1B). SpatialVLA restore audit below (20 units = 2 tasks $\times$ 5 states $\times$ 2 configs; tolerance 0). Impromptu and OpenVLA intervention paths were not parity-verified. Runs outside the verification manifests are not retro-validated; the arms are not identical to HF \texttt{generate} output.}
+\caption{Intervention-machinery verification (review\_followup3 P1; machine-generated from \texttt{numbers.json} rows \texttt{P1.*}). AutoVLA no-op/cache gate (controls c1--c5, greedy and $T=0.01$, $T_\text{exact}=0$, $T_\text{equiv}=0.75$ logits): H7: PASS (0 failing rows); H8: PASS (0 failing rows); H9: PASS (0 failing rows); P1A: PASS (0 failing rows); H32: PASS (0 failing rows); P1B: PASS (0 failing rows); Stage-0 manifest 21 path-units (H7/H8/H9/P1A) and O0 extension 18 path-units (H32/P1B). SpatialVLA restore audit below (20 units = 2 tasks $\times$ 5 states $\times$ 2 configs; tolerance 0). Impromptu and OpenVLA intervention paths were not parity-verified. Runs outside the verification manifests are not retro-validated; the arms are not identical to HF \texttt{generate} output. A verified code path is not a validation of an estimand or interval (review\_followup4 A1); B1: batch shape alone changes 9\% of free-run suffixes, attention backend / fp32 arithmetic about 25\% (corrected 2026-10-18, review\_followup4).}
 \label{tab:rf3_verification}
 \begin{tabular}{lc}
 \toprule
@@ -276,3 +276,71 @@ C4 analogue: HF generate = batch-8 chunk (report) & 16/20 \\
 \end{table}
 
 % <<< END machine-generated review_followup3 <<<
+
+% >>> BEGIN machine-generated review_followup4 (c_tables.py) >>>
+% Generated from numbers.json (RF4.* rows); do not edit by hand. Regenerate with scripts/review_followup4/c/c_tables.py (2026-10-18).
+% ---------------------------------------------------------------- Table 12
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{AutoVLA (driving, open-loop 5\,s plan): matched-prefix factorial (review\_followup4 B2; protocol committed before the main runs, 552b3ac; machine-generated from \texttt{numbers.json} rows \texttt{RF4.B2.*}). One edited prefix per unit-anchor: the older prefix is GT or the matched natural prefix (GT\_/NAT\_), the latest block a$-$1 holds GT (REF), the frozen Normal-source token (NSRC) or the frozen corrected-source token (CSRC); the edit is \emph{retained} at fixed positions for all later steps (one-shot, not a release test). Outcome: severe (A$-$ and FDE$_{5\,s}>3$\,m), pp; scene-weighted; drive-cluster bootstrap 95\% CI; exact drive sign-flip $p$ / Holm $p$ within the preregistered family ($m=4$; F $\alpha=0.05$, P $\alpha=0.025$); rej.\ = H0 rejected. F = P1-C failure stratum (100 scenes / 711 units / 18 drives); P = Hajek estimand over the B2 eligible domain E4 (t$^*\le4$; 312 sampled scenes / 2160 units / 24 drives; weights recomputed), not the original 2{,}191-scene estimand. Dev column: development A$-$ stratum (49 scenes / 13 drives; descriptive). INT restricted to units whose older value differs from GT: F $-$1.7 [$-$5.4, +1.9]. Sensitivity anchor (n$_\text{old}=2$): P-level INT +2.7 [+1.1, +4.6], $p=0.0046$ (not preregistered as a test). Every GT-containing cell is an oracle-conditioned diagnostic, not an online method; existing drives, not external validation; NSRC vs CSRC differences are value differences, not pure provenance.}
+\label{tab:rf4_matched_prefix}
+\begin{tabular}{lccccc}
+\toprule
+Contrast & F: effect [95\% CI] & F: $p$ / Holm & P (E4): effect [95\% CI] & P: $p$ / Holm & dev A$-$ \\
+\midrule
+$C_\text{GT}$ = GT\_NSRC $-$ GT\_REF & +25.3 [+20.5, +29.3] & $1.5\times10^{-5}$ / $4.6\times10^{-5}$ rej. & +3.3 [+1.0, +5.6] & 0.017 / 0.051 n.r. & +28.5 [+20.4, +36.3] \\
+$C_\text{NAT}$ = NAT\_NSRC $-$ NAT\_REF & +25.5 [+21.6, +29.0] & $7.6\times10^{-6}$ / $3.1\times10^{-5}$ rej. & +4.0 [+2.7, +5.7] & $1.6\times10^{-5}$ / $6.5\times10^{-5}$ rej. & +28.4 [+19.2, +37.4] \\
+INT = $C_\text{GT}-C_\text{NAT}$ & $-$0.2 [$-$3.8, +3.1] & 0.92 / 0.92 n.r. & $-$0.7 [$-$2.2, +0.8] & 0.41 / 0.41 n.r. & +0.1 [$-$4.1, +4.7] \\
+$C_\text{PROV}$ = GT\_CSRC $-$ GT\_NSRC & $-$15.8 [$-$20.1, $-$10.2] & $7.3\times10^{-4}$ / 0.0015 rej. & $-$2.2 [$-$4.2, $-$0.2] & 0.066 / 0.13 n.r. & $-$16.3 [$-$23.1, $-$9.8] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ---------------------------------------------------------------- Table 13
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{Post-hoc corrected paired success-rate intervals (review\_followup4 A1; machine-generated from \texttt{numbers.json} rows \texttt{RF4.A1.*}; the original sign-flip-inversion intervals stay in Table~\ref{tab:rf3_spatial} and in the original rows). Top: SpatialVLA-4B (manipulation, closed loop, SimplerEnv Google Robot), P1-D per-task direct effects, pp, Rao--Scott design-effect Newcombe-10 95\% CI on initial-state clusters (move\_near primary states; physical-layout CI in parentheses, 10 layouts); two-task mean by MOVER; TOST $p$ by inversion of the corrected interval, Holm within the original family ($m=4$), $\pm10$ pp / $\pm5$ pp. Bottom: OpenVLA-7B (manipulation, closed loop, LIBERO-Spatial; 100 initial states; paired table both/only-a/only-b/neither), Newcombe-10 95\% CI; descriptive (intervention path not parity-verified). The difference-from-0 $p$ (sign-flip / exact McNemar at $\delta=0$) is valid and unchanged. Method chosen by a coverage rule fixed before the real data were recomputed. Per-task OpenVLA intervals (10 states) are uninformative and descriptive only; a zero-width interval is never evidence of equality.}
+\label{tab:rf4_ci}
+\begin{tabular}{llccccc}
+\toprule
+Config & Contrast & coke & $p_\text{eq}$ $\pm10$ / $\pm5$ & move\_near & $p_\text{eq}$ $\pm10$ / $\pm5$ & two-task mean \\
+\midrule
+r1e4 & $\delta_R$ & 0.0 [$-$6.5, +6.5] & 0.0072 / 0.26 & +1.7 [$-$5.5, +8.9] ([$-$8.4, +11.7]) & 0.042 / 0.58 & +0.8 [$-$4.0, +5.7] \\
+r1e4 & $\delta_C$ & +4.2 [$-$2.8, +11.3] & 0.15 / 0.81 & +0.8 [$-$6.9, +8.6] ([$-$6.9, +8.6]) & 0.042 / 0.58 & +2.5 [$-$2.7, +7.8] \\
+r4e1 & $\delta_R$ & +1.7 [$-$8.3, +11.6] & 0.15 / 0.77 & +0.8 [$-$8.4, +10.0] ([$-$8.4, +10.0]) & 0.05 / 0.58 & +1.25 [$-$5.5, +8.0] \\
+r4e1 & $\delta_C$ & $-$4.2 [$-$14.0, +5.8] & 0.15 / 0.81 & +4.2 [$-$5.0, +13.2] ([$-$8.6, +16.7]) & 0.11 / 0.58 & 0.0 [$-$6.7, +6.7] \\
+\midrule
+OpenVLA & C$-$F 8 bins & \multicolumn{2}{c}{71/8/11/10: $-$3.0, original [$-$11.8, +5.9]} & \multicolumn{2}{c}{corrected [$-$11.9, +5.9], $p_\text{eq}$ $\pm10$ 0.06 (unadj.)} & $p=0.65$ \\
+OpenVLA & C$-$F 24 bins & \multicolumn{2}{c}{72/7/12/9: $-$5.0, original [$-$13.6, +3.9]} & \multicolumn{2}{c}{corrected [$-$13.9, +3.8], $p_\text{eq}$ $\pm10$ 0.13 (unadj.)} & $p=0.36$ \\
+OpenVLA & C$-$N 8 bins & \multicolumn{2}{c}{73/6/14/7: $-$8.0, original [$-$16.7, 0 (pinned)]} & \multicolumn{2}{c}{corrected [$-$17.1, +1.0], $p_\text{eq}$ $\pm10$ 0.33 (unadj.)} & $p=0.12$ \\
+OpenVLA & R$-$N$_\text{rep}$ 8 bins & \multicolumn{2}{c}{74/10/7/9: +3.0, original [$-$5.0, +11.1]} & \multicolumn{2}{c}{corrected [$-$5.5, +11.5], $p_\text{eq}$ $\pm10$ 0.052 (unadj.)} & $p=0.63$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ---------------------------------------------------------------- Table 14
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{AutoVLA (driving, open-loop 5\,s plan): numerical sensitivity of paired contrasts (review\_followup4 B1; machine-generated from \texttt{numbers.json} rows \texttt{RF4.B1.*}). 56 development scenes (Stage-0 rule, take 20 per t$^*$ stratum), T = 0.01, seed 0, RTX 5090. S0 = reference (bf16, sdpa, experiment batch); SB = batch shape only; SE = eager attention (co-changes mask construction and softmax precision); SF = fp32 arithmetic on the bf16-rounded weights. Entries: change of the unit-mean paired contrast vs S0, severe (proportion) / FDE$_{5\,s}$ (m); first column = S0 contrast. Material = pre-fixed rule (sign change, $|\Delta\text{severe}|>0.05$ or $|\Delta\text{FDE}|>25\%$). The same-process repeat is bitwise. A sensitivity of the numerical implementation, not a new effect estimate; numeric variation is reported next to the effects and never subtracted.}
+\label{tab:rf4_numerics}
+\begin{tabular}{lccccc}
+\toprule
+Contrast & S0 & SB & SE & SF & material \\
+\midrule
+RN (Recent-GT $-$ Normal) & $-$0.143 / $-$1.76 & +0.000 / +0.16 & +0.018 / $-$0.02 & +0.000 / +0.03 & no \\
+Full-GT $-$ Normal & $-$0.143 / $-$1.93 & +0.000 / +0.15 & +0.018 / $-$0.02 & +0.000 / +0.02 & no \\
+RV (Reverse-N $-$ Full-GT) & +0.143 / +1.53 & $-$0.018 / +0.04 & $-$0.036 / +0.00 & $-$0.018 / +0.01 & no \\
+P1-A OC $-$ U & $-$0.036 / +0.11 & +0.000 / $-$0.07 & +0.000 / $-$0.17 & +0.018 / $-$0.24 & yes \\
+P1-A OC$_\text{refR}-$OC & +0.054 / $-$0.02 & +0.000 / +0.03 & +0.018 / +0.17 & +0.018 / +0.17 & yes \\
+P1-A OC$_\text{refH}-$OC & +0.054 / $-$0.07 & $-$0.018 / +0.04 & +0.000 / +0.24 & +0.018 / +0.18 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% <<< END machine-generated review_followup4 <<<

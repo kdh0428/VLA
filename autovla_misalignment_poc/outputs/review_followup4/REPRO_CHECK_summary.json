@@ -1,0 +1,19 @@
+{
+ "zip_mb": 71.8,
+ "counts": {
+  "IDENTICAL_BYTES": 20,
+  "MATCH_VALUES": 2
+ },
+ "n_files_compared": 22,
+ "n_identical_bytes": 20,
+ "n_match_values": 2,
+ "n_mismatch_or_failed": 0,
+ "targets": [
+  "A1_corrected_CIs",
+  "A1_coverage_selection",
+  "B2_dev",
+  "B2_p1c",
+  "P0A_population",
+  "P2_motion_baselines"
+ ]
+}

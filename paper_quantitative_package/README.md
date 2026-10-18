@@ -67,3 +67,9 @@ No number in `numbers.json` is typed by hand.
 **Precedence.** Where `PAPER_NUMBERS.md` / `tables.tex` conflict with `numbers.json`, `numbers.json` and the review_followup3 reports win.
 
 **Final verdicts:** `autovla_misalignment_poc/outputs/review_followup3/{CLAIM_EVIDENCE_MATRIX.md, REVIEW_COVERAGE.md, STATUS.md}`.
+
+**2026-10-18 개정 (review_followup4)**
+- `numbers.json` / `numbers_sources.csv`: review_followup4 행 1,532개(`RF4.A1` 사후 수정 CI, `RF4.A2` window 의미, `RF4.A3` Impromptu parity, `RF4.A4` 코호트·추정 대상 지도, `RF4.B1` 수치 민감도, `RF4.B2` matched-prefix, `RF4.B3` OpenVLA gate NOT_RUN, `RF4.FEAS` π₀-FAST) 추가. 원래 행의 값은 그대로이며 쓰임이 바뀐 행에는 `rf4_note`가 붙습니다. 생성: `autovla_misalignment_poc/scripts/review_followup4/c/c_numbers.py`. 새 status `VERIFIED_IN_RUN_ALL_UNITS`(B2: gate PASS + 모든 unit-anchor identity 검사), `NOT_RUN`, `FEASIBILITY_ONLY`.
+- `tables.tex`: review_followup3 기계 생성 block의 Table 8–11 caption·label 정정(값은 그대로, 원 sign-flip 역산 CI 보존), 새 block Table 12(B2), Table 13(A1 수정 구간), Table 14(B1). 생성: `c_tables.py`. 손으로 쓴 부분의 정정은 `c_doc_fixes.py`(줄 끝 주석 "corrected 2026-10-18").
+- `PAPER_NUMBERS.md`(2026-10-18 개정 절, Claim 25–27), `MANUSCRIPT_REVISION.md`(2026-10-18 revision 절), `PAPER_EVIDENCE.md`, `EXP35_RESULTS.md`, `CONSISTENCY_AUDIT.md`, `SOURCE_MAP.md`: A4 문장 정정을 줄 단위로 적용하고 "(2026-10-18 수정)" 표시. 원문은 `autovla_misalignment_poc/outputs/review_followup4/DOC_EDITS_APPLIED.csv`.
+- 최종 판정: `autovla_misalignment_poc/outputs/review_followup4/{STATUS.md, CLAIM_CHANGES.md, MANUSCRIPT_REVISION.md}`가 review_followup3 판정보다 우선합니다. 저장소에 원고 `.tex`는 없습니다.
