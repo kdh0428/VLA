@@ -1,0 +1,8 @@
+{
+ "units_compared": 2160,
+ "equal": 2160,
+ "share": 1.0,
+ "threshold": 0.95,
+ "not_in_stored": 0,
+ "pass": true
+}

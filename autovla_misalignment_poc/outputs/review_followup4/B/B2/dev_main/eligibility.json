@@ -1,0 +1,10 @@
+{
+ "cohort": "dev",
+ "n_units_all": 1408,
+ "n_units_eligible": 1327,
+ "t_star_max": 4,
+ "excluded_t_star": [
+  5,
+  7
+ ]
+}

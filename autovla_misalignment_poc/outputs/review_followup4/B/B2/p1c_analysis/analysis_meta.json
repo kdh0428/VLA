@@ -1,0 +1,12 @@
+{
+ "run": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_main",
+ "cohort": "p1c",
+ "masked": false,
+ "input_check_p1c": {
+  "units_compared": 2160,
+  "normal_tokens_equal_stored_P1C_H7": 2160,
+  "share": 1.0
+ },
+ "seed": 20261017,
+ "n_rows": 582
+}

@@ -1,0 +1,8 @@
+{
+ "run": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/dev_main",
+ "cohort": "dev",
+ "masked": false,
+ "input_check_p1c": null,
+ "seed": 20261017,
+ "n_rows": 582
+}

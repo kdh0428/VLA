@@ -1,0 +1,7 @@
+{
+ "cohort": "p1c",
+ "n_units_all": 2160,
+ "n_units_eligible": 2160,
+ "t_star_max": 4,
+ "excluded_t_star": []
+}

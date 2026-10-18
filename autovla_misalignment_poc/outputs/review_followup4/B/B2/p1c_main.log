@@ -1,0 +1,4326 @@
+[gpu_wait] free 32149 MiB 2026-10-17T22:49:28Z
+/root/miniforge3/envs/autovla/lib/python3.9/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.38s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.45s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[b2:A] b5ee0c4a00765073|alt0 2.6s
+[b2:A] 4a4bf6e11a875f33|alt4 1.3s
+[b2:A] 4a1f69f3821e5ac5|alt1 1.2s
+[b2:A] d436fd792f365847|alt4 1.1s
+[b2:A] fb2ff1ed5e1b529f|alt0 1.2s
+[b2:A] 23803695a4c1547c|alt3 1.1s
+[b2:A] e69be869445455c7|alt5 1.1s
+[b2:A] fb2402a506065225|alt1 1.1s
+[b2:A] 47fdf7c04b155eac|alt2 1.1s
+[b2:A] f67e431f781659eb|alt4 1.1s
+[b2:A] f93751942d4e5c48|original 1.1s
+[b2:A] ec3969afeb945ddb|alt1 1.1s
+[b2:A] 3338ad25c2cc59d1|alt0 1.1s
+[b2:A] 25b719c231d85e56|alt3 1.1s
+[b2:A] f93751942d4e5c48|alt4 1.1s
+[b2:A] 586c5b66ad8158ee|alt2 1.2s
+[b2:A] f93751942d4e5c48|alt6 1.0s
+[b2:A] 88e453ca4644586f|alt5 1.1s
+[b2:A] d42d0a93b7185161|alt1 1.1s
+[b2:A] 988cf241460c557e|alt0 1.0s
+[b2:A] 4b721ff0b7025f21|alt1 1.1s
+[b2:A] 6544f1c9668c58c3|original 1.1s
+[b2:A] 23d71fb39b0456f5|alt2 1.1s
+[b2:A] e3a97e3004795b39|alt6 1.2s
+[b2:A] e1950bc54da65383|alt5 1.1s
+[b2:A] 0e7f7322726f5b86|alt5 1.2s
+[b2:A] f93751942d4e5c48|alt3 1.1s
+[b2:A] e83f4b6e1dd25c90|alt3 1.0s
+[b2:A] 1ad96f74e72750db|alt2 1.1s
+[b2:A] 1218b6a218b750d8|alt0 1.1s
+[b2:A] 4b721ff0b7025f21|alt2 1.0s
+[b2:A] 61c675d850d75cd1|alt0 1.1s
+[b2:A] a7fa8bccce9253cb|alt2 1.1s
+[b2:A] e83f4b6e1dd25c90|alt5 1.0s
+[b2:A] fdb658e4941855a3|alt1 1.1s
+[b2:A] e5e00457df055e1a|alt7 1.1s
+[b2:A] cb9992677d95539f|alt4 1.1s
+[b2:A] da0aac1f6c225eca|alt0 1.2s
+[b2:A] 4b721ff0b7025f21|alt0 1.0s
+[b2:A] e3a97e3004795b39|alt4 1.1s
+[b2:A] 21b8742127e7523c|alt6 1.1s
+[b2:A] 667afe1f010351c5|alt0 1.0s
+[b2:A] 23d71fb39b0456f5|original 1.0s
+[b2:A] 06392ff957445576|alt1 1.1s
+[b2:A] 663c00bac2e05721|alt2 1.0s
+[b2:A] 3338ad25c2cc59d1|alt1 1.0s
+[b2:A] 4a4bf6e11a875f33|alt1 1.0s
+[b2:A] 1218b6a218b750d8|alt1 1.0s
+[b2:A] 88e453ca4644586f|alt0 1.0s
+[b2:A] df84a00692885ec0|alt1 1.1s
+[b2:A] f67e431f781659eb|alt1 1.1s
+[b2:A] fb2ff1ed5e1b529f|alt4 1.1s
+[b2:A] 23d71fb39b0456f5|alt0 1.0s
+[b2:A] 85936ccd1b405f4c|alt4 1.0s
+[b2:A] 966e42e47cc85a5c|alt2 1.1s
+[b2:A] b84056c4268153fb|alt4 1.1s
+[b2:A] 8227648b1da95adb|alt4 1.1s
+[b2:A] 69a4cff1f35655ff|alt0 1.0s
+[b2:A] 23803695a4c1547c|original 1.1s
+[b2:A] f93751942d4e5c48|alt2 1.0s
+[b2:A] 2a799223058c5ed7|alt0 1.1s
+[b2:A] 6de13c6c9af05cac|original 1.0s
+[b2:A] ee492610c55b5440|alt2 1.1s
+[b2:A] baf1301534ea54d6|alt1 1.1s
+[b2:A] cedd32ec31e45cd9|original 1.0s
+[b2:A] 966e42e47cc85a5c|alt4 1.0s
+[b2:A] 9ba2570d6743526a|alt3 1.1s
+[b2:A] 988cf241460c557e|alt1 1.0s
+[b2:A] cedd32ec31e45cd9|alt5 1.0s
+[b2:A] 88e453ca4644586f|original 1.0s
+[b2:A] 4b721ff0b7025f21|alt5 1.0s
+[b2:A] 5b272b7aa3315c4f|alt3 1.0s
+[b2:A] d42d0a93b7185161|alt0 1.0s
+[b2:A] f93751942d4e5c48|alt7 1.0s
+[b2:A] 8f105ffb008c5801|alt3 1.0s
+[b2:A] 1bea55e75a9b593b|alt1 1.1s
+[b2:A] fb2402a506065225|alt4 1.1s
+[b2:A] e5e00457df055e1a|alt4 1.0s
+[b2:A] 88e453ca4644586f|alt3 1.0s
+[b2:A] 6fa01275a4525b26|alt4 1.1s
+[b2:A] 2f03781e3fd05c28|alt4 1.1s
+[b2:A] d813c6a4706e5411|alt6 1.0s
+[b2:A] 0e7f7322726f5b86|original 1.0s
+[b2:A] df84a00692885ec0|alt0 1.0s
+[b2:A] b3509fd31f495cfb|alt0 1.1s
+[b2:A] cb9992677d95539f|alt2 1.0s
+[b2:A] ec3969afeb945ddb|alt0 1.0s
+[b2:A] b58a12e346235cd0|alt7 1.1s
+[b2:A] 23803695a4c1547c|alt1 1.0s
+[b2:A] 457acf87bc885550|alt6 1.0s
+[b2:A] ec3969afeb945ddb|alt2 1.0s
+[b2:A] 09d9a0cd32c25dee|alt3 1.1s
+[b2:A] 2243d4e976fb5b77|alt3 1.0s
+[b2:A] 2d4b17f8d7585219|alt1 1.1s
+[b2:A] 06392ff957445576|alt4 1.0s
+[b2:A] 2d4b17f8d7585219|alt3 1.1s
+[b2:A] 4b721ff0b7025f21|alt6 1.0s
+[b2:A] fab7537b12d254bd|alt1 1.1s
+[b2:A] 586c5b66ad8158ee|alt3 1.1s
+[b2:A] 2564ab331db05cb9|alt3 1.1s
+[b2:A] 7f2934ac111854f5|alt1 1.0s
+[b2:A] 6de13c6c9af05cac|alt2 1.0s
+[b2:A] 88e453ca4644586f|alt6 1.0s
+[b2:A] fdb658e4941855a3|original 1.0s
+[b2:A] 21b8742127e7523c|alt5 1.0s
+[b2:A] 3012e1628f7d5d3a|alt2 1.1s
+[b2:A] 704527beccac5701|alt4 1.0s
+[b2:A] fdb658e4941855a3|alt0 1.0s
+[b2:A] ec3969afeb945ddb|alt3 1.0s
+[b2:A] 88466abb967954e5|alt3 1.1s
+[b2:A] ec3969afeb945ddb|alt6 1.0s
+[b2:A] 586c5b66ad8158ee|alt0 1.1s
+[b2:A] 47fdf7c04b155eac|alt3 1.0s
+[b2:A] b7122fd86c855943|alt5 1.0s
+[b2:A] 4e50c7903a8c5303|alt2 1.0s
+[b2:A] e69be869445455c7|alt0 1.0s
+[b2:A] 09d9a0cd32c25dee|alt2 1.1s
+[b2:A] 663c00bac2e05721|alt4 1.0s
+[b2:A] e3a97e3004795b39|alt1 1.1s
+[b2:A] e14d9a1990535a29|original 1.1s
+[b2:A] 4b721ff0b7025f21|original 1.0s
+[b2:A] bd7154fc2b1f548b|alt1 1.1s
+[b2:A] a067e1b873c8534d|alt2 1.0s
+[b2:A] d436fd792f365847|alt6 1.1s
+[b2:A] 2919cd502115582a|alt1 1.1s
+[b2:A] efb9929eed1852f0|alt3 1.1s
+[b2:A] cedd32ec31e45cd9|alt2 1.0s
+[b2:A] 55bd10ac74585a12|original 1.0s
+[b2:A] 6de13c6c9af05cac|alt0 1.0s
+[b2:A] 4b721ff0b7025f21|alt4 1.0s
+[b2:A] 966e42e47cc85a5c|alt1 1.1s
+[b2:A] 3ec88bf115c95f69|alt2 1.1s
+[b2:A] 704527beccac5701|alt1 1.0s
+[b2:A] 3338ad25c2cc59d1|alt5 1.0s
+[b2:A] 47fdf7c04b155eac|alt4 1.0s
+[b2:A] f93751942d4e5c48|alt1 1.0s
+[b2:A] 21b8742127e7523c|alt1 1.0s
+[b2:A] a4f91ed474295f00|alt7 1.1s
+[b2:A] d54047580ffb5dba|alt1 1.0s
+[b2:A] 586c5b66ad8158ee|alt4 1.1s
+[b2:A] 2a799223058c5ed7|alt3 1.1s
+[b2:A] 2564ab331db05cb9|alt0 1.1s
+[b2:A] bd7154fc2b1f548b|alt3 1.1s
+[b2:A] 6de13c6c9af05cac|alt3 1.0s
+[b2:A] 1f12591bdae05306|alt2 1.0s
+[b2:A] de3ea1d3c1e0588a|alt4 1.1s
+[b2:A] 5b272b7aa3315c4f|alt4 1.0s
+[b2:A] 4a1f69f3821e5ac5|alt4 1.1s
+[b2:A] 8227648b1da95adb|alt0 1.0s
+[b2:A] 0fb88262272f5110|alt2 1.1s
+[b2:A] 0b97850e408e5a95|alt4 1.1s
+[b2:A] da0aac1f6c225eca|alt2 1.1s
+[b2:A] efb9929eed1852f0|alt2 1.1s
+[b2:A] bd7154fc2b1f548b|alt5 1.1s
+[b2:A] bf896d504b4356c7|alt5 1.1s
+[b2:A] a067e1b873c8534d|alt0 1.0s
+[b2:A] de3ea1d3c1e0588a|original 1.0s
+[b2:A] 3012e1628f7d5d3a|alt1 1.1s
+[b2:A] baf1301534ea54d6|alt2 1.0s
+[b2:A] e76cb8b17f8f51f3|alt1 1.1s
+[b2:A] b7122fd86c855943|alt3 1.0s
+[b2:A] e5e00457df055e1a|alt5 1.0s
+[b2:A] 5b272b7aa3315c4f|alt5 1.0s
+[b2:A] 1218b6a218b750d8|alt5 1.0s
+[b2:A] 6fa01275a4525b26|alt5 1.1s
+[b2:A] 8227648b1da95adb|alt3 1.0s
+[b2:A] a7c6cc3a1840584f|alt4 1.1s
+[b2:A] 0fb88262272f5110|alt4 1.0s
+[b2:A] 586c5b66ad8158ee|alt5 1.1s
+[b2:A] 06392ff957445576|alt5 1.1s
+[b2:A] b7122fd86c855943|alt2 1.0s
+[b2:A] 2d4b17f8d7585219|alt0 1.1s
+[b2:A] 1218b6a218b750d8|original 1.0s
+[b2:A] ca7e845b9c19597c|alt3 1.1s
+[b2:A] 988cf241460c557e|alt3 1.0s
+[b2:A] 4e50c7903a8c5303|alt1 1.0s
+[b2:A] 667afe1f010351c5|alt6 1.0s
+[b2:A] bf1184622f355af4|alt0 1.1s
+[b2:A] 85936ccd1b405f4c|alt3 1.0s
+[b2:A] b84056c4268153fb|alt3 1.1s
+[b2:A] c687799dac8d5aa2|original 1.1s
+[b2:A] aa072830a2d15d9f|alt3 1.0s
+[b2:A] 3ec88bf115c95f69|alt4 1.1s
+[b2:A] 966e42e47cc85a5c|alt5 1.0s
+[b2:A] 23d71fb39b0456f5|alt4 1.1s
+[b2:A] f67e431f781659eb|alt2 1.1s
+[b2:A] 69a4cff1f35655ff|alt3 1.0s
+[b2:A] a4f91ed474295f00|alt4 1.1s
+[b2:A] ca59ecba5722534c|alt6 1.1s
+[b2:A] 2919cd502115582a|alt3 1.0s
+[b2:A] cedd32ec31e45cd9|alt0 1.0s
+[b2:A] 0192c3bca9ca5c67|alt3 1.1s
+[b2:A] 7f2934ac111854f5|alt4 1.0s
+[b2:A] f93751942d4e5c48|alt0 1.0s
+[b2:A] 2919cd502115582a|original 1.0s
+[b2:A] b84056c4268153fb|alt0 1.1s
+[b2:A] 6de13c6c9af05cac|alt5 1.0s
+[b2:A] 1f12591bdae05306|alt0 1.0s
+[b2:A] 1ea152f7056659a9|original 1.0s
+[b2:A] d54047580ffb5dba|alt2 1.0s
+[b2:A] 4a4bf6e11a875f33|alt0 1.0s
+[b2:A] 5dea796da1ce5b02|alt3 1.1s
+[b2:A] 8f105ffb008c5801|original 1.0s
+[b2:A] 06392ff957445576|original 1.0s
+[b2:A] b58a12e346235cd0|alt6 1.0s
+[b2:A] efb9929eed1852f0|alt5 1.1s
+[b2:A] 88e453ca4644586f|alt4 1.0s
+[b2:A] d436fd792f365847|alt3 1.1s
+[b2:A] d0fccf42f606569a|alt4 1.1s
+[b2:A] 23d71fb39b0456f5|alt1 1.0s
+[b2:A] a067e1b873c8534d|original 1.0s
+[b2:A] ee492610c55b5440|original 1.0s
+[b2:A] 988cf241460c557e|alt4 1.0s
+[b2:A] d813c6a4706e5411|alt1 1.0s
+[b2:A] 9ba2570d6743526a|alt2 1.0s
+[b2:A] 23bd3a02e2855a28|alt6 1.1s
+[b2:A] 5dea796da1ce5b02|alt2 1.1s
+[b2:A] ca59ecba5722534c|alt4 1.0s
+[b2:A] 0fb88262272f5110|alt1 1.0s
+[b2:A] 586c5b66ad8158ee|original 1.1s
+[b2:A] a4f91ed474295f00|alt5 1.1s
+[b2:A] f205efb84def5cc8|alt4 1.0s
+[b2:A] fdb658e4941855a3|alt3 1.0s
+[b2:A] da0aac1f6c225eca|original 1.1s
+[b2:A] a4f91ed474295f00|alt0 1.0s
+[b2:A] 9d7b9273d56f5d02|alt5 1.1s
+[b2:A] 55bd10ac74585a12|alt0 1.0s
+[b2:A] 704527beccac5701|alt0 1.0s
+[b2:A] ca59ecba5722534c|alt3 1.1s
+[b2:A] 23bd3a02e2855a28|alt5 1.0s
+[b2:A] a7fa8bccce9253cb|alt4 1.1s
+[b2:A] 1ea152f7056659a9|alt4 1.0s
+[b2:A] 0fb88262272f5110|alt0 1.0s
+[b2:A] bd7154fc2b1f548b|alt2 1.1s
+[b2:A] e5e00457df055e1a|original 1.0s
+[b2:A] 9ba2570d6743526a|alt5 1.0s
+[b2:A] 1e78181bb1c150e4|alt1 1.1s
+[b2:A] 586c5b66ad8158ee|alt6 1.1s
+[b2:A] fab7537b12d254bd|original 1.0s
+[b2:A] 6fa01275a4525b26|alt2 1.1s
+[b2:A] 2243d4e976fb5b77|alt5 1.0s
+[b2:A] fb2ff1ed5e1b529f|alt2 1.1s
+[b2:A] e5e00457df055e1a|alt3 1.0s
+[b2:A] 4e50c7903a8c5303|alt7 1.0s
+[b2:A] 09d9a0cd32c25dee|original 1.1s
+[b2:A] aa072830a2d15d9f|alt1 1.0s
+[b2:A] 0192c3bca9ca5c67|alt2 1.1s
+[b2:A] bf1184622f355af4|alt3 1.1s
+[b2:A] 2a799223058c5ed7|alt4 1.1s
+[b2:A] 1f12591bdae05306|alt5 1.0s
+[b2:A] d0fccf42f606569a|alt5 1.1s
+[b2:A] 2a799223058c5ed7|alt2 1.0s
+[b2:A] e69be869445455c7|original 1.1s
+[b2:A] e76cb8b17f8f51f3|alt4 1.1s
+[b2:A] d42d0a93b7185161|original 1.0s
+[b2:A] b3509fd31f495cfb|original 1.1s
+[b2:A] 457acf87bc885550|alt5 1.0s
+[b2:A] 1f12591bdae05306|alt1 1.0s
+[b2:A] 06392ff957445576|alt3 1.0s
+[b2:A] 09d9a0cd32c25dee|alt5 1.1s
+[b2:A] d42d0a93b7185161|alt3 1.0s
+[b2:A] 6de13c6c9af05cac|alt4 1.0s
+[b2:A] b58a12e346235cd0|alt2 1.1s
+[b2:A] 09d9a0cd32c25dee|alt1 1.1s
+[b2:A] 1218b6a218b750d8|alt2 1.0s
+[b2:A] 61c675d850d75cd1|alt1 1.0s
+[b2:A] f205efb84def5cc8|alt2 1.0s
+[b2:A] 61c675d850d75cd1|alt2 1.0s
+[b2:A] b5ee0c4a00765073|alt4 1.0s
+[b2:A] a7c6cc3a1840584f|original 1.1s
+[b2:A] 1218b6a218b750d8|alt4 1.0s
+[b2:A] fb2ff1ed5e1b529f|alt3 1.1s
+[b2:A] 9ba2570d6743526a|original 1.1s
+[b2:A] bf896d504b4356c7|original 1.0s
+[b2:A] e83f4b6e1dd25c90|original 1.0s
+[b2:A] 1ad96f74e72750db|alt4 1.0s
+[b2:A] 966e42e47cc85a5c|original 1.0s
+[b2:A] b58a12e346235cd0|alt0 1.1s
+[b2:A] a067e1b873c8534d|alt4 1.0s
+[b2:A] c687799dac8d5aa2|alt0 1.1s
+[b2:A] 5b272b7aa3315c4f|alt1 1.0s
+[b2:A] d813c6a4706e5411|alt4 1.0s
+[b2:A] d0fccf42f606569a|original 1.1s
+[b2:A] b3509fd31f495cfb|alt5 1.1s
+[b2:A] 586c5b66ad8158ee|alt7 1.1s
+[b2:A] 23bd3a02e2855a28|alt1 1.0s
+[b2:A] 663c00bac2e05721|alt1 1.0s
+[b2:A] 6544f1c9668c58c3|alt3 1.0s
+[b2:A] ee492610c55b5440|alt3 1.0s
+[b2:A] a7c6cc3a1840584f|alt7 1.1s
+[b2:A] 0fb88262272f5110|original 1.0s
+[b2:A] d54047580ffb5dba|alt4 1.0s
+[b2:A] 88466abb967954e5|alt0 1.1s
+[b2:A] 5b272b7aa3315c4f|alt6 1.0s
+[b2:A] da0aac1f6c225eca|alt3 1.1s
+[b2:A] 6de13c6c9af05cac|alt1 1.0s
+[b2:A] 55bd10ac74585a12|alt3 1.0s
+[b2:A] b84056c4268153fb|original 1.1s
+[b2:A] b3509fd31f495cfb|alt4 1.1s
+[b2:A] 4a1f69f3821e5ac5|alt3 1.1s
+[b2:A] 667afe1f010351c5|alt4 1.0s
+[b2:A] 4a1f69f3821e5ac5|original 1.1s
+[b2:A] 21b8742127e7523c|original 1.0s
+[b2:A] 2a799223058c5ed7|original 1.1s
+[b2:A] d0fccf42f606569a|alt1 1.0s
+[b2:A] 06392ff957445576|alt0 1.0s
+[b2:A] 2d4b17f8d7585219|original 1.1s
+[b2:A] 25b719c231d85e56|alt2 1.1s
+[b2:A] 2243d4e976fb5b77|alt0 1.0s
+[b2:A] 988cf241460c557e|original 1.0s
+[b2:A] 966e42e47cc85a5c|alt0 1.0s
+[b2:A] ca7e845b9c19597c|original 1.1s
+[b2:A] 9ba2570d6743526a|alt1 1.0s
+[b2:A] bf896d504b4356c7|alt3 1.1s
+[b2:A] 3338ad25c2cc59d1|alt2 1.0s
+[b2:A] e59a5171c33c5af9|alt2 1.1s
+[b2:A] b7122fd86c855943|alt4 1.0s
+[b2:A] f67e431f781659eb|alt3 1.1s
+[b2:A] 5dea796da1ce5b02|original 1.1s
+[b2:A] 4e50c7903a8c5303|alt0 1.0s
+[b2:A] a4f91ed474295f00|alt1 1.0s
+[b2:A] 4e50c7903a8c5303|alt5 1.1s
+[b2:A] 55bd10ac74585a12|alt1 1.0s
+[b2:A] d436fd792f365847|original 1.1s
+[b2:A] ee492610c55b5440|alt4 1.0s
+[b2:A] b7122fd86c855943|alt0 1.0s
+[b2:A] e59a5171c33c5af9|alt5 1.1s
+[b2:A] b84056c4268153fb|alt2 1.1s
+[b2:A] aa072830a2d15d9f|original 1.0s
+[b2:A] baf1301534ea54d6|alt3 1.0s
+[b2:A] 0192c3bca9ca5c67|alt4 1.1s
+[b2:A] e83f4b6e1dd25c90|alt1 1.0s
+[b2:A] aa072830a2d15d9f|alt2 1.0s
+[b2:A] efb9929eed1852f0|alt1 1.1s
+[b2:A] 1ad96f74e72750db|alt1 1.0s
+[b2:A] 704527beccac5701|alt3 1.0s
+[b2:A] ca59ecba5722534c|alt5 1.1s
+[b2:A] 457acf87bc885550|alt4 1.0s
+[b2:A] 1f12591bdae05306|original 1.0s
+[b2:A] 23bd3a02e2855a28|alt2 1.0s
+[b2:A] 2919cd502115582a|alt2 1.0s
+[b2:A] 9ba2570d6743526a|alt4 1.0s
+[b2:A] efb9929eed1852f0|alt4 1.1s
+[b2:A] 2f03781e3fd05c28|original 1.1s
+[b2:A] ca7e845b9c19597c|alt1 1.0s
+[b2:A] bf1184622f355af4|alt1 1.1s
+[b2:A] a4f91ed474295f00|alt3 1.1s
+[b2:A] f67e431f781659eb|alt0 1.1s
+[b2:A] fab7537b12d254bd|alt4 1.0s
+[b2:A] 704527beccac5701|original 1.0s
+[b2:A] 1ea152f7056659a9|alt0 1.0s
+[b2:A] 5dea796da1ce5b02|alt4 1.1s
+[b2:A] aa072830a2d15d9f|alt0 1.0s
+[b2:A] 2a799223058c5ed7|alt5 1.0s
+[b2:A] 47fdf7c04b155eac|original 1.0s
+[b2:A] a7c6cc3a1840584f|alt5 1.1s
+[b2:A] df84a00692885ec0|alt2 1.0s
+[b2:A] 69a4cff1f35655ff|alt1 1.0s
+[b2:A] 3338ad25c2cc59d1|alt3 1.0s
+[b2:A] baf1301534ea54d6|alt4 1.0s
+[b2:A] 0b97850e408e5a95|alt3 1.1s
+[b2:A] ec3969afeb945ddb|original 1.0s
+[b2:A] 6544f1c9668c58c3|alt4 1.0s
+[b2:A] 8227648b1da95adb|original 1.0s
+[b2:A] 23bd3a02e2855a28|alt0 1.1s
+[b2:A] d436fd792f365847|alt0 1.1s
+[b2:A] fdb658e4941855a3|alt4 1.0s
+[b2:A] 25b719c231d85e56|original 1.0s
+[b2:A] 21b8742127e7523c|alt7 1.0s
+[b2:A] e69be869445455c7|alt3 1.1s
+[b2:A] f205efb84def5cc8|original 1.0s
+[b2:A] 1e78181bb1c150e4|alt2 1.1s
+[b2:A] ec3969afeb945ddb|alt7 1.0s
+[b2:A] 4a4bf6e11a875f33|original 1.0s
+[b2:A] a7c6cc3a1840584f|alt6 1.1s
+[b2:A] 47fdf7c04b155eac|alt0 1.0s
+[b2:A] a7fa8bccce9253cb|original 1.1s
+[b2:A] e3a97e3004795b39|alt5 1.1s
+[b2:A] 1bea55e75a9b593b|alt2 1.1s
+[b2:A] 55bd10ac74585a12|alt2 1.0s
+[b2:A] fdb658e4941855a3|alt5 1.1s
+[b2:A] bf1184622f355af4|original 1.1s
+[b2:A] 85936ccd1b405f4c|alt2 1.0s
+[b2:A] d813c6a4706e5411|alt7 1.0s
+[b2:A] d813c6a4706e5411|alt3 1.0s
+[b2:A] 2564ab331db05cb9|original 1.1s
+[b2:A] 88466abb967954e5|original 1.1s
+[b2:A] 2564ab331db05cb9|alt1 1.1s
+[b2:A] e69be869445455c7|alt2 1.0s
+[b2:A] 1ea152f7056659a9|alt5 1.0s
+[b2:A] df84a00692885ec0|original 1.1s
+[b2:A] 9d7b9273d56f5d02|alt3 1.1s
+[b2:A] d42d0a93b7185161|alt2 1.0s
+[b2:A] 1218b6a218b750d8|alt3 1.0s
+[b2:A] 6fa01275a4525b26|alt3 1.1s
+[b2:A] cedd32ec31e45cd9|alt3 1.0s
+[b2:A] e59a5171c33c5af9|original 1.0s
+[b2:A] 6fa01275a4525b26|alt1 1.1s
+[b2:A] 2919cd502115582a|alt4 1.0s
+[b2:A] 2243d4e976fb5b77|original 1.0s
+[b2:A] 61c675d850d75cd1|alt3 1.0s
+[b2:A] 6782b9c3686f58f3|alt3 1.1s
+[b2:A] de3ea1d3c1e0588a|alt1 1.1s
+[b2:A] 457acf87bc885550|alt0 1.0s
+[b2:A] bf896d504b4356c7|alt0 1.0s
+[b2:A] 704527beccac5701|alt5 1.0s
+[b2:A] 3012e1628f7d5d3a|original 1.1s
+[b2:A] ee492610c55b5440|alt1 1.0s
+[b2:A] e1950bc54da65383|original 1.1s
+[b2:A] 88e453ca4644586f|alt7 1.0s
+[b2:A] 25b719c231d85e56|alt4 1.0s
+[b2:A] 8f105ffb008c5801|alt2 1.0s
+[b2:A] ec3969afeb945ddb|alt4 1.0s
+[b2:A] aa072830a2d15d9f|alt4 1.0s
+[b2:A] efb9929eed1852f0|alt0 1.1s
+[b2:A] b58a12e346235cd0|original 1.0s
+[b2:A] 25b719c231d85e56|alt5 1.0s
+[b2:A] ca59ecba5722534c|alt2 1.0s
+[b2:A] 988cf241460c557e|alt2 1.0s
+[b2:A] 6782b9c3686f58f3|alt2 1.1s
+[b2:A] 7f2934ac111854f5|original 1.0s
+[b2:A] 88e453ca4644586f|alt1 1.0s
+[b2:A] 23803695a4c1547c|alt2 1.1s
+[b2:A] bf896d504b4356c7|alt2 1.0s
+[b2:A] efb9929eed1852f0|original 1.1s
+[b2:A] bd7154fc2b1f548b|alt0 1.1s
+[b2:A] 663c00bac2e05721|alt5 1.0s
+[b2:A] 23803695a4c1547c|alt0 1.0s
+[b2:A] baf1301534ea54d6|original 1.0s
+[b2:A] e59a5171c33c5af9|alt3 1.1s
+[b2:A] 2f03781e3fd05c28|alt1 1.1s
+[b2:A] 6782b9c3686f58f3|alt4 1.1s
+[b2:A] bf896d504b4356c7|alt6 1.0s
+[b2:A] f205efb84def5cc8|alt1 1.0s
+[b2:A] d54047580ffb5dba|alt0 1.0s
+[b2:A] e59a5171c33c5af9|alt1 1.1s
+[b2:A] 5b272b7aa3315c4f|original 1.0s
+[b2:A] 1e78181bb1c150e4|alt4 1.1s
+[b2:A] 06392ff957445576|alt2 1.0s
+[b2:A] 88466abb967954e5|alt1 1.1s
+[b2:A] b7122fd86c855943|original 1.0s
+[b2:A] d436fd792f365847|alt5 1.1s
+[b2:A] 47fdf7c04b155eac|alt1 1.0s
+[b2:A] 4e50c7903a8c5303|original 1.0s
+[b2:A] 4a4bf6e11a875f33|alt6 1.0s
+[b2:A] 2a799223058c5ed7|alt1 1.0s
+[b2:A] 2919cd502115582a|alt0 1.0s
+[b2:A] 3338ad25c2cc59d1|alt6 1.0s
+[b2:A] 61c675d850d75cd1|alt4 1.0s
+[b2:A] 9d7b9273d56f5d02|alt0 1.1s
+[b2:A] fb2402a506065225|original 1.0s
+[b2:A] bf896d504b4356c7|alt4 1.0s
+[b2:A] fdb658e4941855a3|alt2 1.0s
+[b2:A] 1f12591bdae05306|alt3 1.0s
+[b2:A] baf1301534ea54d6|alt6 1.0s
+[b2:A] 6544f1c9668c58c3|alt1 1.0s
+[b2:A] d813c6a4706e5411|alt2 1.0s
+[b2:A] fb2402a506065225|alt3 1.0s
+[b2:A] bf1184622f355af4|alt2 1.1s
+[b2:A] 2564ab331db05cb9|alt2 1.1s
+[b2:A] 5b272b7aa3315c4f|alt2 1.0s
+[b2:A] b3509fd31f495cfb|alt1 1.1s
+[b2:A] 1ea152f7056659a9|alt3 1.0s
+[b2:A] ca59ecba5722534c|alt0 1.1s
+[b2:A] cb9992677d95539f|alt1 1.0s
+[b2:A] e83f4b6e1dd25c90|alt4 1.0s
+[b2:A] 586c5b66ad8158ee|alt1 1.1s
+[b2:A] fab7537b12d254bd|alt2 1.0s
+[b2:A] e76cb8b17f8f51f3|alt0 1.1s
+[b2:A] 3ec88bf115c95f69|alt3 1.1s
+[b2:A] e14d9a1990535a29|alt0 1.1s
+[b2:A] e14d9a1990535a29|alt1 1.1s
+[b2:A] e69be869445455c7|alt4 1.0s
+[b2:A] 7f2934ac111854f5|alt2 1.0s
+[b2:A] 21b8742127e7523c|alt4 1.0s
+[b2:A] 5b272b7aa3315c4f|alt0 1.0s
+[b2:A] 667afe1f010351c5|original 1.0s
+[b2:A] 9d7b9273d56f5d02|alt2 1.1s
+[b2:A] cedd32ec31e45cd9|alt1 1.0s
+[b2:A] 09d9a0cd32c25dee|alt0 1.1s
+[b2:A] 4b721ff0b7025f21|alt7 1.0s
+[b2:A] 5dea796da1ce5b02|alt6 1.1s
+[b2:A] 0e7f7322726f5b86|alt4 1.0s
+[b2:A] b58a12e346235cd0|alt5 1.1s
+[b2:A] 9d7b9273d56f5d02|alt1 1.1s
+[b2:A] de3ea1d3c1e0588a|alt3 1.0s
+[b2:A] 988cf241460c557e|alt6 1.0s
+[b2:A] 4e50c7903a8c5303|alt3 1.0s
+[b2:A] 663c00bac2e05721|alt3 1.0s
+[b2:A] 667afe1f010351c5|alt1 1.0s
+[b2:A] f205efb84def5cc8|alt5 1.0s
+[b2:A] 23bd3a02e2855a28|alt3 1.0s
+[b2:A] 88466abb967954e5|alt2 1.1s
+[b2:A] ec3969afeb945ddb|alt5 1.0s
+[b2:A] 3012e1628f7d5d3a|alt3 1.1s
+[b2:A] ca59ecba5722534c|original 1.0s
+[b2:A] 23bd3a02e2855a28|alt4 1.0s
+[b2:A] e14d9a1990535a29|alt4 1.1s
+[b2:A] b3509fd31f495cfb|alt3 1.1s
+[b2:A] 0e7f7322726f5b86|alt3 1.0s
+[b2:A] da0aac1f6c225eca|alt4 1.1s
+[b2:A] 457acf87bc885550|alt1 1.0s
+[b2:A] b5ee0c4a00765073|alt2 1.0s
+[b2:A] 0fb88262272f5110|alt5 1.0s
+[b2:A] fb2402a506065225|alt2 1.0s
+[b2:A] 1218b6a218b750d8|alt6 1.0s
+[b2:A] e14d9a1990535a29|alt3 1.1s
+[b2:A] 457acf87bc885550|original 1.0s
+[b2:A] b5ee0c4a00765073|alt3 1.0s
+[b2:A] 1ad96f74e72750db|original 1.0s
+[b2:A] 0b97850e408e5a95|original 1.1s
+[b2:A] a7fa8bccce9253cb|alt1 1.1s
+[b2:A] 1bea55e75a9b593b|original 1.1s
+[b2:A] 457acf87bc885550|alt7 1.0s
+[b2:A] 5dea796da1ce5b02|alt1 1.1s
+[b2:A] b58a12e346235cd0|alt4 1.0s
+[b2:A] 0192c3bca9ca5c67|original 1.1s
+[b2:A] c687799dac8d5aa2|alt3 1.1s
+[b2:A] df84a00692885ec0|alt4 1.0s
+[b2:A] e83f4b6e1dd25c90|alt2 1.0s
+[b2:A] 3338ad25c2cc59d1|alt4 1.0s
+[b2:A] 4b721ff0b7025f21|alt3 1.0s
+[b2:A] b3509fd31f495cfb|alt2 1.1s
+[b2:A] 8227648b1da95adb|alt1 1.0s
+[b2:A] f93751942d4e5c48|alt5 1.0s
+[b2:A] 25b719c231d85e56|alt0 1.0s
+[b2:A] fab7537b12d254bd|alt0 1.1s
+[b2:A] ee492610c55b5440|alt0 1.1s
+[b2:A] 4a4bf6e11a875f33|alt2 1.0s
+[b2:A] 85936ccd1b405f4c|original 1.0s
+[b2:A] cb9992677d95539f|alt0 1.1s
+[b2:A] 2d4b17f8d7585219|alt5 1.1s
+[b2:A] e3a97e3004795b39|alt0 1.1s
+[b2:A] a4f91ed474295f00|alt2 1.1s
+[b2:A] fb2402a506065225|alt0 1.0s
+[b2:A] 5b272b7aa3315c4f|alt7 1.0s
+[b2:A] 663c00bac2e05721|original 1.0s
+[b2:A] 3012e1628f7d5d3a|alt0 1.1s
+[b2:A] d54047580ffb5dba|alt3 1.0s
+[b2:A] ca59ecba5722534c|alt1 1.0s
+[b2:A] 69a4cff1f35655ff|original 1.0s
+[b2:A] 4a1f69f3821e5ac5|alt0 1.1s
+[b2:A] 1bea55e75a9b593b|alt4 1.1s
+[b2:A] 1bea55e75a9b593b|alt3 1.1s
+[b2:A] 4a4bf6e11a875f33|alt7 1.0s
+[b2:A] da0aac1f6c225eca|alt1 1.1s
+[b2:A] f205efb84def5cc8|alt3 1.0s
+[b2:A] 966e42e47cc85a5c|alt3 1.0s
+[b2:A] d813c6a4706e5411|alt0 1.0s
+[b2:A] 6fa01275a4525b26|original 1.1s
+[b2:A] 3ec88bf115c95f69|alt0 1.1s
+[b2:A] 6782b9c3686f58f3|original 1.1s
+[b2:A] a4f91ed474295f00|alt6 1.0s
+[b2:A] 8f105ffb008c5801|alt4 1.0s
+[b2:A] a7fa8bccce9253cb|alt0 1.1s
+[b2:A] f67e431f781659eb|original 1.1s
+[b2:A] 6544f1c9668c58c3|alt0 1.0s
+[b2:A] baf1301534ea54d6|alt7 1.0s
+[b2:A] ca7e845b9c19597c|alt0 1.0s
+[b2:A] bd7154fc2b1f548b|alt4 1.1s
+[b2:A] e3a97e3004795b39|alt3 1.1s
+[b2:A] 8227648b1da95adb|alt2 1.1s
+[b2:A] 667afe1f010351c5|alt2 1.0s
+[b2:A] 6544f1c9668c58c3|alt2 1.0s
+[b2:A] fab7537b12d254bd|alt3 1.0s
+[b2:A] 0e7f7322726f5b86|alt0 1.0s
+[b2:A] 0192c3bca9ca5c67|alt0 1.1s
+[b2:A] 06392ff957445576|alt6 1.0s
+[b2:A] 1e78181bb1c150e4|original 1.1s
+[b2:A] 2564ab331db05cb9|alt4 1.1s
+[b2:A] 2d4b17f8d7585219|alt4 1.1s
+[b2:A] d813c6a4706e5411|alt5 1.0s
+[b2:A] b84056c4268153fb|alt5 1.1s
+[b2:A] 1e78181bb1c150e4|alt0 1.1s
+[b2:A] 69a4cff1f35655ff|alt4 1.0s
+[b2:A] 1ea152f7056659a9|alt2 1.0s
+[b2:A] cb9992677d95539f|alt3 1.1s
+[b2:A] 4a4bf6e11a875f33|alt5 1.0s
+[b2:A] 55bd10ac74585a12|alt4 1.0s
+[b2:A] 4e50c7903a8c5303|alt4 1.0s
+[b2:A] 5dea796da1ce5b02|alt5 1.1s
+[b2:A] e3a97e3004795b39|original 1.1s
+[b2:A] ca7e845b9c19597c|alt5 1.0s
+[b2:A] e5e00457df055e1a|alt2 1.0s
+[b2:A] d54047580ffb5dba|original 1.0s
+[b2:A] ca7e845b9c19597c|alt4 1.0s
+[b2:A] 663c00bac2e05721|alt0 1.0s
+[b2:A] 3012e1628f7d5d3a|alt5 1.1s
+[b2:A] 21b8742127e7523c|alt3 1.0s
+[b2:A] 1ad96f74e72750db|alt0 1.0s
+[b2:A] d436fd792f365847|alt2 1.1s
+[b2:A] 0b97850e408e5a95|alt1 1.1s
+[b2:A] e76cb8b17f8f51f3|original 1.1s
+[b2:A] 667afe1f010351c5|alt5 1.0s
+[b2:A] 88e453ca4644586f|alt2 1.0s
+[b2:A] 704527beccac5701|alt2 1.0s
+[b2:A] 1ea152f7056659a9|alt1 1.0s
+[b2:A] e1950bc54da65383|alt2 1.1s
+[b2:A] 25b719c231d85e56|alt1 1.0s
+[b2:A] a7c6cc3a1840584f|alt3 1.1s
+[b2:A] a067e1b873c8534d|alt1 1.0s
+[b2:A] 3ec88bf115c95f69|alt1 1.1s
+[b2:A] d0fccf42f606569a|alt3 1.0s
+[b2:A] 2243d4e976fb5b77|alt4 1.0s
+[b2:A] 23d71fb39b0456f5|alt3 1.0s
+[b2:A] bf1184622f355af4|alt4 1.1s
+[b2:A] 667afe1f010351c5|alt3 1.0s
+[b2:A] 1bea55e75a9b593b|alt5 1.1s
+[b2:A] 0e7f7322726f5b86|alt2 1.0s
+[b2:A] e1950bc54da65383|alt3 1.1s
+[b2:A] e69be869445455c7|alt1 1.1s
+[b2:A] fb2ff1ed5e1b529f|alt1 1.1s
+[b2:A] aa072830a2d15d9f|alt5 1.0s
+[b2:A] 2d4b17f8d7585219|alt2 1.1s
+[b2:A] 0b97850e408e5a95|alt0 1.1s
+[b2:A] df84a00692885ec0|alt5 1.1s
+[b2:A] fb2ff1ed5e1b529f|original 1.1s
+[b2:A] e1950bc54da65383|alt4 1.1s
+[b2:A] e76cb8b17f8f51f3|alt2 1.1s
+[b2:A] bf896d504b4356c7|alt1 1.0s
+[b2:A] 0fb88262272f5110|alt6 1.0s
+[b2:A] b84056c4268153fb|alt1 1.1s
+[b2:A] baf1301534ea54d6|alt0 1.0s
+[b2:A] 1bea55e75a9b593b|alt0 1.1s
+[b2:A] a067e1b873c8534d|alt3 1.0s
+[b2:A] e14d9a1990535a29|alt2 1.1s
+[b2:A] d0fccf42f606569a|alt2 1.0s
+[b2:A] 2a799223058c5ed7|alt6 1.0s
+[b2:A] 988cf241460c557e|alt5 1.0s
+[b2:A] d436fd792f365847|alt1 1.1s
+[b2:A] 2f03781e3fd05c28|alt2 1.1s
+[b2:A] 06392ff957445576|alt7 1.0s
+[b2:A] 6de13c6c9af05cac|alt6 1.0s
+[b2:A] baf1301534ea54d6|alt5 1.0s
+[b2:A] 2243d4e976fb5b77|alt2 1.0s
+[b2:A] e3a97e3004795b39|alt2 1.1s
+[b2:A] e83f4b6e1dd25c90|alt0 1.0s
+[b2:A] 85936ccd1b405f4c|alt1 1.0s
+[b2:A] 21b8742127e7523c|alt0 1.0s
+[b2:A] a7fa8bccce9253cb|alt3 1.1s
+[b2:A] e59a5171c33c5af9|alt4 1.1s
+[b2:A] fb2402a506065225|alt5 1.0s
+[b2:A] 1e78181bb1c150e4|alt3 1.1s
+[b2:A] 23803695a4c1547c|alt4 1.1s
+[b2:A] 457acf87bc885550|alt2 1.0s
+[b2:A] 6782b9c3686f58f3|alt1 1.1s
+[b2:A] ca7e845b9c19597c|alt2 1.0s
+[b2:A] 0e7f7322726f5b86|alt1 1.0s
+[b2:A] 7f2934ac111854f5|alt0 1.0s
+[b2:A] 0192c3bca9ca5c67|alt1 1.1s
+[b2:A] a7c6cc3a1840584f|alt0 1.1s
+[b2:A] cedd32ec31e45cd9|alt4 1.0s
+[b2:A] 3ec88bf115c95f69|original 1.1s
+[b2:A] 23bd3a02e2855a28|original 1.0s
+[b2:A] b58a12e346235cd0|alt1 1.1s
+[b2:A] 61c675d850d75cd1|original 1.0s
+[b2:A] c687799dac8d5aa2|alt2 1.1s
+[b2:A] de3ea1d3c1e0588a|alt2 1.0s
+[b2:A] 8f105ffb008c5801|alt1 1.0s
+[b2:A] 6782b9c3686f58f3|alt0 1.1s
+[b2:A] 85936ccd1b405f4c|alt0 1.0s
+[b2:A] b7122fd86c855943|alt1 1.0s
+[b2:A] d0fccf42f606569a|alt0 1.1s
+[b2:A] d42d0a93b7185161|alt4 1.0s
+[b2:A] a7c6cc3a1840584f|alt1 1.1s
+[b2:A] 457acf87bc885550|alt3 1.0s
+[b2:A] 4e50c7903a8c5303|alt6 1.0s
+[b2:A] 4a1f69f3821e5ac5|alt2 1.1s
+[b2:A] c687799dac8d5aa2|alt4 1.1s
+[b2:A] e76cb8b17f8f51f3|alt3 1.1s
+[b2:A] 663c00bac2e05721|alt6 1.0s
+[b2:A] 2f03781e3fd05c28|alt0 1.1s
+[b2:A] 0fb88262272f5110|alt3 1.0s
+[b2:A] e5e00457df055e1a|alt6 1.0s
+[b2:A] cb9992677d95539f|original 1.1s
+[b2:A] 2243d4e976fb5b77|alt1 1.0s
+[b2:A] 9d7b9273d56f5d02|original 1.1s
+[b2:A] de3ea1d3c1e0588a|alt0 1.0s
+[b2:A] d813c6a4706e5411|original 1.0s
+[b2:A] a7c6cc3a1840584f|alt2 1.1s
+[b2:A] a4f91ed474295f00|original 1.1s
+[b2:A] 09d9a0cd32c25dee|alt4 1.1s
+[b2:A] 3338ad25c2cc59d1|original 1.0s
+[b2:A] e1950bc54da65383|alt1 1.1s
+[b2:A] b5ee0c4a00765073|original 1.0s
+[b2:A] 3012e1628f7d5d3a|alt4 1.1s
+[b2:A] 9ba2570d6743526a|alt0 1.0s
+[b2:A] bd7154fc2b1f548b|original 1.1s
+[b2:A] b5ee0c4a00765073|alt1 1.0s
+[b2:A] 69a4cff1f35655ff|alt2 1.0s
+[b2:A] e5e00457df055e1a|alt0 1.0s
+[b2:A] 1f12591bdae05306|alt4 1.0s
+[b2:A] 0b97850e408e5a95|alt2 1.1s
+[b2:A] e1950bc54da65383|alt0 1.1s
+[b2:A] 4a4bf6e11a875f33|alt3 1.0s
+[b2:A] f205efb84def5cc8|alt0 1.0s
+[b2:A] 88466abb967954e5|alt4 1.1s
+[b2:A] c687799dac8d5aa2|alt1 1.1s
+[b2:A] 1ad96f74e72750db|alt3 1.0s
+[b2:A] 2f03781e3fd05c28|alt3 1.1s
+[b2:A] e5e00457df055e1a|alt1 1.0s
+[b2:A] 8f105ffb008c5801|alt0 1.0s
+[b2:A] df84a00692885ec0|alt3 1.0s
+[b2:A] e59a5171c33c5af9|alt0 1.1s
+[b2:A] 21b8742127e7523c|alt2 1.0s
+[b2:A] 7f2934ac111854f5|alt3 1.0s
+[b2:A] 9d7b9273d56f5d02|alt4 1.1s
+[b2:A] 0192c3bca9ca5c67|alt5 1.1s
+[b2:A] 5dea796da1ce5b02|alt0 1.1s
+[b2:A] 6fa01275a4525b26|alt0 1.1s
+[b2:A] b58a12e346235cd0|alt3 1.0s
+[b2:A] 02bfb6340c185b97|alt4 1.0s
+[b2:A] 5bb280e3aebe5a67|alt4 1.1s
+[b2:A] 28a0cdbbc1e55291|original 1.1s
+[b2:A] 215c38293c335e25|original 1.1s
+[b2:A] ba02d873678c5cf9|original 1.1s
+[b2:A] ba02d873678c5cf9|alt2 1.0s
+[b2:A] 34eb9be2f88a5234|alt2 1.1s
+[b2:A] 215c38293c335e25|alt2 1.0s
+[b2:A] 0e08da5fbc735956|alt1 1.0s
+[b2:A] 77daa055e4ed5ae2|alt3 1.1s
+[b2:A] 0577532eba755552|alt2 1.1s
+[b2:A] c7c04f1581855ac4|original 1.1s
+[b2:A] 8d5d769b1f1e5802|alt0 1.1s
+[b2:A] 0e08da5fbc735956|alt4 1.0s
+[b2:A] a627522c77eb526c|alt0 1.1s
+[b2:A] 26ffff4876f75eed|alt4 1.1s
+[b2:A] 8eae3eab30c95228|alt0 1.1s
+[b2:A] 5825e60bec9f59fb|alt6 1.1s
+[b2:A] 4d2fceb0b30f59cd|alt5 1.0s
+[b2:A] 4749b2486da65268|alt4 1.1s
+[b2:A] 34eb9be2f88a5234|alt1 1.0s
+[b2:A] 8b788f2715985cee|original 1.1s
+[b2:A] 4d2fceb0b30f59cd|alt1 1.0s
+[b2:A] 127b9e23f1805690|alt3 1.0s
+[b2:A] dfb58c90fd2e52fa|alt4 1.1s
+[b2:A] b3c1a2ac292d5e3f|original 1.1s
+[b2:A] d2853234152359b3|alt2 1.1s
+[b2:A] 34eb9be2f88a5234|alt4 1.0s
+[b2:A] 50eebed7d9655bb5|alt5 1.0s
+[b2:A] 0561ac957ffc5c4f|alt6 1.1s
+[b2:A] 1d4b518f1b175184|alt0 1.1s
+[b2:A] b08965aff8165bec|alt3 1.0s
+[b2:A] b7ee1af184835990|alt3 1.1s
+[b2:A] d2853234152359b3|alt4 1.1s
+[b2:A] c1686b2e1a4e5149|alt4 1.0s
+[b2:A] e0e1551b09f15a74|alt0 1.1s
+[b2:A] 46aea2dcb1485353|alt0 1.1s
+[b2:A] a64a3e4f2048576d|alt2 1.0s
+[b2:A] 8eae3eab30c95228|alt2 1.0s
+[b2:A] 00c489998dd4555c|alt2 1.0s
+[b2:A] 599e006109385ae5|alt3 1.0s
+[b2:A] 6b258d7ddf7d53f3|alt4 1.1s
+[b2:A] 62667ead92a35fbd|alt5 1.0s
+[b2:A] be7331d3f05e5d16|original 1.1s
+[b2:A] f289e368449b517b|alt0 1.1s
+[b2:A] 29d3fc42d08d57d2|alt6 1.0s
+[b2:A] e3ddabf456b155a9|alt3 1.1s
+[b2:A] 026bb114391d5b81|alt2 1.0s
+[b2:A] 3e7bec3b1c4359b6|alt1 1.1s
+[b2:A] 69ddc43178e9572a|alt4 1.0s
+[b2:A] 4d50c69f430850a0|alt4 1.0s
+[b2:A] 33ee6f1f594d50ca|alt0 1.0s
+[b2:A] ade979d99d51517f|alt5 1.1s
+[b2:A] 5c4f8e6a644258d3|original 1.1s
+[b2:A] 984c4c329ba05bd2|alt0 1.0s
+[b2:A] 330ca2e9aa935a3a|alt4 1.1s
+[b2:A] 93d4ab80a0cf5f01|alt2 1.1s
+[b2:A] 5c4f8e6a644258d3|alt2 1.0s
+[b2:A] 37c15bc4d99a5365|alt0 1.1s
+[b2:A] 9c768fba2b4c5d19|alt0 1.0s
+[b2:A] 9e76a394983a59b6|original 1.1s
+[b2:A] b98d8c3330625df2|alt1 1.1s
+[b2:A] c6e19ffa3c34551c|alt0 1.1s
+[b2:A] 4749b2486da65268|original 1.0s
+[b2:A] 69ddc43178e9572a|alt7 1.0s
+[b2:A] 6b258d7ddf7d53f3|alt0 1.1s
+[b2:A] e3ddabf456b155a9|alt2 1.1s
+[b2:A] cd9330daeec55224|alt4 1.0s
+[b2:A] e6ff81ab83355450|alt3 1.1s
+[b2:A] 8b788f2715985cee|alt4 1.1s
+[b2:A] 887e4d57da835b12|alt0 1.1s
+[b2:A] cc71f3639268516f|alt4 1.1s
+[b2:A] 5e48f684248053bd|alt0 1.1s
+[b2:A] 26ffff4876f75eed|alt5 1.0s
+[b2:A] 7ff27f83a8995932|alt3 1.0s
+[b2:A] 118fa9fa499e5670|alt2 1.1s
+[b2:A] da53dac7558e563d|original 1.1s
+[b2:A] 2a06b778a64b545e|original 1.1s
+[b2:A] d443368fa4615242|alt4 1.1s
+[b2:A] 026bb114391d5b81|alt5 1.0s
+[b2:A] 118fa9fa499e5670|alt1 1.0s
+[b2:A] de7b87d6624754cf|alt6 1.1s
+[b2:A] b98d8c3330625df2|alt5 1.1s
+[b2:A] 79bdb6b499245d65|alt3 1.1s
+[b2:A] 28a0cdbbc1e55291|alt3 1.0s
+[b2:A] 599e006109385ae5|alt2 1.0s
+[b2:A] 7135ce0e5eea5907|alt5 1.1s
+[b2:A] 4d50c69f430850a0|alt0 1.0s
+[b2:A] 8de4253bc36f54df|alt6 1.1s
+[b2:A] de7b87d6624754cf|alt4 1.1s
+[b2:A] 752255614d7f569a|alt2 1.1s
+[b2:A] cac5deee337257e1|alt4 1.1s
+[b2:A] 33ee6f1f594d50ca|alt3 1.0s
+[b2:A] e166284508e554fa|alt4 1.1s
+[b2:A] 7316c116f05d57a5|alt5 1.1s
+[b2:A] d5ec09025a1e5a0d|alt1 1.1s
+[b2:A] 958677976f9c5b0a|alt2 1.0s
+[b2:A] 4143d1c692f95b56|original 1.0s
+[b2:A] 0c437f9a102c57f4|alt0 1.1s
+[b2:A] 3b56d2b022d25026|alt3 1.0s
+[b2:A] 34cc387cf0335f28|alt3 1.1s
+[b2:A] 037b976caae85af5|alt0 1.0s
+[b2:A] 566bd5e6d09153e0|alt1 1.1s
+[b2:A] d5ec09025a1e5a0d|alt0 1.1s
+[b2:A] d2853234152359b3|alt3 1.1s
+[b2:A] b7ee1af184835990|alt0 1.0s
+[b2:A] ba02d873678c5cf9|alt1 1.0s
+[b2:A] 80793d56acc15d48|original 1.1s
+[b2:A] fb8df4568d585efa|alt3 1.1s
+[b2:A] 4d2fceb0b30f59cd|alt0 1.0s
+[b2:A] 7316c116f05d57a5|alt2 1.0s
+[b2:A] 263367576c285a2a|original 1.0s
+[b2:A] 0202782270ab5a62|alt4 1.0s
+[b2:A] 8f1247f8436c5208|alt1 1.0s
+[b2:A] ab8034dd8873524b|alt6 1.1s
+[b2:A] d3cbad95b20b5125|alt3 1.0s
+[b2:A] c5b4ff1be8bb5113|alt2 1.1s
+[b2:A] 984c4c329ba05bd2|original 1.0s
+[b2:A] 8f5610a77c3257f9|alt1 1.1s
+[b2:A] 599e006109385ae5|alt1 1.0s
+[b2:A] a7ce5a625a525b45|original 1.1s
+[b2:A] 2ee8d10b988c58b2|alt0 1.0s
+[b2:A] 887e4d57da835b12|original 1.1s
+[b2:A] f0f77f6f5cb4562c|alt0 1.0s
+[b2:A] f66694a622cf5c99|alt0 1.0s
+[b2:A] f158576757e95c31|original 1.1s
+[b2:A] a8a72fb28dc6592b|alt1 1.0s
+[b2:A] b3c1a2ac292d5e3f|alt3 1.1s
+[b2:A] 4143d1c692f95b56|alt4 1.0s
+[b2:A] eadc0f19b54352ae|alt0 1.1s
+[b2:A] 6f2baa8c8c8e5942|alt4 1.1s
+[b2:A] dfb58c90fd2e52fa|alt2 1.1s
+[b2:A] 814b5e08c20e57af|alt0 1.0s
+[b2:A] 6561633171e75bb6|alt3 1.0s
+[b2:A] 814b5e08c20e57af|alt2 1.0s
+[b2:A] 029a9572e05a5914|original 1.1s
+[b2:A] 0c3c4cd553475d3a|alt3 1.0s
+[b2:A] 69ddc43178e9572a|alt0 1.0s
+[b2:A] 76cf7bb2e9625482|alt4 1.0s
+[b2:A] 4d2fceb0b30f59cd|original 1.0s
+[b2:A] 79bdb6b499245d65|alt0 1.0s
+[b2:A] c87001c4251e559a|alt7 1.1s
+[b2:A] 2d2a1f08e4895258|alt5 1.1s
+[b2:A] 976107b532bb5301|original 1.1s
+[b2:A] fdcbf84507845615|alt2 1.1s
+[b2:A] f53ee13c32ac5bec|alt2 1.1s
+[b2:A] 1b4499d988b052ce|alt5 1.1s
+[b2:A] 127b9e23f1805690|alt1 1.0s
+[b2:A] f1940c1eca9857cb|alt2 1.0s
+[b2:A] 14d53eb06a7d582a|original 1.1s
+[b2:A] 69df428fe853580e|alt0 1.1s
+[b2:A] 118fa9fa499e5670|original 1.0s
+[b2:A] a627522c77eb526c|alt1 1.1s
+[b2:A] e166284508e554fa|alt1 1.1s
+[b2:A] de7b87d6624754cf|alt0 1.1s
+[b2:A] 1212ba4b68e95583|original 1.1s
+[b2:A] f3512ae175b45844|alt2 1.0s
+[b2:A] 85028441255156b3|original 1.1s
+[b2:A] 10ae805f0be95c1f|alt2 1.1s
+[b2:A] 26af85cbc2d15e05|alt4 1.1s
+[b2:A] 8f1247f8436c5208|alt4 1.0s
+[b2:A] c87001c4251e559a|alt1 1.1s
+[b2:A] 6f2baa8c8c8e5942|alt0 1.1s
+[b2:A] 8e785a7a6df95636|alt2 1.1s
+[b2:A] 958677976f9c5b0a|alt5 1.0s
+[b2:A] c69d4cbd79ea52a0|alt2 1.0s
+[b2:A] c87fe1d7a3bd57cb|alt1 1.1s
+[b2:A] ade979d99d51517f|alt7 1.0s
+[b2:A] 36be99da12575896|alt0 1.1s
+[b2:A] 46aea2dcb1485353|alt3 1.1s
+[b2:A] 19f3e77fcd3353c5|alt1 1.1s
+[b2:A] dc9bf97cb9e151ad|original 1.1s
+[b2:A] 458fa5236b795941|alt5 1.0s
+[b2:A] 958677976f9c5b0a|alt4 1.0s
+[b2:A] 09978bee1b655865|alt2 1.0s
+[b2:A] 3c99fcb4ef8c5382|alt2 1.0s
+[b2:A] 3b56d2b022d25026|original 1.0s
+[b2:A] ab8034dd8873524b|alt5 1.0s
+[b2:A] 26af85cbc2d15e05|alt3 1.0s
+[b2:A] 0202782270ab5a62|alt5 1.0s
+[b2:A] a1ff2db262ab5db7|alt4 1.0s
+[b2:A] 85028441255156b3|alt0 1.1s
+[b2:A] 622867ce25805447|original 1.1s
+[b2:A] c6e19ffa3c34551c|alt2 1.1s
+[b2:A] a9152eadc70058ba|alt2 1.0s
+[b2:A] 14d53eb06a7d582a|alt1 1.1s
+[b2:A] d443368fa4615242|alt2 1.1s
+[b2:A] 57a77b8c90465bc4|alt3 1.1s
+[b2:A] 36be99da12575896|alt4 1.1s
+[b2:A] 7cdcf11e211759cf|alt4 1.0s
+[b2:A] 76e0272a57f55674|original 1.1s
+[b2:A] 09978bee1b655865|alt0 1.0s
+[b2:A] 58e19769184c5f43|alt2 1.0s
+[b2:A] 4d50c69f430850a0|alt5 1.0s
+[b2:A] 9fe3ed9455355edb|alt3 1.1s
+[b2:A] 1ded576bc1325cae|original 1.0s
+[b2:A] 73939fc4dcdf57c4|alt2 1.1s
+[b2:A] f289e368449b517b|alt3 1.0s
+[b2:A] eadc0f19b54352ae|alt4 1.1s
+[b2:A] 8b788f2715985cee|alt3 1.0s
+[b2:A] 73939fc4dcdf57c4|alt1 1.1s
+[b2:A] 150c33d5cd005743|original 1.1s
+[b2:A] 276396e455bb57b5|alt4 1.1s
+[b2:A] 8de4253bc36f54df|alt7 1.0s
+[b2:A] dc9bf97cb9e151ad|alt0 1.0s
+[b2:A] 4749b2486da65268|alt3 1.1s
+[b2:A] 1b4499d988b052ce|alt1 1.0s
+[b2:A] 07b814bfc2fb565d|alt5 1.1s
+[b2:A] 037b976caae85af5|alt2 1.0s
+[b2:A] 34048f1ce51452d0|alt1 1.1s
+[b2:A] f4af3907bb665bf7|alt5 1.1s
+[b2:A] a8a72fb28dc6592b|alt5 1.0s
+[b2:A] 26ffff4876f75eed|alt1 1.0s
+[b2:A] 57f2781030b25387|alt3 1.1s
+[b2:A] 8e785a7a6df95636|original 1.1s
+[b2:A] 1dc437ce152e55fa|alt4 1.0s
+[b2:A] c69d4cbd79ea52a0|alt0 1.0s
+[b2:A] d4358e3962b758ce|alt2 1.1s
+[b2:A] eadc0f19b54352ae|alt3 1.0s
+[b2:A] 80793d56acc15d48|alt1 1.1s
+[b2:A] 34cc387cf0335f28|alt2 1.1s
+[b2:A] 6b258d7ddf7d53f3|alt3 1.1s
+[b2:A] 4f21925f1a7c5983|alt1 1.1s
+[b2:A] 976107b532bb5301|alt1 1.1s
+[b2:A] f66694a622cf5c99|alt1 1.0s
+[b2:A] 026bb114391d5b81|alt1 1.0s
+[b2:A] 97eca45f93285d17|alt3 1.0s
+[b2:A] 7b7cac50a37a5c24|original 1.0s
+[b2:A] be7331d3f05e5d16|alt2 1.1s
+[b2:A] ab7d0c4a928e5ec9|alt3 1.0s
+[b2:A] 62667ead92a35fbd|alt4 1.0s
+[b2:A] 4631b80af7fb5f2f|alt0 1.1s
+[b2:A] ade979d99d51517f|alt2 1.0s
+[b2:A] cc71f3639268516f|alt7 1.0s
+[b2:A] 58e19769184c5f43|alt0 1.0s
+[b2:A] a1ff2db262ab5db7|alt2 1.0s
+[b2:A] a9152eadc70058ba|alt1 1.0s
+[b2:A] 2e405d459d8b5d9c|alt3 1.1s
+[b2:A] 7b7cac50a37a5c24|alt2 1.0s
+[b2:A] e0a645315de658bc|alt2 1.1s
+[b2:A] e6bdb406a21e55ba|alt3 1.0s
+[b2:A] e0094ac69a8955fb|original 1.0s
+[b2:A] 7b7cac50a37a5c24|alt5 1.0s
+[b2:A] b98d8c3330625df2|alt7 1.1s
+[b2:A] 595596a88cce5c9d|alt0 1.1s
+[b2:A] 7316c116f05d57a5|alt0 1.0s
+[b2:A] a627522c77eb526c|alt3 1.1s
+[b2:A] c6e19ffa3c34551c|alt1 1.1s
+[b2:A] 14d53eb06a7d582a|alt3 1.1s
+[b2:A] f3572fcbcd285f1e|alt1 1.0s
+[b2:A] 2743a2f96269577c|alt0 1.1s
+[b2:A] e0a645315de658bc|alt1 1.0s
+[b2:A] 5f70e91ff9d250f5|original 1.1s
+[b2:A] 34cc387cf0335f28|alt0 1.1s
+[b2:A] 2a06b778a64b545e|alt3 1.1s
+[b2:A] 649b2096884957a9|alt0 1.1s
+[b2:A] 2f5ae1e4cf9d59fa|alt1 1.1s
+[b2:A] 7cdcf11e211759cf|alt3 1.0s
+[b2:A] 6f2baa8c8c8e5942|alt3 1.1s
+[b2:A] 330ca2e9aa935a3a|alt5 1.0s
+[b2:A] 814b5e08c20e57af|alt3 1.0s
+[b2:A] 57a77b8c90465bc4|alt5 1.1s
+[b2:A] 1db38f4b73ac5b62|alt3 1.1s
+[b2:A] eea52ed765aa5977|alt4 1.0s
+[b2:A] 078f05d9e9c05230|alt0 1.1s
+[b2:A] 276396e455bb57b5|alt2 1.0s
+[b2:A] 2a06b778a64b545e|alt2 1.0s
+[b2:A] eadc0f19b54352ae|original 1.0s
+[b2:A] 8b788f2715985cee|alt1 1.1s
+[b2:A] 61a9157ac995542c|original 1.0s
+[b2:A] 1dc437ce152e55fa|original 1.0s
+[b2:A] ab7d0c4a928e5ec9|alt1 1.0s
+[b2:A] 26af85cbc2d15e05|original 1.0s
+[b2:A] a627522c77eb526c|alt2 1.1s
+[b2:A] 39dba8a42eaa5ea0|alt3 1.0s
+[b2:A] 1ded576bc1325cae|alt4 1.0s
+[b2:A] c5b4ff1be8bb5113|alt4 1.1s
+[b2:A] 5f70e91ff9d250f5|alt2 1.1s
+[b2:A] 24acfb08c5ef55f5|alt3 1.1s
+[b2:A] a7ce5a625a525b45|alt1 1.0s
+[b2:A] ade979d99d51517f|original 1.0s
+[b2:A] 10db4b6fe64b5c10|original 1.0s
+[b2:A] 622867ce25805447|alt4 1.0s
+[b2:A] 88c0bfe353235280|alt3 1.0s
+[b2:A] 19c8d441cb445d87|alt2 1.0s
+[b2:A] 015011d2b73158b7|alt5 1.0s
+[b2:A] 9c768fba2b4c5d19|original 1.0s
+[b2:A] 34cc387cf0335f28|alt4 1.0s
+[b2:A] fb8df4568d585efa|alt6 1.1s
+[b2:A] c87001c4251e559a|alt2 1.0s
+[b2:A] 958677976f9c5b0a|alt1 1.0s
+[b2:A] c4fd814210875a8e|alt2 1.0s
+[b2:A] 20d3a5f5b9e6549f|alt3 1.0s
+[b2:A] 37c15bc4d99a5365|alt4 1.1s
+[b2:A] e0094ac69a8955fb|alt1 1.0s
+[b2:A] 5bbd26efb97658ec|alt3 1.1s
+[b2:A] 7b7cac50a37a5c24|alt4 1.0s
+[b2:A] 10ae805f0be95c1f|alt4 1.0s
+[b2:A] a1ff2db262ab5db7|alt0 1.0s
+[b2:A] b08965aff8165bec|alt6 1.0s
+[b2:A] 2e0a31d833765412|alt4 1.1s
+[b2:A] 566bd5e6d09153e0|alt0 1.0s
+[b2:A] 57f2781030b25387|original 1.1s
+[b2:A] a9152eadc70058ba|alt4 1.0s
+[b2:A] c69d4cbd79ea52a0|original 1.0s
+[b2:A] 26af85cbc2d15e05|alt0 1.0s
+[b2:A] 10db4b6fe64b5c10|alt3 1.0s
+[b2:A] 5f70e91ff9d250f5|alt1 1.1s
+[b2:A] 566bd5e6d09153e0|alt3 1.1s
+[b2:A] f66694a622cf5c99|original 1.0s
+[b2:A] c87001c4251e559a|alt6 1.1s
+[b2:A] 584a741051cd523f|alt2 1.1s
+[b2:A] 6233d1b3e62a5772|original 1.1s
+[b2:A] 8f5610a77c3257f9|original 1.0s
+[b2:A] 0c3c4cd553475d3a|alt1 1.0s
+[b2:A] e23fdb8f34b35d20|alt4 1.0s
+[b2:A] 9e76a394983a59b6|alt3 1.0s
+[b2:A] c2466f5ae7a25ad8|alt0 1.0s
+[b2:A] 4631b80af7fb5f2f|original 1.1s
+[b2:A] f3572fcbcd285f1e|alt2 1.0s
+[b2:A] 19c8d441cb445d87|original 1.0s
+[b2:A] fb8df4568d585efa|alt2 1.1s
+[b2:A] 97b9989fa3675cab|alt3 1.0s
+[b2:A] 34eb9be2f88a5234|alt3 1.1s
+[b2:A] 581a74871330567f|original 1.1s
+[b2:A] 57f2781030b25387|alt2 1.1s
+[b2:A] 19f3e77fcd3353c5|alt0 1.1s
+[b2:A] 39dba8a42eaa5ea0|original 1.0s
+[b2:A] e6bdb406a21e55ba|alt5 1.0s
+[b2:A] 1dc437ce152e55fa|alt0 1.0s
+[b2:A] 76e0272a57f55674|alt6 1.0s
+[b2:A] 3b56d2b022d25026|alt1 1.0s
+[b2:A] 10db4b6fe64b5c10|alt2 1.0s
+[b2:A] 4d50c69f430850a0|alt3 1.0s
+[b2:A] 50eebed7d9655bb5|alt6 1.0s
+[b2:A] 69df428fe853580e|alt1 1.1s
+[b2:A] 4d2fceb0b30f59cd|alt3 1.0s
+[b2:A] ab7d0c4a928e5ec9|alt0 1.0s
+[b2:A] d5ec09025a1e5a0d|alt5 1.1s
+[b2:A] 6b258d7ddf7d53f3|alt1 1.1s
+[b2:A] a627522c77eb526c|alt4 1.1s
+[b2:A] 00eb3a4e0f8052e9|alt1 1.0s
+[b2:A] 0577532eba755552|alt5 1.0s
+[b2:A] 02bfb6340c185b97|original 1.0s
+[b2:A] d443368fa4615242|original 1.1s
+[b2:A] 2e0a31d833765412|alt2 1.0s
+[b2:A] 622867ce25805447|alt2 1.0s
+[b2:A] da53dac7558e563d|alt0 1.1s
+[b2:A] dfa06e9592e65896|alt0 1.1s
+[b2:A] 491dce963f7f5b57|alt3 1.1s
+[b2:A] b98d8c3330625df2|original 1.1s
+[b2:A] 976107b532bb5301|alt3 1.1s
+[b2:A] 491dce963f7f5b57|alt0 1.1s
+[b2:A] f064ef8fafcf5528|original 1.1s
+[b2:A] 5825e60bec9f59fb|alt2 1.1s
+[b2:A] b08965aff8165bec|original 1.0s
+[b2:A] 4f21925f1a7c5983|original 1.0s
+[b2:A] 1d4b518f1b175184|alt2 1.1s
+[b2:A] 2f5ae1e4cf9d59fa|alt6 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|alt3 1.0s
+[b2:A] 2743a2f96269577c|alt3 1.0s
+[b2:A] 0577532eba755552|original 1.0s
+[b2:A] d2853234152359b3|alt0 1.1s
+[b2:A] e59b32f05f5e54f0|alt3 1.0s
+[b2:A] cac5deee337257e1|original 1.0s
+[b2:A] dfaaa711e0a557ba|alt1 1.1s
+[b2:A] 7135ce0e5eea5907|original 1.1s
+[b2:A] ea57966419605846|alt4 1.1s
+[b2:A] 76e0272a57f55674|alt0 1.0s
+[b2:A] 037b976caae85af5|alt1 1.0s
+[b2:A] 1f55063084fd593c|alt5 1.1s
+[b2:A] 6f2baa8c8c8e5942|original 1.1s
+[b2:A] 6f2459c4df665173|alt2 1.1s
+[b2:A] 0c3c4cd553475d3a|alt5 1.0s
+[b2:A] a64a3e4f2048576d|alt3 1.0s
+[b2:A] c69d4cbd79ea52a0|alt5 1.0s
+[b2:A] 58e19769184c5f43|alt6 1.0s
+[b2:A] 52d3f15d6ca75701|alt6 1.1s
+[b2:A] 77daa055e4ed5ae2|alt4 1.0s
+[b2:A] 427ee2e0d1c05699|alt4 1.1s
+[b2:A] f1940c1eca9857cb|alt1 1.0s
+[b2:A] 263367576c285a2a|alt0 1.0s
+[b2:A] fdcbf84507845615|alt4 1.0s
+[b2:A] ea57966419605846|alt3 1.1s
+[b2:A] c5b4ff1be8bb5113|alt3 1.1s
+[b2:A] 6f2baa8c8c8e5942|alt1 1.1s
+[b2:A] 5e48f684248053bd|alt3 1.0s
+[b2:A] 6f2baa8c8c8e5942|alt5 1.1s
+[b2:A] 34048f1ce51452d0|alt4 1.1s
+[b2:A] 276396e455bb57b5|alt5 1.0s
+[b2:A] 97eca45f93285d17|alt2 1.0s
+[b2:A] 69df428fe853580e|alt3 1.1s
+[b2:A] 0e08da5fbc735956|alt2 1.0s
+[b2:A] 9cf612ff6e4f5bd5|alt0 1.1s
+[b2:A] 00c489998dd4555c|alt3 1.0s
+[b2:A] 14d53eb06a7d582a|alt0 1.1s
+[b2:A] 6233d1b3e62a5772|alt3 1.1s
+[b2:A] e7116a2035205221|alt1 1.1s
+[b2:A] 330ca2e9aa935a3a|alt1 1.0s
+[b2:A] 491dce963f7f5b57|alt1 1.1s
+[b2:A] 7ff27f83a8995932|alt6 1.0s
+[b2:A] ab8034dd8873524b|alt0 1.0s
+[b2:A] 6e10835f184d5921|alt2 1.0s
+[b2:A] 4631b80af7fb5f2f|alt2 1.1s
+[b2:A] 26ffff4876f75eed|alt0 1.0s
+[b2:A] dfaaa711e0a557ba|original 1.0s
+[b2:A] e59b32f05f5e54f0|alt0 1.0s
+[b2:A] e0a645315de658bc|original 1.0s
+[b2:A] 29d3fc42d08d57d2|alt5 1.0s
+[b2:A] 649b2096884957a9|alt1 1.1s
+[b2:A] 61a9157ac995542c|alt4 1.0s
+[b2:A] e3ddabf456b155a9|alt0 1.1s
+[b2:A] de7b87d6624754cf|alt2 1.1s
+[b2:A] 69df428fe853580e|alt5 1.1s
+[b2:A] 39147f08f4645365|alt2 1.0s
+[b2:A] dfa06e9592e65896|alt3 1.0s
+[b2:A] 76e0272a57f55674|alt7 1.0s
+[b2:A] e0094ac69a8955fb|alt4 1.0s
+[b2:A] 24acfb08c5ef55f5|alt0 1.1s
+[b2:A] e0e1551b09f15a74|alt4 1.0s
+[b2:A] 85028441255156b3|alt1 1.1s
+[b2:A] c1686b2e1a4e5149|alt3 1.0s
+[b2:A] 6561633171e75bb6|alt1 1.0s
+[b2:A] 0c437f9a102c57f4|alt4 1.1s
+[b2:A] 330ca2e9aa935a3a|original 1.0s
+[b2:A] f1940c1eca9857cb|alt0 1.0s
+[b2:A] be7331d3f05e5d16|alt3 1.1s
+[b2:A] f3572fcbcd285f1e|alt3 1.0s
+[b2:A] c4fd814210875a8e|alt0 1.0s
+[b2:A] f776577c7428592b|alt5 1.1s
+[b2:A] e7116a2035205221|original 1.1s
+[b2:A] c1686b2e1a4e5149|original 1.0s
+[b2:A] eeae24d38eb15e0a|alt2 1.0s
+[b2:A] 3c99fcb4ef8c5382|alt4 1.0s
+[b2:A] 73939fc4dcdf57c4|alt4 1.1s
+[b2:A] cac5deee337257e1|alt0 1.0s
+[b2:A] e6bdb406a21e55ba|alt0 1.0s
+[b2:A] c7c04f1581855ac4|alt4 1.1s
+[b2:A] a1ff2db262ab5db7|original 1.0s
+[b2:A] 3461796610c15a0e|alt2 1.1s
+[b2:A] b27bfe84cc545daa|alt5 1.1s
+[b2:A] 1dc437ce152e55fa|alt1 1.0s
+[b2:A] 58e19769184c5f43|alt4 1.0s
+[b2:A] 97eca45f93285d17|original 1.0s
+[b2:A] eadc0f19b54352ae|alt5 1.1s
+[b2:A] f3512ae175b45844|alt4 1.0s
+[b2:A] 4342cb36fbba580b|alt1 1.0s
+[b2:A] 69ddc43178e9572a|alt2 1.0s
+[b2:A] f064ef8fafcf5528|alt1 1.1s
+[b2:A] ea57966419605846|alt1 1.0s
+[b2:A] b3c1a2ac292d5e3f|alt0 1.1s
+[b2:A] 484bac10bd295459|alt3 1.1s
+[b2:A] 76cf7bb2e9625482|alt0 1.0s
+[b2:A] 77daa055e4ed5ae2|alt0 1.0s
+[b2:A] 5c4f8e6a644258d3|alt4 1.0s
+[b2:A] 07b814bfc2fb565d|alt4 1.1s
+[b2:A] 3c24bf88e9b150dd|alt2 1.1s
+[b2:A] 50eebed7d9655bb5|original 1.0s
+[b2:A] 64185eb977005752|alt4 1.1s
+[b2:A] 36be99da12575896|alt2 1.1s
+[b2:A] 24acfb08c5ef55f5|alt4 1.1s
+[b2:A] 3c24bf88e9b150dd|alt4 1.1s
+[b2:A] 6e10835f184d5921|original 1.0s
+[b2:A] a9152eadc70058ba|alt0 1.0s
+[b2:A] 1212ba4b68e95583|alt4 1.1s
+[b2:A] 57f2781030b25387|alt1 1.1s
+[b2:A] 3461796610c15a0e|alt1 1.1s
+[b2:A] d443368fa4615242|alt1 1.1s
+[b2:A] 3b56d2b022d25026|alt4 1.0s
+[b2:A] 8abc81ff3045543b|alt4 1.1s
+[b2:A] 5825e60bec9f59fb|alt0 1.1s
+[b2:A] 73939fc4dcdf57c4|alt3 1.1s
+[b2:A] 6f2459c4df665173|original 1.1s
+[b2:A] e0094ac69a8955fb|alt7 1.0s
+[b2:A] 69ddc43178e9572a|alt1 1.0s
+[b2:A] 1212ba4b68e95583|alt0 1.0s
+[b2:A] dc9bf97cb9e151ad|alt2 1.1s
+[b2:A] 09978bee1b655865|alt3 1.0s
+[b2:A] 6233d1b3e62a5772|alt6 1.1s
+[b2:A] d3cbad95b20b5125|alt4 1.0s
+[b2:A] b98d8c3330625df2|alt3 1.0s
+[b2:A] 8eae3eab30c95228|alt1 1.0s
+[b2:A] 427ee2e0d1c05699|alt3 1.1s
+[b2:A] 88c0bfe353235280|alt4 1.0s
+[b2:A] f0f77f6f5cb4562c|alt2 1.0s
+[b2:A] 73939fc4dcdf57c4|alt0 1.1s
+[b2:A] f064ef8fafcf5528|alt4 1.1s
+[b2:A] cd9330daeec55224|alt0 1.0s
+[b2:A] d44d7aacab755892|alt4 1.0s
+[b2:A] b27bfe84cc545daa|original 1.0s
+[b2:A] d4358e3962b758ce|alt0 1.0s
+[b2:A] 61a9157ac995542c|alt2 1.0s
+[b2:A] 458fa5236b795941|alt4 1.0s
+[b2:A] aa4ec42ec7425de0|alt2 1.1s
+[b2:A] f158576757e95c31|alt4 1.1s
+[b2:A] e23fdb8f34b35d20|alt0 1.0s
+[b2:A] 62667ead92a35fbd|alt2 1.0s
+[b2:A] 8e785a7a6df95636|alt3 1.1s
+[b2:A] f53ee13c32ac5bec|original 1.1s
+[b2:A] 2e0a31d833765412|alt0 1.0s
+[b2:A] f66694a622cf5c99|alt4 1.0s
+[b2:A] 29d3fc42d08d57d2|alt0 1.0s
+[b2:A] e0e1551b09f15a74|original 1.0s
+[b2:A] c6e19ffa3c34551c|alt4 1.1s
+[b2:A] 28a0cdbbc1e55291|alt4 1.1s
+[b2:A] fdcbf84507845615|alt0 1.1s
+[b2:A] 581a74871330567f|alt4 1.1s
+[b2:A] fdcbf84507845615|alt1 1.0s
+[b2:A] 9fe3ed9455355edb|alt0 1.0s
+[b2:A] dfa06e9592e65896|alt2 1.1s
+[b2:A] 958677976f9c5b0a|alt0 1.0s
+[b2:A] 814b5e08c20e57af|original 1.0s
+[b2:A] 7316c116f05d57a5|alt3 1.0s
+[b2:A] 52d3f15d6ca75701|alt1 1.1s
+[b2:A] 0561ac957ffc5c4f|alt0 1.1s
+[b2:A] 0577532eba755552|alt3 1.1s
+[b2:A] 118fa9fa499e5670|alt7 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|alt7 1.0s
+[b2:A] 3c99fcb4ef8c5382|alt3 1.0s
+[b2:A] 887e4d57da835b12|alt3 1.1s
+[b2:A] e59b32f05f5e54f0|alt5 1.0s
+[b2:A] d3cbad95b20b5125|alt0 1.0s
+[b2:A] da53dac7558e563d|alt1 1.0s
+[b2:A] 7135ce0e5eea5907|alt0 1.1s
+[b2:A] dc9bf97cb9e151ad|alt4 1.0s
+[b2:A] aa4ec42ec7425de0|alt3 1.1s
+[b2:A] 19c8d441cb445d87|alt3 1.0s
+[b2:A] d4358e3962b758ce|alt4 1.0s
+[b2:A] dfaaa711e0a557ba|alt2 1.1s
+[b2:A] 26ffff4876f75eed|original 1.1s
+[b2:A] 3461796610c15a0e|alt0 1.0s
+[b2:A] c7c04f1581855ac4|alt0 1.1s
+[b2:A] 5825e60bec9f59fb|alt1 1.1s
+[b2:A] 46aea2dcb1485353|original 1.1s
+[b2:A] d44d7aacab755892|alt0 1.0s
+[b2:A] ab8034dd8873524b|alt2 1.1s
+[b2:A] fb8df4568d585efa|alt1 1.1s
+[b2:A] 62667ead92a35fbd|alt1 1.0s
+[b2:A] dfaaa711e0a557ba|alt0 1.1s
+[b2:A] 1212ba4b68e95583|alt1 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|alt4 1.0s
+[b2:A] a7ce5a625a525b45|alt4 1.1s
+[b2:A] 3b56d2b022d25026|alt0 1.0s
+[b2:A] f3512ae175b45844|alt0 1.0s
+[b2:A] 1981a85eb4ba5001|alt3 1.1s
+[b2:A] f53ee13c32ac5bec|alt0 1.0s
+[b2:A] 150c33d5cd005743|alt4 1.0s
+[b2:A] 02bfb6340c185b97|alt6 1.0s
+[b2:A] be7331d3f05e5d16|alt4 1.1s
+[b2:A] 88c0bfe353235280|alt0 1.0s
+[b2:A] 0202782270ab5a62|alt1 1.0s
+[b2:A] 79bdb6b499245d65|alt1 1.0s
+[b2:A] 2e405d459d8b5d9c|alt5 1.1s
+[b2:A] 5bb280e3aebe5a67|original 1.1s
+[b2:A] 7135ce0e5eea5907|alt4 1.1s
+[b2:A] c5b4ff1be8bb5113|alt1 1.0s
+[b2:A] f3512ae175b45844|original 1.0s
+[b2:A] f289e368449b517b|alt2 1.1s
+[b2:A] 7316c116f05d57a5|original 1.0s
+[b2:A] 6f2baa8c8c8e5942|alt2 1.1s
+[b2:A] c69d4cbd79ea52a0|alt4 1.0s
+[b2:A] 7cdcf11e211759cf|alt2 1.0s
+[b2:A] b98d8c3330625df2|alt6 1.1s
+[b2:A] 7ff27f83a8995932|alt4 1.0s
+[b2:A] b08965aff8165bec|alt2 1.0s
+[b2:A] 127b9e23f1805690|original 1.0s
+[b2:A] 584a741051cd523f|alt0 1.1s
+[b2:A] 1b4499d988b052ce|alt4 1.1s
+[b2:A] e0a645315de658bc|alt3 1.0s
+[b2:A] 52d3f15d6ca75701|alt4 1.1s
+[b2:A] 0c3c4cd553475d3a|alt6 1.0s
+[b2:A] 3461796610c15a0e|original 1.0s
+[b2:A] 3e7bec3b1c4359b6|alt3 1.1s
+[b2:A] a7ce5a625a525b45|alt2 1.0s
+[b2:A] 50eebed7d9655bb5|alt4 1.0s
+[b2:A] c4fd814210875a8e|alt3 1.0s
+[b2:A] 76e0272a57f55674|alt1 1.0s
+[b2:A] d44d7aacab755892|alt1 1.0s
+[b2:A] 2e405d459d8b5d9c|alt2 1.1s
+[b2:A] 215c38293c335e25|alt0 1.0s
+[b2:A] 8b788f2715985cee|alt2 1.0s
+[b2:A] b7ee1af184835990|alt4 1.0s
+[b2:A] f776577c7428592b|alt6 1.1s
+[b2:A] f4af3907bb665bf7|alt0 1.1s
+[b2:A] e6ff81ab83355450|alt5 1.1s
+[b2:A] f158576757e95c31|alt3 1.1s
+[b2:A] 887e4d57da835b12|alt4 1.1s
+[b2:A] 52d3f15d6ca75701|original 1.1s
+[b2:A] 8f5610a77c3257f9|alt0 1.1s
+[b2:A] dfb58c90fd2e52fa|original 1.1s
+[b2:A] c6e19ffa3c34551c|original 1.1s
+[b2:A] 330ca2e9aa935a3a|alt6 1.0s
+[b2:A] 22b526a96ad65c88|alt4 1.1s
+[b2:A] 9e76a394983a59b6|alt5 1.0s
+[b2:A] 595596a88cce5c9d|alt3 1.1s
+[b2:A] 57a77b8c90465bc4|alt0 1.1s
+[b2:A] e7116a2035205221|alt0 1.1s
+[b2:A] 6b258d7ddf7d53f3|original 1.1s
+[b2:A] 127b9e23f1805690|alt0 1.0s
+[b2:A] 34eb9be2f88a5234|alt5 1.0s
+[b2:A] 8d5d769b1f1e5802|original 1.0s
+[b2:A] 76cf7bb2e9625482|alt3 1.0s
+[b2:A] ab8034dd8873524b|alt4 1.0s
+[b2:A] 8f1247f8436c5208|alt0 1.0s
+[b2:A] c87fe1d7a3bd57cb|alt3 1.1s
+[b2:A] 07b814bfc2fb565d|alt3 1.1s
+[b2:A] 1981a85eb4ba5001|alt4 1.1s
+[b2:A] 20d3a5f5b9e6549f|alt4 1.0s
+[b2:A] da53dac7558e563d|alt3 1.0s
+[b2:A] 026bb114391d5b81|alt3 1.0s
+[b2:A] 4342cb36fbba580b|alt4 1.0s
+[b2:A] 2d2a1f08e4895258|alt2 1.1s
+[b2:A] 22b526a96ad65c88|alt0 1.1s
+[b2:A] 595596a88cce5c9d|original 1.0s
+[b2:A] f3572fcbcd285f1e|alt5 1.0s
+[b2:A] 6f2459c4df665173|alt1 1.1s
+[b2:A] 76e0272a57f55674|alt5 1.0s
+[b2:A] f289e368449b517b|alt1 1.0s
+[b2:A] 0e08da5fbc735956|original 1.0s
+[b2:A] 1981a85eb4ba5001|alt0 1.1s
+[b2:A] b3c1a2ac292d5e3f|alt1 1.1s
+[b2:A] e59b32f05f5e54f0|alt4 1.0s
+[b2:A] 1f55063084fd593c|alt1 1.1s
+[b2:A] 6233d1b3e62a5772|alt1 1.1s
+[b2:A] d4358e3962b758ce|alt5 1.0s
+[b2:A] 61a9157ac995542c|alt5 1.0s
+[b2:A] e0a645315de658bc|alt4 1.0s
+[b2:A] c2466f5ae7a25ad8|original 1.0s
+[b2:A] 2e0a31d833765412|alt1 1.0s
+[b2:A] 76e0272a57f55674|alt2 1.0s
+[b2:A] a9152eadc70058ba|alt3 1.0s
+[b2:A] b27bfe84cc545daa|alt6 1.1s
+[b2:A] 33ee6f1f594d50ca|alt1 1.0s
+[b2:A] 1981a85eb4ba5001|original 1.1s
+[b2:A] cc71f3639268516f|alt1 1.0s
+[b2:A] 5bbd26efb97658ec|alt4 1.1s
+[b2:A] 9cf612ff6e4f5bd5|alt2 1.1s
+[b2:A] f064ef8fafcf5528|alt0 1.1s
+[b2:A] 692bea45f3de5fd0|alt1 1.1s
+[b2:A] eeae24d38eb15e0a|alt3 1.0s
+[b2:A] 5bb280e3aebe5a67|alt2 1.1s
+[b2:A] 58e19769184c5f43|alt5 1.0s
+[b2:A] 1f55063084fd593c|alt3 1.1s
+[b2:A] b08965aff8165bec|alt0 1.0s
+[b2:A] 0577532eba755552|alt1 1.0s
+[b2:A] 6e10835f184d5921|alt0 1.0s
+[b2:A] 92838ad73bf95b3a|alt4 1.1s
+[b2:A] 61a9157ac995542c|alt6 1.0s
+[b2:A] fb8df4568d585efa|alt0 1.0s
+[b2:A] 427ee2e0d1c05699|alt0 1.1s
+[b2:A] c1686b2e1a4e5149|alt1 1.0s
+[b2:A] 458fa5236b795941|alt6 1.0s
+[b2:A] fdcbf84507845615|alt3 1.0s
+[b2:A] 97b9989fa3675cab|original 1.0s
+[b2:A] 0c437f9a102c57f4|alt1 1.1s
+[b2:A] 19f3e77fcd3353c5|alt3 1.1s
+[b2:A] 10209c0e885f5162|alt1 1.1s
+[b2:A] f289e368449b517b|alt4 1.0s
+[b2:A] e166284508e554fa|alt0 1.1s
+[b2:A] 36be99da12575896|alt3 1.1s
+[b2:A] d443368fa4615242|alt0 1.1s
+[b2:A] 24acfb08c5ef55f5|original 1.0s
+[b2:A] 46aea2dcb1485353|alt4 1.1s
+[b2:A] 33ee6f1f594d50ca|alt5 1.0s
+[b2:A] 76cf7bb2e9625482|alt2 1.0s
+[b2:A] 127b9e23f1805690|alt5 1.0s
+[b2:A] 7ff27f83a8995932|alt0 1.0s
+[b2:A] 4631b80af7fb5f2f|alt1 1.1s
+[b2:A] d3cbad95b20b5125|alt1 1.0s
+[b2:A] 5f70e91ff9d250f5|alt0 1.1s
+[b2:A] 692bea45f3de5fd0|alt3 1.1s
+[b2:A] 029a9572e05a5914|alt1 1.0s
+[b2:A] c1686b2e1a4e5149|alt2 1.0s
+[b2:A] 581a74871330567f|alt1 1.1s
+[b2:A] b27bfe84cc545daa|alt3 1.0s
+[b2:A] c69d4cbd79ea52a0|alt6 1.0s
+[b2:A] c87fe1d7a3bd57cb|alt0 1.0s
+[b2:A] 4d50c69f430850a0|alt1 1.0s
+[b2:A] 276396e455bb57b5|alt1 1.0s
+[b2:A] c7c04f1581855ac4|alt1 1.1s
+[b2:A] e59b32f05f5e54f0|original 1.0s
+[b2:A] e166284508e554fa|alt3 1.1s
+[b2:A] e59b32f05f5e54f0|alt6 1.0s
+[b2:A] 57a77b8c90465bc4|original 1.1s
+[b2:A] eea52ed765aa5977|alt1 1.0s
+[b2:A] ba02d873678c5cf9|alt0 1.1s
+[b2:A] 5c4f8e6a644258d3|alt1 1.1s
+[b2:A] 5f70e91ff9d250f5|alt3 1.1s
+[b2:A] 34cc387cf0335f28|alt1 1.0s
+[b2:A] b7ee1af184835990|original 1.0s
+[b2:A] 33ee6f1f594d50ca|original 1.0s
+[b2:A] 8abc81ff3045543b|original 1.1s
+[b2:A] 92838ad73bf95b3a|alt2 1.1s
+[b2:A] c5b4ff1be8bb5113|alt0 1.1s
+[b2:A] 19c8d441cb445d87|alt1 1.0s
+[b2:A] 10ae805f0be95c1f|alt3 1.1s
+[b2:A] 79bdb6b499245d65|alt2 1.0s
+[b2:A] c87001c4251e559a|alt4 1.1s
+[b2:A] a8a72fb28dc6592b|alt4 1.0s
+[b2:A] 649b2096884957a9|alt6 1.1s
+[b2:A] f776577c7428592b|original 1.1s
+[b2:A] f66694a622cf5c99|alt5 1.0s
+[b2:A] 029a9572e05a5914|alt2 1.0s
+[b2:A] 58e19769184c5f43|alt1 1.0s
+[b2:A] a8a72fb28dc6592b|original 1.0s
+[b2:A] e23fdb8f34b35d20|alt3 1.0s
+[b2:A] 00eb3a4e0f8052e9|alt0 1.0s
+[b2:A] 622867ce25805447|alt1 1.0s
+[b2:A] 73939fc4dcdf57c4|original 1.1s
+[b2:A] 85028441255156b3|alt2 1.1s
+[b2:A] eea52ed765aa5977|alt3 1.0s
+[b2:A] 2d2a1f08e4895258|original 1.0s
+[b2:A] 8abc81ff3045543b|alt2 1.1s
+[b2:A] 0561ac957ffc5c4f|alt2 1.1s
+[b2:A] 7135ce0e5eea5907|alt1 1.1s
+[b2:A] 5bbd26efb97658ec|alt2 1.1s
+[b2:A] 62667ead92a35fbd|alt3 1.0s
+[b2:A] 8e785a7a6df95636|alt1 1.1s
+[b2:A] 67dff3c1993f57a5|original 1.0s
+[b2:A] 215c38293c335e25|alt1 1.1s
+[b2:A] 76cf7bb2e9625482|original 1.0s
+[b2:A] 7ff27f83a8995932|original 1.0s
+[b2:A] 37c15bc4d99a5365|alt3 1.1s
+[b2:A] be7331d3f05e5d16|alt0 1.1s
+[b2:A] 97eca45f93285d17|alt5 1.0s
+[b2:A] 39147f08f4645365|original 1.0s
+[b2:A] ba02d873678c5cf9|alt4 1.0s
+[b2:A] 34048f1ce51452d0|original 1.1s
+[b2:A] 4f21925f1a7c5983|alt4 1.0s
+[b2:A] 0924309bada05ea6|alt4 1.0s
+[b2:A] 19c8d441cb445d87|alt0 1.0s
+[b2:A] 4f21925f1a7c5983|alt0 1.0s
+[b2:A] dfa06e9592e65896|alt5 1.0s
+[b2:A] 19f3e77fcd3353c5|alt2 1.1s
+[b2:A] 4749b2486da65268|alt1 1.1s
+[b2:A] ea57966419605846|alt0 1.0s
+[b2:A] 9e76a394983a59b6|alt1 1.0s
+[b2:A] 69ddc43178e9572a|alt3 1.0s
+[b2:A] 4143d1c692f95b56|alt0 1.0s
+[b2:A] 1ded576bc1325cae|alt1 1.0s
+[b2:A] cc71f3639268516f|alt0 1.0s
+[b2:A] 00c489998dd4555c|original 1.0s
+[b2:A] 2d2a1f08e4895258|alt6 1.1s
+[b2:A] 92838ad73bf95b3a|alt6 1.1s
+[b2:A] be7331d3f05e5d16|alt5 1.1s
+[b2:A] 34048f1ce51452d0|alt3 1.1s
+[b2:A] 3e7bec3b1c4359b6|alt2 1.1s
+[b2:A] 0561ac957ffc5c4f|original 1.1s
+[b2:A] 00eb3a4e0f8052e9|alt3 1.0s
+[b2:A] 97eca45f93285d17|alt4 1.0s
+[b2:A] 3c24bf88e9b150dd|alt0 1.1s
+[b2:A] d4358e3962b758ce|alt3 1.0s
+[b2:A] 015011d2b73158b7|alt0 1.0s
+[b2:A] ab8034dd8873524b|original 1.0s
+[b2:A] 984c4c329ba05bd2|alt4 1.0s
+[b2:A] f3572fcbcd285f1e|alt0 1.0s
+[b2:A] eea52ed765aa5977|alt2 1.0s
+[b2:A] c2466f5ae7a25ad8|alt4 1.0s
+[b2:A] 976107b532bb5301|alt0 1.1s
+[b2:A] 5f70e91ff9d250f5|alt4 1.1s
+[b2:A] e7116a2035205221|alt2 1.1s
+[b2:A] 0c3c4cd553475d3a|alt4 1.0s
+[b2:A] 7b7cac50a37a5c24|alt3 1.0s
+[b2:A] f53ee13c32ac5bec|alt4 1.1s
+[b2:A] 28a0cdbbc1e55291|alt1 1.0s
+[b2:A] 02bfb6340c185b97|alt5 1.0s
+[b2:A] fb8df4568d585efa|alt5 1.0s
+[b2:A] ea57966419605846|alt2 1.0s
+[b2:A] 7316c116f05d57a5|alt6 1.0s
+[b2:A] 19f3e77fcd3353c5|original 1.1s
+[b2:A] cc71f3639268516f|alt5 1.0s
+[b2:A] 67dff3c1993f57a5|alt7 1.0s
+[b2:A] de7b87d6624754cf|original 1.1s
+[b2:A] 649b2096884957a9|original 1.1s
+[b2:A] dfaaa711e0a557ba|alt4 1.0s
+[b2:A] 93d4ab80a0cf5f01|alt3 1.1s
+[b2:A] 263367576c285a2a|alt1 1.0s
+[b2:A] 2e405d459d8b5d9c|alt1 1.1s
+[b2:A] ade979d99d51517f|alt1 1.0s
+[b2:A] c4fd814210875a8e|original 1.0s
+[b2:A] 39147f08f4645365|alt4 1.0s
+[b2:A] 078f05d9e9c05230|alt1 1.1s
+[b2:A] de7b87d6624754cf|alt5 1.1s
+[b2:A] 427ee2e0d1c05699|alt2 1.1s
+[b2:A] c87001c4251e559a|alt5 1.1s
+[b2:A] f53ee13c32ac5bec|alt5 1.1s
+[b2:A] 67dff3c1993f57a5|alt0 1.0s
+[b2:A] 1212ba4b68e95583|alt3 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|original 1.1s
+[b2:A] 97eca45f93285d17|alt0 1.0s
+[b2:A] 6233d1b3e62a5772|alt2 1.1s
+[b2:A] 2d2a1f08e4895258|alt0 1.1s
+[b2:A] ade979d99d51517f|alt3 1.0s
+[b2:A] 7cdcf11e211759cf|alt0 1.0s
+[b2:A] 93d4ab80a0cf5f01|alt0 1.1s
+[b2:A] 54b1308d42085066|alt2 1.1s
+[b2:A] ba02d873678c5cf9|alt3 1.0s
+[b2:A] 5bb280e3aebe5a67|alt1 1.1s
+[b2:A] 7316c116f05d57a5|alt1 1.0s
+[b2:A] 1db38f4b73ac5b62|original 1.0s
+[b2:A] 984c4c329ba05bd2|alt5 1.0s
+[b2:A] fdcbf84507845615|alt5 1.0s
+[b2:A] 984c4c329ba05bd2|alt2 1.0s
+[b2:A] 1212ba4b68e95583|alt2 1.0s
+[b2:A] 0561ac957ffc5c4f|alt5 1.1s
+[b2:A] 4f21925f1a7c5983|alt3 1.0s
+[b2:A] ade979d99d51517f|alt4 1.0s
+[b2:A] 649b2096884957a9|alt4 1.1s
+[b2:A] 976107b532bb5301|alt4 1.0s
+[b2:A] f776577c7428592b|alt1 1.1s
+[b2:A] 69df428fe853580e|alt2 1.1s
+[b2:A] 1b4499d988b052ce|alt0 1.0s
+[b2:A] 58e19769184c5f43|original 1.0s
+[b2:A] e59b32f05f5e54f0|alt2 1.0s
+[b2:A] 5bbd26efb97658ec|alt0 1.1s
+[b2:A] 4d2fceb0b30f59cd|alt6 1.0s
+[b2:A] 37c15bc4d99a5365|alt1 1.1s
+[b2:A] 80793d56acc15d48|alt2 1.1s
+[b2:A] 029a9572e05a5914|alt3 1.0s
+[b2:A] 649b2096884957a9|alt5 1.1s
+[b2:A] e0e1551b09f15a74|alt3 1.0s
+[b2:A] f064ef8fafcf5528|alt5 1.1s
+[b2:A] 6b258d7ddf7d53f3|alt5 1.1s
+[b2:A] 263367576c285a2a|alt3 1.0s
+[b2:A] ab7d0c4a928e5ec9|alt2 1.0s
+[b2:A] 54b1308d42085066|original 1.1s
+[b2:A] 93d4ab80a0cf5f01|original 1.1s
+[b2:A] 24acfb08c5ef55f5|alt1 1.1s
+[b2:A] f4af3907bb665bf7|alt2 1.0s
+[b2:A] b7ee1af184835990|alt1 1.0s
+[b2:A] 54b1308d42085066|alt3 1.1s
+[b2:A] 46aea2dcb1485353|alt2 1.1s
+[b2:A] 7cdcf11e211759cf|original 1.0s
+[b2:A] 2ee8d10b988c58b2|alt1 1.0s
+[b2:A] 6233d1b3e62a5772|alt0 1.1s
+[b2:A] c2466f5ae7a25ad8|alt1 1.0s
+[b2:A] be7331d3f05e5d16|alt1 1.1s
+[b2:A] 2743a2f96269577c|alt5 1.1s
+[b2:A] 85028441255156b3|alt5 1.1s
+[b2:A] f1940c1eca9857cb|original 1.0s
+[b2:A] c7c04f1581855ac4|alt2 1.1s
+[b2:A] 1dc437ce152e55fa|alt2 1.0s
+[b2:A] 584a741051cd523f|alt3 1.1s
+[b2:A] 887e4d57da835b12|alt2 1.1s
+[b2:A] 10209c0e885f5162|alt7 1.0s
+[b2:A] 118fa9fa499e5670|alt4 1.0s
+[b2:A] 57a77b8c90465bc4|alt4 1.1s
+[b2:A] 2e0a31d833765412|alt3 1.0s
+[b2:A] 0924309bada05ea6|alt0 1.0s
+[b2:A] 427ee2e0d1c05699|original 1.1s
+[b2:A] 46aea2dcb1485353|alt1 1.1s
+[b2:A] 4342cb36fbba580b|alt2 1.0s
+[b2:A] e7116a2035205221|alt3 1.1s
+[b2:A] 622867ce25805447|alt3 1.0s
+[b2:A] 50eebed7d9655bb5|alt7 1.0s
+[b2:A] 37c15bc4d99a5365|original 1.1s
+[b2:A] 69ddc43178e9572a|alt5 1.0s
+[b2:A] a8a72fb28dc6592b|alt0 1.0s
+[b2:A] 1f55063084fd593c|alt4 1.1s
+[b2:A] 5bb280e3aebe5a67|alt3 1.1s
+[b2:A] 8f5610a77c3257f9|alt2 1.0s
+[b2:A] 581a74871330567f|alt0 1.1s
+[b2:A] 8e785a7a6df95636|alt0 1.1s
+[b2:A] e59b32f05f5e54f0|alt1 1.0s
+[b2:A] d44d7aacab755892|original 1.0s
+[b2:A] 2ee8d10b988c58b2|alt4 1.0s
+[b2:A] 34048f1ce51452d0|alt0 1.1s
+[b2:A] 67dff3c1993f57a5|alt1 1.0s
+[b2:A] 7ff27f83a8995932|alt1 1.0s
+[b2:A] 078f05d9e9c05230|alt4 1.1s
+[b2:A] 64185eb977005752|original 1.1s
+[b2:A] f4af3907bb665bf7|alt4 1.1s
+[b2:A] 4631b80af7fb5f2f|alt3 1.1s
+[b2:A] 1dc437ce152e55fa|alt3 1.0s
+[b2:A] 10209c0e885f5162|alt6 1.0s
+[b2:A] b7ee1af184835990|alt2 1.1s
+[b2:A] 9fe3ed9455355edb|alt1 1.1s
+[b2:A] e23fdb8f34b35d20|original 1.0s
+[b2:A] 276396e455bb57b5|original 1.0s
+[b2:A] 1d4b518f1b175184|alt4 1.1s
+[b2:A] 6561633171e75bb6|alt0 1.0s
+[b2:A] 33ee6f1f594d50ca|alt2 1.0s
+[b2:A] 9c768fba2b4c5d19|alt4 1.0s
+[b2:A] 2743a2f96269577c|alt1 1.0s
+[b2:A] 73939fc4dcdf57c4|alt5 1.1s
+[b2:A] 3e7bec3b1c4359b6|original 1.1s
+[b2:A] 584a741051cd523f|alt4 1.1s
+[b2:A] 28a0cdbbc1e55291|alt0 1.0s
+[b2:A] cac5deee337257e1|alt1 1.0s
+[b2:A] 77daa055e4ed5ae2|alt1 1.0s
+[b2:A] 4d2fceb0b30f59cd|alt2 1.0s
+[b2:A] 0c437f9a102c57f4|alt3 1.1s
+[b2:A] ade979d99d51517f|alt0 1.0s
+[b2:A] 8d5d769b1f1e5802|alt2 1.0s
+[b2:A] 5c4f8e6a644258d3|alt0 1.0s
+[b2:A] f3512ae175b45844|alt1 1.0s
+[b2:A] f3572fcbcd285f1e|alt6 1.0s
+[b2:A] f064ef8fafcf5528|alt3 1.1s
+[b2:A] 2e0a31d833765412|original 1.0s
+[b2:A] 752255614d7f569a|alt1 1.1s
+[b2:A] 491dce963f7f5b57|alt5 1.1s
+[b2:A] 85028441255156b3|alt4 1.1s
+[b2:A] dfb58c90fd2e52fa|alt3 1.1s
+[b2:A] b98d8c3330625df2|alt0 1.0s
+[b2:A] 10209c0e885f5162|alt3 1.0s
+[b2:A] fdcbf84507845615|original 1.0s
+[b2:A] 2d2a1f08e4895258|alt4 1.0s
+[b2:A] 50eebed7d9655bb5|alt0 1.0s
+[b2:A] 1ded576bc1325cae|alt3 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|alt5 1.0s
+[b2:A] c6e19ffa3c34551c|alt3 1.1s
+[b2:A] 61a9157ac995542c|alt1 1.0s
+[b2:A] 5bb280e3aebe5a67|alt5 1.1s
+[b2:A] 10db4b6fe64b5c10|alt4 1.0s
+[b2:A] 34048f1ce51452d0|alt2 1.1s
+[b2:A] 10db4b6fe64b5c10|alt1 1.0s
+[b2:A] ade979d99d51517f|alt6 1.0s
+[b2:A] 69ddc43178e9572a|original 1.0s
+[b2:A] 50eebed7d9655bb5|alt3 1.0s
+[b2:A] 1db38f4b73ac5b62|alt1 1.0s
+[b2:A] f776577c7428592b|alt2 1.1s
+[b2:A] 80793d56acc15d48|alt3 1.0s
+[b2:A] 458fa5236b795941|alt1 1.0s
+[b2:A] 3e7bec3b1c4359b6|alt0 1.0s
+[b2:A] 9cf612ff6e4f5bd5|alt5 1.1s
+[b2:A] 26ffff4876f75eed|alt3 1.1s
+[b2:A] 8de4253bc36f54df|alt5 1.0s
+[b2:A] 6561633171e75bb6|alt4 1.0s
+[b2:A] a64a3e4f2048576d|alt0 1.0s
+[b2:A] ea57966419605846|original 1.0s
+[b2:A] 458fa5236b795941|alt3 1.0s
+[b2:A] 67dff3c1993f57a5|alt3 1.0s
+[b2:A] 5bbd26efb97658ec|original 1.1s
+[b2:A] 19f3e77fcd3353c5|alt4 1.1s
+[b2:A] f66694a622cf5c99|alt3 1.0s
+[b2:A] 29d3fc42d08d57d2|alt3 1.0s
+[b2:A] eadc0f19b54352ae|alt1 1.1s
+[b2:A] 34eb9be2f88a5234|alt0 1.0s
+[b2:A] 46aea2dcb1485353|alt5 1.1s
+[b2:A] 5bbd26efb97658ec|alt6 1.1s
+[b2:A] 14d53eb06a7d582a|alt2 1.1s
+[b2:A] 1d4b518f1b175184|alt3 1.1s
+[b2:A] d3cbad95b20b5125|alt2 1.0s
+[b2:A] 97b9989fa3675cab|alt0 1.0s
+[b2:A] 8eae3eab30c95228|alt4 1.1s
+[b2:A] 692bea45f3de5fd0|alt4 1.1s
+[b2:A] 026bb114391d5b81|alt4 1.0s
+[b2:A] b08965aff8165bec|alt1 1.0s
+[b2:A] 5bb280e3aebe5a67|alt0 1.0s
+[b2:A] d4358e3962b758ce|alt1 1.0s
+[b2:A] 692bea45f3de5fd0|alt7 1.1s
+[b2:A] c1686b2e1a4e5149|alt0 1.0s
+[b2:A] cc71f3639268516f|alt2 1.0s
+[b2:A] a8a72fb28dc6592b|alt3 1.0s
+[b2:A] 1db38f4b73ac5b62|alt0 1.1s
+[b2:A] 3c99fcb4ef8c5382|original 1.0s
+[b2:A] 3461796610c15a0e|alt5 1.0s
+[b2:A] 33ee6f1f594d50ca|alt6 1.0s
+[b2:A] 484bac10bd295459|alt4 1.1s
+[b2:A] d44d7aacab755892|alt2 1.0s
+[b2:A] c2466f5ae7a25ad8|alt2 1.0s
+[b2:A] 330ca2e9aa935a3a|alt2 1.0s
+[b2:A] 566bd5e6d09153e0|alt4 1.0s
+[b2:A] 6e10835f184d5921|alt1 1.0s
+[b2:A] 4749b2486da65268|alt5 1.1s
+[b2:A] c87001c4251e559a|alt0 1.1s
+[b2:A] 62667ead92a35fbd|original 1.0s
+[b2:A] 80793d56acc15d48|alt4 1.1s
+[b2:A] 0c437f9a102c57f4|alt2 1.1s
+[b2:A] 9fe3ed9455355edb|alt4 1.1s
+[b2:A] 015011d2b73158b7|alt1 1.0s
+[b2:A] 263367576c285a2a|alt2 1.0s
+[b2:A] 20d3a5f5b9e6549f|alt0 1.0s
+[b2:A] 0577532eba755552|alt4 1.0s
+[b2:A] 10209c0e885f5162|original 1.0s
+[b2:A] dfb58c90fd2e52fa|alt1 1.1s
+[b2:A] 2ee8d10b988c58b2|alt2 1.0s
+[b2:A] f4af3907bb665bf7|alt1 1.1s
+[b2:A] b27bfe84cc545daa|alt0 1.0s
+[b2:A] c87fe1d7a3bd57cb|alt4 1.1s
+[b2:A] 3c24bf88e9b150dd|alt3 1.1s
+[b2:A] 078f05d9e9c05230|alt2 1.1s
+[b2:A] 752255614d7f569a|alt0 1.1s
+[b2:A] 1212ba4b68e95583|alt5 1.1s
+[b2:A] 26af85cbc2d15e05|alt1 1.1s
+[b2:A] eadc0f19b54352ae|alt2 1.1s
+[b2:A] 9fe3ed9455355edb|original 1.0s
+[b2:A] a1ff2db262ab5db7|alt1 1.0s
+[b2:A] 692bea45f3de5fd0|original 1.1s
+[b2:A] a64a3e4f2048576d|alt4 1.0s
+[b2:A] 5bbd26efb97658ec|alt1 1.1s
+[b2:A] b27bfe84cc545daa|alt4 1.0s
+[b2:A] 6561633171e75bb6|alt2 1.0s
+[b2:A] 8abc81ff3045543b|alt3 1.1s
+[b2:A] ab7d0c4a928e5ec9|alt4 1.0s
+[b2:A] 2743a2f96269577c|alt2 1.0s
+[b2:A] 0561ac957ffc5c4f|alt4 1.1s
+[b2:A] 00eb3a4e0f8052e9|alt4 1.0s
+[b2:A] 427ee2e0d1c05699|alt1 1.1s
+[b2:A] 2e405d459d8b5d9c|original 1.1s
+[b2:A] 8de4253bc36f54df|original 1.0s
+[b2:A] 015011d2b73158b7|original 1.0s
+[b2:A] a627522c77eb526c|original 1.1s
+[b2:A] 34eb9be2f88a5234|original 1.0s
+[b2:A] 0577532eba755552|alt0 1.0s
+[b2:A] 458fa5236b795941|alt7 1.0s
+[b2:A] e0094ac69a8955fb|alt5 1.0s
+[b2:A] 1ded576bc1325cae|alt0 1.0s
+[b2:A] 0561ac957ffc5c4f|alt3 1.1s
+[b2:A] eea52ed765aa5977|original 1.0s
+[b2:A] 814b5e08c20e57af|alt4 1.0s
+[b2:A] 1d4b518f1b175184|original 1.1s
+[b2:A] b3c1a2ac292d5e3f|alt2 1.1s
+[b2:A] 28a0cdbbc1e55291|alt2 1.1s
+[b2:A] 1981a85eb4ba5001|alt1 1.1s
+[b2:A] 4d50c69f430850a0|original 1.0s
+[b2:A] 118fa9fa499e5670|alt3 1.0s
+[b2:A] 484bac10bd295459|original 1.1s
+[b2:A] 037b976caae85af5|alt4 1.0s
+[b2:A] 1f55063084fd593c|alt0 1.1s
+[b2:A] 80793d56acc15d48|alt0 1.0s
+[b2:A] 9e76a394983a59b6|alt2 1.0s
+[b2:A] b98d8c3330625df2|alt2 1.0s
+[b2:A] c87fe1d7a3bd57cb|original 1.1s
+[b2:A] 54b1308d42085066|alt0 1.1s
+[b2:A] 078f05d9e9c05230|original 1.1s
+[b2:A] 07b814bfc2fb565d|alt2 1.1s
+[b2:A] aa4ec42ec7425de0|alt0 1.1s
+[b2:A] 5e48f684248053bd|alt2 1.0s
+[b2:A] 10db4b6fe64b5c10|alt0 1.0s
+[b2:A] 00eb3a4e0f8052e9|alt2 1.0s
+[b2:A] cc71f3639268516f|alt6 1.0s
+[b2:A] 215c38293c335e25|alt4 1.0s
+[b2:A] 3461796610c15a0e|alt4 1.1s
+[b2:A] 1b4499d988b052ce|alt3 1.0s
+[b2:A] 93d4ab80a0cf5f01|alt1 1.1s
+[b2:A] 984c4c329ba05bd2|alt1 1.0s
+[b2:A] a8a72fb28dc6592b|alt2 1.0s
+[b2:A] 958677976f9c5b0a|alt3 1.0s
+[b2:A] f776577c7428592b|alt7 1.1s
+[b2:A] e0094ac69a8955fb|alt2 1.0s
+[b2:A] e6ff81ab83355450|alt4 1.1s
+[b2:A] 0924309bada05ea6|alt2 1.0s
+[b2:A] 50eebed7d9655bb5|alt2 1.0s
+[b2:A] 127b9e23f1805690|alt6 1.0s
+[b2:A] 29d3fc42d08d57d2|original 1.0s
+[b2:A] e3ddabf456b155a9|alt1 1.1s
+[b2:A] 22b526a96ad65c88|original 1.0s
+[b2:A] 9fe3ed9455355edb|alt5 1.1s
+[b2:A] dfa06e9592e65896|original 1.1s
+[b2:A] 10ae805f0be95c1f|alt0 1.0s
+[b2:A] 7cdcf11e211759cf|alt1 1.0s
+[b2:A] 7ff27f83a8995932|alt5 1.0s
+[b2:A] 752255614d7f569a|original 1.0s
+[b2:A] c69d4cbd79ea52a0|alt1 1.0s
+[b2:A] 9cf612ff6e4f5bd5|alt3 1.1s
+[b2:A] 52d3f15d6ca75701|alt3 1.1s
+[b2:A] 0924309bada05ea6|alt3 1.0s
+[b2:A] 52d3f15d6ca75701|alt2 1.1s
+[b2:A] 39dba8a42eaa5ea0|alt0 1.0s
+[b2:A] 8de4253bc36f54df|alt2 1.0s
+[b2:A] 814b5e08c20e57af|alt1 1.0s
+[b2:A] 0202782270ab5a62|alt0 1.0s
+[b2:A] b08965aff8165bec|alt4 1.0s
+[b2:A] 9cf612ff6e4f5bd5|original 1.1s
+[b2:A] e0094ac69a8955fb|alt3 1.0s
+[b2:A] a7ce5a625a525b45|alt0 1.0s
+[b2:A] 7b7cac50a37a5c24|alt0 1.0s
+[b2:A] 2d2a1f08e4895258|alt3 1.0s
+[b2:A] 584a741051cd523f|original 1.1s
+[b2:A] 0202782270ab5a62|original 1.0s
+[b2:A] 3c24bf88e9b150dd|alt1 1.1s
+[b2:A] 61a9157ac995542c|alt0 1.0s
+[b2:A] 5c4f8e6a644258d3|alt3 1.0s
+[b2:A] 7ff27f83a8995932|alt2 1.0s
+[b2:A] d443368fa4615242|alt3 1.1s
+[b2:A] 10209c0e885f5162|alt2 1.0s
+[b2:A] d5ec09025a1e5a0d|alt2 1.1s
+[b2:A] dfa06e9592e65896|alt1 1.1s
+[b2:A] e0e1551b09f15a74|alt2 1.0s
+[b2:A] 2743a2f96269577c|original 1.0s
+[b2:A] 3c99fcb4ef8c5382|alt0 1.0s
+[b2:A] 8abc81ff3045543b|alt0 1.1s
+[b2:A] 2d2a1f08e4895258|alt1 1.0s
+[b2:A] e6ff81ab83355450|alt2 1.1s
+[b2:A] 4f21925f1a7c5983|alt2 1.0s
+[b2:A] 7b7cac50a37a5c24|alt1 1.0s
+[b2:A] a1ff2db262ab5db7|alt3 1.0s
+[b2:A] 00eb3a4e0f8052e9|original 1.0s
+[b2:A] 4749b2486da65268|alt2 1.0s
+[b2:A] f3572fcbcd285f1e|alt7 1.0s
+[b2:A] 118fa9fa499e5670|alt0 1.0s
+[b2:A] 6233d1b3e62a5772|alt5 1.1s
+[b2:A] 150c33d5cd005743|alt1 1.1s
+[b2:A] dc9bf97cb9e151ad|alt1 1.0s
+[b2:A] 92838ad73bf95b3a|alt3 1.1s
+[b2:A] 2d2a1f08e4895258|alt7 1.1s
+[b2:A] 36be99da12575896|alt1 1.1s
+[b2:A] 029a9572e05a5914|alt4 1.0s
+[b2:A] dc9bf97cb9e151ad|alt5 1.0s
+[b2:A] c5b4ff1be8bb5113|original 1.1s
+[b2:A] a9152eadc70058ba|original 1.0s
+[b2:A] 22b526a96ad65c88|alt1 1.1s
+[b2:A] 595596a88cce5c9d|alt4 1.1s
+[b2:A] 3461796610c15a0e|alt3 1.0s
+[b2:A] 4342cb36fbba580b|original 1.0s
+[b2:A] cd9330daeec55224|alt2 1.0s
+[b2:A] f0f77f6f5cb4562c|alt3 1.0s
+[b2:A] 026bb114391d5b81|alt0 1.0s
+[b2:A] f158576757e95c31|alt1 1.1s
+[b2:A] f53ee13c32ac5bec|alt3 1.1s
+[b2:A] dfaaa711e0a557ba|alt6 1.1s
+[b2:A] 57a77b8c90465bc4|alt1 1.1s
+[b2:A] 0e08da5fbc735956|alt3 1.0s
+[b2:A] 276396e455bb57b5|alt0 1.0s
+[b2:A] 692bea45f3de5fd0|alt0 1.1s
+[b2:A] e6ff81ab83355450|alt0 1.1s
+[b2:A] 4143d1c692f95b56|alt1 1.0s
+[b2:A] 6f2459c4df665173|alt3 1.1s
+[b2:A] a7ce5a625a525b45|alt3 1.0s
+[b2:A] 5825e60bec9f59fb|alt5 1.1s
+[b2:A] 7135ce0e5eea5907|alt2 1.1s
+[b2:A] 39147f08f4645365|alt1 1.0s
+[b2:A] 484bac10bd295459|alt1 1.1s
+[b2:A] 58e19769184c5f43|alt3 1.0s
+[b2:A] 1981a85eb4ba5001|alt2 1.1s
+[b2:A] 67dff3c1993f57a5|alt5 1.0s
+[b2:A] cc71f3639268516f|original 1.0s
+[b2:A] 584a741051cd523f|alt1 1.1s
+[b2:A] 887e4d57da835b12|alt6 1.1s
+[b2:A] 97eca45f93285d17|alt1 1.0s
+[b2:A] 14d53eb06a7d582a|alt4 1.1s
+[b2:A] ab8034dd8873524b|alt3 1.0s
+[b2:A] 015011d2b73158b7|alt2 1.0s
+[b2:A] 692bea45f3de5fd0|alt2 1.1s
+[b2:A] f0f77f6f5cb4562c|original 1.0s
+[b2:A] aa4ec42ec7425de0|alt4 1.1s
+[b2:A] 150c33d5cd005743|alt2 1.1s
+[b2:A] 77daa055e4ed5ae2|alt2 1.0s
+[b2:A] 8de4253bc36f54df|alt1 1.0s
+[b2:A] e6bdb406a21e55ba|alt2 1.0s
+[b2:A] 6561633171e75bb6|original 1.0s
+[b2:A] e7116a2035205221|alt5 1.1s
+[b2:A] 1f55063084fd593c|alt2 1.1s
+[b2:A] e3ddabf456b155a9|alt4 1.1s
+[b2:A] 8de4253bc36f54df|alt0 1.0s
+[b2:A] 3c99fcb4ef8c5382|alt5 1.0s
+[b2:A] dfa06e9592e65896|alt4 1.0s
+[b2:A] 2a06b778a64b545e|alt1 1.1s
+[b2:A] 5825e60bec9f59fb|alt3 1.1s
+[b2:A] e6bdb406a21e55ba|alt4 1.0s
+[b2:A] 6233d1b3e62a5772|alt4 1.1s
+[b2:A] e23fdb8f34b35d20|alt2 1.0s
+[b2:A] 015011d2b73158b7|alt4 1.0s
+[b2:A] 566bd5e6d09153e0|alt2 1.0s
+[b2:A] 078f05d9e9c05230|alt3 1.1s
+[b2:A] 92838ad73bf95b3a|original 1.1s
+[b2:A] e6bdb406a21e55ba|original 1.0s
+[b2:A] c4fd814210875a8e|alt4 1.0s
+[b2:A] 9e76a394983a59b6|alt4 1.1s
+[b2:A] ab7d0c4a928e5ec9|original 1.0s
+[b2:A] 7135ce0e5eea5907|alt3 1.1s
+[b2:A] 1ded576bc1325cae|alt2 1.0s
+[b2:A] 22b526a96ad65c88|alt3 1.0s
+[b2:A] 4d2fceb0b30f59cd|alt4 1.0s
+[b2:A] 57f2781030b25387|alt0 1.1s
+[b2:A] 599e006109385ae5|original 1.0s
+[b2:A] 984c4c329ba05bd2|alt3 1.0s
+[b2:A] 02bfb6340c185b97|alt0 1.0s
+[b2:A] 2e405d459d8b5d9c|alt4 1.1s
+[b2:A] 20d3a5f5b9e6549f|original 1.0s
+[b2:A] 37c15bc4d99a5365|alt5 1.1s
+[b2:A] 3e7bec3b1c4359b6|alt4 1.0s
+[b2:A] 19c8d441cb445d87|alt4 1.0s
+[b2:A] e6bdb406a21e55ba|alt6 1.0s
+[b2:A] b27bfe84cc545daa|alt2 1.0s
+[b2:A] f4af3907bb665bf7|original 1.1s
+[b2:A] 9cf612ff6e4f5bd5|alt1 1.1s
+[b2:A] e0e1551b09f15a74|alt1 1.0s
+[b2:A] c4fd814210875a8e|alt1 1.0s
+[b2:A] 02bfb6340c185b97|alt2 1.0s
+[b2:A] 127b9e23f1805690|alt4 1.0s
+[b2:A] 39dba8a42eaa5ea0|alt4 1.0s
+[b2:A] 5e48f684248053bd|alt1 1.0s
+[b2:A] 4143d1c692f95b56|alt2 1.0s
+[b2:A] 77daa055e4ed5ae2|original 1.1s
+[b2:A] 8f1247f8436c5208|original 1.0s
+[b2:A] 127b9e23f1805690|alt2 1.0s
+[b2:A] b08965aff8165bec|alt5 1.0s
+[b2:A] 8b788f2715985cee|alt0 1.1s
+[b2:A] c2466f5ae7a25ad8|alt3 1.0s
+[b2:A] 958677976f9c5b0a|original 1.0s
+[b2:A] 581a74871330567f|alt3 1.1s
+[b2:A] c6e19ffa3c34551c|alt5 1.1s
+[b2:A] 39147f08f4645365|alt0 1.0s
+[b2:A] 6f2459c4df665173|alt4 1.1s
+[b2:A] 5e48f684248053bd|alt4 1.0s
+[b2:A] b27bfe84cc545daa|alt1 1.0s
+[b2:A] 8f1247f8436c5208|alt3 1.0s
+[b2:A] 67dff3c1993f57a5|alt6 1.0s
+[b2:A] aa4ec42ec7425de0|original 1.1s
+[b2:A] f064ef8fafcf5528|alt2 1.1s
+[b2:A] 330ca2e9aa935a3a|alt0 1.0s
+[b2:A] 39dba8a42eaa5ea0|alt1 1.0s
+[b2:A] 52d3f15d6ca75701|alt5 1.1s
+[b2:A] cd9330daeec55224|alt1 1.0s
+[b2:A] e0094ac69a8955fb|alt0 1.0s
+[b2:A] 6f2459c4df665173|alt0 1.1s
+[b2:A] 8d5d769b1f1e5802|alt4 1.1s
+[b2:A] 9cf612ff6e4f5bd5|alt4 1.1s
+[b2:A] 0202782270ab5a62|alt3 1.0s
+[b2:A] 6e10835f184d5921|alt4 1.0s
+[b2:A] 4f21925f1a7c5983|alt5 1.0s
+[b2:A] 0924309bada05ea6|original 1.0s
+[b2:A] f3572fcbcd285f1e|original 1.0s
+[b2:A] d4358e3962b758ce|original 1.1s
+[b2:A] 118fa9fa499e5670|alt6 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|alt0 1.0s
+[b2:A] 458fa5236b795941|alt0 1.0s
+[b2:A] 622867ce25805447|alt0 1.0s
+[b2:A] 4d50c69f430850a0|alt2 1.0s
+[b2:A] d3cbad95b20b5125|original 1.0s
+[b2:A] 9fe3ed9455355edb|alt2 1.0s
+[b2:A] 69df428fe853580e|alt4 1.1s
+[b2:A] 491dce963f7f5b57|alt2 1.1s
+[b2:A] fb8df4568d585efa|original 1.1s
+[b2:A] 61a9157ac995542c|alt3 1.0s
+[b2:A] 0c437f9a102c57f4|original 1.1s
+[b2:A] 97b9989fa3675cab|alt5 1.0s
+[b2:A] 2ee8d10b988c58b2|alt5 1.0s
+[b2:A] 5bbd26efb97658ec|alt5 1.1s
+[b2:A] c69d4cbd79ea52a0|alt3 1.0s
+[b2:A] 0561ac957ffc5c4f|alt1 1.1s
+[b2:A] b3c1a2ac292d5e3f|alt4 1.1s
+[b2:A] 4631b80af7fb5f2f|alt4 1.1s
+[b2:A] 599e006109385ae5|alt4 1.0s
+[b2:A] 3b56d2b022d25026|alt2 1.0s
+[b2:A] 887e4d57da835b12|alt5 1.1s
+[b2:A] 07b814bfc2fb565d|alt1 1.0s
+[b2:A] e166284508e554fa|original 1.1s
+[b2:A] 4342cb36fbba580b|alt5 1.0s
+[b2:A] 215c38293c335e25|alt3 1.0s
+[b2:A] f1940c1eca9857cb|alt4 1.0s
+[b2:A] 150c33d5cd005743|alt3 1.0s
+[b2:A] 1f55063084fd593c|original 1.1s
+[b2:A] 581a74871330567f|alt2 1.1s
+[b2:A] 02bfb6340c185b97|alt1 1.0s
+[b2:A] 5825e60bec9f59fb|original 1.1s
+[b2:A] da53dac7558e563d|alt2 1.0s
+[b2:A] 6b258d7ddf7d53f3|alt2 1.1s
+[b2:A] 9c768fba2b4c5d19|alt3 1.0s
+[b2:A] 9c768fba2b4c5d19|alt2 1.0s
+[b2:A] 8abc81ff3045543b|alt1 1.1s
+[b2:A] 276396e455bb57b5|alt3 1.0s
+[b2:A] cd9330daeec55224|original 1.0s
+[b2:A] f3512ae175b45844|alt3 1.0s
+[b2:A] 3c24bf88e9b150dd|original 1.1s
+[b2:A] 2ee8d10b988c58b2|alt3 1.0s
+[b2:A] 92838ad73bf95b3a|alt0 1.1s
+[b2:A] 330ca2e9aa935a3a|alt3 1.0s
+[b2:A] d5ec09025a1e5a0d|alt3 1.1s
+[b2:A] 8eae3eab30c95228|alt3 1.0s
+[b2:A] 26ffff4876f75eed|alt6 1.1s
+[b2:A] e6bdb406a21e55ba|alt1 1.0s
+[b2:A] 22b526a96ad65c88|alt2 1.1s
+[b2:A] 37c15bc4d99a5365|alt2 1.1s
+[b2:A] e7116a2035205221|alt4 1.1s
+[b2:A] 1db38f4b73ac5b62|alt4 1.0s
+[b2:A] 0e08da5fbc735956|alt0 1.0s
+[b2:A] 3b56d2b022d25026|alt5 1.0s
+[b2:A] 64185eb977005752|alt2 1.0s
+[b2:A] e6ff81ab83355450|original 1.1s
+[b2:A] 54b1308d42085066|alt4 1.1s
+[b2:A] eea52ed765aa5977|alt0 1.0s
+[b2:A] 10209c0e885f5162|alt0 1.0s
+[b2:A] 2a06b778a64b545e|alt4 1.1s
+[b2:A] 976107b532bb5301|alt2 1.1s
+[b2:A] 92838ad73bf95b3a|alt5 1.1s
+[b2:A] 263367576c285a2a|alt4 1.0s
+[b2:A] fb8df4568d585efa|alt4 1.1s
+[b2:A] 64185eb977005752|alt1 1.0s
+[b2:A] 97b9989fa3675cab|alt1 1.0s
+[b2:A] 1d4b518f1b175184|alt1 1.1s
+[b2:A] 10209c0e885f5162|alt5 1.0s
+[b2:A] 39dba8a42eaa5ea0|alt2 1.0s
+[b2:A] 10ae805f0be95c1f|alt5 1.1s
+[b2:A] 491dce963f7f5b57|alt4 1.1s
+[b2:A] 76e0272a57f55674|alt4 1.0s
+[b2:A] cac5deee337257e1|alt3 1.0s
+[b2:A] 7ff27f83a8995932|alt7 1.0s
+[b2:A] 458fa5236b795941|alt2 1.0s
+[b2:A] d5ec09025a1e5a0d|original 1.1s
+[b2:A] 4342cb36fbba580b|alt0 1.0s
+[b2:A] f158576757e95c31|alt0 1.1s
+[b2:A] 79bdb6b499245d65|alt4 1.0s
+[b2:A] 88c0bfe353235280|alt2 1.0s
+[b2:A] 52d3f15d6ca75701|alt0 1.1s
+[b2:A] 118fa9fa499e5670|alt5 1.0s
+[b2:A] 599e006109385ae5|alt0 1.0s
+[b2:A] 037b976caae85af5|original 1.0s
+[b2:A] 8eae3eab30c95228|original 1.0s
+[b2:A] f776577c7428592b|alt0 1.1s
+[b2:A] d2853234152359b3|original 1.1s
+[b2:A] 9e76a394983a59b6|alt0 1.1s
+[b2:A] 29d3fc42d08d57d2|alt4 1.0s
+[b2:A] eeae24d38eb15e0a|alt4 1.0s
+[b2:A] cac5deee337257e1|alt2 1.0s
+[b2:A] cc71f3639268516f|alt3 1.0s
+[b2:A] 1db38f4b73ac5b62|alt2 1.1s
+[b2:A] 29d3fc42d08d57d2|alt7 1.0s
+[b2:A] 566bd5e6d09153e0|original 1.0s
+[b2:A] 97b9989fa3675cab|alt4 1.0s
+[b2:A] 5825e60bec9f59fb|alt4 1.1s
+[b2:A] 07b814bfc2fb565d|original 1.1s
+[b2:A] de7b87d6624754cf|alt1 1.1s
+[b2:A] 88c0bfe353235280|alt1 1.0s
+[b2:A] 649b2096884957a9|alt3 1.1s
+[b2:A] 69ddc43178e9572a|alt6 1.0s
+[b2:A] 1b4499d988b052ce|original 1.1s
+[b2:A] 62667ead92a35fbd|alt0 1.0s
+[b2:A] 484bac10bd295459|alt0 1.1s
+[b2:A] 39147f08f4645365|alt3 1.0s
+[b2:A] 2a06b778a64b545e|alt0 1.0s
+[b2:A] 015011d2b73158b7|alt3 1.0s
+[b2:A] f4af3907bb665bf7|alt6 1.0s
+[b2:A] e0094ac69a8955fb|alt6 1.0s
+[b2:A] d2853234152359b3|alt1 1.1s
+[b2:A] 54b1308d42085066|alt1 1.1s
+[b2:A] 029a9572e05a5914|alt0 1.1s
+[b2:A] a64a3e4f2048576d|original 1.0s
+[b2:A] 752255614d7f569a|alt4 1.1s
+[b2:A] 67dff3c1993f57a5|alt4 1.0s
+[b2:A] 4342cb36fbba580b|alt3 1.0s
+[b2:A] 2743a2f96269577c|alt4 1.1s
+[b2:A] f66694a622cf5c99|alt2 1.0s
+[b2:A] f0f77f6f5cb4562c|alt1 1.0s
+[b2:A] c87001c4251e559a|original 1.1s
+[b2:A] 8f5610a77c3257f9|alt3 1.0s
+[b2:A] f776577c7428592b|alt4 1.1s
+[b2:A] dfaaa711e0a557ba|alt5 1.1s
+[b2:A] 26ffff4876f75eed|alt2 1.0s
+[b2:A] 2f5ae1e4cf9d59fa|alt2 1.0s
+[b2:A] 0202782270ab5a62|alt2 1.0s
+[b2:A] f158576757e95c31|alt2 1.1s
+[b2:A] 8f1247f8436c5208|alt2 1.0s
+[b2:A] 029a9572e05a5914|alt5 1.0s
+[b2:A] 1b4499d988b052ce|alt2 1.0s
+[b2:A] 76e0272a57f55674|alt3 1.0s
+[b2:A] 595596a88cce5c9d|alt1 1.0s
+[b2:A] 93d4ab80a0cf5f01|alt4 1.1s
+[b2:A] 595596a88cce5c9d|alt2 1.0s
+[b2:A] 92838ad73bf95b3a|alt1 1.1s
+[b2:A] 692bea45f3de5fd0|alt6 1.1s
+[b2:A] eeae24d38eb15e0a|alt1 1.0s
+[b2:A] 8de4253bc36f54df|alt3 1.0s
+[b2:A] 8de4253bc36f54df|alt4 1.0s
+[b2:A] 88c0bfe353235280|original 1.0s
+[b2:A] e6ff81ab83355450|alt1 1.1s
+[b2:A] 6e10835f184d5921|alt3 1.0s
+[b2:A] 64185eb977005752|alt0 1.1s
+[b2:A] 09978bee1b655865|original 1.0s
+[b2:A] 76cf7bb2e9625482|alt1 1.0s
+[b2:A] 3c99fcb4ef8c5382|alt1 1.0s
+[b2:A] 50eebed7d9655bb5|alt1 1.0s
+[b2:A] 97b9989fa3675cab|alt2 1.0s
+[b2:A] 458fa5236b795941|original 1.0s
+[b2:A] c7c04f1581855ac4|alt3 1.1s
+[b2:A] 491dce963f7f5b57|original 1.1s
+[b2:A] c87fe1d7a3bd57cb|alt2 1.0s
+[b2:A] 52d3f15d6ca75701|alt7 1.1s
+[b2:A] 7316c116f05d57a5|alt4 1.0s
+[b2:A] 0c3c4cd553475d3a|alt2 1.0s
+[b2:A] dfb58c90fd2e52fa|alt0 1.1s
+[b2:A] 29d3fc42d08d57d2|alt2 1.0s
+[b2:A] 2ee8d10b988c58b2|original 1.0s
+[b2:A] de7b87d6624754cf|alt3 1.1s
+[b2:A] e3ddabf456b155a9|original 1.1s
+[b2:A] e23fdb8f34b35d20|alt1 1.0s
+[b2:A] 20d3a5f5b9e6549f|alt2 1.0s
+[b2:A] 29d3fc42d08d57d2|alt1 1.0s
+[b2:A] 10209c0e885f5162|alt4 1.0s
+[b2:A] 57f2781030b25387|alt4 1.1s
+[b2:A] 26af85cbc2d15e05|alt2 1.1s
+[b2:A] a64a3e4f2048576d|alt1 1.0s
+[b2:A] 649b2096884957a9|alt2 1.1s
+[b2:A] aa4ec42ec7425de0|alt1 1.1s
+[b2:A] 79bdb6b499245d65|original 1.0s
+[b2:A] 02bfb6340c185b97|alt3 1.0s
+[b2:A] dc9bf97cb9e151ad|alt3 1.0s
+[b2:A] 0924309bada05ea6|alt1 1.0s
+[b2:A] cd9330daeec55224|alt3 1.0s
+[b2:A] 10ae805f0be95c1f|original 1.0s
+[b2:A] 037b976caae85af5|alt3 1.0s
+[b2:A] 00c489998dd4555c|alt1 1.0s
+[b2:A] 57a77b8c90465bc4|alt2 1.0s
+[b2:A] 69df428fe853580e|original 1.1s
+[b2:A] 34cc387cf0335f28|original 1.0s
+[b2:A] 0c3c4cd553475d3a|original 1.0s
+[b2:A] 10ae805f0be95c1f|alt1 1.0s
+[b2:A] f776577c7428592b|alt3 1.1s
+[b2:A] d5ec09025a1e5a0d|alt4 1.1s
+[b2:A] eeae24d38eb15e0a|original 1.0s
+[b2:A] f0f77f6f5cb4562c|alt4 1.0s
+[b2:A] 20d3a5f5b9e6549f|alt1 1.0s
+[b2:A] ab8034dd8873524b|alt1 1.0s
+[b2:A] c1686b2e1a4e5149|alt5 1.0s
+[b2:A] f53ee13c32ac5bec|alt1 1.0s
+[b2:A] e0a645315de658bc|alt0 1.0s
+[b2:A] 150c33d5cd005743|alt0 1.1s
+[b2:A] d44d7aacab755892|alt3 1.0s
+[b2:A] 4749b2486da65268|alt0 1.0s
+[b2:A] f4af3907bb665bf7|alt3 1.1s
+[b2:A] 00c489998dd4555c|alt4 1.0s
+[b2:A] 887e4d57da835b12|alt1 1.1s
+[b2:A] b98d8c3330625df2|alt4 1.0s
+[b2:A] f289e368449b517b|original 1.0s
+[b2:A] 33ee6f1f594d50ca|alt4 1.0s
+[b2:A] 8d5d769b1f1e5802|alt3 1.1s
+[b2:A] 9c768fba2b4c5d19|alt1 1.0s
+[b2:A] 1dc437ce152e55fa|alt5 1.0s
+[b2:A] 07b814bfc2fb565d|alt0 1.1s
+[b2:A] dfb58c90fd2e52fa|alt5 1.1s
+[b2:A] 5e48f684248053bd|original 1.0s
+[b2:A] c87001c4251e559a|alt3 1.1s
+[b2:A] 484bac10bd295459|alt2 1.1s
+[b2:A] 8f5610a77c3257f9|alt4 1.0s
+[b2:A] 0c3c4cd553475d3a|alt0 1.0s
+[b2:A] 64185eb977005752|alt3 1.1s
+[b2:A] 2e405d459d8b5d9c|alt0 1.1s
+[b2:A] 8e785a7a6df95636|alt4 1.1s
+[b2:A] 752255614d7f569a|alt3 1.0s
+[b2:A] e166284508e554fa|alt2 1.1s
+[b2:A] 00c489998dd4555c|alt0 1.0s
+[b2:A] 67dff3c1993f57a5|alt2 1.0s
+[b2:A] 692bea45f3de5fd0|alt5 1.1s
+[b2:A] dfaaa711e0a557ba|alt3 1.0s
+[b2:A] 24acfb08c5ef55f5|alt2 1.1s
+[b2:A] 09978bee1b655865|alt1 1.0s
+[b2:A] 85028441255156b3|alt3 1.1s
+[b2:A] 8d5d769b1f1e5802|alt1 1.0s
+[b2:A] f1940c1eca9857cb|alt3 1.0s
+[b2:A] 4143d1c692f95b56|alt3 1.0s
+[b2:A] da53dac7558e563d|alt4 1.1s
+[b2:A] f3572fcbcd285f1e|alt4 1.0s
+[b2:A] 33ee6f1f594d50ca|alt7 1.0s
+[b2:A] 36be99da12575896|original 1.1s
+[b2:A] eeae24d38eb15e0a|alt0 1.0s
+[b2:A] 026bb114391d5b81|original 1.0s
+[b2:A] 09978bee1b655865|alt4 1.0s
+[b2:B] b5ee0c4a00765073|alt0 1.2s total 37.6 min
+[b2:B] 4a4bf6e11a875f33|alt4 1.2s total 37.6 min
+[b2:B] 4a1f69f3821e5ac5|alt1 1.6s total 37.7 min
+[b2:B] d436fd792f365847|alt4 1.6s total 37.7 min
+[b2:B] fb2ff1ed5e1b529f|alt0 1.6s total 37.7 min
+[b2:B] 23803695a4c1547c|alt3 1.4s total 37.7 min
+[b2:B] e69be869445455c7|alt5 1.4s total 37.8 min
+[b2:B] fb2402a506065225|alt1 1.4s total 37.8 min
+[b2:B] 47fdf7c04b155eac|alt2 1.2s total 37.8 min
+[b2:B] f67e431f781659eb|alt4 1.6s total 37.8 min
+[b2:B] f93751942d4e5c48|original 1.2s total 37.9 min
+[b2:B] ec3969afeb945ddb|alt1 1.2s total 37.9 min
+[b2:B] 3338ad25c2cc59d1|alt0 1.2s total 37.9 min
+[b2:B] 25b719c231d85e56|alt3 1.4s total 37.9 min
+[b2:B] f93751942d4e5c48|alt4 1.2s total 37.9 min
+[b2:B] 586c5b66ad8158ee|alt2 1.6s total 38.0 min
+[b2:B] f93751942d4e5c48|alt6 1.2s total 38.0 min
+[b2:B] 88e453ca4644586f|alt5 1.2s total 38.0 min
+[b2:B] d42d0a93b7185161|alt1 1.0s total 38.0 min
+[b2:B] 988cf241460c557e|alt0 0.7s total 38.0 min
+[b2:B] 4b721ff0b7025f21|alt1 1.2s total 38.0 min
+[b2:B] 6544f1c9668c58c3|original 1.2s total 38.1 min
+[b2:B] 23d71fb39b0456f5|alt2 1.4s total 38.1 min
+[b2:B] e3a97e3004795b39|alt6 1.5s total 38.1 min
+[b2:B] e1950bc54da65383|alt5 1.5s total 38.1 min
+[b2:B] 0e7f7322726f5b86|alt5 1.4s total 38.2 min
+[b2:B] f93751942d4e5c48|alt3 1.2s total 38.2 min
+[b2:B] e83f4b6e1dd25c90|alt3 1.0s total 38.2 min
+[b2:B] 1ad96f74e72750db|alt2 1.0s total 38.2 min
+[b2:B] 1218b6a218b750d8|alt0 1.2s total 38.2 min
+[b2:B] 4b721ff0b7025f21|alt2 1.2s total 38.3 min
+[b2:B] 61c675d850d75cd1|alt0 1.2s total 38.3 min
+[b2:B] a7fa8bccce9253cb|alt2 1.5s total 38.3 min
+[b2:B] e83f4b6e1dd25c90|alt5 1.0s total 38.3 min
+[b2:B] fdb658e4941855a3|alt1 1.4s total 38.3 min
+[b2:B] e5e00457df055e1a|alt7 1.2s total 38.4 min
+[b2:B] cb9992677d95539f|alt4 1.4s total 38.4 min
+[b2:B] da0aac1f6c225eca|alt0 1.5s total 38.4 min
+[b2:B] 4b721ff0b7025f21|alt0 1.2s total 38.4 min
+[b2:B] e3a97e3004795b39|alt4 1.5s total 38.5 min
+[b2:B] 21b8742127e7523c|alt6 1.0s total 38.5 min
+[b2:B] 667afe1f010351c5|alt0 1.2s total 38.5 min
+[b2:B] 23d71fb39b0456f5|original 1.4s total 38.5 min
+[b2:B] 06392ff957445576|alt1 1.4s total 38.5 min
+[b2:B] 663c00bac2e05721|alt2 1.0s total 38.6 min
+[b2:B] 3338ad25c2cc59d1|alt1 1.2s total 38.6 min
+[b2:B] 4a4bf6e11a875f33|alt1 1.2s total 38.6 min
+[b2:B] 1218b6a218b750d8|alt1 1.2s total 38.6 min
+[b2:B] 88e453ca4644586f|alt0 1.2s total 38.6 min
+[b2:B] df84a00692885ec0|alt1 1.4s total 38.7 min
+[b2:B] f67e431f781659eb|alt1 1.5s total 38.7 min
+[b2:B] fb2ff1ed5e1b529f|alt4 1.5s total 38.7 min
+[b2:B] 23d71fb39b0456f5|alt0 1.4s total 38.7 min
+[b2:B] 85936ccd1b405f4c|alt4 1.2s total 38.8 min
+[b2:B] 966e42e47cc85a5c|alt2 1.4s total 38.8 min
+[b2:B] b84056c4268153fb|alt4 1.5s total 38.8 min
+[b2:B] 8227648b1da95adb|alt4 1.4s total 38.8 min
+[b2:B] 69a4cff1f35655ff|alt0 1.0s total 38.8 min
+[b2:B] 23803695a4c1547c|original 1.4s total 38.9 min
+[b2:B] f93751942d4e5c48|alt2 1.2s total 38.9 min
+[b2:B] 2a799223058c5ed7|alt0 1.4s total 38.9 min
+[b2:B] 6de13c6c9af05cac|original 1.2s total 38.9 min
+[b2:B] ee492610c55b5440|alt2 1.4s total 39.0 min
+[b2:B] baf1301534ea54d6|alt1 1.4s total 39.0 min
+[b2:B] cedd32ec31e45cd9|original 1.2s total 39.0 min
+[b2:B] 966e42e47cc85a5c|alt4 1.4s total 39.0 min
+[b2:B] 9ba2570d6743526a|alt3 1.4s total 39.0 min
+[b2:B] 988cf241460c557e|alt1 0.7s total 39.1 min
+[b2:B] cedd32ec31e45cd9|alt5 1.2s total 39.1 min
+[b2:B] 88e453ca4644586f|original 1.2s total 39.1 min
+[b2:B] 4b721ff0b7025f21|alt5 1.2s total 39.1 min
+[b2:B] 5b272b7aa3315c4f|alt3 1.0s total 39.1 min
+[b2:B] d42d0a93b7185161|alt0 1.0s total 39.1 min
+[b2:B] f93751942d4e5c48|alt7 1.2s total 39.2 min
+[b2:B] 8f105ffb008c5801|alt3 1.0s total 39.2 min
+[b2:B] 1bea55e75a9b593b|alt1 1.5s total 39.2 min
+[b2:B] fb2402a506065225|alt4 1.4s total 39.2 min
+[b2:B] e5e00457df055e1a|alt4 1.2s total 39.3 min
+[b2:B] 88e453ca4644586f|alt3 1.2s total 39.3 min
+[b2:B] 6fa01275a4525b26|alt4 1.5s total 39.3 min
+[b2:B] 2f03781e3fd05c28|alt4 1.5s total 39.3 min
+[b2:B] d813c6a4706e5411|alt6 0.7s total 39.3 min
+[b2:B] 0e7f7322726f5b86|original 1.4s total 39.4 min
+[b2:B] df84a00692885ec0|alt0 1.4s total 39.4 min
+[b2:B] b3509fd31f495cfb|alt0 1.5s total 39.4 min
+[b2:B] cb9992677d95539f|alt2 1.4s total 39.4 min
+[b2:B] ec3969afeb945ddb|alt0 1.2s total 39.4 min
+[b2:B] b58a12e346235cd0|alt7 1.4s total 39.5 min
+[b2:B] 23803695a4c1547c|alt1 1.4s total 39.5 min
+[b2:B] 457acf87bc885550|alt6 1.2s total 39.5 min
+[b2:B] ec3969afeb945ddb|alt2 1.2s total 39.5 min
+[b2:B] 09d9a0cd32c25dee|alt3 1.5s total 39.6 min
+[b2:B] 2243d4e976fb5b77|alt3 1.0s total 39.6 min
+[b2:B] 2d4b17f8d7585219|alt1 1.6s total 39.6 min
+[b2:B] 06392ff957445576|alt4 1.4s total 39.6 min
+[b2:B] 2d4b17f8d7585219|alt3 1.5s total 39.7 min
+[b2:B] 4b721ff0b7025f21|alt6 1.2s total 39.7 min
+[b2:B] fab7537b12d254bd|alt1 1.4s total 39.7 min
+[b2:B] 586c5b66ad8158ee|alt3 1.5s total 39.7 min
+[b2:B] 2564ab331db05cb9|alt3 1.5s total 39.7 min
+[b2:B] 7f2934ac111854f5|alt1 1.0s total 39.8 min
+[b2:B] 6de13c6c9af05cac|alt2 1.2s total 39.8 min
+[b2:B] 88e453ca4644586f|alt6 1.2s total 39.8 min
+[b2:B] fdb658e4941855a3|original 1.4s total 39.8 min
+[b2:B] 21b8742127e7523c|alt5 1.0s total 39.8 min
+[b2:B] 3012e1628f7d5d3a|alt2 1.6s total 39.9 min
+[b2:B] 704527beccac5701|alt4 0.7s total 39.9 min
+[b2:B] fdb658e4941855a3|alt0 1.4s total 39.9 min
+[b2:B] ec3969afeb945ddb|alt3 1.2s total 39.9 min
+[b2:B] 88466abb967954e5|alt3 1.5s total 39.9 min
+[b2:B] ec3969afeb945ddb|alt6 1.2s total 40.0 min
+[b2:B] 586c5b66ad8158ee|alt0 1.5s total 40.0 min
+[b2:B] 47fdf7c04b155eac|alt3 1.2s total 40.0 min
+[b2:B] b7122fd86c855943|alt5 1.0s total 40.0 min
+[b2:B] 4e50c7903a8c5303|alt2 1.2s total 40.1 min
+[b2:B] e69be869445455c7|alt0 1.4s total 40.1 min
+[b2:B] 09d9a0cd32c25dee|alt2 1.5s total 40.1 min
+[b2:B] 663c00bac2e05721|alt4 1.0s total 40.1 min
+[b2:B] e3a97e3004795b39|alt1 1.5s total 40.1 min
+[b2:B] e14d9a1990535a29|original 1.5s total 40.2 min
+[b2:B] 4b721ff0b7025f21|original 1.2s total 40.2 min
+[b2:B] bd7154fc2b1f548b|alt1 1.5s total 40.2 min
+[b2:B] a067e1b873c8534d|alt2 0.7s total 40.2 min
+[b2:B] d436fd792f365847|alt6 1.5s total 40.2 min
+[b2:B] 2919cd502115582a|alt1 1.2s total 40.3 min
+[b2:B] efb9929eed1852f0|alt3 1.5s total 40.3 min
+[b2:B] cedd32ec31e45cd9|alt2 1.2s total 40.3 min
+[b2:B] 55bd10ac74585a12|original 1.2s total 40.3 min
+[b2:B] 6de13c6c9af05cac|alt0 1.2s total 40.4 min
+[b2:B] 4b721ff0b7025f21|alt4 1.2s total 40.4 min
+[b2:B] 966e42e47cc85a5c|alt1 1.4s total 40.4 min
+[b2:B] 3ec88bf115c95f69|alt2 1.5s total 40.4 min
+[b2:B] 704527beccac5701|alt1 0.7s total 40.4 min
+[b2:B] 3338ad25c2cc59d1|alt5 1.2s total 40.5 min
+[b2:B] 47fdf7c04b155eac|alt4 1.2s total 40.5 min
+[b2:B] f93751942d4e5c48|alt1 1.2s total 40.5 min
+[b2:B] 21b8742127e7523c|alt1 1.0s total 40.5 min
+[b2:B] a4f91ed474295f00|alt7 1.4s total 40.5 min
+[b2:B] d54047580ffb5dba|alt1 1.0s total 40.6 min
+[b2:B] 586c5b66ad8158ee|alt4 1.5s total 40.6 min
+[b2:B] 2a799223058c5ed7|alt3 1.4s total 40.6 min
+[b2:B] 2564ab331db05cb9|alt0 1.5s total 40.6 min
+[b2:B] bd7154fc2b1f548b|alt3 1.5s total 40.7 min
+[b2:B] 6de13c6c9af05cac|alt3 1.2s total 40.7 min
+[b2:B] 1f12591bdae05306|alt2 1.2s total 40.7 min
+[b2:B] de3ea1d3c1e0588a|alt4 1.4s total 40.7 min
+[b2:B] 5b272b7aa3315c4f|alt4 1.0s total 40.7 min
+[b2:B] 4a1f69f3821e5ac5|alt4 1.5s total 40.8 min
+[b2:B] 8227648b1da95adb|alt0 1.4s total 40.8 min
+[b2:B] 0fb88262272f5110|alt2 1.2s total 40.8 min
+[b2:B] 0b97850e408e5a95|alt4 1.5s total 40.8 min
+[b2:B] da0aac1f6c225eca|alt2 1.5s total 40.9 min
+[b2:B] efb9929eed1852f0|alt2 1.5s total 40.9 min
+[b2:B] bd7154fc2b1f548b|alt5 1.5s total 40.9 min
+[b2:B] bf896d504b4356c7|alt5 1.4s total 40.9 min
+[b2:B] a067e1b873c8534d|alt0 0.7s total 40.9 min
+[b2:B] de3ea1d3c1e0588a|original 1.4s total 41.0 min
+[b2:B] 3012e1628f7d5d3a|alt1 1.5s total 41.0 min
+[b2:B] baf1301534ea54d6|alt2 1.4s total 41.0 min
+[b2:B] e76cb8b17f8f51f3|alt1 1.5s total 41.0 min
+[b2:B] b7122fd86c855943|alt3 1.0s total 41.1 min
+[b2:B] e5e00457df055e1a|alt5 1.2s total 41.1 min
+[b2:B] 5b272b7aa3315c4f|alt5 1.0s total 41.1 min
+[b2:B] 1218b6a218b750d8|alt5 1.2s total 41.1 min
+[b2:B] 6fa01275a4525b26|alt5 1.5s total 41.1 min
+[b2:B] 8227648b1da95adb|alt3 1.4s total 41.2 min
+[b2:B] a7c6cc3a1840584f|alt4 1.5s total 41.2 min
+[b2:B] 0fb88262272f5110|alt4 1.2s total 41.2 min
+[b2:B] 586c5b66ad8158ee|alt5 1.5s total 41.2 min
+[b2:B] 06392ff957445576|alt5 1.4s total 41.2 min
+[b2:B] b7122fd86c855943|alt2 1.0s total 41.3 min
+[b2:B] 2d4b17f8d7585219|alt0 1.5s total 41.3 min
+[b2:B] 1218b6a218b750d8|original 1.2s total 41.3 min
+[b2:B] ca7e845b9c19597c|alt3 1.4s total 41.3 min
+[b2:B] 988cf241460c557e|alt3 0.7s total 41.3 min
+[b2:B] 4e50c7903a8c5303|alt1 1.2s total 41.4 min
+[b2:B] 667afe1f010351c5|alt6 1.2s total 41.4 min
+[b2:B] bf1184622f355af4|alt0 1.5s total 41.4 min
+[b2:B] 85936ccd1b405f4c|alt3 1.2s total 41.4 min
+[b2:B] b84056c4268153fb|alt3 1.5s total 41.5 min
+[b2:B] c687799dac8d5aa2|original 1.5s total 41.5 min
+[b2:B] aa072830a2d15d9f|alt3 1.4s total 41.5 min
+[b2:B] 3ec88bf115c95f69|alt4 1.5s total 41.5 min
+[b2:B] 966e42e47cc85a5c|alt5 1.4s total 41.6 min
+[b2:B] 23d71fb39b0456f5|alt4 1.4s total 41.6 min
+[b2:B] f67e431f781659eb|alt2 1.5s total 41.6 min
+[b2:B] 69a4cff1f35655ff|alt3 1.0s total 41.6 min
+[b2:B] a4f91ed474295f00|alt4 1.4s total 41.6 min
+[b2:B] ca59ecba5722534c|alt6 1.4s total 41.7 min
+[b2:B] 2919cd502115582a|alt3 1.2s total 41.7 min
+[b2:B] cedd32ec31e45cd9|alt0 1.2s total 41.7 min
+[b2:B] 0192c3bca9ca5c67|alt3 1.6s total 41.7 min
+[b2:B] 7f2934ac111854f5|alt4 1.0s total 41.7 min
+[b2:B] f93751942d4e5c48|alt0 1.2s total 41.8 min
+[b2:B] 2919cd502115582a|original 1.2s total 41.8 min
+[b2:B] b84056c4268153fb|alt0 1.5s total 41.8 min
+[b2:B] 6de13c6c9af05cac|alt5 1.2s total 41.8 min
+[b2:B] 1f12591bdae05306|alt0 1.2s total 41.9 min
+[b2:B] 1ea152f7056659a9|original 0.7s total 41.9 min
+[b2:B] d54047580ffb5dba|alt2 1.0s total 41.9 min
+[b2:B] 4a4bf6e11a875f33|alt0 1.2s total 41.9 min
+[b2:B] 5dea796da1ce5b02|alt3 1.5s total 41.9 min
+[b2:B] 8f105ffb008c5801|original 1.0s total 41.9 min
+[b2:B] 06392ff957445576|original 1.4s total 42.0 min
+[b2:B] b58a12e346235cd0|alt6 1.4s total 42.0 min
+[b2:B] efb9929eed1852f0|alt5 1.5s total 42.0 min
+[b2:B] 88e453ca4644586f|alt4 1.2s total 42.0 min
+[b2:B] d436fd792f365847|alt3 1.5s total 42.1 min
+[b2:B] d0fccf42f606569a|alt4 1.4s total 42.1 min
+[b2:B] 23d71fb39b0456f5|alt1 1.4s total 42.1 min
+[b2:B] a067e1b873c8534d|original 0.7s total 42.1 min
+[b2:B] ee492610c55b5440|original 1.4s total 42.1 min
+[b2:B] 988cf241460c557e|alt4 0.7s total 42.2 min
+[b2:B] d813c6a4706e5411|alt1 0.7s total 42.2 min
+[b2:B] 9ba2570d6743526a|alt2 1.4s total 42.2 min
+[b2:B] 23bd3a02e2855a28|alt6 1.4s total 42.2 min
+[b2:B] 5dea796da1ce5b02|alt2 1.5s total 42.2 min
+[b2:B] ca59ecba5722534c|alt4 1.4s total 42.3 min
+[b2:B] 0fb88262272f5110|alt1 1.2s total 42.3 min
+[b2:B] 586c5b66ad8158ee|original 1.5s total 42.3 min
+[b2:B] a4f91ed474295f00|alt5 1.4s total 42.3 min
+[b2:B] f205efb84def5cc8|alt4 1.2s total 42.3 min
+[b2:B] fdb658e4941855a3|alt3 1.4s total 42.4 min
+[b2:B] da0aac1f6c225eca|original 1.5s total 42.4 min
+[b2:B] a4f91ed474295f00|alt0 1.4s total 42.4 min
+[b2:B] 9d7b9273d56f5d02|alt5 1.5s total 42.4 min
+[b2:B] 55bd10ac74585a12|alt0 1.2s total 42.5 min
+[b2:B] 704527beccac5701|alt0 0.7s total 42.5 min
+[b2:B] ca59ecba5722534c|alt3 1.4s total 42.5 min
+[b2:B] 23bd3a02e2855a28|alt5 1.4s total 42.5 min
+[b2:B] a7fa8bccce9253cb|alt4 1.5s total 42.5 min
+[b2:B] 1ea152f7056659a9|alt4 0.7s total 42.6 min
+[b2:B] 0fb88262272f5110|alt0 1.2s total 42.6 min
+[b2:B] bd7154fc2b1f548b|alt2 1.5s total 42.6 min
+[b2:B] e5e00457df055e1a|original 1.2s total 42.6 min
+[b2:B] 9ba2570d6743526a|alt5 1.4s total 42.6 min
+[b2:B] 1e78181bb1c150e4|alt1 1.5s total 42.7 min
+[b2:B] 586c5b66ad8158ee|alt6 1.5s total 42.7 min
+[b2:B] fab7537b12d254bd|original 1.4s total 42.7 min
+[b2:B] 6fa01275a4525b26|alt2 1.5s total 42.7 min
+[b2:B] 2243d4e976fb5b77|alt5 1.0s total 42.8 min
+[b2:B] fb2ff1ed5e1b529f|alt2 1.5s total 42.8 min
+[b2:B] e5e00457df055e1a|alt3 1.2s total 42.8 min
+[b2:B] 4e50c7903a8c5303|alt7 1.2s total 42.8 min
+[b2:B] 09d9a0cd32c25dee|original 1.5s total 42.9 min
+[b2:B] aa072830a2d15d9f|alt1 1.4s total 42.9 min
+[b2:B] 0192c3bca9ca5c67|alt2 1.5s total 42.9 min
+[b2:B] bf1184622f355af4|alt3 1.5s total 42.9 min
+[b2:B] 2a799223058c5ed7|alt4 1.4s total 42.9 min
+[b2:B] 1f12591bdae05306|alt5 1.2s total 43.0 min
+[b2:B] d0fccf42f606569a|alt5 1.4s total 43.0 min
+[b2:B] 2a799223058c5ed7|alt2 1.4s total 43.0 min
+[b2:B] e69be869445455c7|original 1.4s total 43.0 min
+[b2:B] e76cb8b17f8f51f3|alt4 1.5s total 43.1 min
+[b2:B] d42d0a93b7185161|original 1.0s total 43.1 min
+[b2:B] b3509fd31f495cfb|original 1.5s total 43.1 min
+[b2:B] 457acf87bc885550|alt5 1.2s total 43.1 min
+[b2:B] 1f12591bdae05306|alt1 1.2s total 43.1 min
+[b2:B] 06392ff957445576|alt3 1.4s total 43.2 min
+[b2:B] 09d9a0cd32c25dee|alt5 1.5s total 43.2 min
+[b2:B] d42d0a93b7185161|alt3 1.0s total 43.2 min
+[b2:B] 6de13c6c9af05cac|alt4 1.2s total 43.2 min
+[b2:B] b58a12e346235cd0|alt2 1.4s total 43.3 min
+[b2:B] 09d9a0cd32c25dee|alt1 1.5s total 43.3 min
+[b2:B] 1218b6a218b750d8|alt2 1.2s total 43.3 min
+[b2:B] 61c675d850d75cd1|alt1 1.2s total 43.3 min
+[b2:B] f205efb84def5cc8|alt2 1.2s total 43.3 min
+[b2:B] 61c675d850d75cd1|alt2 1.2s total 43.4 min
+[b2:B] b5ee0c4a00765073|alt4 1.2s total 43.4 min
+[b2:B] a7c6cc3a1840584f|original 1.5s total 43.4 min
+[b2:B] 1218b6a218b750d8|alt4 1.2s total 43.4 min
+[b2:B] fb2ff1ed5e1b529f|alt3 1.5s total 43.5 min
+[b2:B] 9ba2570d6743526a|original 1.4s total 43.5 min
+[b2:B] bf896d504b4356c7|original 1.4s total 43.5 min
+[b2:B] e83f4b6e1dd25c90|original 1.0s total 43.5 min
+[b2:B] 1ad96f74e72750db|alt4 1.0s total 43.5 min
+[b2:B] 966e42e47cc85a5c|original 1.4s total 43.6 min
+[b2:B] b58a12e346235cd0|alt0 1.4s total 43.6 min
+[b2:B] a067e1b873c8534d|alt4 0.7s total 43.6 min
+[b2:B] c687799dac8d5aa2|alt0 1.5s total 43.6 min
+[b2:B] 5b272b7aa3315c4f|alt1 1.0s total 43.6 min
+[b2:B] d813c6a4706e5411|alt4 0.7s total 43.6 min
+[b2:B] d0fccf42f606569a|original 1.4s total 43.7 min
+[b2:B] b3509fd31f495cfb|alt5 1.5s total 43.7 min
+[b2:B] 586c5b66ad8158ee|alt7 1.5s total 43.7 min
+[b2:B] 23bd3a02e2855a28|alt1 1.4s total 43.7 min
+[b2:B] 663c00bac2e05721|alt1 1.0s total 43.8 min
+[b2:B] 6544f1c9668c58c3|alt3 1.2s total 43.8 min
+[b2:B] ee492610c55b5440|alt3 1.4s total 43.8 min
+[b2:B] a7c6cc3a1840584f|alt7 1.5s total 43.8 min
+[b2:B] 0fb88262272f5110|original 1.2s total 43.8 min
+[b2:B] d54047580ffb5dba|alt4 1.0s total 43.9 min
+[b2:B] 88466abb967954e5|alt0 1.5s total 43.9 min
+[b2:B] 5b272b7aa3315c4f|alt6 1.0s total 43.9 min
+[b2:B] da0aac1f6c225eca|alt3 1.5s total 43.9 min
+[b2:B] 6de13c6c9af05cac|alt1 1.2s total 43.9 min
+[b2:B] 55bd10ac74585a12|alt3 1.2s total 44.0 min
+[b2:B] b84056c4268153fb|original 1.5s total 44.0 min
+[b2:B] b3509fd31f495cfb|alt4 1.5s total 44.0 min
+[b2:B] 4a1f69f3821e5ac5|alt3 1.5s total 44.0 min
+[b2:B] 667afe1f010351c5|alt4 1.2s total 44.1 min
+[b2:B] 4a1f69f3821e5ac5|original 1.5s total 44.1 min
+[b2:B] 21b8742127e7523c|original 1.0s total 44.1 min
+[b2:B] 2a799223058c5ed7|original 1.4s total 44.1 min
+[b2:B] d0fccf42f606569a|alt1 1.4s total 44.2 min
+[b2:B] 06392ff957445576|alt0 1.4s total 44.2 min
+[b2:B] 2d4b17f8d7585219|original 1.5s total 44.2 min
+[b2:B] 25b719c231d85e56|alt2 1.4s total 44.2 min
+[b2:B] 2243d4e976fb5b77|alt0 1.0s total 44.2 min
+[b2:B] 988cf241460c557e|original 0.7s total 44.3 min
+[b2:B] 966e42e47cc85a5c|alt0 1.4s total 44.3 min
+[b2:B] ca7e845b9c19597c|original 1.4s total 44.3 min
+[b2:B] 9ba2570d6743526a|alt1 1.4s total 44.3 min
+[b2:B] bf896d504b4356c7|alt3 1.4s total 44.3 min
+[b2:B] 3338ad25c2cc59d1|alt2 1.2s total 44.4 min
+[b2:B] e59a5171c33c5af9|alt2 1.4s total 44.4 min
+[b2:B] b7122fd86c855943|alt4 1.0s total 44.4 min
+[b2:B] f67e431f781659eb|alt3 1.5s total 44.4 min
+[b2:B] 5dea796da1ce5b02|original 1.5s total 44.5 min
+[b2:B] 4e50c7903a8c5303|alt0 1.2s total 44.5 min
+[b2:B] a4f91ed474295f00|alt1 1.4s total 44.5 min
+[b2:B] 4e50c7903a8c5303|alt5 1.2s total 44.5 min
+[b2:B] 55bd10ac74585a12|alt1 1.2s total 44.5 min
+[b2:B] d436fd792f365847|original 1.5s total 44.6 min
+[b2:B] ee492610c55b5440|alt4 1.4s total 44.6 min
+[b2:B] b7122fd86c855943|alt0 1.0s total 44.6 min
+[b2:B] e59a5171c33c5af9|alt5 1.4s total 44.6 min
+[b2:B] b84056c4268153fb|alt2 1.5s total 44.7 min
+[b2:B] aa072830a2d15d9f|original 1.4s total 44.7 min
+[b2:B] baf1301534ea54d6|alt3 1.4s total 44.7 min
+[b2:B] 0192c3bca9ca5c67|alt4 1.5s total 44.7 min
+[b2:B] e83f4b6e1dd25c90|alt1 1.0s total 44.7 min
+[b2:B] aa072830a2d15d9f|alt2 1.4s total 44.8 min
+[b2:B] efb9929eed1852f0|alt1 1.5s total 44.8 min
+[b2:B] 1ad96f74e72750db|alt1 1.0s total 44.8 min
+[b2:B] 704527beccac5701|alt3 0.7s total 44.8 min
+[b2:B] ca59ecba5722534c|alt5 1.4s total 44.8 min
+[b2:B] 457acf87bc885550|alt4 1.2s total 44.9 min
+[b2:B] 1f12591bdae05306|original 1.2s total 44.9 min
+[b2:B] 23bd3a02e2855a28|alt2 1.4s total 44.9 min
+[b2:B] 2919cd502115582a|alt2 1.2s total 44.9 min
+[b2:B] 9ba2570d6743526a|alt4 1.4s total 44.9 min
+[b2:B] efb9929eed1852f0|alt4 1.5s total 45.0 min
+[b2:B] 2f03781e3fd05c28|original 1.5s total 45.0 min
+[b2:B] ca7e845b9c19597c|alt1 1.4s total 45.0 min
+[b2:B] bf1184622f355af4|alt1 1.5s total 45.0 min
+[b2:B] a4f91ed474295f00|alt3 1.4s total 45.1 min
+[b2:B] f67e431f781659eb|alt0 1.5s total 45.1 min
+[b2:B] fab7537b12d254bd|alt4 1.4s total 45.1 min
+[b2:B] 704527beccac5701|original 0.7s total 45.1 min
+[b2:B] 1ea152f7056659a9|alt0 0.7s total 45.1 min
+[b2:B] 5dea796da1ce5b02|alt4 1.5s total 45.2 min
+[b2:B] aa072830a2d15d9f|alt0 1.4s total 45.2 min
+[b2:B] 2a799223058c5ed7|alt5 1.4s total 45.2 min
+[b2:B] 47fdf7c04b155eac|original 1.2s total 45.2 min
+[b2:B] a7c6cc3a1840584f|alt5 1.5s total 45.3 min
+[b2:B] df84a00692885ec0|alt2 1.4s total 45.3 min
+[b2:B] 69a4cff1f35655ff|alt1 1.0s total 45.3 min
+[b2:B] 3338ad25c2cc59d1|alt3 1.2s total 45.3 min
+[b2:B] baf1301534ea54d6|alt4 1.4s total 45.3 min
+[b2:B] 0b97850e408e5a95|alt3 1.5s total 45.4 min
+[b2:B] ec3969afeb945ddb|original 1.2s total 45.4 min
+[b2:B] 6544f1c9668c58c3|alt4 1.2s total 45.4 min
+[b2:B] 8227648b1da95adb|original 1.4s total 45.4 min
+[b2:B] 23bd3a02e2855a28|alt0 1.4s total 45.4 min
+[b2:B] d436fd792f365847|alt0 1.5s total 45.5 min
+[b2:B] fdb658e4941855a3|alt4 1.4s total 45.5 min
+[b2:B] 25b719c231d85e56|original 1.4s total 45.5 min
+[b2:B] 21b8742127e7523c|alt7 1.0s total 45.5 min
+[b2:B] e69be869445455c7|alt3 1.4s total 45.6 min
+[b2:B] f205efb84def5cc8|original 1.2s total 45.6 min
+[b2:B] 1e78181bb1c150e4|alt2 1.5s total 45.6 min
+[b2:B] ec3969afeb945ddb|alt7 1.2s total 45.6 min
+[b2:B] 4a4bf6e11a875f33|original 1.2s total 45.6 min
+[b2:B] a7c6cc3a1840584f|alt6 1.5s total 45.7 min
+[b2:B] 47fdf7c04b155eac|alt0 1.2s total 45.7 min
+[b2:B] a7fa8bccce9253cb|original 1.5s total 45.7 min
+[b2:B] e3a97e3004795b39|alt5 1.5s total 45.7 min
+[b2:B] 1bea55e75a9b593b|alt2 1.5s total 45.8 min
+[b2:B] 55bd10ac74585a12|alt2 1.2s total 45.8 min
+[b2:B] fdb658e4941855a3|alt5 1.4s total 45.8 min
+[b2:B] bf1184622f355af4|original 1.5s total 45.8 min
+[b2:B] 85936ccd1b405f4c|alt2 1.2s total 45.9 min
+[b2:B] d813c6a4706e5411|alt7 0.7s total 45.9 min
+[b2:B] d813c6a4706e5411|alt3 0.7s total 45.9 min
+[b2:B] 2564ab331db05cb9|original 1.5s total 45.9 min
+[b2:B] 88466abb967954e5|original 1.5s total 45.9 min
+[b2:B] 2564ab331db05cb9|alt1 1.5s total 46.0 min
+[b2:B] e69be869445455c7|alt2 1.4s total 46.0 min
+[b2:B] 1ea152f7056659a9|alt5 0.7s total 46.0 min
+[b2:B] df84a00692885ec0|original 1.4s total 46.0 min
+[b2:B] 9d7b9273d56f5d02|alt3 1.5s total 46.0 min
+[b2:B] d42d0a93b7185161|alt2 1.0s total 46.1 min
+[b2:B] 1218b6a218b750d8|alt3 1.2s total 46.1 min
+[b2:B] 6fa01275a4525b26|alt3 1.5s total 46.1 min
+[b2:B] cedd32ec31e45cd9|alt3 1.2s total 46.1 min
+[b2:B] e59a5171c33c5af9|original 1.4s total 46.1 min
+[b2:B] 6fa01275a4525b26|alt1 1.5s total 46.2 min
+[b2:B] 2919cd502115582a|alt4 1.2s total 46.2 min
+[b2:B] 2243d4e976fb5b77|original 1.0s total 46.2 min
+[b2:B] 61c675d850d75cd1|alt3 1.2s total 46.2 min
+[b2:B] 6782b9c3686f58f3|alt3 1.5s total 46.3 min
+[b2:B] de3ea1d3c1e0588a|alt1 1.4s total 46.3 min
+[b2:B] 457acf87bc885550|alt0 1.2s total 46.3 min
+[b2:B] bf896d504b4356c7|alt0 1.4s total 46.3 min
+[b2:B] 704527beccac5701|alt5 0.7s total 46.3 min
+[b2:B] 3012e1628f7d5d3a|original 1.5s total 46.4 min
+[b2:B] ee492610c55b5440|alt1 1.4s total 46.4 min
+[b2:B] e1950bc54da65383|original 1.5s total 46.4 min
+[b2:B] 88e453ca4644586f|alt7 1.2s total 46.4 min
+[b2:B] 25b719c231d85e56|alt4 1.4s total 46.4 min
+[b2:B] 8f105ffb008c5801|alt2 1.0s total 46.5 min
+[b2:B] ec3969afeb945ddb|alt4 1.2s total 46.5 min
+[b2:B] aa072830a2d15d9f|alt4 1.4s total 46.5 min
+[b2:B] efb9929eed1852f0|alt0 1.5s total 46.5 min
+[b2:B] b58a12e346235cd0|original 1.4s total 46.6 min
+[b2:B] 25b719c231d85e56|alt5 1.4s total 46.6 min
+[b2:B] ca59ecba5722534c|alt2 1.4s total 46.6 min
+[b2:B] 988cf241460c557e|alt2 0.7s total 46.6 min
+[b2:B] 6782b9c3686f58f3|alt2 1.5s total 46.6 min
+[b2:B] 7f2934ac111854f5|original 1.0s total 46.7 min
+[b2:B] 88e453ca4644586f|alt1 1.2s total 46.7 min
+[b2:B] 23803695a4c1547c|alt2 1.4s total 46.7 min
+[b2:B] bf896d504b4356c7|alt2 1.4s total 46.7 min
+[b2:B] efb9929eed1852f0|original 1.5s total 46.7 min
+[b2:B] bd7154fc2b1f548b|alt0 1.5s total 46.8 min
+[b2:B] 663c00bac2e05721|alt5 1.0s total 46.8 min
+[b2:B] 23803695a4c1547c|alt0 1.4s total 46.8 min
+[b2:B] baf1301534ea54d6|original 1.4s total 46.8 min
+[b2:B] e59a5171c33c5af9|alt3 1.4s total 46.9 min
+[b2:B] 2f03781e3fd05c28|alt1 1.5s total 46.9 min
+[b2:B] 6782b9c3686f58f3|alt4 1.5s total 46.9 min
+[b2:B] bf896d504b4356c7|alt6 1.4s total 46.9 min
+[b2:B] f205efb84def5cc8|alt1 1.2s total 46.9 min
+[b2:B] d54047580ffb5dba|alt0 1.0s total 47.0 min
+[b2:B] e59a5171c33c5af9|alt1 1.4s total 47.0 min
+[b2:B] 5b272b7aa3315c4f|original 1.0s total 47.0 min
+[b2:B] 1e78181bb1c150e4|alt4 1.5s total 47.0 min
+[b2:B] 06392ff957445576|alt2 1.4s total 47.1 min
+[b2:B] 88466abb967954e5|alt1 1.5s total 47.1 min
+[b2:B] b7122fd86c855943|original 1.0s total 47.1 min
+[b2:B] d436fd792f365847|alt5 1.5s total 47.1 min
+[b2:B] 47fdf7c04b155eac|alt1 1.2s total 47.1 min
+[b2:B] 4e50c7903a8c5303|original 1.2s total 47.2 min
+[b2:B] 4a4bf6e11a875f33|alt6 1.2s total 47.2 min
+[b2:B] 2a799223058c5ed7|alt1 1.4s total 47.2 min
+[b2:B] 2919cd502115582a|alt0 1.2s total 47.2 min
+[b2:B] 3338ad25c2cc59d1|alt6 1.2s total 47.2 min
+[b2:B] 61c675d850d75cd1|alt4 1.2s total 47.3 min
+[b2:B] 9d7b9273d56f5d02|alt0 1.5s total 47.3 min
+[b2:B] fb2402a506065225|original 1.4s total 47.3 min
+[b2:B] bf896d504b4356c7|alt4 1.4s total 47.3 min
+[b2:B] fdb658e4941855a3|alt2 1.4s total 47.4 min
+[b2:B] 1f12591bdae05306|alt3 1.2s total 47.4 min
+[b2:B] baf1301534ea54d6|alt6 1.4s total 47.4 min
+[b2:B] 6544f1c9668c58c3|alt1 1.2s total 47.4 min
+[b2:B] d813c6a4706e5411|alt2 0.7s total 47.4 min
+[b2:B] fb2402a506065225|alt3 1.4s total 47.5 min
+[b2:B] bf1184622f355af4|alt2 1.5s total 47.5 min
+[b2:B] 2564ab331db05cb9|alt2 1.6s total 47.5 min
+[b2:B] 5b272b7aa3315c4f|alt2 1.0s total 47.5 min
+[b2:B] b3509fd31f495cfb|alt1 1.5s total 47.5 min
+[b2:B] 1ea152f7056659a9|alt3 0.7s total 47.6 min
+[b2:B] ca59ecba5722534c|alt0 1.4s total 47.6 min
+[b2:B] cb9992677d95539f|alt1 1.4s total 47.6 min
+[b2:B] e83f4b6e1dd25c90|alt4 1.0s total 47.6 min
+[b2:B] 586c5b66ad8158ee|alt1 1.5s total 47.6 min
+[b2:B] fab7537b12d254bd|alt2 1.4s total 47.7 min
+[b2:B] e76cb8b17f8f51f3|alt0 1.5s total 47.7 min
+[b2:B] 3ec88bf115c95f69|alt3 1.5s total 47.7 min
+[b2:B] e14d9a1990535a29|alt0 1.5s total 47.7 min
+[b2:B] e14d9a1990535a29|alt1 1.5s total 47.8 min
+[b2:B] e69be869445455c7|alt4 1.4s total 47.8 min
+[b2:B] 7f2934ac111854f5|alt2 1.0s total 47.8 min
+[b2:B] 21b8742127e7523c|alt4 1.0s total 47.8 min
+[b2:B] 5b272b7aa3315c4f|alt0 1.0s total 47.8 min
+[b2:B] 667afe1f010351c5|original 1.2s total 47.9 min
+[b2:B] 9d7b9273d56f5d02|alt2 1.5s total 47.9 min
+[b2:B] cedd32ec31e45cd9|alt1 1.2s total 47.9 min
+[b2:B] 09d9a0cd32c25dee|alt0 1.5s total 47.9 min
+[b2:B] 4b721ff0b7025f21|alt7 1.2s total 48.0 min
+[b2:B] 5dea796da1ce5b02|alt6 1.5s total 48.0 min
+[b2:B] 0e7f7322726f5b86|alt4 1.4s total 48.0 min
+[b2:B] b58a12e346235cd0|alt5 1.4s total 48.0 min
+[b2:B] 9d7b9273d56f5d02|alt1 1.5s total 48.1 min
+[b2:B] de3ea1d3c1e0588a|alt3 1.4s total 48.1 min
+[b2:B] 988cf241460c557e|alt6 0.7s total 48.1 min
+[b2:B] 4e50c7903a8c5303|alt3 1.2s total 48.1 min
+[b2:B] 663c00bac2e05721|alt3 1.0s total 48.1 min
+[b2:B] 667afe1f010351c5|alt1 1.2s total 48.1 min
+[b2:B] f205efb84def5cc8|alt5 1.2s total 48.2 min
+[b2:B] 23bd3a02e2855a28|alt3 1.4s total 48.2 min
+[b2:B] 88466abb967954e5|alt2 1.5s total 48.2 min
+[b2:B] ec3969afeb945ddb|alt5 1.2s total 48.2 min
+[b2:B] 3012e1628f7d5d3a|alt3 1.5s total 48.3 min
+[b2:B] ca59ecba5722534c|original 1.4s total 48.3 min
+[b2:B] 23bd3a02e2855a28|alt4 1.4s total 48.3 min
+[b2:B] e14d9a1990535a29|alt4 1.5s total 48.3 min
+[b2:B] b3509fd31f495cfb|alt3 1.5s total 48.4 min
+[b2:B] 0e7f7322726f5b86|alt3 1.4s total 48.4 min
+[b2:B] da0aac1f6c225eca|alt4 1.5s total 48.4 min
+[b2:B] 457acf87bc885550|alt1 1.2s total 48.4 min
+[b2:B] b5ee0c4a00765073|alt2 1.2s total 48.4 min
+[b2:B] 0fb88262272f5110|alt5 1.2s total 48.5 min
+[b2:B] fb2402a506065225|alt2 1.4s total 48.5 min
+[b2:B] 1218b6a218b750d8|alt6 1.2s total 48.5 min
+[b2:B] e14d9a1990535a29|alt3 1.5s total 48.5 min
+[b2:B] 457acf87bc885550|original 1.2s total 48.6 min
+[b2:B] b5ee0c4a00765073|alt3 1.2s total 48.6 min
+[b2:B] 1ad96f74e72750db|original 1.0s total 48.6 min
+[b2:B] 0b97850e408e5a95|original 1.5s total 48.6 min
+[b2:B] a7fa8bccce9253cb|alt1 1.5s total 48.6 min
+[b2:B] 1bea55e75a9b593b|original 1.5s total 48.7 min
+[b2:B] 457acf87bc885550|alt7 1.2s total 48.7 min
+[b2:B] 5dea796da1ce5b02|alt1 1.5s total 48.7 min
+[b2:B] b58a12e346235cd0|alt4 1.4s total 48.7 min
+[b2:B] 0192c3bca9ca5c67|original 1.5s total 48.8 min
+[b2:B] c687799dac8d5aa2|alt3 1.5s total 48.8 min
+[b2:B] df84a00692885ec0|alt4 1.4s total 48.8 min
+[b2:B] e83f4b6e1dd25c90|alt2 1.0s total 48.8 min
+[b2:B] 3338ad25c2cc59d1|alt4 1.2s total 48.8 min
+[b2:B] 4b721ff0b7025f21|alt3 1.2s total 48.9 min
+[b2:B] b3509fd31f495cfb|alt2 1.5s total 48.9 min
+[b2:B] 8227648b1da95adb|alt1 1.4s total 48.9 min
+[b2:B] f93751942d4e5c48|alt5 1.2s total 48.9 min
+[b2:B] 25b719c231d85e56|alt0 1.4s total 49.0 min
+[b2:B] fab7537b12d254bd|alt0 1.4s total 49.0 min
+[b2:B] ee492610c55b5440|alt0 1.4s total 49.0 min
+[b2:B] 4a4bf6e11a875f33|alt2 1.2s total 49.0 min
+[b2:B] 85936ccd1b405f4c|original 1.2s total 49.0 min
+[b2:B] cb9992677d95539f|alt0 1.4s total 49.1 min
+[b2:B] 2d4b17f8d7585219|alt5 1.5s total 49.1 min
+[b2:B] e3a97e3004795b39|alt0 1.5s total 49.1 min
+[b2:B] a4f91ed474295f00|alt2 1.4s total 49.1 min
+[b2:B] fb2402a506065225|alt0 1.4s total 49.2 min
+[b2:B] 5b272b7aa3315c4f|alt7 1.0s total 49.2 min
+[b2:B] 663c00bac2e05721|original 1.0s total 49.2 min
+[b2:B] 3012e1628f7d5d3a|alt0 1.5s total 49.2 min
+[b2:B] d54047580ffb5dba|alt3 1.0s total 49.2 min
+[b2:B] ca59ecba5722534c|alt1 1.4s total 49.3 min
+[b2:B] 69a4cff1f35655ff|original 1.0s total 49.3 min
+[b2:B] 4a1f69f3821e5ac5|alt0 1.5s total 49.3 min
+[b2:B] 1bea55e75a9b593b|alt4 1.5s total 49.3 min
+[b2:B] 1bea55e75a9b593b|alt3 1.5s total 49.4 min
+[b2:B] 4a4bf6e11a875f33|alt7 1.2s total 49.4 min
+[b2:B] da0aac1f6c225eca|alt1 1.5s total 49.4 min
+[b2:B] f205efb84def5cc8|alt3 1.2s total 49.4 min
+[b2:B] 966e42e47cc85a5c|alt3 1.4s total 49.4 min
+[b2:B] d813c6a4706e5411|alt0 0.7s total 49.5 min
+[b2:B] 6fa01275a4525b26|original 1.5s total 49.5 min
+[b2:B] 3ec88bf115c95f69|alt0 1.5s total 49.5 min
+[b2:B] 6782b9c3686f58f3|original 1.5s total 49.5 min
+[b2:B] a4f91ed474295f00|alt6 1.4s total 49.6 min
+[b2:B] 8f105ffb008c5801|alt4 1.0s total 49.6 min
+[b2:B] a7fa8bccce9253cb|alt0 1.5s total 49.6 min
+[b2:B] f67e431f781659eb|original 1.5s total 49.6 min
+[b2:B] 6544f1c9668c58c3|alt0 1.2s total 49.6 min
+[b2:B] baf1301534ea54d6|alt7 1.4s total 49.7 min
+[b2:B] ca7e845b9c19597c|alt0 1.4s total 49.7 min
+[b2:B] bd7154fc2b1f548b|alt4 1.5s total 49.7 min
+[b2:B] e3a97e3004795b39|alt3 1.5s total 49.7 min
+[b2:B] 8227648b1da95adb|alt2 1.4s total 49.8 min
+[b2:B] 667afe1f010351c5|alt2 1.2s total 49.8 min
+[b2:B] 6544f1c9668c58c3|alt2 1.2s total 49.8 min
+[b2:B] fab7537b12d254bd|alt3 1.4s total 49.8 min
+[b2:B] 0e7f7322726f5b86|alt0 1.4s total 49.8 min
+[b2:B] 0192c3bca9ca5c67|alt0 1.5s total 49.9 min
+[b2:B] 06392ff957445576|alt6 1.4s total 49.9 min
+[b2:B] 1e78181bb1c150e4|original 1.5s total 49.9 min
+[b2:B] 2564ab331db05cb9|alt4 1.5s total 49.9 min
+[b2:B] 2d4b17f8d7585219|alt4 1.5s total 50.0 min
+[b2:B] d813c6a4706e5411|alt5 0.7s total 50.0 min
+[b2:B] b84056c4268153fb|alt5 1.5s total 50.0 min
+[b2:B] 1e78181bb1c150e4|alt0 1.5s total 50.0 min
+[b2:B] 69a4cff1f35655ff|alt4 1.0s total 50.1 min
+[b2:B] 1ea152f7056659a9|alt2 0.7s total 50.1 min
+[b2:B] cb9992677d95539f|alt3 1.4s total 50.1 min
+[b2:B] 4a4bf6e11a875f33|alt5 1.2s total 50.1 min
+[b2:B] 55bd10ac74585a12|alt4 1.2s total 50.1 min
+[b2:B] 4e50c7903a8c5303|alt4 1.2s total 50.1 min
+[b2:B] 5dea796da1ce5b02|alt5 1.5s total 50.2 min
+[b2:B] e3a97e3004795b39|original 1.5s total 50.2 min
+[b2:B] ca7e845b9c19597c|alt5 1.4s total 50.2 min
+[b2:B] e5e00457df055e1a|alt2 1.2s total 50.2 min
+[b2:B] d54047580ffb5dba|original 1.0s total 50.3 min
+[b2:B] ca7e845b9c19597c|alt4 1.4s total 50.3 min
+[b2:B] 663c00bac2e05721|alt0 1.0s total 50.3 min
+[b2:B] 3012e1628f7d5d3a|alt5 1.5s total 50.3 min
+[b2:B] 21b8742127e7523c|alt3 1.0s total 50.3 min
+[b2:B] 1ad96f74e72750db|alt0 1.0s total 50.4 min
+[b2:B] d436fd792f365847|alt2 1.5s total 50.4 min
+[b2:B] 0b97850e408e5a95|alt1 1.5s total 50.4 min
+[b2:B] e76cb8b17f8f51f3|original 1.5s total 50.4 min
+[b2:B] 667afe1f010351c5|alt5 1.2s total 50.5 min
+[b2:B] 88e453ca4644586f|alt2 1.2s total 50.5 min
+[b2:B] 704527beccac5701|alt2 0.7s total 50.5 min
+[b2:B] 1ea152f7056659a9|alt1 0.7s total 50.5 min
+[b2:B] e1950bc54da65383|alt2 1.5s total 50.5 min
+[b2:B] 25b719c231d85e56|alt1 1.4s total 50.5 min
+[b2:B] a7c6cc3a1840584f|alt3 1.5s total 50.6 min
+[b2:B] a067e1b873c8534d|alt1 0.7s total 50.6 min
+[b2:B] 3ec88bf115c95f69|alt1 1.5s total 50.6 min
+[b2:B] d0fccf42f606569a|alt3 1.4s total 50.6 min
+[b2:B] 2243d4e976fb5b77|alt4 1.0s total 50.6 min
+[b2:B] 23d71fb39b0456f5|alt3 1.4s total 50.7 min
+[b2:B] bf1184622f355af4|alt4 1.5s total 50.7 min
+[b2:B] 667afe1f010351c5|alt3 1.2s total 50.7 min
+[b2:B] 1bea55e75a9b593b|alt5 1.5s total 50.7 min
+[b2:B] 0e7f7322726f5b86|alt2 1.4s total 50.8 min
+[b2:B] e1950bc54da65383|alt3 1.5s total 50.8 min
+[b2:B] e69be869445455c7|alt1 1.4s total 50.8 min
+[b2:B] fb2ff1ed5e1b529f|alt1 1.5s total 50.8 min
+[b2:B] aa072830a2d15d9f|alt5 1.4s total 50.9 min
+[b2:B] 2d4b17f8d7585219|alt2 1.5s total 50.9 min
+[b2:B] 0b97850e408e5a95|alt0 1.5s total 50.9 min
+[b2:B] df84a00692885ec0|alt5 1.4s total 50.9 min
+[b2:B] fb2ff1ed5e1b529f|original 1.5s total 51.0 min
+[b2:B] e1950bc54da65383|alt4 1.5s total 51.0 min
+[b2:B] e76cb8b17f8f51f3|alt2 1.5s total 51.0 min
+[b2:B] bf896d504b4356c7|alt1 1.4s total 51.0 min
+[b2:B] 0fb88262272f5110|alt6 1.2s total 51.1 min
+[b2:B] b84056c4268153fb|alt1 1.5s total 51.1 min
+[b2:B] baf1301534ea54d6|alt0 1.4s total 51.1 min
+[b2:B] 1bea55e75a9b593b|alt0 1.5s total 51.1 min
+[b2:B] a067e1b873c8534d|alt3 0.7s total 51.1 min
+[b2:B] e14d9a1990535a29|alt2 1.5s total 51.2 min
+[b2:B] d0fccf42f606569a|alt2 1.4s total 51.2 min
+[b2:B] 2a799223058c5ed7|alt6 1.4s total 51.2 min
+[b2:B] 988cf241460c557e|alt5 0.7s total 51.2 min
+[b2:B] d436fd792f365847|alt1 1.5s total 51.3 min
+[b2:B] 2f03781e3fd05c28|alt2 1.5s total 51.3 min
+[b2:B] 06392ff957445576|alt7 1.4s total 51.3 min
+[b2:B] 6de13c6c9af05cac|alt6 1.2s total 51.3 min
+[b2:B] baf1301534ea54d6|alt5 1.4s total 51.3 min
+[b2:B] 2243d4e976fb5b77|alt2 1.0s total 51.4 min
+[b2:B] e3a97e3004795b39|alt2 1.5s total 51.4 min
+[b2:B] e83f4b6e1dd25c90|alt0 1.0s total 51.4 min
+[b2:B] 85936ccd1b405f4c|alt1 1.2s total 51.4 min
+[b2:B] 21b8742127e7523c|alt0 1.0s total 51.4 min
+[b2:B] a7fa8bccce9253cb|alt3 1.5s total 51.5 min
+[b2:B] e59a5171c33c5af9|alt4 1.4s total 51.5 min
+[b2:B] fb2402a506065225|alt5 1.4s total 51.5 min
+[b2:B] 1e78181bb1c150e4|alt3 1.5s total 51.5 min
+[b2:B] 23803695a4c1547c|alt4 1.4s total 51.6 min
+[b2:B] 457acf87bc885550|alt2 1.2s total 51.6 min
+[b2:B] 6782b9c3686f58f3|alt1 1.5s total 51.6 min
+[b2:B] ca7e845b9c19597c|alt2 1.4s total 51.6 min
+[b2:B] 0e7f7322726f5b86|alt1 1.4s total 51.6 min
+[b2:B] 7f2934ac111854f5|alt0 1.0s total 51.7 min
+[b2:B] 0192c3bca9ca5c67|alt1 1.5s total 51.7 min
+[b2:B] a7c6cc3a1840584f|alt0 1.5s total 51.7 min
+[b2:B] cedd32ec31e45cd9|alt4 1.2s total 51.7 min
+[b2:B] 3ec88bf115c95f69|original 1.5s total 51.8 min
+[b2:B] 23bd3a02e2855a28|original 1.4s total 51.8 min
+[b2:B] b58a12e346235cd0|alt1 1.4s total 51.8 min
+[b2:B] 61c675d850d75cd1|original 1.2s total 51.8 min
+[b2:B] c687799dac8d5aa2|alt2 1.5s total 51.9 min
+[b2:B] de3ea1d3c1e0588a|alt2 1.4s total 51.9 min
+[b2:B] 8f105ffb008c5801|alt1 1.0s total 51.9 min
+[b2:B] 6782b9c3686f58f3|alt0 1.5s total 51.9 min
+[b2:B] 85936ccd1b405f4c|alt0 1.2s total 51.9 min
+[b2:B] b7122fd86c855943|alt1 1.0s total 52.0 min
+[b2:B] d0fccf42f606569a|alt0 1.4s total 52.0 min
+[b2:B] d42d0a93b7185161|alt4 1.0s total 52.0 min
+[b2:B] a7c6cc3a1840584f|alt1 1.5s total 52.0 min
+[b2:B] 457acf87bc885550|alt3 1.2s total 52.0 min
+[b2:B] 4e50c7903a8c5303|alt6 1.2s total 52.1 min
+[b2:B] 4a1f69f3821e5ac5|alt2 1.5s total 52.1 min
+[b2:B] c687799dac8d5aa2|alt4 1.5s total 52.1 min
+[b2:B] e76cb8b17f8f51f3|alt3 1.5s total 52.1 min
+[b2:B] 663c00bac2e05721|alt6 1.0s total 52.2 min
+[b2:B] 2f03781e3fd05c28|alt0 1.5s total 52.2 min
+[b2:B] 0fb88262272f5110|alt3 1.2s total 52.2 min
+[b2:B] e5e00457df055e1a|alt6 1.2s total 52.2 min
+[b2:B] cb9992677d95539f|original 1.4s total 52.2 min
+[b2:B] 2243d4e976fb5b77|alt1 1.0s total 52.3 min
+[b2:B] 9d7b9273d56f5d02|original 1.5s total 52.3 min
+[b2:B] de3ea1d3c1e0588a|alt0 1.4s total 52.3 min
+[b2:B] d813c6a4706e5411|original 0.7s total 52.3 min
+[b2:B] a7c6cc3a1840584f|alt2 1.5s total 52.3 min
+[b2:B] a4f91ed474295f00|original 1.4s total 52.4 min
+[b2:B] 09d9a0cd32c25dee|alt4 1.5s total 52.4 min
+[b2:B] 3338ad25c2cc59d1|original 1.2s total 52.4 min
+[b2:B] e1950bc54da65383|alt1 1.5s total 52.4 min
+[b2:B] b5ee0c4a00765073|original 1.2s total 52.5 min
+[b2:B] 3012e1628f7d5d3a|alt4 1.5s total 52.5 min
+[b2:B] 9ba2570d6743526a|alt0 1.4s total 52.5 min
+[b2:B] bd7154fc2b1f548b|original 1.5s total 52.5 min
+[b2:B] b5ee0c4a00765073|alt1 1.2s total 52.6 min
+[b2:B] 69a4cff1f35655ff|alt2 1.0s total 52.6 min
+[b2:B] e5e00457df055e1a|alt0 1.2s total 52.6 min
+[b2:B] 1f12591bdae05306|alt4 1.2s total 52.6 min
+[b2:B] 0b97850e408e5a95|alt2 1.5s total 52.6 min
+[b2:B] e1950bc54da65383|alt0 1.5s total 52.7 min
+[b2:B] 4a4bf6e11a875f33|alt3 1.2s total 52.7 min
+[b2:B] f205efb84def5cc8|alt0 1.2s total 52.7 min
+[b2:B] 88466abb967954e5|alt4 1.5s total 52.7 min
+[b2:B] c687799dac8d5aa2|alt1 1.5s total 52.8 min
+[b2:B] 1ad96f74e72750db|alt3 1.0s total 52.8 min
+[b2:B] 2f03781e3fd05c28|alt3 1.5s total 52.8 min
+[b2:B] e5e00457df055e1a|alt1 1.2s total 52.8 min
+[b2:B] 8f105ffb008c5801|alt0 1.0s total 52.8 min
+[b2:B] df84a00692885ec0|alt3 1.4s total 52.9 min
+[b2:B] e59a5171c33c5af9|alt0 1.4s total 52.9 min
+[b2:B] 21b8742127e7523c|alt2 1.0s total 52.9 min
+[b2:B] 7f2934ac111854f5|alt3 1.0s total 52.9 min
+[b2:B] 9d7b9273d56f5d02|alt4 1.5s total 52.9 min
+[b2:B] 0192c3bca9ca5c67|alt5 1.5s total 53.0 min
+[b2:B] 5dea796da1ce5b02|alt0 1.5s total 53.0 min
+[b2:B] 6fa01275a4525b26|alt0 1.5s total 53.0 min
+[b2:B] b58a12e346235cd0|alt3 1.4s total 53.0 min
+[b2:B] 02bfb6340c185b97|alt4 1.0s total 53.1 min
+[b2:B] 5bb280e3aebe5a67|alt4 1.4s total 53.1 min
+[b2:B] 28a0cdbbc1e55291|original 1.4s total 53.1 min
+[b2:B] 215c38293c335e25|original 1.4s total 53.1 min
+[b2:B] ba02d873678c5cf9|original 1.4s total 53.1 min
+[b2:B] ba02d873678c5cf9|alt2 1.4s total 53.2 min
+[b2:B] 34eb9be2f88a5234|alt2 1.4s total 53.2 min
+[b2:B] 215c38293c335e25|alt2 1.4s total 53.2 min
+[b2:B] 0e08da5fbc735956|alt1 0.7s total 53.2 min
+[b2:B] 77daa055e4ed5ae2|alt3 1.4s total 53.2 min
+[b2:B] 0577532eba755552|alt2 1.4s total 53.3 min
+[b2:B] c7c04f1581855ac4|original 1.5s total 53.3 min
+[b2:B] 8d5d769b1f1e5802|alt0 1.4s total 53.3 min
+[b2:B] 0e08da5fbc735956|alt4 0.7s total 53.3 min
+[b2:B] a627522c77eb526c|alt0 1.5s total 53.4 min
+[b2:B] 26ffff4876f75eed|alt4 1.4s total 53.4 min
+[b2:B] 8eae3eab30c95228|alt0 1.4s total 53.4 min
+[b2:B] 5825e60bec9f59fb|alt6 1.5s total 53.4 min
+[b2:B] 4d2fceb0b30f59cd|alt5 1.2s total 53.4 min
+[b2:B] 4749b2486da65268|alt4 1.4s total 53.5 min
+[b2:B] 34eb9be2f88a5234|alt1 1.4s total 53.5 min
+[b2:B] 8b788f2715985cee|original 1.4s total 53.5 min
+[b2:B] 4d2fceb0b30f59cd|alt1 1.2s total 53.5 min
+[b2:B] 127b9e23f1805690|alt3 0.7s total 53.5 min
+[b2:B] dfb58c90fd2e52fa|alt4 1.5s total 53.6 min
+[b2:B] b3c1a2ac292d5e3f|original 1.5s total 53.6 min
+[b2:B] d2853234152359b3|alt2 1.5s total 53.6 min
+[b2:B] 34eb9be2f88a5234|alt4 1.4s total 53.6 min
+[b2:B] 50eebed7d9655bb5|alt5 0.7s total 53.7 min
+[b2:B] 0561ac957ffc5c4f|alt6 1.5s total 53.7 min
+[b2:B] 1d4b518f1b175184|alt0 1.5s total 53.7 min
+[b2:B] b08965aff8165bec|alt3 1.2s total 53.7 min
+[b2:B] b7ee1af184835990|alt3 1.4s total 53.8 min
+[b2:B] d2853234152359b3|alt4 1.5s total 53.8 min
+[b2:B] c1686b2e1a4e5149|alt4 0.7s total 53.8 min
+[b2:B] e0e1551b09f15a74|alt0 1.4s total 53.8 min
+[b2:B] 46aea2dcb1485353|alt0 1.5s total 53.8 min
+[b2:B] a64a3e4f2048576d|alt2 1.0s total 53.9 min
+[b2:B] 8eae3eab30c95228|alt2 1.4s total 53.9 min
+[b2:B] 00c489998dd4555c|alt2 1.0s total 53.9 min
+[b2:B] 599e006109385ae5|alt3 1.0s total 53.9 min
+[b2:B] 6b258d7ddf7d53f3|alt4 1.5s total 53.9 min
+[b2:B] 62667ead92a35fbd|alt5 1.2s total 54.0 min
+[b2:B] be7331d3f05e5d16|original 1.5s total 54.0 min
+[b2:B] f289e368449b517b|alt0 1.4s total 54.0 min
+[b2:B] 29d3fc42d08d57d2|alt6 0.7s total 54.0 min
+[b2:B] e3ddabf456b155a9|alt3 1.5s total 54.0 min
+[b2:B] 026bb114391d5b81|alt2 1.2s total 54.1 min
+[b2:B] 3e7bec3b1c4359b6|alt1 1.4s total 54.1 min
+[b2:B] 69ddc43178e9572a|alt4 1.2s total 54.1 min
+[b2:B] 4d50c69f430850a0|alt4 1.2s total 54.1 min
+[b2:B] 33ee6f1f594d50ca|alt0 1.2s total 54.1 min
+[b2:B] ade979d99d51517f|alt5 1.2s total 54.2 min
+[b2:B] 5c4f8e6a644258d3|original 1.4s total 54.2 min
+[b2:B] 984c4c329ba05bd2|alt0 1.0s total 54.2 min
+[b2:B] 330ca2e9aa935a3a|alt4 1.2s total 54.2 min
+[b2:B] 93d4ab80a0cf5f01|alt2 1.5s total 54.3 min
+[b2:B] 5c4f8e6a644258d3|alt2 1.4s total 54.3 min
+[b2:B] 37c15bc4d99a5365|alt0 1.5s total 54.3 min
+[b2:B] 9c768fba2b4c5d19|alt0 0.7s total 54.3 min
+[b2:B] 9e76a394983a59b6|original 1.4s total 54.3 min
+[b2:B] b98d8c3330625df2|alt1 1.4s total 54.4 min
+[b2:B] c6e19ffa3c34551c|alt0 1.5s total 54.4 min
+[b2:B] 4749b2486da65268|original 1.4s total 54.4 min
+[b2:B] 69ddc43178e9572a|alt7 1.2s total 54.4 min
+[b2:B] 6b258d7ddf7d53f3|alt0 1.5s total 54.5 min
+[b2:B] e3ddabf456b155a9|alt2 1.5s total 54.5 min
+[b2:B] cd9330daeec55224|alt4 1.2s total 54.5 min
+[b2:B] e6ff81ab83355450|alt3 1.5s total 54.5 min
+[b2:B] 8b788f2715985cee|alt4 1.4s total 54.5 min
+[b2:B] 887e4d57da835b12|alt0 1.4s total 54.6 min
+[b2:B] cc71f3639268516f|alt4 1.4s total 54.6 min
+[b2:B] 5e48f684248053bd|alt0 1.2s total 54.6 min
+[b2:B] 26ffff4876f75eed|alt5 1.4s total 54.6 min
+[b2:B] 7ff27f83a8995932|alt3 1.2s total 54.7 min
+[b2:B] 118fa9fa499e5670|alt2 1.2s total 54.7 min
+[b2:B] da53dac7558e563d|original 1.4s total 54.7 min
+[b2:B] 2a06b778a64b545e|original 1.4s total 54.7 min
+[b2:B] d443368fa4615242|alt4 1.5s total 54.7 min
+[b2:B] 026bb114391d5b81|alt5 1.2s total 54.8 min
+[b2:B] 118fa9fa499e5670|alt1 1.2s total 54.8 min
+[b2:B] de7b87d6624754cf|alt6 1.5s total 54.8 min
+[b2:B] b98d8c3330625df2|alt5 1.4s total 54.8 min
+[b2:B] 79bdb6b499245d65|alt3 1.4s total 54.9 min
+[b2:B] 28a0cdbbc1e55291|alt3 1.4s total 54.9 min
+[b2:B] 599e006109385ae5|alt2 1.0s total 54.9 min
+[b2:B] 7135ce0e5eea5907|alt5 1.5s total 54.9 min
+[b2:B] 4d50c69f430850a0|alt0 1.2s total 54.9 min
+[b2:B] 8de4253bc36f54df|alt6 1.0s total 55.0 min
+[b2:B] de7b87d6624754cf|alt4 1.5s total 55.0 min
+[b2:B] 752255614d7f569a|alt2 1.4s total 55.0 min
+[b2:B] cac5deee337257e1|alt4 1.2s total 55.0 min
+[b2:B] 33ee6f1f594d50ca|alt3 1.2s total 55.0 min
+[b2:B] e166284508e554fa|alt4 1.5s total 55.1 min
+[b2:B] 7316c116f05d57a5|alt5 1.2s total 55.1 min
+[b2:B] d5ec09025a1e5a0d|alt1 1.5s total 55.1 min
+[b2:B] 958677976f9c5b0a|alt2 0.7s total 55.1 min
+[b2:B] 4143d1c692f95b56|original 1.0s total 55.1 min
+[b2:B] 0c437f9a102c57f4|alt0 1.5s total 55.2 min
+[b2:B] 3b56d2b022d25026|alt3 1.0s total 55.2 min
+[b2:B] 34cc387cf0335f28|alt3 1.4s total 55.2 min
+[b2:B] 037b976caae85af5|alt0 1.2s total 55.2 min
+[b2:B] 566bd5e6d09153e0|alt1 1.4s total 55.3 min
+[b2:B] d5ec09025a1e5a0d|alt0 1.5s total 55.3 min
+[b2:B] d2853234152359b3|alt3 1.5s total 55.3 min
+[b2:B] b7ee1af184835990|alt0 1.4s total 55.3 min
+[b2:B] ba02d873678c5cf9|alt1 1.4s total 55.4 min
+[b2:B] 80793d56acc15d48|original 1.4s total 55.4 min
+[b2:B] fb8df4568d585efa|alt3 1.4s total 55.4 min
+[b2:B] 4d2fceb0b30f59cd|alt0 1.2s total 55.4 min
+[b2:B] 7316c116f05d57a5|alt2 1.2s total 55.4 min
+[b2:B] 263367576c285a2a|original 0.7s total 55.4 min
+[b2:B] 0202782270ab5a62|alt4 1.2s total 55.5 min
+[b2:B] 8f1247f8436c5208|alt1 1.0s total 55.5 min
+[b2:B] ab8034dd8873524b|alt6 1.4s total 55.5 min
+[b2:B] d3cbad95b20b5125|alt3 1.2s total 55.5 min
+[b2:B] c5b4ff1be8bb5113|alt2 1.4s total 55.6 min
+[b2:B] 984c4c329ba05bd2|original 1.0s total 55.6 min
+[b2:B] 8f5610a77c3257f9|alt1 1.4s total 55.6 min
+[b2:B] 599e006109385ae5|alt1 1.0s total 55.6 min
+[b2:B] a7ce5a625a525b45|original 1.4s total 55.6 min
+[b2:B] 2ee8d10b988c58b2|alt0 1.4s total 55.7 min
+[b2:B] 887e4d57da835b12|original 1.4s total 55.7 min
+[b2:B] f0f77f6f5cb4562c|alt0 0.7s total 55.7 min
+[b2:B] f66694a622cf5c99|alt0 0.7s total 55.7 min
+[b2:B] f158576757e95c31|original 1.5s total 55.7 min
+[b2:B] a8a72fb28dc6592b|alt1 1.2s total 55.7 min
+[b2:B] b3c1a2ac292d5e3f|alt3 1.5s total 55.8 min
+[b2:B] 4143d1c692f95b56|alt4 1.0s total 55.8 min
+[b2:B] eadc0f19b54352ae|alt0 1.4s total 55.8 min
+[b2:B] 6f2baa8c8c8e5942|alt4 1.5s total 55.8 min
+[b2:B] dfb58c90fd2e52fa|alt2 1.5s total 55.9 min
+[b2:B] 814b5e08c20e57af|alt0 0.7s total 55.9 min
+[b2:B] 6561633171e75bb6|alt3 1.0s total 55.9 min
+[b2:B] 814b5e08c20e57af|alt2 0.7s total 55.9 min
+[b2:B] 029a9572e05a5914|original 1.4s total 55.9 min
+[b2:B] 0c3c4cd553475d3a|alt3 1.2s total 55.9 min
+[b2:B] 69ddc43178e9572a|alt0 1.2s total 56.0 min
+[b2:B] 76cf7bb2e9625482|alt4 1.2s total 56.0 min
+[b2:B] 4d2fceb0b30f59cd|original 1.2s total 56.0 min
+[b2:B] 79bdb6b499245d65|alt0 1.4s total 56.0 min
+[b2:B] c87001c4251e559a|alt7 1.4s total 56.1 min
+[b2:B] 2d2a1f08e4895258|alt5 1.4s total 56.1 min
+[b2:B] 976107b532bb5301|original 1.4s total 56.1 min
+[b2:B] fdcbf84507845615|alt2 1.4s total 56.1 min
+[b2:B] f53ee13c32ac5bec|alt2 1.4s total 56.1 min
+[b2:B] 1b4499d988b052ce|alt5 1.4s total 56.2 min
+[b2:B] 127b9e23f1805690|alt1 0.7s total 56.2 min
+[b2:B] f1940c1eca9857cb|alt2 1.2s total 56.2 min
+[b2:B] 14d53eb06a7d582a|original 1.5s total 56.2 min
+[b2:B] 69df428fe853580e|alt0 1.5s total 56.2 min
+[b2:B] 118fa9fa499e5670|original 1.2s total 56.3 min
+[b2:B] a627522c77eb526c|alt1 1.5s total 56.3 min
+[b2:B] e166284508e554fa|alt1 1.5s total 56.3 min
+[b2:B] de7b87d6624754cf|alt0 1.5s total 56.3 min
+[b2:B] 1212ba4b68e95583|original 1.4s total 56.4 min
+[b2:B] f3512ae175b45844|alt2 0.7s total 56.4 min
+[b2:B] 85028441255156b3|original 1.5s total 56.4 min
+[b2:B] 10ae805f0be95c1f|alt2 1.4s total 56.4 min
+[b2:B] 26af85cbc2d15e05|alt4 1.4s total 56.5 min
+[b2:B] 8f1247f8436c5208|alt4 1.0s total 56.5 min
+[b2:B] c87001c4251e559a|alt1 1.4s total 56.5 min
+[b2:B] 6f2baa8c8c8e5942|alt0 1.5s total 56.5 min
+[b2:B] 8e785a7a6df95636|alt2 1.5s total 56.5 min
+[b2:B] 958677976f9c5b0a|alt5 0.7s total 56.6 min
+[b2:B] c69d4cbd79ea52a0|alt2 0.7s total 56.6 min
+[b2:B] c87fe1d7a3bd57cb|alt1 1.4s total 56.6 min
+[b2:B] ade979d99d51517f|alt7 1.2s total 56.6 min
+[b2:B] 36be99da12575896|alt0 1.5s total 56.6 min
+[b2:B] 46aea2dcb1485353|alt3 1.5s total 56.7 min
+[b2:B] 19f3e77fcd3353c5|alt1 1.5s total 56.7 min
+[b2:B] dc9bf97cb9e151ad|original 1.4s total 56.7 min
+[b2:B] 458fa5236b795941|alt5 1.2s total 56.7 min
+[b2:B] 958677976f9c5b0a|alt4 0.7s total 56.7 min
+[b2:B] 09978bee1b655865|alt2 1.2s total 56.8 min
+[b2:B] 3c99fcb4ef8c5382|alt2 1.2s total 56.8 min
+[b2:B] 3b56d2b022d25026|original 1.0s total 56.8 min
+[b2:B] ab8034dd8873524b|alt5 1.4s total 56.8 min
+[b2:B] 26af85cbc2d15e05|alt3 1.4s total 56.8 min
+[b2:B] 0202782270ab5a62|alt5 1.2s total 56.9 min
+[b2:B] a1ff2db262ab5db7|alt4 1.0s total 56.9 min
+[b2:B] 85028441255156b3|alt0 1.5s total 56.9 min
+[b2:B] 622867ce25805447|original 1.4s total 56.9 min
+[b2:B] c6e19ffa3c34551c|alt2 1.5s total 57.0 min
+[b2:B] a9152eadc70058ba|alt2 1.2s total 57.0 min
+[b2:B] 14d53eb06a7d582a|alt1 1.5s total 57.0 min
+[b2:B] d443368fa4615242|alt2 1.5s total 57.0 min
+[b2:B] 57a77b8c90465bc4|alt3 1.4s total 57.0 min
+[b2:B] 36be99da12575896|alt4 1.5s total 57.1 min
+[b2:B] 7cdcf11e211759cf|alt4 1.0s total 57.1 min
+[b2:B] 76e0272a57f55674|original 1.4s total 57.1 min
+[b2:B] 09978bee1b655865|alt0 1.2s total 57.1 min
+[b2:B] 58e19769184c5f43|alt2 0.7s total 57.1 min
+[b2:B] 4d50c69f430850a0|alt5 1.2s total 57.2 min
+[b2:B] 9fe3ed9455355edb|alt3 1.4s total 57.2 min
+[b2:B] 1ded576bc1325cae|original 1.0s total 57.2 min
+[b2:B] 73939fc4dcdf57c4|alt2 1.6s total 57.2 min
+[b2:B] f289e368449b517b|alt3 1.4s total 57.3 min
+[b2:B] eadc0f19b54352ae|alt4 1.4s total 57.3 min
+[b2:B] 8b788f2715985cee|alt3 1.4s total 57.3 min
+[b2:B] 73939fc4dcdf57c4|alt1 1.5s total 57.3 min
+[b2:B] 150c33d5cd005743|original 1.4s total 57.3 min
+[b2:B] 276396e455bb57b5|alt4 1.4s total 57.4 min
+[b2:B] 8de4253bc36f54df|alt7 1.0s total 57.4 min
+[b2:B] dc9bf97cb9e151ad|alt0 1.4s total 57.4 min
+[b2:B] 4749b2486da65268|alt3 1.4s total 57.4 min
+[b2:B] 1b4499d988b052ce|alt1 1.4s total 57.5 min
+[b2:B] 07b814bfc2fb565d|alt5 1.4s total 57.5 min
+[b2:B] 037b976caae85af5|alt2 1.2s total 57.5 min
+[b2:B] 34048f1ce51452d0|alt1 1.5s total 57.5 min
+[b2:B] f4af3907bb665bf7|alt5 1.4s total 57.5 min
+[b2:B] a8a72fb28dc6592b|alt5 1.2s total 57.6 min
+[b2:B] 26ffff4876f75eed|alt1 1.4s total 57.6 min
+[b2:B] 57f2781030b25387|alt3 1.5s total 57.6 min
+[b2:B] 8e785a7a6df95636|original 1.5s total 57.6 min
+[b2:B] 1dc437ce152e55fa|alt4 1.0s total 57.7 min
+[b2:B] c69d4cbd79ea52a0|alt0 0.7s total 57.7 min
+[b2:B] d4358e3962b758ce|alt2 1.4s total 57.7 min
+[b2:B] eadc0f19b54352ae|alt3 1.4s total 57.7 min
+[b2:B] 80793d56acc15d48|alt1 1.4s total 57.7 min
+[b2:B] 34cc387cf0335f28|alt2 1.4s total 57.8 min
+[b2:B] 6b258d7ddf7d53f3|alt3 1.5s total 57.8 min
+[b2:B] 4f21925f1a7c5983|alt1 1.4s total 57.8 min
+[b2:B] 976107b532bb5301|alt1 1.4s total 57.8 min
+[b2:B] f66694a622cf5c99|alt1 0.7s total 57.8 min
+[b2:B] 026bb114391d5b81|alt1 1.2s total 57.9 min
+[b2:B] 97eca45f93285d17|alt3 1.0s total 57.9 min
+[b2:B] 7b7cac50a37a5c24|original 1.2s total 57.9 min
+[b2:B] be7331d3f05e5d16|alt2 1.5s total 57.9 min
+[b2:B] ab7d0c4a928e5ec9|alt3 1.2s total 57.9 min
+[b2:B] 62667ead92a35fbd|alt4 1.2s total 58.0 min
+[b2:B] 4631b80af7fb5f2f|alt0 1.6s total 58.0 min
+[b2:B] ade979d99d51517f|alt2 1.2s total 58.0 min
+[b2:B] cc71f3639268516f|alt7 1.4s total 58.0 min
+[b2:B] 58e19769184c5f43|alt0 0.7s total 58.0 min
+[b2:B] a1ff2db262ab5db7|alt2 1.0s total 58.1 min
+[b2:B] a9152eadc70058ba|alt1 1.2s total 58.1 min
+[b2:B] 2e405d459d8b5d9c|alt3 1.5s total 58.1 min
+[b2:B] 7b7cac50a37a5c24|alt2 1.2s total 58.1 min
+[b2:B] e0a645315de658bc|alt2 1.4s total 58.2 min
+[b2:B] e6bdb406a21e55ba|alt3 1.0s total 58.2 min
+[b2:B] e0094ac69a8955fb|original 1.2s total 58.2 min
+[b2:B] 7b7cac50a37a5c24|alt5 1.2s total 58.2 min
+[b2:B] b98d8c3330625df2|alt7 1.4s total 58.2 min
+[b2:B] 595596a88cce5c9d|alt0 1.4s total 58.3 min
+[b2:B] 7316c116f05d57a5|alt0 1.2s total 58.3 min
+[b2:B] a627522c77eb526c|alt3 1.5s total 58.3 min
+[b2:B] c6e19ffa3c34551c|alt1 1.5s total 58.3 min
+[b2:B] 14d53eb06a7d582a|alt3 1.5s total 58.4 min
+[b2:B] f3572fcbcd285f1e|alt1 1.2s total 58.4 min
+[b2:B] 2743a2f96269577c|alt0 1.4s total 58.4 min
+[b2:B] e0a645315de658bc|alt1 1.4s total 58.4 min
+[b2:B] 5f70e91ff9d250f5|original 1.5s total 58.4 min
+[b2:B] 34cc387cf0335f28|alt0 1.4s total 58.5 min
+[b2:B] 2a06b778a64b545e|alt3 1.4s total 58.5 min
+[b2:B] 649b2096884957a9|alt0 1.5s total 58.5 min
+[b2:B] 2f5ae1e4cf9d59fa|alt1 1.4s total 58.5 min
+[b2:B] 7cdcf11e211759cf|alt3 1.0s total 58.6 min
+[b2:B] 6f2baa8c8c8e5942|alt3 1.5s total 58.6 min
+[b2:B] 330ca2e9aa935a3a|alt5 1.2s total 58.6 min
+[b2:B] 814b5e08c20e57af|alt3 0.7s total 58.6 min
+[b2:B] 57a77b8c90465bc4|alt5 1.4s total 58.6 min
+[b2:B] 1db38f4b73ac5b62|alt3 1.4s total 58.7 min
+[b2:B] eea52ed765aa5977|alt4 0.7s total 58.7 min
+[b2:B] 078f05d9e9c05230|alt0 1.5s total 58.7 min
+[b2:B] 276396e455bb57b5|alt2 1.4s total 58.7 min
+[b2:B] 2a06b778a64b545e|alt2 1.4s total 58.7 min
+[b2:B] eadc0f19b54352ae|original 1.4s total 58.8 min
+[b2:B] 8b788f2715985cee|alt1 1.4s total 58.8 min
+[b2:B] 61a9157ac995542c|original 1.2s total 58.8 min
+[b2:B] 1dc437ce152e55fa|original 1.0s total 58.8 min
+[b2:B] ab7d0c4a928e5ec9|alt1 1.2s total 58.8 min
+[b2:B] 26af85cbc2d15e05|original 1.4s total 58.9 min
+[b2:B] a627522c77eb526c|alt2 1.5s total 58.9 min
+[b2:B] 39dba8a42eaa5ea0|alt3 1.0s total 58.9 min
+[b2:B] 1ded576bc1325cae|alt4 1.0s total 58.9 min
+[b2:B] c5b4ff1be8bb5113|alt4 1.4s total 58.9 min
+[b2:B] 5f70e91ff9d250f5|alt2 1.5s total 59.0 min
+[b2:B] 24acfb08c5ef55f5|alt3 1.4s total 59.0 min
+[b2:B] a7ce5a625a525b45|alt1 1.4s total 59.0 min
+[b2:B] ade979d99d51517f|original 1.2s total 59.0 min
+[b2:B] 10db4b6fe64b5c10|original 1.2s total 59.1 min
+[b2:B] 622867ce25805447|alt4 1.4s total 59.1 min
+[b2:B] 88c0bfe353235280|alt3 1.2s total 59.1 min
+[b2:B] 19c8d441cb445d87|alt2 1.2s total 59.1 min
+[b2:B] 015011d2b73158b7|alt5 1.2s total 59.1 min
+[b2:B] 9c768fba2b4c5d19|original 0.7s total 59.2 min
+[b2:B] 34cc387cf0335f28|alt4 1.4s total 59.2 min
+[b2:B] fb8df4568d585efa|alt6 1.4s total 59.2 min
+[b2:B] c87001c4251e559a|alt2 1.4s total 59.2 min
+[b2:B] 958677976f9c5b0a|alt1 0.7s total 59.2 min
+[b2:B] c4fd814210875a8e|alt2 1.2s total 59.3 min
+[b2:B] 20d3a5f5b9e6549f|alt3 0.7s total 59.3 min
+[b2:B] 37c15bc4d99a5365|alt4 1.5s total 59.3 min
+[b2:B] e0094ac69a8955fb|alt1 1.2s total 59.3 min
+[b2:B] 5bbd26efb97658ec|alt3 1.5s total 59.3 min
+[b2:B] 7b7cac50a37a5c24|alt4 1.2s total 59.4 min
+[b2:B] 10ae805f0be95c1f|alt4 1.4s total 59.4 min
+[b2:B] a1ff2db262ab5db7|alt0 1.0s total 59.4 min
+[b2:B] b08965aff8165bec|alt6 1.2s total 59.4 min
+[b2:B] 2e0a31d833765412|alt4 1.4s total 59.4 min
+[b2:B] 566bd5e6d09153e0|alt0 1.4s total 59.5 min
+[b2:B] 57f2781030b25387|original 1.5s total 59.5 min
+[b2:B] a9152eadc70058ba|alt4 1.2s total 59.5 min
+[b2:B] c69d4cbd79ea52a0|original 0.7s total 59.5 min
+[b2:B] 26af85cbc2d15e05|alt0 1.4s total 59.5 min
+[b2:B] 10db4b6fe64b5c10|alt3 1.2s total 59.6 min
+[b2:B] 5f70e91ff9d250f5|alt1 1.5s total 59.6 min
+[b2:B] 566bd5e6d09153e0|alt3 1.4s total 59.6 min
+[b2:B] f66694a622cf5c99|original 0.7s total 59.6 min
+[b2:B] c87001c4251e559a|alt6 1.4s total 59.6 min
+[b2:B] 584a741051cd523f|alt2 1.5s total 59.7 min
+[b2:B] 6233d1b3e62a5772|original 1.5s total 59.7 min
+[b2:B] 8f5610a77c3257f9|original 1.4s total 59.7 min
+[b2:B] 0c3c4cd553475d3a|alt1 1.2s total 59.7 min
+[b2:B] e23fdb8f34b35d20|alt4 1.2s total 59.8 min
+[b2:B] 9e76a394983a59b6|alt3 1.4s total 59.8 min
+[b2:B] c2466f5ae7a25ad8|alt0 1.2s total 59.8 min
+[b2:B] 4631b80af7fb5f2f|original 1.5s total 59.8 min
+[b2:B] f3572fcbcd285f1e|alt2 1.2s total 59.8 min
+[b2:B] 19c8d441cb445d87|original 1.2s total 59.9 min
+[b2:B] fb8df4568d585efa|alt2 1.4s total 59.9 min
+[b2:B] 97b9989fa3675cab|alt3 1.0s total 59.9 min
+[b2:B] 34eb9be2f88a5234|alt3 1.4s total 59.9 min
+[b2:B] 581a74871330567f|original 1.5s total 60.0 min
+[b2:B] 57f2781030b25387|alt2 1.5s total 60.0 min
+[b2:B] 19f3e77fcd3353c5|alt0 1.5s total 60.0 min
+[b2:B] 39dba8a42eaa5ea0|original 1.0s total 60.0 min
+[b2:B] e6bdb406a21e55ba|alt5 1.0s total 60.0 min
+[b2:B] 1dc437ce152e55fa|alt0 1.0s total 60.1 min
+[b2:B] 76e0272a57f55674|alt6 1.4s total 60.1 min
+[b2:B] 3b56d2b022d25026|alt1 1.0s total 60.1 min
+[b2:B] 10db4b6fe64b5c10|alt2 1.2s total 60.1 min
+[b2:B] 4d50c69f430850a0|alt3 1.2s total 60.1 min
+[b2:B] 50eebed7d9655bb5|alt6 0.7s total 60.1 min
+[b2:B] 69df428fe853580e|alt1 1.5s total 60.2 min
+[b2:B] 4d2fceb0b30f59cd|alt3 1.2s total 60.2 min
+[b2:B] ab7d0c4a928e5ec9|alt0 1.2s total 60.2 min
+[b2:B] d5ec09025a1e5a0d|alt5 1.5s total 60.2 min
+[b2:B] 6b258d7ddf7d53f3|alt1 1.5s total 60.3 min
+[b2:B] a627522c77eb526c|alt4 1.5s total 60.3 min
+[b2:B] 00eb3a4e0f8052e9|alt1 1.0s total 60.3 min
+[b2:B] 0577532eba755552|alt5 1.4s total 60.3 min
+[b2:B] 02bfb6340c185b97|original 1.0s total 60.3 min
+[b2:B] d443368fa4615242|original 1.5s total 60.4 min
+[b2:B] 2e0a31d833765412|alt2 1.4s total 60.4 min
+[b2:B] 622867ce25805447|alt2 1.4s total 60.4 min
+[b2:B] da53dac7558e563d|alt0 1.4s total 60.4 min
+[b2:B] dfa06e9592e65896|alt0 1.4s total 60.5 min
+[b2:B] 491dce963f7f5b57|alt3 1.5s total 60.5 min
+[b2:B] b98d8c3330625df2|original 1.4s total 60.5 min
+[b2:B] 976107b532bb5301|alt3 1.4s total 60.5 min
+[b2:B] 491dce963f7f5b57|alt0 1.5s total 60.6 min
+[b2:B] f064ef8fafcf5528|original 1.5s total 60.6 min
+[b2:B] 5825e60bec9f59fb|alt2 1.5s total 60.6 min
+[b2:B] b08965aff8165bec|original 1.2s total 60.6 min
+[b2:B] 4f21925f1a7c5983|original 1.4s total 60.7 min
+[b2:B] 1d4b518f1b175184|alt2 1.5s total 60.7 min
+[b2:B] 2f5ae1e4cf9d59fa|alt6 1.4s total 60.7 min
+[b2:B] 2f5ae1e4cf9d59fa|alt3 1.4s total 60.7 min
+[b2:B] 2743a2f96269577c|alt3 1.4s total 60.7 min
+[b2:B] 0577532eba755552|original 1.4s total 60.8 min
+[b2:B] d2853234152359b3|alt0 1.5s total 60.8 min
+[b2:B] e59b32f05f5e54f0|alt3 1.2s total 60.8 min
+[b2:B] cac5deee337257e1|original 1.2s total 60.8 min
+[b2:B] dfaaa711e0a557ba|alt1 1.4s total 60.9 min
+[b2:B] 7135ce0e5eea5907|original 1.5s total 60.9 min
+[b2:B] ea57966419605846|alt4 1.4s total 60.9 min
+[b2:B] 76e0272a57f55674|alt0 1.4s total 60.9 min
+[b2:B] 037b976caae85af5|alt1 1.2s total 61.0 min
+[b2:B] 1f55063084fd593c|alt5 1.6s total 61.0 min
+[b2:B] 6f2baa8c8c8e5942|original 1.5s total 61.0 min
+[b2:B] 6f2459c4df665173|alt2 1.5s total 61.0 min
+[b2:B] 0c3c4cd553475d3a|alt5 1.2s total 61.0 min
+[b2:B] a64a3e4f2048576d|alt3 1.0s total 61.1 min
+[b2:B] c69d4cbd79ea52a0|alt5 0.7s total 61.1 min
+[b2:B] 58e19769184c5f43|alt6 0.7s total 61.1 min
+[b2:B] 52d3f15d6ca75701|alt6 1.6s total 61.1 min
+[b2:B] 77daa055e4ed5ae2|alt4 1.4s total 61.1 min
+[b2:B] 427ee2e0d1c05699|alt4 1.4s total 61.2 min
+[b2:B] f1940c1eca9857cb|alt1 1.2s total 61.2 min
+[b2:B] 263367576c285a2a|alt0 0.7s total 61.2 min
+[b2:B] fdcbf84507845615|alt4 1.4s total 61.2 min
+[b2:B] ea57966419605846|alt3 1.4s total 61.2 min
+[b2:B] c5b4ff1be8bb5113|alt3 1.4s total 61.3 min
+[b2:B] 6f2baa8c8c8e5942|alt1 1.5s total 61.3 min
+[b2:B] 5e48f684248053bd|alt3 1.2s total 61.3 min
+[b2:B] 6f2baa8c8c8e5942|alt5 1.5s total 61.3 min
+[b2:B] 34048f1ce51452d0|alt4 1.5s total 61.4 min
+[b2:B] 276396e455bb57b5|alt5 1.4s total 61.4 min
+[b2:B] 97eca45f93285d17|alt2 1.0s total 61.4 min
+[b2:B] 69df428fe853580e|alt3 1.5s total 61.4 min
+[b2:B] 0e08da5fbc735956|alt2 0.7s total 61.4 min
+[b2:B] 9cf612ff6e4f5bd5|alt0 1.5s total 61.5 min
+[b2:B] 00c489998dd4555c|alt3 1.0s total 61.5 min
+[b2:B] 14d53eb06a7d582a|alt0 1.5s total 61.5 min
+[b2:B] 6233d1b3e62a5772|alt3 1.5s total 61.5 min
+[b2:B] e7116a2035205221|alt1 1.5s total 61.6 min
+[b2:B] 330ca2e9aa935a3a|alt1 1.2s total 61.6 min
+[b2:B] 491dce963f7f5b57|alt1 1.5s total 61.6 min
+[b2:B] 7ff27f83a8995932|alt6 1.2s total 61.6 min
+[b2:B] ab8034dd8873524b|alt0 1.4s total 61.6 min
+[b2:B] 6e10835f184d5921|alt2 0.7s total 61.7 min
+[b2:B] 4631b80af7fb5f2f|alt2 1.5s total 61.7 min
+[b2:B] 26ffff4876f75eed|alt0 1.4s total 61.7 min
+[b2:B] dfaaa711e0a557ba|original 1.4s total 61.7 min
+[b2:B] e59b32f05f5e54f0|alt0 1.2s total 61.7 min
+[b2:B] e0a645315de658bc|original 1.4s total 61.8 min
+[b2:B] 29d3fc42d08d57d2|alt5 0.7s total 61.8 min
+[b2:B] 649b2096884957a9|alt1 1.5s total 61.8 min
+[b2:B] 61a9157ac995542c|alt4 1.2s total 61.8 min
+[b2:B] e3ddabf456b155a9|alt0 1.5s total 61.8 min
+[b2:B] de7b87d6624754cf|alt2 1.5s total 61.9 min
+[b2:B] 69df428fe853580e|alt5 1.5s total 61.9 min
+[b2:B] 39147f08f4645365|alt2 1.0s total 61.9 min
+[b2:B] dfa06e9592e65896|alt3 1.4s total 61.9 min
+[b2:B] 76e0272a57f55674|alt7 1.4s total 62.0 min
+[b2:B] e0094ac69a8955fb|alt4 1.2s total 62.0 min
+[b2:B] 24acfb08c5ef55f5|alt0 1.4s total 62.0 min
+[b2:B] e0e1551b09f15a74|alt4 1.4s total 62.0 min
+[b2:B] 85028441255156b3|alt1 1.5s total 62.1 min
+[b2:B] c1686b2e1a4e5149|alt3 0.7s total 62.1 min
+[b2:B] 6561633171e75bb6|alt1 1.0s total 62.1 min
+[b2:B] 0c437f9a102c57f4|alt4 1.5s total 62.1 min
+[b2:B] 330ca2e9aa935a3a|original 1.2s total 62.1 min
+[b2:B] f1940c1eca9857cb|alt0 1.2s total 62.1 min
+[b2:B] be7331d3f05e5d16|alt3 1.5s total 62.2 min
+[b2:B] f3572fcbcd285f1e|alt3 1.2s total 62.2 min
+[b2:B] c4fd814210875a8e|alt0 1.2s total 62.2 min
+[b2:B] f776577c7428592b|alt5 1.5s total 62.2 min
+[b2:B] e7116a2035205221|original 1.5s total 62.3 min
+[b2:B] c1686b2e1a4e5149|original 0.7s total 62.3 min
+[b2:B] eeae24d38eb15e0a|alt2 1.0s total 62.3 min
+[b2:B] 3c99fcb4ef8c5382|alt4 1.2s total 62.3 min
+[b2:B] 73939fc4dcdf57c4|alt4 1.5s total 62.3 min
+[b2:B] cac5deee337257e1|alt0 1.2s total 62.4 min
+[b2:B] e6bdb406a21e55ba|alt0 1.0s total 62.4 min
+[b2:B] c7c04f1581855ac4|alt4 1.5s total 62.4 min
+[b2:B] a1ff2db262ab5db7|original 1.0s total 62.4 min
+[b2:B] 3461796610c15a0e|alt2 1.4s total 62.4 min
+[b2:B] b27bfe84cc545daa|alt5 1.4s total 62.5 min
+[b2:B] 1dc437ce152e55fa|alt1 1.0s total 62.5 min
+[b2:B] 58e19769184c5f43|alt4 0.7s total 62.5 min
+[b2:B] 97eca45f93285d17|original 1.0s total 62.5 min
+[b2:B] eadc0f19b54352ae|alt5 1.4s total 62.5 min
+[b2:B] f3512ae175b45844|alt4 0.7s total 62.5 min
+[b2:B] 4342cb36fbba580b|alt1 1.2s total 62.6 min
+[b2:B] 69ddc43178e9572a|alt2 1.2s total 62.6 min
+[b2:B] f064ef8fafcf5528|alt1 1.5s total 62.6 min
+[b2:B] ea57966419605846|alt1 1.4s total 62.6 min
+[b2:B] b3c1a2ac292d5e3f|alt0 1.5s total 62.7 min
+[b2:B] 484bac10bd295459|alt3 1.5s total 62.7 min
+[b2:B] 76cf7bb2e9625482|alt0 1.2s total 62.7 min
+[b2:B] 77daa055e4ed5ae2|alt0 1.4s total 62.7 min
+[b2:B] 5c4f8e6a644258d3|alt4 1.4s total 62.8 min
+[b2:B] 07b814bfc2fb565d|alt4 1.4s total 62.8 min
+[b2:B] 3c24bf88e9b150dd|alt2 1.4s total 62.8 min
+[b2:B] 50eebed7d9655bb5|original 0.7s total 62.8 min
+[b2:B] 64185eb977005752|alt4 1.4s total 62.8 min
+[b2:B] 36be99da12575896|alt2 1.5s total 62.9 min
+[b2:B] 24acfb08c5ef55f5|alt4 1.4s total 62.9 min
+[b2:B] 3c24bf88e9b150dd|alt4 1.4s total 62.9 min
+[b2:B] 6e10835f184d5921|original 0.7s total 62.9 min
+[b2:B] a9152eadc70058ba|alt0 1.2s total 62.9 min
+[b2:B] 1212ba4b68e95583|alt4 1.4s total 63.0 min
+[b2:B] 57f2781030b25387|alt1 1.5s total 63.0 min
+[b2:B] 3461796610c15a0e|alt1 1.4s total 63.0 min
+[b2:B] d443368fa4615242|alt1 1.5s total 63.0 min
+[b2:B] 3b56d2b022d25026|alt4 1.0s total 63.0 min
+[b2:B] 8abc81ff3045543b|alt4 1.5s total 63.1 min
+[b2:B] 5825e60bec9f59fb|alt0 1.5s total 63.1 min
+[b2:B] 73939fc4dcdf57c4|alt3 1.5s total 63.1 min
+[b2:B] 6f2459c4df665173|original 1.5s total 63.1 min
+[b2:B] e0094ac69a8955fb|alt7 1.2s total 63.2 min
+[b2:B] 69ddc43178e9572a|alt1 1.2s total 63.2 min
+[b2:B] 1212ba4b68e95583|alt0 1.4s total 63.2 min
+[b2:B] dc9bf97cb9e151ad|alt2 1.4s total 63.2 min
+[b2:B] 09978bee1b655865|alt3 1.2s total 63.3 min
+[b2:B] 6233d1b3e62a5772|alt6 1.5s total 63.3 min
+[b2:B] d3cbad95b20b5125|alt4 1.2s total 63.3 min
+[b2:B] b98d8c3330625df2|alt3 1.4s total 63.3 min
+[b2:B] 8eae3eab30c95228|alt1 1.4s total 63.3 min
+[b2:B] 427ee2e0d1c05699|alt3 1.4s total 63.4 min
+[b2:B] 88c0bfe353235280|alt4 1.2s total 63.4 min
+[b2:B] f0f77f6f5cb4562c|alt2 0.7s total 63.4 min
+[b2:B] 73939fc4dcdf57c4|alt0 1.5s total 63.4 min
+[b2:B] f064ef8fafcf5528|alt4 1.5s total 63.5 min
+[b2:B] cd9330daeec55224|alt0 1.2s total 63.5 min
+[b2:B] d44d7aacab755892|alt4 0.7s total 63.5 min
+[b2:B] b27bfe84cc545daa|original 1.4s total 63.5 min
+[b2:B] d4358e3962b758ce|alt0 1.4s total 63.5 min
+[b2:B] 61a9157ac995542c|alt2 1.2s total 63.5 min
+[b2:B] 458fa5236b795941|alt4 1.2s total 63.6 min
+[b2:B] aa4ec42ec7425de0|alt2 1.5s total 63.6 min
+[b2:B] f158576757e95c31|alt4 1.5s total 63.6 min
+[b2:B] e23fdb8f34b35d20|alt0 1.2s total 63.6 min
+[b2:B] 62667ead92a35fbd|alt2 1.2s total 63.7 min
+[b2:B] 8e785a7a6df95636|alt3 1.5s total 63.7 min
+[b2:B] f53ee13c32ac5bec|original 1.4s total 63.7 min
+[b2:B] 2e0a31d833765412|alt0 1.4s total 63.7 min
+[b2:B] f66694a622cf5c99|alt4 0.7s total 63.7 min
+[b2:B] 29d3fc42d08d57d2|alt0 0.7s total 63.8 min
+[b2:B] e0e1551b09f15a74|original 1.4s total 63.8 min
+[b2:B] c6e19ffa3c34551c|alt4 1.5s total 63.8 min
+[b2:B] 28a0cdbbc1e55291|alt4 1.4s total 63.8 min
+[b2:B] fdcbf84507845615|alt0 1.4s total 63.8 min
+[b2:B] 581a74871330567f|alt4 1.5s total 63.9 min
+[b2:B] fdcbf84507845615|alt1 1.4s total 63.9 min
+[b2:B] 9fe3ed9455355edb|alt0 1.4s total 63.9 min
+[b2:B] dfa06e9592e65896|alt2 1.4s total 63.9 min
+[b2:B] 958677976f9c5b0a|alt0 0.7s total 64.0 min
+[b2:B] 814b5e08c20e57af|original 0.7s total 64.0 min
+[b2:B] 7316c116f05d57a5|alt3 1.2s total 64.0 min
+[b2:B] 52d3f15d6ca75701|alt1 1.5s total 64.0 min
+[b2:B] 0561ac957ffc5c4f|alt0 1.5s total 64.0 min
+[b2:B] 0577532eba755552|alt3 1.4s total 64.1 min
+[b2:B] 118fa9fa499e5670|alt7 1.2s total 64.1 min
+[b2:B] 2f5ae1e4cf9d59fa|alt7 1.4s total 64.1 min
+[b2:B] 3c99fcb4ef8c5382|alt3 1.2s total 64.1 min
+[b2:B] 887e4d57da835b12|alt3 1.4s total 64.1 min
+[b2:B] e59b32f05f5e54f0|alt5 1.2s total 64.2 min
+[b2:B] d3cbad95b20b5125|alt0 1.2s total 64.2 min
+[b2:B] da53dac7558e563d|alt1 1.4s total 64.2 min
+[b2:B] 7135ce0e5eea5907|alt0 1.5s total 64.2 min
+[b2:B] dc9bf97cb9e151ad|alt4 1.4s total 64.3 min
+[b2:B] aa4ec42ec7425de0|alt3 1.6s total 64.3 min
+[b2:B] 19c8d441cb445d87|alt3 1.2s total 64.3 min
+[b2:B] d4358e3962b758ce|alt4 1.4s total 64.3 min
+[b2:B] dfaaa711e0a557ba|alt2 1.4s total 64.3 min
+[b2:B] 26ffff4876f75eed|original 1.4s total 64.4 min
+[b2:B] 3461796610c15a0e|alt0 1.4s total 64.4 min
+[b2:B] c7c04f1581855ac4|alt0 1.5s total 64.4 min
+[b2:B] 5825e60bec9f59fb|alt1 1.5s total 64.4 min
+[b2:B] 46aea2dcb1485353|original 1.5s total 64.5 min
+[b2:B] d44d7aacab755892|alt0 0.7s total 64.5 min
+[b2:B] ab8034dd8873524b|alt2 1.4s total 64.5 min
+[b2:B] fb8df4568d585efa|alt1 1.4s total 64.5 min
+[b2:B] 62667ead92a35fbd|alt1 1.2s total 64.5 min
+[b2:B] dfaaa711e0a557ba|alt0 1.4s total 64.6 min
+[b2:B] 1212ba4b68e95583|alt1 1.4s total 64.6 min
+[b2:B] 2f5ae1e4cf9d59fa|alt4 1.4s total 64.6 min
+[b2:B] a7ce5a625a525b45|alt4 1.4s total 64.6 min
+[b2:B] 3b56d2b022d25026|alt0 1.0s total 64.7 min
+[b2:B] f3512ae175b45844|alt0 0.7s total 64.7 min
+[b2:B] 1981a85eb4ba5001|alt3 1.5s total 64.7 min
+[b2:B] f53ee13c32ac5bec|alt0 1.4s total 64.7 min
+[b2:B] 150c33d5cd005743|alt4 1.4s total 64.7 min
+[b2:B] 02bfb6340c185b97|alt6 1.0s total 64.8 min
+[b2:B] be7331d3f05e5d16|alt4 1.5s total 64.8 min
+[b2:B] 88c0bfe353235280|alt0 1.2s total 64.8 min
+[b2:B] 0202782270ab5a62|alt1 1.2s total 64.8 min
+[b2:B] 79bdb6b499245d65|alt1 1.4s total 64.8 min
+[b2:B] 2e405d459d8b5d9c|alt5 1.5s total 64.9 min
+[b2:B] 5bb280e3aebe5a67|original 1.4s total 64.9 min
+[b2:B] 7135ce0e5eea5907|alt4 1.5s total 64.9 min
+[b2:B] c5b4ff1be8bb5113|alt1 1.4s total 64.9 min
+[b2:B] f3512ae175b45844|original 0.7s total 64.9 min
+[b2:B] f289e368449b517b|alt2 1.4s total 65.0 min
+[b2:B] 7316c116f05d57a5|original 1.2s total 65.0 min
+[b2:B] 6f2baa8c8c8e5942|alt2 1.5s total 65.0 min
+[b2:B] c69d4cbd79ea52a0|alt4 0.7s total 65.0 min
+[b2:B] 7cdcf11e211759cf|alt2 1.0s total 65.0 min
+[b2:B] b98d8c3330625df2|alt6 1.4s total 65.1 min
+[b2:B] 7ff27f83a8995932|alt4 1.2s total 65.1 min
+[b2:B] b08965aff8165bec|alt2 1.2s total 65.1 min
+[b2:B] 127b9e23f1805690|original 0.7s total 65.1 min
+[b2:B] 584a741051cd523f|alt0 1.5s total 65.1 min
+[b2:B] 1b4499d988b052ce|alt4 1.4s total 65.2 min
+[b2:B] e0a645315de658bc|alt3 1.4s total 65.2 min
+[b2:B] 52d3f15d6ca75701|alt4 1.5s total 65.2 min
+[b2:B] 0c3c4cd553475d3a|alt6 1.2s total 65.2 min
+[b2:B] 3461796610c15a0e|original 1.4s total 65.3 min
+[b2:B] 3e7bec3b1c4359b6|alt3 1.4s total 65.3 min
+[b2:B] a7ce5a625a525b45|alt2 1.4s total 65.3 min
+[b2:B] 50eebed7d9655bb5|alt4 0.7s total 65.3 min
+[b2:B] c4fd814210875a8e|alt3 1.2s total 65.3 min
+[b2:B] 76e0272a57f55674|alt1 1.4s total 65.4 min
+[b2:B] d44d7aacab755892|alt1 0.7s total 65.4 min
+[b2:B] 2e405d459d8b5d9c|alt2 1.5s total 65.4 min
+[b2:B] 215c38293c335e25|alt0 1.4s total 65.4 min
+[b2:B] 8b788f2715985cee|alt2 1.4s total 65.4 min
+[b2:B] b7ee1af184835990|alt4 1.4s total 65.5 min
+[b2:B] f776577c7428592b|alt6 1.5s total 65.5 min
+[b2:B] f4af3907bb665bf7|alt0 1.4s total 65.5 min
+[b2:B] e6ff81ab83355450|alt5 1.5s total 65.5 min
+[b2:B] f158576757e95c31|alt3 1.5s total 65.6 min
+[b2:B] 887e4d57da835b12|alt4 1.4s total 65.6 min
+[b2:B] 52d3f15d6ca75701|original 1.5s total 65.6 min
+[b2:B] 8f5610a77c3257f9|alt0 1.4s total 65.6 min
+[b2:B] dfb58c90fd2e52fa|original 1.5s total 65.7 min
+[b2:B] c6e19ffa3c34551c|original 1.5s total 65.7 min
+[b2:B] 330ca2e9aa935a3a|alt6 1.2s total 65.7 min
+[b2:B] 22b526a96ad65c88|alt4 1.4s total 65.7 min
+[b2:B] 9e76a394983a59b6|alt5 1.4s total 65.8 min
+[b2:B] 595596a88cce5c9d|alt3 1.4s total 65.8 min
+[b2:B] 57a77b8c90465bc4|alt0 1.4s total 65.8 min
+[b2:B] e7116a2035205221|alt0 1.5s total 65.8 min
+[b2:B] 6b258d7ddf7d53f3|original 1.5s total 65.8 min
+[b2:B] 127b9e23f1805690|alt0 0.7s total 65.9 min
+[b2:B] 34eb9be2f88a5234|alt5 1.4s total 65.9 min
+[b2:B] 8d5d769b1f1e5802|original 1.4s total 65.9 min
+[b2:B] 76cf7bb2e9625482|alt3 1.2s total 65.9 min
+[b2:B] ab8034dd8873524b|alt4 1.4s total 65.9 min
+[b2:B] 8f1247f8436c5208|alt0 1.0s total 66.0 min
+[b2:B] c87fe1d7a3bd57cb|alt3 1.4s total 66.0 min
+[b2:B] 07b814bfc2fb565d|alt3 1.4s total 66.0 min
+[b2:B] 1981a85eb4ba5001|alt4 1.5s total 66.0 min
+[b2:B] 20d3a5f5b9e6549f|alt4 0.7s total 66.0 min
+[b2:B] da53dac7558e563d|alt3 1.4s total 66.1 min
+[b2:B] 026bb114391d5b81|alt3 1.2s total 66.1 min
+[b2:B] 4342cb36fbba580b|alt4 1.2s total 66.1 min
+[b2:B] 2d2a1f08e4895258|alt2 1.4s total 66.1 min
+[b2:B] 22b526a96ad65c88|alt0 1.4s total 66.2 min
+[b2:B] 595596a88cce5c9d|original 1.4s total 66.2 min
+[b2:B] f3572fcbcd285f1e|alt5 1.2s total 66.2 min
+[b2:B] 6f2459c4df665173|alt1 1.5s total 66.2 min
+[b2:B] 76e0272a57f55674|alt5 1.4s total 66.2 min
+[b2:B] f289e368449b517b|alt1 1.4s total 66.3 min
+[b2:B] 0e08da5fbc735956|original 0.7s total 66.3 min
+[b2:B] 1981a85eb4ba5001|alt0 1.5s total 66.3 min
+[b2:B] b3c1a2ac292d5e3f|alt1 1.5s total 66.3 min
+[b2:B] e59b32f05f5e54f0|alt4 1.2s total 66.4 min
+[b2:B] 1f55063084fd593c|alt1 1.5s total 66.4 min
+[b2:B] 6233d1b3e62a5772|alt1 1.5s total 66.4 min
+[b2:B] d4358e3962b758ce|alt5 1.4s total 66.4 min
+[b2:B] 61a9157ac995542c|alt5 1.2s total 66.4 min
+[b2:B] e0a645315de658bc|alt4 1.4s total 66.5 min
+[b2:B] c2466f5ae7a25ad8|original 1.2s total 66.5 min
+[b2:B] 2e0a31d833765412|alt1 1.4s total 66.5 min
+[b2:B] 76e0272a57f55674|alt2 1.4s total 66.5 min
+[b2:B] a9152eadc70058ba|alt3 1.2s total 66.6 min
+[b2:B] b27bfe84cc545daa|alt6 1.4s total 66.6 min
+[b2:B] 33ee6f1f594d50ca|alt1 1.2s total 66.6 min
+[b2:B] 1981a85eb4ba5001|original 1.5s total 66.6 min
+[b2:B] cc71f3639268516f|alt1 1.4s total 66.6 min
+[b2:B] 5bbd26efb97658ec|alt4 1.5s total 66.7 min
+[b2:B] 9cf612ff6e4f5bd5|alt2 1.5s total 66.7 min
+[b2:B] f064ef8fafcf5528|alt0 1.5s total 66.7 min
+[b2:B] 692bea45f3de5fd0|alt1 1.5s total 66.7 min
+[b2:B] eeae24d38eb15e0a|alt3 1.0s total 66.8 min
+[b2:B] 5bb280e3aebe5a67|alt2 1.4s total 66.8 min
+[b2:B] 58e19769184c5f43|alt5 0.7s total 66.8 min
+[b2:B] 1f55063084fd593c|alt3 1.5s total 66.8 min
+[b2:B] b08965aff8165bec|alt0 1.2s total 66.8 min
+[b2:B] 0577532eba755552|alt1 1.4s total 66.9 min
+[b2:B] 6e10835f184d5921|alt0 0.7s total 66.9 min
+[b2:B] 92838ad73bf95b3a|alt4 1.5s total 66.9 min
+[b2:B] 61a9157ac995542c|alt6 1.2s total 66.9 min
+[b2:B] fb8df4568d585efa|alt0 1.4s total 66.9 min
+[b2:B] 427ee2e0d1c05699|alt0 1.4s total 67.0 min
+[b2:B] c1686b2e1a4e5149|alt1 0.7s total 67.0 min
+[b2:B] 458fa5236b795941|alt6 1.2s total 67.0 min
+[b2:B] fdcbf84507845615|alt3 1.4s total 67.0 min
+[b2:B] 97b9989fa3675cab|original 1.0s total 67.0 min
+[b2:B] 0c437f9a102c57f4|alt1 1.5s total 67.1 min
+[b2:B] 19f3e77fcd3353c5|alt3 1.5s total 67.1 min
+[b2:B] 10209c0e885f5162|alt1 1.4s total 67.1 min
+[b2:B] f289e368449b517b|alt4 1.4s total 67.1 min
+[b2:B] e166284508e554fa|alt0 1.5s total 67.2 min
+[b2:B] 36be99da12575896|alt3 1.6s total 67.2 min
+[b2:B] d443368fa4615242|alt0 1.5s total 67.2 min
+[b2:B] 24acfb08c5ef55f5|original 1.4s total 67.2 min
+[b2:B] 46aea2dcb1485353|alt4 1.5s total 67.3 min
+[b2:B] 33ee6f1f594d50ca|alt5 1.2s total 67.3 min
+[b2:B] 76cf7bb2e9625482|alt2 1.2s total 67.3 min
+[b2:B] 127b9e23f1805690|alt5 0.7s total 67.3 min
+[b2:B] 7ff27f83a8995932|alt0 1.2s total 67.3 min
+[b2:B] 4631b80af7fb5f2f|alt1 1.5s total 67.4 min
+[b2:B] d3cbad95b20b5125|alt1 1.2s total 67.4 min
+[b2:B] 5f70e91ff9d250f5|alt0 1.5s total 67.4 min
+[b2:B] 692bea45f3de5fd0|alt3 1.5s total 67.4 min
+[b2:B] 029a9572e05a5914|alt1 1.4s total 67.5 min
+[b2:B] c1686b2e1a4e5149|alt2 0.7s total 67.5 min
+[b2:B] 581a74871330567f|alt1 1.5s total 67.5 min
+[b2:B] b27bfe84cc545daa|alt3 1.4s total 67.5 min
+[b2:B] c69d4cbd79ea52a0|alt6 0.7s total 67.5 min
+[b2:B] c87fe1d7a3bd57cb|alt0 1.4s total 67.5 min
+[b2:B] 4d50c69f430850a0|alt1 1.2s total 67.6 min
+[b2:B] 276396e455bb57b5|alt1 1.4s total 67.6 min
+[b2:B] c7c04f1581855ac4|alt1 1.5s total 67.6 min
+[b2:B] e59b32f05f5e54f0|original 1.2s total 67.6 min
+[b2:B] e166284508e554fa|alt3 1.5s total 67.7 min
+[b2:B] e59b32f05f5e54f0|alt6 1.2s total 67.7 min
+[b2:B] 57a77b8c90465bc4|original 1.4s total 67.7 min
+[b2:B] eea52ed765aa5977|alt1 0.7s total 67.7 min
+[b2:B] ba02d873678c5cf9|alt0 1.4s total 67.7 min
+[b2:B] 5c4f8e6a644258d3|alt1 1.4s total 67.8 min
+[b2:B] 5f70e91ff9d250f5|alt3 1.5s total 67.8 min
+[b2:B] 34cc387cf0335f28|alt1 1.4s total 67.8 min
+[b2:B] b7ee1af184835990|original 1.4s total 67.8 min
+[b2:B] 33ee6f1f594d50ca|original 1.2s total 67.9 min
+[b2:B] 8abc81ff3045543b|original 1.5s total 67.9 min
+[b2:B] 92838ad73bf95b3a|alt2 1.5s total 67.9 min
+[b2:B] c5b4ff1be8bb5113|alt0 1.4s total 67.9 min
+[b2:B] 19c8d441cb445d87|alt1 1.2s total 67.9 min
+[b2:B] 10ae805f0be95c1f|alt3 1.4s total 68.0 min
+[b2:B] 79bdb6b499245d65|alt2 1.4s total 68.0 min
+[b2:B] c87001c4251e559a|alt4 1.4s total 68.0 min
+[b2:B] a8a72fb28dc6592b|alt4 1.2s total 68.0 min
+[b2:B] 649b2096884957a9|alt6 1.5s total 68.1 min
+[b2:B] f776577c7428592b|original 1.5s total 68.1 min
+[b2:B] f66694a622cf5c99|alt5 0.7s total 68.1 min
+[b2:B] 029a9572e05a5914|alt2 1.4s total 68.1 min
+[b2:B] 58e19769184c5f43|alt1 0.7s total 68.1 min
+[b2:B] a8a72fb28dc6592b|original 1.2s total 68.2 min
+[b2:B] e23fdb8f34b35d20|alt3 1.2s total 68.2 min
+[b2:B] 00eb3a4e0f8052e9|alt0 1.0s total 68.2 min
+[b2:B] 622867ce25805447|alt1 1.4s total 68.2 min
+[b2:B] 73939fc4dcdf57c4|original 1.5s total 68.2 min
+[b2:B] 85028441255156b3|alt2 1.5s total 68.3 min
+[b2:B] eea52ed765aa5977|alt3 0.7s total 68.3 min
+[b2:B] 2d2a1f08e4895258|original 1.4s total 68.3 min
+[b2:B] 8abc81ff3045543b|alt2 1.5s total 68.3 min
+[b2:B] 0561ac957ffc5c4f|alt2 1.5s total 68.3 min
+[b2:B] 7135ce0e5eea5907|alt1 1.5s total 68.4 min
+[b2:B] 5bbd26efb97658ec|alt2 1.5s total 68.4 min
+[b2:B] 62667ead92a35fbd|alt3 1.2s total 68.4 min
+[b2:B] 8e785a7a6df95636|alt1 1.5s total 68.4 min
+[b2:B] 67dff3c1993f57a5|original 1.2s total 68.5 min
+[b2:B] 215c38293c335e25|alt1 1.4s total 68.5 min
+[b2:B] 76cf7bb2e9625482|original 1.2s total 68.5 min
+[b2:B] 7ff27f83a8995932|original 1.2s total 68.5 min
+[b2:B] 37c15bc4d99a5365|alt3 1.5s total 68.6 min
+[b2:B] be7331d3f05e5d16|alt0 1.5s total 68.6 min
+[b2:B] 97eca45f93285d17|alt5 1.0s total 68.6 min
+[b2:B] 39147f08f4645365|original 1.0s total 68.6 min
+[b2:B] ba02d873678c5cf9|alt4 1.4s total 68.6 min
+[b2:B] 34048f1ce51452d0|original 1.5s total 68.7 min
+[b2:B] 4f21925f1a7c5983|alt4 1.4s total 68.7 min
+[b2:B] 0924309bada05ea6|alt4 1.2s total 68.7 min
+[b2:B] 19c8d441cb445d87|alt0 1.2s total 68.7 min
+[b2:B] 4f21925f1a7c5983|alt0 1.4s total 68.7 min
+[b2:B] dfa06e9592e65896|alt5 1.4s total 68.8 min
+[b2:B] 19f3e77fcd3353c5|alt2 1.5s total 68.8 min
+[b2:B] 4749b2486da65268|alt1 1.4s total 68.8 min
+[b2:B] ea57966419605846|alt0 1.4s total 68.8 min
+[b2:B] 9e76a394983a59b6|alt1 1.4s total 68.9 min
+[b2:B] 69ddc43178e9572a|alt3 1.2s total 68.9 min
+[b2:B] 4143d1c692f95b56|alt0 1.0s total 68.9 min
+[b2:B] 1ded576bc1325cae|alt1 1.0s total 68.9 min
+[b2:B] cc71f3639268516f|alt0 1.4s total 68.9 min
+[b2:B] 00c489998dd4555c|original 1.0s total 69.0 min
+[b2:B] 2d2a1f08e4895258|alt6 1.4s total 69.0 min
+[b2:B] 92838ad73bf95b3a|alt6 1.5s total 69.0 min
+[b2:B] be7331d3f05e5d16|alt5 1.5s total 69.0 min
+[b2:B] 34048f1ce51452d0|alt3 1.5s total 69.1 min
+[b2:B] 3e7bec3b1c4359b6|alt2 1.4s total 69.1 min
+[b2:B] 0561ac957ffc5c4f|original 1.5s total 69.1 min
+[b2:B] 00eb3a4e0f8052e9|alt3 1.0s total 69.1 min
+[b2:B] 97eca45f93285d17|alt4 1.0s total 69.1 min
+[b2:B] 3c24bf88e9b150dd|alt0 1.4s total 69.2 min
+[b2:B] d4358e3962b758ce|alt3 1.4s total 69.2 min
+[b2:B] 015011d2b73158b7|alt0 1.2s total 69.2 min
+[b2:B] ab8034dd8873524b|original 1.4s total 69.2 min
+[b2:B] 984c4c329ba05bd2|alt4 1.0s total 69.2 min
+[b2:B] f3572fcbcd285f1e|alt0 1.2s total 69.3 min
+[b2:B] eea52ed765aa5977|alt2 0.7s total 69.3 min
+[b2:B] c2466f5ae7a25ad8|alt4 1.2s total 69.3 min
+[b2:B] 976107b532bb5301|alt0 1.4s total 69.3 min
+[b2:B] 5f70e91ff9d250f5|alt4 1.5s total 69.3 min
+[b2:B] e7116a2035205221|alt2 1.5s total 69.4 min
+[b2:B] 0c3c4cd553475d3a|alt4 1.2s total 69.4 min
+[b2:B] 7b7cac50a37a5c24|alt3 1.2s total 69.4 min
+[b2:B] f53ee13c32ac5bec|alt4 1.4s total 69.4 min
+[b2:B] 28a0cdbbc1e55291|alt1 1.4s total 69.5 min
+[b2:B] 02bfb6340c185b97|alt5 1.0s total 69.5 min
+[b2:B] fb8df4568d585efa|alt5 1.4s total 69.5 min
+[b2:B] ea57966419605846|alt2 1.4s total 69.5 min
+[b2:B] 7316c116f05d57a5|alt6 1.2s total 69.5 min
+[b2:B] 19f3e77fcd3353c5|original 1.5s total 69.6 min
+[b2:B] cc71f3639268516f|alt5 1.4s total 69.6 min
+[b2:B] 67dff3c1993f57a5|alt7 1.2s total 69.6 min
+[b2:B] de7b87d6624754cf|original 1.5s total 69.6 min
+[b2:B] 649b2096884957a9|original 1.5s total 69.7 min
+[b2:B] dfaaa711e0a557ba|alt4 1.4s total 69.7 min
+[b2:B] 93d4ab80a0cf5f01|alt3 1.5s total 69.7 min
+[b2:B] 263367576c285a2a|alt1 0.7s total 69.7 min
+[b2:B] 2e405d459d8b5d9c|alt1 1.5s total 69.7 min
+[b2:B] ade979d99d51517f|alt1 1.2s total 69.8 min
+[b2:B] c4fd814210875a8e|original 1.2s total 69.8 min
+[b2:B] 39147f08f4645365|alt4 1.0s total 69.8 min
+[b2:B] 078f05d9e9c05230|alt1 1.5s total 69.8 min
+[b2:B] de7b87d6624754cf|alt5 1.5s total 69.9 min
+[b2:B] 427ee2e0d1c05699|alt2 1.4s total 69.9 min
+[b2:B] c87001c4251e559a|alt5 1.4s total 69.9 min
+[b2:B] f53ee13c32ac5bec|alt5 1.4s total 69.9 min
+[b2:B] 67dff3c1993f57a5|alt0 1.2s total 69.9 min
+[b2:B] 1212ba4b68e95583|alt3 1.4s total 70.0 min
+[b2:B] 2f5ae1e4cf9d59fa|original 1.4s total 70.0 min
+[b2:B] 97eca45f93285d17|alt0 1.0s total 70.0 min
+[b2:B] 6233d1b3e62a5772|alt2 1.5s total 70.0 min
+[b2:B] 2d2a1f08e4895258|alt0 1.4s total 70.1 min
+[b2:B] ade979d99d51517f|alt3 1.2s total 70.1 min
+[b2:B] 7cdcf11e211759cf|alt0 1.0s total 70.1 min
+[b2:B] 93d4ab80a0cf5f01|alt0 1.5s total 70.1 min
+[b2:B] 54b1308d42085066|alt2 1.5s total 70.1 min
+[b2:B] ba02d873678c5cf9|alt3 1.4s total 70.2 min
+[b2:B] 5bb280e3aebe5a67|alt1 1.4s total 70.2 min
+[b2:B] 7316c116f05d57a5|alt1 1.2s total 70.2 min
+[b2:B] 1db38f4b73ac5b62|original 1.4s total 70.2 min
+[b2:B] 984c4c329ba05bd2|alt5 1.0s total 70.2 min
+[b2:B] fdcbf84507845615|alt5 1.4s total 70.3 min
+[b2:B] 984c4c329ba05bd2|alt2 1.0s total 70.3 min
+[b2:B] 1212ba4b68e95583|alt2 1.4s total 70.3 min
+[b2:B] 0561ac957ffc5c4f|alt5 1.5s total 70.3 min
+[b2:B] 4f21925f1a7c5983|alt3 1.4s total 70.4 min
+[b2:B] ade979d99d51517f|alt4 1.2s total 70.4 min
+[b2:B] 649b2096884957a9|alt4 1.5s total 70.4 min
+[b2:B] 976107b532bb5301|alt4 1.4s total 70.4 min
+[b2:B] f776577c7428592b|alt1 1.5s total 70.5 min
+[b2:B] 69df428fe853580e|alt2 1.5s total 70.5 min
+[b2:B] 1b4499d988b052ce|alt0 1.4s total 70.5 min
+[b2:B] 58e19769184c5f43|original 0.7s total 70.5 min
+[b2:B] e59b32f05f5e54f0|alt2 1.2s total 70.5 min
+[b2:B] 5bbd26efb97658ec|alt0 1.5s total 70.6 min
+[b2:B] 4d2fceb0b30f59cd|alt6 1.2s total 70.6 min
+[b2:B] 37c15bc4d99a5365|alt1 1.5s total 70.6 min
+[b2:B] 80793d56acc15d48|alt2 1.4s total 70.6 min
+[b2:B] 029a9572e05a5914|alt3 1.4s total 70.6 min
+[b2:B] 649b2096884957a9|alt5 1.5s total 70.7 min
+[b2:B] e0e1551b09f15a74|alt3 1.4s total 70.7 min
+[b2:B] f064ef8fafcf5528|alt5 1.5s total 70.7 min
+[b2:B] 6b258d7ddf7d53f3|alt5 1.5s total 70.7 min
+[b2:B] 263367576c285a2a|alt3 0.7s total 70.8 min
+[b2:B] ab7d0c4a928e5ec9|alt2 1.2s total 70.8 min
+[b2:B] 54b1308d42085066|original 1.5s total 70.8 min
+[b2:B] 93d4ab80a0cf5f01|original 1.5s total 70.8 min
+[b2:B] 24acfb08c5ef55f5|alt1 1.4s total 70.9 min
+[b2:B] f4af3907bb665bf7|alt2 1.4s total 70.9 min
+[b2:B] b7ee1af184835990|alt1 1.4s total 70.9 min
+[b2:B] 54b1308d42085066|alt3 1.5s total 70.9 min
+[b2:B] 46aea2dcb1485353|alt2 1.5s total 71.0 min
+[b2:B] 7cdcf11e211759cf|original 1.0s total 71.0 min
+[b2:B] 2ee8d10b988c58b2|alt1 1.4s total 71.0 min
+[b2:B] 6233d1b3e62a5772|alt0 1.5s total 71.0 min
+[b2:B] c2466f5ae7a25ad8|alt1 1.2s total 71.0 min
+[b2:B] be7331d3f05e5d16|alt1 1.5s total 71.1 min
+[b2:B] 2743a2f96269577c|alt5 1.4s total 71.1 min
+[b2:B] 85028441255156b3|alt5 1.5s total 71.1 min
+[b2:B] f1940c1eca9857cb|original 1.2s total 71.1 min
+[b2:B] c7c04f1581855ac4|alt2 1.5s total 71.2 min
+[b2:B] 1dc437ce152e55fa|alt2 1.0s total 71.2 min
+[b2:B] 584a741051cd523f|alt3 1.5s total 71.2 min
+[b2:B] 887e4d57da835b12|alt2 1.4s total 71.2 min
+[b2:B] 10209c0e885f5162|alt7 1.4s total 71.2 min
+[b2:B] 118fa9fa499e5670|alt4 1.2s total 71.3 min
+[b2:B] 57a77b8c90465bc4|alt4 1.4s total 71.3 min
+[b2:B] 2e0a31d833765412|alt3 1.4s total 71.3 min
+[b2:B] 0924309bada05ea6|alt0 1.2s total 71.3 min
+[b2:B] 427ee2e0d1c05699|original 1.4s total 71.4 min
+[b2:B] 46aea2dcb1485353|alt1 1.5s total 71.4 min
+[b2:B] 4342cb36fbba580b|alt2 1.2s total 71.4 min
+[b2:B] e7116a2035205221|alt3 1.5s total 71.4 min
+[b2:B] 622867ce25805447|alt3 1.4s total 71.4 min
+[b2:B] 50eebed7d9655bb5|alt7 0.7s total 71.5 min
+[b2:B] 37c15bc4d99a5365|original 1.5s total 71.5 min
+[b2:B] 69ddc43178e9572a|alt5 1.2s total 71.5 min
+[b2:B] a8a72fb28dc6592b|alt0 1.2s total 71.5 min
+[b2:B] 1f55063084fd593c|alt4 1.5s total 71.5 min
+[b2:B] 5bb280e3aebe5a67|alt3 1.4s total 71.6 min
+[b2:B] 8f5610a77c3257f9|alt2 1.4s total 71.6 min
+[b2:B] 581a74871330567f|alt0 1.5s total 71.6 min
+[b2:B] 8e785a7a6df95636|alt0 1.5s total 71.6 min
+[b2:B] e59b32f05f5e54f0|alt1 1.2s total 71.7 min
+[b2:B] d44d7aacab755892|original 0.7s total 71.7 min
+[b2:B] 2ee8d10b988c58b2|alt4 1.4s total 71.7 min
+[b2:B] 34048f1ce51452d0|alt0 1.5s total 71.7 min
+[b2:B] 67dff3c1993f57a5|alt1 1.2s total 71.7 min
+[b2:B] 7ff27f83a8995932|alt1 1.2s total 71.8 min
+[b2:B] 078f05d9e9c05230|alt4 1.5s total 71.8 min
+[b2:B] 64185eb977005752|original 1.4s total 71.8 min
+[b2:B] f4af3907bb665bf7|alt4 1.4s total 71.8 min
+[b2:B] 4631b80af7fb5f2f|alt3 1.5s total 71.9 min
+[b2:B] 1dc437ce152e55fa|alt3 1.0s total 71.9 min
+[b2:B] 10209c0e885f5162|alt6 1.4s total 71.9 min
+[b2:B] b7ee1af184835990|alt2 1.4s total 71.9 min
+[b2:B] 9fe3ed9455355edb|alt1 1.4s total 71.9 min
+[b2:B] e23fdb8f34b35d20|original 1.2s total 72.0 min
+[b2:B] 276396e455bb57b5|original 1.4s total 72.0 min
+[b2:B] 1d4b518f1b175184|alt4 1.5s total 72.0 min
+[b2:B] 6561633171e75bb6|alt0 1.0s total 72.0 min
+[b2:B] 33ee6f1f594d50ca|alt2 1.2s total 72.1 min
+[b2:B] 9c768fba2b4c5d19|alt4 0.7s total 72.1 min
+[b2:B] 2743a2f96269577c|alt1 1.4s total 72.1 min
+[b2:B] 73939fc4dcdf57c4|alt5 1.5s total 72.1 min
+[b2:B] 3e7bec3b1c4359b6|original 1.4s total 72.1 min
+[b2:B] 584a741051cd523f|alt4 1.5s total 72.2 min
+[b2:B] 28a0cdbbc1e55291|alt0 1.4s total 72.2 min
+[b2:B] cac5deee337257e1|alt1 1.2s total 72.2 min
+[b2:B] 77daa055e4ed5ae2|alt1 1.4s total 72.2 min
+[b2:B] 4d2fceb0b30f59cd|alt2 1.2s total 72.2 min
+[b2:B] 0c437f9a102c57f4|alt3 1.5s total 72.3 min
+[b2:B] ade979d99d51517f|alt0 1.2s total 72.3 min
+[b2:B] 8d5d769b1f1e5802|alt2 1.4s total 72.3 min
+[b2:B] 5c4f8e6a644258d3|alt0 1.4s total 72.3 min
+[b2:B] f3512ae175b45844|alt1 0.7s total 72.3 min
+[b2:B] f3572fcbcd285f1e|alt6 1.2s total 72.4 min
+[b2:B] f064ef8fafcf5528|alt3 1.5s total 72.4 min
+[b2:B] 2e0a31d833765412|original 1.4s total 72.4 min
+[b2:B] 752255614d7f569a|alt1 1.4s total 72.4 min
+[b2:B] 491dce963f7f5b57|alt5 1.5s total 72.5 min
+[b2:B] 85028441255156b3|alt4 1.5s total 72.5 min
+[b2:B] dfb58c90fd2e52fa|alt3 1.5s total 72.5 min
+[b2:B] b98d8c3330625df2|alt0 1.4s total 72.5 min
+[b2:B] 10209c0e885f5162|alt3 1.4s total 72.6 min
+[b2:B] fdcbf84507845615|original 1.4s total 72.6 min
+[b2:B] 2d2a1f08e4895258|alt4 1.4s total 72.6 min
+[b2:B] 50eebed7d9655bb5|alt0 0.7s total 72.6 min
+[b2:B] 1ded576bc1325cae|alt3 1.0s total 72.6 min
+[b2:B] 2f5ae1e4cf9d59fa|alt5 1.4s total 72.7 min
+[b2:B] c6e19ffa3c34551c|alt3 1.5s total 72.7 min
+[b2:B] 61a9157ac995542c|alt1 1.2s total 72.7 min
+[b2:B] 5bb280e3aebe5a67|alt5 1.4s total 72.7 min
+[b2:B] 10db4b6fe64b5c10|alt4 1.2s total 72.7 min
+[b2:B] 34048f1ce51452d0|alt2 1.5s total 72.8 min
+[b2:B] 10db4b6fe64b5c10|alt1 1.2s total 72.8 min
+[b2:B] ade979d99d51517f|alt6 1.2s total 72.8 min
+[b2:B] 69ddc43178e9572a|original 1.2s total 72.8 min
+[b2:B] 50eebed7d9655bb5|alt3 0.7s total 72.8 min
+[b2:B] 1db38f4b73ac5b62|alt1 1.4s total 72.9 min
+[b2:B] f776577c7428592b|alt2 1.5s total 72.9 min
+[b2:B] 80793d56acc15d48|alt3 1.4s total 72.9 min
+[b2:B] 458fa5236b795941|alt1 1.2s total 72.9 min
+[b2:B] 3e7bec3b1c4359b6|alt0 1.4s total 73.0 min
+[b2:B] 9cf612ff6e4f5bd5|alt5 1.5s total 73.0 min
+[b2:B] 26ffff4876f75eed|alt3 1.4s total 73.0 min
+[b2:B] 8de4253bc36f54df|alt5 1.0s total 73.0 min
+[b2:B] 6561633171e75bb6|alt4 1.0s total 73.0 min
+[b2:B] a64a3e4f2048576d|alt0 1.0s total 73.1 min
+[b2:B] ea57966419605846|original 1.4s total 73.1 min
+[b2:B] 458fa5236b795941|alt3 1.2s total 73.1 min
+[b2:B] 67dff3c1993f57a5|alt3 1.2s total 73.1 min
+[b2:B] 5bbd26efb97658ec|original 1.5s total 73.1 min
+[b2:B] 19f3e77fcd3353c5|alt4 1.5s total 73.2 min
+[b2:B] f66694a622cf5c99|alt3 0.7s total 73.2 min
+[b2:B] 29d3fc42d08d57d2|alt3 0.7s total 73.2 min
+[b2:B] eadc0f19b54352ae|alt1 1.4s total 73.2 min
+[b2:B] 34eb9be2f88a5234|alt0 1.4s total 73.2 min
+[b2:B] 46aea2dcb1485353|alt5 1.5s total 73.3 min
+[b2:B] 5bbd26efb97658ec|alt6 1.5s total 73.3 min
+[b2:B] 14d53eb06a7d582a|alt2 1.5s total 73.3 min
+[b2:B] 1d4b518f1b175184|alt3 1.5s total 73.3 min
+[b2:B] d3cbad95b20b5125|alt2 1.2s total 73.4 min
+[b2:B] 97b9989fa3675cab|alt0 1.0s total 73.4 min
+[b2:B] 8eae3eab30c95228|alt4 1.4s total 73.4 min
+[b2:B] 692bea45f3de5fd0|alt4 1.5s total 73.4 min
+[b2:B] 026bb114391d5b81|alt4 1.2s total 73.4 min
+[b2:B] b08965aff8165bec|alt1 1.2s total 73.5 min
+[b2:B] 5bb280e3aebe5a67|alt0 1.4s total 73.5 min
+[b2:B] d4358e3962b758ce|alt1 1.4s total 73.5 min
+[b2:B] 692bea45f3de5fd0|alt7 1.5s total 73.5 min
+[b2:B] c1686b2e1a4e5149|alt0 0.7s total 73.6 min
+[b2:B] cc71f3639268516f|alt2 1.4s total 73.6 min
+[b2:B] a8a72fb28dc6592b|alt3 1.2s total 73.6 min
+[b2:B] 1db38f4b73ac5b62|alt0 1.4s total 73.6 min
+[b2:B] 3c99fcb4ef8c5382|original 1.2s total 73.6 min
+[b2:B] 3461796610c15a0e|alt5 1.4s total 73.7 min
+[b2:B] 33ee6f1f594d50ca|alt6 1.2s total 73.7 min
+[b2:B] 484bac10bd295459|alt4 1.5s total 73.7 min
+[b2:B] d44d7aacab755892|alt2 0.7s total 73.7 min
+[b2:B] c2466f5ae7a25ad8|alt2 1.2s total 73.7 min
+[b2:B] 330ca2e9aa935a3a|alt2 1.2s total 73.8 min
+[b2:B] 566bd5e6d09153e0|alt4 1.4s total 73.8 min
+[b2:B] 6e10835f184d5921|alt1 0.7s total 73.8 min
+[b2:B] 4749b2486da65268|alt5 1.4s total 73.8 min
+[b2:B] c87001c4251e559a|alt0 1.4s total 73.8 min
+[b2:B] 62667ead92a35fbd|original 1.2s total 73.9 min
+[b2:B] 80793d56acc15d48|alt4 1.4s total 73.9 min
+[b2:B] 0c437f9a102c57f4|alt2 1.5s total 73.9 min
+[b2:B] 9fe3ed9455355edb|alt4 1.4s total 73.9 min
+[b2:B] 015011d2b73158b7|alt1 1.2s total 73.9 min
+[b2:B] 263367576c285a2a|alt2 0.7s total 74.0 min
+[b2:B] 20d3a5f5b9e6549f|alt0 0.7s total 74.0 min
+[b2:B] 0577532eba755552|alt4 1.4s total 74.0 min
+[b2:B] 10209c0e885f5162|original 1.4s total 74.0 min
+[b2:B] dfb58c90fd2e52fa|alt1 1.5s total 74.0 min
+[b2:B] 2ee8d10b988c58b2|alt2 1.4s total 74.1 min
+[b2:B] f4af3907bb665bf7|alt1 1.4s total 74.1 min
+[b2:B] b27bfe84cc545daa|alt0 1.4s total 74.1 min
+[b2:B] c87fe1d7a3bd57cb|alt4 1.4s total 74.1 min
+[b2:B] 3c24bf88e9b150dd|alt3 1.4s total 74.2 min
+[b2:B] 078f05d9e9c05230|alt2 1.5s total 74.2 min
+[b2:B] 752255614d7f569a|alt0 1.4s total 74.2 min
+[b2:B] 1212ba4b68e95583|alt5 1.4s total 74.2 min
+[b2:B] 26af85cbc2d15e05|alt1 1.4s total 74.2 min
+[b2:B] eadc0f19b54352ae|alt2 1.4s total 74.3 min
+[b2:B] 9fe3ed9455355edb|original 1.4s total 74.3 min
+[b2:B] a1ff2db262ab5db7|alt1 1.0s total 74.3 min
+[b2:B] 692bea45f3de5fd0|original 1.5s total 74.3 min
+[b2:B] a64a3e4f2048576d|alt4 1.0s total 74.4 min
+[b2:B] 5bbd26efb97658ec|alt1 1.5s total 74.4 min
+[b2:B] b27bfe84cc545daa|alt4 1.4s total 74.4 min
+[b2:B] 6561633171e75bb6|alt2 1.0s total 74.4 min
+[b2:B] 8abc81ff3045543b|alt3 1.5s total 74.4 min
+[b2:B] ab7d0c4a928e5ec9|alt4 1.2s total 74.5 min
+[b2:B] 2743a2f96269577c|alt2 1.4s total 74.5 min
+[b2:B] 0561ac957ffc5c4f|alt4 1.6s total 74.5 min
+[b2:B] 00eb3a4e0f8052e9|alt4 1.0s total 74.5 min
+[b2:B] 427ee2e0d1c05699|alt1 1.4s total 74.6 min
+[b2:B] 2e405d459d8b5d9c|original 1.5s total 74.6 min
+[b2:B] 8de4253bc36f54df|original 1.0s total 74.6 min
+[b2:B] 015011d2b73158b7|original 1.2s total 74.6 min
+[b2:B] a627522c77eb526c|original 1.5s total 74.6 min
+[b2:B] 34eb9be2f88a5234|original 1.4s total 74.7 min
+[b2:B] 0577532eba755552|alt0 1.4s total 74.7 min
+[b2:B] 458fa5236b795941|alt7 1.2s total 74.7 min
+[b2:B] e0094ac69a8955fb|alt5 1.2s total 74.7 min
+[b2:B] 1ded576bc1325cae|alt0 1.0s total 74.7 min
+[b2:B] 0561ac957ffc5c4f|alt3 1.5s total 74.8 min
+[b2:B] eea52ed765aa5977|original 0.7s total 74.8 min
+[b2:B] 814b5e08c20e57af|alt4 0.7s total 74.8 min
+[b2:B] 1d4b518f1b175184|original 1.5s total 74.8 min
+[b2:B] b3c1a2ac292d5e3f|alt2 1.5s total 74.8 min
+[b2:B] 28a0cdbbc1e55291|alt2 1.4s total 74.9 min
+[b2:B] 1981a85eb4ba5001|alt1 1.5s total 74.9 min
+[b2:B] 4d50c69f430850a0|original 1.2s total 74.9 min
+[b2:B] 118fa9fa499e5670|alt3 1.2s total 74.9 min
+[b2:B] 484bac10bd295459|original 1.5s total 75.0 min
+[b2:B] 037b976caae85af5|alt4 1.2s total 75.0 min
+[b2:B] 1f55063084fd593c|alt0 1.5s total 75.0 min
+[b2:B] 80793d56acc15d48|alt0 1.4s total 75.0 min
+[b2:B] 9e76a394983a59b6|alt2 1.4s total 75.0 min
+[b2:B] b98d8c3330625df2|alt2 1.4s total 75.1 min
+[b2:B] c87fe1d7a3bd57cb|original 1.4s total 75.1 min
+[b2:B] 54b1308d42085066|alt0 1.5s total 75.1 min
+[b2:B] 078f05d9e9c05230|original 1.5s total 75.1 min
+[b2:B] 07b814bfc2fb565d|alt2 1.4s total 75.2 min
+[b2:B] aa4ec42ec7425de0|alt0 1.5s total 75.2 min
+[b2:B] 5e48f684248053bd|alt2 1.2s total 75.2 min
+[b2:B] 10db4b6fe64b5c10|alt0 1.2s total 75.2 min
+[b2:B] 00eb3a4e0f8052e9|alt2 1.0s total 75.3 min
+[b2:B] cc71f3639268516f|alt6 1.4s total 75.3 min
+[b2:B] 215c38293c335e25|alt4 1.4s total 75.3 min
+[b2:B] 3461796610c15a0e|alt4 1.4s total 75.3 min
+[b2:B] 1b4499d988b052ce|alt3 1.4s total 75.3 min
+[b2:B] 93d4ab80a0cf5f01|alt1 1.5s total 75.4 min
+[b2:B] 984c4c329ba05bd2|alt1 1.0s total 75.4 min
+[b2:B] a8a72fb28dc6592b|alt2 1.2s total 75.4 min
+[b2:B] 958677976f9c5b0a|alt3 0.7s total 75.4 min
+[b2:B] f776577c7428592b|alt7 1.5s total 75.4 min
+[b2:B] e0094ac69a8955fb|alt2 1.2s total 75.5 min
+[b2:B] e6ff81ab83355450|alt4 1.5s total 75.5 min
+[b2:B] 0924309bada05ea6|alt2 1.2s total 75.5 min
+[b2:B] 50eebed7d9655bb5|alt2 0.7s total 75.5 min
+[b2:B] 127b9e23f1805690|alt6 0.7s total 75.5 min
+[b2:B] 29d3fc42d08d57d2|original 0.7s total 75.5 min
+[b2:B] e3ddabf456b155a9|alt1 1.5s total 75.6 min
+[b2:B] 22b526a96ad65c88|original 1.4s total 75.6 min
+[b2:B] 9fe3ed9455355edb|alt5 1.4s total 75.6 min
+[b2:B] dfa06e9592e65896|original 1.4s total 75.6 min
+[b2:B] 10ae805f0be95c1f|alt0 1.4s total 75.7 min
+[b2:B] 7cdcf11e211759cf|alt1 1.0s total 75.7 min
+[b2:B] 7ff27f83a8995932|alt5 1.2s total 75.7 min
+[b2:B] 752255614d7f569a|original 1.4s total 75.7 min
+[b2:B] c69d4cbd79ea52a0|alt1 0.7s total 75.7 min
+[b2:B] 9cf612ff6e4f5bd5|alt3 1.5s total 75.8 min
+[b2:B] 52d3f15d6ca75701|alt3 1.5s total 75.8 min
+[b2:B] 0924309bada05ea6|alt3 1.2s total 75.8 min
+[b2:B] 52d3f15d6ca75701|alt2 1.5s total 75.8 min
+[b2:B] 39dba8a42eaa5ea0|alt0 1.0s total 75.8 min
+[b2:B] 8de4253bc36f54df|alt2 1.0s total 75.9 min
+[b2:B] 814b5e08c20e57af|alt1 0.7s total 75.9 min
+[b2:B] 0202782270ab5a62|alt0 1.2s total 75.9 min
+[b2:B] b08965aff8165bec|alt4 1.2s total 75.9 min
+[b2:B] 9cf612ff6e4f5bd5|original 1.5s total 75.9 min
+[b2:B] e0094ac69a8955fb|alt3 1.2s total 76.0 min
+[b2:B] a7ce5a625a525b45|alt0 1.4s total 76.0 min
+[b2:B] 7b7cac50a37a5c24|alt0 1.2s total 76.0 min
+[b2:B] 2d2a1f08e4895258|alt3 1.4s total 76.0 min
+[b2:B] 584a741051cd523f|original 1.5s total 76.0 min
+[b2:B] 0202782270ab5a62|original 1.2s total 76.1 min
+[b2:B] 3c24bf88e9b150dd|alt1 1.4s total 76.1 min
+[b2:B] 61a9157ac995542c|alt0 1.2s total 76.1 min
+[b2:B] 5c4f8e6a644258d3|alt3 1.4s total 76.1 min
+[b2:B] 7ff27f83a8995932|alt2 1.2s total 76.2 min
+[b2:B] d443368fa4615242|alt3 1.5s total 76.2 min
+[b2:B] 10209c0e885f5162|alt2 1.4s total 76.2 min
+[b2:B] d5ec09025a1e5a0d|alt2 1.5s total 76.2 min
+[b2:B] dfa06e9592e65896|alt1 1.4s total 76.3 min
+[b2:B] e0e1551b09f15a74|alt2 1.4s total 76.3 min
+[b2:B] 2743a2f96269577c|original 1.4s total 76.3 min
+[b2:B] 3c99fcb4ef8c5382|alt0 1.2s total 76.3 min
+[b2:B] 8abc81ff3045543b|alt0 1.5s total 76.3 min
+[b2:B] 2d2a1f08e4895258|alt1 1.4s total 76.4 min
+[b2:B] e6ff81ab83355450|alt2 1.5s total 76.4 min
+[b2:B] 4f21925f1a7c5983|alt2 1.4s total 76.4 min
+[b2:B] 7b7cac50a37a5c24|alt1 1.2s total 76.4 min
+[b2:B] a1ff2db262ab5db7|alt3 1.0s total 76.5 min
+[b2:B] 00eb3a4e0f8052e9|original 1.0s total 76.5 min
+[b2:B] 4749b2486da65268|alt2 1.4s total 76.5 min
+[b2:B] f3572fcbcd285f1e|alt7 1.2s total 76.5 min
+[b2:B] 118fa9fa499e5670|alt0 1.2s total 76.5 min
+[b2:B] 6233d1b3e62a5772|alt5 1.5s total 76.6 min
+[b2:B] 150c33d5cd005743|alt1 1.4s total 76.6 min
+[b2:B] dc9bf97cb9e151ad|alt1 1.4s total 76.6 min
+[b2:B] 92838ad73bf95b3a|alt3 1.5s total 76.6 min
+[b2:B] 2d2a1f08e4895258|alt7 1.4s total 76.6 min
+[b2:B] 36be99da12575896|alt1 1.5s total 76.7 min
+[b2:B] 029a9572e05a5914|alt4 1.4s total 76.7 min
+[b2:B] dc9bf97cb9e151ad|alt5 1.4s total 76.7 min
+[b2:B] c5b4ff1be8bb5113|original 1.4s total 76.7 min
+[b2:B] a9152eadc70058ba|original 1.2s total 76.8 min
+[b2:B] 22b526a96ad65c88|alt1 1.4s total 76.8 min
+[b2:B] 595596a88cce5c9d|alt4 1.4s total 76.8 min
+[b2:B] 3461796610c15a0e|alt3 1.4s total 76.8 min
+[b2:B] 4342cb36fbba580b|original 1.2s total 76.9 min
+[b2:B] cd9330daeec55224|alt2 1.2s total 76.9 min
+[b2:B] f0f77f6f5cb4562c|alt3 0.7s total 76.9 min
+[b2:B] 026bb114391d5b81|alt0 1.2s total 76.9 min
+[b2:B] f158576757e95c31|alt1 1.5s total 76.9 min
+[b2:B] f53ee13c32ac5bec|alt3 1.4s total 77.0 min
+[b2:B] dfaaa711e0a557ba|alt6 1.4s total 77.0 min
+[b2:B] 57a77b8c90465bc4|alt1 1.4s total 77.0 min
+[b2:B] 0e08da5fbc735956|alt3 0.7s total 77.0 min
+[b2:B] 276396e455bb57b5|alt0 1.4s total 77.0 min
+[b2:B] 692bea45f3de5fd0|alt0 1.5s total 77.1 min
+[b2:B] e6ff81ab83355450|alt0 1.5s total 77.1 min
+[b2:B] 4143d1c692f95b56|alt1 1.0s total 77.1 min
+[b2:B] 6f2459c4df665173|alt3 1.5s total 77.1 min
+[b2:B] a7ce5a625a525b45|alt3 1.4s total 77.1 min
+[b2:B] 5825e60bec9f59fb|alt5 1.5s total 77.2 min
+[b2:B] 7135ce0e5eea5907|alt2 1.5s total 77.2 min
+[b2:B] 39147f08f4645365|alt1 1.0s total 77.2 min
+[b2:B] 484bac10bd295459|alt1 1.5s total 77.2 min
+[b2:B] 58e19769184c5f43|alt3 0.7s total 77.3 min
+[b2:B] 1981a85eb4ba5001|alt2 1.5s total 77.3 min
+[b2:B] 67dff3c1993f57a5|alt5 1.2s total 77.3 min
+[b2:B] cc71f3639268516f|original 1.4s total 77.3 min
+[b2:B] 584a741051cd523f|alt1 1.5s total 77.3 min
+[b2:B] 887e4d57da835b12|alt6 1.4s total 77.4 min
+[b2:B] 97eca45f93285d17|alt1 1.0s total 77.4 min
+[b2:B] 14d53eb06a7d582a|alt4 1.5s total 77.4 min
+[b2:B] ab8034dd8873524b|alt3 1.4s total 77.4 min
+[b2:B] 015011d2b73158b7|alt2 1.2s total 77.5 min
+[b2:B] 692bea45f3de5fd0|alt2 1.5s total 77.5 min
+[b2:B] f0f77f6f5cb4562c|original 0.7s total 77.5 min
+[b2:B] aa4ec42ec7425de0|alt4 1.5s total 77.5 min
+[b2:B] 150c33d5cd005743|alt2 1.4s total 77.5 min
+[b2:B] 77daa055e4ed5ae2|alt2 1.4s total 77.6 min
+[b2:B] 8de4253bc36f54df|alt1 1.0s total 77.6 min
+[b2:B] e6bdb406a21e55ba|alt2 1.0s total 77.6 min
+[b2:B] 6561633171e75bb6|original 1.0s total 77.6 min
+[b2:B] e7116a2035205221|alt5 1.5s total 77.6 min
+[b2:B] 1f55063084fd593c|alt2 1.5s total 77.7 min
+[b2:B] e3ddabf456b155a9|alt4 1.5s total 77.7 min
+[b2:B] 8de4253bc36f54df|alt0 1.0s total 77.7 min
+[b2:B] 3c99fcb4ef8c5382|alt5 1.2s total 77.7 min
+[b2:B] dfa06e9592e65896|alt4 1.4s total 77.8 min
+[b2:B] 2a06b778a64b545e|alt1 1.4s total 77.8 min
+[b2:B] 5825e60bec9f59fb|alt3 1.5s total 77.8 min
+[b2:B] e6bdb406a21e55ba|alt4 1.0s total 77.8 min
+[b2:B] 6233d1b3e62a5772|alt4 1.5s total 77.8 min
+[b2:B] e23fdb8f34b35d20|alt2 1.2s total 77.9 min
+[b2:B] 015011d2b73158b7|alt4 1.2s total 77.9 min
+[b2:B] 566bd5e6d09153e0|alt2 1.4s total 77.9 min
+[b2:B] 078f05d9e9c05230|alt3 1.5s total 77.9 min
+[b2:B] 92838ad73bf95b3a|original 1.5s total 78.0 min
+[b2:B] e6bdb406a21e55ba|original 1.0s total 78.0 min
+[b2:B] c4fd814210875a8e|alt4 1.2s total 78.0 min
+[b2:B] 9e76a394983a59b6|alt4 1.4s total 78.0 min
+[b2:B] ab7d0c4a928e5ec9|original 1.2s total 78.0 min
+[b2:B] 7135ce0e5eea5907|alt3 1.5s total 78.1 min
+[b2:B] 1ded576bc1325cae|alt2 1.0s total 78.1 min
+[b2:B] 22b526a96ad65c88|alt3 1.4s total 78.1 min
+[b2:B] 4d2fceb0b30f59cd|alt4 1.2s total 78.1 min
+[b2:B] 57f2781030b25387|alt0 1.5s total 78.1 min
+[b2:B] 599e006109385ae5|original 1.0s total 78.2 min
+[b2:B] 984c4c329ba05bd2|alt3 1.0s total 78.2 min
+[b2:B] 02bfb6340c185b97|alt0 1.0s total 78.2 min
+[b2:B] 2e405d459d8b5d9c|alt4 1.5s total 78.2 min
+[b2:B] 20d3a5f5b9e6549f|original 0.7s total 78.2 min
+[b2:B] 37c15bc4d99a5365|alt5 1.5s total 78.3 min
+[b2:B] 3e7bec3b1c4359b6|alt4 1.4s total 78.3 min
+[b2:B] 19c8d441cb445d87|alt4 1.2s total 78.3 min
+[b2:B] e6bdb406a21e55ba|alt6 1.0s total 78.3 min
+[b2:B] b27bfe84cc545daa|alt2 1.4s total 78.3 min
+[b2:B] f4af3907bb665bf7|original 1.4s total 78.4 min
+[b2:B] 9cf612ff6e4f5bd5|alt1 1.5s total 78.4 min
+[b2:B] e0e1551b09f15a74|alt1 1.4s total 78.4 min
+[b2:B] c4fd814210875a8e|alt1 1.2s total 78.4 min
+[b2:B] 02bfb6340c185b97|alt2 1.0s total 78.5 min
+[b2:B] 127b9e23f1805690|alt4 0.7s total 78.5 min
+[b2:B] 39dba8a42eaa5ea0|alt4 1.0s total 78.5 min
+[b2:B] 5e48f684248053bd|alt1 1.2s total 78.5 min
+[b2:B] 4143d1c692f95b56|alt2 1.0s total 78.5 min
+[b2:B] 77daa055e4ed5ae2|original 1.4s total 78.5 min
+[b2:B] 8f1247f8436c5208|original 1.0s total 78.6 min
+[b2:B] 127b9e23f1805690|alt2 0.7s total 78.6 min
+[b2:B] b08965aff8165bec|alt5 1.2s total 78.6 min
+[b2:B] 8b788f2715985cee|alt0 1.4s total 78.6 min
+[b2:B] c2466f5ae7a25ad8|alt3 1.2s total 78.6 min
+[b2:B] 958677976f9c5b0a|original 0.7s total 78.6 min
+[b2:B] 581a74871330567f|alt3 1.5s total 78.7 min
+[b2:B] c6e19ffa3c34551c|alt5 1.5s total 78.7 min
+[b2:B] 39147f08f4645365|alt0 1.0s total 78.7 min
+[b2:B] 6f2459c4df665173|alt4 1.5s total 78.7 min
+[b2:B] 5e48f684248053bd|alt4 1.2s total 78.8 min
+[b2:B] b27bfe84cc545daa|alt1 1.4s total 78.8 min
+[b2:B] 8f1247f8436c5208|alt3 1.0s total 78.8 min
+[b2:B] 67dff3c1993f57a5|alt6 1.2s total 78.8 min
+[b2:B] aa4ec42ec7425de0|original 1.5s total 78.8 min
+[b2:B] f064ef8fafcf5528|alt2 1.5s total 78.9 min
+[b2:B] 330ca2e9aa935a3a|alt0 1.2s total 78.9 min
+[b2:B] 39dba8a42eaa5ea0|alt1 1.0s total 78.9 min
+[b2:B] 52d3f15d6ca75701|alt5 1.5s total 78.9 min
+[b2:B] cd9330daeec55224|alt1 1.2s total 79.0 min
+[b2:B] e0094ac69a8955fb|alt0 1.2s total 79.0 min
+[b2:B] 6f2459c4df665173|alt0 1.5s total 79.0 min
+[b2:B] 8d5d769b1f1e5802|alt4 1.4s total 79.0 min
+[b2:B] 9cf612ff6e4f5bd5|alt4 1.5s total 79.0 min
+[b2:B] 0202782270ab5a62|alt3 1.2s total 79.1 min
+[b2:B] 6e10835f184d5921|alt4 0.7s total 79.1 min
+[b2:B] 4f21925f1a7c5983|alt5 1.4s total 79.1 min
+[b2:B] 0924309bada05ea6|original 1.2s total 79.1 min
+[b2:B] f3572fcbcd285f1e|original 1.2s total 79.1 min
+[b2:B] d4358e3962b758ce|original 1.4s total 79.2 min
+[b2:B] 118fa9fa499e5670|alt6 1.2s total 79.2 min
+[b2:B] 2f5ae1e4cf9d59fa|alt0 1.4s total 79.2 min
+[b2:B] 458fa5236b795941|alt0 1.2s total 79.2 min
+[b2:B] 622867ce25805447|alt0 1.4s total 79.2 min
+[b2:B] 4d50c69f430850a0|alt2 1.2s total 79.3 min
+[b2:B] d3cbad95b20b5125|original 1.2s total 79.3 min
+[b2:B] 9fe3ed9455355edb|alt2 1.4s total 79.3 min
+[b2:B] 69df428fe853580e|alt4 1.5s total 79.3 min
+[b2:B] 491dce963f7f5b57|alt2 1.5s total 79.4 min
+[b2:B] fb8df4568d585efa|original 1.4s total 79.4 min
+[b2:B] 61a9157ac995542c|alt3 1.2s total 79.4 min
+[b2:B] 0c437f9a102c57f4|original 1.5s total 79.4 min
+[b2:B] 97b9989fa3675cab|alt5 1.0s total 79.4 min
+[b2:B] 2ee8d10b988c58b2|alt5 1.4s total 79.5 min
+[b2:B] 5bbd26efb97658ec|alt5 1.5s total 79.5 min
+[b2:B] c69d4cbd79ea52a0|alt3 0.7s total 79.5 min
+[b2:B] 0561ac957ffc5c4f|alt1 1.5s total 79.5 min
+[b2:B] b3c1a2ac292d5e3f|alt4 1.5s total 79.6 min
+[b2:B] 4631b80af7fb5f2f|alt4 1.5s total 79.6 min
+[b2:B] 599e006109385ae5|alt4 1.0s total 79.6 min
+[b2:B] 3b56d2b022d25026|alt2 1.0s total 79.6 min
+[b2:B] 887e4d57da835b12|alt5 1.4s total 79.6 min
+[b2:B] 07b814bfc2fb565d|alt1 1.4s total 79.7 min
+[b2:B] e166284508e554fa|original 1.5s total 79.7 min
+[b2:B] 4342cb36fbba580b|alt5 1.2s total 79.7 min
+[b2:B] 215c38293c335e25|alt3 1.4s total 79.7 min
+[b2:B] f1940c1eca9857cb|alt4 1.2s total 79.8 min
+[b2:B] 150c33d5cd005743|alt3 1.4s total 79.8 min
+[b2:B] 1f55063084fd593c|original 1.5s total 79.8 min
+[b2:B] 581a74871330567f|alt2 1.5s total 79.8 min
+[b2:B] 02bfb6340c185b97|alt1 1.0s total 79.8 min
+[b2:B] 5825e60bec9f59fb|original 1.5s total 79.9 min
+[b2:B] da53dac7558e563d|alt2 1.4s total 79.9 min
+[b2:B] 6b258d7ddf7d53f3|alt2 1.5s total 79.9 min
+[b2:B] 9c768fba2b4c5d19|alt3 0.7s total 79.9 min
+[b2:B] 9c768fba2b4c5d19|alt2 0.7s total 79.9 min
+[b2:B] 8abc81ff3045543b|alt1 1.5s total 80.0 min
+[b2:B] 276396e455bb57b5|alt3 1.4s total 80.0 min
+[b2:B] cd9330daeec55224|original 1.2s total 80.0 min
+[b2:B] f3512ae175b45844|alt3 0.7s total 80.0 min
+[b2:B] 3c24bf88e9b150dd|original 1.4s total 80.0 min
+[b2:B] 2ee8d10b988c58b2|alt3 1.4s total 80.1 min
+[b2:B] 92838ad73bf95b3a|alt0 1.5s total 80.1 min
+[b2:B] 330ca2e9aa935a3a|alt3 1.2s total 80.1 min
+[b2:B] d5ec09025a1e5a0d|alt3 1.5s total 80.1 min
+[b2:B] 8eae3eab30c95228|alt3 1.4s total 80.2 min
+[b2:B] 26ffff4876f75eed|alt6 1.4s total 80.2 min
+[b2:B] e6bdb406a21e55ba|alt1 1.0s total 80.2 min
+[b2:B] 22b526a96ad65c88|alt2 1.4s total 80.2 min
+[b2:B] 37c15bc4d99a5365|alt2 1.5s total 80.2 min
+[b2:B] e7116a2035205221|alt4 1.5s total 80.3 min
+[b2:B] 1db38f4b73ac5b62|alt4 1.4s total 80.3 min
+[b2:B] 0e08da5fbc735956|alt0 0.7s total 80.3 min
+[b2:B] 3b56d2b022d25026|alt5 1.0s total 80.3 min
+[b2:B] 64185eb977005752|alt2 1.4s total 80.3 min
+[b2:B] e6ff81ab83355450|original 1.5s total 80.4 min
+[b2:B] 54b1308d42085066|alt4 1.5s total 80.4 min
+[b2:B] eea52ed765aa5977|alt0 0.7s total 80.4 min
+[b2:B] 10209c0e885f5162|alt0 1.4s total 80.4 min
+[b2:B] 2a06b778a64b545e|alt4 1.4s total 80.5 min
+[b2:B] 976107b532bb5301|alt2 1.4s total 80.5 min
+[b2:B] 92838ad73bf95b3a|alt5 1.5s total 80.5 min
+[b2:B] 263367576c285a2a|alt4 0.7s total 80.5 min
+[b2:B] fb8df4568d585efa|alt4 1.4s total 80.5 min
+[b2:B] 64185eb977005752|alt1 1.4s total 80.6 min
+[b2:B] 97b9989fa3675cab|alt1 1.0s total 80.6 min
+[b2:B] 1d4b518f1b175184|alt1 1.5s total 80.6 min
+[b2:B] 10209c0e885f5162|alt5 1.4s total 80.6 min
+[b2:B] 39dba8a42eaa5ea0|alt2 1.0s total 80.6 min
+[b2:B] 10ae805f0be95c1f|alt5 1.4s total 80.7 min
+[b2:B] 491dce963f7f5b57|alt4 1.5s total 80.7 min
+[b2:B] 76e0272a57f55674|alt4 1.4s total 80.7 min
+[b2:B] cac5deee337257e1|alt3 1.2s total 80.7 min
+[b2:B] 7ff27f83a8995932|alt7 1.2s total 80.8 min
+[b2:B] 458fa5236b795941|alt2 1.2s total 80.8 min
+[b2:B] d5ec09025a1e5a0d|original 1.5s total 80.8 min
+[b2:B] 4342cb36fbba580b|alt0 1.2s total 80.8 min
+[b2:B] f158576757e95c31|alt0 1.5s total 80.8 min
+[b2:B] 79bdb6b499245d65|alt4 1.4s total 80.9 min
+[b2:B] 88c0bfe353235280|alt2 1.2s total 80.9 min
+[b2:B] 52d3f15d6ca75701|alt0 1.5s total 80.9 min
+[b2:B] 118fa9fa499e5670|alt5 1.2s total 80.9 min
+[b2:B] 599e006109385ae5|alt0 1.0s total 81.0 min
+[b2:B] 037b976caae85af5|original 1.2s total 81.0 min
+[b2:B] 8eae3eab30c95228|original 1.4s total 81.0 min
+[b2:B] f776577c7428592b|alt0 1.5s total 81.0 min
+[b2:B] d2853234152359b3|original 1.5s total 81.0 min
+[b2:B] 9e76a394983a59b6|alt0 1.4s total 81.1 min
+[b2:B] 29d3fc42d08d57d2|alt4 0.7s total 81.1 min
+[b2:B] eeae24d38eb15e0a|alt4 1.0s total 81.1 min
+[b2:B] cac5deee337257e1|alt2 1.2s total 81.1 min
+[b2:B] cc71f3639268516f|alt3 1.4s total 81.1 min
+[b2:B] 1db38f4b73ac5b62|alt2 1.4s total 81.2 min
+[b2:B] 29d3fc42d08d57d2|alt7 0.7s total 81.2 min
+[b2:B] 566bd5e6d09153e0|original 1.4s total 81.2 min
+[b2:B] 97b9989fa3675cab|alt4 1.0s total 81.2 min
+[b2:B] 5825e60bec9f59fb|alt4 1.5s total 81.2 min
+[b2:B] 07b814bfc2fb565d|original 1.4s total 81.3 min
+[b2:B] de7b87d6624754cf|alt1 1.5s total 81.3 min
+[b2:B] 88c0bfe353235280|alt1 1.2s total 81.3 min
+[b2:B] 649b2096884957a9|alt3 1.5s total 81.3 min
+[b2:B] 69ddc43178e9572a|alt6 1.2s total 81.4 min
+[b2:B] 1b4499d988b052ce|original 1.4s total 81.4 min
+[b2:B] 62667ead92a35fbd|alt0 1.2s total 81.4 min
+[b2:B] 484bac10bd295459|alt0 1.5s total 81.4 min
+[b2:B] 39147f08f4645365|alt3 1.0s total 81.4 min
+[b2:B] 2a06b778a64b545e|alt0 1.4s total 81.5 min
+[b2:B] 015011d2b73158b7|alt3 1.2s total 81.5 min
+[b2:B] f4af3907bb665bf7|alt6 1.4s total 81.5 min
+[b2:B] e0094ac69a8955fb|alt6 1.2s total 81.5 min
+[b2:B] d2853234152359b3|alt1 1.5s total 81.6 min
+[b2:B] 54b1308d42085066|alt1 1.5s total 81.6 min
+[b2:B] 029a9572e05a5914|alt0 1.4s total 81.6 min
+[b2:B] a64a3e4f2048576d|original 1.0s total 81.6 min
+[b2:B] 752255614d7f569a|alt4 1.4s total 81.6 min
+[b2:B] 67dff3c1993f57a5|alt4 1.2s total 81.7 min
+[b2:B] 4342cb36fbba580b|alt3 1.2s total 81.7 min
+[b2:B] 2743a2f96269577c|alt4 1.4s total 81.7 min
+[b2:B] f66694a622cf5c99|alt2 0.7s total 81.7 min
+[b2:B] f0f77f6f5cb4562c|alt1 0.7s total 81.7 min
+[b2:B] c87001c4251e559a|original 1.4s total 81.7 min
+[b2:B] 8f5610a77c3257f9|alt3 1.4s total 81.8 min
+[b2:B] f776577c7428592b|alt4 1.5s total 81.8 min
+[b2:B] dfaaa711e0a557ba|alt5 1.4s total 81.8 min
+[b2:B] 26ffff4876f75eed|alt2 1.4s total 81.8 min
+[b2:B] 2f5ae1e4cf9d59fa|alt2 1.4s total 81.9 min
+[b2:B] 0202782270ab5a62|alt2 1.2s total 81.9 min
+[b2:B] f158576757e95c31|alt2 1.5s total 81.9 min
+[b2:B] 8f1247f8436c5208|alt2 1.0s total 81.9 min
+[b2:B] 029a9572e05a5914|alt5 1.4s total 81.9 min
+[b2:B] 1b4499d988b052ce|alt2 1.4s total 82.0 min
+[b2:B] 76e0272a57f55674|alt3 1.4s total 82.0 min
+[b2:B] 595596a88cce5c9d|alt1 1.4s total 82.0 min
+[b2:B] 93d4ab80a0cf5f01|alt4 1.5s total 82.0 min
+[b2:B] 595596a88cce5c9d|alt2 1.4s total 82.1 min
+[b2:B] 92838ad73bf95b3a|alt1 1.5s total 82.1 min
+[b2:B] 692bea45f3de5fd0|alt6 1.5s total 82.1 min
+[b2:B] eeae24d38eb15e0a|alt1 1.0s total 82.1 min
+[b2:B] 8de4253bc36f54df|alt3 1.0s total 82.2 min
+[b2:B] 8de4253bc36f54df|alt4 1.0s total 82.2 min
+[b2:B] 88c0bfe353235280|original 1.2s total 82.2 min
+[b2:B] e6ff81ab83355450|alt1 1.5s total 82.2 min
+[b2:B] 6e10835f184d5921|alt3 0.7s total 82.2 min
+[b2:B] 64185eb977005752|alt0 1.4s total 82.2 min
+[b2:B] 09978bee1b655865|original 1.2s total 82.3 min
+[b2:B] 76cf7bb2e9625482|alt1 1.2s total 82.3 min
+[b2:B] 3c99fcb4ef8c5382|alt1 1.2s total 82.3 min
+[b2:B] 50eebed7d9655bb5|alt1 0.7s total 82.3 min
+[b2:B] 97b9989fa3675cab|alt2 1.0s total 82.3 min
+[b2:B] 458fa5236b795941|original 1.2s total 82.4 min
+[b2:B] c7c04f1581855ac4|alt3 1.5s total 82.4 min
+[b2:B] 491dce963f7f5b57|original 1.5s total 82.4 min
+[b2:B] c87fe1d7a3bd57cb|alt2 1.4s total 82.4 min
+[b2:B] 52d3f15d6ca75701|alt7 1.5s total 82.5 min
+[b2:B] 7316c116f05d57a5|alt4 1.2s total 82.5 min
+[b2:B] 0c3c4cd553475d3a|alt2 1.2s total 82.5 min
+[b2:B] dfb58c90fd2e52fa|alt0 1.5s total 82.5 min
+[b2:B] 29d3fc42d08d57d2|alt2 0.7s total 82.5 min
+[b2:B] 2ee8d10b988c58b2|original 1.4s total 82.6 min
+[b2:B] de7b87d6624754cf|alt3 1.5s total 82.6 min
+[b2:B] e3ddabf456b155a9|original 1.5s total 82.6 min
+[b2:B] e23fdb8f34b35d20|alt1 1.2s total 82.6 min
+[b2:B] 20d3a5f5b9e6549f|alt2 0.7s total 82.6 min
+[b2:B] 29d3fc42d08d57d2|alt1 0.7s total 82.7 min
+[b2:B] 10209c0e885f5162|alt4 1.4s total 82.7 min
+[b2:B] 57f2781030b25387|alt4 1.5s total 82.7 min
+[b2:B] 26af85cbc2d15e05|alt2 1.4s total 82.7 min
+[b2:B] a64a3e4f2048576d|alt1 1.0s total 82.7 min
+[b2:B] 649b2096884957a9|alt2 1.5s total 82.8 min
+[b2:B] aa4ec42ec7425de0|alt1 1.5s total 82.8 min
+[b2:B] 79bdb6b499245d65|original 1.4s total 82.8 min
+[b2:B] 02bfb6340c185b97|alt3 1.0s total 82.8 min
+[b2:B] dc9bf97cb9e151ad|alt3 1.4s total 82.9 min
+[b2:B] 0924309bada05ea6|alt1 1.2s total 82.9 min
+[b2:B] cd9330daeec55224|alt3 1.2s total 82.9 min
+[b2:B] 10ae805f0be95c1f|original 1.4s total 82.9 min
+[b2:B] 037b976caae85af5|alt3 1.2s total 82.9 min
+[b2:B] 00c489998dd4555c|alt1 1.0s total 83.0 min
+[b2:B] 57a77b8c90465bc4|alt2 1.4s total 83.0 min
+[b2:B] 69df428fe853580e|original 1.5s total 83.0 min
+[b2:B] 34cc387cf0335f28|original 1.4s total 83.0 min
+[b2:B] 0c3c4cd553475d3a|original 1.2s total 83.0 min
+[b2:B] 10ae805f0be95c1f|alt1 1.4s total 83.1 min
+[b2:B] f776577c7428592b|alt3 1.5s total 83.1 min
+[b2:B] d5ec09025a1e5a0d|alt4 1.5s total 83.1 min
+[b2:B] eeae24d38eb15e0a|original 1.0s total 83.1 min
+[b2:B] f0f77f6f5cb4562c|alt4 0.7s total 83.1 min
+[b2:B] 20d3a5f5b9e6549f|alt1 0.7s total 83.2 min
+[b2:B] ab8034dd8873524b|alt1 1.4s total 83.2 min
+[b2:B] c1686b2e1a4e5149|alt5 0.7s total 83.2 min
+[b2:B] f53ee13c32ac5bec|alt1 1.4s total 83.2 min
+[b2:B] e0a645315de658bc|alt0 1.4s total 83.2 min
+[b2:B] 150c33d5cd005743|alt0 1.4s total 83.3 min
+[b2:B] d44d7aacab755892|alt3 0.7s total 83.3 min
+[b2:B] 4749b2486da65268|alt0 1.4s total 83.3 min
+[b2:B] f4af3907bb665bf7|alt3 1.4s total 83.3 min
+[b2:B] 00c489998dd4555c|alt4 1.0s total 83.3 min
+[b2:B] 887e4d57da835b12|alt1 1.4s total 83.4 min
+[b2:B] b98d8c3330625df2|alt4 1.4s total 83.4 min
+[b2:B] f289e368449b517b|original 1.4s total 83.4 min
+[b2:B] 33ee6f1f594d50ca|alt4 1.2s total 83.4 min
+[b2:B] 8d5d769b1f1e5802|alt3 1.4s total 83.4 min
+[b2:B] 9c768fba2b4c5d19|alt1 0.7s total 83.5 min
+[b2:B] 1dc437ce152e55fa|alt5 1.0s total 83.5 min
+[b2:B] 07b814bfc2fb565d|alt0 1.4s total 83.5 min
+[b2:B] dfb58c90fd2e52fa|alt5 1.5s total 83.5 min
+[b2:B] 5e48f684248053bd|original 1.2s total 83.5 min
+[b2:B] c87001c4251e559a|alt3 1.4s total 83.6 min
+[b2:B] 484bac10bd295459|alt2 1.5s total 83.6 min
+[b2:B] 8f5610a77c3257f9|alt4 1.4s total 83.6 min
+[b2:B] 0c3c4cd553475d3a|alt0 1.2s total 83.6 min
+[b2:B] 64185eb977005752|alt3 1.4s total 83.7 min
+[b2:B] 2e405d459d8b5d9c|alt0 1.5s total 83.7 min
+[b2:B] 8e785a7a6df95636|alt4 1.5s total 83.7 min
+[b2:B] 752255614d7f569a|alt3 1.4s total 83.7 min
+[b2:B] e166284508e554fa|alt2 1.5s total 83.8 min
+[b2:B] 00c489998dd4555c|alt0 1.0s total 83.8 min
+[b2:B] 67dff3c1993f57a5|alt2 1.2s total 83.8 min
+[b2:B] 692bea45f3de5fd0|alt5 1.5s total 83.8 min
+[b2:B] dfaaa711e0a557ba|alt3 1.4s total 83.8 min
+[b2:B] 24acfb08c5ef55f5|alt2 1.4s total 83.9 min
+[b2:B] 09978bee1b655865|alt1 1.2s total 83.9 min
+[b2:B] 85028441255156b3|alt3 1.5s total 83.9 min
+[b2:B] 8d5d769b1f1e5802|alt1 1.4s total 83.9 min
+[b2:B] f1940c1eca9857cb|alt3 1.2s total 84.0 min
+[b2:B] 4143d1c692f95b56|alt3 1.0s total 84.0 min
+[b2:B] da53dac7558e563d|alt4 1.4s total 84.0 min
+[b2:B] f3572fcbcd285f1e|alt4 1.2s total 84.0 min
+[b2:B] 33ee6f1f594d50ca|alt7 1.2s total 84.0 min
+[b2:B] 36be99da12575896|original 1.5s total 84.1 min
+[b2:B] eeae24d38eb15e0a|alt0 1.0s total 84.1 min
+[b2:B] 026bb114391d5b81|original 1.2s total 84.1 min
+[b2:B] 09978bee1b655865|alt4 1.2s total 84.1 min
+[done] 84.1 min
