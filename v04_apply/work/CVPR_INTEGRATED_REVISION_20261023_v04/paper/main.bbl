@@ -1,0 +1,228 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bai et~al.(2025)Bai, Chen, Liu, Wang, Ge, Song, Dang, Wang, Wang,
+  Tang, Zhong, Zhu, Yang, Li, Wan, Wang, Ding, Fu, Xu, Ye, Zhang, Xie, Cheng,
+  Zhang, Yang, Xu, and Lin]{bai2025qwen25vl}
+Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai
+  Dang, Peng Wang, Shijie Wang, Jun Tang, Humen Zhong, Yuanzhi Zhu, Mingkun
+  Yang, Zhaohai Li, Jianqiang Wan, Pengfei Wang, Wei Ding, Zheren Fu, Yiheng
+  Xu, Jiabo Ye, Xi Zhang, Tianbao Xie, Zesen Cheng, Hang Zhang, Zhibo Yang,
+  Haiyang Xu, and Junyang Lin.
+\newblock {Qwen2.5-VL} technical report.
+\newblock \emph{arXiv preprint arXiv:2502.13923}, 2025.
+
+\bibitem[Bai et~al.(2026)Bai, Lyu, Zhou, Li, Wang, Xing, Zhao, Wang, Wang, Chi,
+  Chen, and Zhang]{bai2026laravla}
+Shuanghao Bai, Jing Lyu, Wanqi Zhou, Zhe Li, Dakai Wang, Lei Xing, Xiaoguang
+  Zhao, Pengwei Wang, Zhongyuan Wang, Cheng Chi, Badong Chen, and Shanghang
+  Zhang.
+\newblock Latent reasoning {VLA}: Latent thinking and prediction for
+  vision-language-action models.
+\newblock \emph{arXiv preprint arXiv:2602.01166}, 2026.
+
+\bibitem[Caesar et~al.(2021)Caesar, Kabzan, Tan, Fong, Wolff, Lang, Fletcher,
+  Beijbom, and Omari]{caesar2021nuplan}
+Holger Caesar, Juraj Kabzan, Kok~Seang Tan, Whye~Kit Fong, Eric Wolff, Alex
+  Lang, Luke Fletcher, Oscar Beijbom, and Sammy Omari.
+\newblock {nuPlan}: A closed-loop {ML}-based planning benchmark for autonomous
+  vehicles.
+\newblock \emph{arXiv preprint arXiv:2106.11810}, 2021.
+
+\bibitem[Cen et~al.(2025)Cen, Yu, Yuan, Jiang, Huang, Guo, Li, Song, Luo, Wang,
+  Zhao, and Chen]{cen2025worldvla}
+Jun Cen, Chaohui Yu, Hangjie Yuan, Yuming Jiang, Siteng Huang, Jiayan Guo, Xin
+  Li, Yibing Song, Hao Luo, Fan Wang, Deli Zhao, and Hao Chen.
+\newblock {WorldVLA}: Towards autoregressive action world model.
+\newblock \emph{arXiv preprint arXiv:2506.21539}, 2025.
+
+\bibitem[Chan and Kao(2026)]{chan2026tokensteering}
+Jason Chan and Jonathan~C. Kao.
+\newblock Steering autoregressive vision-language-action policies via action
+  token intervention.
+\newblock \emph{arXiv preprint arXiv:2606.15021}, 2026.
+
+\bibitem[Chi et~al.(2025)Chi, Gao, Liu, Liu, Liu, Li, Yang, Yu, Wang, Li, Wang,
+  Hu, Sun, Zhao, and Zhao]{chi2025impromptu}
+Haohan Chi, Huan-ang Gao, Ziming Liu, Jianing Liu, Chenyu Liu, Jinwei Li,
+  Kaisen Yang, Yangcheng Yu, Zeda Wang, Wenyi Li, Leichen Wang, Xingtao Hu, Hao
+  Sun, Hang Zhao, and Hao Zhao.
+\newblock Impromptu {VLA}: Open weights and open data for driving
+  vision-language-action models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  84771--84806, 2025.
+
+\bibitem[Dauner et~al.(2024)Dauner, Hallgarten, Li, Weng, Huang, Yang, Li,
+  Gilitschenski, Ivanovic, Pavone, Geiger, and Chitta]{dauner2024navsim}
+Daniel Dauner, Marcel Hallgarten, Tianyu Li, Xinshuo Weng, Zhiyu Huang, Zetong
+  Yang, Hongyang Li, Igor Gilitschenski, Boris Ivanovic, Marco Pavone, Andreas
+  Geiger, and Kashyap Chitta.
+\newblock {NAVSIM}: Data-driven non-reactive autonomous vehicle simulation and
+  benchmarking.
+\newblock In \emph{Advances in Neural Information Processing Systems (Datasets
+  and Benchmarks Track)}, pages 28706--28719, 2024.
+
+\bibitem[Goyal et~al.(2025)Goyal, Hadfield, Yang, Blukis, and
+  Ramos]{goyal2025vla0}
+Ankit Goyal, Hugo Hadfield, Xuning Yang, Valts Blukis, and Fabio Ramos.
+\newblock {VLA-0}: Building state-of-the-art {VLAs} with zero modification.
+\newblock \emph{arXiv preprint arXiv:2510.13054}, 2025.
+
+\bibitem[Holm(1979)]{holm1979simple}
+Sture Holm.
+\newblock A simple sequentially rejective multiple test procedure.
+\newblock \emph{Scandinavian Journal of Statistics}, 6\penalty0 (2):\penalty0
+  65--70, 1979.
+
+\bibitem[Jang et~al.(2025)Jang, Yu, Kwon, Jeon, Seo, and
+  Shin]{jang2025contextvla}
+Huiwon Jang, Sihyun Yu, Heeseung Kwon, Hojin Jeon, Younggyo Seo, and Jinwoo
+  Shin.
+\newblock {ContextVLA}: Vision-language-action model with amortized multi-frame
+  context.
+\newblock \emph{arXiv preprint arXiv:2510.04246}, 2025.
+
+\bibitem[Kim et~al.(2025)Kim, Pertsch, Karamcheti, Xiao, Balakrishna, Nair,
+  Rafailov, Foster, Sanketi, Vuong, Kollar, Burchfiel, Tedrake, Sadigh, Levine,
+  Liang, and Finn]{kim2024openvla}
+Moo~Jin Kim, Karl Pertsch, Siddharth Karamcheti, Ted Xiao, Ashwin Balakrishna,
+  Suraj Nair, Rafael Rafailov, Ethan~P. Foster, Pannag~R. Sanketi, Quan Vuong,
+  Thomas Kollar, Benjamin Burchfiel, Russ Tedrake, Dorsa Sadigh, Sergey Levine,
+  Percy Liang, and Chelsea Finn.
+\newblock {OpenVLA}: An open-source vision-language-action model.
+\newblock In \emph{Proceedings of The 8th Conference on Robot Learning}, pages
+  2679--2713, 2025.
+
+\bibitem[Lazzati et~al.(2026)Lazzati, Stachowicz, Chen, Metelli, Wagenmaker,
+  and Levine]{lazzati2026chunking}
+Filippo Lazzati, Kyle Stachowicz, William Chen, Alberto~Maria Metelli, Andrew
+  Wagenmaker, and Sergey Levine.
+\newblock Why does action chunking improve behavioral cloning performance in
+  robotic control?
+\newblock \emph{arXiv preprint arXiv:2608.02547}, 2026.
+
+\bibitem[Li et~al.(2026)Li, Jia, Ma, Jiang, Jiang, Sun, Li, Wen, Hong, Liu, Li,
+  and Zhan]{li2026fomovla}
+Wei Li, Peijin Jia, Yuan Ma, Xuefeng Jiang, Titong Jiang, Sheng Sun, Yujian Li,
+  Xin Wen, Han Hong, Zhikang Liu, Bailin Li, and Kun Zhan.
+\newblock {FoMoVLA}: Bridging visual foresight and motion guidance for
+  vision-language-action models.
+\newblock \emph{arXiv preprint arXiv:2607.14739}, 2026.
+
+\bibitem[Li et~al.(2025)Li, Hsu, Gu, Mees, Pertsch, Walke, Fu, Lunawat, Sieh,
+  Kirmani, Levine, Wu, Finn, Su, Vuong, and Xiao]{li2024simplerenv}
+Xuanlin Li, Kyle Hsu, Jiayuan Gu, Oier Mees, Karl Pertsch, Homer~Rich Walke,
+  Chuyuan Fu, Ishikaa Lunawat, Isabel Sieh, Sean Kirmani, Sergey Levine, Jiajun
+  Wu, Chelsea Finn, Hao Su, Quan Vuong, and Ted Xiao.
+\newblock Evaluating real-world robot manipulation policies in simulation.
+\newblock In \emph{Proceedings of The 8th Conference on Robot Learning}, pages
+  3705--3728, 2025.
+
+\bibitem[Liu et~al.(2023)Liu, Zhu, Gao, Feng, Liu, Zhu, and
+  Stone]{liu2023libero}
+Bo Liu, Yifeng Zhu, Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, and Peter
+  Stone.
+\newblock {LIBERO}: Benchmarking knowledge transfer for lifelong robot
+  learning.
+\newblock In \emph{Advances in Neural Information Processing Systems (Datasets
+  and Benchmarks Track)}, pages 44776--44791, 2023.
+
+\bibitem[Ma et~al.(2025)Ma, Chi, Wu, Liu, Zhuang, and King]{ma2025astra}
+Yueen Ma, DaFeng Chi, Shiguang Wu, Yuecheng Liu, Yuzheng Zhuang, and Irwin
+  King.
+\newblock Astra: Efficient transformer architecture and contrastive dynamics
+  learning for embodied instruction following.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing}, pages 13621--13639. Association for
+  Computational Linguistics, 2025.
+
+\bibitem[Newcombe(1998)]{newcombe1998paired}
+Robert~G. Newcombe.
+\newblock Improved confidence intervals for the difference between binomial
+  proportions based on paired data.
+\newblock \emph{Statistics in Medicine}, 17\penalty0 (22):\penalty0 2635--2650,
+  1998.
+
+\bibitem[{OpenScene Contributors}(2023)]{openscene2023}
+{OpenScene Contributors}.
+\newblock {OpenScene}: The largest up-to-date {3D} occupancy prediction
+  benchmark in autonomous driving.
+\newblock \url{https://github.com/OpenDriveLab/OpenScene}, 2023.
+
+\bibitem[Pertsch et~al.(2025)Pertsch, Stachowicz, Ichter, Driess, Nair, Vuong,
+  Mees, Finn, and Levine]{pertsch2025fast}
+Karl Pertsch, Kyle Stachowicz, Brian Ichter, Danny Driess, Suraj Nair, Quan
+  Vuong, Oier Mees, Chelsea Finn, and Sergey Levine.
+\newblock {FAST: Efficient Action Tokenization for Vision-Language-Action
+  Models}.
+\newblock \emph{arXiv preprint arXiv:2501.09747}, 2025.
+
+\bibitem[Puthumanaillam et~al.(2026)Puthumanaillam, Dongre, Thangeda, Nayyeri,
+  Hakkani-T{\"u}r, and Ornik]{puthumanaillam2026redirection}
+Gokul Puthumanaillam, Vardhan Dongre, Pranay Thangeda, Hooshang Nayyeri, Dilek
+  Hakkani-T{\"u}r, and Melkior Ornik.
+\newblock Trajectory-level redirection attacks on vision-language-action
+  models, 2026.
+
+\bibitem[Qu et~al.(2025)Qu, Song, Chen, Yao, Ye, Gu, Wang, Ding, Zhao, Wang,
+  and Li]{qu2025spatialvla}
+Delin Qu, Haoming Song, Qizhi Chen, Yuanqi Yao, Xinyi Ye, Jiayuan Gu, Zhigang
+  Wang, Yan Ding, Bin Zhao, Dong Wang, and Xuelong Li.
+\newblock {SpatialVLA}: Exploring spatial representations for
+  visual-language-action models.
+\newblock In \emph{Proceedings of Robotics: Science and Systems}, Los Angeles,
+  CA, USA, 2025.
+
+\bibitem[Rao and Scott(1992)]{raoscott1992clustered}
+J.~N.~K. Rao and A.~J. Scott.
+\newblock A simple method for the analysis of clustered binary data.
+\newblock \emph{Biometrics}, 48\penalty0 (2):\penalty0 577--585, 1992.
+
+\bibitem[Ross et~al.(2011)Ross, Gordon, and Bagnell]{ross2011dagger}
+Stephane Ross, Geoffrey Gordon, and Drew Bagnell.
+\newblock A reduction of imitation learning and structured prediction to
+  no-regret online learning.
+\newblock In \emph{Proceedings of the Fourteenth International Conference on
+  Artificial Intelligence and Statistics}, pages 627--635, 2011.
+
+\bibitem[Song et~al.(2025)Song, Qu, Yao, Chen, Lv, Tang, Shi, Ren, Yao, Zhao,
+  Wang, and Li]{song2025hume}
+Haoming Song, Delin Qu, Yuanqi Yao, Qizhi Chen, Qi Lv, Yiwen Tang, Modi Shi,
+  Guanghui Ren, Maoqing Yao, Bin Zhao, Dong Wang, and Xuelong Li.
+\newblock Hume: Introducing system-2 thinking in visual-language-action model.
+\newblock \emph{arXiv preprint arXiv:2505.21432}, 2025.
+
+\bibitem[Winkler et~al.(2015)Winkler, Webster, Vidaurre, Nichols, and
+  Smith]{winkler2015multilevel}
+Anderson~M. Winkler, Matthew~A. Webster, Diego Vidaurre, Thomas~E. Nichols, and
+  Stephen~M. Smith.
+\newblock Multi-level block permutation.
+\newblock \emph{NeuroImage}, 123:\penalty0 253--268, 2015.
+
+\bibitem[Zhang et~al.(2026)Zhang, Xiang, and Chen]{zhang2026memoryaudit}
+Jiajie Zhang, Yankai Xiang, and Changhao Chen.
+\newblock Memory that changes action is not memory that guides it:
+  Counterfactual auditing of history-conditioned robot policies.
+\newblock \emph{arXiv preprint arXiv:2609.27247}, 2026.
+
+\bibitem[Zhou et~al.(2025)Zhou, Cai, Zhao, Zhang, Huang, Zhou, and
+  Ma]{zhou2025autovla}
+Zewei Zhou, Tianhui Cai, Seth Zhao, Yun Zhang, Zhiyu Huang, Bolei Zhou, and
+  Jiaqi Ma.
+\newblock {AutoVLA}: A vision-language-action model for end-to-end autonomous
+  driving with adaptive reasoning and reinforcement fine-tuning.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  31725--31761, 2025.
+
+\bibitem[Zou and Donner(2008)]{zou2008mover}
+G.~Y. Zou and A. Donner.
+\newblock Construction of confidence limits about effect measures: A general
+  approach.
+\newblock \emph{Statistics in Medicine}, 27\penalty0 (10):\penalty0 1693--1702,
+  2008.
+
+\end{thebibliography}

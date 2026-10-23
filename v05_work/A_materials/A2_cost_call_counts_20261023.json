@@ -1,0 +1,83 @@
+{
+ "svla_discovery_pilot_attempt2": {
+  "observations": 105,
+  "official_natural_generate": 105,
+  "adapter_natural_forced": 105,
+  "R_selfpatch_forced": 105,
+  "source_sampling_generate": 420,
+  "arm_forced": 192,
+  "status_OK": 64,
+  "t_s_sum": 249.81419968605042,
+  "status_SOURCE_MISSING": 41,
+  "model_calls_total": 927
+ },
+ "svla_discovery_validation_attempt3": {
+  "observations": 12,
+  "official_natural_generate": 12,
+  "adapter_natural_forced": 12,
+  "R_selfpatch_forced": 12,
+  "source_sampling_generate": 48,
+  "arm_forced": 24,
+  "status_OK": 8,
+  "t_s_sum": 31.92910122871399,
+  "status_SOURCE_MISSING": 4,
+  "model_calls_total": 108
+ },
+ "svla_followup_v02_main": {
+  "observations": 105,
+  "official_natural_generate": 105,
+  "adapter_natural_forced": 105,
+  "R_selfpatch_forced": 105,
+  "source_sampling_generate": 3243,
+  "arm_forced": 207,
+  "status_OK": 69,
+  "t_s_sum": 761.1660535335541,
+  "status_MATCHED_SOURCE_MISSING": 36,
+  "model_calls_total": 3765
+ },
+ "svla_followup_v02_smoke": {
+  "observations": 4,
+  "official_natural_generate": 4,
+  "adapter_natural_forced": 4,
+  "R_selfpatch_forced": 4,
+  "source_sampling_generate": 0,
+  "arm_forced": 0,
+  "status_OK": 4,
+  "t_s_sum": 3.4872007369995117,
+  "model_calls_total": 12
+ },
+ "svla_drawer_recovered": {
+  "observations": 44,
+  "official_natural_generate": 44,
+  "adapter_natural_forced": 44,
+  "R_selfpatch_forced": 44,
+  "source_sampling_generate": 1053,
+  "arm_forced": 105,
+  "status_OK": 35,
+  "t_s_sum": 324.90040588378906,
+  "status_MATCHED_SOURCE_MISSING": 9,
+  "model_calls_total": 1290
+ },
+ "svla_drawer_main_attempt1": {
+  "model_calls_total": 0
+ },
+ "vla0_pilot": {
+  "observations": 150,
+  "generate_calls": 1192,
+  "latency_s_sum": 4460.842801332474,
+  "source_returns": 596,
+  "peak_vram_gb_max": 8.361579008
+ },
+ "vla0_closed_loop": {
+  "policy_calls": 784,
+  "status_NATURAL": 304,
+  "gen_natural": 784,
+  "t_call_s_sum": 4170.596918821335,
+  "status_APPLIED": 318,
+  "gen_sources": 320,
+  "gen_forced": 478,
+  "status_NOT_APPLIED": 2,
+  "status_SELFPATCH_OK": 160,
+  "generation_calls_total": 1582
+ }
+}

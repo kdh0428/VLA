@@ -1,0 +1,2016 @@
+{
+ "google_robot_move_near": [
+  {
+   "seed": 0,
+   "instruction": "move blue plastic bottle near sponge",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 44
+   }
+  },
+  {
+   "seed": 1,
+   "instruction": "move sponge near 7up can",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.33,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.346
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "b4907d1da6223922",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 37
+   }
+  },
+  {
+   "seed": 2,
+   "instruction": "move 7up can near sponge",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.33,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.346
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "b4907d1da6223922",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 40
+   }
+  },
+  {
+   "seed": 3,
+   "instruction": "move sponge near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 42
+   }
+  },
+  {
+   "seed": 4,
+   "instruction": "move redbull can near orange",
+   "objects_xy": {
+    "orange": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "ab18282b5c270558",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 58
+   }
+  },
+  {
+   "seed": 5,
+   "instruction": "move apple near redbull can",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.341
+    ]
+   },
+   "layout_fp": "9329c7bb123f8601",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 35
+   }
+  },
+  {
+   "seed": 6,
+   "instruction": "move orange near blue plastic bottle",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 10
+   }
+  },
+  {
+   "seed": 7,
+   "instruction": "move 7up can near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 47
+   }
+  },
+  {
+   "seed": 8,
+   "instruction": "move pepsi can near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 3
+   }
+  },
+  {
+   "seed": 9,
+   "instruction": "move apple near coke can",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.191
+    ]
+   },
+   "layout_fp": "f5a160cb3f941b30",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 28
+   }
+  },
+  {
+   "seed": 10,
+   "instruction": "move pepsi can near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 9
+   }
+  },
+  {
+   "seed": 11,
+   "instruction": "move coke can near apple",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.191
+    ]
+   },
+   "layout_fp": "f5a160cb3f941b30",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 25
+   }
+  },
+  {
+   "seed": 12,
+   "instruction": "move orange near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 11
+   }
+  },
+  {
+   "seed": 13,
+   "instruction": "move 7up can near apple",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 18
+   }
+  },
+  {
+   "seed": 14,
+   "instruction": "move sponge near 7up can",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 43
+   }
+  },
+  {
+   "seed": 15,
+   "instruction": "move pepsi can near blue plastic bottle",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 8
+   }
+  },
+  {
+   "seed": 16,
+   "instruction": "move 7up can near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.33,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.346
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "b4907d1da6223922",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 41
+   }
+  },
+  {
+   "seed": 17,
+   "instruction": "move 7up can near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 47
+   }
+  },
+  {
+   "seed": 18,
+   "instruction": "move sponge near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 42
+   }
+  },
+  {
+   "seed": 19,
+   "instruction": "move apple near redbull can",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.191
+    ]
+   },
+   "layout_fp": "f5a160cb3f941b30",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 29
+   }
+  },
+  {
+   "seed": 20,
+   "instruction": "move apple near redbull can",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.341
+    ]
+   },
+   "layout_fp": "9329c7bb123f8601",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 35
+   }
+  },
+  {
+   "seed": 21,
+   "instruction": "move pepsi can near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 9
+   }
+  },
+  {
+   "seed": 22,
+   "instruction": "move redbull can near pepsi can",
+   "objects_xy": {
+    "orange": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "834a0f593a65535e",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 53
+   }
+  },
+  {
+   "seed": 23,
+   "instruction": "move 7up can near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 19
+   }
+  },
+  {
+   "seed": 24,
+   "instruction": "move apple near coke can",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.341
+    ]
+   },
+   "layout_fp": "9329c7bb123f8601",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 34
+   }
+  },
+  {
+   "seed": 25,
+   "instruction": "move orange near blue plastic bottle",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 4
+   }
+  },
+  {
+   "seed": 26,
+   "instruction": "move redbull can near pepsi can",
+   "objects_xy": {
+    "orange": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "834a0f593a65535e",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 53
+   }
+  },
+  {
+   "seed": 27,
+   "instruction": "move 7up can near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 19
+   }
+  },
+  {
+   "seed": 28,
+   "instruction": "move blue plastic bottle near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 1
+   }
+  },
+  {
+   "seed": 29,
+   "instruction": "move apple near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 21
+   }
+  },
+  {
+   "seed": 30,
+   "instruction": "move sponge near 7up can",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.33,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.346
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "b4907d1da6223922",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 37
+   }
+  },
+  {
+   "seed": 31,
+   "instruction": "move 7up can near apple",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 18
+   }
+  },
+  {
+   "seed": 32,
+   "instruction": "move sponge near apple",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 23
+   }
+  },
+  {
+   "seed": 33,
+   "instruction": "move apple near 7up can",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 20
+   }
+  },
+  {
+   "seed": 34,
+   "instruction": "move redbull can near apple",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.341
+    ]
+   },
+   "layout_fp": "9329c7bb123f8601",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 33
+   }
+  },
+  {
+   "seed": 35,
+   "instruction": "move pepsi can near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 9
+   }
+  },
+  {
+   "seed": 36,
+   "instruction": "move orange near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 5
+   }
+  },
+  {
+   "seed": 37,
+   "instruction": "move apple near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.341
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4f01f48d18b713eb",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 15
+   }
+  },
+  {
+   "seed": 38,
+   "instruction": "move redbull can near apple",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.341
+    ]
+   },
+   "layout_fp": "9329c7bb123f8601",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 33
+   }
+  },
+  {
+   "seed": 39,
+   "instruction": "move pepsi can near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 9
+   }
+  },
+  {
+   "seed": 40,
+   "instruction": "move blue plastic bottle near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 6
+   }
+  },
+  {
+   "seed": 41,
+   "instruction": "move blue plastic bottle near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 0
+   }
+  },
+  {
+   "seed": 42,
+   "instruction": "move blue plastic bottle near sponge",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.33,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.346
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "b4907d1da6223922",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 38
+   }
+  },
+  {
+   "seed": 43,
+   "instruction": "move orange near blue plastic bottle",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 4
+   }
+  },
+  {
+   "seed": 44,
+   "instruction": "move apple near 7up can",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 20
+   }
+  },
+  {
+   "seed": 45,
+   "instruction": "move orange near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 11
+   }
+  },
+  {
+   "seed": 46,
+   "instruction": "move orange near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 5
+   }
+  },
+  {
+   "seed": 47,
+   "instruction": "move blue plastic bottle near orange",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.131,
+     0.044
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "orange": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "2e82bae077d31039",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 7
+   }
+  },
+  {
+   "seed": 48,
+   "instruction": "move blue plastic bottle near pepsi can",
+   "objects_xy": {
+    "blue_plastic_bottle": [
+     -0.332,
+     0.045
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "orange": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4180747d4357ee9a",
+   "info": {
+    "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+    "episode_id": 0
+   }
+  },
+  {
+   "seed": 49,
+   "instruction": "move sponge near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 42
+   }
+  },
+  {
+   "seed": 50,
+   "instruction": "move orange near pepsi can",
+   "objects_xy": {
+    "orange": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "834a0f593a65535e",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 48
+   }
+  },
+  {
+   "seed": 51,
+   "instruction": "move pepsi can near redbull can",
+   "objects_xy": {
+    "orange": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "ab18282b5c270558",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 57
+   }
+  },
+  {
+   "seed": 52,
+   "instruction": "move redbull can near pepsi can",
+   "objects_xy": {
+    "orange": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "834a0f593a65535e",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 53
+   }
+  },
+  {
+   "seed": 53,
+   "instruction": "move coke can near apple",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.191
+    ]
+   },
+   "layout_fp": "f5a160cb3f941b30",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 25
+   }
+  },
+  {
+   "seed": 54,
+   "instruction": "move 7up can near blue plastic bottle",
+   "objects_xy": {
+    "baked_sponge_v2": [
+     -0.13,
+     0.04
+    ],
+    "blue_plastic_bottle": [
+     -0.332,
+     0.194
+    ],
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "9402b934f8705e96",
+   "info": {
+    "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+    "episode_id": 47
+   }
+  },
+  {
+   "seed": 55,
+   "instruction": "move 7up can near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.341
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4f01f48d18b713eb",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 13
+   }
+  },
+  {
+   "seed": 56,
+   "instruction": "move apple near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.191
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.34
+    ]
+   },
+   "layout_fp": "95609bca0063d2dd",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 21
+   }
+  },
+  {
+   "seed": 57,
+   "instruction": "move apple near sponge",
+   "objects_xy": {
+    "baked_opened_7up_can_v2": [
+     -0.33,
+     0.04
+    ],
+    "baked_apple_v2": [
+     -0.33,
+     0.341
+    ],
+    "baked_sponge_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "4f01f48d18b713eb",
+   "info": {
+    "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+    "episode_id": 15
+   }
+  },
+  {
+   "seed": 58,
+   "instruction": "move apple near redbull can",
+   "objects_xy": {
+    "baked_opened_coke_can_v2": [
+     -0.13,
+     0.04
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.33,
+     0.19
+    ],
+    "baked_apple_v2": [
+     -0.13,
+     0.341
+    ]
+   },
+   "layout_fp": "9329c7bb123f8601",
+   "info": {
+    "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+    "episode_id": 35
+   }
+  },
+  {
+   "seed": 59,
+   "instruction": "move orange near redbull can",
+   "objects_xy": {
+    "orange": [
+     -0.33,
+     0.04
+    ],
+    "baked_opened_pepsi_can_v2": [
+     -0.33,
+     0.34
+    ],
+    "baked_opened_redbull_can_v2": [
+     -0.13,
+     0.19
+    ]
+   },
+   "layout_fp": "834a0f593a65535e",
+   "info": {
+    "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+    "episode_id": 49
+   }
+  }
+ ],
+ "google_robot_pick_coke_can": [
+  {
+   "seed": 0,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.224,
+     0.295
+    ]
+   },
+   "layout_fp": "2695d8ea0d2c370e",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 1,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.254,
+     0.296
+    ]
+   },
+   "layout_fp": "ca5ef5f391efd049",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.25,
+     -0.009
+    ]
+   },
+   "layout_fp": "1185444bc9138dc9",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2000,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.218,
+     0.229
+    ]
+   },
+   "layout_fp": "a71bc77997f97971",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2001,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.312,
+     0.015
+    ]
+   },
+   "layout_fp": "60bcd96d5a6c3f0f",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2002,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.199,
+     0.11
+    ]
+   },
+   "layout_fp": "e2e7fb62853c07e5",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2003,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.237,
+     0.176
+    ]
+   },
+   "layout_fp": "330260f26ce15892",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2004,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.214,
+     0.334
+    ]
+   },
+   "layout_fp": "062a29db0e52bf99",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2005,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.308,
+     0.389
+    ]
+   },
+   "layout_fp": "7c17f0607f441a24",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2006,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.295,
+     0.407
+    ]
+   },
+   "layout_fp": "1228d34cfc34d11e",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2007,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.202,
+     0.098
+    ]
+   },
+   "layout_fp": "ccd2282acd27fbd9",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2008,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.287,
+     0.012
+    ]
+   },
+   "layout_fp": "dd3123c06cc16a18",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2009,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.335,
+     0.363
+    ]
+   },
+   "layout_fp": "aa09e1835a071652",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2010,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.341,
+     0.158
+    ]
+   },
+   "layout_fp": "f3c570f505d4313b",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2011,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.137,
+     0.216
+    ]
+   },
+   "layout_fp": "aba8d935f42dc633",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2012,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.333,
+     0.146
+    ]
+   },
+   "layout_fp": "c5d8090ec71b9073",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2013,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.194,
+     0.401
+    ]
+   },
+   "layout_fp": "cabd860d1a7cf769",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2014,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.308,
+     0.112
+    ]
+   },
+   "layout_fp": "ffaf16d3d3eac0d0",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2015,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.179,
+     0.208
+    ]
+   },
+   "layout_fp": "cd9143265612aa65",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2016,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.143,
+     0.301
+    ]
+   },
+   "layout_fp": "421e3bacbdab68a3",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2017,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.345,
+     0.317
+    ]
+   },
+   "layout_fp": "77f6168eac322da3",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2018,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.146,
+     0.026
+    ]
+   },
+   "layout_fp": "e2e5ed53e80838b2",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2019,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.142,
+     0.152
+    ]
+   },
+   "layout_fp": "5c28a481a2b1dbd8",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2020,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.124,
+     0.364
+    ]
+   },
+   "layout_fp": "f5b5bd39300f0715",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2021,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.211,
+     0.303
+    ]
+   },
+   "layout_fp": "f82009293e454742",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2022,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.348,
+     0.199
+    ]
+   },
+   "layout_fp": "40e1e71e04ccd5c3",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2023,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.276,
+     0.371
+    ]
+   },
+   "layout_fp": "0af04388cb67c07f",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2024,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.215,
+     0.287
+    ]
+   },
+   "layout_fp": "321e577236457201",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2025,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.318,
+     0.371
+    ]
+   },
+   "layout_fp": "b9f04d72d32f0f61",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2026,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.299,
+     0.161
+    ]
+   },
+   "layout_fp": "f0d66561292be1ac",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2027,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.165,
+     0.377
+    ]
+   },
+   "layout_fp": "5b7cf1a3bbaf4f68",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2028,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.33,
+     0.057
+    ]
+   },
+   "layout_fp": "715fb2ca68d1338d",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 2029,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.317,
+     0.096
+    ]
+   },
+   "layout_fp": "21f5130a21b0ce4b",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3000,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.233,
+     0.237
+    ]
+   },
+   "layout_fp": "0eca46fdb3e273dc",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3001,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.291,
+     -0.004
+    ]
+   },
+   "layout_fp": "ce7c2d3f16eeed12",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3002,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.321,
+     0.228
+    ]
+   },
+   "layout_fp": "a127064ddfea7583",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3003,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.272,
+     0.29
+    ]
+   },
+   "layout_fp": "2070b857dd55ec46",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3004,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.236,
+     0.081
+    ]
+   },
+   "layout_fp": "a647270c8a74e318",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3005,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.332,
+     0.408
+    ]
+   },
+   "layout_fp": "ebd6faffc9a3f76b",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3006,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.325,
+     0.086
+    ]
+   },
+   "layout_fp": "a5526f41eb4f4e17",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3007,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.179,
+     0.002
+    ]
+   },
+   "layout_fp": "19a323bae96657b6",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3008,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.141,
+     0.185
+    ]
+   },
+   "layout_fp": "5d90f43f87509ad9",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3009,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.215,
+     0.046
+    ]
+   },
+   "layout_fp": "80e7a040b9b69b4c",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3010,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.158,
+     0.023
+    ]
+   },
+   "layout_fp": "318e956a00319ed6",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  },
+  {
+   "seed": 3011,
+   "instruction": "pick coke can",
+   "objects_xy": {
+    "opened_coke_can": [
+     -0.303,
+     0.289
+    ]
+   },
+   "layout_fp": "f7d9ab44c0bf9cce",
+   "info": {
+    "model_id": "opened_coke_can"
+   }
+  }
+ ]
+}

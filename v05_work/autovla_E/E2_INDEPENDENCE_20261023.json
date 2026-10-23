@@ -1,0 +1,181 @@
+{
+ "task": "E2 - independent day-and-vehicle data for the AutoVLA matched-prefix (B2) results",
+ "date": "2026-10-23",
+ "status": "BLOCKED_NO_DISJOINT_DATA (unchanged)",
+ "prior_audit": {
+  "path": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/C_DISJOINT/",
+  "status": "BLOCKED_NO_DISJOINT_DATA",
+  "files_dated": "2026-10-18",
+  "rule": "eligible log = day AND vehicle outside the dev+P1-C connected day-vehicle components (5 components; days 2021.05.25-2021.10.06, 15 vehicles) AND not in OpenScene trainval",
+  "result": "0 eligible logs among navtest/test (147), navmini/warmup (13 day-vehicle-disjoint logs, all trainval), navhard_two_stage (2,731 scenes, same days/vehicles), private_test_hard (anonymised, GT withheld)"
+ },
+ "recheck_20261023": {
+  "method": "filesystem-wide search (find -xdev) for nuPlan/OpenScene log names (YYYY.MM.DD.HH.MM.SS_veh-NN*) as directories or .pkl/.db/.json files; comparison with navsim_logs/test; mtime check of navhard metadata; review of later inventories",
+  "log_named_dirs_found": 135,
+  "log_named_files_found": 147,
+  "logs_outside_navtest147": 0,
+  "logs_day_and_vehicle_disjoint_from_dev_p1c": 0,
+  "nuplan_db_files": 0,
+  "navhard_metadata_modified_after_audit": 0,
+  "sensor_blobs_test_logs": "120 log dirs, all within the 147 navtest logs",
+  "later_inventories_checked": [
+   "/root/VLA/autovla_misalignment_poc/outputs/cvpr_next_validation_20261019/DISJOINT_DELTA_INVENTORY.csv (2026-10-18/19: only prompts/manuscript files new, 'not data')",
+   "/root/VLA/vla0_work/pkg/tables/component_counts.json (same navtest 147 logs; 5 components over all 147)",
+   "/root/VLA/v04_apply/work/CVPR_INTEGRATED_REVISION_20261023_v04/qa/INPUT_IMAGE_DISJOINTNESS_20261023_v04.json (raw-RGB hash disjointness of discovery vs follow-up observations, not day/vehicle independence)"
+  ],
+  "conclusion": "no new inputs, GT or day/vehicle metadata appeared after C_DISJOINT; status unchanged. Downloading new data is not possible here (~1.3 GB free disk) and the public alternatives were already shown ineligible."
+ },
+ "descriptive_fallback": {
+  "label": "DESCRIPTIVE ONLY - per-component effects and leave-one-component-out (LOCO) on the SAME P1-C cohort; NOT external validation, NOT day/vehicle-independent; contrast families, estimators, anchor and component map unchanged; no new p-values",
+  "script": "/root/VLA/v05_work/autovla_E/e2_leave_component_out.py",
+  "outputs": [
+   "/root/VLA/v05_work/autovla_E/leave_component_out_20261023.csv",
+   "/root/VLA/v05_work/autovla_E/leave_component_out_summary_20261023.csv",
+   "/root/VLA/v05_work/autovla_E/leave_component_out_meta_20261023.json"
+  ],
+  "inputs": {
+   "unit_contrasts": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_analysis/unit_contrasts.parquet",
+   "sha256": "c2dd2b65213b71a225d4d013042a757d680377e311560b45fa5cc1c927b0a35b",
+   "component_map": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/A_B2_CLUSTER/COMPONENT_MAP.csv",
+   "component_map_sha256": "2bdc6df2b998f615efe45152877ed792d0b72b3b7842283b16d6fff2323b4692"
+  },
+  "reproduction_check": {
+   "rows": 8,
+   "all_theta_equal": true
+  },
+  "estimator": "scene-weighted ratio sum N_g / sum D_g (analyze_p1c.cluster_arrays, 'scene'); metric severe; n_old 1 (anchor t*+3)",
+  "why_no_p": "LOCO leaves G = 5 components; exact sign-flip floor 0.0625 > 0.05; only effect sizes reported",
+  "summary": [
+   {
+    "contrast": "C_NAT",
+    "requested": true,
+    "estimand": "F",
+    "G_components": 6,
+    "theta_full": 0.2551984126984127,
+    "theta_component_min": 0.15249433106575963,
+    "theta_component_max": 0.3001283846872082,
+    "n_components_same_sign_as_full": 6,
+    "loco_min": 0.23205266955266954,
+    "loco_max": 0.2719176818014027,
+    "loco_min_dropped": "K4",
+    "loco_max_dropped": "K1",
+    "loco_all_same_sign_as_full": true,
+    "max_abs_loco_change": 0.023145743145743164
+   },
+   {
+    "contrast": "C_NAT",
+    "requested": true,
+    "estimand": "P",
+    "G_components": 6,
+    "theta_full": 0.03976535136746404,
+    "theta_component_min": 0.01879771516449717,
+    "theta_component_max": 0.06426229912254756,
+    "n_components_same_sign_as_full": 6,
+    "loco_min": 0.03433657147955152,
+    "loco_max": 0.04384317563573956,
+    "loco_min_dropped": "K3",
+    "loco_max_dropped": "K2",
+    "loco_all_same_sign_as_full": true,
+    "max_abs_loco_change": 0.005428779887912523
+   },
+   {
+    "contrast": "C_GT",
+    "requested": true,
+    "estimand": "F",
+    "G_components": 6,
+    "theta_full": 0.25305555555555553,
+    "theta_component_min": 0.1082766439909297,
+    "theta_component_max": 0.31413398692810457,
+    "n_components_same_sign_as_full": 6,
+    "loco_min": 0.22159090909090906,
+    "loco_max": 0.27662421557770395,
+    "loco_min_dropped": "K4",
+    "loco_max_dropped": "K1",
+    "loco_all_same_sign_as_full": true,
+    "max_abs_loco_change": 0.03146464646464647
+   },
+   {
+    "contrast": "C_GT",
+    "requested": true,
+    "estimand": "P",
+    "G_components": 6,
+    "theta_full": 0.03314255905805201,
+    "theta_component_min": -0.01114023591087811,
+    "theta_component_max": 0.09023109243697479,
+    "n_components_same_sign_as_full": 4,
+    "loco_min": 0.02683601160889529,
+    "loco_max": 0.04314288637493057,
+    "loco_min_dropped": "K3",
+    "loco_max_dropped": "K1",
+    "loco_all_same_sign_as_full": true,
+    "max_abs_loco_change": 0.010000327316878561
+   },
+   {
+    "contrast": "INT",
+    "requested": false,
+    "estimand": "F",
+    "G_components": 6,
+    "theta_full": -0.0021428571428571443,
+    "theta_component_min": -0.04421768707482993,
+    "theta_component_max": 0.04563492063492063,
+    "n_components_same_sign_as_full": 3,
+    "loco_min": -0.010461760461760464,
+    "loco_max": 0.004706533776301217,
+    "loco_min_dropped": "K4",
+    "loco_max_dropped": "K1",
+    "loco_all_same_sign_as_full": false,
+    "max_abs_loco_change": 0.00831890331890332
+   },
+   {
+    "contrast": "INT",
+    "requested": false,
+    "estimand": "P",
+    "G_components": 6,
+    "theta_full": -0.006622792309412027,
+    "theta_component_min": -0.03630133245958934,
+    "theta_component_max": 0.03229458450046686,
+    "n_components_same_sign_as_full": 4,
+    "loco_min": -0.010744882064975524,
+    "loco_max": 7.947469964044583e-05,
+    "loco_min_dropped": "K5",
+    "loco_max_dropped": "K1",
+    "loco_all_same_sign_as_full": false,
+    "max_abs_loco_change": 0.006702267009052473
+   },
+   {
+    "contrast": "C_PROV",
+    "requested": false,
+    "estimand": "F",
+    "G_components": 6,
+    "theta_full": -0.15813492063492063,
+    "theta_component_min": -0.22315592903828196,
+    "theta_component_max": 0.009495464852607707,
+    "n_components_same_sign_as_full": 5,
+    "loco_min": -0.18542358803986708,
+    "loco_max": -0.12463924963924962,
+    "loco_min_dropped": "K1",
+    "loco_max_dropped": "K4",
+    "loco_all_same_sign_as_full": true,
+    "max_abs_loco_change": 0.03349567099567101
+   },
+   {
+    "contrast": "C_PROV",
+    "requested": false,
+    "estimand": "P",
+    "G_components": 6,
+    "theta_full": -0.02182781876443848,
+    "theta_component_min": -0.06726774042950513,
+    "theta_component_max": 0.014726478826824846,
+    "n_components_same_sign_as_full": 4,
+    "loco_min": -0.02893696546960342,
+    "loco_max": -0.01549089277065877,
+    "loco_min_dropped": "K2",
+    "loco_max_dropped": "K3",
+    "loco_all_same_sign_as_full": true,
+    "max_abs_loco_change": 0.0071091467051649405
+   }
+  ],
+  "reading": "C_NAT and C_GT in F are positive in all 6 components (component theta 0.15-0.30 and 0.11-0.31) and every LOCO estimate stays within 0.22-0.28 (max change 0.023 / 0.031, largest when K4, the biggest component, is dropped). In P (E4) C_NAT is positive in 6/6 components (LOCO 0.034-0.044); C_GT is positive in 4/6 (K1, K2 negative) with LOCO 0.027-0.043. INT changes sign across components (3/6 in F) and LOCO; it is shown only for context. These show that no single component drives the pooled estimate; they do not address generalisation to new days/vehicles."
+ },
+ "what_would_unblock": "logs whose day and vehicle lie outside the dev+P1-C components and outside OpenScene trainval, with cameras + GT at NAVSIM 2 Hz; >= 8 new informative components (G >= 9 for alpha 0.025) - see C_DISJOINT/POWER_PRECISION_PLAN.csv"
+}

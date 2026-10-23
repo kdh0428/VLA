@@ -1,0 +1,47 @@
+{
+ "ckpt_files": {
+  ".gitattributes": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+  "README.md": "77da03df6b5fc9d7f35876a1975890f2acc8cf2fb22eb90216aed66c72bc71d0",
+  "action_tokenizer.py": "b6b18eee0320e77156881aea4a92ea5f54dc278d43c1ea72c3a0deaa9d505a31",
+  "config.json": "0c5d94be86f9e15b708650c4b829033ae99243f85507012b1dafa0263f799909",
+  "configuration_spatialvla.py": "63e100324daf81d2cd7b6c5e6fafcace67d660586ef7b509bb38cc8fba72c1e3",
+  "example.png": "15aa5d7c8db76a719eb8c86c13ab9543dbfbc322393287308c372aee2c08f4a5",
+  "generation_config.json": "79c657e6d0660218a91c360516cae5b8fa0cf1dd447476c8dcdb815c8ff994b1",
+  "model-00001-of-00002.safetensors": "35f905421156e25dae0a3aca8bb55a8f15cbdbd68f653f221b99a641dae3ea66",
+  "model-00002-of-00002.safetensors": "8728c56cc76cf20325b154b531a461ffd6789bb3a61f1bb6e559066b18dd61a7",
+  "model.safetensors.index.json": "6c351156136b2452db86d3a426ff30adc9d11363b43f46fa69fe79d76b6d5c79",
+  "modeling_gemma2.py": "a21d2983a01ae6b9e25c9f6fa4daff316f98f4f44435b482e8f1f8bbfb406b38",
+  "modeling_spatialvla.py": "a04008cf364e094079493e5982fa2b32fca12874b0a42b645e0aecab024e7236",
+  "preprocessor_config.json": "bdb79dc3255a75c1c4be8ac1ddd4e2aa08b9a29eee0431755b7b0faa3b54e413",
+  "processing_spatialvla.py": "c20b15460633f65809788c633936347fada2f2bbcfffba898d2f0b4b99807b33",
+  "processor_config.json": "36f2a864604d81549b362e4bd516c76d46a3018d98854a6bd245aae68ea8359a",
+  "simplerenv.md": "0e8d89bea4c5728549a0aeb663558f1475d9571afcbabf598d67d9eb26fadf50",
+  "special_tokens_map.json": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+  "test_huggingface.py": "febaf9c398e53e6b07bbb122771d07da8a2385b1eed778d6bd6e56c121d2fe4e",
+  "tokenizer.json": "2523a63c898ebf0a32c7282a2e459ef2c950a846c5f3172305089e4149b6b6c3",
+  "tokenizer_config.json": "33f38858ac90afd5ac29942110dd3b98f40e1e194fca254714bab5d88f57cc65"
+ },
+ "scripts": {
+  "analyze.py": "bff6ca3e09dc5f56e74d1dcc391661baa07e5efdccd91ddb24e08b50bce3a104",
+  "diag_determinism.py": "694d1ec8c109e616d675a129234fdf8ec2809bb3acef3f075815254db3837f52",
+  "survey_layouts.py": "7f6a357cd5f21144e736d5c84603f3d27324adcc991e52bbdd3d823ebf926d95",
+  "svla_wc_core.py": "da39b618ab37451c512ddda8360f1b0721140eed77c14e0a2ce92059302bfb5c",
+  "wc_run.py": "255f269f70c63563868dd226cecfd99aba4021c3286d86a85336b563a568cd16"
+ },
+ "manifests": {
+  "diag_obs_ids.json": "34125092acfeec410a48c30ca6bf844628fe940855125806a9f5eebb74246307",
+  "layout_survey.json": "5905f69de41ae26c338e8c7ee58b6fb941bb88623f1ed96048a898849062a027",
+  "pilot_layouts.json": "8f3e711f08c9774b820e4894bae84bdd3569774ce7585c458896996c474c25de",
+  "validation_candidates.json": "9e52e9433dacfbf052750cdfa0ebef218865a822a536182246a16b859ad8ba46"
+ },
+ "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+ "torch": "2.8.0+cu128",
+ "cuda": "12.8",
+ "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+ "transformers": "4.47.0 @ /root/VLA/spatialvla/site/transformers/__init__.py",
+ "git_head": "c0aee3265035e48868878418d2f4903beae61526",
+ "git_tracked_diff_stat_sha256": "6bebc1b3df2d83304b8e5d8cf6e798ab73caa08a4c3a913836e4299759afe4d5",
+ "git_tracked_diff_stat_tail": [
+  " 8 files changed, 17901 insertions(+), 217 deletions(-)"
+ ]
+}

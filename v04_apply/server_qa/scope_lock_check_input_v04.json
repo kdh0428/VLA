@@ -1,0 +1,431 @@
+{
+ "pre-registered (should be absent)": {
+  "n": 2,
+  "hits": [
+   {
+    "file": "supplement_body.tex",
+    "context": "tion{Evidence history and interpretation. Recording a protocol for a follow-up does not make later reanalysis preregistered.} \\label{tab:provenance} \\begin{tabularx}{\\textwidth}{@{}l >{\\raggedright\\arraybackslash}X@{}}\\toprule Re"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "coincide. The rule was fixed before ranking/images in this round, after earlier results were known; it is not preregistration or representative sampling. \\begin{table}[ht] \\centering\\small \\caption{All five supplied driving case"
+   }
+  ]
+ },
+ "pre-specified": {
+  "n": 10,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "LA and VLA-0 share a Qwen2.5-VL-3B backbone. In SpatialVLA (SigLIP/Gemma~2), a verified within-call path with pre-specified distance-matched donors again yields a larger response to the latest than to the older preceding action (n"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "} In AutoVLA, the latest-position contrast persists behind a natural older context value. In VLA-0 and, under pre-specified distance-matched donors, in SpatialVLA, latest-action edits produce larger continuation responses than old"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "\\ SpatialVLA within-call, follow-up & i & 105 obs.\\ (69 analyzed) & 2 tasks; 34 layouts (move\\_near reused) & Pre-specified distance-matched donors\\\\ SpatialVLA open drawer (supp.) & i & 44 obs.\\ (35 analyzed) & 1 task; 15 scenari"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "-0's official LIBERO loop (one-step replanning, eight-chunk temporal ensemble, frame skip 10, seed 7) on four pre-specified task--initial-state units not used before. Arms start from the same state: N (natural), R (self-patch), an"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": " $[0.007,0.046]$ in E4 for $C_{\\NAT}$. The interaction is $-0.2$\\,pp ($p=0.92$; interval withheld); without a pre-specified margin, equality and irrelevance of older context are not supported. The corrected-source value reduces se"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "at drive, day--vehicle, or connected-component level; family $\\alpha=0.05$ for F and $0.025$ for weighted E4, pre-specified because sign-flip calibration of weighted totals showed 9--11\\% type~I error at nominal 5\\% (calibrated on"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": ",0.100]$ over 64 observations. Its L donors were farther on average, however, and only 7 observations met its pre-specified distance matching. Before new intervention outputs, we specified a follow-up on 25 new coke layouts and th"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "te 95\\% Newcombe intervals, design-effect adjusted for move\\_near's 10 layouts). Per-task equivalence was not pre-specified and is not claimed; the $\\pm10$\\,pp bound concerns the two-task means.} \\label{tab:spatial8} \\setlength{\\t"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "ur samples was used; 41 observations had none. Of 420 samples, 297 reproduced a natural action. \\item \\textbf{Pre-specified primary analysis (distance-matched).} Only 7 observations qualified (6 coke layouts and 1 move\\_near layou"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "stance-matched candidate existed for only 16 observations in 15 layouts (2 move\\_near). This motivated a new, pre-specified donor rule rather than reselection. \\end{itemize} \\section{SpatialVLA Matched Follow-up} \\label{sec:svla2"
+   }
+  ]
+ },
+ "bitwise": {
+  "n": 4,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "steps (784 policy replans including the smoke; a replan may contain several generation calls), R reproduced N bitwise in actions, simulator states, and ensemble buffers in all four units (160/160 self-patch calls token-identica"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "sts across 20 drives, but intervention-path parity was not established. Identical paths and batches reproduce bitwise; changing batch composition or splitting prefill/decoding changes some outputs. Condition-correlated batching"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": " eligible donor) executed the natural chunk and are not counted as interventions. The no-op compares R with N bitwise in actions, MuJoCo states, EE poses, and buffers. The offline replay feeds every arm's logged chunks in order"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "s from the official logits by at most 0.125, with no token change. \\item Self-patch continuation logits are bitwise equal in validation, in the discovery pilot and in the follow-up. \\item In the drawer task they differ by a"
+   }
+  ]
+ },
+ "uniqueness claims": {
+  "n": 2,
+  "hits": [
+   {
+    "file": "supplement_body.tex",
+    "context": "reprocessing, the digits/space/EOS logits processor, and the action parser are the official ones. The adapter only avoids re-downloading the base model. \\paragraph{Arms and donors.} Within each call, the reference R forces back the natural first three vectors."
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "rprint includes robot/actor poses, robot-asset names and the instruction. The panel was fixed as the first 20 unique scenarios in seeds 5000--5099 (69 total), with calls 2/6/10. These scenarios need not have distinct physical "
+   }
+  ]
+ },
+ "isolate/causal": {
+  "n": 9,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "vations, 34 layouts, two SimplerEnv tasks). The pattern is thus observed in a second backbone family, without isolating a backbone effect. \\end{abstract} \\section{Introduction} Autoregressive VLAs condition later actions on e"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "ity, turn rate/acceleration, and a separately trained learned non-autoregressive extrapolator, which does not isolate VLA architecture. On units observed through 2.5\\,s after perturbation (Supplementary Fig.~S13), CM excess in"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "el on two reused simulator tasks plus one supplementary task. Observing the pattern across backbones does not isolate a backbone effect, because the policies also differ in data, action representation, and domain. Among survey"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "ego variant is secondary. These controls compare response under the same injected motion change; they neither isolate an autoregressive architectural effect nor match pretraining data or capacity. \\begin{table}[ht] \\centering"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "t GT and 89.0\\% $[79.5,98.0]$ with persistent GT (drive bootstrap). It uses a different schedule and does not isolate retention. Neither analysis establishes GT-free recovery after release. \\begin{figure}[h] \\centering \\inclu"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": ", so later actions can differ. The cases are conditioned on the outcome and are not representative samples or causal subgroups. RGB observations were not stored.} \\label{fig:tcp} \\end{figure} \\section{Reproducibility} \\label{"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": " in both changed- and unchanged-success groups. Grouping by a post-intervention outcome is descriptive, not a causal subgroup analysis. \\begin{figure}[ht] \\centering\\includegraphics[width=\\textwidth]{tcp_area_by_success.pdf} "
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": " token per forward pass. The prompt keeps the official bidirectional mask, and generated or forced tokens are causal. Forced conditioning tokens never enter the prompt. \\item \\textbf{Evaluation path.} In the transformers versi"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "; deterministic kernels changed tokens and were not used. Three residual first-attempt disagreements were not isolated, and we do not attribute all differences to bf16 arithmetic. \\item \\textbf{Logit-level parity.} \\begin{it"
+   }
+  ]
+ },
+ "improvement/success wording": {
+  "n": 7,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "ty to that intervention. Whether it also changes what is executed, how the system moves, and whether the task succeeds are separate empirical questions. We therefore measure an intervention at three levels: (i) the \\emph{decodi"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "image is introduced. Groups use the sign of the scene-mean severe-event change, NAT\\_REF minus NAT\\_NSRC: 87 improve, 12 are equal, and one worsens. Equality is of the scene-average binary outcome; individual units or continu"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "l@{}}\\toprule Case & Scene-mean FDE change (m) & Displayed-unit FDE change (m) & Displayed $Y$ pair\\\\\\midrule Improved 1 & $-1.89$ & $-4.96$ & 0/1\\\\ Improved 2 & $-1.93$ & $-0.50$ & 0/1\\\\ Unchanged severe rate 1 & $-0.47$ & $-"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "nge (m) & Displayed-unit FDE change (m) & Displayed $Y$ pair\\\\\\midrule Improved 1 & $-1.89$ & $-4.96$ & 0/1\\\\ Improved 2 & $-1.93$ & $-0.50$ & 0/1\\\\ Unchanged severe rate 1 & $-0.47$ & $-0.37$ & 0/0\\\\ Unchanged severe rate 2 &"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "atistical assumption is correct. \\begin{figure}[ht] \\centering\\includegraphics[width=\\textwidth]{case_detail_improved_2.pdf} \\caption{Second improved case, from a different drive. Gray is GT, blue GT-latest context, and orang"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": " \\begin{figure}[ht] \\centering\\includegraphics[width=\\textwidth]{case_detail_improved_2.pdf} \\caption{Second improved case, from a different drive. Gray is GT, blue GT-latest context, and orange Normal-source-latest context. "
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": " embodiment, camera path, adapter, checkpoint and normalization, and needs no training. Selection did not use success rates or effects. \\end{itemize} \\paragraph{Panel.} \\begin{itemize} \\item \\textbf{Reset scenarios.} The cabinet is"
+   }
+  ]
+ },
+ "primary 0.048": {
+  "n": 5,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "donors again yields a larger response to the latest than to the older preceding action (normalized difference 0.048, 95\\% layout-bootstrap interval $[0.026,0.072]$; 69 observations, 34 layouts, two SimplerEnv tasks). The patt"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": " layouts), with balanced donor distances (mean $d_L$ 0.054 vs.\\ $d_O$ 0.053). The primary estimate is $\\Delta=0.048$ $[0.026,0.072]$, positive in both tasks (Table~\\ref{tab:svla}; layout-level plots in Supplementary Fig.~S12)"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": ".044,0.100]$\\\\ Discovery, distance-matched & 7/7 & 0.084 & n/a$^{a}$\\\\ Follow-up, matched (primary) & 69/34 & 0.048 & $[0.026,0.072]$\\\\ \\ coke & 55/25 & 0.042 & $[0.015,0.070]$\\\\ \\ move\\_near & 14/9 & 0.054 & $[0.018,0.093]$\\"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "lar}{@{}lrr@{}}\\toprule Quantity & Estimate & 95\\% interval\\\\\\midrule $\\Delta=E_L-E_O$ (primary, two tasks) & 0.048 & $[0.026,0.072]$\\\\ \\ coke (25 layouts) / move\\_near (9 layouts) & 0.042 / 0.054 & $[0.015,0.070]$ / $[0.018,"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": ".093]$\\\\ $E_L$ / $E_O$ & 0.070 / 0.022 & \\\\ $\\Delta$, same change-type pattern at $a_1$ and $a_2$ (48 obs.) & 0.048 & $[0.019,0.079]$\\\\ $a_3$: $E_L$ / $E_O$; $a_4$: $E_L$ / $E_O$ & 0.068 / 0.027; 0.072 / 0.017 & \\\\ translatio"
+   }
+  ]
+ },
+ "drawer 0.145": {
+  "n": 4,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "021$ $[0.012,0.030]$, so the older position is not irrelevant. A supplementary open-drawer task shows $\\Delta=0.145$ $[0.091,0.210]$ (35 observations, 15 reset scenarios). Responses are command-level and were not executed; th"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "0.042 & $[0.015,0.070]$\\\\ \\ move\\_near & 14/9 & 0.054 & $[0.018,0.093]$\\\\ Open drawer (supp.) & 35/15$^{b}$ & 0.145 & $[0.091,0.210]$\\\\\\bottomrule \\end{tabular} \\end{table} \\section{Level (ii): Executed Commands and Motion"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": ". Of 1,053 samples, 792 were rejected for zero distance and 226 for the ratio. \\item \\textbf{Effect.} $\\Delta=0.145$ $[0.091,0.210]$, with $E_L=0.183$ and $E_O=0.039$. Donor distances are balanced (0.100 vs.\\ 0.101). $D_{\\mat"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "ese seven groups, keep all scenarios in each sampled group, and recompute the scenario-weighted mean: $\\Delta=0.145$ $[0.075,0.236]$ (10,000 resamples, seed 20261023). Giving pose groups equal weight changes the estimand and "
+   }
+  ]
+ },
+ "drawer pose sensitivity": {
+  "n": 6,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "tance-matched donors\\\\ SpatialVLA open drawer (supp.) & i & 44 obs.\\ (35 analyzed) & 1 task; 15 scenarios / 7 pose groups & Same rule; recovered observations\\\\\\bottomrule \\end{tabularx} \\end{table*} \\paragraph{AutoVLA.} We use ch"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "ap intervals; separate experiments; units are layouts, except $^{b}$drawer reset scenarios sharing 7 recorded pose groups; $^{a}$one move\\_near layout).} \\label{tab:svla} \\footnotesize\\setlength{\\tabcolsep}{2.5pt} \\begin{tabular}{"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "ario bootstrap interval, and it is not pooled with the two-task estimand. \\end{itemize} \\paragraph{Post-hoc pose-group sensitivity.} The 15 analyzed scenarios share seven recorded pose configurations after ignoring the instructi"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": " groups, keep all scenarios in each sampled group, and recompute the scenario-weighted mean: $\\Delta=0.145$ $[0.075,0.236]$ (10,000 resamples, seed 20261023). Giving pose groups equal weight changes the estimand and yields $0"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "s, keep all scenarios in each sampled group, and recompute the scenario-weighted mean: $\\Delta=0.145$ $[0.075,0.236]$ (10,000 resamples, seed 20261023). Giving pose groups equal weight changes the estimand and yields $0.128$ "
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "ecompute the scenario-weighted mean: $\\Delta=0.145$ $[0.075,0.236]$ (10,000 resamples, seed 20261023). Giving pose groups equal weight changes the estimand and yields $0.128$ $[0.070,0.204]$. These are post-hoc sensitivity interva"
+   }
+  ]
+ },
+ "reset scenario": {
+  "n": 6,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "is not irrelevant. A supplementary open-drawer task shows $\\Delta=0.145$ $[0.091,0.210]$ (35 observations, 15 reset scenarios). Responses are command-level and were not executed; the experiments are not pooled. \\begin{table}[t] \\cent"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "ction distance; 95\\% layout-bootstrap intervals; separate experiments; units are layouts, except $^{b}$drawer reset scenarios sharing 7 recorded pose groups; $^{a}$one move\\_near layout).} \\label{tab:svla} \\footnotesize\\setlength{\\tab"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "lection did not use success rates or effects. \\end{itemize} \\paragraph{Panel.} \\begin{itemize} \\item \\textbf{Reset scenarios.} The cabinet is fixed; robot pose, robot appearance and target drawer vary. The original fingerprint includ"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": " was still collecting after 20.8 GPU-minutes when the process ended: it had collected 44 observations from 16 reset scenarios and produced no intervention outputs. \\item \\textbf{Amendment.} An amendment made before any intervention ou"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": " held in 44/44. \\item \\textbf{Donors.} A matched donor was found within 64 samples for 35/44 observations (15 reset scenarios). Of 1,053 samples, 792 were rejected for zero distance and 226 for the ratio. \\item \\textbf{Effect.} $\\Delt"
+   },
+   {
+    "file": "supp_v03_moved.tex",
+    "context": "nses to the older ($a_1$) and latest ($a_2$) edit by layout in the matched follow-up (coke, move near) and by reset scenario in the supplementary open-drawer task. Right: the corresponding unit-mean $\\Delta$ per experiment; experiment"
+   }
+  ]
+ },
+ "D_S 12 components": {
+  "n": 5,
+  "hits": [
+   {
+    "file": "supplement_body.tex",
+    "context": "s. \\section{Estimation, Interval Policy, and Coverage Checks} \\label{app:stats} For paired unit differences $d_{su}$ in scene $s$, define $d_s=|U_s|^{-1}\\sum_u d_{su}$. With fixed scene weights $w_s$, the estimator and clus"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "val Policy, and Coverage Checks} \\label{app:stats} For paired unit differences $d_{su}$ in scene $s$, define $d_s=|U_s|^{-1}\\sum_u d_{su}$. With fixed scene weights $w_s$, the estimator and cluster totals are \\begin{equatio"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "age Checks} \\label{app:stats} For paired unit differences $d_{su}$ in scene $s$, define $d_s=|U_s|^{-1}\\sum_u d_{su}$. With fixed scene weights $w_s$, the estimator and cluster totals are \\begin{equation} \\widehat\\theta=\\fra"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": " cluster totals are \\begin{equation} \\widehat\\theta=\\frac{\\sum_g N_g}{\\sum_g D_g},\\qquad N_g=\\sum_{s\\in g}w_s d_s,\\qquad D_g=\\sum_{s\\in g}w_s. \\end{equation} Failure-stratum weights are one; evaluation-frame weights are inv"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "bservation.} \\end{figure} \\begin{figure}[ht] \\centering\\includegraphics[width=\\textwidth]{case_detail_unchanged_severe_2.pdf} \\caption{Second unchanged-severe-rate case. Both displayed plans have $Y=0$, although their traje"
+   }
+  ]
+ },
+ "corresponding donor action": {
+  "n": 4,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "s decoded after forcing a conditioning copy in which $a_2$ (latest, L) or $a_1$ (older, O) is replaced by the corresponding action from a common $T{=}0.7$ sampled chunk, keeping the natural gripper token at each position; OL repla"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "quivalence $p$ values under physical clustering are 0.00668, 0.00862, 0.01077, and 0.01077, respectively. The corresponding $\\pm5$\\,pp values are 0.338, 0.344, 0.344, and 0.344. These quantify the stated margin under the corrected"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "re events by 42.8/39.8/36.2/34.6\\,pp at FDE thresholds $\\tau=2/3/4/5$\\,m. The matched-prefix contrasts behave correspondingly with the opposite sign. \\begin{table}[h] \\centering\\small \\caption{\\textbf{Metric decomposition} (pp un"
+   },
+   {
+    "file": "supp_v03_moved.tex",
+    "context": "e matched follow-up (coke, move near) and by reset scenario in the supplementary open-drawer task. Right: the corresponding unit-mean $\\Delta$ per experiment; experiments use different donor rules or tasks and are not pooled. Norm"
+   }
+  ]
+ },
+ "ratio 0.8-1.25": {
+  "n": 5,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": " $[0.01151,0.01569]$ (Table~\\ref{tab:vla0}). It persists on a source-distance-matched subset (distance ratio $0.8\\leq d_L/d_O\\leq1.25$; 66 observations, 27 tasks) and when the edited prefixes keep the same token set, which lea"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "ew coke layouts and the 10 reused move\\_near layouts. It takes the first donor among at most 64 samples with $0.8\\le d_L/d_O\\le1.25$. The matched donor rule was satisfied in 69/105 observations (34 layouts), with balanced dono"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "or every arm; 149 of 150 pilot observations qualify. For the matched-distance subset, $d_L/d_O$ must lie in $[0.8,1.25]$, where $d_L,d_O$ are mean absolute donor changes over the six arm coordinates in normalized bins. This is a"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "-$p$ 1, top-$k$ 0; seeds hashed from the observation id). The first sample that is joint-valid and satisfies $0.8\\le d_L/d_O\\le1.25$ is used for O, L and OL. If none of the 64 qualifies, the observation is MATCHED\\_SOURCE\\_MIS"
+   },
+   {
+    "file": "supp_v03_svla.tex",
+    "context": "Of these, 2,710 were rejected for zero distance (they reproduced a natural action), 396 for a ratio outside $[0.8,1.25]$ and 68 for a gripper mismatch; 69 were selected. \\item \\textbf{Donor distance.} Donor distances are balance"
+   }
+  ]
+ },
+ "69/105 coverage": {
+  "n": 1,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "he first donor among at most 64 samples with $0.8\\le d_L/d_O\\le1.25$. The matched donor rule was satisfied in 69/105 observations (34 layouts), with balanced donor distances (mean $d_L$ 0.054 vs.\\ $d_O$ 0.053). The primary est"
+   }
+  ]
+ },
+ "FAST autoregressive": {
+  "n": 6,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "erated \\emph{within one call}, with its source and placement controlled; compressed action tokenizers such as FAST~\\cite{pertsch2025fast} need a token- or coefficient-domain edit rather than a physical-time-step substitution"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "e call}, with its source and placement controlled; compressed action tokenizers such as FAST~\\cite{pertsch2025fast} need a token- or coefficient-domain edit rather than a physical-time-step substitution. Astra studies trajec"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "ct, because the policies also differ in data, action representation, and domain. Among surveyed alternatives, FAST has temporally nonlocal tokens, original OpenVLA predicts one step per call, OFT decodes in parallel, and Wor"
+   },
+   {
+    "file": "supplement_body.tex",
+    "context": "his revision. \\end{itemize} Model weights are not included. The VLA-0 runner fixes made after the pilot (fail-fast fingerprinting and a strict validation gate) are for future runs; the completed pilot was produced by the ear"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": "atialVLA-4B & SigLIP + Gemma~2 & 4 actions $\\times$ 3 spatial tokens & yes (path verified) & experiment\\\\ pi0-FAST & SigLIP + Gemma-2B (JAX) & DCT + BPE: a token spans frequency coefficients, not a time step [P] & not time-a"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": "ntion to earlier action blocks [P] & structural null only & surveyed\\\\\\bottomrule \\end{tabularx} \\end{table} FAST remains autoregressive: its DCT/BPE tokens encode coefficients over a whole chunk, so token positions do not "
+   }
+  ]
+ },
+ "WorldVLA fork": {
+  "n": 8,
+  "hits": [
+   {
+    "file": "paper_body.tex",
+    "context": "inguishes independent prediction errors from errors accumulated through visited states~\\cite{ross2011dagger}. WorldVLA reports deterioration during autoregressive action generation and proposes masking prior actions~\\cite{cen202"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "reports deterioration during autoregressive action generation and proposes masking prior actions~\\cite{cen2025worldvla}. Action dependence and possible propagation are therefore established; we estimate controlled context contra"
+   },
+   {
+    "file": "paper_body.tex",
+    "context": "AST has temporally nonlocal tokens, original OpenVLA predicts one step per call, OFT decodes in parallel, and WorldVLA masks preceding action blocks (Supplementary Sec.~T). AutoVLA results are five-second open-loop plans with GT"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": "ode and model cards (revisions recorded in the package; L = checked locally, P = public source). The original WorldVLA implementation was inspected in the third-party fork \\texttt{Stars1233/WorldVLA}, pinned to commit \\texttt{6a"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": " = checked locally, P = public source). The original WorldVLA implementation was inspected in the third-party fork \\texttt{Stars1233/WorldVLA}, pinned to commit \\texttt{6a9af08}. \\begin{table}[h] \\centering\\footnotesize \\ca"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": " public source). The original WorldVLA implementation was inspected in the third-party fork \\texttt{Stars1233/WorldVLA}, pinned to commit \\texttt{6a9af08}. \\begin{table}[h] \\centering\\footnotesize \\caption{\\textbf{Candidate pol"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": "A-OFT & OpenVLA-7B + LoRA & parallel decoding over zero-embedded slots, regression head [P] & no & surveyed\\\\ WorldVLA (v1 code) & Chameleon-7B & autoregressive blocks; an inference attention mask blocks attention to earlier act"
+   },
+   {
+    "file": "supp_v03_models.tex",
+    "context": "he alternatives require additional checkpoint storage and, in some cases, different frameworks. \\item \\textbf{WorldVLA.} It would provide only an architectural null control. The repository named in its paper now redirects to a s"
+   }
+  ]
+ },
+ "LLM statement": {
+  "n": 2,
+  "hits": [
+   {
+    "file": "llm_usage_statement_20261023_v04.tex",
+    "context": "OpenAI ChatGPT and Codex assistants were used for research planning, literature and model-implementation review, manuscript "
+   },
+   {
+    "file": "llm_usage_statement_20261023_v04.tex",
+    "context": "OpenAI ChatGPT and Codex assistants were used for research planning, literature and model-implementation review, manuscript drafting a"
+   }
+  ]
+ }
+}

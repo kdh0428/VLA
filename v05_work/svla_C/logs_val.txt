@@ -1,0 +1,38 @@
+[plan] phase=val K=1 E=4 anchor=8 units=6
+Some kwargs in processor config are unused and will not have any effect: action_chunk_size, action_config, num_obs_steps, bin_policy, intrinsic_config, obs_delta, statistics. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.47it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.60it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.58it/s]
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-23 12:22:30.136] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 12:22:30.137] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-23 12:22:35.177] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 12:22:35.177] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-23 12:22:40.277] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 12:22:40.277] [svulkan2] [warning] Continue without GLFW.
+[2026-10-23 12:22:40.723] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:22:40.723] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:22:40.723] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:22:40.723] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:22:40.723] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:22:40.723] [svulkan2] [error] Failed to initialize OptiX denoiser

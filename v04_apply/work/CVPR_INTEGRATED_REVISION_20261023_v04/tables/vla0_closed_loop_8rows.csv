@@ -1,0 +1,13 @@
+unit,suite,task,init,edit,n_steps,first_cmd_diff_step,first_state_diff_step,first_ee_gt_0p1mm_step,first_ee_gt_1mm_step,mean_ee_mm_all48,mean_ee_mm_steps8to47,final_ee_mm,mean_cmd_all48,mean_cmd_steps8to47
+U1,libero_spatial,pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate,6,L,48,11.0,11.0,11.0,15.0,2.811596658222771,3.373915989867325,4.2970875429588675,0.012585793554535485,0.015102952265442582
+U1,libero_spatial,pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate,6,O,48,11.0,11.0,14.0,17.0,2.4252973574145473,2.910356828897457,9.221607199073665,0.011522387262327053,0.013826864714792464
+U1,libero_spatial,pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate,6,R,48,,,,,0.0,0.0,0.0,0.0,0.0
+U2,libero_object,pick_up_the_tomato_sauce_and_place_it_in_the_basket,6,L,48,11.0,11.0,14.0,18.0,1.6342992541794357,1.9611591050153225,3.014476768093924,0.005886692279697551,0.0070640307356370615
+U2,libero_object,pick_up_the_tomato_sauce_and_place_it_in_the_basket,6,O,48,11.0,11.0,15.0,25.0,1.310905507804132,1.5730866093649585,3.5151094413743884,0.007939337295877319,0.009527204755052783
+U2,libero_object,pick_up_the_tomato_sauce_and_place_it_in_the_basket,6,R,48,,,,,0.0,0.0,0.0,0.0,0.0
+U3,libero_goal,open_the_middle_drawer_of_the_cabinet,7,L,48,11.0,11.0,13.0,28.0,1.268448230066112,1.5221378760793343,5.5184198926020755,0.00551958026032177,0.0066234963123861235
+U3,libero_goal,open_the_middle_drawer_of_the_cabinet,7,O,48,11.0,11.0,13.0,27.0,0.6883951629906676,0.8260741955888011,0.7828615187174984,0.004530187433475577,0.005436224920170692
+U3,libero_goal,open_the_middle_drawer_of_the_cabinet,7,R,48,,,,,0.0,0.0,0.0,0.0,0.0
+U4,libero_goal,push_the_plate_to_the_front_of_the_stove,7,L,48,11.0,11.0,12.0,17.0,2.161067727746754,2.5932812732961046,5.15456088172045,0.00989869058371874,0.011878428700462487
+U4,libero_goal,push_the_plate_to_the_front_of_the_stove,7,O,48,11.0,11.0,16.0,26.0,2.360591257099097,2.8327095085189162,8.415101379045478,0.00905364235187436,0.010864370822249232
+U4,libero_goal,push_the_plate_to_the_front_of_the_stove,7,R,48,,,,,0.0,0.0,0.0,0.0,0.0

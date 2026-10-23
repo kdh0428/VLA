@@ -1,0 +1,138 @@
+[
+ {
+  "obs_id": "smk_coke_s3008_c0",
+  "task": "google_robot_pick_coke_can",
+  "seed": 3008,
+  "call": 0,
+  "env_step": 0,
+  "instruction": "pick coke can",
+  "img_sha256": "fc2a975501bada920196692c51045466a33cc91c644e1c051c9aa7a47c8500c4",
+  "png": "obs/smk_coke_s3008_c0.png",
+  "collect_predict_action_ids": [
+   258910,
+   265264,
+   265346,
+   259167,
+   265168,
+   265346,
+   259423,
+   265198,
+   265346,
+   259925,
+   265195,
+   265346,
+   1
+  ]
+ },
+ {
+  "obs_id": "smk_coke_s3009_c0",
+  "task": "google_robot_pick_coke_can",
+  "seed": 3009,
+  "call": 0,
+  "env_step": 0,
+  "instruction": "pick coke can",
+  "img_sha256": "a538e42f7fdb8132130828fabc2fa0621d2fc7b686254daf09fa76cc1167f638",
+  "png": "obs/smk_coke_s3009_c0.png",
+  "collect_predict_action_ids": [
+   259159,
+   265232,
+   265346,
+   259168,
+   265232,
+   265346,
+   259416,
+   265184,
+   265346,
+   257273,
+   264169,
+   265346,
+   1
+  ]
+ },
+ {
+  "obs_id": "smk_move_near_s6_c0",
+  "task": "google_robot_move_near",
+  "seed": 6,
+  "call": 0,
+  "env_step": 0,
+  "instruction": "move orange near blue plastic bottle",
+  "img_sha256": "de0b840c06ffc6d64532a53bbda54fa80337dcd944147377b0b368cbab50f672",
+  "png": "obs/smk_move_near_s6_c0.png",
+  "collect_predict_action_ids": [
+   260179,
+   264508,
+   265346,
+   259907,
+   264235,
+   265346,
+   260172,
+   264493,
+   265346,
+   260428,
+   264236,
+   265346,
+   1
+  ]
+ },
+ {
+  "obs_id": "smk_move_near_s8_c0",
+  "task": "google_robot_move_near",
+  "seed": 8,
+  "call": 0,
+  "env_step": 0,
+  "instruction": "move pepsi can near orange",
+  "img_sha256": "f7a66cc29d0a9123f341953fe03f7ea85e4ab318ed2ea4329d8ca9ef8d4d40bf",
+  "png": "obs/smk_move_near_s8_c0.png",
+  "collect_predict_action_ids": [
+   259084,
+   264406,
+   265346,
+   259084,
+   264182,
+   265346,
+   259340,
+   264676,
+   265346,
+   259597,
+   264676,
+   265346,
+   1
+  ]
+ },
+ {
+  "episode_end": true,
+  "task": "google_robot_pick_coke_can",
+  "seed": 3008,
+  "tag": "smk",
+  "t": 1,
+  "done": false,
+  "trunc": false
+ },
+ {
+  "episode_end": true,
+  "task": "google_robot_pick_coke_can",
+  "seed": 3009,
+  "tag": "smk",
+  "t": 1,
+  "done": false,
+  "trunc": false
+ },
+ {
+  "episode_end": true,
+  "task": "google_robot_move_near",
+  "seed": 6,
+  "tag": "smk",
+  "t": 1,
+  "done": false,
+  "trunc": false
+ },
+ {
+  "episode_end": true,
+  "task": "google_robot_move_near",
+  "seed": 8,
+  "tag": "smk",
+  "t": 1,
+  "done": false,
+  "trunc": false
+ }
+]

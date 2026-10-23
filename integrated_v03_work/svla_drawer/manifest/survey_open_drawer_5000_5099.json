@@ -1,0 +1,8202 @@
+[
+ {
+  "seed": 5000,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8817046011bc8e4a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.36095], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5001,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b9eab37272a304bc",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5002,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "7f56e33c5d8510cd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5003,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "4570cdbcdf676f51",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5004,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "671d41167b356a02",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5005,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2785f4c8a681c7f9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5006,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "1ce78df504e11f1d",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.11595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5007,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "26adfef83b8b9fd6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5008,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "39c73518ce19d1bb",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5009,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "4ee98c2ecb9e659e",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.60595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5010,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "309ea9af1e61d1a7",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5011,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "a21c1585a64fc981",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5012,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "c090730b51a1da45",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5013,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "7346eec4d7e21a54",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5014,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "5acfe9a475084036",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5015,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "744d34d3443ba6d8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5016,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "5a241f693cade5ca",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.60595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5017,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8ff3e6e35456be77",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.11595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5018,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "1fbd866836e647db",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5019,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "671d41167b356a02",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5020,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8cacee0f076a8879",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5021,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "9aa1e3b7dc4bb4b9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5022,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "f4d9c07234a5f7cd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5023,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "a341e00d30d7b567",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.60595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5024,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "109a521cf5420064",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5025,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "d3e898f01d3635d6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5026,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2b19f583d48c7f9f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5027,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "f4d9c07234a5f7cd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5028,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "0798b1e3bbc5e0b0",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5029,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "9aa1e3b7dc4bb4b9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5030,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2b82b5551e84b9f4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943946, -0.150754, 0.36095], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5031,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "ced96d9a043bfe8a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5032,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8817046011bc8e4a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.60595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5033,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "d7490295b3f9cd42",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5034,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "dbe83f39c8eca354",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5035,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "05ef0d3e3c7b7c57",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5036,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b3d118ffe779644a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5037,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "0dc9623a5b8d8722",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5038,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "26adfef83b8b9fd6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5039,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2a8c4e00d792d528",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5040,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "10a2e142c9539edf",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.11595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5041,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "707d9a5d4c9a54b3",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.60595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5042,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "707d9a5d4c9a54b3",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.60595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5043,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "593922f3d57d7362",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5044,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "6684ea6e0fb92826",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.11595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5045,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "ced96d9a043bfe8a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5046,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "707d9a5d4c9a54b3",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.60595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5047,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2b82b5551e84b9f4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943946, -0.150754, 0.36095], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5048,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "048cb7ff9aed875a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5049,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b2f0060347d8f758",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5050,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "7d1c43e75da95df4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.60595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5051,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "0ca18e2e276324b6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5052,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "dbe83f39c8eca354",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5053,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2785f4c8a681c7f9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5054,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "a755533e4183126f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.60595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5055,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8516f99add710192",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.36095], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5056,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b3d118ffe779644a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5057,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "1cf75b4c9273af58",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.36095], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5058,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "6b8212e83e251fda",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5059,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "137f4fbc78ef9f23",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5060,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "f4d9c07234a5f7cd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5061,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "26adfef83b8b9fd6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5062,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "744d34d3443ba6d8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5063,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "7f2c1d119ee125c9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5064,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "23cf2a64f03f41c4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943946, -0.150754, 0.36095], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5065,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8ff3e6e35456be77",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.11595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5066,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "df0c7ba5489d203e",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.11595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5067,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "d3e898f01d3635d6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5068,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b3d118ffe779644a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5069,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "23cf2a64f03f41c4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.11595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5070,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "6542324aaaf8b0ef",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.11595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5071,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2a23057ad01173fb",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5072,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "1957f8aeffd37b6a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.60595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5073,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "11bca2fe2264b0fa",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5074,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "6df5710659fa3df5",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5075,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "4570cdbcdf676f51",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.60595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5076,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b0e90e0e0983169d",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5077,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "8817046011bc8e4a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.11595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5078,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "c8b6b43d6ef71777",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5079,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "5a241f693cade5ca",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.11595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5080,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "7346eec4d7e21a54",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5081,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "d433ae80371d3734",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.752,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.047, 0.00899999, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.047, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5082,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "e3ec25c154adb1e2",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5083,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "49e9fada62bce452",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943946, -0.150754, 0.36095], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5084,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "cce621bfbb43af82",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5085,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "496ed484f32144a0",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5086,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "96448a74eb3295bc",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.36095], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5087,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "ab512f7565603117",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.11595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5088,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "df0c7ba5489d203e",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.11595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5089,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2a8c4e00d792d528",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.851,
+     0.035,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.146, 0.035, 0.11595], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.146, 0.035, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5090,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "2785f4c8a681c7f9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.05412, 0.248428, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.05412, 0.248428, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5091,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "593922f3d57d7362",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5092,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "b7d2becdd37d4bcd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.60595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5093,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "cce621bfbb43af82",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.665,
+     0.224,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.96, 0.224, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.96, 0.224, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5094,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "a1088783836937ab",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.36095], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5095,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "7efd2de3317b37c4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.865,
+     0.222,
+     0.0791
+    ],
+    "q": [
+     0.0125,
+     -0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.15409, 0.250928, 0.60595], [0.0124997, 1.86262e-08, -1.48546e-08, -0.999922])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.15409, 0.250928, -0.0620504], [0.0124997, 1.49012e-08, -1.49012e-08, -0.999922])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5096,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "23cf2a64f03f41c4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.644,
+     -0.179,
+     0.0791
+    ],
+    "q": [
+     0.015,
+     0.0,
+     0.0,
+     0.9999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.943947, -0.150754, 0.11595], [0.0149994, -1.11763e-08, -1.48453e-08, -0.999888])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.943947, -0.150754, -0.0620504], [0.0149994, -1.49012e-08, -1.49012e-08, -0.999888])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5097,
+  "instruction": "open top drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "a1088783836937ab",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.889,
+     -0.203,
+     0.079
+    ],
+    "q": [
+     0.03,
+     0.0,
+     0.0,
+     0.9996
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.19404, -0.131637, 0.60595], [0.0299955, -1.11775e-08, 1.11742e-10, -0.99955])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.19404, -0.131637, -0.0620504], [0.0299955, -1.49012e-08, 0, -0.99955])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5098,
+  "instruction": "open middle drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "593922f3d57d7362",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.652,
+     0.009,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([0.947, 0.00899999, 0.36095], [0, 3.72529e-09, 0, -1])",
+   "cabinet_pose_wrt_robot_base": "Pose([0.947, 0.00899999, -0.0620503], [0, 0, 0, -1])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ },
+ {
+  "seed": 5099,
+  "instruction": "open bottom drawer",
+  "coarse_fp": "4f53cda18c2baa0c",
+  "full_fp": "a5c176ecc375a313",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.765,
+     -0.182,
+     0.079
+    ],
+    "q": [
+     0.01,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   },
+   "cabinet": {
+    "p": [
+     -0.295,
+     0.0,
+     0.017
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "qpos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "dummy_drawer",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/open_drawer_a0.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "True",
+   "drawer_pose_wrt_robot_base": "Pose([1.06343, -0.160765, 0.11595], [0.00999987, 3.7251e-09, 3.72524e-11, -0.99995])",
+   "cabinet_pose_wrt_robot_base": "Pose([1.06343, -0.160765, -0.0620503], [0.00999987, 0, 0, -0.99995])",
+   "station_name": "mk_station_recolor",
+   "light_mode": "simple"
+  }
+ }
+]

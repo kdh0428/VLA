@@ -73,3 +73,7 @@ No number in `numbers.json` is typed by hand.
 - `tables.tex`: review_followup3 기계 생성 block의 Table 8–11 caption·label 정정(값은 그대로, 원 sign-flip 역산 CI 보존), 새 block Table 12(B2), Table 13(A1 수정 구간), Table 14(B1). 생성: `c_tables.py`. 손으로 쓴 부분의 정정은 `c_doc_fixes.py`(줄 끝 주석 "corrected 2026-10-18").
 - `PAPER_NUMBERS.md`(2026-10-18 개정 절, Claim 25–27), `MANUSCRIPT_REVISION.md`(2026-10-18 revision 절), `PAPER_EVIDENCE.md`, `EXP35_RESULTS.md`, `CONSISTENCY_AUDIT.md`, `SOURCE_MAP.md`: A4 문장 정정을 줄 단위로 적용하고 "(2026-10-18 수정)" 표시. 원문은 `autovla_misalignment_poc/outputs/review_followup4/DOC_EDITS_APPLIED.csv`.
 - 최종 판정: `autovla_misalignment_poc/outputs/review_followup4/{STATUS.md, CLAIM_CHANGES.md, MANUSCRIPT_REVISION.md}`가 review_followup3 판정보다 우선합니다. 저장소에 원고 `.tex`는 없습니다.
+
+**2026-10-18 개정 2 (review_followup5)**
+- `numbers.json`: `RF5.*` 행 추가(A_STATS 구간 재검토, B2 상위 군집, B_NUMERIC 수치 재추론, C_DISJOINT 상태). `tables.tex`: review_followup5 block(Table 15–17). 생성: `autovla_misalignment_poc/scripts/review_followup5/c5_tables.py`.
+- 문장 정정은 `c5_doc_fixes.py`가 해당 줄에 "(2026-10-18 수정, review_followup5)"로 표시했습니다. 최종 판정은 `autovla_misalignment_poc/outputs/review_followup5/{STATUS, CLAIM_CHANGES, MANUSCRIPT_REVISION}.md`가 우선합니다.

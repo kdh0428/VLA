@@ -1,0 +1,44 @@
+{
+ "counts": {
+  "records": 105,
+  "natural_valid": 105,
+  "R_identity_with_eos": 105,
+  "sources": 420,
+  "sources_joint_valid": 121,
+  "donor_found": 64
+ },
+ "analyzed": 64,
+ "matched": 7,
+ "primary_matched_Delta": {
+  "two_task": 0.08381033774200981,
+  "ci": null,
+  "n_obs": 7,
+  "n_layouts": {
+   "google_robot_move_near": 1,
+   "google_robot_pick_coke_can": 6
+  },
+  "task_means": {
+   "google_robot_move_near": 0.03741467325428077,
+   "google_robot_pick_coke_can": 0.13020600222973885
+  }
+ },
+ "secondary_all_Delta": {
+  "two_task": 0.0699901106419857,
+  "ci": [
+   0.04400712798138954,
+   0.10024487352560328
+  ],
+  "n_obs": 64,
+  "n_layouts": {
+   "google_robot_move_near": 9,
+   "google_robot_pick_coke_can": 23
+  },
+  "task_means": {
+   "google_robot_move_near": 0.06933562136928256,
+   "google_robot_pick_coke_can": 0.07064459991468883
+  }
+ },
+ "token_change_L": "57/64",
+ "token_change_O": "17/64",
+ "assertions": 1726
+}

@@ -1,0 +1,6 @@
+{
+  "discovery_observations": 105,
+  "followup_observations": 105,
+  "intersecting_raw_rgb_sha256": 0,
+  "scope": "Recorded raw-RGB hashes. Follow-up PNG hashes independently checked in the v04 verifier."
+}

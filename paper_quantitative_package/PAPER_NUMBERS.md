@@ -51,11 +51,22 @@
 **이번에 고친 것 (corrections).**
 - **A1 (post-hoc correction):** sign-flip-inversion CIs for paired binary success are invalid at the boundary (zero width ±2.5e−13 or an end pinned at 0). Corrected intervals: Newcombe 10 (OpenVLA states), Rao–Scott design-effect Newcombe / MOVER (SpatialVLA clusters) — `RF4.A1.*`, Table 13. Judgment changes: OpenVLA C − N "CI excludes 0" deleted ([−17.1, +1.0]); OpenVLA per-task CIs are descriptive only; exp34 perp_left coke C − F → ±10 pp unadjusted only; P1-D r2e1 − r1e1 C − F interaction (physical) not established; r1e4 C − F move_near physical ±5 pp lost; task-level CI widths **18–25 pp (r4e1; r1e4 13–20 pp)** instead of 18–29 / 6.9–21.6. P1-D pooled ±10 pp, per-task 3 of 8 and S1–S4 pooled survive.
 - **A2:** the correction window keeps its GT positions in all later contexts; nothing is released. Claim 5 wording changed to "three fixed context positions replaced with ground truth and retained in later contexts"; "post-release horizon" renamed "steps after the last added GT position".
-- **A3:** Claim 8 (Impromptu) downgraded to descriptive / parity not established (numerical floor 5–6% scene-level verdict flips).
+- **A3:** Claim 8 (Impromptu) downgraded to descriptive / parity not established (5–6% scene-level verdict flips from numerics alone; not an upper bound on condition-specific bias). (2026-10-18 수정, review_followup5)
 - **A4:** denominators and definitions (F = 105 scenes / 18 drives; P = 2,191 eligible scenes estimated from 353 sampled scenes with weights; "all" in the motion-baseline rows = 208 selected scenes; OpenVLA 92.6% = at least one downstream component ≥ injected bins; commanded vs TCP; heterogeneity not established from opposite point estimates; A−/severe formula with the 3 s thresholds applied at 5 s).
 - **B3:** OpenVLA gate NOT_RUN (user decision 2026-10-17): OpenVLA stays descriptive and is excluded from the core evidence.
 
 **새 claim과 표.** Claim 25 (B2 matched-prefix), Claim 26 (B1 numerical sensitivity), Claim 27 (A1 corrected intervals). `tables.tex`: Tables 8–11 captions corrected (machine-generated block), new Tables 12–14 (`c_tables.py`).
+
+---
+
+## 2026-10-18 개정 2 (review_followup5 반영)
+
+근거: `autovla_misalignment_poc/outputs/review_followup5/` (STATUS, CLAIM_CHANGES, MANUSCRIPT_REVISION). `numbers.json`에 `RF5.*` 행을 추가했습니다(`scripts/review_followup5/c5_tables.py`). 이 절과 충돌하는 위 문장은 이 절이 우선합니다.
+
+- **AutoVLA intervals (A_STATS, post hoc):** binary-outcome sign-flip-inversion CIs and shifted sign-flip TOST are invalid (ties); the δ = 0 sign-flip p stays. A coverage study on the real cluster structures selects the cluster-robust t interval for dev A− (13 drives) and P1-C F (18 drives); **no interval is validated for the P1-C evaluation frame P (weighted, 24 drives), day–vehicle clustering or ≤ 7-drive subsets (NR)** — the reported drive bootstrap under-covers (simulated 0.83–0.91 minimum for 95%). Claim 3 / 22: quote P-level RN −4.1 pp / RV +3.6 pp with their sign-flip p only. Claim 7: P1-C F DM cluster-t CI [−0.1, +12.4] includes 0. Claim 6: the old ±5 pp TOST (p = 0.09) was invalid; a post-hoc cluster-t TOST puts the GT-near token within ±5 pp (p = 0.027, unadjusted, post-hoc margin) — not confirmatory.
+- **B2 (A_B2_CLUSTER):** 6 connected day–vehicle components; F C_GT / C_NAT p = 0.031 (minimum attainable), Holm 0.125 (minimum attainable for m = 4); significant at drive and day–vehicle level. Claim 25 is re-worded (below): INT −0.2 pp [−3.8, +3.1] is an estimate, not equality or independence from older context; the primary older factor is one position.
+- **Impromptu (Claim 8):** the observed 5–6% verdict-flip rate is not an upper bound on condition-specific numerical bias; no "robust because above the floor" wording.
+- **New Claim 28 (B_NUMERIC):** GT-free endpoint excess re-inferred under SE / SF on all 1,453 family-G units: retained over every control (12/12 Holm, see below).
 
 ---
 
@@ -389,7 +400,7 @@
   - dev: 52/2,747 = **1.89 % [1.16, 2.64]** (drive clusters);
   - P1-C: 107/5,671 = 1.89 % [1.32, 2.53].
 - **Evaluation-population estimand.** Hajek, scene-weighted, over the 2,191 eligible scenes of the 64 P1-C logs:
-  - RN **−4.1 pp [−6.4, −2.4]**;
+  - RN **−4.1 pp** (sign-flip p 5.7e-6; drive bootstrap [−6.4, −2.4], coverage not established); (2026-10-18 수정, review_followup5)
   - RV **+3.6 pp [+2.2, +5.5]** (24 drives);
   - P = F + S holds exactly; 60 % of RN P comes from the A+ stratum.
 
@@ -436,7 +447,7 @@
 
 ---
 
-# Claim 25. The latest context value matters; no dependence on an older GT prefix in a one-shot schedule (new 2026-10-18; review_followup4 B2, preregistered 552b3ac)
+# Claim 25. A large latest-token correction effect also when the earlier compared position keeps the model's own value (new 2026-10-18; review_followup4 B2, preregistered 552b3ac; re-worded by review_followup5) (2026-10-18 수정, review_followup5)
 **Evidence** (driving / AutoVLA / open-loop 5 s plan; P1-C cohort, primary anchor a = t*+3, t* ≤ 4; one edited prefix per unit-anchor, edit **retained** at fixed positions; every cell B = 1; severe = A− ∧ FDE5 > 3 m; scene-weighted; drive-cluster bootstrap 95% CI; exact drive sign-flip p; Holm m = 4)
 - Failure stratum F (100 scenes / 711 unit-anchors / 18 drives; α = 0.05): **C_GT = GT_NSRC − GT_REF +25.3 pp [+20.5, +29.3]** (Holm 4.6e-5); **C_NAT = NAT_NSRC − NAT_REF +25.5 pp [+21.6, +29.0]** (Holm 3.1e-5); **INT = C_GT − C_NAT −0.2 pp [−3.8, +3.1]** (p = 0.92); C_PROV = GT_CSRC − GT_NSRC −15.8 pp [−20.1, −10.2] (Holm 1.5e-3).
 - B2 eligible domain E4 (Hajek, recomputed weights; 312 sampled scenes / 2,160 / 24 drives; α = 0.025): C_GT +3.3 pp [+1.0, +5.6] (Holm 0.051, **not rejected**); C_NAT +4.0 pp [+2.7, +5.7] (Holm 6.5e-5); INT −0.7 pp [−2.2, +0.8]; C_PROV −2.2 pp [−4.2, −0.2] (Holm 0.13).
@@ -446,7 +457,7 @@
 - Integrity: identity checks on 100% of 4,160 (P1-C) and 2,630 (dev) unit-anchors; P1-C inputs reproduce the stored P1-C Normal tokens in 2,160/2,160 units.
 
 **Source:** `O/review_followup4/B/MATCHED_PREFIX_RESULTS.{md,csv}`; `numbers.json` `RF4.B2.*`; Table 12.
-**Manuscript-safe:** "In a preregistered matched-prefix diagnostic with a single retained edit, placing the frozen Normal-branch token instead of ground truth in the most recent context position raised severe outcomes in the P1-C failure stratum by 25.3 pp behind a ground-truth older prefix and by 25.5 pp behind the model's own natural older prefix (18 drives); the interaction was −0.2 pp [−3.8, +3.1]. This oracle-conditioned diagnostic indicates that, in a one-shot schedule, the effect tracks the value of the latest context token rather than an older ground-truth prefix; across the B2 eligible domain the effect was small (+3–4 pp)."
+**Manuscript-safe:** "In a preregistered matched-prefix diagnostic with a single retained edit, placing the frozen Normal-branch token instead of ground truth in the most recent context position raised severe outcomes in the P1-C failure stratum by 25.3 pp behind a ground-truth older prefix and by 25.5 pp behind the model's own natural older prefix (18 drives); the interaction was −0.2 pp [−3.8, +3.1]. The earlier factor is a single context position; the interaction is an estimate with its uncertainty, not evidence that the effects are equal or independent of older context. This is an oracle-conditioned diagnostic; across the B2 eligible domain the effect was small (+3–4 pp; interval not validated, see review_followup5 A_STATS)." (2026-10-18 수정, review_followup5)
 **Overclaim:** "the effect requires a GT history"; "pure provenance effect" (NSRC vs CSRC are value differences); "online correction" / "deployment improvement"; "external replication" (existing drives); "release of the correction was tested"; pooling with the repeated Recent-GT / Reverse-N results; quoting the E4 numbers as the original 2,191-scene estimand.
 
 # Claim 26. Numerical sensitivity of the AutoVLA contrasts (new 2026-10-18; review_followup4 B1)
@@ -463,3 +474,14 @@
 **Evidence:** see the 2026-10-18 section above and `O/review_followup4/A1_A4/CI_VALIDITY_AUDIT.md`; `RF4.A1.*`; Table 13.
 **Manuscript-safe:** "Paired success-rate differences are reported with Newcombe score intervals (independent initial states) or Rao–Scott design-effect Newcombe intervals (repeated physical states), chosen by a coverage rule fixed before recomputation; difference-from-zero tests are exact sign-flip / McNemar tests."
 **Overclaim:** citing any sign-flip-inversion success CI with zero width or an end at 0; "no difference in task k" from 10 OpenVLA states; reading the exp35 r1e4 C − F move_near corrected CI (barely excluding 0) as an effect while the δ = 0 test does not reject.
+
+
+# Claim 28. The GT-free endpoint excess survives alternative computation settings (new 2026-10-18; review_followup5 B_NUMERIC)
+**Evidence** (driving / AutoVLA / open-loop; P1-A family G, 1,453 units / 208 selected scenes, A− 364 / 52 / 13 drives; S0 = original computation, reproduced token-for-token 14,530/14,530; SE = eager attention; SF = fp32 arithmetic; same units, reference, perturbation, batch, CRN)
+- A− excess Δ_model − Δ_b (m), S0 → SE / SF: Geo 4.37 → 4.06 / 4.45; CM 2.35 → 2.04 / 2.43; CV0 4.02 → 3.71 / 4.10; CTRV-K3 3.02 → 2.71 / 3.10; CTRA-2 1.43 → 1.12 / 1.51; learned prefix extrapolator 1.97 → 1.65 / 2.04. Primary family (12 tests, Holm): all p ≤ 0.009.
+- Paired setting change in A−: SE − S0 −0.31 m [−0.91, +0.40]; SF − S0 +0.08 m [−0.39, +0.52]; not material by the pre-fixed rule, but changes up to ≈ 0.9 m are not excluded.
+- A+ and selected-all: unchanged conclusions (no general excess over motion extrapolation).
+
+**Source:** `O/review_followup5/B_NUMERIC/B_NUMERIC_REPORT.md`, `B_NUMERIC_RESULTS.csv`; `numbers.json` `RF5.BN.*`; Table 17.
+**Manuscript-safe:** "In failure-selected scenes, the endpoint response to a ground-truth-free context perturbation exceeded coordinate accumulation, four kinematic extrapolations and a learned motion extrapolator under the original computation and under eager attention and fp32 arithmetic (all 12 Holm-adjusted tests p ≤ 0.009); the paired change between settings was −0.31 m [−0.91, +0.40] and +0.08 m [−0.39, +0.52]."
+**Overclaim:** "numerically identical" (17–20% of suffix tokens change); "equivalent across settings"; extending it to E / GF families or to the near-zero self-reference FDE contrasts; calling the procedure GT-free online (t* and strata use the GT label).

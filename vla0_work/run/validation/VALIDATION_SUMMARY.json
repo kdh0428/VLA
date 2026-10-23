@@ -1,0 +1,147 @@
+{
+ "status": "PASS",
+ "gates": [
+  "native_text_equal",
+  "native_parsed_equal",
+  "raw_complete",
+  "prefix_retokenises_to_generated",
+  "prefix_equals_vector_concat",
+  "selfpatch_token_identity",
+  "suffix_starts_at_timestep4"
+ ],
+ "per_obs": [
+  {
+   "obs_id": "val_libero_spatial_t0_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_spatial_t3_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_spatial_t6_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_spatial_t9_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_object_t0_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_object_t3_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_object_t6_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_object_t9_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_goal_t0_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_goal_t3_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_goal_t6_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  },
+  {
+   "obs_id": "val_libero_goal_t9_i0",
+   "native_text_equal": true,
+   "native_parsed_equal": true,
+   "raw_complete": true,
+   "prefix_retokenises_to_generated": true,
+   "prefix_equals_vector_concat": true,
+   "selfpatch_token_identity": true,
+   "suffix_starts_at_timestep4": true,
+   "donor_check_invariants": true
+  }
+ ],
+ "donor_found_for_L": 12
+}

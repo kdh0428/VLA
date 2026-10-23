@@ -1,0 +1,22 @@
+{
+  "url": "https://media.eventhosts.cc/Conferences/CVPR2027/author-kit-CVPR2027-v1-latex.zip",
+  "retrieved_utc": "2026-10-23",
+  "archive_sha256": "7271bdbb0d2f20043b101c3bb10cba67a8c7f2711f0067b395f9f27451c43121",
+  "files": {
+    "cvpr.sty": {
+      "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4",
+      "matched_pre_update_v04": false,
+      "matches_final_publication_file": true
+    },
+    "ieeenat_fullname.bst": {
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc",
+      "matched_pre_update_v04": true,
+      "matches_final_publication_file": true
+    },
+    "main.tex": {
+      "sha256": "9f6d8ef0ffaeac9494283f563d2666b125af5951f8d9604f7f805dca87460bfe",
+      "matched_pre_update_v04": false,
+      "matches_final_publication_file": false
+    }
+  }
+}

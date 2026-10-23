@@ -1,0 +1,6 @@
+{
+  "source": "CVPR_SPATIALVLA_WITHIN_CALL_RESULT_20261022_v01.zip:analysis/per_observation.csv",
+  "copied_file": "paper/evidence/spatialvla_discovery_per_observation_20261022_v01.csv",
+  "sha256": "dd9cc69b91497a41b16da71532124c47a27355ab249feaa3924f85682436564a",
+  "changes": "Publication labels only; drawer means still give reset scenarios equal weight, with pose-group sensitivity in text."
+}

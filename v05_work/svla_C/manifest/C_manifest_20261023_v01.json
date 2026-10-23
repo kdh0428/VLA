@@ -1,0 +1,662 @@
+{
+ "units": [
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6000,
+   "instruction": "pick coke can",
+   "layout_id": "coke_5d4935aed637e3c2",
+   "cluster_id": "coke_5d4935aed637e3c2",
+   "full_fp": "ce50f1934e3d6d4d",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6000"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6001,
+   "instruction": "pick coke can",
+   "layout_id": "coke_618b598b1cdea077",
+   "cluster_id": "coke_618b598b1cdea077",
+   "full_fp": "565cbe8992d9e1b6",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6001"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6002,
+   "instruction": "pick coke can",
+   "layout_id": "coke_3e77eeb1375d5e53",
+   "cluster_id": "coke_3e77eeb1375d5e53",
+   "full_fp": "5c6356d1ec5ef056",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6002"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6003,
+   "instruction": "pick coke can",
+   "layout_id": "coke_dc1a242b12ed0441",
+   "cluster_id": "coke_dc1a242b12ed0441",
+   "full_fp": "c5f9e4a57c26418f",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6003"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6004,
+   "instruction": "pick coke can",
+   "layout_id": "coke_b15a6ea8769d5aea",
+   "cluster_id": "coke_b15a6ea8769d5aea",
+   "full_fp": "cc351b4eb89aab46",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6004"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6005,
+   "instruction": "pick coke can",
+   "layout_id": "coke_144a6277243ba96f",
+   "cluster_id": "coke_144a6277243ba96f",
+   "full_fp": "bc30c237825f7444",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6005"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6006,
+   "instruction": "pick coke can",
+   "layout_id": "coke_61bea012875b732c",
+   "cluster_id": "coke_61bea012875b732c",
+   "full_fp": "2acee7626bade8d0",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6006"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6007,
+   "instruction": "pick coke can",
+   "layout_id": "coke_ee239d69497ddad7",
+   "cluster_id": "coke_ee239d69497ddad7",
+   "full_fp": "72858fe72048484a",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6007"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6008,
+   "instruction": "pick coke can",
+   "layout_id": "coke_9e57b7aabebba7ae",
+   "cluster_id": "coke_9e57b7aabebba7ae",
+   "full_fp": "f91c98e502aac1d8",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6008"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6009,
+   "instruction": "pick coke can",
+   "layout_id": "coke_3102d88bcebdab6b",
+   "cluster_id": "coke_3102d88bcebdab6b",
+   "full_fp": "e7c02f1eee23888a",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6009"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6010,
+   "instruction": "pick coke can",
+   "layout_id": "coke_25662befc259da71",
+   "cluster_id": "coke_25662befc259da71",
+   "full_fp": "51d36fbaeff3a49e",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6010"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6011,
+   "instruction": "pick coke can",
+   "layout_id": "coke_f7d03badc2dea528",
+   "cluster_id": "coke_f7d03badc2dea528",
+   "full_fp": "6da0aeee00b228d6",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6012,
+   "instruction": "pick coke can",
+   "layout_id": "coke_f99e3319e73698bb",
+   "cluster_id": "coke_f99e3319e73698bb",
+   "full_fp": "c1aee0f45c4c23f5",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6012"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6013,
+   "instruction": "pick coke can",
+   "layout_id": "coke_da5edf36dc000d7f",
+   "cluster_id": "coke_da5edf36dc000d7f",
+   "full_fp": "6e50e1e9890ae770",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6013"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6014,
+   "instruction": "pick coke can",
+   "layout_id": "coke_9f53bbcd9d73f47c",
+   "cluster_id": "coke_9f53bbcd9d73f47c",
+   "full_fp": "eafcfe829efd6871",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6014"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6015,
+   "instruction": "pick coke can",
+   "layout_id": "coke_7a93cdf6055cab07",
+   "cluster_id": "coke_7a93cdf6055cab07",
+   "full_fp": "d7951b0c835ca116",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6015"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6016,
+   "instruction": "pick coke can",
+   "layout_id": "coke_720fcaf677bba178",
+   "cluster_id": "coke_720fcaf677bba178",
+   "full_fp": "9a19105d07214304",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6016"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6017,
+   "instruction": "pick coke can",
+   "layout_id": "coke_aa3180498a0da775",
+   "cluster_id": "coke_aa3180498a0da775",
+   "full_fp": "19917591b549d6a2",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6017"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6018,
+   "instruction": "pick coke can",
+   "layout_id": "coke_2d77a2e71aeaace4",
+   "cluster_id": "coke_2d77a2e71aeaace4",
+   "full_fp": "275ca19493605580",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6018"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 6019,
+   "instruction": "pick coke can",
+   "layout_id": "coke_3202493364407f3e",
+   "cluster_id": "coke_3202493364407f3e",
+   "full_fp": "e313eaaecc137cdc",
+   "reuse": "new seed range 6000+; coarse fp disjoint from all earlier coke surveys",
+   "unit_id": "C_coke_s6019"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6000,
+   "instruction": "move orange near blue plastic bottle",
+   "episode_id": "10",
+   "layout_id": "mn_2e82bae077d31039",
+   "cluster_id": "mn_2e82bae077d31039",
+   "full_fp": "f8f9abe1770b40e9",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6000"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6012,
+   "instruction": "move blue plastic bottle near orange",
+   "episode_id": "7",
+   "layout_id": "mn_2e82bae077d31039",
+   "cluster_id": "mn_2e82bae077d31039",
+   "full_fp": "430831cc9f0b8a01",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6012"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6001,
+   "instruction": "move blue plastic bottle near sponge",
+   "episode_id": "44",
+   "layout_id": "mn_9402b934f8705e96",
+   "cluster_id": "mn_9402b934f8705e96",
+   "full_fp": "d9fa19bd63fafa16",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6001"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6007,
+   "instruction": "move sponge near blue plastic bottle",
+   "episode_id": "42",
+   "layout_id": "mn_9402b934f8705e96",
+   "cluster_id": "mn_9402b934f8705e96",
+   "full_fp": "bdd3fa40b950a03a",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6007"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6002,
+   "instruction": "move coke can near redbull can",
+   "episode_id": "30",
+   "layout_id": "mn_9329c7bb123f8601",
+   "cluster_id": "mn_9329c7bb123f8601",
+   "full_fp": "361b2b63ad662ec2",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6002"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6032,
+   "instruction": "move apple near redbull can",
+   "episode_id": "35",
+   "layout_id": "mn_9329c7bb123f8601",
+   "cluster_id": "mn_9329c7bb123f8601",
+   "full_fp": "c0273ea87fa694a8",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6032"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6003,
+   "instruction": "move pepsi can near orange",
+   "episode_id": "50",
+   "layout_id": "mn_834a0f593a65535e",
+   "cluster_id": "mn_834a0f593a65535e",
+   "full_fp": "5cf17cfb43b17a2f",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6003"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6011,
+   "instruction": "move pepsi can near redbull can",
+   "episode_id": "51",
+   "layout_id": "mn_834a0f593a65535e",
+   "cluster_id": "mn_834a0f593a65535e",
+   "full_fp": "fcc9ca712d355a35",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6011"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6005,
+   "instruction": "move blue plastic bottle near orange",
+   "episode_id": "1",
+   "layout_id": "mn_4180747d4357ee9a",
+   "cluster_id": "mn_4180747d4357ee9a",
+   "full_fp": "458e702a45a12c1c",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6005"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6038,
+   "instruction": "move blue plastic bottle near pepsi can",
+   "episode_id": "0",
+   "layout_id": "mn_4180747d4357ee9a",
+   "cluster_id": "mn_4180747d4357ee9a",
+   "full_fp": "f604f0bf949ed8eb",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6038"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6006,
+   "instruction": "move apple near sponge",
+   "episode_id": "15",
+   "layout_id": "mn_4f01f48d18b713eb",
+   "cluster_id": "mn_4f01f48d18b713eb",
+   "full_fp": "fc2d28042fe98b7a",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6006"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6021,
+   "instruction": "move 7up can near sponge",
+   "episode_id": "13",
+   "layout_id": "mn_4f01f48d18b713eb",
+   "cluster_id": "mn_4f01f48d18b713eb",
+   "full_fp": "293e105d6cb24173",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6021"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6008,
+   "instruction": "move coke can near apple",
+   "episode_id": "25",
+   "layout_id": "mn_f5a160cb3f941b30",
+   "cluster_id": "mn_f5a160cb3f941b30",
+   "full_fp": "f70edae8a4ef66c8",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6008"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6031,
+   "instruction": "move apple near redbull can",
+   "episode_id": "29",
+   "layout_id": "mn_f5a160cb3f941b30",
+   "cluster_id": "mn_f5a160cb3f941b30",
+   "full_fp": "c0fcb8f3a165eb5a",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6031"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6009,
+   "instruction": "move redbull can near pepsi can",
+   "episode_id": "59",
+   "layout_id": "mn_ab18282b5c270558",
+   "cluster_id": "mn_ab18282b5c270558",
+   "full_fp": "74ddd75308ae44ff",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6009"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6014,
+   "instruction": "move orange near pepsi can",
+   "episode_id": "54",
+   "layout_id": "mn_ab18282b5c270558",
+   "cluster_id": "mn_ab18282b5c270558",
+   "full_fp": "11339ba4ec7ecb51",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6014"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6015,
+   "instruction": "move blue plastic bottle near 7up can",
+   "episode_id": "39",
+   "layout_id": "mn_b4907d1da6223922",
+   "cluster_id": "mn_b4907d1da6223922",
+   "full_fp": "f8f478aefa53eb9b",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6015"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6016,
+   "instruction": "move 7up can near sponge",
+   "episode_id": "40",
+   "layout_id": "mn_b4907d1da6223922",
+   "cluster_id": "mn_b4907d1da6223922",
+   "full_fp": "8a2f295553838314",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6016"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6017,
+   "instruction": "move sponge near apple",
+   "episode_id": "23",
+   "layout_id": "mn_95609bca0063d2dd",
+   "cluster_id": "mn_95609bca0063d2dd",
+   "full_fp": "0893046981441f80",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6017"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6029,
+   "instruction": "move apple near sponge",
+   "episode_id": "21",
+   "layout_id": "mn_95609bca0063d2dd",
+   "cluster_id": "mn_95609bca0063d2dd",
+   "full_fp": "7b9437cf6952f5fe",
+   "reuse": "physical layout reused (registry has 10 move_near layouts, all used in earlier studies); instruction/state new",
+   "unit_id": "C_mn_s6029"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6000,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg0_bottom",
+   "cluster_id": "cd_pg0",
+   "full_fp": "6c603dda0643a78b",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6000"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6001,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg1_top",
+   "cluster_id": "cd_pg1",
+   "full_fp": "6711dd9eb2d13678",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6001"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6002,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg2_bottom",
+   "cluster_id": "cd_pg2",
+   "full_fp": "d4303a51622fe9a5",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6002"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6003,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg3_bottom",
+   "cluster_id": "cd_pg3",
+   "full_fp": "56dc68ec575c053b",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6003"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6005,
+   "instruction": "close middle drawer",
+   "layout_id": "cd_pg2_middle",
+   "cluster_id": "cd_pg2",
+   "full_fp": "3728bfce25913f66",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6005"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6007,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg4_bottom",
+   "cluster_id": "cd_pg4",
+   "full_fp": "e907a9a9425d3eb3",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6007"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6008,
+   "instruction": "close middle drawer",
+   "layout_id": "cd_pg5_middle",
+   "cluster_id": "cd_pg5",
+   "full_fp": "e1cf62ba51039423",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6008"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6009,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg5_bottom",
+   "cluster_id": "cd_pg5",
+   "full_fp": "8dc38eca63f954d9",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6009"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6014,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg6_bottom",
+   "cluster_id": "cd_pg6",
+   "full_fp": "dae813a23bceaa17",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6014"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6015,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg7_top",
+   "cluster_id": "cd_pg7",
+   "full_fp": "565def4a1467e5e3",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6015"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6016,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg2_top",
+   "cluster_id": "cd_pg2",
+   "full_fp": "d637f56d9c6ae8fa",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6016"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6017,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg7_bottom",
+   "cluster_id": "cd_pg7",
+   "full_fp": "6ac00bd3598324b7",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6017"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6019,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg0_top",
+   "cluster_id": "cd_pg0",
+   "full_fp": "25eec41f06c21f4f",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6019"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6020,
+   "instruction": "close middle drawer",
+   "layout_id": "cd_pg6_middle",
+   "cluster_id": "cd_pg6",
+   "full_fp": "b1d6b2b7b3e49e5b",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6020"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6021,
+   "instruction": "close middle drawer",
+   "layout_id": "cd_pg1_middle",
+   "cluster_id": "cd_pg1",
+   "full_fp": "92be342e5696d4a7",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6021"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6022,
+   "instruction": "close middle drawer",
+   "layout_id": "cd_pg8_middle",
+   "cluster_id": "cd_pg8",
+   "full_fp": "8d8ca8be35267f57",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6022"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6023,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg4_top",
+   "cluster_id": "cd_pg4",
+   "full_fp": "79ff14eaf01a3333",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6023"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6024,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg8_top",
+   "cluster_id": "cd_pg8",
+   "full_fp": "01674ccac27bc1c5",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6024"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6026,
+   "instruction": "close top drawer",
+   "layout_id": "cd_pg3_top",
+   "cluster_id": "cd_pg3",
+   "full_fp": "7f5baaba47530164",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6026"
+  },
+  {
+   "task": "google_robot_close_drawer",
+   "seed": 6027,
+   "instruction": "close bottom drawer",
+   "layout_id": "cd_pg1_bottom",
+   "cluster_id": "cd_pg1",
+   "full_fp": "5bb956a88fba7fcb",
+   "reuse": "new task (close drawer not used before); robot pose groups shared with earlier open-drawer surveys",
+   "unit_id": "C_cd_s6027"
+  }
+ ],
+ "self_validation_units": {
+  "google_robot_pick_coke_can": [
+   "C_coke_s6000",
+   "C_coke_s6001"
+  ],
+  "google_robot_move_near": [
+   "C_mn_s6000",
+   "C_mn_s6012"
+  ],
+  "google_robot_close_drawer": [
+   "C_cd_s6000",
+   "C_cd_s6001"
+  ]
+ },
+ "summary": {
+  "google_robot_pick_coke_can": {
+   "n_states": 20,
+   "n_layouts": 20,
+   "n_clusters": 20
+  },
+  "google_robot_move_near": {
+   "n_states": 20,
+   "n_layouts": 10,
+   "n_clusters": 10
+  },
+  "google_robot_close_drawer": {
+   "n_states": 20,
+   "n_layouts": 20,
+   "n_clusters": 9
+  }
+ },
+ "anchor_call": 8,
+ "seed_ranges_surveyed": {
+  "coke": "6000-6039",
+  "move_near": "6000-6079",
+  "close_drawer": "6000-6059",
+  "open_drawer(not used)": "6000-6059"
+ }
+}

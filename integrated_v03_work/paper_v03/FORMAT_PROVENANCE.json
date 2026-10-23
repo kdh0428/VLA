@@ -1,0 +1,17 @@
+{
+  "target": "CVPR 2027",
+  "template_tag": "CVPR2026-v1(latex)",
+  "template_url": "https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2026-v1(latex).zip",
+  "guideline_2027_status": "AuthorGuidelines URL returned 404 on 2026-10-19 KST; CallForPapers available",
+  "guideline_2026_url": "https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines",
+  "official_files": {
+    "cvpr.sty": {
+      "vendor_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+      "project_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153"
+    },
+    "ieeenat_fullname.bst": {
+      "vendor_sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc",
+      "project_sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: Running BibTeX on supplementary.aux ...
+note: Rerunning TeX because bibtex was run ...
+note: Rerunning TeX because "supplementary.aux" changed ...
+note: Rerunning TeX because "supplementary.aux" changed ...
+note: Rerunning TeX because "supplementary.bbl" changed ...
+note: Rerunning TeX because "supplementary.bbl" changed ...
+note: Rerunning TeX because "supplementary.bbl" changed ...
+note: Running xdvipdfmx ...
+note: Writing `supplementary.bbl` (1.15 KiB)
+note: Writing `supplementary.out` (6.62 KiB)
+note: Writing `supplementary.pdf` (910.04 KiB)
+note: Writing `supplementary.log` (21.27 KiB)
+note: Writing `supplementary.brf` (108 B)
+note: Writing `supplementary.aux` (39.27 KiB)
+note: Writing `supplementary.blg` (211 B)
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: internal consistency problem when checking if supplementary.bbl changed
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: internal consistency problem when checking if supplementary.bbl changed
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: internal consistency problem when checking if supplementary.bbl changed
+warning: lineno.sty:296: Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+warning: internal consistency problem when checking if supplementary.bbl changed
+warning: TeX rerun seems needed, but stopping at 6 passes
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

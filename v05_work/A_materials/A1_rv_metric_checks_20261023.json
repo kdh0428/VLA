@@ -1,0 +1,11 @@
+{
+ "P1C_rows": 4872,
+ "P1C_matched": 4872,
+ "P1C_severe3_eq_stored": 4872,
+ "P1C_fde5_maxabs": 0.0,
+ "DEV_rows": 730,
+ "DEV_matched": 730,
+ "DEV_severe3_eq_stored": 730,
+ "DEV_fde5_maxabs": 0.0,
+ "DEV_ade5_maxabs": 0.0
+}

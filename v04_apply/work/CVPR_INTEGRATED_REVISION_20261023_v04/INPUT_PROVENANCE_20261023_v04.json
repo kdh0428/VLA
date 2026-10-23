@@ -1,0 +1,7 @@
+{
+  "input_archive": "CVPR_INTEGRATED_REVISION_20261023_v03.zip",
+  "sha256": "4ee9d73ce52de9a43eb8e7bebb27b1b2547bbfbcc1d1cea2ac0849b0791857b1",
+  "raw_experiments_modified": false,
+  "new_gpu_inference": false,
+  "changes": "editorial/mathematical clarification, CPU sensitivity analysis, clean author-engine rebuild"
+}

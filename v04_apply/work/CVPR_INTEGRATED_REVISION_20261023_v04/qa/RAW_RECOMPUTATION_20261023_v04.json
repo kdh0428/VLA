@@ -1,0 +1,180 @@
+{
+  "all_checks_passed": true,
+  "checks": 25957,
+  "datasets": {
+    "followup": {
+      "records": 105,
+      "primary": {
+        "estimate": 0.04837804816201573,
+        "ci": [
+          0.025522005122200774,
+          0.07214788279435241
+        ],
+        "n_obs": 69,
+        "n_layouts": {
+          "google_robot_move_near": 9,
+          "google_robot_pick_coke_can": 25
+        },
+        "task_means": {
+          "google_robot_move_near": 0.054278569962701535,
+          "google_robot_pick_coke_can": 0.04247752636132991
+        },
+        "task_ci": {
+          "google_robot_move_near": [
+            0.01793133866253471,
+            0.09333137384747747
+          ],
+          "google_robot_pick_coke_can": [
+            0.014763846567686811,
+            0.0696291648705881
+          ]
+        }
+      },
+      "source_reasons": {
+        "ratio_outside_0.8_1.25": 396,
+        "selected": 69,
+        "zero_distance": 2710,
+        "gripper_mismatch": 68
+      },
+      "source_count": 3243,
+      "token_change_counts": {
+        "L": 56,
+        "O": 27
+      },
+      "same_change_type": {
+        "estimate": 0.04834819501023174,
+        "ci": [
+          0.01934105713705473,
+          0.07891709822402776
+        ],
+        "n_obs": 48,
+        "n_layouts": {
+          "google_robot_move_near": 8,
+          "google_robot_pick_coke_can": 21
+        },
+        "task_means": {
+          "google_robot_move_near": 0.055873246867534664,
+          "google_robot_pick_coke_can": 0.04082314315292882
+        },
+        "task_ci": {
+          "google_robot_move_near": [
+            0.016311212914677513,
+            0.09840137630044926
+          ],
+          "google_robot_pick_coke_can": [
+            0.0014500232000961204,
+            0.0859818769089503
+          ]
+        }
+      },
+      "max_recorded_R_logit_difference": 0.0,
+      "collection_parity_available": true
+    },
+    "drawer": {
+      "records": 44,
+      "primary": {
+        "estimate": 0.14488141275545213,
+        "ci": [
+          0.09053718025210974,
+          0.20998708360053123
+        ],
+        "n_obs": 35,
+        "n_layouts": {
+          "google_robot_open_drawer": 15
+        },
+        "task_means": {
+          "google_robot_open_drawer": 0.14488141275545213
+        },
+        "task_ci": {
+          "google_robot_open_drawer": [
+            0.09053718025210974,
+            0.20998708360053123
+          ]
+        }
+      },
+      "source_reasons": {
+        "zero_distance": 792,
+        "ratio_outside_0.8_1.25": 226,
+        "selected": 35
+      },
+      "source_count": 1053,
+      "token_change_counts": {
+        "L": 34,
+        "O": 16
+      },
+      "same_change_type": {
+        "estimate": 0.14089607208555857,
+        "ci": [
+          0.06268282985549745,
+          0.2307356388387817
+        ],
+        "n_obs": 22,
+        "n_layouts": {
+          "google_robot_open_drawer": 11
+        },
+        "task_means": {
+          "google_robot_open_drawer": 0.14089607208555857
+        },
+        "task_ci": {
+          "google_robot_open_drawer": [
+            0.06268282985549745,
+            0.2307356388387817
+          ]
+        }
+      },
+      "max_recorded_R_logit_difference": 0.5,
+      "collection_parity_available": false
+    }
+  },
+  "drawer_geometry_sensitivity": {
+    "post_hoc": true,
+    "scenario_count": 15,
+    "pose_groups": 7,
+    "scenario_weighted_estimate": 0.14488141275545216,
+    "scenario_weighted_pose_cluster_ci": [
+      0.07512190487308767,
+      0.2359046858137372
+    ],
+    "equal_pose_group_estimate": 0.12823156708116268,
+    "equal_pose_group_ci": [
+      0.07038618145271011,
+      0.20437529896880027
+    ],
+    "members": {
+      "2b0326218226d290": [
+        5000,
+        5006
+      ],
+      "8d16327dc949a011": [
+        5001,
+        5002,
+        5005,
+        5007
+      ],
+      "5ae358ade902633a": [
+        5003
+      ],
+      "fe6dcedbe2288921": [
+        5004,
+        5008
+      ],
+      "a69494e4a5118daf": [
+        5009
+      ],
+      "4815c97426706efd": [
+        5010,
+        5011,
+        5015
+      ],
+      "77b4798e857eeafa": [
+        5012,
+        5013
+      ]
+    }
+  },
+  "recorded_new_gpu_minutes": 42.70848720868428,
+  "recorded_total_including_discovery_minutes": 62.80027621984482,
+  "gpu_independently_rerun": false,
+  "new_experiment_data_generated": false,
+  "scope": "Raw token, decoded action, input hash, donor rule, aggregation and interval checks. Stored GPU logit summaries are not independently rerun."
+}

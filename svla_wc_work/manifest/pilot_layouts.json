@@ -1,0 +1,335 @@
+{
+ "rule": "coke: new seeds 2000-2024 (25 layouts); move_near: all 10 layouts, lowest seed per layout, ordered by layout fingerprint; observations at natural generation calls 0,4,8 (= control steps 0,4,8 under the official per-step adapter); no duplication after episode end",
+ "calls": [
+  0,
+  4,
+  8
+ ],
+ "layouts": [
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2000,
+   "layout_fp": "a71bc77997f97971",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2001,
+   "layout_fp": "60bcd96d5a6c3f0f",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2002,
+   "layout_fp": "e2e7fb62853c07e5",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2003,
+   "layout_fp": "330260f26ce15892",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2004,
+   "layout_fp": "062a29db0e52bf99",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2005,
+   "layout_fp": "7c17f0607f441a24",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2006,
+   "layout_fp": "1228d34cfc34d11e",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2007,
+   "layout_fp": "ccd2282acd27fbd9",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2008,
+   "layout_fp": "dd3123c06cc16a18",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2009,
+   "layout_fp": "aa09e1835a071652",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2010,
+   "layout_fp": "f3c570f505d4313b",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2011,
+   "layout_fp": "aba8d935f42dc633",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2012,
+   "layout_fp": "c5d8090ec71b9073",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2013,
+   "layout_fp": "cabd860d1a7cf769",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2014,
+   "layout_fp": "ffaf16d3d3eac0d0",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2015,
+   "layout_fp": "cd9143265612aa65",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2016,
+   "layout_fp": "421e3bacbdab68a3",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2017,
+   "layout_fp": "77f6168eac322da3",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2018,
+   "layout_fp": "e2e5ed53e80838b2",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2019,
+   "layout_fp": "5c28a481a2b1dbd8",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2020,
+   "layout_fp": "f5b5bd39300f0715",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2021,
+   "layout_fp": "f82009293e454742",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2022,
+   "layout_fp": "40e1e71e04ccd5c3",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2023,
+   "layout_fp": "0af04388cb67c07f",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 2024,
+   "layout_fp": "321e577236457201",
+   "instruction": "pick coke can",
+   "state_origin": "new seed (P1-D used coke seeds 0-119)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6,
+   "layout_fp": "2e82bae077d31039",
+   "instruction": "move orange near blue plastic bottle",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    6,
+    10,
+    12,
+    15,
+    21,
+    35,
+    39,
+    40,
+    45,
+    47
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 8,
+   "layout_fp": "4180747d4357ee9a",
+   "instruction": "move pepsi can near orange",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    8,
+    25,
+    28,
+    36,
+    41,
+    43,
+    46,
+    48
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 37,
+   "layout_fp": "4f01f48d18b713eb",
+   "instruction": "move apple near sponge",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    37,
+    55,
+    57
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 22,
+   "layout_fp": "834a0f593a65535e",
+   "instruction": "move redbull can near pepsi can",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    22,
+    26,
+    50,
+    52,
+    59
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 5,
+   "layout_fp": "9329c7bb123f8601",
+   "instruction": "move apple near redbull can",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    5,
+    20,
+    24,
+    34,
+    38,
+    58
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 0,
+   "layout_fp": "9402b934f8705e96",
+   "instruction": "move blue plastic bottle near sponge",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    0,
+    3,
+    7,
+    14,
+    17,
+    18,
+    49,
+    54
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 13,
+   "layout_fp": "95609bca0063d2dd",
+   "instruction": "move 7up can near apple",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    13,
+    23,
+    27,
+    29,
+    31,
+    32,
+    33,
+    44,
+    56
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 4,
+   "layout_fp": "ab18282b5c270558",
+   "instruction": "move redbull can near orange",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    4,
+    51
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1,
+   "layout_fp": "b4907d1da6223922",
+   "instruction": "move sponge near 7up can",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    1,
+    2,
+    16,
+    30,
+    42
+   ]
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 9,
+   "layout_fp": "f5a160cb3f941b30",
+   "instruction": "move apple near coke can",
+   "state_origin": "reused: one of the 10 SimplerEnv move_near layouts (same layouts as P1-D)",
+   "all_seeds_with_layout": [
+    9,
+    11,
+    19,
+    53
+   ]
+  }
+ ]
+}

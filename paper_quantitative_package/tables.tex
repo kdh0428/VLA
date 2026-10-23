@@ -195,7 +195,7 @@ r4e1 & $\delta_C$ & $-4.2$ [$-14.3$, $5.8$] & $+4.2$ [$-5.0$, $13.3$] ([$-10.5$,
 \begin{table}[t]
 \centering
 \small
-\caption{AutoVLA (driving, open-loop 5\,s plan): conditional and evaluation-population effects (review\_followup3 P0-A; machine-generated from \texttt{numbers.json} rows \texttt{P0A.*}). RN = Recent-GT$-$Normal (repeated sliding correction), RV = Reverse@emb$-$Full (Normal-branch token injection), DM = direction$-$magnitude error. pp, scene-weighted paired difference, drive-cluster bootstrap 95\% CI, exact drive sign-flip $p$; Holm within the original family. P = Hajek-weighted estimand over the 2{,}191 eligible scenes of the 64 P1-C logs, estimated from 353 sampled scenes with design weights (24 drives): an \emph{evaluation-frame} estimand, not a deployment effect; about 60\% of the RN P effect comes from the non-failure (A+) stratum. F = failure stratum, 105 scenes / 18 drives (corrected 2026-10-18, review\_followup4). Code paths verified by the no-op/cache gate on the verification manifests (H7, H8, H32); runs outside the manifests are not retro-validated. A$-$ frequency (evaluation set, not deployment): dev natural, A$-$: 52/2747 = 1.89\% [1.16, 2.64]; P1-C stage 1, A$-$: 107/5671 = 1.89\% [1.32, 2.53].}
+\caption{AutoVLA (driving, open-loop 5\,s plan): conditional and evaluation-population effects (review\_followup3 P0-A; machine-generated from \texttt{numbers.json} rows \texttt{P0A.*}). RN = Recent-GT$-$Normal (repeated sliding correction), RV = Reverse@emb$-$Full (Normal-branch token injection), DM = direction$-$magnitude error. pp, scene-weighted paired difference, drive-cluster bootstrap 95\% CI, exact drive sign-flip $p$; Holm within the original family. P = Hajek-weighted estimand over the 2{,}191 eligible scenes of the 64 P1-C logs, estimated from 353 sampled scenes with design weights (24 drives): an \emph{evaluation-frame} estimand, not a deployment effect; about 60\% of the RN P effect comes from the non-failure (A+) stratum. F = failure stratum, 105 scenes / 18 drives (corrected 2026-10-18, review\_followup4). The bootstrap CIs are not validated for the weighted P rows (review\_followup5 A\_STATS; validated cluster-$t$ intervals for F and dev A$-$ in Table~\ref{tab:rf5_intervals}). Code paths verified by the no-op/cache gate on the verification manifests (H7, H8, H32); runs outside the manifests are not retro-validated. A$-$ frequency (evaluation set, not deployment): dev natural, A$-$: 52/2747 = 1.89\% [1.16, 2.64]; P1-C stage 1, A$-$: 107/5671 = 1.89\% [1.32, 2.53].}
 \label{tab:rf3_population}
 \begin{tabular}{llcccc c}
 \toprule
@@ -344,3 +344,76 @@ P1-A OC$_\text{refH}-$OC & +0.054 / $-$0.07 & $-$0.018 / +0.04 & +0.000 / +0.24 
 \end{table}
 
 % <<< END machine-generated review_followup4 <<<
+
+% >>> BEGIN machine-generated review_followup5 (c5_tables.py) >>>
+% Generated from review_followup5 outputs / numbers.json RF5 rows; regenerate with scripts/review_followup5/c5_tables.py.
+% ---------------------------------------------------------------- Table 15
+\begin{table}[t]
+\centering
+\small
+\caption{AutoVLA (driving, open-loop 5\,s plan): validated intervals for the binary failure-outcome contrasts (review\_followup5 A\_STATS, post hoc; machine-generated from \texttt{numbers.json} rows \texttt{RF5.AS.*}). pp; scene-weighted. A coverage study on the real cluster structures (written before the rows were recomputed) selected the cluster-robust $t$ interval ($G-1$ df) for the development A$-$ stratum and the P1-C failure stratum; the drive percentile bootstrap reported so far under-covered (simulated minimum 0.83--0.91 for 95\%). For the weighted evaluation-frame estimand P no method reached nominal coverage (NR): report the estimate and the drive sign-flip $p$ at 0 (exact enumeration under the sign-symmetry null), which also governs the preregistered replication decisions (unchanged).}
+\label{tab:rf5_intervals}
+\begin{tabular}{lccccc}
+\toprule
+Contrast & Effect & bootstrap 95\% (old) & cluster-$t$ 95\% (validated) & $p$ (sign-flip) & drives \\
+\midrule
+dev A$-$ RN & $-$39.8 & [$-$49.0, $-$29.9] & [$-$50.9, $-$28.7] & $2.4\times10^{-4}$ & 13 \\
+dev A$-$ RV & +28.6 & [+20.9, +36.1] & [+20.1, +37.2] & $2.4\times10^{-4}$ & 13 \\
+dev A$-$ DM & +9.9 & [+3.9, +21.0] & [+0.9, +18.8] & 0.00562 & 13 \\
+P1-C F RN & $-$34.2 & [$-$38.3, $-$29.5] & [$-$39.0, $-$29.4] & $7.6\times10^{-6}$ & 18 \\
+P1-C F RV & +26.8 & [+21.9, +30.7] & [+22.1, +31.5] & $3.1\times10^{-5}$ & 18 \\
+P1-C F DM & +6.2 & [+0.6, +12.1] & [$-$0.1, +12.4] & 0.0732 & 18 \\
+P1-C P RN & $-$4.1 & [$-$6.4, $-$2.4] & NR & $5.7\times10^{-6}$ & 24 \\
+P1-C P RV & +3.6 & [+2.2, +5.5] & NR & $9.5\times10^{-7}$ & 24 \\
+P1-C P DM & +2.6 & [$-$0.4, +5.5] & NR & 0.105 & 24 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ---------------------------------------------------------------- Table 16
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{AutoVLA B2 matched-prefix contrasts under three cluster axes (review\_followup5 A\_B2\_CLUSTER; machine-generated from \texttt{RF5.B2C.*}). Primary anchor, severe, scene-weighted; entries: clusters $G$ / exact sign-flip $p$ at 0 / Holm $p$ within the original family ($m=4$; F $\alpha=0.05$, P $\alpha=0.025$). Components: connected day--vehicle components of the 312 P1-C scenes (6); the smallest attainable $p$ is $2/2^6=0.031$ and the smallest attainable Holm $p$ is 0.125, so no contrast can be significant at that level; all six components share the sign of C\_GT and C\_NAT in F. INT is an estimate of the difference, not evidence of equality; the earlier factor is one context position. Ground-truth-conditioned diagnostic on re-run existing drives.}
+\label{tab:rf5_b2_clusters}
+\begin{tabular}{llcccc}
+\toprule
+Contrast & Est. & Effect (pp) & drive & day--vehicle & component \\
+\midrule
+C\_GT & F & +25.3 & 18 / $1.5\times10^{-5}$ / $4.6\times10^{-5}$ & 10 / 0.00195 / 0.00781 & 6 / 0.0312 / 0.125 \\
+C\_GT & P & +3.3 & 24 / 0.0169 / 0.0506 & 16 / 0.0645 / 0.193 & 6 / 0.125 / 0.375 \\
+C\_NAT & F & +25.5 & 18 / $7.6\times10^{-6}$ / $3.1\times10^{-5}$ & 10 / 0.00195 / 0.00781 & 6 / 0.0312 / 0.125 \\
+C\_NAT & P & +4.0 & 24 / $1.6\times10^{-5}$ / $6.5\times10^{-5}$ & 16 / $9.8\times10^{-4}$ / 0.00391 & 6 / 0.0312 / 0.125 \\
+INT & F & $-$0.2 & 18 / 0.92 / 0.92 & 10 / 0.848 / 0.848 & 6 / 0.75 / 0.75 \\
+INT & P & $-$0.7 & 24 / 0.414 / 0.414 & 16 / 0.406 / 0.406 & 6 / 0.531 / 0.531 \\
+C\_PROV & F & $-$15.8 & 18 / $7.3\times10^{-4}$ / 0.00146 & 10 / 0.00977 / 0.0195 & 6 / 0.0625 / 0.125 \\
+C\_PROV & P & $-$2.2 & 24 / 0.0657 / 0.131 & 16 / 0.0999 / 0.2 & 6 / 0.125 / 0.375 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ---------------------------------------------------------------- Table 17
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{AutoVLA (driving, open-loop): ground-truth-free endpoint excess in failure-selected (A$-$) scenes re-inferred under alternative computation settings (review\_followup5 B\_NUMERIC; machine-generated from \texttt{RF5.BN.*}). Family G, 364 units / 52 scenes / 13 drives (all 1{,}453 units / 208 selected scenes were run). S0 = original computation (bf16, SDPA, batch 10; reproduced token-for-token), SE = eager attention, SF = fp32 arithmetic on the bf16-rounded weights; same units, reference, perturbation, batch and random numbers. Entries: $\Delta_{\text{model}}-\Delta_{\text{baseline}}$ (m, endpoint displacement), drive bootstrap 95\% CI, Holm $p$ over the 12 SE/SF tests in parentheses. Last row: paired change of the excess vs S0 (identical for all baselines); not an equivalence test. Baseline responses are fixed (computed from the reference and the perturbation only).}
+\label{tab:rf5_numerics}
+\begin{tabular}{lccc}
+\toprule
+Baseline & S0 & SE & SF \\
+\midrule
+Geo (coord.\ accumulation) & +4.37 [+3.35, +5.20] & +4.06 [+3.35, +4.65] (0.00293) & +4.45 [+3.63, +5.00] (0.00293) \\
+CM & +2.35 [+1.26, +3.18] & +2.04 [+1.37, +2.55] (0.00293) & +2.43 [+1.62, +2.99] (0.00293) \\
+CV0 & +4.02 [+2.93, +4.84] & +3.71 [+2.92, +4.32] (0.00293) & +4.10 [+3.20, +4.68] (0.00293) \\
+CTRV-K3 & +3.02 [+1.93, +3.84] & +2.71 [+1.92, +3.26] (0.00293) & +3.10 [+2.19, +3.71] (0.00293) \\
+CTRA-2 & +1.43 [+0.44, +2.35] & +1.12 [+0.57, +1.76] (0.00879) & +1.51 [+0.84, +2.08] (0.00879) \\
+learned extrapolator & +1.97 [+1.10, +2.83] & +1.65 [+1.00, +2.44] (0.00879) & +2.04 [+1.32, +2.73] (0.00586) \\
+\midrule
+setting change $\Delta$ (paired) & -- & $-$0.31 [$-$0.91, +0.40] & +0.08 [$-$0.39, +0.52] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% <<< END machine-generated review_followup5 <<<

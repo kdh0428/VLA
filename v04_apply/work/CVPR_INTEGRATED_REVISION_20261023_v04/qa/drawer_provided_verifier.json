@@ -1,0 +1,25 @@
+{
+ "counts": {
+  "records": 44,
+  "natural_valid": 44,
+  "R_pass": 44,
+  "sources": 1053,
+  "matched": 35,
+  "analyzed": 35
+ },
+ "estimate": 0.1448814127554521,
+ "ci": [
+  0.09053718025210974,
+  0.20998708360053117
+ ],
+ "checks": {
+  "estimate": true,
+  "ci": true,
+  "n_obs": true,
+  "n_layouts": true,
+  "status_OK": true,
+  "sources": true
+ },
+ "assertions": 184,
+ "ALL_MATCH": true
+}

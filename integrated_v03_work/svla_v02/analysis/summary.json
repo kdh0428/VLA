@@ -1,0 +1,531 @@
+{
+ "tasks_in_records": [
+  "google_robot_move_near",
+  "google_robot_pick_coke_can"
+ ],
+ "seed": 20261023,
+ "primary_Delta": {
+  "estimate": 0.04837804816201571,
+  "ci": [
+   0.02552200512220077,
+   0.0721478827943524
+  ],
+  "n_obs": 69,
+  "n_layouts": {
+   "google_robot_move_near": 9,
+   "google_robot_pick_coke_can": 25
+  },
+  "task_means": {
+   "google_robot_move_near": 0.054278569962701535,
+   "google_robot_pick_coke_can": 0.04247752636132989
+  },
+  "task_ci": {
+   "google_robot_move_near": [
+    0.01793133866253471,
+    0.09333137384747747
+   ],
+   "google_robot_pick_coke_can": [
+    0.014763846567686806,
+    0.0696291648705881
+   ]
+  }
+ },
+ "secondary": {
+  "E_L": {
+   "estimate": 0.07026349160515614,
+   "ci": [
+    0.04964049052685262,
+    0.09214491615723482
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.05685649732918157,
+    "google_robot_pick_coke_can": 0.08367048588113071
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.021384243992323887,
+     0.09593393479427459
+    ],
+    "google_robot_pick_coke_can": [
+     0.06517779888911449,
+     0.10234074027024279
+    ]
+   }
+  },
+  "E_O": {
+   "estimate": 0.02188544344314043,
+   "ci": [
+    0.013149838290310844,
+    0.03206287679138197
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0025779273664800423,
+    "google_robot_pick_coke_can": 0.04119295951980082
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.006363684548155699
+    ],
+    "google_robot_pick_coke_can": [
+     0.02405684539924368,
+     0.06135259739137774
+    ]
+   }
+  },
+  "E_OL": {
+   "estimate": 0.06818054498473052,
+   "ci": [
+    0.04737363905857547,
+    0.0906705128732668
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.048467464027779426,
+    "google_robot_pick_coke_can": 0.08789362594168161
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.012995210690921731,
+     0.08690586037608604
+    ],
+    "google_robot_pick_coke_can": [
+     0.06596336501310486,
+     0.11037055272718403
+    ]
+   }
+  },
+  "D_OL_L": {
+   "estimate": 0.020636817658779845,
+   "ci": [
+    0.012095426636998408,
+    0.03025649596171935
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.008389033301402157,
+    "google_robot_pick_coke_can": 0.03288460201615753
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.01988509017928599
+    ],
+    "google_robot_pick_coke_can": [
+     0.01902824841761483,
+     0.04871351922150849
+    ]
+   }
+  },
+  "J": {
+   "estimate": -0.023968390063566075,
+   "ci": [
+    -0.039917771277769576,
+    -0.010898960066739731
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": -0.010966960667882199,
+    "google_robot_pick_coke_can": -0.03696981945924995
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     -0.023670847360961644,
+     0.0
+    ],
+    "google_robot_pick_coke_can": [
+     -0.06609238640009164,
+     -0.014125467724565261
+    ]
+   }
+  },
+  "E_L_a3": {
+   "estimate": 0.06805273767239656,
+   "ci": [
+    0.04615572851522161,
+    0.09200561692431533
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.051258695444218745,
+    "google_robot_pick_coke_can": 0.08484677990057438
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.01869611449310662,
+     0.08855738656541401
+    ],
+    "google_robot_pick_coke_can": [
+     0.0580732316318232,
+     0.11640501687822091
+    ]
+   }
+  },
+  "E_O_a3": {
+   "estimate": 0.026710059467303586,
+   "ci": [
+    0.013933138099977087,
+    0.04177531220732216
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.005155854732960086,
+    "google_robot_pick_coke_can": 0.04826426420164709
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.012727369096311399
+    ],
+    "google_robot_pick_coke_can": [
+     0.02353746521777853,
+     0.07781954293227296
+    ]
+   }
+  },
+  "E_L_a4": {
+   "estimate": 0.07247424553791573,
+   "ci": [
+    0.04892400936795053,
+    0.09714605087388438
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.06245429921414441,
+    "google_robot_pick_coke_can": 0.08249419186168705
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.022930254346941424,
+     0.10630159298136634
+    ],
+    "google_robot_pick_coke_can": [
+     0.059830098430003475,
+     0.10615362560553429
+    ]
+   }
+  },
+  "E_O_a4": {
+   "estimate": 0.017060827418977277,
+   "ci": [
+    0.010318664982191915,
+    0.02452834312062582
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0,
+    "google_robot_pick_coke_can": 0.034121654837954554
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.0
+    ],
+    "google_robot_pick_coke_can": [
+     0.02063732996438383,
+     0.04905668624125164
+    ]
+   }
+  },
+  "E_L_trans": {
+   "estimate": 0.07592320284335713,
+   "ci": [
+    0.05013290043494562,
+    0.10379943052086119
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.07018541421173757,
+    "google_robot_pick_coke_can": 0.08166099147497669
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.024163509756067632,
+     0.12177244618421462
+    ],
+    "google_robot_pick_coke_can": [
+     0.061447910438441236,
+     0.10337909643156729
+    ]
+   }
+  },
+  "E_O_trans": {
+   "estimate": 0.019741869928968692,
+   "ci": [
+    0.010714847091414471,
+    0.030172302159278064
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0028540436130935934,
+    "google_robot_pick_coke_can": 0.036629696244843794
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.006566816984685709
+    ],
+    "google_robot_pick_coke_can": [
+     0.018905290224003408,
+     0.05702107669837497
+    ]
+   }
+  },
+  "E_L_rot": {
+   "estimate": 0.06460378036695517,
+   "ci": [
+    0.04719949253710383,
+    0.08268575989570172
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.04352758044662559,
+    "google_robot_pick_coke_can": 0.08567998028728475
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.016529338048235934,
+     0.07124726578469946
+    ],
+    "google_robot_pick_coke_can": [
+     0.06311181085842463,
+     0.1086681193991662
+    ]
+   }
+  },
+  "E_O_rot": {
+   "estimate": 0.02402901695731217,
+   "ci": [
+    0.014724557121943328,
+    0.034918596473159105
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0023018111198664913,
+    "google_robot_pick_coke_can": 0.04575622279475785
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.005511007871620533
+    ],
+    "google_robot_pick_coke_can": [
+     0.02742409737865989,
+     0.06770347572975985
+    ]
+   }
+  },
+  "grip_change_L": {
+   "estimate": 0.08166666666666667,
+   "ci": [
+    0.021666666666666664,
+    0.15501388888888867
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.08333333333333333,
+    "google_robot_pick_coke_can": 0.08
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.19444444444444445
+    ],
+    "google_robot_pick_coke_can": [
+     0.013333333333333332,
+     0.17008333333333217
+    ]
+   }
+  },
+  "grip_change_O": {
+   "estimate": 0.05333333333333333,
+   "ci": [
+    0.016666666666666666,
+    0.10333333333333332
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0,
+    "google_robot_pick_coke_can": 0.10666666666666666
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.0
+    ],
+    "google_robot_pick_coke_can": [
+     0.03333333333333333,
+     0.20666666666666664
+    ]
+   }
+  },
+  "grip_change_OL": {
+   "estimate": 0.06666666666666667,
+   "ci": [
+    0.019999999999999997,
+    0.12500000000000003
+   ],
+   "n_obs": 69,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 25
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0,
+    "google_robot_pick_coke_can": 0.13333333333333333
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.0,
+     0.0
+    ],
+    "google_robot_pick_coke_can": [
+     0.039999999999999994,
+     0.25000000000000006
+    ]
+   }
+  },
+  "Delta_same_change_type": {
+   "estimate": 0.04834819501023174,
+   "ci": [
+    0.019341057137054734,
+    0.07891709822402776
+   ],
+   "n_obs": 48,
+   "n_layouts": {
+    "google_robot_move_near": 8,
+    "google_robot_pick_coke_can": 21
+   },
+   "task_means": {
+    "google_robot_move_near": 0.055873246867534664,
+    "google_robot_pick_coke_can": 0.04082314315292882
+   },
+   "task_ci": {
+    "google_robot_move_near": [
+     0.016311212914677513,
+     0.09840137630044926
+    ],
+    "google_robot_pick_coke_can": [
+     0.0014500232000961176,
+     0.0859818769089503
+    ]
+   }
+  }
+ },
+ "flow": {
+  "google_robot_pick_coke_can": {
+   "collected": 75,
+   "natural_valid": 75,
+   "R_pass": 75,
+   "matched_donor": 55,
+   "arms_valid": 55,
+   "analyzed": 55
+  },
+  "google_robot_move_near": {
+   "collected": 30,
+   "natural_valid": 30,
+   "R_pass": 30,
+   "matched_donor": 14,
+   "arms_valid": 14,
+   "analyzed": 14
+  }
+ },
+ "flow_layouts": {
+  "google_robot_move_near": {
+   "collected": 10,
+   "analyzed": 9
+  },
+  "google_robot_pick_coke_can": {
+   "collected": 25,
+   "analyzed": 25
+  }
+ },
+ "status_counts": {
+  "MATCHED_SOURCE_MISSING": 36,
+  "OK": 69
+ },
+ "source_reasons": {
+  "ratio_outside_0.8_1.25": 396,
+  "selected": 69,
+  "zero_distance": 2710,
+  "gripper_mismatch": 68
+ },
+ "n_sources": 3243,
+ "token_change": {
+  "L": "56/69",
+  "O": "27/69"
+ },
+ "donor_distance": {
+  "mean_d_L": 0.05409693689533034,
+  "mean_d_O": 0.053257287598643205,
+  "ratio_quantiles": [
+   0.801,
+   0.933,
+   1.021,
+   1.16,
+   1.237
+  ]
+ }
+}

@@ -1,0 +1,8482 @@
+[
+ {
+  "seed": 6000,
+  "instruction": "move orange near blue plastic bottle",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "f8f9abe1770b40e9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489645, -0.0865668, 0.84436], [0.738267, 0.00331491, 0.00119798, -0.6745])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_id": "10"
+  }
+ },
+ {
+  "seed": 6001,
+  "instruction": "move blue plastic bottle near sponge",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "d9fa19bd63fafa16",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.462811, 0.212428, 0.827031], [0.738204, -9.10601e-05, 0.00114037, -0.674577])",
+   "episode_id": "44"
+  }
+ },
+ {
+  "seed": 6002,
+  "instruction": "move coke can near redbull can",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "361b2b63ad662ec2",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0024
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_coke_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.463099, 0.212781, 0.877423], [0.033485, 0.0300225, -0.70794, -0.704839])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675581, 0.0807987, 0.873547], [0.0324824, 0.031188, -0.705082, -0.707695])",
+   "episode_id": "30"
+  }
+ },
+ {
+  "seed": 6003,
+  "instruction": "move pepsi can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "5cf17cfb43b17a2f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_id": "50"
+  }
+ },
+ {
+  "seed": 6004,
+  "instruction": "move coke can near redbull can",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "361b2b63ad662ec2",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0024
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_coke_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.463099, 0.212781, 0.877423], [0.033485, 0.0300225, -0.70794, -0.704839])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675581, 0.0807987, 0.873547], [0.0324824, 0.031188, -0.705082, -0.707695])",
+   "episode_id": "30"
+  }
+ },
+ {
+  "seed": 6005,
+  "instruction": "move blue plastic bottle near orange",
+  "coarse_fp": "4180747d4357ee9a",
+  "full_fp": "458e702a45a12c1c",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3319,
+     0.0448,
+     0.9747
+    ],
+    "q": [
+     0.5195,
+     0.4806,
+     0.5079,
+     0.4911
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.1905,
+     0.9234
+    ],
+    "q": [
+     0.7072,
+     -0.002,
+     0.0069,
+     0.7069
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.664299, 0.225781, 0.89561], [0.514014, 0.52901, -0.457256, -0.496846])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476055, 0.0625893, 0.844358], [0.738042, 0.00678135, 0.00231047, -0.674717])",
+   "episode_id": "1"
+  }
+ },
+ {
+  "seed": 6006,
+  "instruction": "move apple near sponge",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "fc2d28042fe98b7a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688791, -0.069277, 0.844357], [0.0424686, 0.00116499, 0.0133354, -0.999008])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476293, 0.0630344, 0.827031], [0.738198, -9.13699e-05, 0.00114047, -0.674583])",
+   "episode_id": "15"
+  }
+ },
+ {
+  "seed": 6007,
+  "instruction": "move sponge near blue plastic bottle",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "bdd3fa40b950a03a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462811, 0.212428, 0.827031], [0.738204, -9.10601e-05, 0.00114037, -0.674577])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_id": "42"
+  }
+ },
+ {
+  "seed": 6008,
+  "instruction": "move coke can near apple",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "f70edae8a4ef66c8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_coke_can_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.662291, 0.230752, 0.877423], [0.0334968, 0.0300335, -0.70794, -0.704839])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476111, 0.0621399, 0.844357], [0.0427273, 0.00116431, 0.0133376, -0.998997])",
+   "episode_id": "25"
+  }
+ },
+ {
+  "seed": 6009,
+  "instruction": "move redbull can near pepsi can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "74ddd75308ae44ff",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489871, -0.0865686, 0.873548], [0.0324712, 0.0311763, -0.705081, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_id": "59"
+  }
+ },
+ {
+  "seed": 6010,
+  "instruction": "move sponge near blue plastic bottle",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "bdd3fa40b950a03a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462811, 0.212428, 0.827031], [0.738204, -9.10601e-05, 0.00114037, -0.674577])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_id": "42"
+  }
+ },
+ {
+  "seed": 6011,
+  "instruction": "move pepsi can near redbull can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "fcc9ca712d355a35",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_id": "51"
+  }
+ },
+ {
+  "seed": 6012,
+  "instruction": "move blue plastic bottle near orange",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "430831cc9f0b8a01",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489645, -0.0865668, 0.84436], [0.738267, 0.00331491, 0.00119798, -0.6745])",
+   "episode_id": "7"
+  }
+ },
+ {
+  "seed": 6013,
+  "instruction": "move orange near redbull can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "64309da7bba2dd0c",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_id": "49"
+  }
+ },
+ {
+  "seed": 6014,
+  "instruction": "move orange near pepsi can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "11339ba4ec7ecb51",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462639, 0.212132, 0.844359], [0.738149, 0.00462939, 0.00158701, -0.674621])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_id": "54"
+  }
+ },
+ {
+  "seed": 6015,
+  "instruction": "move blue plastic bottle near 7up can",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "f8f478aefa53eb9b",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_id": "39"
+  }
+ },
+ {
+  "seed": 6016,
+  "instruction": "move 7up can near sponge",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "8a2f295553838314",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.662003, 0.230403, 0.827031], [0.738203, -9.10966e-05, 0.00114013, -0.674577])",
+   "episode_id": "40"
+  }
+ },
+ {
+  "seed": 6017,
+  "instruction": "move sponge near apple",
+  "coarse_fp": "95609bca0063d2dd",
+  "full_fp": "0893046981441f80",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.34,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489774, -0.0863576, 0.827031], [0.738198, -9.19584e-05, 0.00114224, -0.674583])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675306, 0.0801148, 0.844357], [0.0424782, 0.00116293, 0.0133332, -0.999008])",
+   "episode_id": "23"
+  }
+ },
+ {
+  "seed": 6018,
+  "instruction": "move 7up can near blue plastic bottle",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "ded8ae55d2ddaa22",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489286, -0.086165, 0.871439], [0.0318947, 0.0314576, -0.706407, -0.706387])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_id": "47"
+  }
+ },
+ {
+  "seed": 6019,
+  "instruction": "move redbull can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "cdbb793bb4357969",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_id": "52"
+  }
+ },
+ {
+  "seed": 6020,
+  "instruction": "move 7up can near blue plastic bottle",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "ae83091e32d372dd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_id": "41"
+  }
+ },
+ {
+  "seed": 6021,
+  "instruction": "move 7up can near sponge",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "293e105d6cb24173",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.661513, 0.230597, 0.871438], [0.0318912, 0.0314531, -0.706407, -0.706387])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476293, 0.0630344, 0.827031], [0.738198, -9.13699e-05, 0.00114047, -0.674583])",
+   "episode_id": "13"
+  }
+ },
+ {
+  "seed": 6022,
+  "instruction": "move coke can near apple",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "f70edae8a4ef66c8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_coke_can_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.662291, 0.230752, 0.877423], [0.0334968, 0.0300335, -0.70794, -0.704839])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476111, 0.0621399, 0.844357], [0.0427273, 0.00116431, 0.0133376, -0.998997])",
+   "episode_id": "25"
+  }
+ },
+ {
+  "seed": 6023,
+  "instruction": "move redbull can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "cdbb793bb4357969",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_id": "52"
+  }
+ },
+ {
+  "seed": 6024,
+  "instruction": "move pepsi can near orange",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "891aa1683fa73d2d",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.0402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.67545, 0.081036, 0.87277], [0.0317969, 0.0317975, -0.706391, -0.706392])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.462679, 0.21222, 0.84436], [0.738293, 0.00336642, 0.00116845, -0.674471])",
+   "episode_id": "56"
+  }
+ },
+ {
+  "seed": 6025,
+  "instruction": "move pepsi can near orange",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "2183313c9b1d1cd7",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.081035, 0.87277], [0.0318142, 0.0318147, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489645, -0.0865668, 0.84436], [0.738267, 0.00331491, 0.00119798, -0.6745])",
+   "episode_id": "9"
+  }
+ },
+ {
+  "seed": 6026,
+  "instruction": "move 7up can near sponge",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "8a2f295553838314",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.662003, 0.230403, 0.827031], [0.738203, -9.10966e-05, 0.00114013, -0.674577])",
+   "episode_id": "40"
+  }
+ },
+ {
+  "seed": 6027,
+  "instruction": "move apple near 7up can",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "a817015d887d865f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688791, -0.069277, 0.844357], [0.0424686, 0.00116499, 0.0133354, -0.999008])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.661513, 0.230597, 0.871438], [0.0318912, 0.0314531, -0.706407, -0.706387])",
+   "episode_id": "14"
+  }
+ },
+ {
+  "seed": 6028,
+  "instruction": "move orange near redbull can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "64309da7bba2dd0c",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_id": "49"
+  }
+ },
+ {
+  "seed": 6029,
+  "instruction": "move apple near sponge",
+  "coarse_fp": "95609bca0063d2dd",
+  "full_fp": "7b9437cf6952f5fe",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.34,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.675306, 0.0801148, 0.844357], [0.0424782, 0.00116293, 0.0133332, -0.999008])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489774, -0.0863576, 0.827031], [0.738198, -9.19584e-05, 0.00114224, -0.674583])",
+   "episode_id": "21"
+  }
+ },
+ {
+  "seed": 6030,
+  "instruction": "move pepsi can near redbull can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "fcc9ca712d355a35",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_id": "51"
+  }
+ },
+ {
+  "seed": 6031,
+  "instruction": "move apple near redbull can",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "c0fcb8f3a165eb5a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476111, 0.0621399, 0.844357], [0.0427273, 0.00116431, 0.0133376, -0.998997])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.689062, -0.0685923, 0.873547], [0.0324624, 0.0311697, -0.705083, -0.707696])",
+   "episode_id": "29"
+  }
+ },
+ {
+  "seed": 6032,
+  "instruction": "move apple near redbull can",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "c0273ea87fa694a8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0024
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489602, -0.0872517, 0.844358], [0.0426106, 0.00116301, 0.0133402, -0.999002])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675581, 0.0807987, 0.873547], [0.0324824, 0.031188, -0.705082, -0.707695])",
+   "episode_id": "35"
+  }
+ },
+ {
+  "seed": 6033,
+  "instruction": "move 7up can near apple",
+  "coarse_fp": "95609bca0063d2dd",
+  "full_fp": "00c24142f97c05e8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.34,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462321, 0.212622, 0.871439], [0.0318934, 0.0314559, -0.706406, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675306, 0.0801148, 0.844357], [0.0424782, 0.00116293, 0.0133332, -0.999008])",
+   "episode_id": "18"
+  }
+ },
+ {
+  "seed": 6034,
+  "instruction": "move blue plastic bottle near sponge",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "7c6be68bfa80c004",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.662003, 0.230403, 0.827031], [0.738203, -9.10966e-05, 0.00114013, -0.674577])",
+   "episode_id": "38"
+  }
+ },
+ {
+  "seed": 6035,
+  "instruction": "move redbull can near apple",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "79c0ad9a5e31d493",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.689062, -0.0685923, 0.873547], [0.0324624, 0.0311697, -0.705083, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476111, 0.0621399, 0.844357], [0.0427273, 0.00116431, 0.0133376, -0.998997])",
+   "episode_id": "27"
+  }
+ },
+ {
+  "seed": 6036,
+  "instruction": "move orange near redbull can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "64309da7bba2dd0c",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_id": "49"
+  }
+ },
+ {
+  "seed": 6037,
+  "instruction": "move blue plastic bottle near pepsi can",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "9f2ffaaa7360bbb9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.081035, 0.87277], [0.0318142, 0.0318147, -0.706391, -0.706391])",
+   "episode_id": "6"
+  }
+ },
+ {
+  "seed": 6038,
+  "instruction": "move blue plastic bottle near pepsi can",
+  "coarse_fp": "4180747d4357ee9a",
+  "full_fp": "f604f0bf949ed8eb",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3319,
+     0.0448,
+     0.9747
+    ],
+    "q": [
+     0.5195,
+     0.4806,
+     0.5079,
+     0.4911
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.1905,
+     0.9234
+    ],
+    "q": [
+     0.7072,
+     -0.002,
+     0.0069,
+     0.7069
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.664299, 0.225781, 0.89561], [0.514014, 0.52901, -0.457256, -0.496846])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.688932, -0.0683555, 0.87277], [0.0318051, 0.031808, -0.70639, -0.706392])",
+   "episode_id": "0"
+  }
+ },
+ {
+  "seed": 6039,
+  "instruction": "move redbull can near pepsi can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "74ddd75308ae44ff",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489871, -0.0865686, 0.873548], [0.0324712, 0.0311763, -0.705081, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_id": "59"
+  }
+ },
+ {
+  "seed": 6040,
+  "instruction": "move redbull can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "cdbb793bb4357969",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_id": "52"
+  }
+ },
+ {
+  "seed": 6041,
+  "instruction": "move sponge near 7up can",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "3231026957cc6bf1",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462811, 0.212428, 0.827031], [0.738204, -9.10601e-05, 0.00114037, -0.674577])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489286, -0.086165, 0.871439], [0.0318947, 0.0314576, -0.706407, -0.706387])",
+   "episode_id": "43"
+  }
+ },
+ {
+  "seed": 6042,
+  "instruction": "move orange near pepsi can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "11339ba4ec7ecb51",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462639, 0.212132, 0.844359], [0.738149, 0.00462939, 0.00158701, -0.674621])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_id": "54"
+  }
+ },
+ {
+  "seed": 6043,
+  "instruction": "move orange near pepsi can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "da36935e6a2539a5",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_id": "48"
+  }
+ },
+ {
+  "seed": 6044,
+  "instruction": "move orange near pepsi can",
+  "coarse_fp": "4180747d4357ee9a",
+  "full_fp": "c3803a4e73f7f4d2",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3319,
+     0.0448,
+     0.9747
+    ],
+    "q": [
+     0.5195,
+     0.4806,
+     0.5079,
+     0.4911
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.1905,
+     0.9234
+    ],
+    "q": [
+     0.7072,
+     -0.002,
+     0.0069,
+     0.7069
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476055, 0.0625893, 0.844358], [0.738042, 0.00678135, 0.00231047, -0.674717])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.688932, -0.0683555, 0.87277], [0.0318051, 0.031808, -0.70639, -0.706392])",
+   "episode_id": "5"
+  }
+ },
+ {
+  "seed": 6045,
+  "instruction": "move apple near coke can",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "4559f4a2131b46f3",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0024
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_coke_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489602, -0.0872517, 0.844358], [0.0426106, 0.00116301, 0.0133402, -0.999002])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.463099, 0.212781, 0.877423], [0.033485, 0.0300225, -0.70794, -0.704839])",
+   "episode_id": "34"
+  }
+ },
+ {
+  "seed": 6046,
+  "instruction": "move apple near coke can",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "4559f4a2131b46f3",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1299,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0017,
+     -0.0008
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_coke_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489771, -0.0872638, 0.844358], [0.0441865, 0.00114143, 0.0133371, -0.998934])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.463099, 0.212781, 0.877423], [0.033485, 0.0300225, -0.70794, -0.704839])",
+   "episode_id": "34"
+  }
+ },
+ {
+  "seed": 6047,
+  "instruction": "move orange near pepsi can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "11339ba4ec7ecb51",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.462639, 0.212132, 0.844359], [0.738149, 0.00462939, 0.00158701, -0.674621])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_id": "54"
+  }
+ },
+ {
+  "seed": 6048,
+  "instruction": "move pepsi can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "5cf17cfb43b17a2f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7074,
+     -0.0011,
+     0.0041,
+     0.7068
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688934, -0.0683603, 0.87277], [0.0318073, 0.0318099, -0.70639, -0.706392])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.661842, 0.23015, 0.844359], [0.737927, 0.00407451, 0.00133015, -0.674867])",
+   "episode_id": "50"
+  }
+ },
+ {
+  "seed": 6049,
+  "instruction": "move apple near 7up can",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "a817015d887d865f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688791, -0.069277, 0.844357], [0.0424686, 0.00116499, 0.0133354, -0.999008])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.661513, 0.230597, 0.871438], [0.0318912, 0.0314531, -0.706407, -0.706387])",
+   "episode_id": "14"
+  }
+ },
+ {
+  "seed": 6050,
+  "instruction": "move blue plastic bottle near 7up can",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "f8f478aefa53eb9b",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_id": "39"
+  }
+ },
+ {
+  "seed": 6051,
+  "instruction": "move coke can near redbull can",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "31f5b5b5b0c72e3a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_coke_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.662291, 0.230752, 0.877423], [0.0334968, 0.0300335, -0.70794, -0.704839])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.689062, -0.0685923, 0.873547], [0.0324624, 0.0311697, -0.705083, -0.707696])",
+   "episode_id": "24"
+  }
+ },
+ {
+  "seed": 6052,
+  "instruction": "move pepsi can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "5cf17cfb43b17a2f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_id": "50"
+  }
+ },
+ {
+  "seed": 6053,
+  "instruction": "move 7up can near blue plastic bottle",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "ae83091e32d372dd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_id": "41"
+  }
+ },
+ {
+  "seed": 6054,
+  "instruction": "move blue plastic bottle near sponge",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "7c6be68bfa80c004",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.662003, 0.230403, 0.827031], [0.738203, -9.10966e-05, 0.00114013, -0.674577])",
+   "episode_id": "38"
+  }
+ },
+ {
+  "seed": 6055,
+  "instruction": "move 7up can near sponge",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "8a2f295553838314",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.662003, 0.230403, 0.827031], [0.738203, -9.10966e-05, 0.00114013, -0.674577])",
+   "episode_id": "40"
+  }
+ },
+ {
+  "seed": 6056,
+  "instruction": "move blue plastic bottle near orange",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "430831cc9f0b8a01",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489645, -0.0865668, 0.84436], [0.738267, 0.00331491, 0.00119798, -0.6745])",
+   "episode_id": "7"
+  }
+ },
+ {
+  "seed": 6057,
+  "instruction": "move sponge near 7up can",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "ab62b522ab3c9d86",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476293, 0.0630344, 0.827031], [0.738198, -9.13699e-05, 0.00114047, -0.674583])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.661513, 0.230597, 0.871438], [0.0318912, 0.0314531, -0.706407, -0.706387])",
+   "episode_id": "16"
+  }
+ },
+ {
+  "seed": 6058,
+  "instruction": "move blue plastic bottle near 7up can",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "3e7227939fe22933",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489286, -0.086165, 0.871439], [0.0318947, 0.0314576, -0.706407, -0.706387])",
+   "episode_id": "45"
+  }
+ },
+ {
+  "seed": 6059,
+  "instruction": "move sponge near apple",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "80c6d365022e7d6e",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476293, 0.0630344, 0.827031], [0.738198, -9.13699e-05, 0.00114047, -0.674583])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.688791, -0.069277, 0.844357], [0.0424686, 0.00116499, 0.0133354, -0.999008])",
+   "episode_id": "17"
+  }
+ },
+ {
+  "seed": 6060,
+  "instruction": "move redbull can near orange",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "da58804b4b9bd4e5",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489871, -0.0865686, 0.873548], [0.0324712, 0.0311763, -0.705081, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.462639, 0.212132, 0.844359], [0.738149, 0.00462939, 0.00158701, -0.674621])",
+   "episode_id": "58"
+  }
+ },
+ {
+  "seed": 6061,
+  "instruction": "move 7up can near blue plastic bottle",
+  "coarse_fp": "b4907d1da6223922",
+  "full_fp": "ae83091e32d372dd",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.33,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3318,
+     0.3459,
+     0.975
+    ],
+    "q": [
+     0.5222,
+     0.4778,
+     0.5112,
+     0.4876
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.1898,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0003,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.475804, 0.063228, 0.871439], [0.0318999, 0.0314625, -0.706405, -0.706388])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.69123, -0.0740762, 0.895906], [0.510568, 0.532152, -0.45434, -0.49971])",
+   "episode_id": "41"
+  }
+ },
+ {
+  "seed": 6062,
+  "instruction": "move coke can near redbull can",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "31f5b5b5b0c72e3a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_coke_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.662291, 0.230752, 0.877423], [0.0334968, 0.0300335, -0.70794, -0.704839])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.689062, -0.0685923, 0.873547], [0.0324624, 0.0311697, -0.705083, -0.707696])",
+   "episode_id": "24"
+  }
+ },
+ {
+  "seed": 6063,
+  "instruction": "move redbull can near apple",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "195794c2385a6ad9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0024
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.675581, 0.0807987, 0.873547], [0.0324824, 0.031188, -0.705082, -0.707695])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489602, -0.0872517, 0.844358], [0.0426106, 0.00116301, 0.0133402, -0.999002])",
+   "episode_id": "33"
+  }
+ },
+ {
+  "seed": 6064,
+  "instruction": "move 7up can near blue plastic bottle",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "ded8ae55d2ddaa22",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489286, -0.086165, 0.871439], [0.0318947, 0.0314576, -0.706407, -0.706387])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_id": "47"
+  }
+ },
+ {
+  "seed": 6065,
+  "instruction": "move orange near blue plastic bottle",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "f8f9abe1770b40e9",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "orange",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489645, -0.0865668, 0.84436], [0.738267, 0.00331491, 0.00119798, -0.6745])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_id": "10"
+  }
+ },
+ {
+  "seed": 6066,
+  "instruction": "move redbull can near coke can",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "2b2a541a37b564c2",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_opened_coke_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.689062, -0.0685923, 0.873547], [0.0324624, 0.0311697, -0.705083, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.662291, 0.230752, 0.877423], [0.0334968, 0.0300335, -0.70794, -0.704839])",
+   "episode_id": "26"
+  }
+ },
+ {
+  "seed": 6067,
+  "instruction": "move apple near 7up can",
+  "coarse_fp": "4f01f48d18b713eb",
+  "full_fp": "a817015d887d865f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.3296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.19,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_7up_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688791, -0.069277, 0.844357], [0.0424686, 0.00116499, 0.0133354, -0.999008])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.661513, 0.230597, 0.871438], [0.0318912, 0.0314531, -0.706407, -0.706387])",
+   "episode_id": "14"
+  }
+ },
+ {
+  "seed": 6068,
+  "instruction": "move redbull can near pepsi can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "74ddd75308ae44ff",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489871, -0.0865686, 0.873548], [0.0324712, 0.0311763, -0.705081, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_id": "59"
+  }
+ },
+ {
+  "seed": 6069,
+  "instruction": "move pepsi can near blue plastic bottle",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "644bd3977fbd84fc",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "blue_plastic_bottle",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.081035, 0.87277], [0.0318142, 0.0318147, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_id": "8"
+  }
+ },
+ {
+  "seed": 6070,
+  "instruction": "move redbull can near pepsi can",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "cb391c424c0c8ba7",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.476389, 0.062825, 0.873547], [0.0324728, 0.0311783, -0.705082, -0.707695])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_id": "53"
+  }
+ },
+ {
+  "seed": 6071,
+  "instruction": "move redbull can near apple",
+  "coarse_fp": "f5a160cb3f941b30",
+  "full_fp": "79c0ad9a5e31d493",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.3304,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0023
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.689062, -0.0685923, 0.873547], [0.0324624, 0.0311697, -0.705083, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.476111, 0.0621399, 0.844357], [0.0427273, 0.00116431, 0.0133376, -0.998997])",
+   "episode_id": "27"
+  }
+ },
+ {
+  "seed": 6072,
+  "instruction": "move 7up can near sponge",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "db96ad1c98784f43",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_7up_can_v2",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489286, -0.086165, 0.871439], [0.0318947, 0.0314576, -0.706407, -0.706387])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.462811, 0.212428, 0.827031], [0.738204, -9.10601e-05, 0.00114037, -0.674577])",
+   "episode_id": "46"
+  }
+ },
+ {
+  "seed": 6073,
+  "instruction": "move redbull can near orange",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "da58804b4b9bd4e5",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_redbull_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489871, -0.0865686, 0.873548], [0.0324712, 0.0311763, -0.705081, -0.707696])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.462639, 0.212132, 0.844359], [0.738149, 0.00462939, 0.00158701, -0.674621])",
+   "episode_id": "58"
+  }
+ },
+ {
+  "seed": 6074,
+  "instruction": "move apple near redbull can",
+  "coarse_fp": "9329c7bb123f8601",
+  "full_fp": "c0273ea87fa694a8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_coke_can_v2": {
+    "p": [
+     -0.1303,
+     0.0397,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.3301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.1298,
+     0.3409,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0024
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_coke_can_v2', 'baked_opened_redbull_can_v2', 'baked_apple_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_apple_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489602, -0.0872517, 0.844358], [0.0426106, 0.00116301, 0.0133402, -0.999002])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675581, 0.0807987, 0.873547], [0.0324824, 0.031188, -0.705082, -0.707695])",
+   "episode_id": "35"
+  }
+ },
+ {
+  "seed": 6075,
+  "instruction": "move sponge near apple",
+  "coarse_fp": "95609bca0063d2dd",
+  "full_fp": "0893046981441f80",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.0398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   },
+   "baked_apple_v2": {
+    "p": [
+     -0.3298,
+     0.1909,
+     0.9234
+    ],
+    "q": [
+     0.9999,
+     -0.0133,
+     0.0018,
+     -0.0025
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.34,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_opened_7up_can_v2', 'baked_apple_v2', 'baked_sponge_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_sponge_v2",
+   "episode_target_obj_name": "baked_apple_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.489774, -0.0863576, 0.827031], [0.738198, -9.19584e-05, 0.00114224, -0.674583])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.675306, 0.0801148, 0.844357], [0.0424782, 0.00116293, 0.0133332, -0.999008])",
+   "episode_id": "23"
+  }
+ },
+ {
+  "seed": 6076,
+  "instruction": "move pepsi can near redbull can",
+  "coarse_fp": "ab18282b5c270558",
+  "full_fp": "e38af100c90a13b3",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1298,
+     0.0403,
+     0.9234
+    ],
+    "q": [
+     0.7071,
+     -0.0014,
+     0.0047,
+     0.7071
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.3402,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "baked_opened_redbull_can_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.675449, 0.0810362, 0.87277], [0.031796, 0.0317957, -0.706391, -0.706392])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489871, -0.0865686, 0.873548], [0.0324712, 0.0311763, -0.705081, -0.707696])",
+   "episode_id": "57"
+  }
+ },
+ {
+  "seed": 6077,
+  "instruction": "move blue plastic bottle near orange",
+  "coarse_fp": "2e82bae077d31039",
+  "full_fp": "430831cc9f0b8a01",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.1311,
+     0.0444,
+     0.9745
+    ],
+    "q": [
+     0.5157,
+     0.484,
+     0.509,
+     0.4906
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.19,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.1299,
+     0.3402,
+     0.9234
+    ],
+    "q": [
+     0.707,
+     -0.001,
+     0.0034,
+     0.7072
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('blue_plastic_bottle', 'baked_opened_pepsi_can_v2', 'orange')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.464286, 0.208202, 0.895468], [0.513291, 0.530309, -0.460646, -0.493063])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.489645, -0.0865668, 0.84436], [0.738267, 0.00331491, 0.00119798, -0.6745])",
+   "episode_id": "7"
+  }
+ },
+ {
+  "seed": 6078,
+  "instruction": "move pepsi can near orange",
+  "coarse_fp": "834a0f593a65535e",
+  "full_fp": "5cf17cfb43b17a2f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "orange": {
+    "p": [
+     -0.3299,
+     0.0401,
+     0.9234
+    ],
+    "q": [
+     0.7073,
+     -0.0006,
+     0.0018,
+     0.7069
+    ]
+   },
+   "baked_opened_pepsi_can_v2": {
+    "p": [
+     -0.33,
+     0.34,
+     0.9518
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0,
+     -0.0
+    ]
+   },
+   "baked_opened_redbull_can_v2": {
+    "p": [
+     -0.1301,
+     0.1902,
+     0.9526
+    ],
+    "q": [
+     0.7084,
+     0.7058,
+     -0.0006,
+     0.0006
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('orange', 'baked_opened_pepsi_can_v2', 'baked_opened_redbull_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "baked_opened_pepsi_can_v2",
+   "episode_target_obj_name": "orange",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.688933, -0.068357, 0.872771], [0.0318003, 0.0318022, -0.706391, -0.706391])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.66192, 0.230304, 0.84436], [0.738019, 0.00175784, 0.000643516, -0.674777])",
+   "episode_id": "50"
+  }
+ },
+ {
+  "seed": 6079,
+  "instruction": "move blue plastic bottle near sponge",
+  "coarse_fp": "9402b934f8705e96",
+  "full_fp": "d9fa19bd63fafa16",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "baked_sponge_v2": {
+    "p": [
+     -0.13,
+     0.04,
+     0.9061
+    ],
+    "q": [
+     0.7071,
+     -0.0011,
+     -0.0,
+     0.7071
+    ]
+   },
+   "blue_plastic_bottle": {
+    "p": [
+     -0.3317,
+     0.1943,
+     0.9747
+    ],
+    "q": [
+     0.5171,
+     0.4828,
+     0.5072,
+     0.4923
+    ]
+   },
+   "baked_opened_7up_can_v2": {
+    "p": [
+     -0.1296,
+     0.3398,
+     0.9505
+    ],
+    "q": [
+     0.7071,
+     0.7071,
+     -0.0004,
+     0.0001
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.21,
+     0.0791
+    ],
+    "q": [
+     0.045,
+     -0.0,
+     -0.0,
+     0.999
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_move_near_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "episode_model_ids": "('baked_sponge_v2', 'blue_plastic_bottle', 'baked_opened_7up_can_v2')",
+   "episode_model_scales": "[1.0, 1.0, 1.0]",
+   "episode_source_obj_name": "blue_plastic_bottle",
+   "episode_target_obj_name": "baked_sponge_v2",
+   "episode_source_obj_init_pose_wrt_robot_base": "Pose([0.677506, 0.0769199, 0.895651], [0.515017, 0.528386, -0.459509, -0.494385])",
+   "episode_target_obj_init_pose_wrt_robot_base": "Pose([0.462811, 0.212428, 0.827031], [0.738204, -9.10601e-05, 0.00114037, -0.674577])",
+   "episode_id": "44"
+  }
+ }
+]

@@ -1,0 +1,97 @@
+{
+ "note": "snapshot taken 2026-10-23 from the live files; compared with the v01 pilot RUN_FINGERPRINT (ckpt_files)",
+ "files": {
+  "ckpt_config/action_tokenizer.py": {
+   "sha256": "b6b18eee0320e77156881aea4a92ea5f54dc278d43c1ea72c3a0deaa9d505a31",
+   "v01_fingerprint_sha256": "b6b18eee0320e77156881aea4a92ea5f54dc278d43c1ea72c3a0deaa9d505a31",
+   "identical_to_v01": true
+  },
+  "ckpt_config/config.json": {
+   "sha256": "0c5d94be86f9e15b708650c4b829033ae99243f85507012b1dafa0263f799909",
+   "v01_fingerprint_sha256": "0c5d94be86f9e15b708650c4b829033ae99243f85507012b1dafa0263f799909",
+   "identical_to_v01": true
+  },
+  "ckpt_config/configuration_spatialvla.py": {
+   "sha256": "63e100324daf81d2cd7b6c5e6fafcace67d660586ef7b509bb38cc8fba72c1e3",
+   "v01_fingerprint_sha256": "63e100324daf81d2cd7b6c5e6fafcace67d660586ef7b509bb38cc8fba72c1e3",
+   "identical_to_v01": true
+  },
+  "ckpt_config/generation_config.json": {
+   "sha256": "79c657e6d0660218a91c360516cae5b8fa0cf1dd447476c8dcdb815c8ff994b1",
+   "v01_fingerprint_sha256": "79c657e6d0660218a91c360516cae5b8fa0cf1dd447476c8dcdb815c8ff994b1",
+   "identical_to_v01": true
+  },
+  "ckpt_config/model.safetensors.index.json": {
+   "sha256": "6c351156136b2452db86d3a426ff30adc9d11363b43f46fa69fe79d76b6d5c79",
+   "v01_fingerprint_sha256": "6c351156136b2452db86d3a426ff30adc9d11363b43f46fa69fe79d76b6d5c79",
+   "identical_to_v01": true
+  },
+  "ckpt_config/modeling_gemma2.py": {
+   "sha256": "a21d2983a01ae6b9e25c9f6fa4daff316f98f4f44435b482e8f1f8bbfb406b38",
+   "v01_fingerprint_sha256": "a21d2983a01ae6b9e25c9f6fa4daff316f98f4f44435b482e8f1f8bbfb406b38",
+   "identical_to_v01": true
+  },
+  "ckpt_config/modeling_spatialvla.py": {
+   "sha256": "a04008cf364e094079493e5982fa2b32fca12874b0a42b645e0aecab024e7236",
+   "v01_fingerprint_sha256": "a04008cf364e094079493e5982fa2b32fca12874b0a42b645e0aecab024e7236",
+   "identical_to_v01": true
+  },
+  "ckpt_config/preprocessor_config.json": {
+   "sha256": "bdb79dc3255a75c1c4be8ac1ddd4e2aa08b9a29eee0431755b7b0faa3b54e413",
+   "v01_fingerprint_sha256": "bdb79dc3255a75c1c4be8ac1ddd4e2aa08b9a29eee0431755b7b0faa3b54e413",
+   "identical_to_v01": true
+  },
+  "ckpt_config/processing_spatialvla.py": {
+   "sha256": "c20b15460633f65809788c633936347fada2f2bbcfffba898d2f0b4b99807b33",
+   "v01_fingerprint_sha256": "c20b15460633f65809788c633936347fada2f2bbcfffba898d2f0b4b99807b33",
+   "identical_to_v01": true
+  },
+  "ckpt_config/processor_config.json": {
+   "sha256": "36f2a864604d81549b362e4bd516c76d46a3018d98854a6bd245aae68ea8359a",
+   "v01_fingerprint_sha256": "36f2a864604d81549b362e4bd516c76d46a3018d98854a6bd245aae68ea8359a",
+   "identical_to_v01": true
+  },
+  "ckpt_config/special_tokens_map.json": {
+   "sha256": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+   "v01_fingerprint_sha256": "c87885c12d55c60133110a234291db5ac952e99e83d9735099d304cb4d45914d",
+   "identical_to_v01": true
+  },
+  "ckpt_config/tokenizer_config.json": {
+   "sha256": "33f38858ac90afd5ac29942110dd3b98f40e1e194fca254714bab5d88f57cc65",
+   "v01_fingerprint_sha256": "33f38858ac90afd5ac29942110dd3b98f40e1e194fca254714bab5d88f57cc65",
+   "identical_to_v01": true
+  },
+  "transformers_src/cache_utils.py": {
+   "sha256": "c4797631fdb5040058a218eb1c4e0beaa454233dff71600ae3a26bd3b91c8abc",
+   "v01_fingerprint_sha256": null,
+   "identical_to_v01": null
+  },
+  "transformers_src/generation_utils.py": {
+   "sha256": "e651b104d1cfbacf3b0af4d19e3d89c8d0c3d004aa5ed3e19c363d685ba929c3",
+   "v01_fingerprint_sha256": null,
+   "identical_to_v01": null
+  },
+  "harness_src/action_ensemble.py": {
+   "sha256": "e3c8461a17c0d54a5ac220182b32bf87980384de954e2d7fe2c1af5dd3f34c11",
+   "v01_fingerprint_sha256": null,
+   "identical_to_v01": null
+  },
+  "harness_src/spatialvla_policy.py": {
+   "sha256": "b58ac7b23426ece332903d612bb929e968f90bd40ea69431ea860a7b23de7f26",
+   "v01_fingerprint_sha256": null,
+   "identical_to_v01": null
+  },
+  "harness_src/svla_rollouts.py": {
+   "sha256": "479cb3ca149ec0f42acdabb29c8eadc4c2859d758f4840a796fa597abc373545",
+   "v01_fingerprint_sha256": null,
+   "identical_to_v01": null
+  }
+ },
+ "weights_v01_fingerprint": {
+  "model-00001-of-00002.safetensors": "35f905421156e25dae0a3aca8bb55a8f15cbdbd68f653f221b99a641dae3ea66",
+  "model-00002-of-00002.safetensors": "8728c56cc76cf20325b154b531a461ffd6789bb3a61f1bb6e559066b18dd61a7"
+ },
+ "transformers": "4.47.0 @ /root/VLA/spatialvla/site/transformers/__init__.py",
+ "torch": "2.8.0+cu128",
+ "git_head_v01": "c0aee3265035e48868878418d2f4903beae61526"
+}

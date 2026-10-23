@@ -175,7 +175,7 @@ If the sentence instead describes the post-hoc excess metric, quote [3.32, 5.19]
 > "In AutoVLA (open-loop 5 s plans on NAVSIM navtest), repeatedly replacing the most recent action-context token with ground truth at every generation step reduced amplification in the failure stratum by 39.8 pp [29.9, 49.0] (52 scenes, 13 drives), and injecting the separate Normal branch's previous token into a ground-truth context restored it by 28.6 pp [20.9, 36.1]. In a preregistered test on new drives (failure stratum: 105 scenes, 18 drives; no drive shared with development, days and vehicles partly shared) the effects were −34.2 pp [−38.3, −29.5] and +26.8 pp [+21.9, +30.7]."
 
 **K1b (new, B2)** — driving / AutoVLA / open loop [`RF4.B2.p1c.a1.severe.*`]
-> "In a preregistered matched-prefix diagnostic with a single retained edit, placing the frozen Normal-branch token instead of ground truth in the most recent context position raised severe outcomes in the P1-C failure stratum by 25.3 pp [20.5, 29.3] behind a ground-truth older prefix and by 25.5 pp [21.6, 29.0] behind the model's own natural older prefix (100 scenes, 18 drives); the interaction was −0.2 pp [−3.8, +3.1], so in this one-shot schedule the effect tracks the value of the most recent context token rather than the presence of an older ground-truth prefix. Because the reference cells contain ground truth, this is an oracle-conditioned diagnostic, not an online correction."
+> "In a preregistered matched-prefix diagnostic with a single retained edit, placing the frozen Normal-branch token instead of ground truth in the most recent context position raised severe outcomes in the P1-C failure stratum by 25.3 pp [20.5, 29.3] behind a ground-truth older prefix and by 25.5 pp [21.6, 29.0] behind the model's own natural older prefix (100 scenes, 18 drives); the interaction was −0.2 pp [−3.8, +3.1], and the earlier compared position is a single context position (difference estimate reported with its uncertainty; not equality). Because the reference cells contain ground truth, this is an oracle-conditioned diagnostic, not an online correction." (2026-10-18 수정, review_followup5)
 
 **K2'** — driving / AutoVLA / open loop [`P0A.P1C.RN.P`, `P0A.P1C.RV.P`, `P0A.DECOMP.*`, `RF4.B2.p1c.a1.severe.C_*.all.P.drive`]
 > "On the evaluation frame of the new-drive logs (2,191 eligible scenes, estimated from 353 sampled scenes with design weights; 24 drives), the corresponding effects were −4.1 pp [−6.4, −2.4] and +3.6 pp [+2.2, +5.5]; about 60% of the Recent-GT effect came from non-failure scenes. In the matched-prefix eligible domain (t* ≤ 4; 312 sampled scenes) the latest-token effect was small (+4.0 pp [+2.7, +5.7] behind the natural prefix; +3.3 pp [+1.0, +5.6] behind a ground-truth prefix, not significant after Holm). The failure category occurred in 1.9% of development evaluation scenes, an evaluation-set frequency rather than a deployment rate."
@@ -196,7 +196,7 @@ If the sentence instead describes the post-hoc excess metric, quote [3.32, 5.19]
 **K11 addition** (append to K11): "Batch shape alone changed 9% of AutoVLA free-run suffixes; all paired contrasts are therefore computed within one harness and batch, and the B2 cells run at batch size 1 on one shared prefix."
 
 **K13 (new, Impromptu)** — driving / Impromptu VLA 3B / open loop
-> "In Impromptu VLA 3B (open loop, descriptive; implementation parity not established), ground-truth context reduced and a reversed last context increased trajectory amplification by margins well above the 5–6% scene-level flip rate caused by batch and decoding-path numerics alone."
+> "In Impromptu VLA 3B (open loop, descriptive; implementation parity not established), ground-truth context reduced and a reversed last context increased trajectory amplification (descriptive: batch and decoding-path numerics alone flipped 5–6% of scene-level verdicts, which is not an upper bound on condition-specific numerical bias)." (2026-10-18 수정, review_followup5)
 
 ### B. DELETE or REPLACE (in addition to R1–R17)
 
@@ -219,3 +219,34 @@ If the sentence instead describes the post-hoc excess metric, quote [3.32, 5.19]
 3. "The matched-prefix factorial uses one retained edit at a single anchor on existing drives; it is an oracle-conditioned diagnostic and does not test release or repeated schedules."
 4. "Numerical implementation choices (batch shape, attention backend, precision) change 9–26% of free-run suffixes without changing the main contrasts."
 5. "The Impromptu VLA and OpenVLA intervention paths were not parity-verified; their results are descriptive."
+
+
+---
+
+## 2026-10-18 revision 2 (review_followup5)
+
+Supersedes conflicting wording above (including the review_followup4 section). Sources:
+`autovla_misalignment_poc/outputs/review_followup5/{CLAIM_CHANGES.md, MANUSCRIPT_REVISION.md}`; tables 15–17 in `tables.tex`.
+
+**K1b (replaces the review_followup4 K1b)** — driving / AutoVLA / open loop [`RF4.B2.p1c.a1.severe.*`, `RF5.B2C.*`]
+> "In the tested single-anchor, retained-edit condition, correcting the most recent context token to ground truth had a large effect on severe outcomes in the P1-C failure stratum both when the earlier compared context position held ground truth (25.3 pp, cluster-t 95% CI 20.5–30.2) and when it kept the model's own generated value (25.5 pp, 21.6–29.4; 100 scenes, 18 drives). The estimated difference between the two conditions was −0.2 pp (−4.2 to +3.8). The earlier factor is a single context position; the earlier-prefix main effect itself was +2.0 to +4.8 pp. This is a ground-truth-conditioned diagnostic on re-run existing drives, significant at drive and day–vehicle level; with six connected day–vehicle components it is sign-consistent but cannot reach a Holm-adjusted p below 0.125."
+
+**K2' amendment** — replace "−4.1 pp [−6.4, −2.4] and +3.6 pp [+2.2, +5.5]" by "−4.1 pp and +3.6 pp (drive-level sign-flip p = 5.7 × 10⁻⁶ and 9.5 × 10⁻⁷; no interval method reached nominal coverage for this weighted structure)"; replace the B2 E4 intervals by "+4.0 pp (p = 1.6 × 10⁻⁵) and +3.3 pp (p = 0.017, not significant after Holm)".
+
+**K1' amendment** — the intervals become cluster-robust t: 39.8 pp [28.7, 50.9], 28.6 pp [20.1, 37.2] (13 drives); new drives −34.2 [−39.0, −29.4] and +26.8 [+22.1, +31.5].
+
+**K4'' (adds B_NUMERIC)**
+> "In failure-selected scenes, the endpoint response to a ground-truth-free context perturbation exceeded coordinate accumulation, four kinematic extrapolations and a learned motion extrapolator under the original computation and under eager attention and fp32 arithmetic (all 12 Holm-adjusted tests p ≤ 0.009; paired setting changes −0.31 m [−0.91, +0.40] and +0.08 m [−0.39, +0.52])."
+
+**K7 amendment** — "+6.2 pp (p = 0.073; cluster-t 95% CI −0.1 to +12.4)".
+
+**K13' (replaces the review_followup4 K13)**
+> "In Impromptu VLA 3B (open loop; implementation parity not established), ground-truth context reduced and a reversed last context increased trajectory amplification; because batch and decoding-path numerics alone flipped 5–6% of scene-level verdicts and condition-correlated numerical effects were not tested, these observations are descriptive."
+
+| # | delete / replace | why | replace with |
+|---|---|---|---|
+| R28 | "the effect does not depend on an older ground-truth prefix" / "tracks the value of the latest token rather than an older ground-truth prefix" / "older GT does not matter" / "the two effects are equal" | INT non-significance is not equality; the older factor is one position; no margin | K1b |
+| R29 | "Impromptu effects are robust because they exceed the 5–6% numerical floor" | an observed disagreement rate is not an upper bound on condition-specific bias | K13' |
+| R30 | P-level intervals "[−6.4, −2.4]", "[+2.2, +5.5]", B2 E4 bootstrap intervals presented as validated CIs | coverage not established | K2' amendment |
+| R31 | "the GT-near token is not equivalent to GT (±5 pp, TOST p = 0.09)" | that TOST was invalid | "a post-hoc cluster-t TOST placed it within ±5 pp (p = 0.027, unadjusted); not a confirmatory equivalence" |
+| R32 | P1-C window "win4 − gt_history within ±5 pp" for S | no valid interval | F only |

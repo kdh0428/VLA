@@ -1,0 +1,30 @@
+{"validated": "main", "pages": 10, "references_pages": [9], "latex_errors": false, "undefined_refs_or_citations": false, "overfull_boxes": 0, "sha256": "e0e4ec6366a8d3f27c49574d42d7934bb46ee69a70aee8672ac1c336fa348aed", "llm_usage_statement_page": 9}
+{"validated": "supplementary", "pages": 19, "references_pages": [19], "latex_errors": false, "undefined_refs_or_citations": false, "overfull_boxes": 0, "sha256": "e2cd03c1e6735d29b1e024687370ba90c86cdb1ffc28d3ee062377e4f28dbc41"}
+{
+  "engine": "isolated clean pdfLaTeX + BibTeX",
+  "new_gpu_inference": false,
+  "matches_official_CVPR2027_v1_template_hashes": true,
+  "documents": {
+    "main": {
+      "pages": 10,
+      "references_pages": [
+        9
+      ],
+      "latex_errors": false,
+      "undefined_refs_or_citations": false,
+      "overfull_boxes": 0,
+      "sha256": "e0e4ec6366a8d3f27c49574d42d7934bb46ee69a70aee8672ac1c336fa348aed",
+      "llm_usage_statement_page": 9
+    },
+    "supplementary": {
+      "pages": 19,
+      "references_pages": [
+        19
+      ],
+      "latex_errors": false,
+      "undefined_refs_or_citations": false,
+      "overfull_boxes": 0,
+      "sha256": "e2cd03c1e6735d29b1e024687370ba90c86cdb1ffc28d3ee062377e4f28dbc41"
+    }
+  }
+}

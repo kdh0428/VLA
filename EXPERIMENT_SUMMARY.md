@@ -1,6 +1,6 @@
 # Driving VLA 실패 기전 연구 — 전체 실험 총정리
 
-최종 갱신: 2026-10-18 (review_followup4 반영: §6g 신설; A1–A4·B1·B2·B3 근거의 사실 정정은 해당 줄에 '(2026-10-18 수정)'으로 표시). 이전 갱신 2026-10-13 (review_followup2 사후 재분석 반영: drive·초기 상태 군집, SpatialVLA 직접 효과, 외삽 baseline·교정 window 재점검; §1·§3·§6b–§6e·§9·§10 개정). (2026-10-18 수정)
+최종 갱신: 2026-10-18 (review_followup5 반영: §6h 신설; 해당 줄 '(2026-10-18 수정, review_followup5)'). 같은 날 앞선 갱신 (review_followup4 반영: §6g 신설; A1–A4·B1·B2·B3 근거의 사실 정정은 해당 줄에 '(2026-10-18 수정)'으로 표시). 이전 갱신 2026-10-13 (review_followup2 사후 재분석 반영: drive·초기 상태 군집, SpatialVLA 직접 효과, 외삽 baseline·교정 window 재점검; §1·§3·§6b–§6e·§9·§10 개정). (2026-10-18 수정)
 이전 갱신 2026-10-12 (후속 검증 P0–P1 §6e, 논문 수치 패키지 `paper_quantitative_package/`). 브랜치 `autovla-experiments-11-19`. 실험별 상세 보고서는 각 `outputs/<실험>/` 디렉토리에 있고,
 누적 결론 문서는 [CONCLUSIONS.md](CONCLUSIONS.md), 새 서버 인계는 [HANDOFF.md](HANDOFF.md)입니다.
 주장별 유지·축소·삭제 판정은 `autovla_misalignment_poc/outputs/review_followup2/CLAIM_EVIDENCE_MATRIX.md`, 새 실험 미수행 근거는 같은 디렉터리의 `GAP_DECISION.md`, 자료 감사는 `DATA_AUDIT.md`를 따릅니다.
@@ -28,7 +28,7 @@
    - 교정 길이: 고정된 3개 문맥 위치를 GT로 바꾸고 이후 문맥에도 그대로 유지하면(persistent GT, 해제 없음) full-history 효과의 **약 90% [81, 99]**를 회복합니다(1/2/3/4 step = 47 / 77 / 90 / 96%, scene 가중; 실험 9 원 unit 가중은 47 / 76 / 90 / 96%; R9, 13 drive). "2–4 step이면 90%"는 틀린 표현입니다. 교정 위치 수와 마지막 GT 위치 이후 생성 step 수(3개일 때 평균 3.8)가 함께 변합니다. 단위당 GT 위치 2.96개 중 자기 token과 다른 것은 1.90개입니다(review_followup4 A2). (2026-10-18 수정)
    - **초기 위치 특수성(early critical window)은 근거가 없습니다**: 같은 길이의 교정을 첫 이탈 직후와 2 step 뒤에 넣은 차이는 w = 1/2/3에서 +10.7 / +4.3 / +0.5%p로 모두 비유의입니다(P1-B [사전 등록], 12 drive).
 3. 그 직전 token에서 embedding 근접보다 **motion**이 중요하고(실험 11), 방향 오답이 크기 오답보다 해롭습니다(실험 32).
-   - GT와 motion이 가장 가까운 다른 token은 GT token과 차이가 작고 비유의합니다(+0.8%p [−1.6, +6.6]). 그러나 **±5%p 동등성은 성립하지 않습니다**(TOST p = 0.09). "identity와 무관/GT와 같다"로 쓰지 않습니다.
+   - GT와 motion이 가장 가까운 다른 token은 GT token과 차이가 작고 비유의합니다(+0.8%p [−1.6, +6.6]). 원 ±5%p TOST(p = 0.09, sign-flip)는 이진 자료에서 무효였고, 사후 cluster-t TOST로는 ±5%p 안(p = 0.027, 보정 전, 사후 margin)이지만 확증적 동등성으로 쓰지 않습니다. "identity와 무관/GT와 같다"로 쓰지 않습니다. (2026-10-18 수정, review_followup5)
    - 방향 − 크기: 개발 13 drive에서 +9.9%p [+3.9, +21.0], p = 0.0056이지만, **새 drive(P1-C)에서는 같은 방향 +6.2%p, p = 0.073으로 결론이 나지 않았습니다**(사전 등록 판정 inconclusive). 일반화 주장은 하지 않습니다.
 3b. **GT 없는 action-context 효과(AutoVLA 한정, P1-A [사전 등록])**: GT 정보 없이 문맥 token 하나만 교란해도 이후 local action이 +0.57 m/seg 변하고, 순수 좌표 누적(기하 baseline)보다 endpoint가 +4.37 m [+3.32, +5.19] 더 움직입니다(13 drive; **사후** C1 excess 지표, Holm m = 4 9.8e-4). 사전 정의 P1A-2 지표의 authoritative 행은 +4.37 m [+3.34, +5.17], Holm m = 3 7.3e-4이며 두 행을 섞지 않습니다 (2026-10-15 수정).
    - 등속(constant-motion) 외삽 대비 초과 변화는 **실패 선택 층(A−)에서만** +2.35 m [+1.27, +3.19]이고, A+에서는 −0.52 m, 선정 기전 집합 전체(208 장면 = A− 52 + A+ 156)에서는 +0.20 m [−0.32, +0.56](p = 0.51)로 차이가 검출되지 않았습니다(동등성 미검정) [사후 C1]. "외삽을 넘는 일반적 자기증폭"은 삭제합니다. (2026-10-18 수정)
@@ -137,7 +137,7 @@
 |---|---:|---:|
 | 자기 token | 47.1–47.9% | – |
 | GT | 7.7–7.9% | 100% |
-| GT와 motion이 가장 비슷한 다른 token (실험 11) | 8.5% | 99% (GT 대비 +0.8%p [−1.6, +6.6]; ±5%p 동등성 미성립, TOST p = 0.09) |
+| GT와 motion이 가장 비슷한 다른 token (실험 11) | 8.5% | 99% (GT 대비 +0.8%p [−1.6, +6.6]; 원 sign-flip TOST p = 0.09는 무효; 사후 cluster-t TOST p = 0.027(보정 전·사후 margin, 확증 아님)) (2026-10-18 수정, review_followup5) |
 | 자기와 motion이 비슷한 다른 token (실험 11) | 43.8% | 8% |
 | **방향 정답 + 크기 오답** (실험 32) | 17.3% | 76% |
 | **크기 정답 + 방향 오답** (실험 32, GT와의 거리는 더 작음) | 26.3% | 54% |
@@ -146,7 +146,7 @@
 
 - embedding 근접은 motion을 고정하면 효과가 검출되지 않고(실험 11), GT 근접 motion token은 GT token과 차이가 작고 비유의합니다. 그러나 **동등성은 성립하지 않으므로**(drive 균등 가중에서는 90% CI [+0.2, +10.4]로 GT 근접 token이 약간 나쁠 수 있음) "identity와 무관/GT와 같다"로 쓰지 않습니다 [사후 drive 재분석].
 - **방향 오답 − 크기 오답** = 증폭 +9.9%p [+3.9, +21.0](장면 가중, 13 drive), p = 0.0056, Holm 0.0056, FDE +1.22 m (A−); 가중 방식에 민감합니다(unit +9.0, drive 균등 +15.5%p). 정상 장면에서도 방향 오답은 증폭 4.3 → 8.6%, 크기 오답은 3.7%.
-- **새 drive(P1-C, 18 drive)에서는 +6.2%p [+0.6, +12.1], sign-flip p = 0.073으로 사전 등록 판정 "결론 안 남"**입니다(bootstrap CI만 보고 "효과 있음"으로 쓰지 않음). 따라서 방향 > 크기는 **개발 drive에서의 결과**로 한정합니다.
+- **새 drive(P1-C, 18 drive)에서는 +6.2%p (bootstrap [+0.6, +12.1]; 검증된 cluster-t 구간 [−0.1, +12.4]), sign-flip p = 0.073으로 사전 등록 판정 "결론 안 남"**입니다(bootstrap CI만 보고 "효과 있음"으로 쓰지 않음). 따라서 방향 > 크기는 **개발 drive에서의 결과**로 한정합니다. (2026-10-18 수정, review_followup5)
 - 같은 크기의 오차라도 모델 자신의 이탈과 반대 방향이면 증폭이 47.9 → 13.7%로 줄어듭니다(달성 거리는 약 11% 작음) → 자기 이탈 방향을 확인해 주는 직전 action이 feedback을 강화한다는 해석과 일치합니다(개발 drive).
 
 ---
@@ -418,7 +418,7 @@ SpatialVLA 복원 감사도 **PASS**입니다(20 단위 = 2 과제 × 5 상태 �
   - dev: 52/2,747 = 1.89% [1.16, 2.64] (drive 군집)
   - P1-C: 107/5,671 = 1.89% [1.32, 2.53]
   - P1-C 적격 frame: 105/2,191 = 4.79% [3.43, 6.21]
-- **평가 집합(E) 추정량.** (이전 표기 '모집단 추정량'; P는 선정 353 장면의 설계 가중 추정) RN P −4.1%p [−6.4, −2.4], RV P +3.6%p [+2.2, +5.5]입니다(P1-C 사전 등록 판정을 정확히 재현). (2026-10-18 수정)
+- **평가 집합(E) 추정량.** (이전 표기 '모집단 추정량'; P는 선정 353 장면의 설계 가중 추정) RN P −4.1%p, RV P +3.6%p입니다(P1-C 사전 등록 판정을 정확히 재현; sign-flip p 5.7e-6 / 9.5e-7; drive bootstrap 구간 [−6.4, −2.4] / [+2.2, +5.5]는 이 가중 구조에서 coverage가 확인되지 않아 추론용으로 쓰지 않음). (2026-10-18 수정) (2026-10-18 수정, review_followup5)
   - 대상은 P1-C 64 log의 적격 2,191 장면에 대한 scene 가중 Hajek 추정량입니다. 이름은 **evaluation-population estimand**입니다.
   - P = F + S 분해가 성립합니다. RN 효과의 60%는 A+(S) 층에서 옵니다.
   - 다른 코호트의 효과와 빈도를 곱해 배치 효과를 만들지 않습니다.
@@ -532,7 +532,7 @@ AUTOVLA_NEXT_STEPS_20261018 실행 결과입니다. 주 모델은 AutoVLA이고,
 
 - 같은 경로·같은 batch는 bit 단위로 재현됩니다(exp_cde 재실행 108/108행, B = 1 반복 4/4). batch 크기, left padding, prefill/incremental 분할, decoder 구현 중 하나만 바꿔도 출력이 달라집니다. 원인은 bf16 수치 차이가 greedy digit 디코딩의 근소 동점에서 0.01 m 끝자리를 뒤집고, 모델이 그 값을 다시 문맥으로 증폭하는 것입니다.
 - 문서의 "no-op parity" 23/300, 237/2,728은 같은 조건 반복이 아니었습니다(구현 차이, batch 구성 차이). 장면 수준 A−/증폭 판정은 수치만으로 5–6% 바뀝니다.
-- 결론: Impromptu는 **기술적 보완 증거**(경로 parity 미검증)이며 강한 독립 재현으로 세지 않습니다. 바닥을 크게 넘는 대비(교정 −63.4%p, reverse +81.9%p)만 바닥과 함께 기술하고, 작은 대비(win1 −15.4%p, 방향 − 크기 +15.6%p 등)는 재현이라 부르지 않습니다.
+- 결론: Impromptu는 **기술적 보완 증거**(경로 parity 미검증)이며 강한 독립 재현으로 세지 않습니다. 교정 −63.4%p, reverse +81.9%p도 기술적으로만 씁니다(관측된 5–6% 판정 불일치율은 조건별 수치 편향의 상한이 아니므로 "바닥보다 커서 강건"이라고 쓰지 않음). 작은 대비(win1 −15.4%p, 방향 − 크기 +15.6%p 등)는 재현이라 부르지 않습니다. (2026-10-18 수정, review_followup5)
 
 **A4 — 분모·지표·범위**
 
@@ -574,7 +574,7 @@ AUTOVLA_NEXT_STEPS_20261018 실행 결과입니다. 주 모델은 AutoVLA이고,
 | INT = C_GT − C_NAT | −0.2%p [−3.8, +3.1] | −0.7%p [−2.2, +0.8] |
 | C_PROV = GT_CSRC − GT_NSRC | **−15.8%p** [−20.1, −10.2] | −2.2%p [−4.2, −0.2], Holm 0.13 |
 
-- 해석: 이 단발(one-shot) 일정에서 효과는 **최신 문맥 token의 값**을 따르며, 이전 GT prefix의 존재에 의존하지 않습니다(INT ≈ 0; 이전 값이 실제로 다른 단위에서도 −1.7%p [−5.4, +1.9]). 실패 층 효과는 크고 E4 평균 효과는 작습니다. E4는 t* ≤ 4 영역이며 원래 2,191 장면 추정량이 아닙니다. dev 코호트(A− 49 장면 / 13 drive)도 같은 패턴입니다(C_GT +28.5, C_NAT +28.4, INT +0.1%p).
+- 해석: 이 단발(one-shot) 일정에서 앞선 비교 위치(primary anchor에서는 t*+1 **한 위치**)를 모델 생성값으로 유지해도 직전 문맥 token을 GT로 교정하는 큰 효과가 관찰됐고, 두 조건의 효과 차이는 INT −0.2%p [−3.8, +3.1]입니다(이전 값이 실제로 다른 단위 −1.7%p [−5.4, +1.9]; older-prefix 주효과 F +2.0 ~ +4.8%p). 차이가 유의하지 않다는 것은 효과가 같다거나 오래된 문맥과 독립이라는 뜻이 아닙니다. 실패 층 효과는 크고 E4 평균 효과는 작습니다. E4는 t* ≤ 4 영역이며 원래 2,191 장면 추정량이 아닙니다. dev 코호트(A− 49 장면 / 13 drive)도 같은 패턴입니다(C_GT +28.5, C_NAT +28.4, INT +0.1%p). (2026-10-18 수정, review_followup5)
 - 범위: GT cell이 있으므로 **oracle-conditioned diagnostic**입니다(online 복구·배포 개선 아님). 편집은 유지되므로 해제 실험이 아니고, 기존 drive의 새 개입 arm이므로 외부 검증이 아닙니다. 반복 Recent-GT / Reverse-N 결과와 섞지 않습니다. C_PROV는 값의 차이이지 순수 provenance 효과가 아닙니다. 민감도 anchor(n_old = 2)의 P 수준 INT +2.7%p(p = 0.0046)는 사전 등록 검정이 아닌 민감도 결과입니다.
 
 **B3 — OpenVLA 최소 경로 검증: NOT_RUN** (사용자 결정 2026-10-17; LIBERO-Spatial checkpoint가 디스크에 없음; 여유 디스크 약 2.3–3 GB). OpenVLA는 기술적·미검증으로 두고 핵심 증거에서 제외합니다. 20% 재실행 불일치를 "효과 검출 임계값 20%p"로 쓰지 않습니다(`OPENVLA_GATE.md`).
@@ -588,6 +588,29 @@ AUTOVLA_NEXT_STEPS_20261018 실행 결과입니다. 주 모델은 AutoVLA이고,
 - 좁힘: 90% → "GT로 바꾸고 유지한 3개 고정 위치"; P1-A self-reference 0 근처 FDE 차이는 수치 바닥과 구별 불가.
 - 낮춤: Impromptu, OpenVLA → 기술적·미검증, 핵심 증거 제외.
 - 삭제: 해제·일시 교정·자기 token만 참조 주장, "GT history가 필요", 순수 provenance, online 교정, 외부 재현, OpenVLA 과제별 결론과 C − N "CI 0 제외", 일반 VLA·보편 원인·모델 간 구조 순위·π₀ vs π₀-FAST 구조 효과.
+
+---
+
+## 6h. review_followup5 (2026-10-18 수정, review_followup5): AutoVLA 구간 재검토, B2 상위 군집, GT-free 수치 재추론
+
+실행 지시: `CODING_AGENT_PROMPT_FOLLOWUP5.md`. 결과 `autovla_misalignment_poc/outputs/review_followup5/`(STATUS, CLAIM_CHANGES, MANUSCRIPT_REVISION, RUN_COMMANDS, REPRO_CHECK, INPUT_HASHES). 프로토콜은 결과 전에 로컬 파일로 고정했습니다(`FOLLOWUP5_PROTOCOL.md`, sha256 543ff14e…; 공개 사전 등록 아님). commit하지 않았습니다.
+
+**A — AutoVLA 구간·TOST·MME (CPU, 사후 수정).** 이진 결과의 sign-flip 역산 CI와 이동 sign-flip TOST는 동점 때문에 무효이고, δ = 0 sign-flip p(부호 대칭 귀무가설 아래 열거 정확)는 유효합니다. 실제 군집 구조로 coverage를 먼저 확인했더니 **보고해 온 drive bootstrap 95% CI도 과소 포함**(최소 0.83–0.91)이었습니다. 선택: dev A−(13 drive)·P1-C F(18 drive)는 cluster-t, **P1-C 평가 집합 P(가중, 24 drive)·day–vehicle·7 drive 이하 부분집합은 NR**(어느 방법도 기준 미달).
+- 결론 유지: dev RN −39.8%p cluster-t [−50.9, −28.7], RV +28.6 [+20.1, +37.2]; P1-C F RN −34.2 [−39.0, −29.4], RV +26.8 [+22.1, +31.5]. "replicated" 판정은 δ = 0 p와 부호에 근거하므로 그대로입니다.
+- 바뀐 것: P1-C F DM +6.2%p의 구간이 0을 포함([−0.1, +12.4]; 판정은 원래도 inconclusive). **P 수준 −4.1 / +3.6%p는 점추정과 p(5.7e-6, 9.5e-7)만 보고하고 CI는 검증되지 않음(NR)**. P1-C window win4 − gt_history ±5%p 동등은 F만 유지, S는 철회. 실험 11 GT 근접 token ±5%p: 원 sign-flip TOST(p 0.09)는 무효이고 사후 cluster-t TOST로는 ±5%p 안(p 0.027, 보정 전, 사후 margin)이지만 확증적 동등성으로 쓰지 않습니다. P1-B ±10%p 판정(w3 동등, w2 보정 전만)은 그대로입니다. "below MME" 판정은 원래도 없었습니다.
+
+**A — B2 상위 군집 (CPU).** P1-C 312 장면의 day–vehicle 이분 그래프는 연결 성분 6개(dev ∪ P1-C는 5개, day–vehicle 10개 공유)입니다. F에서 C_GT / C_NAT는 6개 성분 모두 같은 부호이고 성분 검정 p = 0.031(= 최소값), Holm 0.125(4개 family의 최소 가능값 0.125 > 0.05)입니다. drive·day–vehicle 수준에서는 C_GT, C_NAT, C_PROV(F)와 C_NAT(P)가 Holm 후 유지됩니다. 성분 수준 비유의는 추론 해상도의 한계이며 효과 부재가 아닙니다.
+- 문장 수정: primary anchor의 older factor는 **한 위치**(t*+1)입니다. INT −0.2%p [−3.8, +3.1]는 "효과가 같다/오래된 문맥과 독립"이 아니라 차이 추정치와 불확실성으로 보고하고, older-prefix 주효과(F +2.0 ~ +4.8%p)를 함께 씁니다. 사전 margin이 없으므로 동등성으로 승격하지 않습니다.
+- Impromptu의 "5–6% 수치 바닥보다 크므로 강건" 문장도 고칩니다. 관측된 판정 불일치율은 조건별 수치 편향의 상한이 아니므로 기술적·parity 미확립으로만 씁니다.
+
+**B — GT-free 핵심 대비의 수치 재추론 (GPU, RTX 5090 51.8분).** P1-A G family 전체(1,453 단위 / 선정 208 장면; A− 364 / 52 / 13 drive)를 S0(bf16·SDPA·B = 10), SE(eager attention), SF(fp32 연산)로 같은 harness에서 다시 생성했습니다. S0 재실행은 원 raw와 14,530/14,530 행이 같은 token이었습니다.
+- A− endpoint 초과(Δ_model − Δ_baseline, m): Geo +4.37 → SE +4.06 / SF +4.45, CM +2.35 → +2.04 / +2.43, CV0 +4.02 → +3.71 / +4.10, CTRV-K3 +3.02 → +2.71 / +3.10, CTRA-2 +1.43 → +1.12 / +1.51, 학습 외삽기 +1.97 → +1.65 / +2.04. **사전 고정 family 12개 검정 모두 Holm 후 유지**(Holm p ≤ 0.009).
+- 설정 간 직접 차이(A−): SE − S0 −0.31 m [−0.91, +0.40], SF − S0 +0.08 m [−0.39, +0.52]. 사전 기준으로 material하지 않지만, A−에서 최대 약 0.9 m의 설정 차이는 배제하지 못합니다(동등성 검정 아님).
+- A+와 선정 208 장면 전체의 결론(일반적 외삽 초과 없음)도 SE·SF에서 같았습니다. GF1/GF3, E family, 0 근처 self-reference FDE 차이는 다시 돌리지 않았습니다. t*와 층은 GT 정의를 상속하므로 전체 절차가 GT-free online은 아닙니다.
+
+**C — 독립 날짜·차량 자료: `BLOCKED_NO_DISJOINT_DATA`.** navtest 147 log, navhard two-stage 2,731 장면은 모두 dev ∪ P1-C 성분과 날짜·차량을 공유합니다. navmini/warmup 중 날짜·차량이 겹치지 않는 13 log는 모두 학습 자료(OpenScene trainval)입니다. private_test_hard(메타데이터 179 kB만 스트리밍)는 log·차량·도시가 익명이고 GT가 비공개라 판정할 수 없습니다. 검정력 계획: 실패 층 효과가 절반이어도 새 성분 10개(약 30 drive) 이상이면 Holm 기준 검정력 0.82–0.94이고, 성분 6개로는 Holm 유의가 불가능합니다.
+
+**D — GT 유지 대 제거 (선택):** NOT_RUN, 프로토콜 초안만 있습니다.
 
 ---
 

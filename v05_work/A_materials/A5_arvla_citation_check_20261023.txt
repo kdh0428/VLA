@@ -1,0 +1,4 @@
+AR-VLA bib key check (2026-10-23)
+references.bib: /root/VLA/v04_apply/work/CVPR_INTEGRATED_REVISION_20261023_v04/paper/references.bib line 53
+  key = hu2026arvla  ("AR-VLA: Autoregressive Action Expert for Vision--Language--Action Models", RSS 2026, doi 10.15607/RSS.2026.XXII.085)
+Cited? NO. grep "hu2026arvla" over paper/*.tex (paper_body.tex, supplement_body.tex, supp_v03_*.tex, main.tex, supplementary.tex), main.bbl, supplementary.bbl, *.aux -> 0 hits; the string "AR-VLA" appears in no .tex file.

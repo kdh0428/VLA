@@ -1,0 +1,173 @@
+{
+ "phase": "feasibility",
+ "n_valid": 12,
+ "candidates": [
+  {
+   "cand": 0,
+   "obs_id": "val_coke_s3000_c0",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 1,
+   "obs_id": "val_coke_s3000_c4",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 2,
+   "obs_id": "val_coke_s3000_c8",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 3,
+   "obs_id": "val_coke_s3001_c0",
+   "used": true,
+   "reason": null,
+   "status": "SOURCE_MISSING"
+  },
+  {
+   "cand": 4,
+   "obs_id": "val_coke_s3001_c4",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 5,
+   "obs_id": "val_coke_s3001_c8",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 6,
+   "obs_id": "val_coke_s3002_c0",
+   "used": true,
+   "reason": null,
+   "status": "SOURCE_MISSING"
+  },
+  {
+   "cand": 7,
+   "obs_id": "val_coke_s3002_c4",
+   "used": true,
+   "reason": null,
+   "status": "SOURCE_MISSING"
+  },
+  {
+   "cand": 8,
+   "obs_id": "val_coke_s3002_c8",
+   "used": true,
+   "reason": null,
+   "status": "SOURCE_MISSING"
+  },
+  {
+   "cand": 9,
+   "obs_id": "val_coke_s3003_c0",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 10,
+   "obs_id": "val_coke_s3003_c4",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 11,
+   "obs_id": "val_coke_s3003_c8",
+   "used": true,
+   "reason": null,
+   "status": "OK"
+  },
+  {
+   "cand": 12,
+   "obs_id": "val_coke_s3004_c0",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 13,
+   "obs_id": "val_coke_s3004_c4",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 14,
+   "obs_id": "val_coke_s3004_c8",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 15,
+   "obs_id": "val_coke_s3005_c0",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 16,
+   "obs_id": "val_coke_s3005_c4",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 17,
+   "obs_id": "val_coke_s3005_c8",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 18,
+   "obs_id": "val_coke_s3006_c0",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 19,
+   "obs_id": "val_coke_s3006_c4",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 20,
+   "obs_id": "val_coke_s3006_c8",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 21,
+   "obs_id": "val_coke_s3007_c0",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 22,
+   "obs_id": "val_coke_s3007_c4",
+   "used": false,
+   "reason": "12 already selected"
+  },
+  {
+   "cand": 23,
+   "obs_id": "val_coke_s3007_c8",
+   "used": false,
+   "reason": "12 already selected"
+  }
+ ],
+ "official_eq_collect": 12,
+ "adapter_natural_token_equal": 12,
+ "R_a34_identity": 12,
+ "R_decoded_equal": 12,
+ "R_term_equal": 12,
+ "max_abs_logit_diff_adapter_natural": 0.125,
+ "max_abs_logit_diff_R": 0.0,
+ "argmax_mismatch_R": 0,
+ "FEASIBILITY": "PASS",
+ "gpu_min_total": 2.81353600025177,
+ "phase_min": 1.6513163010279337
+}

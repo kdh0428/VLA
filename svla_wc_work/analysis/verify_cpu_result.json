@@ -1,0 +1,27 @@
+{
+ "counts": {
+  "records": 105,
+  "natural_valid": 105,
+  "R_identity": 105,
+  "donor_found": 64,
+  "analyzed": 64,
+  "matched": 7.0
+ },
+ "primary_two_task_Delta": 0.08381033774200981,
+ "all_two_task_Delta": 0.0699901106419857,
+ "checks": {
+  "flow": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   1.0
+  ],
+  "primary_Delta": 1.0,
+  "primary_layouts": true,
+  "all_Delta": 1.0,
+  "all_layouts": true
+ },
+ "ALL_MATCH": true
+}

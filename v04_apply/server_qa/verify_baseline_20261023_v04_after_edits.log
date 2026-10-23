@@ -1,0 +1,10 @@
+{
+  "all_passed": true,
+  "checks": 668,
+  "means_recomputed_from_raw_tokens": {
+    "primary": 0.01367874720357942,
+    "direct_OL_L": 0.015224832214765104,
+    "abs_scalar_response_difference": 0.007091498881431766
+  },
+  "scope": "CPU token and pose recomputation only; no fresh inference or physics."
+}

@@ -1,0 +1,27 @@
+\section{Interventions Compared Across Policies}
+\label{sec:crossmodel}
+Table~\ref{tab:crossmodel} lists, for each policy, what is edited, what is held fixed, where the response is read, and what the independent unit is. The three within-call contrasts are \emph{not} one shared test.
+\begin{itemize}
+\item AutoVLA's matched-prefix contrast $C_{\NAT}$ compares a GT and a frozen Normal-source value at the latest position, behind a natural older value, on a binary trajectory event.
+\item The VLA-0 and SpatialVLA contrasts directly compare a latest-position edit with an older-position edit, using the same donor on a continuous action distance.
+\end{itemize}
+In VLA-0 and SpatialVLA, an older-position edit keeps the intermediate action at its natural value. The measured response is therefore a position-specific context response with the intermediate action fixed; it is not total error propagation through the chunk.
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{\textbf{Within-call interventions by policy.}}
+\label{tab:crossmodel}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}\toprule
+ & AutoVLA (matched prefix) & VLA-0 (within-call pilot) & SpatialVLA (within-call v01 / v02 / drawer)\\\midrule
+Backbone; actions & Qwen2.5-VL-3B; 10 motion tokens, one per 0.5\,s & Qwen2.5-VL-3B; 8 vectors of 7 integers as text & SigLIP + Gemma~2; 4 actions of 3 spatial tokens\\
+Edited position & latest $a{-}1$ (GT vs frozen Normal token), with older $t^*{+}1$ GT or natural & conditioning vector 3 (L) or 2 (O) & conditioning action $a_2$ (L) or $a_1$ (O)\\
+Held fixed & emitted Normal-source prefix through $a{-}1$; source banks frozen & emitted natural vectors 1--3; the non-edited vector natural & emitted natural $a_1,a_2$; the non-edited action natural; donor gripper token equal to natural\\
+Donor & frozen Normal-source or GT value (value contrast) & whole vector from 4 $T{=}0.7$ samples & whole action from $T{=}0.7$ samples: first joint-valid of 4 (v01); first distance-matched of $\le$64 (v02, drawer)\\
+Response window & suffix from anchor $a$ to the 10th token & vectors 4--8, 6 arm dims & actions $a_3,a_4$, 6 normalized motion dims\\
+Contrast & $C_{\NAT}$ (severe-event difference) & $A_L-A_O$ & $E_L-E_O$\\
+Executed? & no (open-loop plans) & pilot no; separate paired rollouts executed continuation edits & no (command level)\\
+Metric & severe event; PDMS & normalized integer-bin distance & normalized action distance (not metres)\\
+Independent unit & drive (also day--vehicle, component) & LIBERO task (30) & physical layout within task (2 tasks; drawer separate)\\\bottomrule
+\end{tabularx}
+\end{table}

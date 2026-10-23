@@ -1,0 +1,26 @@
+\section{Model Selection: Candidate Policies}
+\label{sec:models}
+A policy can serve the within-call estimand only if, inside one call, it emits several time steps autoregressively, so that later steps condition on the decoder's copy of earlier ones. Table~\ref{tab:models} summarizes official code and model cards (revisions recorded in the package; L = checked locally, P = public source).
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{\textbf{Candidate policies for the within-call older-vs-latest estimand.} Surveyed policies are not experimental models of this paper.}
+\label{tab:models}
+\begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3.0cm} l@{}}\toprule
+Policy & Backbone & Time step $\leftrightarrow$ token position & Native older/latest edit & Use here\\\midrule
+AutoVLA & Qwen2.5-VL-3B & 10 motion tokens, one per 0.5\,s & yes & experiment\\
+VLA-0 & Qwen2.5-VL-3B & 8 integer vectors as text, one per step & yes & experiment\\
+SpatialVLA-4B & SigLIP + Gemma~2 & 4 actions $\times$ 3 spatial tokens & yes (path verified) & experiment\\
+pi0-FAST & SigLIP + Gemma-2B (JAX) & DCT + BPE: a token spans frequency coefficients, not a time step [P] & no (different estimand) & surveyed\\
+OpenVLA & DINOv2/SigLIP + Llama-2-7B & one step (7 tokens) per call, no action history [L, P] & no & surveyed\\
+OpenVLA-OFT & OpenVLA-7B + LoRA & parallel decoding over zero-embedded slots, regression head [P] & no & surveyed\\
+WorldVLA (v1 code) & Chameleon-7B & autoregressive blocks; an inference attention mask blocks attention to earlier action blocks [P] & structural null only & surveyed\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Why SpatialVLA, and the separate implementation reasons.}
+\begin{itemize}
+\item \textbf{Scientific reason.} SpatialVLA is the available policy outside the Qwen2.5-VL family whose official decoding exposes a time-ordered within-call channel.
+\item \textbf{Implementation reasons} (separate from the scientific reason). Its checkpoint and SimplerEnv setup were already installed and verified. The alternatives need 14--25\,GB of new weights and, for some, new frameworks.
+\item \textbf{WorldVLA.} It would provide only an architectural null control. The repository named in its paper now redirects to a successor in which the mask is disabled, so the masked version must be pinned to the original code.
+\end{itemize}

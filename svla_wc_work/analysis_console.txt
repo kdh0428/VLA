@@ -1,0 +1,155 @@
+Some kwargs in processor config are unused and will not have any effect: action_config, intrinsic_config, bin_policy, obs_delta, num_obs_steps, action_chunk_size, statistics. 
+/root/VLA/svla_wc_work/scripts/analyze.py:130: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  "arms_valid": int(F.get("arms_valid", pd.Series(dtype=bool)).fillna(False).sum()),
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+{
+ "records": 105,
+ "natural_valid": 105,
+ "R_identity": 105,
+ "donor_found": 64,
+ "arms_valid": 64,
+ "analyzed_joint_valid": 64,
+ "matched": 7,
+ "status_counts": {
+  "OK": 64,
+  "SOURCE_MISSING": 41
+ },
+ "by_task": {
+  "google_robot_move_near": 30,
+  "google_robot_pick_coke_can": 75
+ }
+}
+{
+ "primary_matched": {
+  "Delta": {
+   "n_obs": 7,
+   "n_layouts": {
+    "google_robot_move_near": 1,
+    "google_robot_pick_coke_can": 6
+   },
+   "task_means": {
+    "google_robot_move_near": 0.03741467325428077,
+    "google_robot_pick_coke_can": 0.13020600222973885
+   },
+   "two_task": 0.08381033774200981,
+   "task_ci": {
+    "google_robot_move_near": null,
+    "google_robot_pick_coke_can": [
+     0.05122239024780475,
+     0.21066267816989573
+    ]
+   },
+   "two_task_ci": null
+  },
+  "E_L": {
+   "n_obs": 7,
+   "n_layouts": {
+    "google_robot_move_near": 1,
+    "google_robot_pick_coke_can": 6
+   },
+   "task_means": {
+    "google_robot_move_near": 0.03741467325428077,
+    "google_robot_pick_coke_can": 0.15183073056547802
+   },
+   "two_task": 0.0946227019098794,
+   "task_ci": {
+    "google_robot_move_near": null,
+    "google_robot_pick_coke_can": [
+     0.09296609779468679,
+     0.21961360789366394
+    ]
+   },
+   "two_task_ci": null
+  },
+  "E_O": {
+   "n_obs": 7,
+   "n_layouts": {
+    "google_robot_move_near": 1,
+    "google_robot_pick_coke_can": 6
+   },
+   "task_means": {
+    "google_robot_move_near": 0.0,
+    "google_robot_pick_coke_can": 0.021624728335739196
+   },
+   "two_task": 0.010812364167869598,
+   "task_ci": {
+    "google_robot_move_near": null,
+    "google_robot_pick_coke_can": [
+     0.0,
+     0.055747614519610224
+    ]
+   },
+   "two_task_ci": null
+  },
+  "D_OL_L": {
+   "n_obs": 7,
+   "n_layouts": {
+    "google_robot_move_near": 1,
+    "google_robot_pick_coke_can": 6
+   },
+   "task_means": {
+    "google_robot_move_near": 0.08847182910358425,
+    "google_robot_pick_coke_can": 0.10805914343367168
+   },
+   "two_task": 0.09826548626862797,
+   "task_ci": {
+    "google_robot_move_near": null,
+    "google_robot_pick_coke_can": [
+     0.022381229946533618,
+     0.2149866231846753
+    ]
+   },
+   "two_task_ci": null
+  },
+  "J": {
+   "n_obs": 7,
+   "n_layouts": {
+    "google_robot_move_near": 1,
+    "google_robot_pick_coke_can": 6
+   },
+   "task_means": {
+    "google_robot_move_near": 0.06917925351191856,
+    "google_robot_pick_coke_can": -0.10670141371569597
+   },
+   "two_task": -0.018761080101888705,
+   "task_ci": {
+    "google_robot_move_near": null,
+    "google_robot_pick_coke_can": [
+     -0.1725433382513694,
+     -0.0429380678330345
+    ]
+   },
+   "two_task_ci": null
+  },
+  "E_OL": {
+   "n_obs": 7,
+   "n_layouts": {
+    "google_robot_move_near": 1,
+    "google_robot_pick_coke_can": 6
+   },
+   "task_means": {
+    "google_robot_move_near": 0.10659392676619933,
+    "google_robot_pick_coke_can": 0.06675404518552125
+   },
+   "two_task": 0.08667398597586029,
+   "task_ci": {
+    "google_robot_move_near": null,
+    "google_robot_pick_coke_can": [
+     0.035442761822706566,
+     0.09666026243170898
+    ]
+   },
+   "two_task_ci": null
+  }
+ },
+ "all_joint_valid": {
+  "Delta": {
+   "n_obs": 64,
+   "n_layouts": {
+    "google_robot_move_near": 9,
+    "google_robot_pick_coke_can": 23
+   },
+   "task_means": {
+    "google_robot_move_near": 0.069335621369282

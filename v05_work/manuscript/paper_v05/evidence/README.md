@@ -1,0 +1,1 @@
+Current manuscript numbers: CURRENT_CLAIM_NUMBERS.csv. Current interval policy: latest_validation/FINAL_INTERVAL_POLICY.csv, qualified by REVISION_NOTES.md. FINAL_PAPER_NUMBERS.* and earlier coverage records are frozen historical exports; old interval annotations are superseded. All new visual audits are post hoc and CPU-only.

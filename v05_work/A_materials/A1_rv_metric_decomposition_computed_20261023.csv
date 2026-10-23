@@ -1,0 +1,52 @@
+contrast,intervention,reference,target_population,metric,unit,n_units,n_scenes,n_drives,weighting,delta
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),ade5,m,365,52,13,equal scene,1.197611671517629
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),fde5,m,365,52,13,equal scene,3.590966451460245
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),rule_fail,pp,365,52,13,equal scene,35.012210012210005
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),lon_fail,pp,365,52,13,equal scene,31.910103785103782
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),lat_fail,pp,365,52,13,equal scene,7.8411172161172145
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),fde_gt2,pp,365,52,13,equal scene,47.504578754578745
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),fde_gt3,pp,365,52,13,equal scene,41.89942002442003
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),fde_gt4,pp,365,52,13,equal scene,39.48031135531135
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),fde_gt5,pp,365,52,13,equal scene,33.19978632478632
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),severe2,pp,365,52,13,equal scene,33.1043956043956
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),severe3,pp,365,52,13,equal scene,28.628663003662997
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),severe4,pp,365,52,13,equal scene,25.992063492063483
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),severe5,pp,365,52,13,equal scene,22.710622710622705
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),state_pass_le3,pp,365,52,13,equal scene,-48.28296703296702
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),state_pass_gt3,pp,365,52,13,equal scene,13.27075702075702
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),state_fail_le3,pp,365,52,13,equal scene,6.3835470085470085
+RV,reverse@emb,gt_history,dev mechanism set A- (failure-selected),state_fail_gt3,pp,365,52,13,equal scene,28.628663003662997
+RV,reverse@emb,gt_history,P1-C F,ade5,m,748,105,18,equal scene,0.8878540869265794
+RV,reverse@emb,gt_history,P1-C F,fde5,m,748,105,18,equal scene,2.5843760255871144
+RV,reverse@emb,gt_history,P1-C F,rule_fail,pp,748,105,18,equal scene,31.27739984882842
+RV,reverse@emb,gt_history,P1-C F,lon_fail,pp,748,105,18,equal scene,30.268329554043845
+RV,reverse@emb,gt_history,P1-C F,lat_fail,pp,748,105,18,equal scene,5.238095238095239
+RV,reverse@emb,gt_history,P1-C F,fde_gt2,pp,748,105,18,equal scene,43.858654572940296
+RV,reverse@emb,gt_history,P1-C F,fde_gt3,pp,748,105,18,equal scene,37.29024943310657
+RV,reverse@emb,gt_history,P1-C F,fde_gt4,pp,748,105,18,equal scene,29.230914588057445
+RV,reverse@emb,gt_history,P1-C F,fde_gt5,pp,748,105,18,equal scene,22.299697656840507
+RV,reverse@emb,gt_history,P1-C F,severe2,pp,748,105,18,equal scene,30.582010582010582
+RV,reverse@emb,gt_history,P1-C F,severe3,pp,748,105,18,equal scene,26.83295540438398
+RV,reverse@emb,gt_history,P1-C F,severe4,pp,748,105,18,equal scene,22.190098261526828
+RV,reverse@emb,gt_history,P1-C F,severe5,pp,748,105,18,equal scene,17.35071806500378
+RV,reverse@emb,gt_history,P1-C F,state_pass_le3,pp,748,105,18,equal scene,-41.734693877551024
+RV,reverse@emb,gt_history,P1-C F,state_pass_gt3,pp,748,105,18,equal scene,10.457294028722602
+RV,reverse@emb,gt_history,P1-C F,state_fail_le3,pp,748,105,18,equal scene,4.444444444444443
+RV,reverse@emb,gt_history,P1-C F,state_fail_gt3,pp,748,105,18,equal scene,26.83295540438398
+RV,reverse@emb,gt_history,P1-C E (Hajek),ade5,m,2436,353,24,Hajek (stored H8 weights),0.38191187199226717
+RV,reverse@emb,gt_history,P1-C E (Hajek),fde5,m,2436,353,24,Hajek (stored H8 weights),1.0773716960295885
+RV,reverse@emb,gt_history,P1-C E (Hajek),rule_fail,pp,2436,353,24,Hajek (stored H8 weights),4.245859685727328
+RV,reverse@emb,gt_history,P1-C E (Hajek),lon_fail,pp,2436,353,24,Hajek (stored H8 weights),3.787228416393182
+RV,reverse@emb,gt_history,P1-C E (Hajek),lat_fail,pp,2436,353,24,Hajek (stored H8 weights),0.7483038476306392
+RV,reverse@emb,gt_history,P1-C E (Hajek),fde_gt2,pp,2436,353,24,Hajek (stored H8 weights),22.224418255054935
+RV,reverse@emb,gt_history,P1-C E (Hajek),fde_gt3,pp,2436,353,24,Hajek (stored H8 weights),13.245360710844508
+RV,reverse@emb,gt_history,P1-C E (Hajek),fde_gt4,pp,2436,353,24,Hajek (stored H8 weights),10.99825313511986
+RV,reverse@emb,gt_history,P1-C E (Hajek),fde_gt5,pp,2436,353,24,Hajek (stored H8 weights),8.28665065600255
+RV,reverse@emb,gt_history,P1-C E (Hajek),severe2,pp,2436,353,24,Hajek (stored H8 weights),4.237256670506331
+RV,reverse@emb,gt_history,P1-C E (Hajek),severe3,pp,2436,353,24,Hajek (stored H8 weights),3.646388001419951
+RV,reverse@emb,gt_history,P1-C E (Hajek),severe4,pp,2436,353,24,Hajek (stored H8 weights),3.1403269508016205
+RV,reverse@emb,gt_history,P1-C E (Hajek),severe5,pp,2436,353,24,Hajek (stored H8 weights),2.831342867285359
+RV,reverse@emb,gt_history,P1-C E (Hajek),state_pass_le3,pp,2436,353,24,Hajek (stored H8 weights),-13.844832395151885
+RV,reverse@emb,gt_history,P1-C E (Hajek),state_pass_gt3,pp,2436,353,24,Hajek (stored H8 weights),9.598972709424558
+RV,reverse@emb,gt_history,P1-C E (Hajek),state_fail_le3,pp,2436,353,24,Hajek (stored H8 weights),0.5994716843073754
+RV,reverse@emb,gt_history,P1-C E (Hajek),state_fail_gt3,pp,2436,353,24,Hajek (stored H8 weights),3.646388001419951

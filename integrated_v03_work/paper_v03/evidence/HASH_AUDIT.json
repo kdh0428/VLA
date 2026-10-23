@@ -1,0 +1,486 @@
+[
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup/P0B_cluster_stats/run_20261008/units.parquet",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/units.parquet",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_main/cells.jsonl",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_main/cells.jsonl",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_cohort_t4.json",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup4/B/B2/p1c_cohort_t4.json",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_cohort_t4.json",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/A_STATS/A_METHOD_SELECTION.json",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup5/A_STATS/A_METHOD_SELECTION.json",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup5/A_STATS/A_METHOD_SELECTION.json",
+        "match": false
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/A_STATS/AUTOVLA_CI_AUDIT.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup5/A_STATS/AUTOVLA_CI_AUDIT.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup5/A_STATS/AUTOVLA_CI_AUDIT.csv",
+        "match": false
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/A_B2_CLUSTER/B2_CLUSTER_CONTRIBUTIONS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup5/A_B2_CLUSTER/B2_CLUSTER_CONTRIBUTIONS.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup5/A_B2_CLUSTER/B2_CLUSTER_CONTRIBUTIONS.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/A_B2_CLUSTER/B2_CLUSTER_RESULTS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup5/A_B2_CLUSTER/B2_CLUSTER_RESULTS.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup5/A_B2_CLUSTER/B2_CLUSTER_RESULTS.csv",
+        "match": false
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_analysis/MATCHED_PREFIX_RESULTS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup4/B/B2/p1c_analysis/MATCHED_PREFIX_RESULTS.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_analysis/MATCHED_PREFIX_RESULTS.csv",
+        "match": false
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_analysis/MATCHED_PREFIX_RESULTS.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/B_NUMERIC/B_NUMERIC_RESULTS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup5/B_NUMERIC/B_NUMERIC_RESULTS.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup5/B_NUMERIC/B_NUMERIC_RESULTS.csv",
+        "match": false
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/B_NUMERIC/B_NUMERIC_MATERIALITY.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup5/B_NUMERIC/B_NUMERIC_MATERIALITY.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup5/B_NUMERIC/B_NUMERIC_MATERIALITY.csv",
+        "match": false
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+        "match": false
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/repro/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/WINDOW_WEIGHT_AUDIT.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup3/P0/WINDOW_WEIGHT_AUDIT.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/WINDOW_WEIGHT_AUDIT.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/A2_A3/a2_checks.json",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup4/A2_A3/a2_checks.json",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup4/A2_A3/a2_checks.json",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/A1_A4/CI_VALIDITY_AUDIT.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/inputs/outputs/review_followup4/A1_A4/CI_VALIDITY_AUDIT.csv",
+        "match": true
+      },
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/repro/VLA/autovla_misalignment_poc/outputs/review_followup4/A1_A4/CI_VALIDITY_AUDIT.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup5/reproducibility_followup5.zip",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review5_check_20261019/input/review_followup5/reproducibility_followup5.zip",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/reproducibility_minimal.zip",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/review4_check_20261018/input/review_followup4/reproducibility_minimal.zip",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q1_coverage.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q1_coverage.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q1_empirical_alt.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q1_empirical_alt.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q1_recommendation.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q1_recommendation.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q2_power.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q2_power.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q3_final_numbers.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q3_final_numbers.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q4_materiality_jsonci.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q4_materiality_jsonci.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/manuscript_author_queries_20261019/q5_package.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/manuscript_author_queries_20261019/q5_package.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/scripts/review_followup5/b_numeric_analyze.py",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/code/scripts/review_followup5/b_numeric_analyze.py",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/AMENDMENTS.md",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/AMENDMENTS.md",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/AUTHOR_ANSWERS.md",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/AUTHOR_ANSWERS.md",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/B_NUMERIC_MATERIALITY_jsonci.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/B_NUMERIC_MATERIALITY_jsonci.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/CI_RECOMMENDATION.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/CI_RECOMMENDATION.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_PLAN.md",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_PLAN.md",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_PLAN_LOCK.json",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_PLAN_LOCK.json",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_RESULTS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_RESULTS.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_RESULTS_EMPIRICAL_ALT.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_RESULTS_EMPIRICAL_ALT.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_SCENARIOS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_SCENARIOS.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_STRUCTURES.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_STRUCTURES.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/COVERAGE_SUMMARY.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/COVERAGE_SUMMARY.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/FINAL_PAPER_NUMBERS.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/FINAL_PAPER_NUMBERS.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/FINAL_PAPER_NUMBERS.json",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/FINAL_PAPER_NUMBERS.json",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/MISSING.md",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/MISSING.md",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/POWER_SENSITIVITY.csv",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/POWER_SENSITIVITY.csv",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/RF5_SIM_REALISED_THETA.txt",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/RF5_SIM_REALISED_THETA.txt",
+        "match": true
+      }
+    ],
+    "any_match": true
+  },
+  {
+    "file": "/root/VLA/autovla_misalignment_poc/outputs/manuscript_author_queries_20261019/RUN_COMMANDS.md",
+    "found": [
+      {
+        "path": "/workspace/scratch/100a7e8dd2a7/author_answers_check_20261019/RUN_COMMANDS.md",
+        "match": true
+      }
+    ],
+    "any_match": true
+  }
+]

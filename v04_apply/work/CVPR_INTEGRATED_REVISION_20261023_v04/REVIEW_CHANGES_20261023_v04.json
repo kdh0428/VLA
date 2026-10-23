@@ -1,0 +1,150 @@
+[
+  {
+    "file": "paper/paper_body.tex",
+    "before": "replaced by the same action of a $T{=}0.7$ sample with the natural gripper token",
+    "after": "replaced by the corresponding action from a common $T{=}0.7$ sampled chunk, keeping the natural gripper token at each position"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "With the same $D$ form, $E_k=D(k,R)$ is the mean absolute difference of the six normalized motion components of $a_3,a_4$ (decoded before unnormalization).",
+    "after": "For normalized motion components $u$, $D_{\\mathrm S}(X,Y)=\\frac{1}{12}\\sum_{\\tau=3}^{4}\\sum_{d=1}^{6}|u_{X,\\tau d}-u_{Y,\\tau d}|$ and $E_k=D_{\\mathrm S}(k,R)$. The distance averages 12 components before unnormalization."
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "$D(OL,L)=0.021$",
+    "after": "$D_{\\mathrm S}(OL,L)=0.021$"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "We therefore pre-registered a follow-up",
+    "after": "Before new intervention outputs, we specified a follow-up"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "would need a frequency-domain notion of a local edit",
+    "after": "need a token- or coefficient-domain edit rather than a physical-time-step substitution"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "1 task; 15 layouts",
+    "after": "1 task; 15 scenarios / 7 pose groups"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "(35 observations, 15 layouts)",
+    "after": "(35 observations, 15 reset scenarios)"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "Experiment (donor rule) & Obs./layouts",
+    "after": "Experiment (donor rule) & Obs./units"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "separate experiments; $^{a}$one move\\_near layout).",
+    "after": "separate experiments; units are layouts, except $^{b}$drawer reset scenarios sharing 7 recorded pose groups; $^{a}$one move\\_near layout)."
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "Open drawer (supp.) & 35/15 &",
+    "after": "Open drawer (supp.) & 35/15$^{b}$ &"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "SpatialVLA adds a SigLIP/Gemma~2 policy, but only at the command level, on two reused simulator tasks plus one supplementary task.",
+    "after": "SpatialVLA extends the within-call comparison to SigLIP/Gemma~2 at the command level on two reused simulator tasks plus one supplementary task."
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "Among surveyed alternatives, pi0-FAST, OpenVLA, and OpenVLA-OFT lack a time-ordered within-call channel, and WorldVLA masks it",
+    "after": "Among surveyed alternatives, FAST has temporally nonlocal tokens, original OpenVLA predicts one step per call, OFT decodes in parallel, and WorldVLA masks preceding action blocks"
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "SpatialVLA covers two tasks with reused layouts.",
+    "after": "The SpatialVLA cross-step outcome study covers two tasks with reused layouts."
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "before": "Verified execution replays show that such context-only edits reach executed commands and end-effector motion within a few steps, while SpatialVLA's two-task mean success effects lie within the original $\\pm10$\\,pp margin despite physical deviation.",
+    "after": "Verified VLA-0 execution replays show that context-only edits reach commands and end-effector motion within a few steps. In SpatialVLA's separate cross-step study, two-task mean success effects lie within the original $\\pm10$\\,pp margin despite physical deviation."
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "D(OL,L)",
+    "after": "D_{\\mathrm S}(OL,L)"
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "Discovery pilot (v01).",
+    "after": "Discovery pilot."
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "SpatialVLA Matched Follow-up (v02)",
+    "after": "SpatialVLA Matched Follow-up"
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "Design (pre-registered before any v02 intervention output).",
+    "after": "Design (specified before any follow-up intervention output)."
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "\\item \\textbf{Layouts.} The cabinet is fixed; the robot pose and the target drawer vary. A layout is identified by robot and articulation poses plus the instruction. The panel was fixed as the first 20 unique layouts in seeds 5000--5099 (69 unique in total), with calls 2/6/10.",
+    "after": "\\item \\textbf{Reset scenarios.} The cabinet is fixed; robot pose, robot appearance and target drawer vary. The original fingerprint includes robot/actor poses, robot-asset names and the instruction. The panel was fixed as the first 20 unique scenarios in seeds 5000--5099 (69 total), with calls 2/6/10. These scenarios need not have distinct physical poses."
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "(15 layouts)",
+    "after": "(15 reset scenarios)"
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "before": "\\begin{figure}[h]\n\\centering\n\\includegraphics[width=0.45\\textwidth]{fig_svla_drawer_components.pdf}",
+    "after": "\n\\paragraph{Post-hoc pose-group sensitivity.}\nThe 15 analyzed scenarios share seven recorded pose configurations after ignoring the instruction and robot-asset names. To check this dependence, we resample these seven groups, keep all scenarios in each sampled group, and recompute the scenario-weighted mean: $\\Delta=0.145$ $[0.075,0.236]$ (10,000 resamples, seed 20261023). Giving pose groups equal weight changes the estimand and yields $0.128$ $[0.070,0.204]$. These are post-hoc sensitivity intervals conditional on a small pose panel, not additional task-population evidence.\n\n\\begin{figure}[h]\n\\centering\n\\includegraphics[width=0.45\\textwidth]{fig_svla_drawer_components.pdf}"
+  },
+  {
+    "file": "paper/supp_v03_comparison.tex",
+    "before": "using the same donor on a continuous action distance",
+    "after": "using model-sampled whole-action donors and continuous action-distance outcomes"
+  },
+  {
+    "file": "paper/supp_v03_models.tex",
+    "before": "SpatialVLA is the available policy outside the Qwen2.5-VL family whose official decoding exposes a time-ordered within-call channel.",
+    "after": "Among the examined candidates, SpatialVLA provides an accessible, time-aligned autoregressive interface outside Qwen2.5-VL for this contrast."
+  },
+  {
+    "file": "paper/supp_v03_models.tex",
+    "before": "The alternatives need 14--25\\,GB of new weights and, for some, new frameworks.",
+    "after": "The alternatives require additional checkpoint storage and, in some cases, different frameworks."
+  },
+  {
+    "file": "paper/supp_v03_models.tex",
+    "before": "no (different estimand)",
+    "after": "not time-aligned"
+  },
+  {
+    "file": "paper/supp_v03_models.tex",
+    "before": "\\paragraph{Why SpatialVLA, and the separate implementation reasons.}",
+    "after": "FAST remains autoregressive: its DCT/BPE tokens encode coefficients over a whole chunk, so token positions do not identify individual physical time steps. Token-prefix or coefficient interventions require a different estimand; the representation does not imply an absence of action dependence.\n\n\\paragraph{Why SpatialVLA, and the separate implementation reasons.}"
+  },
+  {
+    "file": "paper/supp_v03_moved.tex",
+    "before": "Figures Moved from the Main Text in v03",
+    "after": "Additional Decoding and Motion Visualizations"
+  },
+  {
+    "file": "paper/supp_v03_moved.tex",
+    "before": "To keep the main paper at eight pages after adding the SpatialVLA results, three figures moved here; their numbers remain in the main text.",
+    "after": "The following figures show layout-level SpatialVLA responses, time-resolved AutoVLA plan responses, and paired VLA-0 end-effector traces."
+  },
+  {
+    "file": "paper/paper_body.tex",
+    "change": "pre-registered -> pre-specified"
+  },
+  {
+    "file": "paper/supp_v03_svla.tex",
+    "change": "pre-registered -> pre-specified"
+  }
+]

@@ -1,0 +1,13 @@
+v02 verify_revision_20261021_v02.py run on the v03 TeX (paper_body.tex, supplement_body.tex) 2026-10-23T05:39:24+00:00
+6e78ac067ac5ea6bb25853cae6e30d9c858497dd0171fc0ba88eb06ad9ad962d  /root/VLA/integrated_v03_work/paper_v03/paper_body.tex
+3f829eed3680216cd796b4463a3463f7be168300b016bd45334051f662d3c740  /root/VLA/integrated_v03_work/paper_v03/supplement_body.tex
+{
+  "all_passed": true,
+  "checks": 668,
+  "means_recomputed_from_raw_tokens": {
+    "primary": 0.01367874720357942,
+    "direct_OL_L": 0.015224832214765104,
+    "abs_scalar_response_difference": 0.007091498881431766
+  },
+  "scope": "CPU token and pose recomputation only; no fresh inference or physics."
+}

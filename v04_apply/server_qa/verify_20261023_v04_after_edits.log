@@ -1,0 +1,97 @@
+{
+  "all_checks_passed": true,
+  "checks": 25957,
+  "followup": {
+    "estimate": 0.04837804816201573,
+    "ci": [
+      0.025522005122200774,
+      0.07214788279435241
+    ],
+    "n_obs": 69,
+    "n_layouts": {
+      "google_robot_move_near": 9,
+      "google_robot_pick_coke_can": 25
+    },
+    "task_means": {
+      "google_robot_move_near": 0.054278569962701535,
+      "google_robot_pick_coke_can": 0.04247752636132991
+    },
+    "task_ci": {
+      "google_robot_move_near": [
+        0.01793133866253471,
+        0.09333137384747747
+      ],
+      "google_robot_pick_coke_can": [
+        0.014763846567686811,
+        0.0696291648705881
+      ]
+    }
+  },
+  "drawer": {
+    "estimate": 0.14488141275545213,
+    "ci": [
+      0.09053718025210974,
+      0.20998708360053123
+    ],
+    "n_obs": 35,
+    "n_layouts": {
+      "google_robot_open_drawer": 15
+    },
+    "task_means": {
+      "google_robot_open_drawer": 0.14488141275545213
+    },
+    "task_ci": {
+      "google_robot_open_drawer": [
+        0.09053718025210974,
+        0.20998708360053123
+      ]
+    }
+  },
+  "drawer_pose_group_sensitivity": {
+    "post_hoc": true,
+    "scenario_count": 15,
+    "pose_groups": 7,
+    "scenario_weighted_estimate": 0.14488141275545216,
+    "scenario_weighted_pose_cluster_ci": [
+      0.07512190487308767,
+      0.2359046858137372
+    ],
+    "equal_pose_group_estimate": 0.12823156708116268,
+    "equal_pose_group_ci": [
+      0.07038618145271011,
+      0.20437529896880027
+    ],
+    "members": {
+      "2b0326218226d290": [
+        5000,
+        5006
+      ],
+      "8d16327dc949a011": [
+        5001,
+        5002,
+        5005,
+        5007
+      ],
+      "5ae358ade902633a": [
+        5003
+      ],
+      "fe6dcedbe2288921": [
+        5004,
+        5008
+      ],
+      "a69494e4a5118daf": [
+        5009
+      ],
+      "4815c97426706efd": [
+        5010,
+        5011,
+        5015
+      ],
+      "77b4798e857eeafa": [
+        5012,
+        5013
+      ]
+    }
+  },
+  "recorded_total_gpu_minutes": 62.80027621984482
+}

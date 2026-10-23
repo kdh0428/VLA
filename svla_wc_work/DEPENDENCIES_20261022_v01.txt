@@ -1,0 +1,16 @@
+# environment record 2026-10-22T14:55:44+00:00
+python 3.9.23 torch 2.8.0+cu128 cuda 12.8 numpy 1.23.4
+transformers 4.47.0 /root/VLA/spatialvla/site/transformers/__init__.py
+tokenizers 0.21.0
+sapien 2.2.2
+gymnasium 0.29.1
+git HEAD c0aee3265035e48868878418d2f4903beae61526
+git tracked diff --stat (tail):
+ 8 files changed, 17901 insertions(+), 217 deletions(-)
+env script: /root/VLA/simpler/env.sh
+# source this: SimplerEnv (ManiSkill2_real2sim, SAPIEN 2.2.2) on the autovla conda env, software Vulkan (Mesa lavapipe), RTX 5090 for the policy
+source /root/miniforge3/etc/profile.d/conda.sh && conda activate autovla
+export PYTHONPATH=/root/VLA/spatialvla/site:/root/VLA/simpler/site:/root/VLA/simpler/SimplerEnv:/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim:/root/VLA/autovla_misalignment_poc/scripts/cross_domain_temporal
+export LD_LIBRARY_PATH=/root/VLA/openvla/mesa/lib:${LD_LIBRARY_PATH:-}
+export VK_ICD_FILENAMES=/root/VLA/openvla/mesa/share/vulkan/icd.d/lvp_icd.x86_64.json
+export CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=1 TOKENIZERS_PARALLELISM=false

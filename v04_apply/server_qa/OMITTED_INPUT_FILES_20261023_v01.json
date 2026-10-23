@@ -1,0 +1,18 @@
+{
+ "omitted_from_result_zip": [
+  {
+   "path": "raw_packages/CVPR_SPATIALVLA_WITHIN_CALL_RESULT_20261022_v01.zip",
+   "sha256": "9ca819caeb7752038cc8a560166e76dbfa7f87a438bb4f52c666375315fe8d6a"
+  },
+  {
+   "path": "raw_packages/CVPR_VLA0_CLOSED_LOOP_FEASIBILITY_20261021_v02.zip",
+   "sha256": "1dfee05f182472b18b4d9556735906d8c3597dec283fdf2378f56d15fda4f305"
+  },
+  {
+   "path": "raw_packages/CVPR_VLA0_AND_CONTRIBUTION_20261020.zip",
+   "sha256": "4c27520731614f6c5d4532ab530933ffb16ae8ce02157463ce35b14d82c49d6e"
+  }
+ ],
+ "location": "inside the input CVPR_INTEGRATED_REVISION_20261023_v04.zip (sha256 51c255ca\u2026) and on the server at /root/VLA/v04_apply/work/CVPR_INTEGRATED_REVISION_20261023_v04/raw_packages/",
+ "reason": "unchanged raw archives (\u224850 MB); identical to the input package"
+}

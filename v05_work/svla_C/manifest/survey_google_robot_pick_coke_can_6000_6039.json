@@ -1,0 +1,3162 @@
+[
+ {
+  "seed": 6000,
+  "instruction": "pick coke can",
+  "coarse_fp": "5d4935aed637e3c2",
+  "full_fp": "ce50f1934e3d6d4d",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2729,
+     0.0316,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.622869, 0.168363, 0.840576], [0.9999, 0.00248789, -0.0139391, 2.29077e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6001,
+  "instruction": "pick coke can",
+  "coarse_fp": "618b598b1cdea077",
+  "full_fp": "565cbe8992d9e1b6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2151,
+     -0.0014,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.565085, 0.201394, 0.877423], [0.0017464, -0.00185333, -0.708575, -0.705632])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6002,
+  "instruction": "pick coke can",
+  "coarse_fp": "3e77eeb1375d5e53",
+  "full_fp": "5c6356d1ec5ef056",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1621,
+     0.0855,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.512115, 0.114474, 0.840576], [0.9999, 0.00248749, -0.0139429, 2.02842e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6003,
+  "instruction": "pick coke can",
+  "coarse_fp": "dc1a242b12ed0441",
+  "full_fp": "c5f9e4a57c26418f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1435,
+     0.1852,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.493464, 0.0147505, 0.840576], [0.9999, 0.00248848, -0.0139425, 1.91722e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6004,
+  "instruction": "pick coke can",
+  "coarse_fp": "b15a6ea8769d5aea",
+  "full_fp": "cc351b4eb89aab46",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2228,
+     0.0342,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.572789, 0.165751, 0.840576], [0.9999, 0.00248779, -0.0139401, 2.66824e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6005,
+  "instruction": "pick coke can",
+  "coarse_fp": "144a6277243ba96f",
+  "full_fp": "bc30c237825f7444",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2333,
+     0.3563,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0111,
+     -0.0076,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.583257, -0.156262, 0.840579], [0.70707, -0.00761408, -0.0110524, -0.707016])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6006,
+  "instruction": "pick coke can",
+  "coarse_fp": "61bea012875b732c",
+  "full_fp": "2acee7626bade8d0",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2671,
+     0.3746,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.617051, -0.174588, 0.840576], [0.9999, 0.00248792, -0.0139466, 6.80727e-06])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6007,
+  "instruction": "pick coke can",
+  "coarse_fp": "ee239d69497ddad7",
+  "full_fp": "72858fe72048484a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1985,
+     0.1024,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.548486, 0.0975929, 0.840576], [0.9999, 0.00248796, -0.0139399, 1.91501e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6008,
+  "instruction": "pick coke can",
+  "coarse_fp": "9e57b7aabebba7ae",
+  "full_fp": "f91c98e502aac1d8",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3007,
+     0.3082,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0114,
+     -0.0079,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.650652, -0.108183, 0.840577], [0.707047, -0.00790975, -0.0113956, -0.70703])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6009,
+  "instruction": "pick coke can",
+  "coarse_fp": "3102d88bcebdab6b",
+  "full_fp": "e7c02f1eee23888a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3101,
+     0.3712,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.015,
+     0.0024,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.660074, -0.17118, 0.840582], [0.999884, 0.00242727, -0.0150047, 2.10861e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6010,
+  "instruction": "pick coke can",
+  "coarse_fp": "25662befc259da71",
+  "full_fp": "51d36fbaeff3a49e",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2524,
+     0.0502,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.602417, 0.149806, 0.840575], [0.9999, 0.00248501, -0.0139087, 2.31084e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6011,
+  "instruction": "pick coke can",
+  "coarse_fp": "f7d03badc2dea528",
+  "full_fp": "6da0aeee00b228d6",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1902,
+     0.2514,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0117,
+     -0.0082,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.540215, -0.0513743, 0.840576], [0.707048, -0.008168, -0.0116786, -0.707022])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6012,
+  "instruction": "pick coke can",
+  "coarse_fp": "f99e3319e73698bb",
+  "full_fp": "c1aee0f45c4c23f5",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1525,
+     0.3962,
+     0.9196
+    ],
+    "q": [
+     0.7071,
+     0.0116,
+     -0.0081,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.502492, -0.196193, 0.840576], [0.707003, -0.00809272, -0.0116066, -0.707069])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6013,
+  "instruction": "pick coke can",
+  "coarse_fp": "da5edf36dc000d7f",
+  "full_fp": "6e50e1e9890ae770",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2416,
+     0.1478,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.591624, 0.0522286, 0.840576], [0.707049, -0.0080983, -0.0116164, -0.707023])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6014,
+  "instruction": "pick coke can",
+  "coarse_fp": "9f53bbcd9d73f47c",
+  "full_fp": "eafcfe829efd6871",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1433,
+     0.3796,
+     0.9196
+    ],
+    "q": [
+     0.0017,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.493313, -0.179639, 0.840576], [0.999898, 0.00246325, -0.0139431, -0.00172495])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6015,
+  "instruction": "pick coke can",
+  "coarse_fp": "7a93cdf6055cab07",
+  "full_fp": "d7951b0c835ca116",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3427,
+     0.3637,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0023,
+     0.0013
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.692663, -0.163701, 0.877423], [0.00128001, -0.00231993, -0.708573, -0.705633])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6016,
+  "instruction": "pick coke can",
+  "coarse_fp": "720fcaf677bba178",
+  "full_fp": "9a19105d07214304",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1896,
+     0.0784,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.539636, 0.12155, 0.877423], [0.00173664, -0.00186169, -0.708574, -0.705632])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6017,
+  "instruction": "pick coke can",
+  "coarse_fp": "aa3180498a0da775",
+  "full_fp": "19917591b549d6a2",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2505,
+     0.2436,
+     0.9196
+    ],
+    "q": [
+     -0.0001,
+     0.0138,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.600544, -0.0435587, 0.840577], [0.999902, 0.00247456, -0.0137711, 5.46905e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6018,
+  "instruction": "pick coke can",
+  "coarse_fp": "2d77a2e71aeaace4",
+  "full_fp": "275ca19493605580",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3451,
+     0.4149,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0134,
+     0.0024,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.695052, -0.214903, 0.840578], [0.999907, 0.00244844, -0.0134195, 2.78668e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6019,
+  "instruction": "pick coke can",
+  "coarse_fp": "3202493364407f3e",
+  "full_fp": "e313eaaecc137cdc",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1293,
+     0.2795,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.479298, -0.0795473, 0.877423], [0.00173968, -0.00185893, -0.708575, -0.705631])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6020,
+  "instruction": "pick coke can",
+  "coarse_fp": "eb959bb9f2a40253",
+  "full_fp": "c713a0d965d3ec53",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2078,
+     0.3629,
+     0.9196
+    ],
+    "q": [
+     0.7071,
+     0.0116,
+     -0.0081,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.557795, -0.162874, 0.840576], [0.707005, -0.0080984, -0.0116129, -0.707067])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6021,
+  "instruction": "pick coke can",
+  "coarse_fp": "814ebfd3d8a6ef4c",
+  "full_fp": "2a6f914cae41cc6f",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1684,
+     0.0176,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.518406, 0.182396, 0.840576], [0.707048, -0.00810171, -0.0116194, -0.707024])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6022,
+  "instruction": "pick coke can",
+  "coarse_fp": "4e480fb7890b3364",
+  "full_fp": "8cb592d81865a984",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.224,
+     0.2237,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.573982, -0.0237025, 0.840576], [0.707054, -0.00810012, -0.0116179, -0.707018])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6023,
+  "instruction": "pick coke can",
+  "coarse_fp": "c0cf2f321248e3ea",
+  "full_fp": "2b4d737453465280",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3014,
+     0.0512,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0019,
+     0.0017
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.651373, 0.148813, 0.877423], [0.00174563, -0.00185171, -0.708574, -0.705632])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6024,
+  "instruction": "pick coke can",
+  "coarse_fp": "7c730a28c2a42915",
+  "full_fp": "2602f8b8ac416c28",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.23,
+     0.4073,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.579968, -0.20734, 0.877423], [0.00176147, -0.00183684, -0.708574, -0.705632])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6025,
+  "instruction": "pick coke can",
+  "coarse_fp": "212f833d3bf62ec6",
+  "full_fp": "3b24c24d446f9a09",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3365,
+     0.008,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.686489, 0.192, 0.840575], [0.707045, -0.00809973, -0.0116177, -0.707027])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6026,
+  "instruction": "pick coke can",
+  "coarse_fp": "324e84a4832332f3",
+  "full_fp": "069981a069edb43a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.3491,
+     0.1999,
+     0.9565
+    ],
+    "q": [
+     0.7044,
+     0.7098,
+     -0.0009,
+     0.0012
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.699064, 9.32813e-05, 0.877492], [0.00119682, -0.000876676, -0.70976, -0.704442])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6027,
+  "instruction": "pick coke can",
+  "coarse_fp": "0e49fab99d84a7ce",
+  "full_fp": "fa34f1e04e6ad263",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1213,
+     0.1394,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.47126, 0.0606337, 0.840576], [0.9999, 0.00248787, -0.0139438, 3.18266e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6028,
+  "instruction": "pick coke can",
+  "coarse_fp": "6412af7c10e64712",
+  "full_fp": "9ca4160313ab5f9a",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2247,
+     0.1747,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.574679, 0.0253455, 0.840576], [0.707054, -0.00809965, -0.0116177, -0.707018])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6029,
+  "instruction": "pick coke can",
+  "coarse_fp": "957a7853cf72a672",
+  "full_fp": "1218c85f0ec83a44",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2969,
+     0.0158,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.646872, 0.184206, 0.840576], [0.707055, -0.00809738, -0.011615, -0.707017])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6030,
+  "instruction": "pick coke can",
+  "coarse_fp": "a2886bc672500eb8",
+  "full_fp": "b2285adceb1dddb7",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2191,
+     0.1384,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.569071, 0.0615846, 0.840576], [0.707052, -0.00810028, -0.0116183, -0.70702])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6031,
+  "instruction": "pick coke can",
+  "coarse_fp": "b1b870a08d776112",
+  "full_fp": "b5d77300fb3ad1fe",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2147,
+     0.3619,
+     0.9196
+    ],
+    "q": [
+     0.7071,
+     0.0111,
+     -0.0077,
+     0.707
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.564728, -0.161906, 0.840579], [0.70701, -0.00767584, -0.0111215, -0.707075])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6032,
+  "instruction": "pick coke can",
+  "coarse_fp": "fe1c5a55e2a343ae",
+  "full_fp": "ecffd759af7f2602",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2131,
+     0.0352,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.563102, 0.16482, 0.877423], [0.00175481, -0.00184354, -0.708574, -0.705632])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6033,
+  "instruction": "pick coke can",
+  "coarse_fp": "fb45347971d8fb3c",
+  "full_fp": "bb9188fa8782db73",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2305,
+     0.2145,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0133,
+     0.0024,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.580494, -0.0145021, 0.840578], [0.999908, 0.00244078, -0.0133229, 2.22141e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6034,
+  "instruction": "pick coke can",
+  "coarse_fp": "210e120b88a4fdea",
+  "full_fp": "bfec9250aa5f4dec",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2838,
+     0.1038,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.633771, 0.0962296, 0.840576], [0.9999, 0.00248808, -0.0139406, 2.69865e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6035,
+  "instruction": "pick coke can",
+  "coarse_fp": "411950925664b7e5",
+  "full_fp": "4cad5498df088d04",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.1551,
+     0.3087,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.505149, -0.108665, 0.840576], [0.707059, -0.0080979, -0.0116159, -0.707013])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6036,
+  "instruction": "pick coke can",
+  "coarse_fp": "02344a0a5b1acd2f",
+  "full_fp": "3600d34bb00de030",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2041,
+     0.1568,
+     0.9196
+    ],
+    "q": [
+     0.707,
+     0.0116,
+     -0.0081,
+     0.7071
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.554059, 0.0431947, 0.840576], [0.707051, -0.00809922, -0.0116172, -0.70702])",
+   "orientation": "laid_vertically"
+  }
+ },
+ {
+  "seed": 6037,
+  "instruction": "pick coke can",
+  "coarse_fp": "a2ed9525337b6bd7",
+  "full_fp": "b0c47e4a3b033bc0",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2006,
+     0.0107,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_2": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_tabletop_visual_matching_2",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.550588, 0.189339, 0.840576], [0.9999, 0.00248774, -0.0139381, 2.20377e-05])",
+   "orientation": "lr_switch"
+  }
+ },
+ {
+  "seed": 6038,
+  "instruction": "pick coke can",
+  "coarse_fp": "b19dc02fa6201967",
+  "full_fp": "371984b98e82a9d4",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.2008,
+     0.3827,
+     0.9565
+    ],
+    "q": [
+     0.7056,
+     0.7086,
+     -0.0018,
+     0.0018
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.550777, -0.182654, 0.877423], [0.00176497, -0.0018338, -0.708574, -0.705632])",
+   "orientation": "upright"
+  }
+ },
+ {
+  "seed": 6039,
+  "instruction": "pick coke can",
+  "coarse_fp": "0c58e76effcde00b",
+  "full_fp": "b291820e1c454ede",
+  "actors": {
+   "arena": {
+    "p": [
+     1.6616,
+     3.0337,
+     -0.0
+    ],
+    "q": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "opened_coke_can": {
+    "p": [
+     -0.294,
+     0.1921,
+     0.9196
+    ],
+    "q": [
+     -0.0,
+     0.0139,
+     0.0025,
+     0.9999
+    ]
+   }
+  },
+  "articulations": {
+   "google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_cabinet_visual_matching_1": {
+    "p": [
+     0.35,
+     0.2,
+     0.079
+    ],
+    "q": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "qpos": [
+     -0.2639,
+     0.0832,
+     0.5018,
+     1.1569,
+     0.0286,
+     1.5926,
+     -1.0807,
+     0.0,
+     0.0,
+     -0.0029,
+     0.7851
+    ]
+   }
+  },
+  "info": {
+   "scene_name": "google_pick_coke_can_1_v4",
+   "scene_offset": "None",
+   "scene_pose": "None",
+   "scene_table_height": "0.87",
+   "urdf_version": "recolor_cabinet_visual_matching_1",
+   "rgb_overlay_path": "/root/VLA/simpler/SimplerEnv/ManiSkill2_real2sim/data/real_inpainting/google_coke_can_real_eval_1.png",
+   "rgb_overlay_cameras": "['overhead_camera']",
+   "rgb_overlay_mode": "background",
+   "disable_bad_material": "False",
+   "model_id": "opened_coke_can",
+   "model_scale": "1.0",
+   "distractor_model_ids": "None",
+   "distractor_model_scales": "None",
+   "obj_init_pose_wrt_robot_base": "Pose([0.643982, 0.0078949, 0.840576], [0.9999, 0.00248796, -0.0139451, 2.18027e-05])",
+   "orientation": "lr_switch"
+  }
+ }
+]

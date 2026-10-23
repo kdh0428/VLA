@@ -1,0 +1,280 @@
+{
+ "rule": "coke: first 25 layouts in seed order 4000-4099 not overlapping v01 pilot/validation (coarse fp) and unique by full fp; move_near: the v01 10 layouts with the same representative seed/instruction; observations at natural generation calls 2, 6, 10 (= control steps 2, 6, 10 under the official per-step adapter); at most 105 observations; no duplication after episode end",
+ "calls": [
+  2,
+  6,
+  10
+ ],
+ "layouts": [
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4000,
+   "coarse_fp": "360cfa2c6c3fe8f7",
+   "full_fp": "486c3ff43d4312a5",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4001,
+   "coarse_fp": "47213a18f06853a5",
+   "full_fp": "b231e113982a5a9e",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4002,
+   "coarse_fp": "8eb2c8b68c6ac9c0",
+   "full_fp": "f207607309ed9669",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4003,
+   "coarse_fp": "8d53a81d4435ed5e",
+   "full_fp": "998d78dd6c453cff",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4004,
+   "coarse_fp": "0971eaa8d69b1bbb",
+   "full_fp": "392f9816c852fffe",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4005,
+   "coarse_fp": "d7ebdbc29a9eb9c2",
+   "full_fp": "676a4ebf44d10ecf",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4006,
+   "coarse_fp": "289ce670d3446623",
+   "full_fp": "9be9257e2925e316",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4007,
+   "coarse_fp": "2e55cc2a7ea66aa2",
+   "full_fp": "7ceeaf5b6f16402b",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4008,
+   "coarse_fp": "895dbc17cf5e04d5",
+   "full_fp": "dc0cf6e41ec522b3",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4009,
+   "coarse_fp": "b181a031febe9ff8",
+   "full_fp": "c7a0760f1ee8bc6f",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4010,
+   "coarse_fp": "c258a57a16cf3a5e",
+   "full_fp": "8f9c92dc8c2bc4bf",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4011,
+   "coarse_fp": "9d4d2ce7ee519d40",
+   "full_fp": "6ce6e9deae704d3b",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4012,
+   "coarse_fp": "81994d0883cc3df0",
+   "full_fp": "9b711dd615cb9f0c",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4013,
+   "coarse_fp": "4f1c3255eb737363",
+   "full_fp": "864f08796864db82",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4014,
+   "coarse_fp": "4ad009147bb40694",
+   "full_fp": "d2c3a9588ae56e0b",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4015,
+   "coarse_fp": "a780b275fdec65d6",
+   "full_fp": "64bbfa08b12c7ede",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4016,
+   "coarse_fp": "4482c0e7a14487dd",
+   "full_fp": "4584b02a79158f5e",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4017,
+   "coarse_fp": "ef53933511cc2492",
+   "full_fp": "2362553768648939",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4018,
+   "coarse_fp": "15f99545a07c9085",
+   "full_fp": "42bcc2bb2cd85b7c",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4019,
+   "coarse_fp": "7a078521a6c7e7b4",
+   "full_fp": "436d45a328ea42e6",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4020,
+   "coarse_fp": "b41d6391c81ec730",
+   "full_fp": "dc15b6cfbac6889b",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4021,
+   "coarse_fp": "0a5404fbc7e698df",
+   "full_fp": "e68edc676abf6d5a",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4022,
+   "coarse_fp": "f0303121ab67882a",
+   "full_fp": "a93cece789275c54",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4023,
+   "coarse_fp": "6facdb06a9e81320",
+   "full_fp": "294d29e875c19559",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 4024,
+   "coarse_fp": "763ec7934cffeba7",
+   "full_fp": "720dd36d4cec1681",
+   "instruction": "pick coke can",
+   "state_origin": "new coke seed (4000-4099 survey); coarse fingerprint disjoint from v01 pilot 2000-2024 and validation 3000-3011"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6,
+   "coarse_fp": "2e82bae077d31039",
+   "instruction": "move orange near blue plastic bottle",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 8,
+   "coarse_fp": "4180747d4357ee9a",
+   "instruction": "move pepsi can near orange",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 37,
+   "coarse_fp": "4f01f48d18b713eb",
+   "instruction": "move apple near sponge",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 22,
+   "coarse_fp": "834a0f593a65535e",
+   "instruction": "move redbull can near pepsi can",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 5,
+   "coarse_fp": "9329c7bb123f8601",
+   "instruction": "move apple near redbull can",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 0,
+   "coarse_fp": "9402b934f8705e96",
+   "instruction": "move blue plastic bottle near sponge",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 13,
+   "coarse_fp": "95609bca0063d2dd",
+   "instruction": "move 7up can near apple",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 4,
+   "coarse_fp": "ab18282b5c270558",
+   "instruction": "move redbull can near orange",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 1,
+   "coarse_fp": "b4907d1da6223922",
+   "instruction": "move sponge near 7up can",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 9,
+   "coarse_fp": "f5a160cb3f941b30",
+   "instruction": "move apple near coke can",
+   "state_origin": "REUSED: same 10 move_near layouts, representative seeds and instructions as v01 (not new independent layouts)"
+  }
+ ]
+}

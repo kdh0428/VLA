@@ -1,0 +1,86 @@
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-23 12:12:35.809] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 12:12:35.810] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+google_robot_move_near 6000 2e82bae077d31039 f8f9abe1770b40e9 move orange near blue plastic bottle
+google_robot_move_near 6001 9402b934f8705e96 d9fa19bd63fafa16 move blue plastic bottle near sponge
+google_robot_move_near 6002 9329c7bb123f8601 361b2b63ad662ec2 move coke can near redbull can
+google_robot_move_near 6003 834a0f593a65535e 5cf17cfb43b17a2f move pepsi can near orange
+google_robot_move_near 6004 9329c7bb123f8601 361b2b63ad662ec2 move coke can near redbull can
+google_robot_move_near 6005 4180747d4357ee9a 458e702a45a12c1c move blue plastic bottle near orange
+google_robot_move_near 6006 4f01f48d18b713eb fc2d28042fe98b7a move apple near sponge
+google_robot_move_near 6007 9402b934f8705e96 bdd3fa40b950a03a move sponge near blue plastic bottle
+google_robot_move_near 6008 f5a160cb3f941b30 f70edae8a4ef66c8 move coke can near apple
+google_robot_move_near 6009 ab18282b5c270558 74ddd75308ae44ff move redbull can near pepsi can
+google_robot_move_near 6010 9402b934f8705e96 bdd3fa40b950a03a move sponge near blue plastic bottle
+google_robot_move_near 6011 834a0f593a65535e fcc9ca712d355a35 move pepsi can near redbull can
+google_robot_move_near 6012 2e82bae077d31039 430831cc9f0b8a01 move blue plastic bottle near orange
+google_robot_move_near 6013 834a0f593a65535e 64309da7bba2dd0c move orange near redbull can
+google_robot_move_near 6014 ab18282b5c270558 11339ba4ec7ecb51 move orange near pepsi can
+google_robot_move_near 6015 b4907d1da6223922 f8f478aefa53eb9b move blue plastic bottle near 7up can
+google_robot_move_near 6016 b4907d1da6223922 8a2f295553838314 move 7up can near sponge
+google_robot_move_near 6017 95609bca0063d2dd 0893046981441f80 move sponge near apple
+google_robot_move_near 6018 9402b934f8705e96 ded8ae55d2ddaa22 move 7up can near blue plastic bottle
+google_robot_move_near 6019 834a0f593a65535e cdbb793bb4357969 move redbull can near orange
+google_robot_move_near 6020 b4907d1da6223922 ae83091e32d372dd move 7up can near blue plastic bottle
+google_robot_move_near 6021 4f01f48d18b713eb 293e105d6cb24173 move 7up can near sponge
+google_robot_move_near 6022 f5a160cb3f941b30 f70edae8a4ef66c8 move coke can near apple
+google_robot_move_near 6023 834a0f593a65535e cdbb793bb4357969 move redbull can near orange
+google_robot_move_near 6024 ab18282b5c270558 891aa1683fa73d2d move pepsi can near orange
+google_robot_move_near 6025 2e82bae077d31039 2183313c9b1d1cd7 move pepsi can near orange
+google_robot_move_near 6026 b4907d1da6223922 8a2f295553838314 move 7up can near sponge
+google_robot_move_near 6027 4f01f48d18b713eb a817015d887d865f move apple near 7up can
+google_robot_move_near 6028 834a0f593a65535e 64309da7bba2dd0c move orange near redbull can
+google_robot_move_near 6029 95609bca0063d2dd 7b9437cf6952f5fe move apple near sponge
+google_robot_move_near 6030 834a0f593a65535e fcc9ca712d355a35 move pepsi can near redbull can
+google_robot_move_near 6031 f5a160cb3f941b30 c0fcb8f3a165eb5a move apple near redbull can
+google_robot_move_near 6032 9329c7bb123f8601 c0273ea87fa694a8 move apple near redbull can
+google_robot_move_near 6033 95609bca0063d2dd 00c24142f97c05e8 move 7up can near apple
+google_robot_move_near 6034 b4907d1da6223922 7c6be68bfa80c004 move blue plastic bottle near sponge
+google_robot_move_near 6035 f5a160cb3f941b30 79c0ad9a5e31d493 move redbull can near apple
+google_robot_move_near 6036 834a0f593a65535e 64309da7bba2dd0c move orange near redbull can
+google_robot_move_near 6037 2e82bae077d31039 9f2ffaaa7360bbb9 move blue plastic bottle near pepsi can
+google_robot_move_near 6038 4180747d4357ee9a f604f0bf949ed8eb move blue plastic bottle near pepsi can
+google_robot_move_near 6039 ab18282b5c270558 74ddd75308ae44ff move redbull can near pepsi can
+google_robot_move_near 6040 834a0f593a65535e cdbb793bb4357969 move redbull can near orange
+google_robot_move_near 6041 9402b934f8705e96 3231026957cc6bf1 move sponge near 7up can
+google_robot_move_near 6042 ab18282b5c270558 11339ba4ec7ecb51 move orange near pepsi can
+google_robot_move_near 6043 834a0f593a65535e da36935e6a2539a5 move orange near pepsi can
+google_robot_move_near 6044 4180747d4357ee9a c3803a4e73f7f4d2 move orange near pepsi can
+google_robot_move_near 6045 9329c7bb123f8601 4559f4a2131b46f3 move apple near coke can
+google_robot_move_near 6046 9329c7bb123f8601 4559f4a2131b46f3 move apple near coke can
+google_robot_move_near 6047 ab18282b5c270558 11339ba4ec7ecb51 move orange near pepsi can
+google_robot_move_near 6048 834a0f593a65535e 5cf17cfb43b17a2f move pepsi can near orange
+google_robot_move_near 6049 4f01f48d18b713eb a817015d887d865f move apple near 7up can
+google_robot_move_near 6050 b4907d1da6223922 f8f478aefa53eb9b move blue plastic bottle near 7up can
+google_robot_move_near 6051 f5a160cb3f941b30 31f5b5b5b0c72e3a move coke can near redbull can
+google_robot_move_near 6052 834a0f593a65535e 5cf17cfb43b17a2f move pepsi can near orange
+google_robot_move_near 6053 b4907d1da6223922 ae83091e32d372dd move 7up can near blue plastic bottle
+google_robot_move_near 6054 b4907d1da6223922 7c6be68bfa80c004 move blue plastic bottle near sponge
+google_robot_move_near 6055 b4907d1da6223922 8a2f295553838314 move 7up can near sponge
+google_robot_move_near 6056 2e82bae077d31039 430831cc9f0b8a01 move blue plastic bottle near orange
+google_robot_move_near 6057 4f01f48d18b713eb ab62b522ab3c9d86 move sponge near 7up can
+google_robot_move_near 6058 9402b934f8705e96 3e7227939fe22933 move blue plastic bottle near 7up can
+google_robot_move_near 6059 4f01f48d18b713eb 80c6d365022e7d6e move sponge near apple
+google_robot_move_near 6060 ab18282b5c270558 da58804b4b9bd4e5 move redbull can near orange
+google_robot_move_near 6061 b4907d1da6223922 ae83091e32d372dd move 7up can near blue plastic bottle
+google_robot_move_near 6062 f5a160cb3f941b30 31f5b5b5b0c72e3a move coke can near redbull can
+google_robot_move_near 6063 9329c7bb123f8601 195794c2385a6ad9 move redbull can near apple
+google_robot_move_near 6064 9402b934f8705e96 ded8ae55d2ddaa22 move 7up can near blue plastic bottle
+google_robot_move_near 6065 2e82bae077d31039 f8f9abe1770b40e9 move orange near blue plastic bottle
+google_robot_move_near 6066 f5a160cb3f941b30 2b2a541a37b564c2 move redbull can near coke can
+google_robot_move_near 6067 4f01f48d18b713eb a817015d887d865f move apple near 7up can
+google_robot_move_near 6068 ab18282b5c270558 74ddd75308ae44ff move redbull can near pepsi can
+google_robot_move_near 6069 2e82bae077d31039 644bd3977fbd84fc move pepsi can near blue plastic bottle
+google_robot_move_near 6070 834a0f593a65535e cb391c424c0c8ba7 move redbull can near pepsi can
+google_robot_move_near 6071 f5a160cb3f941b30 79c0ad9a5e31d493 move redbull can near apple
+google_robot_move_near 6072 9402b934f8705e96 db96ad1c98784f43 move 7up can near sponge
+google_robot_move_near 6073 ab18282b5c270558 da58804b4b9bd4e5 move redbull can near orange
+google_robot_move_near 6074 9329c7bb123f8601 c0273ea87fa694a8 move apple near redbull can
+google_robot_move_near 6075 95609bca0063d2dd 0893046981441f80 move sponge near apple
+google_robot_move_near 6076 ab18282b5c270558 e38af100c90a13b3 move pepsi can near redbull can
+google_robot_move_near 6077 2e82bae077d31039 430831cc9f0b8a01 move blue plastic bottle near orange
+google_robot_move_near 6078 834a0f593a65535e 5cf17cfb43b17a2f move pepsi can near orange
+google_robot_move_near 6079 9402b934f8705e96 d9fa19bd63fafa16 move blue plastic bottle near sponge

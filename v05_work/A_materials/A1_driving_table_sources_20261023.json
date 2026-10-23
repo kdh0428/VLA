@@ -1,0 +1,59 @@
+{
+ "title": "A1 AutoVLA driving table sources (2026-10-23)",
+ "event_name_rename_neutral": "rule-rejected high-FDE plan: Y = 1[A=0 and FDE_5s > 3 m] (paper_body.tex Sec. 3 'Outcomes at each level'; earlier internal names 'severe' / 'amplification' / 'A- AND FDE5>3m')",
+ "horizons": {
+  "severe/ADE/FDE": "5 s open-loop plan, 10 poses x 0.5 s",
+  "PDMS": "NAVSIM v1 non-reactive, 4 s (40 x 0.1 s), official navsim pdm_score via in-memory metric cache (PDMS_ADAPTER.md)"
+ },
+ "populations": {
+  "dev F": "52 scenes / 365 units / 13 drives (A- stratum of 208-scene dev mechanism set; equal scene weights)",
+  "P1-C F": "105 scenes / 748 units / 18 drives",
+  "P1-C E": "353 sampled scenes (2,191 eligible) / 2,436 units / 24 drives; Hajek",
+  "matched F": "100 scenes / 711 units / 18 drives (B2, n_old=1, a=t*+3)",
+  "E4": "312 sampled (1,775 eligible) / 2,160 units / 24 drives; Hajek"
+ },
+ "sign_checks": {
+  "RN": "recent_gt - normal (negative = fewer events). Verified: A2 table intervention=recent_gt reference=normal",
+  "RV": "reverse@emb - gt_history (positive = more events). Verified: POPULATION_EFFECTS cond_a=reverse@emb cond_b=gt_history",
+  "C_GT": "GT_NSRC - GT_REF; C_NAT: NAT_NSRC - NAT_REF (positive severe = harm of substituting the frozen Normal-source value for GT; i.e. GT->Normal-source substitution, opposite sign convention to RN). PDMS deltas are therefore negative for harm. Verified in ADD4_pdms_paired.csv intervention/reference columns and MATCHED_PREFIX_RESULTS."
+ },
+ "interval_notes": [
+  "All severe intervals are approximate drive-cluster t intervals (G-1 df) -- not exact sign-flip inversion; coverage only checked post hoc (supplement Sec. B, tab:coverage/tab:coverage_new).",
+  "RV E [1.90,5.40] and C_NAT E4 [2.38,5.57] were computed but WITHHELD in v04 (points only); C_GT E4 [0.88,5.75] retained only in supplement Sec. B text.",
+  "PDMS intervals: approximate drive-cluster t with ratio linearisation (pdms_paired_cluster_t.csv); re-derived exactly in this task from per-unit PDMS (A1_pdms_ci_recheck_20261023.csv). The original generating script is not on disk (NOT_FOUND); the vla0_work/pkg README states it was computed CPU-only.",
+  "FDE intervals: approximate drive-cluster t from P1-C analyze_p1c (secondary_fde5) and B2 MATCHED_PREFIX_RESULTS (fde5); no coverage check. Dev-F FDE has only a LOG-cluster interval from the R8 rerun (noted, not drive). ADE intervals: NOT computed anywhere."
+ ],
+ "computed_in_this_task": {
+  "RV ADE/FDE/severe_tau": "A1_rv_metric_decomposition_computed_20261023.csv by scripts/rv_metrics_20261023.py from raw records (dev: R8R9_raw_recovery/run_20261008/raw/exp8/records.jsonl; P1-C: P1C_new_log_replication/run_20261008/mech/prev_action_state_patching/records.jsonl) using the unchanged ra_a_metrics.metrics(). Checks (A1_rv_metric_checks_20261023.json): severe3 equals stored amplification in 730/730 dev and 4872/4872 P1-C rows; FDE max abs diff 0; reproduces stored RV severe3 28.628663 / 26.832955 / 3.646388 and P1-C RV FDE 2.584376 / 1.077372."
+ },
+ "NOT_FOUND": [
+  "PDMS for RV (any cohort): RV arms were never PDMS-scored",
+  "PDMS for development F (RN or RV): development plans were never PDMS-scored",
+  "ADE confidence intervals (all rows)",
+  "drive-cluster FDE interval for development F",
+  "script that produced pdms_paired_cluster_t.csv"
+ ],
+ "discrepancy_flags": [
+  "Development RN FDE/ADE (-4.06/-1.32) come from exp-7 records (outputs/action_history_causal/records.jsonl) as in the paper; the R8 rerun's recent_gt-normal FDE is -3.96 (different run).",
+  "C_NAT E4 severe_tau is non-monotone in tau (2 m: +2.56, 3 m: +3.98, 4 m: +3.51 pp); values are correct differences of rates, not an error, but should not be described as monotone attenuation."
+ ],
+ "files": {
+  "final": "/root/VLA/v04_apply/work/CVPR_INTEGRATED_REVISION_20261023_v04/paper/evidence/FINAL_PAPER_NUMBERS.csv",
+  "ready": "/root/VLA/v04_apply/work/CVPR_INTEGRATED_REVISION_20261023_v04/paper/evidence/latest_validation/PAPER_READY_NUMBERS.csv",
+  "pop": "/root/VLA/autovla_misalignment_poc/outputs/review_followup3/P0/POPULATION_EFFECTS.csv",
+  "b2": "/root/VLA/autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_analysis/MATCHED_PREFIX_RESULTS.csv",
+  "p1c": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/P1C_new_log_replication/run_20261008/analysis/paired_effects.csv",
+  "pdms": "/root/VLA/vla0_work/pkg/paper/pdms_paired_cluster_t.csv",
+  "pdms_units": "/root/VLA/autovla_misalignment_poc/outputs/cvpr_review_and_contribution_20261020/data/pdms_units_P1C.csv ; pdms_units_B2.csv",
+  "pdms_recheck": "/root/VLA/v05_work/A_materials/A1_pdms_ci_recheck_20261023.csv",
+  "a2": "/root/VLA/autovla_misalignment_poc/outputs/cvpr_review_and_contribution_20261020/tables/A2_metric_decomposition.csv",
+  "a3": "/root/VLA/autovla_misalignment_poc/outputs/cvpr_review_and_contribution_20261020/tables/A3_threshold_sensitivity.csv",
+  "rv": "/root/VLA/v05_work/A_materials/A1_rv_metric_decomposition_computed_20261023.csv",
+  "r8": "/root/VLA/autovla_misalignment_poc/outputs/review_followup/R8R9_raw_recovery/run_20261008/paired_effects.csv"
+ },
+ "scripts": {
+  "rv": "/root/VLA/v05_work/A_materials/scripts/rv_metrics_20261023.py",
+  "pdms_recheck": "/root/VLA/v05_work/A_materials/scripts/pdms_ci_check_20261023.py",
+  "build": "/root/VLA/v05_work/A_materials/scripts/build_A1_20261023.py"
+ }
+}

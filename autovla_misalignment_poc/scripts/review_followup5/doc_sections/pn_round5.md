@@ -1,0 +1,8 @@
+## 2026-10-18 개정 2 (review_followup5 반영)
+
+근거: `autovla_misalignment_poc/outputs/review_followup5/` (STATUS, CLAIM_CHANGES, MANUSCRIPT_REVISION). `numbers.json`에 `RF5.*` 행을 추가했습니다(`scripts/review_followup5/c5_tables.py`). 이 절과 충돌하는 위 문장은 이 절이 우선합니다.
+
+- **AutoVLA intervals (A_STATS, post hoc):** binary-outcome sign-flip-inversion CIs and shifted sign-flip TOST are invalid (ties); the δ = 0 sign-flip p stays. A coverage study on the real cluster structures selects the cluster-robust t interval for dev A− (13 drives) and P1-C F (18 drives); **no interval is validated for the P1-C evaluation frame P (weighted, 24 drives), day–vehicle clustering or ≤ 7-drive subsets (NR)** — the reported drive bootstrap under-covers (simulated 0.83–0.91 minimum for 95%). Claim 3 / 22: quote P-level RN −4.1 pp / RV +3.6 pp with their sign-flip p only. Claim 7: P1-C F DM cluster-t CI [−0.1, +12.4] includes 0. Claim 6: the old ±5 pp TOST (p = 0.09) was invalid; a post-hoc cluster-t TOST puts the GT-near token within ±5 pp (p = 0.027, unadjusted, post-hoc margin) — not confirmatory.
+- **B2 (A_B2_CLUSTER):** 6 connected day–vehicle components; F C_GT / C_NAT p = 0.031 (minimum attainable), Holm 0.125 (minimum attainable for m = 4); significant at drive and day–vehicle level. Claim 25 is re-worded (below): INT −0.2 pp [−3.8, +3.1] is an estimate, not equality or independence from older context; the primary older factor is one position.
+- **Impromptu (Claim 8):** the observed 5–6% verdict-flip rate is not an upper bound on condition-specific numerical bias; no "robust because above the floor" wording.
+- **New Claim 28 (B_NUMERIC):** GT-free endpoint excess re-inferred under SE / SF on all 1,453 family-G units: retained over every control (12/12 Holm, see below).

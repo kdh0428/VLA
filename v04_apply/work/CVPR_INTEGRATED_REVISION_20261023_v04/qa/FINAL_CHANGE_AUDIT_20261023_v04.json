@@ -1,0 +1,185 @@
+{
+  "same_path_identical_files": 346,
+  "modified_at_same_path": [
+    {
+      "path": "paper/FORMAT_PROVENANCE.json",
+      "input_sha256": "57845a0f12c04fa9b33aec2f1bd7f3a1fec6eb845b13df7a527d6275269bbfcf",
+      "v04_sha256": "392996c7787a367cceb050b2abd4d0f292d07e0e6bdab552236c9d6f31f60729"
+    },
+    {
+      "path": "paper/cvpr.sty",
+      "input_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+      "v04_sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+    },
+    {
+      "path": "paper/figures/fig_svla_drawer_components.pdf",
+      "input_sha256": "ea7b8c0635971ca422cf457986ebc9694c0ea92134d469db280ac9852a96dee6",
+      "v04_sha256": "c4e686b5467733e559f8db067e68431b2be1d2f182515a1fcddef4995ddcb073"
+    },
+    {
+      "path": "paper/figures/fig_svla_drawer_donor_distance.pdf",
+      "input_sha256": "e2d6c0fe711d0667335b89a100c35c585e294cd41127000bc7a9528f319e7d3e",
+      "v04_sha256": "9324f38dd595e4b6b84005d3ff18798ad1f00eeb0bf399b46f67086254ead886"
+    },
+    {
+      "path": "paper/figures/fig_svla_v02_components.pdf",
+      "input_sha256": "74b56962eb4888a0347524f2c10844c8f9642d517ef604d442f0882608d82b5a",
+      "v04_sha256": "3c445a1c1ed282cf2b69c6eb867a7ff715de3d7d2570029594613cab4b5fd5e3"
+    },
+    {
+      "path": "paper/figures/fig_svla_v02_donor_distance.pdf",
+      "input_sha256": "88920d2dac73cb64c7ecd47fcd5c8d3de06e2efe09ac51365c39ce1627df830f",
+      "v04_sha256": "4400aad817e33d1a273dbd6ec8736d326d3fc946f750020e0f249056d2eb8efb"
+    },
+    {
+      "path": "paper/figures/fig_svla_within_call.pdf",
+      "input_sha256": "f1641eacad0d57f995ac8540127832654e5f8b359ad0167be08178234d377526",
+      "v04_sha256": "82c85eca0fefe6284d0a6513588e03dcab581f22979c70017ae16edef83aa14b"
+    },
+    {
+      "path": "paper/main.aux",
+      "input_sha256": "a045fc5070472dae6f9406abe9eb0424630e3a809ed058541ef067edfe7b6453",
+      "v04_sha256": "dc51b49a8203bc561bbf29790ada0638b91f91967b75e7fae4d564dce1231422"
+    },
+    {
+      "path": "paper/main.log",
+      "input_sha256": "b13cd5ab025ccaae66833f918f1664767d063de7793bf1bf1789ce8427b8b31b",
+      "v04_sha256": "29757c1889bd00e0fa430c4cdeec34ca28ae138d3487b14a4404259d0c14820d"
+    },
+    {
+      "path": "paper/main.pdf",
+      "input_sha256": "12053ba2c6a562d289f8eac86ae8d3b09ab1195d3badec7e80fded6f471f73e9",
+      "v04_sha256": "0e3855e86b562c5c8dfb868a255498d4950357a75fe1d9941c2b723a417b3dfa"
+    },
+    {
+      "path": "paper/main.tex",
+      "input_sha256": "3bf6077f8befebd310898211837ca2a68bbb92224d94a93f790fd87edd6bf8ef",
+      "v04_sha256": "a31bd7074f9afdee38e88660cd08070fc8080ed261da41101fb4cc21b5bb0fb1"
+    },
+    {
+      "path": "paper/paper_body.tex",
+      "input_sha256": "6e78ac067ac5ea6bb25853cae6e30d9c858497dd0171fc0ba88eb06ad9ad962d",
+      "v04_sha256": "923e90d72c81175b745c0224a09f265967950f875eee81547dd3914c60e07fc3"
+    },
+    {
+      "path": "paper/supp_v03_comparison.tex",
+      "input_sha256": "3b14b1f9a54264a353262e94eae3e9efd1dfe5d0ee3815b7fea0f4869350ba02",
+      "v04_sha256": "f2493c8c521a5d6f20b15730ea4d5ac2cd8e1608ee9f45d1d174da03e2bf276a"
+    },
+    {
+      "path": "paper/supp_v03_models.tex",
+      "input_sha256": "c44d78509ad1155ec119dadfefb19656c028a483ef32f9547041e7cd34009403",
+      "v04_sha256": "2c225e8f66bf1da21aaebb72e88b60bf998efe77dc671353fc3be36267c4b030"
+    },
+    {
+      "path": "paper/supp_v03_moved.tex",
+      "input_sha256": "c7d2b9e88e8dc34fb15a68be5ef629b48d18920649758f23f1d39e7fb3e5619e",
+      "v04_sha256": "ce2ac595c1c81f03fc865f27f4c0f51e256d82ae755ae7b653c6d71a10c53357"
+    },
+    {
+      "path": "paper/supp_v03_svla.tex",
+      "input_sha256": "68f2df8466bd21f36bf85dc0772568064e66f94c1c591c6ae373338e01fc472b",
+      "v04_sha256": "6437606b609b6154f952f41cec187846122965c760ba532307ebfc7a6c30024e"
+    },
+    {
+      "path": "paper/supplementary.aux",
+      "input_sha256": "d5628afe399db5b1e5b839c9b4dae39d27807ec880438812ab1208c100a79d88",
+      "v04_sha256": "a4b242b2a1d038d01ca5051fc2be5df747d7727e71d32dfb62958ec247458dee"
+    },
+    {
+      "path": "paper/supplementary.log",
+      "input_sha256": "05916e6ab39813041abdf8ca3b2069c3c3db984d5fd943ac292010ad3a6e6951",
+      "v04_sha256": "8b4dc2e7b7c67fd351505495c5855295ef102720a83c55859fb4ba253fabad72"
+    },
+    {
+      "path": "paper/supplementary.pdf",
+      "input_sha256": "f5bee59fdc3f68eaef9e7f22941badd5314fd78576a9c9fb2d304cc96915459a",
+      "v04_sha256": "2c1bd3213e518e9855d36642c53780b4a9ce00c3fac2af8b827a6a253f7eb504"
+    }
+  ],
+  "removed_or_relocated_original_paths": [
+    "CLAIM_EVIDENCE_20261023_v03.md",
+    "MODEL_SELECTION_20261023_v03.md",
+    "PAPER_REVISION_CHANGELOG_20261023_v03.md",
+    "README_20261023_v03.md",
+    "REQUEST_20261023_v02.md",
+    "REVIEWER_ISSUES_20261023_v03.md",
+    "SHA256SUMS.txt",
+    "model_selection/MODEL_SELECTION_TABLE_20261023.md",
+    "paper/BUILD_QA_20261023_v03.json",
+    "paper/README.md",
+    "paper/REVISION_NOTES.md",
+    "paper/build_v03.py"
+  ],
+  "added_paths": [
+    "CLAIM_EVIDENCE_20261023_v04.md",
+    "CVPR_INTEGRATED_REVIEW_20261023_v04.md",
+    "CVPR_PAPER_20261023_v04.pdf",
+    "CVPR_SUPPLEMENT_20261023_v04.pdf",
+    "INPUT_PROVENANCE_20261023_v04.json",
+    "MODEL_SELECTION_20261023_v04.md",
+    "PAPER_REVISION_CHANGELOG_20261023_v04.md",
+    "README_20261023_v04.md",
+    "REVIEW_CHANGES_20261023_v04.json",
+    "build_20261023_v04.py",
+    "format/author-kit-CVPR2027-v1-latex.zip",
+    "history_v03/BUILD_QA_20261023_v03.json",
+    "history_v03/CLAIM_EVIDENCE_20261023_v03.md",
+    "history_v03/MODEL_SELECTION_20261023_v03.md",
+    "history_v03/MODEL_SELECTION_TABLE_20261023.md",
+    "history_v03/PAPER_REVISION_CHANGELOG_20261023_v03.md",
+    "history_v03/README_20261023_v03.md",
+    "history_v03/README_HISTORY_20261023_v04.md",
+    "history_v03/REQUEST_20261023_v02.md",
+    "history_v03/REVIEWER_ISSUES_20261023_v03.md",
+    "history_v03/SHA256SUMS.txt",
+    "history_v03/build_v03.py",
+    "history_v03/cvpr_2026_original_v03.sty",
+    "history_v03/paper_FORMAT_PROVENANCE_v03.json",
+    "history_v03/paper_README_20261019_v01.md",
+    "history_v03/paper_REVISION_NOTES_20261019_v01.md",
+    "model_selection/MODEL_SELECTION_TABLE_20261023_v04.md",
+    "paper/README_20261023_v04.md",
+    "paper/evidence/spatialvla_discovery_per_observation_20261022_v01.csv",
+    "paper/figures/fig_svla_drawer_components.png",
+    "paper/figures/fig_svla_drawer_donor_distance.png",
+    "paper/figures/fig_svla_v02_components.png",
+    "paper/figures/fig_svla_v02_donor_distance.png",
+    "paper/figures/fig_svla_within_call.png",
+    "paper/llm_usage_statement_20261023_v04.tex",
+    "paper/main.bbl",
+    "paper/main_BUILD_CONSOLE_20261023_v04.txt",
+    "paper/make_spatialvla_figures_20261023_v04.py",
+    "paper/supplementary.bbl",
+    "paper/supplementary_BUILD_CONSOLE_20261023_v04.txt",
+    "qa/ADDED_RAW_PACKAGE_PROVENANCE_20261023_v04.json",
+    "qa/BASELINE_RECOMPUTATION_20261023_v04.json",
+    "qa/BUILD_QA_20261023_v04.json",
+    "qa/CVPR2027_TEMPLATE_COMPARISON_20261023_v04.json",
+    "qa/CVPR_TEMPLATE_DIFF_20261023_v04.patch",
+    "qa/FIGURE_SOURCE_PROVENANCE_20261023_v04.json",
+    "qa/INPUT_IMAGE_DISJOINTNESS_20261023_v04.json",
+    "qa/INPUT_PAYLOAD_PRESERVATION_20261023_v04.json",
+    "qa/RAW_RECOMPUTATION_20261023_v04.json",
+    "qa/VISUAL_QA_20261023_v04.json",
+    "qa/drawer_geometry_sensitivity_20261023_v01.json",
+    "qa/drawer_provided_verifier.json",
+    "qa/main_provided_verifier.json",
+    "qa/visual/main_contact_01.png",
+    "qa/visual/main_contact_02.png",
+    "qa/visual/main_contact_03.png",
+    "qa/visual/supplementary_contact_01.png",
+    "qa/visual/supplementary_contact_02.png",
+    "qa/visual/supplementary_contact_03.png",
+    "qa/visual/supplementary_contact_04.png",
+    "qa/visual/supplementary_contact_05.png",
+    "raw_packages/CVPR_SPATIALVLA_WITHIN_CALL_RESULT_20261022_v01.zip",
+    "raw_packages/CVPR_VLA0_AND_CONTRIBUTION_20261020.zip",
+    "raw_packages/CVPR_VLA0_CLOSED_LOOP_FEASIBILITY_20261021_v02.zip",
+    "tables/vla0_closed_loop_8rows.csv",
+    "verify_20261023_v04.py",
+    "verify_baseline_20261023_v04.py"
+  ],
+  "preservation_report": "qa/INPUT_PAYLOAD_PRESERVATION_20261023_v04.json",
+  "notes": "Original root v03 documents/build records and superseded paper notes/style are retained in history_v03. Original experiment packages and snapshots are unchanged. New raw archives were copied from earlier supplied packages; no experiment outcomes were regenerated."
+}

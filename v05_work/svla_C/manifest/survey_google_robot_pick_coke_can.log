@@ -1,0 +1,46 @@
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-23 12:12:35.809] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 12:12:35.810] [svulkan2] [warning] Continue without GLFW.
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+google_robot_pick_coke_can 6000 5d4935aed637e3c2 ce50f1934e3d6d4d pick coke can
+google_robot_pick_coke_can 6001 618b598b1cdea077 565cbe8992d9e1b6 pick coke can
+google_robot_pick_coke_can 6002 3e77eeb1375d5e53 5c6356d1ec5ef056 pick coke can
+google_robot_pick_coke_can 6003 dc1a242b12ed0441 c5f9e4a57c26418f pick coke can
+google_robot_pick_coke_can 6004 b15a6ea8769d5aea cc351b4eb89aab46 pick coke can
+google_robot_pick_coke_can 6005 144a6277243ba96f bc30c237825f7444 pick coke can
+google_robot_pick_coke_can 6006 61bea012875b732c 2acee7626bade8d0 pick coke can
+google_robot_pick_coke_can 6007 ee239d69497ddad7 72858fe72048484a pick coke can
+google_robot_pick_coke_can 6008 9e57b7aabebba7ae f91c98e502aac1d8 pick coke can
+google_robot_pick_coke_can 6009 3102d88bcebdab6b e7c02f1eee23888a pick coke can
+google_robot_pick_coke_can 6010 25662befc259da71 51d36fbaeff3a49e pick coke can
+google_robot_pick_coke_can 6011 f7d03badc2dea528 6da0aeee00b228d6 pick coke can
+google_robot_pick_coke_can 6012 f99e3319e73698bb c1aee0f45c4c23f5 pick coke can
+google_robot_pick_coke_can 6013 da5edf36dc000d7f 6e50e1e9890ae770 pick coke can
+google_robot_pick_coke_can 6014 9f53bbcd9d73f47c eafcfe829efd6871 pick coke can
+google_robot_pick_coke_can 6015 7a93cdf6055cab07 d7951b0c835ca116 pick coke can
+google_robot_pick_coke_can 6016 720fcaf677bba178 9a19105d07214304 pick coke can
+google_robot_pick_coke_can 6017 aa3180498a0da775 19917591b549d6a2 pick coke can
+google_robot_pick_coke_can 6018 2d77a2e71aeaace4 275ca19493605580 pick coke can
+google_robot_pick_coke_can 6019 3202493364407f3e e313eaaecc137cdc pick coke can
+google_robot_pick_coke_can 6020 eb959bb9f2a40253 c713a0d965d3ec53 pick coke can
+google_robot_pick_coke_can 6021 814ebfd3d8a6ef4c 2a6f914cae41cc6f pick coke can
+google_robot_pick_coke_can 6022 4e480fb7890b3364 8cb592d81865a984 pick coke can
+google_robot_pick_coke_can 6023 c0cf2f321248e3ea 2b4d737453465280 pick coke can
+google_robot_pick_coke_can 6024 7c730a28c2a42915 2602f8b8ac416c28 pick coke can
+google_robot_pick_coke_can 6025 212f833d3bf62ec6 3b24c24d446f9a09 pick coke can
+google_robot_pick_coke_can 6026 324e84a4832332f3 069981a069edb43a pick coke can
+google_robot_pick_coke_can 6027 0e49fab99d84a7ce fa34f1e04e6ad263 pick coke can
+google_robot_pick_coke_can 6028 6412af7c10e64712 9ca4160313ab5f9a pick coke can
+google_robot_pick_coke_can 6029 957a7853cf72a672 1218c85f0ec83a44 pick coke can
+google_robot_pick_coke_can 6030 a2886bc672500eb8 b2285adceb1dddb7 pick coke can
+google_robot_pick_coke_can 6031 b1b870a08d776112 b5d77300fb3ad1fe pick coke can
+google_robot_pick_coke_can 6032 fe1c5a55e2a343ae ecffd759af7f2602 pick coke can
+google_robot_pick_coke_can 6033 fb45347971d8fb3c bb9188fa8782db73 pick coke can
+google_robot_pick_coke_can 6034 210e120b88a4fdea bfec9250aa5f4dec pick coke can
+google_robot_pick_coke_can 6035 411950925664b7e5 4cad5498df088d04 pick coke can
+google_robot_pick_coke_can 6036 02344a0a5b1acd2f 3600d34bb00de030 pick coke can
+google_robot_pick_coke_can 6037 a2ed9525337b6bd7 b0c47e4a3b033bc0 pick coke can
+google_robot_pick_coke_can 6038 b19dc02fa6201967 371984b98e82a9d4 pick coke can
+google_robot_pick_coke_can 6039 0c58e76effcde00b b291820e1c454ede pick coke can

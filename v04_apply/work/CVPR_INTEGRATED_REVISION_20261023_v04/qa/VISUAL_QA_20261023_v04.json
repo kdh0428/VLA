@@ -1,0 +1,49 @@
+{
+  "date_utc": "2026-10-23",
+  "all_pages_rendered_and_inspected": true,
+  "render_scale": 1.5,
+  "documents": {
+    "main": {
+      "sha256": "0e3855e86b562c5c8dfb868a255498d4950357a75fe1d9941c2b723a417b3dfa",
+      "pages": 10,
+      "inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "supplementary": {
+      "sha256": "2c1bd3213e518e9855d36642c53780b4a9ce00c3fac2af8b827a6a253f7eb504",
+      "pages": 19,
+      "inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  },
+  "findings": "No visible clipping, overlap, missing figures, or broken tables. Main usage statement precedes references on page 9. Final labels distinguish drawer scenarios and follow-up/discovery."
+}

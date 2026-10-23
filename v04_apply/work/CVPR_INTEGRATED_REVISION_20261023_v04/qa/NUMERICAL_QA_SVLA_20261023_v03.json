@@ -1,0 +1,157 @@
+{
+ "checks": [
+  {
+   "name": "v01 secondary",
+   "expected_string": "0.070$ $[0.044,0.100]",
+   "found": true
+  },
+  {
+   "name": "v01 secondary table",
+   "expected_string": "64/32 & 0.070 & $[0.044,0.100]$",
+   "found": true
+  },
+  {
+   "name": "v01 matched",
+   "expected_string": "7/7 & 0.084",
+   "found": true
+  },
+  {
+   "name": "v02 primary table",
+   "expected_string": "69/34 & 0.048 & $[0.026,0.072]$",
+   "found": true
+  },
+  {
+   "name": "v02 primary text",
+   "expected_string": "$\\Delta=0.048$ $[0.026,0.072]$",
+   "found": true
+  },
+  {
+   "name": "v02 coke",
+   "expected_string": "55/25 & 0.042 & $[0.015,0.070]$",
+   "found": true
+  },
+  {
+   "name": "v02 move\\_near",
+   "expected_string": "14/9 & 0.054 & $[0.018,0.093]$",
+   "found": true
+  },
+  {
+   "name": "v02 D(OL,L)",
+   "expected_string": "0.021$ $[0.012,0.030]$",
+   "found": true
+  },
+  {
+   "name": "v02 J",
+   "expected_string": "$-0.024$ & $[-0.040,-0.011]$",
+   "found": true
+  },
+  {
+   "name": "v02 same change",
+   "expected_string": "0.048 & $[0.019,0.079]$",
+   "found": true
+  },
+  {
+   "name": "v02 EL/EO",
+   "expected_string": "0.070 / 0.022",
+   "found": true
+  },
+  {
+   "name": "v02 a3/a4",
+   "expected_string": "0.068 / 0.027; 0.072 / 0.017",
+   "found": true
+  },
+  {
+   "name": "v02 trans/rot",
+   "expected_string": "0.076 / 0.020; 0.065 / 0.024",
+   "found": true
+  },
+  {
+   "name": "v02 grip",
+   "expected_string": "0.082 / 0.053 / 0.067",
+   "found": true
+  },
+  {
+   "name": "v02 token change",
+   "expected_string": "56/69 observations, the older edit in 27/69",
+   "found": true
+  },
+  {
+   "name": "v02 d",
+   "expected_string": "mean $d_L$ 0.054 vs.\\ $d_O$ 0.053",
+   "found": true
+  },
+  {
+   "name": "v02 sources",
+   "expected_string": "3,243 samples were generated",
+   "found": true
+  },
+  {
+   "name": "v02 rejections",
+   "expected_string": "2,710 were rejected for zero distance (they reproduced a natural action), 396 for a ratio outside $[0.8,1.25]$ and 68 for a gripper mismatch; 69 were selected",
+   "found": true
+  },
+  {
+   "name": "v02 median sources",
+   "expected_string": "median 22 per observation",
+   "found": true
+  },
+  {
+   "name": "v02 ratio quartiles",
+   "expected_string": "0.93/1.02/1.16",
+   "found": true
+  },
+  {
+   "name": "v02 flow coke",
+   "expected_string": "& 55 (25) & 14 (9) & 69 (34)",
+   "found": true
+  },
+  {
+   "name": "drawer table",
+   "expected_string": "35/15 & 0.145 & $[0.091,0.210]$",
+   "found": true
+  },
+  {
+   "name": "drawer text",
+   "expected_string": "$\\Delta=0.145$ $[0.091,0.210]$",
+   "found": true
+  },
+  {
+   "name": "drawer EL EO",
+   "expected_string": "$E_L=0.183$ and $E_O=0.039$",
+   "found": true
+  },
+  {
+   "name": "drawer DOLL",
+   "expected_string": "$D(OL,L)=0.043$ $[0.020,0.067]$",
+   "found": true
+  },
+  {
+   "name": "drawer J",
+   "expected_string": "$J=-0.057$ $[-0.089,-0.030]$",
+   "found": true
+  },
+  {
+   "name": "drawer sources",
+   "expected_string": "Of 1,053 samples, 792 were rejected for zero distance and 226 for the ratio",
+   "found": true
+  },
+  {
+   "name": "drawer d",
+   "expected_string": "(0.100 vs.\\ 0.101)",
+   "found": true
+  },
+  {
+   "name": "drawer matched count",
+   "expected_string": "35/44 observations (15 layouts)",
+   "found": true
+  }
+ ],
+ "independent": {
+  "v02_verifier_ALL_MATCH": true,
+  "drawer_verifier_ALL_MATCH": true,
+  "v01_standalone_primary": 0.0838103,
+  "v01_standalone_secondary": 0.0699901
+ },
+ "n_pass": 29,
+ "n_fail": 0
+}

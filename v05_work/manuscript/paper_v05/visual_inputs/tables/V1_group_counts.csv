@@ -1,0 +1,4 @@
+group,n_scenes,n_drives,median_d_scene,share_scenes
+improved,87,18,-1.8857158003474315,0.87
+unchanged_severe,12,9,-0.4806857038315999,0.12
+worsened,1,1,2.584521681005968,0.01

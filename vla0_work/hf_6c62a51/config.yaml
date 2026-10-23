@@ -1,0 +1,55 @@
+DATALOADER:
+  ROBOVERSE:
+    cfg_opts: IMAGE.crop_img:0.875:IMAGE.img_size:224:IMAGE.cam_list:('3p1','3p2')
+    cfg_path: libs/RoboVerse/roboverse/configs/img_libero_aug.yaml
+  batch_size: 8
+  num_workers: 8
+EXP:
+  AMP: true
+  DATASET: roboverse
+  EXP_ID: qwen_7_EXP.LRS_none_MD.QW.AM_5
+  LOSS: {}
+  LR_SCHED: none
+  MODEL: qwen
+  OPTIMIZER: adamw
+  SEED: 0
+EXP_EXTRA:
+  no_test: true
+  no_track: true
+  no_val: true
+  save_ckp: 2
+  save_last_ckpt: true
+  test_eval_freq: 1
+  val_eval_freq: 1
+LR_SCHED:
+  lr_clip: 1.0e-08
+  lr_decay_factor: 0.5
+  lr_patience: 4
+MODEL:
+  QWEN:
+    action_mask_aug_per: 0.4
+    action_type: original
+    add_vision_id: true
+    attention_dropout: 0.0
+    history: 1
+    horizon: 8
+    lora_config: default
+    lora_rank: 8
+    num_bins_actions: 1000
+    num_cam: 2
+    original_action_dim: 7
+    qwen_model_id: Qwen/Qwen2.5-VL-3B-Instruct
+    rgb_img_size:
+    - 224
+    - 224
+    rgb_input: true
+    tiled_rgb_imgs: true
+    use_flash_attention_2: false
+    use_lora: false
+    use_qlora: false
+TRAIN:
+  clip_grad_norm: 0.0
+  l2: 1.0e-10
+  lr: 5.0e-06
+  num_epochs: 24
+

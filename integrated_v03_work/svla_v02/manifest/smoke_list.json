@@ -1,0 +1,24 @@
+{
+ "rule": "smoke (parity only; no arms; not analyzed): coke seeds 3008, 3009 (unused validation-candidate layouts) and the first two v02 move_near layouts at generation call 0 (call 0 is not part of the v02 panel calls 2/6/10)",
+ "calls": [
+  0
+ ],
+ "layouts": [
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 3008
+  },
+  {
+   "task": "google_robot_pick_coke_can",
+   "seed": 3009
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 6
+  },
+  {
+   "task": "google_robot_move_near",
+   "seed": 8
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "task": "E1 - closed-loop policy evaluation of the SAME checkpoint (AutoVLA_PDMS_89, Qwen2.5-VL-3B) where the policy replans from its own new observations",
+ "date": "2026-10-23",
+ "method": "file/package inventory only (CPU; no GPU use, no downloads except two Hugging Face model-metadata API calls of a few kB)",
+ "overall_status": "BLOCKED",
+ "overall_summary": "No true sensor closed loop (policy re-observing its own new camera view after moving) exists or can be built on this server. The only closed-loop-like evaluations that are possible for this camera-only checkpoint are (b) NAVSIM v2 two-stage pseudo-simulation (code + checkpoint present and already run in Exp 25/26; re-running it now is blocked by disk because the synthetic images were deleted) and the existing log-observation receding-horizon pseudo closed loop (Exp 13, cameras from the log). (a) nuPlan closed-loop has no camera rendering and no nuPlan DBs/configs; (c) CARLA/Bench2Drive has no simulator, no renderer libraries and no CARLA checkpoint.",
+ "shared_components": {
+  "checkpoint": {
+   "status": "PRESENT",
+   "path": "/root/VLA/autovla_dl/AutoVLA/AutoVLA_PDMS_89.ckpt",
+   "bytes": 16292664780,
+   "note": "fp32; load with torch.load(mmap=True) (14.4 GB container RAM)"
+  },
+  "codebook": {
+   "status": "PRESENT",
+   "path": "/root/VLA/autovla/codebook_cache/agent_vocab.pkl",
+   "bytes": 1179952
+  },
+  "backbone": {
+   "status": "PRESENT",
+   "path": "/root/VLA/autovla/Qwen2.5-VL-3B-Instruct"
+  },
+  "env": {
+   "status": "PRESENT",
+   "conda_env": "/root/miniforge3/envs/autovla",
+   "packages": {
+    "navsim": "1.1.0 (editable, /root/VLA/autovla/navsim)",
+    "nuplan-devkit": "1.2.0",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.49.0",
+    "hydra-core": "1.2.0",
+    "ray": "2.44.1"
+   },
+   "navsim_v2_clone": "/root/VLA/navsim_v2 (setup.py version 2.0.0, commit 0a380a9; used via PYTHONPATH, not pip-installed)"
+  },
+  "public_checkpoints_upstream": {
+   "source": "https://huggingface.co/api/models/Zewei-Zhou/AutoVLA (queried 2026-10-23)",
+   "sha": "a7d7ba3ed7529b248d2694c2defa31b35208340f",
+   "files": [
+    ".gitattributes",
+    "AutoVLA_PDMS_89.ckpt",
+    "README.md"
+   ],
+   "author_models": [
+    "Zewei-Zhou/Mobility",
+    "Zewei-Zhou/mobility_navsim_v1_test",
+    "Zewei-Zhou/ego_mlp_v2",
+    "Zewei-Zhou/ego_mlp_v1",
+    "Zewei-Zhou/AutoVLA"
+   ],
+   "note": "no CARLA/Bench2Drive AutoVLA checkpoint is published; the paper's CARLA numbers come from a different (unreleased) model"
+  },
+  "official_eval_in_autovla_repo": {
+   "paths": [
+    "/root/VLA/autovla/navsim/scripts/evaluation/run_autovla_agent_pdm_score_evaluation.sh",
+    "/root/VLA/autovla/navsim/navsim/planning/script/run_pdm_score_cot.py",
+    "/root/VLA/autovla/tools/eval/nusc_eval.py"
+   ],
+   "note": "NAVSIM v1.1 PDMS (single 4 s non-reactive LQR simulation of one plan, no replanning) and nuScenes open-loop eval only. The AutoVLA repo contains no closed-loop / CARLA / Bench2Drive code (grep for carla|bench2drive hits only README text and the navsim transfuser feature file)."
+  },
+  "gpu": {
+   "devices": [
+    "RTX 3080 Ti (GPU 0, shared)",
+    "RTX 5090 (GPU 1; external process holds 13-26 GB)"
+   ],
+   "rendering_libs": "NONE: no libEGL*/libGLX_nvidia/libnvidia-glcore/vulkan ICD in /usr/lib/x86_64-linux-gnu, no /usr/share/vulkan",
+   "inference_vram_observed": "AutoVLA inference ran on the 12 GB 3080 Ti with batch <= 15 rows (HANDOFF.md) and on the 5090"
+  },
+  "disk": {
+   "free": "about 1.3 GB of 92 GB (df /root, 2026-10-23)"
+  },
+  "ram": "14.4 GB container limit"
+ },
+ "options": {
+  "a_nuplan_closed_loop_no_rendering": {
+   "status": "BLOCKED",
+   "what_it_is": "nuPlan reactive / non-reactive closed-loop simulation (ego + agents + controller), but the simulator never re-renders camera images, so a camera-only policy cannot see its own new view",
+   "present": [
+    "nuplan-devkit 1.2.0 python package incl. nuplan/planning/script/run_simulation.py",
+    "nuPlan maps /root/VLA/autovla/dataset/nuplan/maps (976 MB)",
+    "LQR tracker / PDM simulation code used inside NAVSIM scoring"
+   ],
+   "missing": [
+    "nuPlan .db log files (none on disk; only OpenScene 2 Hz pickles navsim_logs/test, 147 logs)",
+    "nuPlan Hydra configs (0 *.yaml under site-packages/nuplan/planning/script/config; pip wheel ships without them)",
+    "an AbstractPlanner wrapper for AutoVLA",
+    "any camera source for simulated states -> fundamental: AutoVLA_PDMS_89 needs 2 Hz multi-camera images; it could only be fed LOGGED images (= open-loop observations), which defeats E1"
+   ],
+   "verdict": "cannot satisfy E1 even if installed: not a sensor closed loop"
+  },
+  "b_navsim_v2_pseudo_simulation": {
+   "status": "PREVIOUSLY_RUN__CURRENTLY_BLOCKED_BY_DISK",
+   "what_it_is": "two-stage aggregation: stage 1 = original scene, 4 s plan; stage 2 = pre-rendered synthetic follow-up scenes from PRE-COMPUTED perturbed start states, Gaussian-weighted by proximity to the policy's stage-1 endpoint (navsim_v2/docs/metrics.md 'Pseudo Closed-Loop Aggregation'). The policy does NOT re-observe a rendering of its own endpoint; each call is still a single independent plan.",
+   "evidence_already_run": [
+    "/root/VLA/autovla_misalignment_poc/outputs/navhard_eval/NAVHARD_CLOSED_LOOP.md (Exp 25, navhard half, natural EPDMS 0.239)",
+    "/root/VLA/autovla_misalignment_poc/outputs/navhard_full_validation/ (Exp 26, full navhard 225 groups, EPDMS 0.229)",
+    "/root/VLA/tools/navhard_half2_pipeline.sh (chunked image extraction -> decode -> delete)"
+   ],
+   "present": [
+    "/root/VLA/navsim_v2 (v2.0.0, run_pdm_score.py two-stage, splits navhard_two_stage / warmup_two_stage / private_test_hard_two_stage + custom navhard_half / navhard_half2)",
+    "/root/VLA/navhard/navhard_two_stage/openscene_meta_datas (36 MB) + synthetic_scene_pickles (5,462) + synthetic_scenes_attributes.csv",
+    "/root/VLA/navhard/original_sensor_blobs (2,565 original stage-1 images, 547 MB)",
+    "stored submissions/scores under /root/VLA/navhard/exp/*"
+   ],
+   "missing": [
+    "navhard synthetic camera images: navhard_two_stage/sensor_blobs is empty (0 files; deleted chunk-wise after Exp 25/26). The two halves list 20,265 + 20,700 synthetic image files (~0.345 MB each, ~14 GB); full split sensors 31 GB per navsim_v2/docs/splits.md",
+    "metric caches (metric_cache_half2 etc. not on disk; rebuildable on CPU from metadata + maps)",
+    "disk headroom: the chunked pipeline needs ~5 GB per chunk + cache; 1.3 GB free",
+    "matched-prefix (B2) cells were never run on navhard; harness would need porting from review_followup4/B/B2 to the navhard scene JSONs"
+   ],
+   "verdict": "the strongest feasible closed-loop-like evaluation for this checkpoint; must be labeled 'pseudo closed loop (pre-rendered synthetic views)', not closed loop"
+  },
+  "b2_log_observation_receding_horizon": {
+   "status": "PREVIOUSLY_RUN (Exp 13)",
+   "evidence": [
+    "/root/VLA/autovla_misalignment_poc/scripts/receding_horizon_replanning.py",
+    "/root/VLA/autovla_misalignment_poc/outputs/receding_horizon_replanning/RECEDING_HORIZON.md"
+   ],
+   "what_it_is": "replans every m steps from LOGGED camera frames; ego speed/accel optionally corrected by the executed path; cameras do not follow the executed deviation (pose gap recorded)",
+   "verdict": "replanning loop with own ego state but logged observations; not E1"
+  },
+  "c_true_sensor_closed_loop_carla_bench2drive": {
+   "status": "BLOCKED",
+   "present": [],
+   "missing": [
+    "CARLA simulator (no CarlaUE4 / carla package anywhere on the filesystem)",
+    "Bench2Drive routes/leaderboard code",
+    "GPU rendering stack (no NVIDIA EGL/GLX/Vulkan user-space libraries in the container)",
+    "an AutoVLA checkpoint trained for CARLA cameras (only AutoVLA_PDMS_89 is public; running the nuPlan checkpoint in CARLA is a sim-to-real + camera-rig shift and would not be the 'same policy' evaluation the reviewer asks for)",
+    "disk: CARLA 0.9.15 + Bench2Drive assets estimated ~20-25 GB (outputs/continuous_closed_loop/STATUS.md, 2026-10-03), ~1.3 GB free"
+   ],
+   "evidence": [
+    "/root/VLA/autovla_misalignment_poc/outputs/continuous_closed_loop/STATUS.md (P6, same conclusion 2026-10-03)"
+   ],
+   "verdict": "not feasible here; AutoVLA_PDMS_89 must not be assumed to run in CARLA"
+  }
+ },
+ "blockers_exact": [
+  "B1: no renderer that produces nuPlan-rig camera images for states reached by the policy (no CARLA, no neural-rendering simulator, no GPU graphics libraries) -> no policy-sees-its-own-new-view loop is possible",
+  "B2: no CARLA/Bench2Drive AutoVLA checkpoint upstream (HF Zewei-Zhou/AutoVLA sha a7d7ba3e lists only AutoVLA_PDMS_89.ckpt)",
+  "B3: nuPlan closed-loop needs nuPlan .db logs + Hydra configs (absent) and still provides no cameras",
+  "B4: NAVSIM v2 pseudo-sim re-run needs the synthetic navhard images re-downloaded (~14 GB for the 225-group set, streamed in ~5 GB chunks) with only ~1.3 GB free",
+  "B5: hard constraint of this task: GPU must not be used"
+ ],
+ "minimal_next_steps": [
+  {
+   "step": 1,
+   "what": "Wording: describe Exp 25/26 as NAVSIM v2 two-stage pseudo closed loop with pre-rendered synthetic views and state that a sensor closed loop with this checkpoint is not available (no released CARLA checkpoint; nuPlan sim has no cameras).",
+   "cost": "none"
+  },
+  {
+   "step": 2,
+   "what": "If a closed-loop-like test of the matched-prefix effect is wanted: port the B2 matched-prefix cells to navhard_two_stage (stage 1 + stage 2 scenes, within-call edits only), re-score EPDMS per group with the existing navhard_group_scores.py; preregister contrasts before decoding.",
+   "requires": "free disk >= ~8 GB (one 5 GB image chunk + metric cache + outputs); RTX 5090 with >= ~10 GB free VRAM; re-download of navhard synthetic images via navsim_v2/download/download_navhard_two_stage.sh subset (HF OpenDriveLab/OpenScene navsim-v2)",
+   "rough_gpu_time": "B2 rate ~2.3 s per unit (6 cells + no-op, RTX 5090). navhard = 450 original + 5,462 synthetic scenes: ~3.8 GPU-h at 1 unit/scene, ~26 GPU-h at the B2 density of ~7 units/scene; a preregistered subset (e.g. one half, 105 groups) halves this",
+   "caveat": "still not a sensor closed loop; the navhard logs share days/vehicles with dev/P1-C (C_DISJOINT)"
+  },
+  {
+   "step": 3,
+   "what": "True sensor closed loop: requires (i) a host with NVIDIA EGL/Vulkan exposed, (ii) CARLA 0.9.15 + Bench2Drive (~20-25 GB + per-route logs), and (iii) an AutoVLA model trained on CARLA data (author release or own SFT/RFT of the 3B model on Bench2Drive, tens of GPU-days). Alternatively a neural-rendering (3DGS) closed-loop simulator on nuPlan logs that renders the nuPlan camera rig at arbitrary ego poses - none is present here and none was verified for AutoVLA.",
+   "status": "out of scope for this server"
+  }
+ ]
+}

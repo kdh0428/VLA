@@ -1,0 +1,130 @@
+{
+ "rule": "google_robot_open_drawer (first compatible of open->close drawer order); seeds 5000-5099 in order, first 20 unique full-pose layouts (robot base pose + cabinet + instruction); calls 2, 6, 10; at most 60 observations",
+ "calls": [
+  2,
+  6,
+  10
+ ],
+ "layouts": [
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5000,
+   "full_fp": "8817046011bc8e4a",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5001,
+   "full_fp": "b9eab37272a304bc",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5002,
+   "full_fp": "7f56e33c5d8510cd",
+   "instruction": "open middle drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5003,
+   "full_fp": "4570cdbcdf676f51",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5004,
+   "full_fp": "671d41167b356a02",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5005,
+   "full_fp": "2785f4c8a681c7f9",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5006,
+   "full_fp": "1ce78df504e11f1d",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5007,
+   "full_fp": "26adfef83b8b9fd6",
+   "instruction": "open middle drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5008,
+   "full_fp": "39c73518ce19d1bb",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5009,
+   "full_fp": "4ee98c2ecb9e659e",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5010,
+   "full_fp": "309ea9af1e61d1a7",
+   "instruction": "open middle drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5011,
+   "full_fp": "a21c1585a64fc981",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5012,
+   "full_fp": "c090730b51a1da45",
+   "instruction": "open middle drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5013,
+   "full_fp": "7346eec4d7e21a54",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5014,
+   "full_fp": "5acfe9a475084036",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5015,
+   "full_fp": "744d34d3443ba6d8",
+   "instruction": "open middle drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5016,
+   "full_fp": "5a241f693cade5ca",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5017,
+   "full_fp": "8ff3e6e35456be77",
+   "instruction": "open bottom drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5018,
+   "full_fp": "1fbd866836e647db",
+   "instruction": "open top drawer"
+  },
+  {
+   "task": "google_robot_open_drawer",
+   "seed": 5020,
+   "full_fp": "8cacee0f076a8879",
+   "instruction": "open middle drawer"
+  }
+ ]
+}

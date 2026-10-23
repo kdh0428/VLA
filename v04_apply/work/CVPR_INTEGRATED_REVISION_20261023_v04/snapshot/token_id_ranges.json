@@ -1,0 +1,4 @@
+{"translation": [257153, 261248], "rotation": [261249, 265344], "gripper": [265345, 265346], "eos": 1,
+ "source": "SpatialVLA action tokenizer token_start_idx/token_end_idx printed on this server (transformers 4.47.0 tokenizer of spatialvla-4b-224-sft-fractal); recorded in v01 FEASIBILITY",
+ "translation_layout": "id-257153 = theta*(phi_bins*r_bins) + phi*r_bins + r; theta 16, phi 32, r 8",
+ "rotation_layout": "id-261249 = roll*(pitch_bins*yaw_bins) + pitch*yaw_bins + yaw; 16 each"}

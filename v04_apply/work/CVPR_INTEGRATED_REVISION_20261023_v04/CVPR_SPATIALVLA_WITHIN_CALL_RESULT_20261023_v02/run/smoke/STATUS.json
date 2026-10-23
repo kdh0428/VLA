@@ -1,0 +1,8 @@
+{
+ "phase": "smoke",
+ "tag": "smk",
+ "n_collected": 4,
+ "n_done": 4,
+ "ledger_min_this_work": 0.8262573321660359,
+ "phase_min": 0.8262566606203715
+}

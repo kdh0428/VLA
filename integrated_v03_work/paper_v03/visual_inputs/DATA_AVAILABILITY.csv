@@ -1,0 +1,23 @@
+item,domain,status,path_relative_to_repo,rows,how_obtained,note
+scene/unit/perturbation/drive/log IDs (B2),AutoVLA,AVAILABLE,autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_analysis/unit_contrasts.parquet,"2,160 units n_old=1 (711 F)",stored,drive = log date+vehicle; day_vehicle column stored
+day / vehicle IDs,AutoVLA,DERIVABLE_CPU,(from log name),all,parsed from nuPlan log name,day = YYYY.MM.DD; vehicle = veh-NN
+day-vehicle component IDs,AutoVLA,AVAILABLE (B2/P1-C only),autovla_misalignment_poc/outputs/review_followup5/A_B2_CLUSTER,6 components,stored in followup5,not defined for the dev mechanism set (left empty in AUTOVLA_TIME_SERIES)
+cohort / stratum / eligibility / scene weights (E4),AutoVLA,AVAILABLE,autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_cohort_t4.json,"312 sampled scenes; weights for E4",stored,dev mechanism set has no sampling weights (scene_weight = 1)
+raw camera frames (CAM_F0/L0/R0) for B2 F scenes,AutoVLA,AVAILABLE,autovla/dataset/nuplan/sensor_blobs/test/<log>/<cam>/<id>.jpg,100/100 F scenes,stored nuPlan/OpenScene sensor blobs (fetched for P1-C inference),file names are in P1-C selection keep lists (711/711 units)
+camera ID / timestamp / calibration,AutoVLA,AVAILABLE,autovla/dataset/nuplan/navsim_logs/test/<log>.pkl,per frame,stored,intrinsics + sensor2lidar available; projection chain not verified here -> no image projection done
+model input images (exact tensors),AutoVLA,UNVERIFIABLE,-,-,-,model used 4 history frames x 3 front cameras; only the current-time jpg of each camera is shipped; preprocessing tensors not stored
+natural / forced / GT / emitted tokens and context edits (B2),AutoVLA,AVAILABLE,autovla_misalignment_poc/outputs/review_followup4/B/B2/p1c_main/cells.jsonl,"29,120 cells (7 per unit-anchor)",stored,ctx_edit / ctx_src / acts / own / poses per cell
+per-condition predicted poses + GT trajectory (B2),AutoVLA,AVAILABLE,cells.jsonl + review_followup/P1C_new_log_replication/run_20261008/mech/action_history_causal/records.jsonl,"10 poses x cell; GT 10 poses",stored,FDE5 recomputed max abs diff 6.9e-6 m
+repeated RN/RV per-condition trajectories (P1-C),AutoVLA,AVAILABLE,review_followup/P1C_new_log_replication/run_20261008/mech/action_history_causal/records.jsonl,353 scenes,stored,not needed as V1 fallback (B2 available)
+G-family U/OC plan pairs S0,AutoVLA,AVAILABLE,review_followup/P1A_gt_free_reference/run_20261008/raw/records.jsonl,"1,453 G units (A- 364 / A+ 1,089)",stored,
+G-family U/OC plan pairs SE/SF,AutoVLA,AVAILABLE,review_followup5/B_NUMERIC/run/records.jsonl,"1,453 x 3 settings",stored,"poses + own tokens; S0 identical to P1-A for 1,453/1,453"
+motion baselines Geo/CM/CV0/CTRV-K3/CTRA-2 time series,AutoVLA,DERIVABLE_CPU,scripts/review_followup3/p2_kinematics.py on P1-A tokens,all units x 10 poses,reconstructed on CPU (no inference),endpoint equals stored P2 values to 4e-15
+learned extrapolator time series,AutoVLA,DERIVABLE_CPU (not done),review_followup3/P2/_extrap_models,-,would need CPU re-evaluation of stored models,endpoint values only shipped (FINAL_PAPER_NUMBERS GTFREE.*.E_E_prefix)
+R9 window results by width,AutoVLA,AVAILABLE,review_followup/R8R9_raw_recovery/run_20261008/condition_summary.csv + units.parquet,"win1..win8, A-/A+",stored,same units in every row; w >= 8-t* equals Full GT-history
+SpatialVLA initial physical state ID/hash,SpatialVLA,AVAILABLE,review_followup/P1D_dose_control/run_20261008/rollouts/main/episodes.jsonl,"4,800 episodes",stored,"move_near: 10 states for 120 units; coke: 120"
+SpatialVLA task / instruction / seed / config / arm / success / length,SpatialVLA,AVAILABLE,episodes.jsonl,"4,800",stored,
+SpatialVLA generated actions (chunk tokens and ensemble predictions),SpatialVLA,AVAILABLE,episodes.jsonl (rec.exec / rec.preds / rec.nat1),per step,stored,nat1 missing in some rows (left empty)
+SpatialVLA executed actions (float64),SpatialVLA,AVAILABLE,episodes.jsonl (rec.action),per step,stored,translation m; rotation 3 values in rad (convention as sent to the executor; not re-derived); gripper
+SpatialVLA actual TCP pose,SpatialVLA,AVAILABLE,episodes.jsonl (rec.pose),per step,stored,sapien tcp link pose in world frame; p (m) + q (w;x;y;z)
+SpatialVLA observation frames (RGB),SpatialVLA,MISSING,-,-,only image hashes stored,re-render would need simulator replay (no GPU used here)
+experiment 34 actual TCP,SpatialVLA,MISSING,-,-,-,commanded actions are not substituted for TCP

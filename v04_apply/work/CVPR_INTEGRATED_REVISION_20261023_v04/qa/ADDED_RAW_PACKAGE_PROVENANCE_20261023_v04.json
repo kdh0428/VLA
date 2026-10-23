@@ -1,0 +1,17 @@
+[
+  {
+    "file": "raw_packages/CVPR_VLA0_AND_CONTRIBUTION_20261020.zip",
+    "source": "CVPR_PAPER_REVISION_20261021_v02.zip:raw_packages/CVPR_VLA0_AND_CONTRIBUTION_20261020.zip",
+    "sha256": "4c27520731614f6c5d4532ab530933ffb16ae8ce02157463ce35b14d82c49d6e"
+  },
+  {
+    "file": "raw_packages/CVPR_VLA0_CLOSED_LOOP_FEASIBILITY_20261021_v02.zip",
+    "source": "CVPR_PAPER_REVISION_20261021_v02.zip:raw_packages/CVPR_VLA0_CLOSED_LOOP_FEASIBILITY_20261021_v02.zip",
+    "sha256": "1dfee05f182472b18b4d9556735906d8c3597dec283fdf2378f56d15fda4f305"
+  },
+  {
+    "file": "raw_packages/CVPR_SPATIALVLA_WITHIN_CALL_RESULT_20261022_v01.zip",
+    "source": "CVPR_SPATIALVLA_WITHIN_CALL_RESULT_20261022_v01.zip",
+    "sha256": "9ca819caeb7752038cc8a560166e76dbfa7f87a438bb4f52c666375315fe8d6a"
+  }
+]

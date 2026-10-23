@@ -1,0 +1,197 @@
+{
+ "rule": "coke seeds 3000-3007 x generation calls 0,4,8, ordered by (seed, call); first 12 with a valid natural output are used; layouts disjoint from the pilot",
+ "candidates": [
+  {
+   "cand": 0,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3000,
+   "call": 0,
+   "layout_fp": "0eca46fdb3e273dc",
+   "obs_id": "val_coke_s3000_c0"
+  },
+  {
+   "cand": 1,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3000,
+   "call": 4,
+   "layout_fp": "0eca46fdb3e273dc",
+   "obs_id": "val_coke_s3000_c4"
+  },
+  {
+   "cand": 2,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3000,
+   "call": 8,
+   "layout_fp": "0eca46fdb3e273dc",
+   "obs_id": "val_coke_s3000_c8"
+  },
+  {
+   "cand": 3,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3001,
+   "call": 0,
+   "layout_fp": "ce7c2d3f16eeed12",
+   "obs_id": "val_coke_s3001_c0"
+  },
+  {
+   "cand": 4,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3001,
+   "call": 4,
+   "layout_fp": "ce7c2d3f16eeed12",
+   "obs_id": "val_coke_s3001_c4"
+  },
+  {
+   "cand": 5,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3001,
+   "call": 8,
+   "layout_fp": "ce7c2d3f16eeed12",
+   "obs_id": "val_coke_s3001_c8"
+  },
+  {
+   "cand": 6,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3002,
+   "call": 0,
+   "layout_fp": "a127064ddfea7583",
+   "obs_id": "val_coke_s3002_c0"
+  },
+  {
+   "cand": 7,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3002,
+   "call": 4,
+   "layout_fp": "a127064ddfea7583",
+   "obs_id": "val_coke_s3002_c4"
+  },
+  {
+   "cand": 8,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3002,
+   "call": 8,
+   "layout_fp": "a127064ddfea7583",
+   "obs_id": "val_coke_s3002_c8"
+  },
+  {
+   "cand": 9,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3003,
+   "call": 0,
+   "layout_fp": "2070b857dd55ec46",
+   "obs_id": "val_coke_s3003_c0"
+  },
+  {
+   "cand": 10,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3003,
+   "call": 4,
+   "layout_fp": "2070b857dd55ec46",
+   "obs_id": "val_coke_s3003_c4"
+  },
+  {
+   "cand": 11,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3003,
+   "call": 8,
+   "layout_fp": "2070b857dd55ec46",
+   "obs_id": "val_coke_s3003_c8"
+  },
+  {
+   "cand": 12,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3004,
+   "call": 0,
+   "layout_fp": "a647270c8a74e318",
+   "obs_id": "val_coke_s3004_c0"
+  },
+  {
+   "cand": 13,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3004,
+   "call": 4,
+   "layout_fp": "a647270c8a74e318",
+   "obs_id": "val_coke_s3004_c4"
+  },
+  {
+   "cand": 14,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3004,
+   "call": 8,
+   "layout_fp": "a647270c8a74e318",
+   "obs_id": "val_coke_s3004_c8"
+  },
+  {
+   "cand": 15,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3005,
+   "call": 0,
+   "layout_fp": "ebd6faffc9a3f76b",
+   "obs_id": "val_coke_s3005_c0"
+  },
+  {
+   "cand": 16,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3005,
+   "call": 4,
+   "layout_fp": "ebd6faffc9a3f76b",
+   "obs_id": "val_coke_s3005_c4"
+  },
+  {
+   "cand": 17,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3005,
+   "call": 8,
+   "layout_fp": "ebd6faffc9a3f76b",
+   "obs_id": "val_coke_s3005_c8"
+  },
+  {
+   "cand": 18,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3006,
+   "call": 0,
+   "layout_fp": "a5526f41eb4f4e17",
+   "obs_id": "val_coke_s3006_c0"
+  },
+  {
+   "cand": 19,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3006,
+   "call": 4,
+   "layout_fp": "a5526f41eb4f4e17",
+   "obs_id": "val_coke_s3006_c4"
+  },
+  {
+   "cand": 20,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3006,
+   "call": 8,
+   "layout_fp": "a5526f41eb4f4e17",
+   "obs_id": "val_coke_s3006_c8"
+  },
+  {
+   "cand": 21,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3007,
+   "call": 0,
+   "layout_fp": "19a323bae96657b6",
+   "obs_id": "val_coke_s3007_c0"
+  },
+  {
+   "cand": 22,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3007,
+   "call": 4,
+   "layout_fp": "19a323bae96657b6",
+   "obs_id": "val_coke_s3007_c4"
+  },
+  {
+   "cand": 23,
+   "task": "google_robot_pick_coke_can",
+   "seed": 3007,
+   "call": 8,
+   "layout_fp": "19a323bae96657b6",
+   "obs_id": "val_coke_s3007_c8"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "label": "post-hoc sensitivity: identical recorded robot/cabinet/actor geometry, ignoring instruction and robot asset name",
+  "scenario_count": 15,
+  "pose_group_count": 7,
+  "scenario_weighted_point": 0.14488141275545216,
+  "scenario_weighted_pose_cluster_ci": [
+    0.07512190487308767,
+    0.2359046858137372
+  ],
+  "equal_pose_group_point": 0.12823156708116268,
+  "equal_pose_group_ci": [
+    0.07038618145271011,
+    0.20437529896880027
+  ],
+  "groups": {
+    "2b0326218226d290": [
+      5000,
+      5006
+    ],
+    "8d16327dc949a011": [
+      5001,
+      5002,
+      5005,
+      5007
+    ],
+    "5ae358ade902633a": [
+      5003
+    ],
+    "fe6dcedbe2288921": [
+      5004,
+      5008
+    ],
+    "a69494e4a5118daf": [
+      5009
+    ],
+    "4815c97426706efd": [
+      5010,
+      5011,
+      5015
+    ],
+    "77b4798e857eeafa": [
+      5012,
+      5013
+    ]
+  }
+}

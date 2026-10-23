@@ -1,0 +1,618 @@
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-23 12:12:35.809] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 12:12:35.810] [svulkan2] [warning] Continue without GLFW.
+[2026-10-23 12:12:36.413] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:36.413] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:36.414] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:36.414] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:36.414] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:36.414] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:36.414] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:36.414] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:36.414] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:36.414] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:36.414] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:36.414] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:43.628] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:43.629] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:43.629] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:43.629] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:43.629] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:43.629] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:43.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:43.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:43.630] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:43.630] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:43.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:43.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+google_robot_close_drawer 6000 4f53cda18c2baa0c 6c603dda0643a78b close bottom drawer
+[2026-10-23 12:12:49.811] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:49.812] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:49.812] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:49.812] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:49.812] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:49.812] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:49.813] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:49.813] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:49.813] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:49.813] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:49.813] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:49.813] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6001 4f53cda18c2baa0c 6711dd9eb2d13678 close top drawer
+[2026-10-23 12:12:56.614] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:56.614] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:56.614] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:56.614] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:56.614] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:56.614] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:56.615] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:56.615] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:56.615] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:12:56.615] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:12:56.615] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:12:56.615] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6002 4f53cda18c2baa0c d4303a51622fe9a5 close bottom drawer
+google_robot_close_drawer 6003 4f53cda18c2baa0c 56dc68ec575c053b close bottom drawer
+[2026-10-23 12:13:07.776] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:07.776] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:07.776] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:07.776] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:07.776] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:07.776] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:07.776] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:07.776] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:07.777] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:07.777] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:07.777] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:07.777] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6004 4f53cda18c2baa0c 5c84b97aef8ebe95 close bottom drawer
+[2026-10-23 12:13:13.324] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:13.324] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:13.324] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:13.324] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:13.324] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:13.324] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:13.325] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:13.325] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:13.325] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:13.325] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:13.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:13.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6005 4f53cda18c2baa0c 3728bfce25913f66 close middle drawer
+google_robot_close_drawer 6006 4f53cda18c2baa0c 302f92f245dea208 close bottom drawer
+[2026-10-23 12:13:25.362] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:25.362] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:25.362] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:25.362] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:25.362] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:25.362] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:25.363] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:25.363] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:25.363] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:25.363] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:25.363] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:25.363] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6007 4f53cda18c2baa0c e907a9a9425d3eb3 close bottom drawer
+[2026-10-23 12:13:31.554] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:31.554] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:31.554] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:31.554] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:31.554] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:31.554] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:31.555] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:31.555] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:31.555] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:31.555] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:31.555] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:31.555] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6008 4f53cda18c2baa0c e1cf62ba51039423 close middle drawer
+[2026-10-23 12:13:37.475] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:37.475] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:37.475] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:37.475] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:37.475] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:37.475] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:37.476] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:37.476] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:37.476] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:37.476] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:37.476] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:37.476] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6009 4f53cda18c2baa0c 8dc38eca63f954d9 close bottom drawer
+[2026-10-23 12:13:43.338] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:43.339] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:43.342] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:43.342] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:43.342] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:43.342] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:43.343] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:43.343] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:43.343] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:43.343] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:43.343] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:43.343] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6010 4f53cda18c2baa0c 62930cfa47148b45 close bottom drawer
+google_robot_close_drawer 6011 4f53cda18c2baa0c 197050d632c9f20f close middle drawer
+[2026-10-23 12:13:55.356] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:55.356] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:55.356] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:55.356] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:55.356] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:55.356] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:55.357] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:55.357] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:55.357] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:13:55.357] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:13:55.357] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:13:55.357] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6012 4f53cda18c2baa0c e1cf62ba51039423 close middle drawer
+[2026-10-23 12:14:01.487] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:01.487] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:01.487] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:01.487] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:01.487] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:01.487] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:01.488] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:01.488] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:01.488] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:01.488] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:01.488] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:01.488] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6013 4f53cda18c2baa0c 469c89f86b7aa3e5 close middle drawer
+[2026-10-23 12:14:07.943] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:07.943] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:07.944] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:07.944] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:07.944] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:07.944] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:07.947] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:07.947] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:07.947] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:07.947] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:07.947] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:07.947] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6014 4f53cda18c2baa0c dae813a23bceaa17 close bottom drawer
+[2026-10-23 12:14:14.409] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:14.409] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:14.410] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:14.410] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:14.410] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:14.410] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:14.411] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:14.411] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:14.411] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:14.411] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:14.411] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:14.411] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6015 4f53cda18c2baa0c 565def4a1467e5e3 close top drawer
+[2026-10-23 12:14:20.271] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:20.271] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:20.271] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:20.271] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:20.271] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:20.271] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:20.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:20.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:20.272] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:20.272] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:20.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:20.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6016 4f53cda18c2baa0c d637f56d9c6ae8fa close top drawer
+google_robot_close_drawer 6017 4f53cda18c2baa0c 6ac00bd3598324b7 close bottom drawer
+google_robot_close_drawer 6018 4f53cda18c2baa0c 302f92f245dea208 close bottom drawer
+[2026-10-23 12:14:36.591] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:36.591] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:36.591] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:36.592] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:36.592] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:36.592] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:36.593] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:36.593] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:36.593] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:36.593] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:36.593] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:36.593] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6019 4f53cda18c2baa0c 25eec41f06c21f4f close top drawer
+[2026-10-23 12:14:42.254] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:42.254] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:42.255] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:42.255] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:42.255] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:42.255] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:42.256] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:42.256] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:42.256] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:42.256] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:42.256] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:42.256] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6020 4f53cda18c2baa0c b1d6b2b7b3e49e5b close middle drawer
+google_robot_close_drawer 6021 4f53cda18c2baa0c 92be342e5696d4a7 close middle drawer
+[2026-10-23 12:14:54.976] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:54.976] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:54.976] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:54.977] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:54.977] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:54.977] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:54.978] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:54.978] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:54.979] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:14:54.979] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:14:54.979] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:14:54.979] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6022 4f53cda18c2baa0c 8d8ca8be35267f57 close middle drawer
+[2026-10-23 12:15:01.454] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:01.454] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:01.454] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:01.454] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:01.454] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:01.454] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:01.456] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:01.456] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:01.456] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:01.456] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:01.456] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:01.456] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6023 4f53cda18c2baa0c 79ff14eaf01a3333 close top drawer
+[2026-10-23 12:15:07.361] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:07.361] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:07.361] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:07.361] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:07.361] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:07.361] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:07.363] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:07.363] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:07.364] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:07.364] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:07.364] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:07.364] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6024 4f53cda18c2baa0c 01674ccac27bc1c5 close top drawer
+[2026-10-23 12:15:12.377] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:12.377] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:12.377] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:12.377] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:12.377] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:12.377] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:12.378] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:12.378] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:12.378] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:12.378] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:12.378] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:12.378] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6025 4f53cda18c2baa0c 58916f7a2db6632f close middle drawer
+google_robot_close_drawer 6026 4f53cda18c2baa0c 7f5baaba47530164 close top drawer
+[2026-10-23 12:15:22.937] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:22.937] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:22.937] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:22.937] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:22.937] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:22.937] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:22.938] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:22.938] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:22.938] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:22.938] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:22.939] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:22.939] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6027 4f53cda18c2baa0c 5bb956a88fba7fcb close bottom drawer
+[2026-10-23 12:15:29.304] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:29.304] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:29.304] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:29.304] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:29.304] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:29.304] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:29.305] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:29.305] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:29.306] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:29.306] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:29.306] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:29.306] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6028 4f53cda18c2baa0c d3218bb944c82723 close middle drawer
+[2026-10-23 12:15:35.406] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:35.407] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:35.407] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:35.407] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:35.407] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:35.407] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:35.408] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:35.408] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:35.408] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:35.408] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:35.408] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:35.408] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6029 4f53cda18c2baa0c 560afa44cd4a1dd7 close middle drawer
+[2026-10-23 12:15:42.636] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:42.636] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:42.636] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:42.636] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:42.636] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:42.636] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:42.638] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:42.638] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:42.638] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:42.638] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:42.638] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:42.638] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6030 4f53cda18c2baa0c 3ed4ed156cb148ad close middle drawer
+[2026-10-23 12:15:48.227] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:48.227] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:48.227] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:48.227] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:48.227] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:48.227] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:48.228] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:48.228] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:48.228] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:48.228] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:48.228] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:48.228] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6031 4f53cda18c2baa0c d892942a7438c8b2 close middle drawer
+[2026-10-23 12:15:53.942] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:53.942] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:53.942] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:53.942] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:53.942] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:53.942] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:53.943] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:53.943] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:53.944] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:15:53.944] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:15:53.944] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:15:53.944] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6032 4f53cda18c2baa0c 3d228a6445b7fd59 close top drawer
+google_robot_close_drawer 6033 4f53cda18c2baa0c 00dcf9732aca4f6b close bottom drawer
+[2026-10-23 12:16:06.253] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:06.253] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:06.253] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:06.253] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:06.254] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:06.254] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:06.255] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:06.255] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:06.255] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:06.255] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:06.255] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:06.255] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6034 4f53cda18c2baa0c c9d2461426a18adf close bottom drawer
+[2026-10-23 12:16:12.628] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:12.628] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:12.628] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:12.628] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:12.628] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:12.628] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:12.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:12.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:12.630] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:12.630] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:12.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:12.630] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6035 4f53cda18c2baa0c 613468650250bc75 close middle drawer
+[2026-10-23 12:16:19.524] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:19.524] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:19.524] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:19.524] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:19.524] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:19.524] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:19.527] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:19.527] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:19.527] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:19.527] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:19.527] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:19.527] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6036 4f53cda18c2baa0c fe56b5f6bfcd5ce8 close middle drawer
+[2026-10-23 12:16:26.391] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:26.391] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:26.391] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:26.391] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:26.391] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:26.391] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:26.393] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:26.393] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:26.393] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:26.393] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:26.393] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:26.393] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6037 4f53cda18c2baa0c 58f3a8fe16dfebd5 close bottom drawer
+[2026-10-23 12:16:32.766] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:32.766] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:32.766] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:32.766] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:32.766] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:32.766] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:32.767] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:32.767] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:32.767] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:32.767] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:32.767] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:32.767] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6038 4f53cda18c2baa0c 08f65d4fc37d96bc close top drawer
+google_robot_close_drawer 6039 4f53cda18c2baa0c 5c84b97aef8ebe95 close bottom drawer
+[2026-10-23 12:16:44.970] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:44.970] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:44.970] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:44.970] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:44.970] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:44.970] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:44.972] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:44.972] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:44.972] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:16:44.972] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:16:44.972] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:16:44.972] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6040 4f53cda18c2baa0c 4e85e939e244f7c4 close top drawer
+google_robot_close_drawer 6041 4f53cda18c2baa0c e8abb0f1e0cc8ec1 close middle drawer
+google_robot_close_drawer 6042 4f53cda18c2baa0c 5bb956a88fba7fcb close bottom drawer
+[2026-10-23 12:17:01.156] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:01.156] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:01.156] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:01.156] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:01.156] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:01.156] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:01.157] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:01.157] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:01.157] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:01.157] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:01.157] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:01.157] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6043 4f53cda18c2baa0c 9a9a19c8f5f7475e close top drawer
+[2026-10-23 12:17:06.688] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:06.688] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:06.690] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:06.690] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:06.690] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:06.690] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:06.693] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:06.693] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:06.693] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:06.693] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:06.694] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:06.694] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6044 4f53cda18c2baa0c 3ed4ed156cb148ad close middle drawer
+[2026-10-23 12:17:12.702] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:12.702] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:12.704] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:12.704] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:12.704] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:12.704] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:12.705] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:12.705] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:12.706] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:12.706] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:12.706] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:12.706] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6045 4f53cda18c2baa0c c9d2461426a18adf close bottom drawer
+[2026-10-23 12:17:18.495] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:18.495] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:18.495] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:18.495] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:18.495] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:18.495] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:18.496] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:18.496] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:18.496] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:18.496] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:18.496] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:18.496] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6046 4f53cda18c2baa0c 49ef0ffb3a027c8f close bottom drawer
+[2026-10-23 12:17:24.327] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:24.328] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:24.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:24.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:24.328] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:24.328] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:24.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:24.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:24.328] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:24.328] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:24.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:24.328] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6047 4f53cda18c2baa0c 91d899695a73034f close bottom drawer
+[2026-10-23 12:17:29.871] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:29.871] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:29.871] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:29.871] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:29.872] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:29.872] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:29.872] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:29.872] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:29.872] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:29.872] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:29.872] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:29.872] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6048 4f53cda18c2baa0c e6cd1521009ce58b close bottom drawer
+[2026-10-23 12:17:36.030] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:36.031] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:36.031] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:36.031] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:36.031] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:36.031] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:36.031] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:36.031] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:36.031] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:36.031] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:36.031] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:36.031] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6049 4f53cda18c2baa0c 38311a01603b4919 close bottom drawer
+google_robot_close_drawer 6050 4f53cda18c2baa0c 8dc38eca63f954d9 close bottom drawer
+[2026-10-23 12:17:47.527] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:47.527] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:47.527] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:47.527] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:47.528] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:47.528] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:47.529] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:47.529] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:47.529] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:47.529] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:47.529] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:47.529] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6051 4f53cda18c2baa0c 881157e9d116bd6e close top drawer
+google_robot_close_drawer 6052 4f53cda18c2baa0c f5048fcc12160b44 close bottom drawer
+[2026-10-23 12:17:59.271] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:59.271] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:59.271] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:59.271] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:59.271] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:59.271] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:59.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:59.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:59.272] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:17:59.272] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:17:59.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:17:59.272] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6053 4f53cda18c2baa0c 8c963a7f0a7477a3 close middle drawer
+[2026-10-23 12:18:05.634] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:05.634] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:05.634] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:05.634] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:05.634] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:05.634] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:05.636] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:05.636] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:05.637] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:05.637] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:05.637] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:05.637] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6054 4f53cda18c2baa0c 9152439d19301ab4 close bottom drawer
+[2026-10-23 12:18:12.342] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:12.342] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:12.342] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:12.342] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:12.342] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:12.342] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:12.344] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:12.344] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:12.344] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:12.344] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:12.344] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:12.344] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6055 4f53cda18c2baa0c 890026c01b8af8a0 close top drawer
+[2026-10-23 12:18:18.528] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:18.528] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:18.528] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:18.528] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:18.529] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:18.529] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:18.529] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:18.529] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:18.530] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:18.530] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:18.530] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:18.530] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6056 4f53cda18c2baa0c f6883ba49e5fcc81 close middle drawer
+google_robot_close_drawer 6057 4f53cda18c2baa0c cce609c544372a0f close top drawer
+google_robot_close_drawer 6058 4f53cda18c2baa0c 3ed4ed156cb148ad close middle drawer
+[2026-10-23 12:18:37.766] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:37.766] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:37.766] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:37.766] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:37.766] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:37.766] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:37.768] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:37.768] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:37.769] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 12:18:37.769] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 12:18:37.769] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+[2026-10-23 12:18:37.769] [svulkan2] [error]  CUDA Error: cudaErrorNoDevice
+google_robot_close_drawer 6059 4f53cda18c2baa0c 2f3e8cf2ef5572d2 close middle drawer

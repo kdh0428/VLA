@@ -1,0 +1,216 @@
+{
+ "mode": "default",
+ "cublas_workspace": null,
+ "results": [
+  {
+   "obs_id": "pil_coke_s2000_c8",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2004_c0",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2011_c8",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2014_c4",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2016_c8",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2023_c4",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2020_c8",
+   "control": false,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2000_c0",
+   "control": true,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2001_c0",
+   "control": true,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  },
+  {
+   "obs_id": "pil_coke_s2002_c0",
+   "control": true,
+   "n_distinct_official": 1,
+   "official_eq_collect": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "prefill_logit_maxdiff_across_repeats": 0.0,
+   "n_distinct_adapter_natural": 1,
+   "adapter_eq_official0": [
+    true,
+    true
+   ],
+   "R_identity_vs_official0": [
+    true,
+    true
+   ]
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+% related_work_paragraph_20261023.tex
+% Drop-in replacement for the first paragraph of \section{Related Work} in paper_body.tex (v04, line 19)
+% plus ONE NEW paragraph to insert after "Context and history in VLAs." (before "Chunking and execution.").
+% Unchanged v04 sentences are kept verbatim; added text is between %% ADD markers.
+% New keys: yu2026ac2vla, xiong2026cacvla, zhong2026acotvla, yin2025deepthinkvla, lu2026tacitvla,
+% li2026thinkact5hz, renz2025simlingo (from references_new_20261023.bib); hu2026arvla already in references.bib.
+
+\paragraph{Action dependence and compounding error.}
+Sequential imitation learning distinguishes independent prediction errors from errors accumulated through visited states~\cite{ross2011dagger}. WorldVLA reports deterioration during autoregressive action generation and proposes masking prior actions~\cite{cen2025worldvla}.
+%% ADD
+That mask is a design change removing all prior actions; we keep model and emitted actions fixed and replace one conditioning copy, latest or older, by a donor. AR-VLA extends action dependence across calls through a long-lived action memory that re-anchors stale vision-language prefixes~\cite{hu2026arvla}; our position contrast is within one call.
+%% END ADD
+Action dependence and possible propagation are therefore established; we estimate controlled context contrasts and follow them into execution.
+
+%% ADD (new paragraph)
+\paragraph{Action-level reasoning and computation.}
+AC$^2$-VLA conditions a router for cache reuse, token pruning, and layer skipping on the previous action state~\cite{yu2026ac2vla}; CAC-VLA trains the VLM to predict latent future-action segments that a context gate injects into the action expert~\cite{xiong2026cacvla}; ACoT-VLA conditions its action head on coarse reference trajectories and latent action priors~\cite{zhong2026acotvla}. These train new conditioning pathways; we edit the existing token prefix of frozen models. DeepThinkVLA aligns chain-of-thought with actions by outcome-based reinforcement learning, and masking that reasoning at inference enlarges its out-of-distribution drop~\cite{yin2025deepthinkvla}; TacitVLA trains with reasoning but its action expert never attends to the current call's reasoning~\cite{lu2026tacitvla}. Both concern reasoning text; we study earlier action tokens without reasoning. In driving, a fast-slow design trains its action expert under randomized staleness of a backbone cache~\cite{li2026thinkact5hz}, and SimLingo aligns language with regressed waypoints with closed-loop CARLA evaluation~\cite{renz2025simlingo}. That staleness concerns perception across ticks, not action-token position within a call, and our AutoVLA outcomes are open-loop plan metrics and non-reactive NAVSIM scores.
+%% END ADD

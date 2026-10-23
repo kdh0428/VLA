@@ -1,0 +1,20 @@
+{
+ "engine": "tectonic 0.15.0 (XeTeX-based) in an isolated temp dir; v02 was built with pdfLaTeX, and the unmodified v02 sources give the same page boundaries under tectonic (main refs p.9, supplement refs p.14)",
+ "documents": {
+  "main": {
+   "first_references_page": 9,
+   "latex_errors": false,
+   "undefined_refs_or_citations": false,
+   "overfull_boxes": 0,
+   "sha256": "12053ba2c6a562d289f8eac86ae8d3b09ab1195d3badec7e80fded6f471f73e9"
+  },
+  "supplementary": {
+   "first_references_page": 19,
+   "latex_errors": false,
+   "undefined_refs_or_citations": false,
+   "overfull_boxes": 0,
+   "sha256": "f5bee59fdc3f68eaef9e7f22941badd5314fd78576a9c9fb2d304cc96915459a"
+  }
+ },
+ "template_hashes_unchanged": true
+}

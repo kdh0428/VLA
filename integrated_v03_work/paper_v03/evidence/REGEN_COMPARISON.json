@@ -1,0 +1,56 @@
+[
+  {
+    "file": "COVERAGE_STRUCTURES.csv",
+    "rows": 4,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "COVERAGE_SCENARIOS.csv",
+    "rows": 64,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "COVERAGE_RESULTS.csv",
+    "rows": 128,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "COVERAGE_SUMMARY.csv",
+    "rows": 8,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "COVERAGE_RESULTS_EMPIRICAL_ALT.csv",
+    "rows": 16,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "CI_RECOMMENDATION.csv",
+    "rows": 25,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "POWER_SENSITIVITY.csv",
+    "rows": 32,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "FINAL_PAPER_NUMBERS.csv",
+    "rows": 131,
+    "columns_differ": [],
+    "pass": true
+  },
+  {
+    "file": "B_NUMERIC_MATERIALITY_jsonci.csv",
+    "rows": 42,
+    "columns_differ": [],
+    "pass": true
+  }
+]

@@ -1,0 +1,4 @@
+{"rendered": "every page of paper/main.pdf (10) and paper/supplementary.pdf (19) rendered at 50 dpi in 4-page sheets (PyMuPDF) and inspected",
+ "main": {"content_pages": 8, "llm_statement_and_references_start": 9, "issues": "none found: no clipped/overlapping tables, figures or text; LLM Usage Statement fully on page 9"},
+ "supplementary": {"pages": 19, "references_page": 19, "issues": "none found"},
+ "tools": {"pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)", "bibtex": "BibTeX 0.99e (TeX Live 2026)", "texlive_install": "TeX Live 2026 net install (scheme-infraonly + collection-latex + listed packages) in the session scratchpad; existing data and weights untouched"}}

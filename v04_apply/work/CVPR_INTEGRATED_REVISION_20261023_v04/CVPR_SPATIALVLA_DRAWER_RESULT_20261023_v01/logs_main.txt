@@ -1,0 +1,146 @@
+Some kwargs in processor config are unused and will not have any effect: action_config, bin_policy, obs_delta, intrinsic_config, num_obs_steps, statistics, action_chunk_size. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.63it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.91it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.86it/s]
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/root/VLA/simpler/site/sapien/core/renderer_config.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[2026-10-23 01:43:20.602] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 01:43:20.602] [svulkan2] [warning] Continue without GLFW.
+[2026-10-23 01:43:20.997] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:43:20.997] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:43:20.997] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:43:20.997] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:43:20.998] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:43:20.998] [svulkan2] [error] Failed to initialize OptiX denoiser
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-23 01:44:16.192] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 01:44:16.192] [svulkan2] [warning] Continue without GLFW.
+[2026-10-23 01:44:16.566] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:44:16.566] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:44:16.567] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:44:16.567] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:44:16.567] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:44:16.567] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:44:46.278] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:44:46.278] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:44:46.278] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:44:46.278] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:44:46.279] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:44:46.279] [svulkan2] [error] Failed to initialize OptiX denoiser
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-23 01:45:12.042] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 01:45:12.042] [svulkan2] [warning] Continue without GLFW.
+[2026-10-23 01:45:12.412] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:45:12.412] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:45:12.412] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:45:12.412] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:45:12.412] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:45:12.412] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:45:41.778] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:45:41.778] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:45:41.778] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:45:41.778] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:45:41.779] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:45:41.779] [svulkan2] [error] Failed to initialize OptiX denoiser
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+[2026-10-23 01:46:08.673] [svulkan2] [error] GLFW error: X11: The DISPLAY environment variable is missing
+[2026-10-23 01:46:08.673] [svulkan2] [warning] Continue without GLFW.
+[2026-10-23 01:46:09.048] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:46:09.048] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:46:09.048] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:46:09.048] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:46:09.048] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:46:09.048] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:46:38.500] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:46:38.500] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:46:38.500] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:46:38.500] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:46:38.500] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:46:38.500] [svulkan2] [error] Failed to initialize OptiX denoiser
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+/root/VLA/simpler/site/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+The 'batch_size' attribute of HybridCache is deprecated and will be removed in v4.49. Use the more precisely named 'self.max_batch_size' attribute instead.
+[2026-10-23 01:49:48.718] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:49:48.718] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:49:48.718] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:49:48.718] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:49:48.719] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:49:48.719] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:50:19.455] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:50:19.456] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:50:19.456] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:50:19.456] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:50:19.457] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:50:19.457] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:50:45.514] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:50:45.514] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:50:45.514] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:50:45.514] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:50:45.515] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:50:45.515] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:51:12.539] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:51:12.539] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:51:12.539] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:51:12.539] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:51:12.540] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:51:12.540] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:54:34.918] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:54:34.918] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:54:34.918] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:54:34.918] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:54:34.919] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:54:34.919] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:55:04.005] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:55:04.006] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:55:04.006] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:55:04.006] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:55:04.007] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:55:04.007] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:56:00.836] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:56:00.836] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:56:00.836] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:56:00.836] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:56:00.837] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:56:00.837] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:59:36.260] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:59:36.260] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:59:36.260] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:59:36.260] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 01:59:36.261] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 01:59:36.261] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:01.813] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:01.813] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:01.813] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:01.813] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:01.814] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:01.814] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:27.145] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:27.145] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:27.146] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:27.146] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:27.147] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:27.147] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:55.870] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:55.870] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:55.870] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:55.870] [svulkan2] [error] Failed to initialize OptiX denoiser
+[2026-10-23 02:00:55.872] [svulkan2] [error] Failed to initialize denoiser. Please make sure the renderer runs on NVIDIA GPU with driver version >= 522.25.
+[2026-10-23 02:00:55.872] [svulkan2] [error] Failed to initialize OptiX denoiser

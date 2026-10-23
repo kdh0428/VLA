@@ -1,0 +1,219 @@
+{
+  "status": "passed",
+  "checks": {
+    "B2.C_GT.F": {
+      "estimate_pp": 25.305555555555546,
+      "n_scenes": 100,
+      "weight_total": 100.0
+    },
+    "B2.C_GT.P": {
+      "estimate_pp": 3.3142559058052012,
+      "n_scenes": 312,
+      "weight_total": 1775.0
+    },
+    "B2.C_NAT.F": {
+      "estimate_pp": 25.51984126984127,
+      "n_scenes": 100,
+      "weight_total": 100.0
+    },
+    "B2.C_NAT.P": {
+      "estimate_pp": 3.9765351367464046,
+      "n_scenes": 312,
+      "weight_total": 1775.0
+    },
+    "B2.INT.F": {
+      "estimate_pp": -0.21428571428571402,
+      "n_scenes": 100,
+      "weight_total": 100.0
+    },
+    "B2.INT.P": {
+      "estimate_pp": -0.6622792309412027,
+      "n_scenes": 312,
+      "weight_total": 1775.0
+    },
+    "B2.C_PROV.F": {
+      "estimate_pp": -15.813492063492065,
+      "n_scenes": 100,
+      "weight_total": 100.0
+    },
+    "B2.C_PROV.P": {
+      "estimate_pp": -2.1827818764438485,
+      "n_scenes": 312,
+      "weight_total": 1775.0
+    },
+    "scene_groups": {
+      "GT_lowers_rate": 87,
+      "unchanged_rate": 12,
+      "GT_raises_rate": 1
+    },
+    "cases": {
+      "improved_1": {
+        "fde5_NAT_REF": 2.1094878544122784,
+        "fde5_NAT_NSRC": 7.072869125048483,
+        "d_unit": -4.963381270636205,
+        "severe_NAT_REF": 0,
+        "severe_NAT_NSRC": 1,
+        "d_scene": -1.8857158003474315,
+        "s_scene": -0.3333333333333333,
+        "d_scene_percentile_among_F_scenes": 45.0
+      },
+      "improved_2": {
+        "fde5_NAT_REF": 4.566455560589619,
+        "fde5_NAT_NSRC": 5.0677011842647435,
+        "d_unit": -0.5012456236751248,
+        "severe_NAT_REF": 0,
+        "severe_NAT_NSRC": 1,
+        "d_scene": -1.9279274153969792,
+        "s_scene": -0.125,
+        "d_scene_percentile_among_F_scenes": 44.0
+      },
+      "unchanged_severe_1": {
+        "fde5_NAT_REF": 0.45074214302761856,
+        "fde5_NAT_NSRC": 0.8226760684616827,
+        "d_unit": -0.37193392543406417,
+        "severe_NAT_REF": 0,
+        "severe_NAT_NSRC": 0,
+        "d_scene": -0.4712693183346428,
+        "s_scene": 0.0,
+        "d_scene_percentile_among_F_scenes": 88.0
+      },
+      "unchanged_severe_2": {
+        "fde5_NAT_REF": 1.194289727761373,
+        "fde5_NAT_NSRC": 1.8616991262420968,
+        "d_unit": -0.6674093984807237,
+        "severe_NAT_REF": 0,
+        "severe_NAT_NSRC": 0,
+        "d_scene": -0.49010208932855703,
+        "s_scene": 0.0,
+        "d_scene_percentile_among_F_scenes": 87.0
+      },
+      "worsened_1": {
+        "fde5_NAT_REF": 14.13224656875351,
+        "fde5_NAT_NSRC": 1.3455380564288262,
+        "d_unit": 12.786708512324685,
+        "severe_NAT_REF": 1,
+        "severe_NAT_NSRC": 0,
+        "d_scene": 2.584521681005968,
+        "s_scene": 0.16666666666666666,
+        "d_scene_percentile_among_F_scenes": 100.0
+      }
+    },
+    "common.A-": {
+      "D_model": "2.179417030226557",
+      "E_CM": "0.8717677531258511",
+      "E_Geo": "1.8179351629867868",
+      "err_P_gt": "3.037799260967129",
+      "err_U_gt": "3.7646291457057455",
+      "n_units": "342",
+      "n_scenes": "49",
+      "n_drives": "13"
+    },
+    "common.A+": {
+      "D_model": "1.1942988779791615",
+      "E_CM": "-0.1819700073381684",
+      "E_Geo": "0.7936827283535215",
+      "err_P_gt": "1.5012402232908715",
+      "err_U_gt": "1.047350380939163",
+      "n_units": "1032",
+      "n_scenes": "147",
+      "n_drives": "19"
+    },
+    "common.pooled (A- + A+)": {
+      "D_model": "1.4405784160410102",
+      "E_CM": "0.08146443277783645",
+      "E_Geo": "1.0497458370118378",
+      "err_P_gt": "1.8853799827099358",
+      "err_U_gt": "1.7266700721308088",
+      "n_units": "1374",
+      "n_scenes": "196",
+      "n_drives": "19"
+    },
+    "Spatial.r1e4.R-N": {
+      "n_pairs": 240,
+      "success_effect_pp": 0.8333333333333334,
+      "mean_TCP_area_cmstep": 192.53833899891296
+    },
+    "Spatial.r1e4.C-F": {
+      "n_pairs": 240,
+      "success_effect_pp": 2.5,
+      "mean_TCP_area_cmstep": 220.77764272840577
+    },
+    "Spatial.r4e1.R-N": {
+      "n_pairs": 240,
+      "success_effect_pp": 1.25,
+      "mean_TCP_area_cmstep": 428.46171955795694
+    },
+    "Spatial.r4e1.C-F": {
+      "n_pairs": 240,
+      "success_effect_pp": 0.0,
+      "mean_TCP_area_cmstep": 449.47353061609454
+    },
+    "simulation_coverage": {
+      "E_RN.D2": {
+        "min": 0.9078,
+        "max": 0.9398,
+        "scenarios": 8
+      },
+      "E_RN.D3": {
+        "min": 0.9372,
+        "max": 1.0,
+        "scenarios": 8
+      },
+      "E_RV.D2": {
+        "min": 0.886,
+        "max": 0.9604,
+        "scenarios": 8
+      },
+      "E_RV.D3": {
+        "min": 0.9532,
+        "max": 0.9946,
+        "scenarios": 8
+      },
+      "E4_CNAT.D2": {
+        "min": 0.8898,
+        "max": 0.9468,
+        "scenarios": 8
+      },
+      "E4_CNAT.D3": {
+        "min": 0.9404,
+        "max": 0.995,
+        "scenarios": 8
+      },
+      "E4_CGT.D2": {
+        "min": 0.927,
+        "max": 0.9384,
+        "scenarios": 8
+      },
+      "E4_CGT.D3": {
+        "min": 0.9304,
+        "max": 1.0,
+        "scenarios": 8
+      },
+      "E4_INT.D2": {
+        "min": 0.9118,
+        "max": 0.9314,
+        "scenarios": 8
+      },
+      "E4_INT.D3": {
+        "min": 0.9284,
+        "max": 0.9944,
+        "scenarios": 8
+      },
+      "F_RN.D2": {
+        "min": 0.9152,
+        "max": 0.9374,
+        "scenarios": 8
+      },
+      "F_CNAT.D2": {
+        "min": 0.9364,
+        "max": 0.943,
+        "scenarios": 8
+      },
+      "F_INT.D2": {
+        "min": 0.886,
+        "max": 0.9374,
+        "scenarios": 8
+      }
+    }
+  }
+}

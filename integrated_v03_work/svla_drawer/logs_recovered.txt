@@ -1,0 +1,6 @@
+Some kwargs in processor config are unused and will not have any effect: bin_policy, obs_delta, action_chunk_size, num_obs_steps, statistics, action_config, intrinsic_config. 
+Add 0 TRANSLATION TOKENS, tokenizer vocab size 257152 / 265347
+Add 0 ROTATION TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Add 0 GRIPPER TOKENS to tokenizer, tokenizer vocab size 257152 / 265347
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.54it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.97it/s]
+The 'batch_size' attribute of HybridCache is deprecated and will be removed in v4.49. Use the more precisely named 'self.max_batch_size' attribute instead.
